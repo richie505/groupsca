@@ -46,11 +46,22 @@ function decode(s) {
     .trim();
 }
 
-// RFC-822 ('Fri, 21 Aug 2026 13:21:44 +0530'), PIB's 'Posted on: 19 Aug 2026'
-// and ISO dates all reduce to YYYY-MM-DD, taken as printed: the digest is a
-// calendar day in India, not a UTC instant.
+// Every date is the INDIAN calendar day the story was published.
+//
+// A timestamp with a zone ('Fri, 02 Oct 2026 22:00:00 +0000',
+// '2026-10-02T22:50:54+05:30') is converted to IST first: Mint and NDTV print
+// UTC, so a story published at 3:30 AM IST on 3 October reads "2 Oct ...
+// 22:00 +0000" and belongs to 3 October. A date with no time or zone (PIB's
+// 'Posted on: 19 Aug 2026', a digest's "Current Affairs 1 October 2026") is
+// already an Indian date and is taken as printed.
+const IST_MS = 5.5 * 3600 * 1000;
+
 function toIso(raw) {
   const s = decode(raw);
+  if (/\d{1,2}:\d{2}/.test(s) && /(?:[+-]\d{2}:?\d{2}|\bGMT|\bUTC|\dZ)\s*$/.test(s)) {
+    const t = Date.parse(s);
+    if (!Number.isNaN(t)) return new Date(t + IST_MS).toISOString().slice(0, 10);
+  }
   let m = s.match(/(\d{1,2})\s+([A-Za-z]{3})[a-z]*\.?,?\s+(\d{4})/);
   if (m) {
     const mon = MONTHS[m[2].toLowerCase()];

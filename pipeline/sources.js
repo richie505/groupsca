@@ -20,6 +20,7 @@
 //             AP-relevant regardless of what the headline says.
 //   'wp-sitemap-latest'  a WordPress sitemap index whose newest child lists
 //                the latest posts, undated (GKToday); `limit` newest are taken
+//   titleDate take the item's date from its headline ("Current Affairs 1 October 2026")
 //   fetchMeta read each new item's page for its title, description and publish date
 //   digest    a current-affairs site's own exam pick (AffairsCloud's daily digest,
 //             GKToday's posts): kept unless vetoed, whatever it scores
@@ -314,7 +315,9 @@ const SOURCES = [
     kind: 'rss',
     url: 'https://affairscloud.com/feed/',
     digest: true,
+    titleDate: true,
     titleFilter: '^Current Affairs \\d',
+    note: 'Timed out from GitHub Actions on the night of 2 Oct 2026 after working earlier; kept, failures show in the run summary.',
   },
 ];
 

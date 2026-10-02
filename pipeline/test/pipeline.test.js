@@ -90,6 +90,15 @@ test('key facts are labelled sentences, figures first', () => {
   assert.ok(summarise('A'.repeat(1000)).length <= 420);
 });
 
+test('dates are the Indian calendar day of publication', () => {
+  assert.equal(F.toIso('Fri, 02 Oct 2026 22:00:00 +0000'), '2026-10-03', 'UTC evening is the next IST day');
+  assert.equal(F.toIso('Fri, 02 Oct 2026 17:00:00 +0000'), '2026-10-02');
+  assert.equal(F.toIso('Fri, 02 Oct 2026 23:50:00 +0530'), '2026-10-02');
+  assert.equal(F.toIso('2026-10-02T22:50:54+05:30'), '2026-10-02');
+  assert.equal(F.toIso('Posted on: 02 Oct 2026 11:30PM'), '2026-10-02', 'no zone: taken as printed');
+  assert.equal(F.toIso('Current Affairs 1 October 2026'), '2026-10-01');
+});
+
 test('IST day', () => {
   assert.equal(todayIst(Date.parse('2026-10-01T19:00:00Z')), '2026-10-02');
 });
@@ -158,6 +167,7 @@ test('every story is filed under one of the 6 books', () => {
     ['Supreme Court strikes down electoral bond scheme under Article 19', 'Constitution bench held', 'Polity, Society & IR'],
     ['Nagarjunakonda excavation finds Ikshvaku inscription', 'Archaeological Survey of India', 'History & Culture'],
     ['Neeraj Chopra wins gold at Diamond League final', '', 'Current Affairs'],
+    ['Ankush Panghal Wins Asian Games Men’s 80 kg Gold', 'Boxing', 'Current Affairs'],
   ];
   for (const [headline, summary, want] of cases) {
     const r = S.score({ headline, summary }, vocab);
@@ -186,7 +196,9 @@ test('offline run: GKToday newest posts (quizzes skipped) and the AffairsCloud d
   assert.ok(!urls.some((u) => /old-story/.test(u)), 'a post published outside the window is dropped');
   const rbi = r.kept.find((i) => /Financial Stability/.test(i.title));
   assert.equal(rbi.title, 'RBI Releases Financial Stability Report, December 2026', '"- GKToday" is trimmed');
-  assert.ok(r.kept.some((i) => i.title === 'Current Affairs 2 October 2026' && i.digest));
+  const digest = r.kept.find((i) => i.title === 'Current Affairs 2 October 2026');
+  assert.ok(digest && digest.digest);
+  assert.equal(digest.date, '2026-10-02', 'filed under the day its title names');
   assert.ok(!urls.some((u) => /sbi-po/.test(u)), 'AffairsCloud non-digest posts are skipped');
 });
 

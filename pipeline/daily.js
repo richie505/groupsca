@@ -163,6 +163,8 @@ async function fetchAll(load, date) {
       apSource: !!src.ap,
       opinion: !!src.opinion,
       digest: !!src.digest,
+      // A digest about "1 October" belongs to 1 October, whenever it was posted.
+      ...(src.titleDate && F.toIso(r.headline) ? { date: F.toIso(r.headline) } : {}),
       lang: src.lang || 'en',
     }))
   );

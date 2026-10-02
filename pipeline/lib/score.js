@@ -153,7 +153,12 @@ const HINT_SUBJECT = {
  * with neither goes to Polity, Society & IR (its IR part); anything else
  * (awards, appointments, days, sports) to Current Affairs.
  */
-function subjectsFor(units, hints, scope) {
+// Sport results are Book 6 current affairs, whatever words they share with a
+// syllabus unit ("80 kg", "Asian Games" matched Book 5 on 3 Oct 2026).
+const SPORT = /\b(?:wins?|won|clinch\w*|bags?)\b[^.]{0,40}\b(?:gold|silver|bronze|medal|title|trophy|championship|cup)\b|\b(?:Asian Games|Olympics?|Commonwealth Games|World Cup|Grand Slam|Diamond League|Paralympics?)\b/i;
+
+function subjectsFor(units, hints, scope, lead = '') {
+  if (SPORT.test(lead)) return { subject: 'Current Affairs', subjects: ['Current Affairs'] };
   const votes = new Map();
   for (const u of units) {
     const s = subjectOfUnit(u.item.tracker || u.item.code);
@@ -300,7 +305,7 @@ function score(article, vocab) {
     : anchored ? 5 : 2;
 
   const scope = bucketOf(text, false);
-  const { subject, subjects: subjectList } = subjectsFor(units, subjects, scope);
+  const { subject, subjects: subjectList } = subjectsFor(units, subjects, scope, lead);
 
   const why = { syllabus, angles: angleScore, ap: apScore, importance, reuse };
   const total = Object.values(why).reduce((a, b) => a + b, 0);
