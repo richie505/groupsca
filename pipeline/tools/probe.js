@@ -46,8 +46,38 @@ async function pibRegions(from = 1, to = 40) {
   }
 }
 
+// --explain=<source id>[,<id>]: every item the source returns today, with its
+// score and why, to tune the vocabulary against real headlines.
+async function explain(ids) {
+  const { SOURCES, isNoise } = require('../sources');
+  const S = require('../lib/score');
+  const vocab = S.loadVocab();
+  for (const src of SOURCES.filter((x) => ids.includes(x.id))) {
+    let rows = [];
+    try {
+      const body = await F.fetchText(src.url);
+      rows = src.kind === 'pib-index' ? F.parsePibIndex(body)
+        : src.kind === 'sitemap' ? F.parseSitemap(body, { pathIncludes: src.pathIncludes })
+        : F.parseRss(body);
+      if (!rows.length) console.log(body.slice(0, 800).replace(/\s+/g, ' '));
+    } catch (e) {
+      console.log(`${src.id}: FAIL ${e.message}`);
+      continue;
+    }
+    console.log(`== ${src.id}: ${rows.length} items`);
+    for (const r of rows.slice(0, 120)) {
+      if (isNoise(r.headline)) { console.log(`  noise  ${r.date} ${r.headline.slice(0, 100)}`); continue; }
+      const x = S.score({ ...r, apSource: !!src.ap, primary: !!src.primary }, vocab);
+      const tag = x.vetoed ? `veto ${x.vetoed}` : `${x.score} ${x.anchored ? 'A' : '-'} [${x.angles.join(',')}] {${x.units.map((u) => u.code).join(',')}}`;
+      console.log(`  ${tag}  ${r.date} ${r.headline.slice(0, 100)}`);
+    }
+  }
+}
+
 const args = process.argv.slice(2).concat((process.env.PROBE_URLS || '').split(/\s+/).filter(Boolean));
 (async () => {
+  const ex = args.find((a) => a.startsWith('--explain='));
+  if (ex) await explain(ex.slice('--explain='.length).split(','));
   if (args.includes('--pib-regions')) await pibRegions();
   if (args.includes('--pib-regions-high')) await pibRegions(41, 80);
   for (const u of args.filter((a) => !a.startsWith('--'))) await probe(u);
