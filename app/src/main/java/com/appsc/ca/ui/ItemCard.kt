@@ -81,7 +81,7 @@ fun ItemCard(
                 BandBadge(item.band, item.score)
                 if (item.ap) Badge("Andhra Pradesh", C.Ap, C.ApSoft)
                 if (item.lang == "te") Badge("తెలుగు", C.Muted, C.Chip)
-                if (item.digest) Badge("Daily digest", C.High, C.HighSoft)
+                if (item.digest) Badge(if (item.title.startsWith("Current Affairs")) "Daily digest" else "CA site pick", C.High, C.HighSoft)
                 if (item.scope == "international") Badge("International", C.Muted, C.Chip)
                 else if (!item.ap || item.scope == "national") Badge("National", C.Muted, C.Chip)
                 Badge("Book ${bookNumber(item.book)} · ${item.book}", C.Fact, C.FactSoft)

@@ -216,7 +216,8 @@ function examinable(r) {
 function select(scored) {
   const live = scored.filter((x) => !x.result.vetoed);
   const keep = live.filter((x) => {
-    // A current-affairs site's daily digest is kept whatever it scores.
+    // A current-affairs site's own exam pick is kept whatever it scores
+    // (vetoed stories never reach here).
     if (x.article.digest) return true;
     if (!x.result.ap) return x.result.score >= MIN_SCORE;
     const bar = x.article.summary || x.article.body ? AP_MIN_SCORE : AP_MIN_SCORE_HEADLINE_ONLY;

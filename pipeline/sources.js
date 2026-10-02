@@ -20,7 +20,8 @@
 //             AP-relevant regardless of what the headline says.
 //   'wp-sitemap-latest'  a WordPress sitemap index whose newest child lists
 //                the latest posts, undated (GKToday); `limit` newest are taken
-//   digest    a current-affairs site's daily digest post: kept whatever it scores
+//   digest    a current-affairs site's own exam pick (AffairsCloud's daily digest,
+//             GKToday's posts): kept unless vetoed, whatever it scores
 //   titleFilter  a regex a headline must match to be taken.
 //   lang      'te' for Telugu sources; scored with the Telugu word list in
 //             vocab/ap-vocab.json.
@@ -298,6 +299,9 @@ const SOURCES = [
     url: 'https://www.gktoday.in/wp-sitemap.xml',
     limit: 40,
     skipPaths: 'quiz|/gk-questions|/question/|/lesson/|/topics/',
+    // GKToday's posts are already exam current affairs, and a slug is too
+    // little text to score: kept unless vetoed, like a digest.
+    digest: true,
   },
   {
     // One "Current Affairs <date>" digest post a day.
