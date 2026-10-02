@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-03",
- "updated": "2026-10-02T18:39:40.484Z",
+ "updated": "2026-10-02T19:06:01.547Z",
  "sources": [
   {
    "id": "pib",
@@ -76,6 +76,18 @@
    "error": null
   },
   {
+   "id": "ht-india",
+   "name": "Hindustan Times — India",
+   "found": 100,
+   "error": null
+  },
+  {
+   "id": "ndtv-india",
+   "name": "NDTV — India",
+   "found": 20,
+   "error": null
+  },
+  {
    "id": "hindu-economy",
    "name": "The Hindu — Economy",
    "found": 60,
@@ -100,6 +112,24 @@
    "error": "HTTP 403"
   },
   {
+   "id": "mint-news",
+   "name": "Mint — News",
+   "found": 35,
+   "error": null
+  },
+  {
+   "id": "mint-economy",
+   "name": "Mint — Economy",
+   "found": 35,
+   "error": null
+  },
+  {
+   "id": "bs-top",
+   "name": "Business Standard",
+   "found": 2,
+   "error": null
+  },
+  {
    "id": "hindu-scitech",
    "name": "The Hindu — Science & Technology",
    "found": 60,
@@ -114,6 +144,12 @@
   {
    "id": "toi-science",
    "name": "Times of India — Science",
+   "found": 20,
+   "error": null
+  },
+  {
+   "id": "mongabay-india",
+   "name": "Mongabay India",
    "found": 20,
    "error": null
   },
@@ -170,9 +206,180 @@
    "name": "The Hindu — Telangana",
    "found": 60,
    "error": null
+  },
+  {
+   "id": "gktoday",
+   "name": "GKToday",
+   "found": 40,
+   "error": null
+  },
+  {
+   "id": "affairscloud",
+   "name": "AffairsCloud",
+   "found": 14,
+   "error": null
   }
  ],
  "items": [
+  {
+   "id": "eced92beac56",
+   "date": "2026-10-03",
+   "title": "First tigress released in buxa tiger reserve",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "GI tag / designation",
+     "text": "First tigress released in buxa tiger reserve"
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/first-tigress-released-in-buxa-tiger-reserve/",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Tiger Reserve"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "765e326614ff",
+   "date": "2026-10-03",
+   "title": "Vizag gears up for makeover ahead of CII Partnership Summit",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Vizag gears up for makeover ahead of CII Partnership Summit"
+    }
+   ],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/vizag-gears-up-for-makeover-ahead-of-cii-partnership-summit/article71537276.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [
+    "Summit"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "8169d49d8b69",
+   "date": "2026-10-03",
+   "title": "India exports akash air defence system to tajikistan and turkmenistan",
+   "summary": "",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-exports-akash-air-defence-system-to-tajikistan-and-turkmenistan/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Export",
+    "Exports"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
   {
    "id": "ad614bebbfcb",
    "date": "2026-10-03",
@@ -215,6 +422,93 @@
     "ap": 20,
     "importance": 0,
     "reuse": 5
+   }
+  },
+  {
+   "id": "5e79748a4b87",
+   "date": "2026-10-03",
+   "title": "State level social reform laws in india",
+   "summary": "",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/state-level-social-reform-laws-in-india/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A5",
+     "exam": "G1",
+     "label": "Indian War of Independence 1857; Religious and Social Reform Movements of the 19th Century; India's Freedom Movement; Revolutionaries in India and Abroad"
+    },
+    {
+     "code": "G2-M1A-U3",
+     "exam": "G2",
+     "label": "Advent of Europeans, Andhra under the Company, 1857 and its Impact on Andhra, Socio-Cultural Awakening, Justice Party / Self-Respect Movement, Nationalist Movement in Andhra 1885-1947"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Social Reform"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "490a81001a05",
+   "date": "2026-10-03",
+   "title": "Journalists’ union demands special law on safety, restoration of Working Journalists Act",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/journalists-union-demands-special-law-on-safety-restoration-of-working-journalists-act/article71538117.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 30,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 0,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
    }
   }
  ]
