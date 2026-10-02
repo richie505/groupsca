@@ -192,6 +192,11 @@ const SOURCES = [
 
 // Probed and found not to work. Kept so nobody re-derives this.
 const DEAD = [
+  // 403 to GitHub's Actions runners on the first live run (2 Oct 2026), though
+  // they serve browsers. Left in SOURCES because they may relent; each failure
+  // is listed in the run summary and costs nothing else.
+  { url: 'https://indianexpress.com/section/*/feed/', why: '403 from GitHub Actions (left in SOURCES, may work some days).' },
+  { url: 'https://www.sakshi.com/rss.xml', why: '403 from GitHub Actions (left in SOURCES).' },
   { url: 'https://prsindia.org/rss.xml', why: '404. No feed found; PRS needs the manual route.' },
   { url: 'https://www.downtoearth.org.in/rss/*', why: '404 on every variant tried.' },
   { url: 'https://www.deccanherald.com/rss/*', why: '404 / 500 on every variant tried.' },
@@ -212,6 +217,14 @@ const DEAD = [
 // Deliberately conservative. Junk that gets past this still has to score 40 to
 // be kept; a real item dropped here is lost, so anything ambiguous is left in.
 const NOISE = [
+  // Ceremony and routine, measured on the first live run (2 Oct 2026): PIB
+  // posts a dozen of these on any commemoration day and the AP desks carry the
+  // municipal and police round. A Cabinet decision or an inauguration of a
+  // project is not caught by any of these.
+  /\b(pa(?:y|ys|id|ying) (?:floral )?tributes?|prayer meeting|tree plantation|plantation drive|Ek Ped Maa Ke Naam|shramdaan|Swachhata Hi Seva|Special Campaign \d|e-?auction of gifts|mementos)\b/i,
+  /\b(SP|DSP|CI|SI|ASP|Collector|Commissioner|MLA|Mayor|Corporator|MPDO|Tahsildar)\b.{0,40}\b(inspects?|inspected|visits|reviews? (?:arrangements|works))\b/i,
+  /\b(fire breaks? out|major fire|fire accident|gutted|5K run|walkathon|marathon|cyclothon|selected for .{0,40}(?:tourn|tourney|meet|games)|demolish\w*|grievances?|Praja ?Vedika|Spandana|awareness (?:rally|programme|camp)|blood donation)\b/i,
+  /\b(photography exhibition|exhibition to showcase|workshops?, competitions|youth parliament|Jayanti celebrations|celebrations? (?:held|organised|marked)|unveil(?:s|ed)? (?:a |the )?statue|statue (?:honouring|unveiled)|pensions? distributed|distributes? pensions?|keep \S+(?: \S+)? clean)\b/i,
   /\b(vs\.?|beat|beats|thrash|innings|wicket|wickets|goal|goals|century|half-century)\b/i,
   /\b(IPL|ODI|T20|Test match|Ranji|Premier League|La Liga|Grand Slam|Olympics medal tally)\b/i,
   /\b(box office|trailer|teaser|first look|movie review|film review|web series|OTT release)\b/i,

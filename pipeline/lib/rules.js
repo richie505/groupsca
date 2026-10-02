@@ -160,7 +160,13 @@ const EXTRA_STOP = ['first', 'launched', 'developed', 'established', 'introduced
   'dance', 'art', 'temple', 'religion', 'stone', 'site', 'tool', 'river', 'sea', 'rocks', 'crops', 'tribe',
   'migration', 'population', 'poverty', 'unemployment', 'inflation', 'budget', 'subsidies', 'productivity',
   'infrastructure', 'platform', 'app', 'portal', 'deal', 'operation', 'flood', 'party', 'session',
-  'month', 'date', 'bird', 'animal', 'plant', 'metal', 'line', 'scholars', 'saints', 'leader', 'theory'];
+  'month', 'date', 'bird', 'animal', 'plant', 'metal', 'line', 'scholars', 'saints', 'leader', 'theory',
+  // Measured on the first live run (2 Oct 2026): each matched dozens of stories
+  // it said nothing about.
+  'election', 'elections', 'elected', 'lists', 'officials', 'philosophy', 'movement', 'period',
+  'contribution', 'parts', 'town', 'port', 'ports', 'occupation', 'aim', 'association', 'congress',
+  'conference', 'visited', 'initiative', 'celebrated', 'inaugurated', 'festival', 'anniversary',
+  'days', 'chief guest', 'awards', 'prizes', 'women representation', 'age', 'salary', 'judge'];
 for (const w of EXTRA_STOP) KEYWORD_STOPLIST.add(w);
 
 module.exports = {

@@ -145,7 +145,9 @@ function evidence(list, head, text) {
  */
 function score(article, vocab) {
   const head = String(article.headline || '');
-  const lead = `${head}. ${article.summary || ''}`;
+  // For PIB the release's opening paragraph is its summary: the listing has none.
+  const opening = article.primary && article.body ? String(article.body).slice(0, 600) : '';
+  const lead = `${head}. ${article.summary || ''} ${opening}`;
   const text = `${lead} ${article.body || ''}`;
   const low = norm(text);
 
@@ -179,17 +181,26 @@ function score(article, vocab) {
   const topics = foreignOnly ? [] : evidence(vocab.topics, head, text);
   const subjects = R.SUBJECT_HINTS.filter(([, re]) => re.test(text)).map(([name]) => name);
 
-  const nUnits = units.length;
-  let syllabus = nUnits >= 3 ? 24 : nUnits === 2 ? 18 : nUnits === 1 ? 12 : 0;
-  const bestTier = topics.reduce((t, x) => Math.min(t, x.item.tier || 3), 9);
+  // A unit named in the headline is what the story is ABOUT; one found only
+  // in the summary or a release body is context, and counts half. The first
+  // live run gave "VMC demolishes dilapidated shops" the full 30 because its
+  // summary said "Municipal Corporation".
+  let syllabus = Math.min(24, units.reduce((n, u) => n + (u.headHit ? 12 : 6), 0));
+  const headTopic = topics.filter((t) => t.headHit);
+  const bestTier = headTopic.reduce((t, x) => Math.min(t, x.item.tier || 3), 9);
   if (bestTier === 1) syllabus += 12;
   else if (bestTier === 2) syllabus += 8;
   else if (bestTier === 3) syllabus += 4;
-  if (!nUnits && !topics.length && subjects.length) syllabus += 4;
+  else if (topics.length) syllabus += 2;
+  if (!units.length && !topics.length && subjects.length) syllabus += 4;
   syllabus = Math.min(WEIGHTS.syllabus, syllabus);
+  const anchored = units.some((u) => u.headHit) || headTopic.length > 0;
 
   // ---- B. blueprint angles ----
-  const angles = vocab.angles.filter((a) => a.test(text, low)).map((a) => a.term);
+  // On the headline and summary only: a PIB release body is long enough to
+  // match a dozen angles that say nothing about what the release announces.
+  const leadLow = norm(lead);
+  const angles = vocab.angles.filter((a) => a.test(lead, leadLow)).map((a) => a.term);
   const angleScore = Math.min(WEIGHTS.angles, angles.length * 5);
 
   // ---- D. importance ----
@@ -204,7 +215,10 @@ function score(article, vocab) {
   if (topics.length) exams.add('G1');
   if (angles.length) exams.add('G2');
   const papers = new Set(units.map((u) => u.item.paper));
-  const reuse = exams.size === 2 && units.length >= 2 ? WEIGHTS.reuse : papers.size >= 2 ? 10 : papers.size === 1 ? 5 : 0;
+  const reuse = !papers.size ? 0
+    : exams.size === 2 && units.length >= 2 && anchored ? WEIGHTS.reuse
+    : papers.size >= 2 ? (anchored ? 10 : 5)
+    : anchored ? 5 : 2;
 
   const why = { syllabus, angles: angleScore, ap: apScore, importance, reuse };
   const total = Object.values(why).reduce((a, b) => a + b, 0);
@@ -225,6 +239,8 @@ function score(article, vocab) {
     topics: topics.slice(0, 3).map((t) => t.item.name),
     angles: angles.slice(0, 6),
     instruments: instruments.map((i) => i.label),
+    // The story names a syllabus unit or master topic in its headline.
+    anchored,
     // An item that reaches 40 on AP or importance alone still belongs to both
     // exams' current-affairs papers.
     exams: exams.size ? [...exams].sort() : ['G1', 'G2'],

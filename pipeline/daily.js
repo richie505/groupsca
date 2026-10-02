@@ -33,13 +33,13 @@ const { keyFacts, summarise } = require('./lib/facts');
 
 const MIN_SCORE = 40;
 // APPSC sets this exam: an Andhra Pradesh story already earns 20 for being
-// AP, so it needs only a little syllabus or official-act evidence on top.
-const AP_MIN_SCORE = 30;
+// AP, so it needs less on top — but it must be ABOUT something examinable
+// (see examinable()), or every municipal notice from the AP desks gets in.
+const AP_MIN_SCORE = 35;
 // On a heavy national news day the AP desk must not be crowded out. If fewer
 // than this many AP items reach AP_MIN_SCORE, the best AP items that still
 // carry SOME syllabus, blueprint or official-act signal are added up to it.
 const AP_FLOOR = 15;
-const AP_FLOOR_MIN_SIGNAL = 5;
 // Per day and per side (AP / everything else), so the day stays readable.
 const MAX_PER_SIDE = 60;
 const PIB_BODY_LIMIT = 120;
@@ -171,17 +171,21 @@ function writeIndex(out) {
 // selection
 // ---------------------------------------------------------------------------
 
+// A syllabus unit in the headline, a blueprint angle, or an official act.
+function examinable(r) {
+  return r.anchored || r.angles.length > 0 || r.why.importance > 0;
+}
+
 function select(scored) {
   const live = scored.filter((x) => !x.result.vetoed);
-  const keep = live.filter((x) => x.result.score >= (x.result.ap ? AP_MIN_SCORE : MIN_SCORE));
+  const keep = live.filter((x) =>
+    x.result.ap ? x.result.score >= AP_MIN_SCORE && examinable(x.result) : x.result.score >= MIN_SCORE
+  );
   const apKept = keep.filter((x) => x.result.ap).length;
   if (apKept < AP_FLOOR) {
     const extra = live
       .filter((x) => x.result.ap && !keep.includes(x))
-      .filter((x) => {
-        const w = x.result.why;
-        return w.syllabus + w.angles + w.importance >= AP_FLOOR_MIN_SIGNAL;
-      })
+      .filter((x) => examinable(x.result))
       .sort((a, b) => b.result.score - a.result.score)
       .slice(0, AP_FLOOR - apKept);
     for (const x of extra) x.floor = true;
