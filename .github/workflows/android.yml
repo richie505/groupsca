@@ -1,0 +1,54 @@
+name: Android app
+
+# Builds the signed APK on every change to the app and publishes it as the
+# "app-latest" release, so the newest APK is always at
+# https://github.com/<owner>/groupsca/releases/latest
+on:
+  push:
+    branches: ['**']
+    paths:
+      - 'app/**'
+      - 'gradle/**'
+      - '*.gradle.kts'
+      - 'gradle.properties'
+      - '.github/workflows/android.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Unit tests
+        run: ./gradlew --no-daemon testReleaseUnitTest
+      - name: Build release APK
+        run: ./gradlew --no-daemon assembleRelease
+      - name: Name the APK
+        run: |
+          v=$(grep -m1 'versionName' app/build.gradle.kts | sed 's/.*"\(.*\)".*/\1/')
+          echo "VERSION=$v" >> "$GITHUB_ENV"
+          cp app/build/outputs/apk/release/app-release.apk "APPSC-Daily-CA-$v.apk"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: APPSC-Daily-CA-${{ env.VERSION }}
+          path: APPSC-Daily-CA-*.apk
+      - name: Publish release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ env.VERSION }}
+          name: APPSC Daily CA ${{ env.VERSION }}
+          make_latest: true
+          files: APPSC-Daily-CA-*.apk
+          body: |
+            Install the APK on your phone (allow "install unknown apps" for your browser or file manager once).
+            A newer APK installs over this one and keeps your saved stories.

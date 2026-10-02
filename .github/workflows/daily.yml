@@ -1,0 +1,48 @@
+name: Daily current affairs
+
+# Fetches PIB + newspaper feeds, scores them against the combined APPSC
+# syllabus and blueprint (no AI), and commits feed/days/<date>.json and
+# feed/index.json, which the app downloads.
+on:
+  schedule:
+    - cron: '41 0 * * *'   # 06:11 IST — yesterday evening's and this morning's news
+    - cron: '41 14 * * *'  # 20:11 IST — the day's releases and evening editions
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Day to collect (YYYY-MM-DD, IST). Empty = today.'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-feed
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test the pipeline
+        run: npm test
+      - name: Collect and score
+        run: node pipeline/daily.js ${{ github.event.inputs.date && format('--date {0}', github.event.inputs.date) || '' }}
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Current affairs $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((i * 5))
+          done
+          exit 1

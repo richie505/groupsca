@@ -1,0 +1,11 @@
+{
+  "name": "groupsca",
+  "private": true,
+  "description": "APPSC Daily CA: the daily current-affairs feed (no AI) and its Android app",
+  "scripts": {
+    "test": "node --test 'pipeline/test/*.test.js'",
+    "daily": "node pipeline/daily.js",
+    "dry-run": "node pipeline/daily.js --dry-run"
+  },
+  "engines": { "node": ">=20" }
+}

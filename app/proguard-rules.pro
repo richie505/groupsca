@@ -1,0 +1,3 @@
+-keepattributes *Annotation*, InnerClasses
+-keepclassmembers class com.appsc.ca.data.** { *; }
+-keep,includedescriptorclasses class com.appsc.ca.**$$serializer { *; }
