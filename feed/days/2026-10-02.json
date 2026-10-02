@@ -1,12 +1,42 @@
 {
  "version": 1,
  "date": "2026-10-02",
- "updated": "2026-10-02T17:41:59.193Z",
+ "updated": "2026-10-02T17:54:40.477Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
    "found": 171,
+   "error": null
+  },
+  {
+   "id": "pib-vijayawada",
+   "name": "PIB Vijayawada",
+   "found": 1,
+   "error": null
+  },
+  {
+   "id": "pib-hyderabad",
+   "name": "PIB Hyderabad",
+   "found": 16,
+   "error": null
+  },
+  {
+   "id": "air-national",
+   "name": "AIR News — National",
+   "found": 10,
+   "error": null
+  },
+  {
+   "id": "air-international",
+   "name": "AIR News — International",
+   "found": 10,
+   "error": null
+  },
+  {
+   "id": "air-business",
+   "name": "AIR News — Business",
+   "found": 10,
    "error": null
   },
   {
@@ -36,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 46,
    "error": null
   },
   {
@@ -124,6 +154,12 @@
    "error": "HTTP 403"
   },
   {
+   "id": "eenadu-ap",
+   "name": "Eenadu — Andhra Pradesh",
+   "found": 162,
+   "error": null
+  },
+  {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
    "found": 0,
@@ -134,6 +170,18 @@
    "name": "The Hindu — Telangana",
    "found": 60,
    "error": null
+  },
+  {
+   "id": "vajiram",
+   "name": "Vajiram & Ravi",
+   "found": 5,
+   "error": null
+  },
+  {
+   "id": "vision-ias",
+   "name": "Vision IAS",
+   "found": 0,
+   "error": "no items parsed"
   }
  ],
  "items": [
@@ -1748,6 +1796,55 @@
    }
   },
   {
+   "id": "0a7bae52e989",
+   "date": "2026-10-02",
+   "title": "UAE marks Gandhi Jayanti with tributes to Mahatma Gandhi",
+   "summary": "The Indian community in the UAE marked Gandhi Jayanti with tributes to Mahatma Gandhi, remembering his enduring message of peace, harmony and non-violence. At the Indian Embassy in Abu Dhabi, Ambassador Dr Deepak Mittal and embassy officials paid floral tribute to Mahatma Gandhi, reaffirming his timeless message of peace and non-violence.",
+   "facts": [],
+   "source": "AIR News — International",
+   "sourceId": "air-international",
+   "official": true,
+   "ministry": "International",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/uae-marks-gandhi-jayanti-with-tributes-to-mahatma-gandhi/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Indian History"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Ambassador",
+    "Community"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "0f0cbb0c1b42",
    "date": "2026-10-02",
    "title": "Andhra CM, Union FM lay foundation for ₹1 lakh-crore global horticulture hub at Madanapalle",
@@ -1795,6 +1892,56 @@
     "ap": 20,
     "importance": 2,
     "reuse": 5
+   }
+  },
+  {
+   "id": "2e8ed4783857",
+   "date": "2026-10-02",
+   "title": "India building manufacturing value chains from design to finished goods: Commerce Minister Piyush Goyal",
+   "summary": "Commerce and Industry Minister Piyush Goyal has called for a WTO-compliant approach to correcting global trade distortions on the concluding day of the G20 Trade Ministers’ Meeting in Milwaukee, US. Speaking on structural excess capacity and production, Mr Goyal said that India is the fastest-growing large economy in the world, with a domestic-demand-driven economy […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "National",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/india-building-manufacturing-value-chains-from-design-to-finished-goods-commerce-minister-piyush-goyal/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "WTO",
+    "Industry"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 15,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
    }
   },
   {
@@ -1975,6 +2122,57 @@
     "angles": 5,
     "ap": 0,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "729790826f92",
+   "date": "2026-10-02",
+   "title": "India & Canada aim to increase bilateral trade to nearly 70 billion dollars in 5 yrs: Canadian Trade Minister Maninder Sidhu",
+   "summary": "Canadian International Trade Minister Maninder Sidhu has said Canada wants to support India’s economic growth through deeper cooperation in energy, critical minerals and aerospace. Speaking on the sidelines of the G20 Trade Ministers’ Meeting in Milwaukee, Sidhu said India’s growing energy requirements and efforts to diversify supply chains offer significant opportunities for both countries. […]",
+   "facts": [],
+   "source": "AIR News — International",
+   "sourceId": "air-international",
+   "official": true,
+   "ministry": "International",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/indias-growing-energy-requirements-efforts-to-diversify-supply-chains-offer-significant-opportunities-for-both-countries-canadian-trade-minister-maninder-sidhu/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Polity",
+    "Geography",
+    "Science & Technology"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Economic growth"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 0,
+    "importance": 7,
     "reuse": 15
    }
   },
@@ -3198,6 +3396,85 @@
    }
   },
   {
+   "id": "454aa21038e8",
+   "date": "2026-10-02",
+   "title": "21 జిల్లాల్లో 388 కరవు మండలాలు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126178292",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te"
+  },
+  {
+   "id": "f0cea25a17b1",
+   "date": "2026-10-02",
+   "title": "A.P. government to note media commission proposal: Minister Kondapalli Srinivas",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-government-to-note-media-commission-proposal-minister-kondapalli-srinivas/article71537245.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "1ead3d84433a",
    "date": "2026-10-02",
    "title": "SRM-AP debuts in THE rankings, enters 1001–1200 band",
@@ -3240,6 +3517,486 @@
     "importance": 0,
     "reuse": 0
    }
+  },
+  {
+   "id": "1af067443987",
+   "date": "2026-10-02",
+   "title": "A.P. govt. removes 51 doctors from services for remaining absent from duties",
+   "summary": "The doctors who faced action include 41 Assistant Professors, eight Associate Professors and two tutors, says Health Minister",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The doctors who faced action include 41 Assistant Professors, eight Associate Professors and two tutors, says Health Minister"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-govt-removes-51-doctors-from-services-for-remaining-absent-from-duties/article70947509.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Society"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Services",
+    "Health"
+   ],
+   "score": 34,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "d0eb14df04ff",
+   "date": "2026-10-02",
+   "title": "Youth urged to avoid drugs and build a developed India",
+   "summary": "JNTUA hosts a 3K Health Walk for the 'Nasha Mukt Yuva for Viksit Bharat' initiative in Anantapur, uniting students and faculty to promote a drug-free society and raise awareness on confidential helplines.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/anantapur/youth-urged-to-avoid-drugs-and-build-a-developed-india-1127855",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Society"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Health",
+    "Helpline"
+   ],
+   "score": 34,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "1d4b6837d519",
+   "date": "2026-10-02",
+   "title": "MoU inked to bridge gap between legal edn and real-world industry practice",
+   "summary": "GITAM School of Law inks a strategic MoU with WTC Pune Academy, offering students industrial exposure, specialized workshops, professional certifications, and experiential learning modules.",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "GITAM School of Law inks a strategic MoU with WTC Pune Academy, offering students industrial exposure, specialized workshops, professional certifications, and experiential learning modules."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/mou-inked-to-bridge-gap-between-legal-edn-and-real-world-industry-practice-1127832",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Industry"
+   ],
+   "score": 33,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "8b293b2c188e",
+   "date": "2026-10-02",
+   "title": "Swachhathon to become annual event, says Swachh Andhra Corporation chief",
+   "summary": "Nearly 10,000 runners from 23 States participate in 5K, 10K and half marathon in Vijayawada on Gandhi Jayanti; focus on cleanliness, fitness and responsible citizenship",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/swachhathon-to-become-annual-event-says-swachh-andhra-corporation-chief/article71537346.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Indian History"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "States"
+   ],
+   "score": 33,
+   "band": "low",
+   "why": {
+    "syllabus": 6,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
+   },
+   "apFloor": true
+  },
+  {
+   "id": "8b8d3c185a2b",
+   "date": "2026-10-02",
+   "title": "CV Subbareddy appointed as LPG Assn State president",
+   "summary": "Chintala Venkata Subba Reddy is unanimously appointed as the State President of the LPG Distributor Association, outlining key agendas including commission hikes, NFR targets, and the upcoming Delhi Jantar Mantar protest.",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "Chintala Venkata Subba Reddy is unanimously appointed as the State President of the LPG Distributor Association, outlining key agendas including commission hikes, NFR targets, and the upcoming Delhi Jantar Mantar protest."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kadapa/cv-subbareddy-appointed-as-lpg-assn-state-president-1127848",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Appointed"
+   ],
+   "score": 31,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "78e9e3a046ad",
+   "date": "2026-10-02",
+   "title": "HM Anitha calls for coordinated efforts to transform Payakaraopeta",
+   "summary": "Home Minister Vangalapudi Anitha laid the foundation stone for infrastructure projects worth Rs. 8.20 crore utilizing VMRDA funds in Payakaraopeta The projects include main road expansion, construction of CC drains and culverts, and the installation of central lighting to improve civic amenities",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Home Minister Vangalapudi Anitha laid the foundation stone for infrastructure projects worth Rs. 8.20 crore utilizing VMRDA funds in Payakaraopeta The projects include main road expansion, construction of CC drains and culverts, and the installation of central lighting to improve civic amenities"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/hm-anitha-calls-for-coordinated-efforts-to-transform-payakaraopeta-1127829",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Construction"
+   ],
+   "score": 31,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "214960587d4b",
+   "date": "2026-10-02",
+   "title": "Telugu varsity offers new courses",
+   "summary": "Potti Sreeramulu Telugu University invites applications for various postgraduate, diploma, and certificate programs for the 2026-27 academic year across its regional campuses, with the deadline set for October 17.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/rajahmundry/telugu-varsity-offers-new-courses-1127816",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "University",
+    "Applications"
+   ],
+   "score": 30,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "0d3a31bac1af",
+   "date": "2026-10-02",
+   "title": "Andhra dismisses 70 government doctors absent without leave for over a year; 193 more face action",
+   "summary": "Health Minister Satya Kumar Yadav wants the disciplinary process completed in three months and the vacancies filled; 78 doctors have rejoined after being allowed back with penalties",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-dismisses-70-government-doctors-absent-without-leave-for-over-a-year-193-more-face-action/article71536639.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Society"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Health"
+   ],
+   "score": 29,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "c14e949a052a",
+   "date": "2026-10-02",
+   "title": "Elders are guiding lights to society",
+   "summary": "Urban DSP Bhaktavatsalam highlights the value of senior citizens during the International Day of Older Persons event organized by RASS in Tirupati, warning them against cyber frauds and distributing welfare supplies.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/elders-are-guiding-lights-to-society-1127840",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Society"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "PERSONS"
+   ],
+   "score": 29,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "c9d84adff2d9",
+   "date": "2026-10-02",
+   "title": "Pottepalem bridge ends four-decade wait in Nellore",
+   "summary": "New ₹6.54-crore bridge across sluice connecting Nellore Cheruvu with Penna river brings relief to travellers from four constituencies during the rainy season",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "New ₹6.54-crore bridge across sluice connecting Nellore Cheruvu with Penna river brings relief to travellers from four constituencies during the rainy season"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/pottepalem-bridge-ends-four-decade-wait-in-nellore/article71537226.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Traveller"
+   ],
+   "score": 29,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "2c50027cc9c5",
+   "date": "2026-10-02",
+   "title": "PUDA VC warns against illegal real estate ventures",
+   "summary": "PUDA Vice Chairman and Joint Collector M Maurya Bharadwaj directs strict action against unauthorized layouts and illegal constructions in Sri Sathya Sai district, urging plot buyers to verify DTCP approvals.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/anantapur/puda-vc-warns-against-illegal-real-estate-ventures-1127852",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Indian History"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Construction"
+   ],
+   "score": 29,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "08118b0dc32e",
+   "date": "2026-10-02",
+   "title": "YSRCP conspiring to create differences between me and Anam: Narayana",
+   "summary": "AP Municipal Administration Minister P Narayana dismisses attempts by YSRCP to create rifts over the VRC School issue, announcing major modernization plans for government schools in Nellore using CSR funds.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/nellore/ysrcp-conspiring-to-create-differences-between-me-and-anam-narayana-1127838",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Polity"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Administration"
+   ],
+   "score": 29,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
   }
  ]
 }
