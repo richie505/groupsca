@@ -468,8 +468,9 @@ private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
             Text("Feed last updated ${it.replace('T', ' ').take(16)} UTC", style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(horizontal = 16.dp))
         }
         Text(
-            "Where the stories come from: the RSS feeds of PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, " +
-                "Times of India, BusinessLine, The Hans India and Eenadu, collected every morning and evening. Each story is " +
+            "Where the stories come from: PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, Times of India, " +
+                "Hindustan Times, NDTV, Mint, Business Standard, BusinessLine, Mongabay India, The Hans India, Eenadu, " +
+                "GKToday and AffairsCloud, collected every morning and evening. No AI is used. Each story is " +
                 "filed under one of the 6 books of your Combined Notes. No AI is used. Each story is " +
                 "scored by fixed rules out of 100: combined G1 + G2 syllabus units (30), APPSC blueprint keyword angles (20), " +
                 "Andhra Pradesh (20), an official act such as an order, Bill, judgment or appointment (15) and use in both " +

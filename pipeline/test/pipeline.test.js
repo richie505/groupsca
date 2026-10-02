@@ -101,7 +101,7 @@ test('offline run: AP items are kept, merged per day, and not repeated on the ne
   assert.ok(first.report.kept >= 5, JSON.stringify(first.report));
   assert.ok(first.report.keptAp >= 3);
   const day = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
-  assert.ok(day.items.every((i) => i.score >= (i.ap ? 30 : 40) || i.apFloor));
+  assert.ok(day.items.every((i) => i.score >= (i.ap ? 30 : 40) || i.apFloor || i.digest));
   assert.ok(day.items.every((i) => S.SUBJECTS.includes(i.subject)));
   assert.ok(!day.items.some((i) => /arrested|film/i.test(i.title)));
   const index = JSON.parse(fs.readFileSync(path.join(out, 'index.json'), 'utf8'));
@@ -164,6 +164,25 @@ test('every story is filed under one of the 6 books', () => {
     assert.equal(r.subjects[0], want);
     assert.ok(S.SUBJECTS.includes(r.subject));
   }
+});
+
+test('sitemap index: child sitemaps in order', () => {
+  const kids = F.parseSitemapIndex(fs.readFileSync(path.join(FIX, 'gktoday.xml'), 'utf8'));
+  assert.equal(kids.length, 3);
+  assert.match(kids[1], /posts-post-2\.xml$/);
+});
+
+test('offline run: GKToday newest posts (quizzes skipped) and the AffairsCloud digest are taken', async () => {
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
+  const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true });
+  const urls = r.scored.map((x) => x.article.url);
+  assert.ok(urls.some((u) => /financial-stability-report/.test(u)));
+  assert.ok(!urls.some((u) => /quizbase/.test(u)));
+  const gk = r.scored.find((x) => /p4-initiative/.test(x.article.url));
+  assert.equal(gk.article.headline, 'Andhra pradesh launches p4 initiative to end poverty');
+  assert.equal(gk.article.date, '2026-10-02');
+  assert.ok(r.kept.some((i) => i.title === 'Current Affairs 2 October 2026' && i.digest));
+  assert.ok(!urls.some((u) => /sbi-po/.test(u)), 'AffairsCloud non-digest posts are skipped');
 });
 
 test('no coaching sources are configured', () => {

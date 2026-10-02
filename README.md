@@ -8,7 +8,9 @@ fetched from the internet twice a day and sorted by the **combined syllabus** an
 GitHub Actions, 06:11 and 20:11 IST (.github/workflows/daily.yml)
   1. Fetch   PIB (Delhi, Vijayawada, Hyderabad) · AIR News (National, International, Business) ·
              The Hindu (National, AP, Vizag, Vijayawada, International, Economy, Sci-Tech, Environment,
-             Editorial, Telangana) · TOI · BusinessLine · Hans India AP · Eenadu (Telugu, news sitemap)
+             Editorial, Telangana) · TOI · Hindustan Times · NDTV · Mint · Business Standard · BusinessLine ·
+             Mongabay India · Hans India AP · Eenadu (Telugu, news sitemap) · GKToday (sitemap: its RSS is
+             disallowed) · AffairsCloud (daily digest)
   2. Clean   noise filter, last 2 days only, one copy per story, nothing already published
   3. Read    the full text of PIB releases (official, so quotable)
   4. Score   out of 100 — see below

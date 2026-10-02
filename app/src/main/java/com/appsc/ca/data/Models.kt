@@ -66,6 +66,8 @@ data class Item(
     val why: Why = Why(),
     /** "te" for Telugu sources (Eenadu). */
     val lang: String = "en",
+    /** A current-affairs site's daily digest post (AffairsCloud). */
+    val digest: Boolean = false,
 ) {
     /** The book to file it under, for feeds written before `subject` existed too. */
     val book: String get() = subject.ifBlank { subjects.firstOrNull { it in BOOKS } ?: BOOKS.last() }

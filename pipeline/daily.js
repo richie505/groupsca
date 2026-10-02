@@ -92,10 +92,11 @@ async function pool(items, n, fn) {
 
 function loader(fixtures) {
   if (!fixtures) return (url) => F.fetchText(url);
-  // Offline: <fixtures>/<source id>.xml|.html, and pib-<PRID>.html for releases.
+  // Offline: <fixtures>/<source id>.xml|.html, pib-<PRID>.html for releases,
+  // and any other URL by its file name.
   return async (url, src) => {
     const prid = (url.match(/PRID=(\d+)/) || [])[1];
-    const names = src ? [`${src.id}.xml`, `${src.id}.html`] : prid ? [`pib-${prid}.html`] : [];
+    const names = src ? [`${src.id}.xml`, `${src.id}.html`] : prid ? [`pib-${prid}.html`] : [url.split('/').pop()];
     for (const n of names) {
       const p = path.join(fixtures, n);
       if (fs.existsSync(p)) return fs.readFileSync(p, 'utf8');
@@ -104,7 +105,33 @@ function loader(fixtures) {
   };
 }
 
-async function fetchAll(load) {
+// A WordPress sitemap index (GKToday): its last child lists the newest posts,
+// with no dates. The newest `limit` URLs are taken and dated today; the
+// already-published check in run() stops them repeating on later runs.
+async function latestFromWpSitemap(src, body, load, date) {
+  const children = F.parseSitemapIndex(body)
+    .filter((u) => /posts-post-\d+\.xml$/.test(u))
+    .sort((a, b) => Number(a.match(/(\d+)\.xml$/)[1]) - Number(b.match(/(\d+)\.xml$/)[1]));
+  let urls = [];
+  for (const child of children.slice(-2).reverse()) {
+    let xml = '';
+    try {
+      xml = await load(child);
+    } catch {
+      continue;
+    }
+    urls = [...[...xml.matchAll(/<loc>([\s\S]*?)<\/loc>/gi)].map((m) => F.decode(m[1])), ...urls];
+    if (urls.length >= src.limit) break;
+  }
+  const skip = src.skipPaths ? new RegExp(src.skipPaths, 'i') : null;
+  return urls
+    .filter((u) => !skip || !skip.test(u))
+    .slice(-src.limit)
+    .map((url) => ({ headline: F.slugTitle(url), date, url, summary: '', category: '' }))
+    .filter((r) => r.headline);
+}
+
+async function fetchAll(load, date) {
   const results = await Promise.all(
     SOURCES.map(async (src) => {
       try {
@@ -112,6 +139,7 @@ async function fetchAll(load) {
         const rows =
           src.kind === 'pib-index' ? F.parsePibIndex(body)
           : src.kind === 'sitemap' ? F.parseSitemap(body, { pathIncludes: src.pathIncludes })
+          : src.kind === 'wp-sitemap-latest' ? await latestFromWpSitemap(src, body, load, date)
           : F.parseRss(body);
         const wanted = src.titleFilter ? rows.filter((r) => new RegExp(src.titleFilter, 'i').test(r.headline)) : rows;
         return { src, rows: wanted, error: rows.length ? null : 'no items parsed' };
@@ -129,6 +157,7 @@ async function fetchAll(load) {
       primary: !!src.primary,
       apSource: !!src.ap,
       opinion: !!src.opinion,
+      digest: !!src.digest,
       lang: src.lang || 'en',
     }))
   );
@@ -187,6 +216,8 @@ function examinable(r) {
 function select(scored) {
   const live = scored.filter((x) => !x.result.vetoed);
   const keep = live.filter((x) => {
+    // A current-affairs site's daily digest is kept whatever it scores.
+    if (x.article.digest) return true;
     if (!x.result.ap) return x.result.score >= MIN_SCORE;
     const bar = x.article.summary || x.article.body ? AP_MIN_SCORE : AP_MIN_SCORE_HEADLINE_ONLY;
     return x.result.score >= bar && examinable(x.result);
@@ -231,6 +262,7 @@ function toItem({ article, result, floor }) {
     band: result.band,
     why: result.why,
     ...(article.lang && article.lang !== 'en' ? { lang: article.lang } : {}),
+    ...(article.digest ? { digest: true } : {}),
     ...(floor ? { apFloor: true } : {}),
   };
 }
@@ -252,7 +284,7 @@ async function run(args) {
   const load = loader(args.fixtures);
   const vocab = S.loadVocab();
 
-  const { items: fetched, status } = await fetchAll(load);
+  const { items: fetched, status } = await fetchAll(load, date);
   let items = fetched.filter((i) => window.has(i.date));
   const inWindow = items.length;
   items = items.filter((i) => !isNoise(i.headline));

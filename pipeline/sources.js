@@ -18,6 +18,9 @@
 //             paper's account of it. Weighted heavily in the review queue.
 //   ap        the feed is Andhra Pradesh-focused, so every item from it is
 //             AP-relevant regardless of what the headline says.
+//   'wp-sitemap-latest'  a WordPress sitemap index whose newest child lists
+//                the latest posts, undated (GKToday); `limit` newest are taken
+//   digest    a current-affairs site's daily digest post: kept whatever it scores
 //   titleFilter  a regex a headline must match to be taken.
 //   lang      'te' for Telugu sources; scored with the Telugu word list in
 //             vocab/ap-vocab.json.
@@ -121,6 +124,19 @@ const SOURCES = [
     url: 'https://www.thehindu.com/news/international/feeder/default.rss',
   },
 
+  {
+    id: 'ht-india',
+    name: 'Hindustan Times — India',
+    kind: 'rss',
+    url: 'https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml',
+  },
+  {
+    id: 'ndtv-india',
+    name: 'NDTV — India',
+    kind: 'rss',
+    url: 'https://feeds.feedburner.com/ndtvnews-india-news',
+  },
+
   // ---- Economy ------------------------------------------------------------
   {
     id: 'hindu-economy',
@@ -147,6 +163,25 @@ const SOURCES = [
     url: 'https://indianexpress.com/section/business/economy/feed/',
   },
 
+  {
+    id: 'mint-news',
+    name: 'Mint — News',
+    kind: 'rss',
+    url: 'https://www.livemint.com/rss/news',
+  },
+  {
+    id: 'mint-economy',
+    name: 'Mint — Economy',
+    kind: 'rss',
+    url: 'https://www.livemint.com/rss/economy',
+  },
+  {
+    id: 'bs-top',
+    name: 'Business Standard',
+    kind: 'rss',
+    url: 'https://www.business-standard.com/rss/home_page_top_stories.rss',
+  },
+
   // ---- Science, technology, environment -----------------------------------
   {
     id: 'hindu-scitech',
@@ -165,6 +200,14 @@ const SOURCES = [
     name: 'Times of India — Science',
     kind: 'rss',
     url: 'https://timesofindia.indiatimes.com/rssfeeds/-2128672765.cms',
+  },
+
+  {
+    id: 'mongabay-india',
+    name: 'Mongabay India',
+    kind: 'rss',
+    url: 'https://india.mongabay.com/feed/',
+    note: 'Environment, wildlife and conservation reporting: Book 5.',
   },
 
   // ---- Opinion — the quotation source -------------------------------------
@@ -245,10 +288,35 @@ const SOURCES = [
     url: 'https://www.thehindu.com/news/national/telangana/feeder/default.rss',
   },
 
+
+  // ---- Current-affairs websites --------------------------------------------
+  {
+    // RSS returns 500 and robots.txt disallows */feed/; the sitemap is allowed.
+    id: 'gktoday',
+    name: 'GKToday',
+    kind: 'wp-sitemap-latest',
+    url: 'https://www.gktoday.in/wp-sitemap.xml',
+    limit: 40,
+    skipPaths: 'quiz|/gk-questions|/question/|/lesson/|/topics/',
+  },
+  {
+    // One "Current Affairs <date>" digest post a day.
+    id: 'affairscloud',
+    name: 'AffairsCloud',
+    kind: 'rss',
+    url: 'https://affairscloud.com/feed/',
+    digest: true,
+    titleFilter: '^Current Affairs \\d',
+  },
 ];
 
 // Probed and found not to work. Kept so nobody re-derives this.
 const DEAD = [
+  { url: 'https://currentaffairs.adda247.com/feed/', why: '403 from GitHub Actions (2 Oct 2026).' },
+  { url: 'https://www.jagranjosh.com/rss/current-affairs.xml', why: '404 (2 Oct 2026).' },
+  { url: 'https://www.examsdaily.in/feed', why: 'Empty channel (2 Oct 2026).' },
+  { url: 'https://theprint.in/feed/', why: 'Cloudflare challenge page to GitHub Actions (2 Oct 2026).' },
+  { url: 'https://www.gktoday.in/feed/', why: 'HTTP 500, and robots.txt disallows */feed/ (2 Oct 2026); the sitemap is used.' },
   // Coaching institutes (Vajiram & Ravi RSS, KP IAS Academy RSS) were added
   // on 2 Oct 2026 and removed the same day at the reader's request: the feed
   // is news sources only.

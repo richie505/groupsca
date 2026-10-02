@@ -160,6 +160,11 @@ function parseSitemap(xml, { pathIncludes = null } = {}) {
   return out;
 }
 
+/** The child sitemaps of a sitemap index, in the order listed. */
+function parseSitemapIndex(xml) {
+  return [...String(xml).matchAll(/<sitemap>[\s\S]*?<loc>([\s\S]*?)<\/loc>[\s\S]*?<\/sitemap>/gi)].map((m) => decode(m[1]));
+}
+
 /**
  * Readable text of a page, one block per line. Block tags become newlines
  * before the rest of the markup is stripped, so a PIB table of figures stays
@@ -278,6 +283,6 @@ function dedupe(items) {
 }
 
 module.exports = {
-  UA, decode, toIso, fetchText, parseRss, parsePibIndex, parseSitemap, slugTitle, extractText, releaseBody,
+  UA, decode, toIso, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, extractText, releaseBody,
   signature, overlap, dedupe,
 };
