@@ -23,6 +23,26 @@ The app downloads new days every 12 hours (and on pull-to-refresh), keeps 60 day
 and notifies "18 new exam-relevant updates · 6 Andhra Pradesh".
 ```
 
+## What "today" means: the news day
+
+A **news day runs from 06:00 IST to 05:59 IST the next morning**, the way a newspaper does, and every story is
+filed under the news day of its own publish time (converted to IST). Measured in
+[ops/publish-times.md](ops/publish-times.md) (Actions → *Publish-time survey* re-measures it):
+
+| Sources | When they publish (IST) |
+|---|---|
+| Eenadu · The Hans India AP | 03:00–06:00: the morning paper, reporting the day before |
+| The Hindu (national, AP, cities) · TOI · NDTV | 18:00–24:00, peak 20:00–23:00, a trickle to 01:00 |
+| The Hindu editorials | 01:00 and 08:00–09:00 |
+| Hindustan Times · Mint | daytime, 07:00–18:00 |
+| AIR · BusinessLine · Mongabay | 17:00–22:00 |
+| PIB | listing has dates only; each release page's "Posted On" time is read |
+
+So Eenadu's 5 AM upload on 3 Oct is filed under 2 Oct, the day it reports. The collection runs at about
+**06:30** (after the morning papers; this marks the previous day **Final**), **13:00**, **18:30** and **23:30**.
+The app shows each day's span, whether it is *Updating* (last and next update) or *Final*, and every story's
+publish time.
+
 ## Subjects
 
 Each story gets `subject`: one of the 6 books of the Combined Notes (Group-app `book1` … `book6`), so current

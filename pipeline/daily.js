@@ -31,6 +31,12 @@ const F = require('./lib/fetch');
 const S = require('./lib/score');
 const { keyFacts, summarise } = require('./lib/facts');
 
+// When the collection runs (IST), set from ops/publish-times.md: after the
+// morning papers' uploads (closes yesterday), after PIB's and the daytime
+// desks' morning, after AIR's evening bulletins, and after the papers' night
+// rush. Keep in step with the crons in .github/workflows/daily.yml.
+const SCHEDULE_IST = ['06:30', '13:00', '18:30', '23:30'];
+
 const MIN_SCORE = 40;
 // APPSC sets this exam: an Andhra Pradesh story already earns 20 for being
 // AP, so it needs less on top — but it must be ABOUT something examinable
@@ -59,9 +65,10 @@ function parseArgs(argv) {
   return a;
 }
 
-// India's calendar day, whatever the runner's clock says.
+// The news day running now (06:00 IST to 05:59 IST), whatever the runner's
+// clock says. See newsDay() in lib/fetch.js.
 function todayIst(now = Date.now()) {
-  return new Date(now + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+  return F.currentNewsDay(now);
 }
 
 function addDays(iso, n) {
@@ -129,6 +136,11 @@ async function latestFromWpSitemap(src, body, load, date) {
     .slice(-src.limit)
     .map((url) => ({ headline: F.slugTitle(url), date, url, summary: '', category: '' }))
     .filter((r) => r.headline);
+}
+
+function setNewsDay(i) {
+  if (!i.pubDate) i.pubDate = i.date;
+  i.date = F.newsDay({ date: i.pubDate, time: i.time }) || i.pubDate;
 }
 
 async function fetchAll(load, date) {
@@ -199,6 +211,9 @@ function writeIndex(out) {
       const count = (b) => d.items.filter(b).length;
       return {
         date: d.date,
+        // A news day is final once the next one has begun (06:00 IST) and the
+        // morning run has collected the papers' early uploads.
+        final: d.date < F.currentNewsDay(),
         updated: d.updated,
         count: d.items.length,
         ap: count((i) => i.ap),
@@ -206,7 +221,14 @@ function writeIndex(out) {
         high: count((i) => i.band === 'high'),
       };
     });
-  const index = { version: 1, updated: new Date().toISOString(), days };
+  const index = {
+    version: 1,
+    updated: new Date().toISOString(),
+    newsDayStarts: F.NEWS_DAY_STARTS,
+    // IST times of the collection runs (.github/workflows/daily.yml).
+    schedule: SCHEDULE_IST,
+    days,
+  };
   fs.writeFileSync(path.join(out, 'index.json'), JSON.stringify(index, null, 1) + '\n');
   return index;
 }
@@ -248,7 +270,8 @@ function toItem({ article, result, floor }) {
   return {
     id: idOf(article.url),
     date: article.date,
-    // IST time of publication, when the source gives one.
+    // When it was published (IST); `date` above is the news day it is filed under.
+    pubDate: article.pubDate || article.date,
     ...(article.time ? { time: article.time } : {}),
     title: article.headline,
     summary: summarise(article.body ? article.body : article.summary),
@@ -295,6 +318,8 @@ async function run(args) {
   const vocab = S.loadVocab();
 
   const { items: fetched, status } = await fetchAll(load, date);
+  // From here on `date` is the NEWS day; `pubDate` + `time` are when it was published.
+  for (const i of fetched) setNewsDay(i);
   let items = fetched.filter((i) => window.has(i.date));
   const inWindow = items.length;
   items = items.filter((i) => !isNoise(i.headline));
@@ -325,8 +350,9 @@ async function run(args) {
       if (m.description) it.summary = m.description.slice(0, 700);
       // No publish date on the page: keep the run's date rather than lose it.
       if (m.published) {
-        it.date = m.published.date;
+        it.pubDate = m.published.date;
         it.time = m.published.time;
+        setNewsDay(it);
       }
       it.metaOk = true;
     } catch {
@@ -343,7 +369,15 @@ async function run(args) {
   let bodies = 0;
   await pool(pib, args.fixtures ? 1 : BODY_CONCURRENCY, async (it) => {
     try {
-      it.body = F.releaseBody(await load(it.url), it.headline);
+      const html = await load(it.url);
+      it.body = F.releaseBody(html, it.headline);
+      // The listing gives only a date; the release page has the time.
+      const posted = F.pibPosted(html);
+      if (posted && posted.time) {
+        it.pubDate = posted.date;
+        it.time = posted.time;
+        setNewsDay(it);
+      }
       if (it.body) bodies++;
     } catch {
       it.body = '';
@@ -409,4 +443,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { fetchAll, loader, latestFromWpSitemap, pool, run, select, todayIst, addDays, MIN_SCORE, AP_MIN_SCORE, AP_FLOOR };
+module.exports = { SCHEDULE_IST, setNewsDay, fetchAll, loader, latestFromWpSitemap, pool, run, select, todayIst, addDays, MIN_SCORE, AP_MIN_SCORE, AP_FLOOR };

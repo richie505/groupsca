@@ -84,6 +84,35 @@ function toIstStamp(raw) {
   return { date, time };
 }
 
+// THE NEWS DAY. A news day runs from 06:00 IST to 05:59 IST the next
+// morning, the way a newspaper does. Measured (ops/publish-times.md, 3 Oct
+// 2026): Eenadu uploads its paper at 04:00-06:00 and The Hans India at
+// 03:00-06:00, both reporting the previous day; The Hindu, TOI and NDTV run
+// late into the night and trickle past midnight. Filing by calendar date put
+// all of that under the wrong day.
+const NEWS_DAY_STARTS = '06:00';
+
+/** The news day a publish stamp belongs to (a stamp with no time keeps its date). */
+function newsDay(stamp) {
+  if (!stamp || !stamp.date) return null;
+  if (!stamp.time || stamp.time >= NEWS_DAY_STARTS) return stamp.date;
+  const d = new Date(`${stamp.date}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
+
+/** The news day that is running at this moment. */
+function currentNewsDay(now = Date.now()) {
+  const ist = new Date(now + IST_MS).toISOString();
+  return newsDay({ date: ist.slice(0, 10), time: ist.slice(11, 16) });
+}
+
+/** A PIB release page's own "Posted On: 02 OCT 2026 3:15PM" (IST). */
+function pibPosted(html) {
+  const m = String(html).match(/Posted On:\s*([^<]{6,40}?[AP]M)/i);
+  return m ? toIstStamp(m[1]) : null;
+}
+
 function toIso(raw) {
   const st = toIstStamp(raw);
   return st ? st.date : null;
@@ -334,6 +363,6 @@ function dedupe(items) {
 }
 
 module.exports = {
-  UA, decode, toIso, toIstStamp, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, pageMeta, extractText, releaseBody,
+  UA, decode, toIso, toIstStamp, newsDay, currentNewsDay, pibPosted, NEWS_DAY_STARTS, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, pageMeta, extractText, releaseBody,
   signature, overlap, dedupe,
 };

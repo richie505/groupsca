@@ -10,12 +10,18 @@ import kotlinx.serialization.json.Json
 data class FeedIndex(
     val version: Int = 1,
     val updated: String = "",
+    /** A news day runs from this IST time to just before it the next morning. */
+    val newsDayStarts: String = "06:00",
+    /** IST times of the collection runs. */
+    val schedule: List<String> = listOf("06:30", "13:00", "18:30", "23:30"),
     val days: List<DaySummary> = emptyList(),
 )
 
 @Serializable
 data class DaySummary(
     val date: String,
+    /** The next news day has begun and the morning run has collected the papers: no more additions. */
+    val final: Boolean = false,
     val updated: String = "",
     val count: Int = 0,
     val ap: Int = 0,
@@ -38,6 +44,10 @@ data class Item(
     val title: String,
     val summary: String = "",
     val facts: List<Fact> = emptyList(),
+    /** When it was published (IST); `date` is the news day it is filed under. */
+    val pubDate: String = "",
+    /** IST "HH:MM", when the source gives a time. */
+    val time: String = "",
     val source: String = "",
     val sourceId: String = "",
     val official: Boolean = false,

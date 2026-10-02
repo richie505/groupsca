@@ -90,6 +90,35 @@ fun unitOrder(code: String): String {
     return section + code.replace(Regex("\\d+")) { it.value.padStart(3, '0') }
 }
 
+private val dayMonth = DateTimeFormatter.ofPattern("d MMM", Locale.ENGLISH)
+private val clock = DateTimeFormatter.ofPattern("h:mm a", Locale.ENGLISH)
+private val IST = java.time.ZoneId.of("Asia/Kolkata")
+
+/** "6:00 AM 2 Oct → 5:59 AM 3 Oct": the span a news day covers. */
+fun newsDaySpan(iso: String, starts: String = "06:00"): String = runCatching {
+    val d = LocalDate.parse(iso)
+    val start = java.time.LocalTime.parse(starts)
+    val end = start.minusMinutes(1)
+    "${start.format(clock)} ${d.format(dayMonth)} → ${end.format(clock)} ${d.plusDays(1).format(dayMonth)}"
+}.getOrDefault(iso)
+
+/** "9:41 PM" from an IST "21:41". */
+fun clockTime(hhmm: String): String =
+    runCatching { java.time.LocalTime.parse(hhmm).format(clock) }.getOrDefault(hhmm)
+
+/** IST clock time of a UTC ISO instant ("2026-10-02T13:27:00Z" → "6:57 PM"). */
+fun istClock(isoUtc: String): String =
+    runCatching { java.time.Instant.parse(isoUtc).atZone(IST).format(clock) }.getOrDefault("")
+
+/** The next scheduled update after now, as "11:30 PM" (IST). */
+fun nextUpdate(schedule: List<String>, now: java.time.ZonedDateTime = java.time.ZonedDateTime.now(IST)): String {
+    val times = schedule.mapNotNull { runCatching { java.time.LocalTime.parse(it) }.getOrNull() }.sorted()
+    if (times.isEmpty()) return ""
+    val t = now.toLocalTime()
+    val next = times.firstOrNull { it.isAfter(t) } ?: times.first()
+    return next.format(clock) + if (next.isAfter(t)) "" else " tomorrow"
+}
+
 private val longDate = DateTimeFormatter.ofPattern("EEEE, d MMMM yyyy", Locale.ENGLISH)
 private val shortDate = DateTimeFormatter.ofPattern("EEE d MMM", Locale.ENGLISH)
 

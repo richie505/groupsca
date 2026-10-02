@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-02",
- "updated": "2026-10-02T18:39:05.095Z",
+ "updated": "2026-10-02T19:29:06.175Z",
  "sources": [
   {
    "id": "pib",
@@ -76,6 +76,18 @@
    "error": "no fixture"
   },
   {
+   "id": "ht-india",
+   "name": "Hindustan Times — India",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "ndtv-india",
+   "name": "NDTV — India",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
    "id": "hindu-economy",
    "name": "The Hindu — Economy",
    "found": 0,
@@ -100,6 +112,24 @@
    "error": "no fixture"
   },
   {
+   "id": "mint-news",
+   "name": "Mint — News",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "mint-economy",
+   "name": "Mint — Economy",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "bs-top",
+   "name": "Business Standard",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
    "id": "hindu-scitech",
    "name": "The Hindu — Science & Technology",
    "found": 0,
@@ -114,6 +144,12 @@
   {
    "id": "toi-science",
    "name": "Times of India — Science",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "mongabay-india",
+   "name": "Mongabay India",
    "found": 0,
    "error": "no fixture"
   },
@@ -170,12 +206,26 @@
    "name": "The Hindu — Telangana",
    "found": 0,
    "error": "no fixture"
+  },
+  {
+   "id": "gktoday",
+   "name": "GKToday",
+   "found": 3,
+   "error": null
+  },
+  {
+   "id": "affairscloud",
+   "name": "AffairsCloud",
+   "found": 1,
+   "error": null
   }
  ],
  "items": [
   {
    "id": "472d79f25e9d",
    "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "15:15",
    "title": "Cabinet approves Rs 12,500 crore PM-Surya Ghar extension and Polavaram funding",
    "summary": "The Union Cabinet chaired by the Prime Minister on Thursday approved the extension of PM-Surya Ghar: Muft Bijli Yojana till March 2028 with an outlay of Rs. 12,500 crore. The Cabinet also approved release of Rs. 2,800 crore to the Polavaram Irrigation Project in Andhra Pradesh, a national project under the AP Reorganisation Act, 2014.",
    "facts": [
@@ -259,6 +309,8 @@
   {
    "id": "155bc01c92d5",
    "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "11:00",
    "title": "Two new Ramsar sites added in Andhra Pradesh and Tamil Nadu",
    "summary": "India has added two wetlands to the list of Ramsar sites, taking the total number of Ramsar sites in the country to 93. The new sites are Kolleru Lake in Eluru district of Andhra Pradesh and Kazhuveli Bird Sanctuary in Tamil Nadu.",
    "facts": [
@@ -321,6 +373,8 @@
   {
    "id": "517fee770903",
    "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "12:00",
    "title": "RBI keeps repo rate unchanged at 5.5%, lowers GDP growth projection to 6.5%",
    "summary": "The Monetary Policy Committee of the RBI voted unanimously to keep the policy repo rate unchanged at 5.5%.",
    "facts": [],
@@ -384,6 +438,8 @@
   {
    "id": "18791a5a32ff",
    "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "21:00",
    "title": "పోలవరం నిధులకు కేబినెట్‌ ఆమోదం: రూ.2,800 కోట్లు",
    "summary": "",
    "facts": [],
@@ -427,8 +483,70 @@
    "lang": "te"
   },
   {
+   "id": "ac2e59689b45",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "14:30",
+   "title": "RBI Releases Financial Stability Report, December 2026",
+   "summary": "The Reserve Bank of India released its Financial Stability Report. Gross NPA ratio of banks fell to 2.3 per cent.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Gross NPA ratio of banks fell to 2.3 per cent."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/rbi-releases-financial-stability-report-2026/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "RBI and monetary policy"
+   ],
+   "angles": [
+    "RBI",
+    "Banks"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
    "id": "bd312625438f",
    "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "11:00",
    "title": "Justice Surya Kant sworn in as Chief Justice of India",
    "summary": "President administered the oath at Rashtrapati Bhavan; he was appointed under Article 124.",
    "facts": [
@@ -481,6 +599,8 @@
   {
    "id": "e8a73bd6e066",
    "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "10:21",
    "title": "Etikoppaka toys of Anakapalli get GI tag",
    "summary": "The Geographical Indications Registry in Chennai has granted the GI tag to the lacquerware toys of Etikoppaka in Anakapalli district.",
    "facts": [
@@ -525,6 +645,45 @@
     "importance": 4,
     "reuse": 5
    }
+  },
+  {
+   "id": "7b18b4b54719",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "15:30",
+   "title": "Current Affairs 2 October 2026",
+   "summary": "Daily current affairs.",
+   "facts": [],
+   "source": "AffairsCloud",
+   "sourceId": "affairscloud",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://affairscloud.com/current-affairs-2-october-2026/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 0,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
   }
  ]
 }

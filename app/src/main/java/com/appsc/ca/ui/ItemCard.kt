@@ -44,6 +44,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.appsc.ca.data.Item
 import com.appsc.ca.data.bookNumber
+import com.appsc.ca.data.clockTime
 import com.appsc.ca.data.shortDate
 
 /**
@@ -101,7 +102,11 @@ fun ItemCard(
             buildString {
                 append(item.source)
                 if (item.ministry.isNotBlank()) append(" · ").append(item.ministry)
-                append(" · ").append(shortDate(item.date))
+                // When it was published; a 5 AM paper upload shows its own date
+                // though it is filed under the news day before.
+                append(" · ")
+                if (item.time.isNotBlank()) append(shortDate(item.pubDate.ifBlank { item.date })).append(", ").append(clockTime(item.time))
+                else append(shortDate(item.pubDate.ifBlank { item.date }))
                 if (item.alsoIn.isNotEmpty()) append(" · also in ${item.alsoIn.size} more")
             },
             style = MaterialTheme.typography.labelMedium,

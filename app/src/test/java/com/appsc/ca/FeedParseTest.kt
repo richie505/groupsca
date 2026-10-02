@@ -8,6 +8,8 @@ import com.appsc.ca.data.FeedJson
 import com.appsc.ca.data.Filter
 import com.appsc.ca.data.Lane
 import com.appsc.ca.data.groupByUnit
+import com.appsc.ca.data.newsDaySpan
+import com.appsc.ca.data.nextUpdate
 import com.appsc.ca.data.unitOrder
 import kotlinx.serialization.decodeFromString
 import org.junit.Assert.assertEquals
@@ -53,6 +55,19 @@ class FeedParseTest {
         val economy = Filter(subject = "Economy").apply(day.items)
         assertTrue(economy.isNotEmpty())
         assertTrue(economy.all { it.book == "Economy" })
+    }
+
+    @Test
+    fun newsDayIsSixAmToSixAm() {
+        assertEquals("6:00 AM 2 Oct → 5:59 AM 3 Oct", newsDaySpan("2026-10-02"))
+        val ist = java.time.ZoneId.of("Asia/Kolkata")
+        val at = { h: Int, m: Int -> java.time.ZonedDateTime.of(2026, 10, 2, h, m, 0, 0, ist) }
+        val schedule = listOf("06:30", "13:00", "18:30", "23:30")
+        assertEquals("6:30 PM", nextUpdate(schedule, at(14, 0)))
+        assertEquals("6:30 AM tomorrow", nextUpdate(schedule, at(23, 45)))
+        val index = FeedJson.decodeFromString<FeedIndex>(resource("index.json"))
+        assertEquals("06:00", index.newsDayStarts)
+        assertEquals(4, index.schedule.size)
     }
 
     @Test

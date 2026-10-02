@@ -99,8 +99,14 @@ test('dates are the Indian calendar day of publication', () => {
   assert.equal(F.toIso('Current Affairs 1 October 2026'), '2026-10-01');
 });
 
-test('IST day', () => {
-  assert.equal(todayIst(Date.parse('2026-10-01T19:00:00Z')), '2026-10-02');
+test('news day: 06:00 IST to 05:59 IST next morning', () => {
+  assert.equal(todayIst(Date.parse('2026-10-01T19:00:00Z')), '2026-10-01', '00:30 IST on 2 Oct is still the 1 Oct news day');
+  assert.equal(todayIst(Date.parse('2026-10-02T01:00:00Z')), '2026-10-02', '06:30 IST starts the 2 Oct news day');
+  assert.equal(F.newsDay({ date: '2026-10-03', time: '05:10' }), '2026-10-02', "Eenadu's 5 AM upload reports the day before");
+  assert.equal(F.newsDay({ date: '2026-10-03', time: '06:00' }), '2026-10-03');
+  assert.equal(F.newsDay({ date: '2026-10-02', time: '23:50' }), '2026-10-02');
+  assert.equal(F.newsDay({ date: '2026-10-02', time: null }), '2026-10-02', 'no time: the date as given');
+  assert.equal(F.pibPosted('<p>Posted On: 02 OCT 2026 3:15PM by PIB Delhi</p>').time, '15:15');
 });
 
 test('offline run: AP items are kept, merged per day, and not repeated on the next run', async () => {

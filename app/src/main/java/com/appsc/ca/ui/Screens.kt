@@ -62,6 +62,10 @@ import com.appsc.ca.BuildConfig
 import com.appsc.ca.data.BOOKS
 import com.appsc.ca.data.Exam
 import com.appsc.ca.data.bookNumber
+import com.appsc.ca.data.clockTime
+import com.appsc.ca.data.istClock
+import com.appsc.ca.data.newsDaySpan
+import com.appsc.ca.data.nextUpdate
 import com.appsc.ca.data.Filter
 import com.appsc.ca.data.Item
 import com.appsc.ca.data.Lane
@@ -199,6 +203,7 @@ private fun DayFeed(
 
     val date = fixedDate ?: picked ?: vm.days.firstOrNull()?.date
     val day = vm.days.find { it.date == date }
+    val summary = vm.index?.days?.find { it.date == date }
     val dayItems = day?.items.orEmpty()
     val base = Filter(exam = vm.exam)
     val shown = Filter(lane, vm.exam, subject).apply(dayItems)
@@ -208,7 +213,10 @@ private fun DayFeed(
         LazyColumn(Modifier.fillMaxSize()) {
             item {
                 Header(
-                    title = if (fixedDate == null && date == vm.days.firstOrNull()?.date) "Today's current affairs" else "Current affairs",
+                    title = when {
+                        summary != null && !summary.final && date == vm.index?.days?.firstOrNull()?.date -> "Today's current affairs"
+                        else -> "Current affairs"
+                    },
                     subtitle = date?.let { d ->
                         val apN = dayItems.count { it.ap }
                         "${longDate(d)} · ${dayItems.size} updates · $apN Andhra Pradesh"
@@ -225,6 +233,9 @@ private fun DayFeed(
                         IconButton(onClick = onSettings) { Icon(Icons.Filled.Settings, "Settings") }
                     }
                 }
+            }
+            if (date != null) {
+                item { NewsDayBar(date, summary, day?.updated.orEmpty(), vm.index) }
             }
             vm.message?.let { m -> item { Notice(m) } }
 
@@ -346,6 +357,34 @@ private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit) {
     }
 }
 
+/**
+ * What "today" means, on screen: the span of the news day, and whether it is
+ * still being added to (with the last and next update) or final.
+ */
+@Composable
+private fun NewsDayBar(date: String, summary: com.appsc.ca.data.DaySummary?, updated: String, index: com.appsc.ca.data.FeedIndex?) {
+    val starts = index?.newsDayStarts ?: "06:00"
+    val final = summary?.final == true
+    val status = if (final) {
+        "FINAL · nothing more will be added"
+    } else {
+        val last = istClock(updated)
+        val next = nextUpdate(index?.schedule ?: listOf("06:30", "13:00", "18:30", "23:30"))
+        "UPDATING" + (if (last.isNotBlank()) " · last update $last" else "") + (if (next.isNotBlank()) " · next ~$next" else "")
+    }
+    Column(
+        Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp)
+            .clip(RoundedCornerShape(10.dp)).background(if (final) C.Chip else C.AccentSoft).padding(horizontal = 12.dp, vertical = 8.dp),
+    ) {
+        Text(status, style = MaterialTheme.typography.labelMedium, color = if (final) C.Muted else C.Accent, fontWeight = FontWeight.Bold)
+        Text(
+            "News day: ${newsDaySpan(date, starts)} (IST). Morning-paper uploads before ${clockTime(starts)} count for the day before.",
+            style = MaterialTheme.typography.labelMedium,
+            color = C.Muted,
+        )
+    }
+}
+
 // ---------------------------------------------------------------------------
 // Days
 // ---------------------------------------------------------------------------
@@ -362,7 +401,8 @@ private fun DaysScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
             Column(Modifier.fillMaxWidth().clickable { onOpen(d.date) }.padding(horizontal = 16.dp, vertical = 12.dp)) {
                 Text(longDate(d.date), style = MaterialTheme.typography.titleMedium, color = C.Ink)
                 Text(
-                    "${d.items.size} updates · $ap Andhra Pradesh · $critical critical · $unread unread",
+                    (if (vm.index?.days?.find { it.date == d.date }?.final == true) "Final · " else "Updating · ") +
+                        "${d.items.size} updates · $ap Andhra Pradesh · $critical critical · $unread unread",
                     style = MaterialTheme.typography.labelMedium,
                     color = C.Muted,
                 )
@@ -471,7 +511,10 @@ private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
             "Where the stories come from: PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, Times of India, " +
                 "Hindustan Times, NDTV, Mint, Business Standard, BusinessLine, Mongabay India, The Hans India, Eenadu, " +
                 "GKToday and AffairsCloud, collected every morning and evening. Each story is " +
-                "filed under one of the 6 books of your Combined Notes. No AI is used. Each story is " +
+                "filed under one of the 6 books of your Combined Notes. A news day runs from 6:00 AM to 5:59 AM the next " +
+                "morning (IST), the way a newspaper does: Eenadu and The Hans India upload their papers at 3-6 AM and those " +
+                "stories belong to the day before. Updates come at about 6:30 AM (which closes the previous day), 1 PM, " +
+                "6:30 PM and 11:30 PM. No AI is used. Each story is " +
                 "scored by fixed rules out of 100: combined G1 + G2 syllabus units (30), APPSC blueprint keyword angles (20), " +
                 "Andhra Pradesh (20), an official act such as an order, Bill, judgment or appointment (15) and use in both " +
                 "exams (15). Stories scoring 40 or more are kept; Andhra Pradesh stories from 35 (30 for Eenadu headlines) when they name a syllabus unit, a blueprint angle or an official act. Crime, films, weather and " +

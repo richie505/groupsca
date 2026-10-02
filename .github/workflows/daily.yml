@@ -5,12 +5,16 @@ name: Daily current affairs
 # feed/index.json, which the app downloads.
 on:
   schedule:
-    - cron: '41 0 * * *'   # 06:11 IST — yesterday evening's and this morning's news
-    - cron: '41 14 * * *'  # 20:11 IST — the day's releases and evening editions
+    # IST times measured in ops/publish-times.md; a news day runs 06:00-05:59 IST.
+    # Set a few minutes before the half hour; GitHub may start a scheduled run late.
+    - cron: '57 0 * * *'   # ~06:30 IST: after Eenadu / Hans India morning uploads; closes yesterday
+    - cron: '27 7 * * *'   # ~13:00 IST: PIB morning releases, Hindustan Times, Mint
+    - cron: '57 12 * * *'  # ~18:30 IST: AIR and the afternoon desks
+    - cron: '57 17 * * *'  # ~23:30 IST: The Hindu, TOI, NDTV night rush
   workflow_dispatch:
     inputs:
       date:
-        description: 'Day to collect (YYYY-MM-DD, IST). Empty = today.'
+        description: 'News day to collect (YYYY-MM-DD; a news day runs 06:00-05:59 IST). Empty = the current one.'
         required: false
 
 permissions:
