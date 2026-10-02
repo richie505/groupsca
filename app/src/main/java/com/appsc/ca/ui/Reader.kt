@@ -44,7 +44,6 @@ val COACHING_SITES = listOf(
     CoachingSite("Vajiram & Ravi", "https://vajiramandravi.com/current-affairs/", "Daily current affairs, editorials and The Hindu analysis"),
     CoachingSite("Drishti IAS", "https://www.drishtiias.com/current-affairs-news-analysis-editorials", "Daily news analysis, editorials and State PCS current affairs"),
     CoachingSite("KP IAS Academy", "https://kpiasacademy.com/", "Daily APPSC, TGPSC and UPSC current affairs (Hyderabad)"),
-    CoachingSite("Civic Centre IAS", "https://www.civiccentre.in/", "APPSC / TGPSC Groups coaching (Hyderabad)"),
 )
 
 /**

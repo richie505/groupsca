@@ -52,7 +52,7 @@ designation, Index / rank, Judgment, Scheme / launch, Figures, …). Nothing is 
 - **Days** — every downloaded day with counts (AP, critical, unread).
 - **Syllabus** — every unit of the combined tracker (G1-A1 … G1-F22, G2-S1 … G2-M2B-U5) with the stories filed under it.
 - **Saved** — bookmarked stories, kept even after their day leaves the phone.
-- **Coaching** — Vision IAS, Vajiram & Ravi, Drishti IAS, KP IAS Academy and Civic Centre open inside the app;
+- **Coaching** — Vision IAS, Vajiram & Ravi, Drishti IAS and KP IAS Academy open inside the app;
   log in once with your own subscription and it stays logged in **on the phone only** (WebView cookies).
   Coaching stories in the feed have "Read full analysis", which opens there. Nothing from a paid account is
   fetched by the daily job or stored in this repository.
