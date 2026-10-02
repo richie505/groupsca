@@ -141,8 +141,10 @@ function parsePibIndex(html) {
 // URL's slug). Used for sites with no RSS whose robots.txt allows the sitemap:
 // Eenadu (Telugu), Vision IAS.
 function slugTitle(url) {
-  const slug = decodeURIComponent(String(url).replace(/[?#].*$/, '').replace(/\/+$/, '').split('/').pop() || '');
-  const words = slug.replace(/\.[a-z]+$/i, '').replace(/[-_]+/g, ' ').replace(/\b\d{4,}\b/g, ' ').trim();
+  const parts = decodeURIComponent(String(url).replace(/[?#].*$/, '').replace(/\/+$/, '')).split('/');
+  // Eenadu-style URLs end in numeric ids (/1701/126178528): use the last word segment.
+  const slug = [...parts].reverse().find((p) => /[a-z]/i.test(p)) || '';
+  const words = slug.replace(/\.[a-z]+$/i, '').replace(/[-_]+/g, ' ').trim();
   return words ? words.charAt(0).toUpperCase() + words.slice(1) : '';
 }
 
@@ -158,6 +160,25 @@ function parseSitemap(xml, { pathIncludes = null } = {}) {
     out.push({ headline, date, url, summary: '', category: tag(block, 'news:keywords') });
   }
   return out;
+}
+
+/**
+ * An article page's own title, description and publish date, from its
+ * Open Graph / article meta tags. Used for GKToday, whose sitemap gives only
+ * URLs.
+ */
+function pageMeta(html) {
+  const meta = (attr, name) => {
+    const re = new RegExp(`<meta[^>]+${attr}=["']${name}["'][^>]*>`, 'i');
+    const tagHtml = (String(html).match(re) || [])[0] || '';
+    return decode((tagHtml.match(/content=["']([^"']*)["']/i) || [])[1] || '');
+  };
+  const title = meta('property', 'og:title') || decode((String(html).match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || '');
+  return {
+    title: title.replace(/\s+[-–|]\s+GKToday\s*$/i, '').trim(),
+    description: meta('property', 'og:description') || meta('name', 'description'),
+    published: toIso(meta('property', 'article:published_time') || meta('property', 'og:updated_time')),
+  };
 }
 
 /** The child sitemaps of a sitemap index, in the order listed. */
@@ -283,6 +304,6 @@ function dedupe(items) {
 }
 
 module.exports = {
-  UA, decode, toIso, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, extractText, releaseBody,
+  UA, decode, toIso, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, pageMeta, extractText, releaseBody,
   signature, overlap, dedupe,
 };

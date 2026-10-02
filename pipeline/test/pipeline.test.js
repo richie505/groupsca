@@ -124,8 +124,9 @@ test('news sitemap: Telugu headlines, filtered to the AP section', () => {
   assert.match(rows[0].headline, /పోలవరం/);
 });
 
-test('plain sitemap: the headline is read from the slug', () => {
+test('plain sitemap: the headline is read from the slug, numbers kept', () => {
   assert.equal(F.slugTitle('https://visionias.in/current-affairs/news-today/green-energy-corridor-phase-iii/'), 'Green energy corridor phase iii');
+  assert.equal(F.slugTitle('https://www.gktoday.in/centre-approves-1200-crore-teesta-bridge/'), 'Centre approves 1200 crore teesta bridge');
 });
 
 test('Telugu: a Cabinet decision on Polavaram is examinable, a murder is vetoed', () => {
@@ -179,8 +180,12 @@ test('offline run: GKToday newest posts (quizzes skipped) and the AffairsCloud d
   assert.ok(urls.some((u) => /financial-stability-report/.test(u)));
   assert.ok(!urls.some((u) => /quizbase/.test(u)));
   const gk = r.scored.find((x) => /p4-initiative/.test(x.article.url));
-  assert.equal(gk.article.headline, 'Andhra pradesh launches p4 initiative to end poverty');
-  assert.equal(gk.article.date, '2026-10-02');
+  assert.equal(gk.article.headline, 'Andhra Pradesh launches P4 initiative to end poverty', 'title read from the page');
+  assert.equal(gk.article.date, '2026-10-01', 'publish date read from the page');
+  assert.match(gk.article.summary, /Swarna Andhra/);
+  assert.ok(!urls.some((u) => /old-story/.test(u)), 'a post published outside the window is dropped');
+  const rbi = r.kept.find((i) => /Financial Stability/.test(i.title));
+  assert.equal(rbi.title, 'RBI Releases Financial Stability Report, December 2026', '"- GKToday" is trimmed');
   assert.ok(r.kept.some((i) => i.title === 'Current Affairs 2 October 2026' && i.digest));
   assert.ok(!urls.some((u) => /sbi-po/.test(u)), 'AffairsCloud non-digest posts are skipped');
 });
@@ -194,6 +199,6 @@ test('GKToday posts are kept as current-affairs picks', async () => {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
   const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true });
   const gk = r.kept.filter((i) => i.sourceId === 'gktoday');
-  assert.ok(gk.some((i) => /financial stability report/i.test(i.title)));
+  assert.ok(gk.some((i) => /Financial Stability Report/.test(i.title)));
   assert.ok(gk.every((i) => i.digest));
 });

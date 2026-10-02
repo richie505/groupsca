@@ -20,6 +20,7 @@
 //             AP-relevant regardless of what the headline says.
 //   'wp-sitemap-latest'  a WordPress sitemap index whose newest child lists
 //                the latest posts, undated (GKToday); `limit` newest are taken
+//   fetchMeta read each new item's page for its title, description and publish date
 //   digest    a current-affairs site's own exam pick (AffairsCloud's daily digest,
 //             GKToday's posts): kept unless vetoed, whatever it scores
 //   titleFilter  a regex a headline must match to be taken.
@@ -299,8 +300,11 @@ const SOURCES = [
     url: 'https://www.gktoday.in/wp-sitemap.xml',
     limit: 40,
     skipPaths: 'quiz|/gk-questions|/question/|/lesson/|/topics/',
-    // GKToday's posts are already exam current affairs, and a slug is too
-    // little text to score: kept unless vetoed, like a digest.
+    // Each new post's own page gives its title, description and publish date
+    // (robots.txt allows article pages); posts not published in the last two
+    // days are dropped, which removes GKToday's static GK articles.
+    fetchMeta: true,
+    // GKToday's current-affairs posts are already exam picks: kept unless vetoed.
     digest: true,
   },
   {

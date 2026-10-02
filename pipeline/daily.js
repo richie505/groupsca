@@ -96,7 +96,7 @@ function loader(fixtures) {
   // and any other URL by its file name.
   return async (url, src) => {
     const prid = (url.match(/PRID=(\d+)/) || [])[1];
-    const names = src ? [`${src.id}.xml`, `${src.id}.html`] : prid ? [`pib-${prid}.html`] : [url.split('/').pop()];
+    const names = src ? [`${src.id}.xml`, `${src.id}.html`] : prid ? [`pib-${prid}.html`] : [url.replace(/\/+$/, '').split('/').pop()];
     for (const n of names) {
       const p = path.join(fixtures, n);
       if (fs.existsSync(p)) return fs.readFileSync(p, 'utf8');
@@ -135,7 +135,12 @@ async function fetchAll(load, date) {
   const results = await Promise.all(
     SOURCES.map(async (src) => {
       try {
-        const body = await load(src.url, src);
+        // One retry: a slow site (AffairsCloud timed out once on 3 Oct 2026)
+        // should not cost the day.
+        const body = await load(src.url, src).catch(async () => {
+          await new Promise((r) => setTimeout(r, 3000));
+          return load(src.url, src);
+        });
         const rows =
           src.kind === 'pib-index' ? F.parsePibIndex(body)
           : src.kind === 'sitemap' ? F.parseSitemap(body, { pathIncludes: src.pathIncludes })
@@ -305,6 +310,25 @@ async function run(args) {
     (i) => !seenUrl.has(i.url) && !seenTitle.some((t) => F.overlap(t, i.headline) >= 0.75)
   );
   const fresh = items.length;
+
+  // GKToday: the article's own title, description and publish date. Anything
+  // not published in the window (static GK posts, old articles) is dropped.
+  const withMeta = items.filter((i) => SOURCES.find((x) => x.id === i.sourceId && x.fetchMeta));
+  await pool(withMeta, args.fixtures ? 1 : 4, async (it) => {
+    try {
+      const m = F.pageMeta(await load(it.url));
+      if (m.title) it.headline = m.title;
+      if (m.description) it.summary = m.description.slice(0, 700);
+      // No publish date on the page: keep the run's date rather than lose it.
+      it.date = m.published || it.date;
+      it.metaOk = true;
+    } catch {
+      it.metaOk = false;
+    }
+  });
+  items = items
+    .filter((i) => !withMeta.includes(i) || i.metaOk)
+    .filter((i) => window.has(i.date) && !isNoise(i.headline));
 
   // 3. PIB release text. Official, so it is both quotable and the best
   //    evidence for scoring; newspapers are scored on headline + feed summary.
