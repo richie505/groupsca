@@ -189,3 +189,11 @@ test('no coaching sources are configured', () => {
   const { SOURCES } = require('../sources');
   assert.ok(!SOURCES.some((s) => /vajiram|kpias|vision|drishti/i.test(s.id + s.url)));
 });
+
+test('GKToday posts are kept as current-affairs picks', async () => {
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
+  const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true });
+  const gk = r.kept.filter((i) => i.sourceId === 'gktoday');
+  assert.ok(gk.some((i) => /financial stability report/i.test(i.title)));
+  assert.ok(gk.every((i) => i.digest));
+});
