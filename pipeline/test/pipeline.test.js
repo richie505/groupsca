@@ -136,3 +136,12 @@ test('Telugu: a Cabinet decision on Polavaram is examinable, a murder is vetoed'
   assert.ok(good.score >= 35, String(good.score));
   assert.ok(S.score({ headline: 'గుంటూరులో హత్య కేసులో ఇద్దరి అరెస్టు', apSource: true }, vocab).vetoed);
 });
+
+test('Telugu headlines without digits are not merged into one story', () => {
+  const out = F.dedupe([
+    { headline: 'రాష్ట్ర అప్రెంటిస్‌షిప్‌ కౌన్సిల్‌ ఏర్పాటు', sourceName: 'Eenadu' },
+    { headline: 'పరిశ్రమల కోసం భూముల గుర్తింపు', sourceName: 'Eenadu' },
+    { headline: 'ఎగుమతుల్లో విశాఖ అగ్రస్థానం', sourceName: 'Eenadu' },
+  ]);
+  assert.equal(out.length, 3);
+});

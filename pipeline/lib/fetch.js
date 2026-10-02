@@ -221,7 +221,10 @@ const STOP = new Set(
 function words(headline) {
   return String(headline)
     .toLowerCase()
-    .replace(/[^a-z0-9₹%\s]/g, ' ')
+    // Any script's letters, not just a-z: with ASCII only, every Telugu
+    // headline without a digit had the same empty signature and all of them
+    // were merged into one story (2 Oct 2026, Eenadu: 162 -> 1).
+    .replace(/[^\p{L}\p{M}\p{N}₹%\s]/gu, ' ')
     .split(/\s+/)
     .filter((w) => w.length > 2 && !STOP.has(w));
 }
