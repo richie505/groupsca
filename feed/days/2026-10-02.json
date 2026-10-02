@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-02",
- "updated": "2026-10-02T17:54:40.477Z",
+ "updated": "2026-10-02T18:01:39.328Z",
  "sources": [
   {
    "id": "pib",
@@ -24,20 +24,20 @@
   {
    "id": "air-national",
    "name": "AIR News — National",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "air-international",
    "name": "AIR News — International",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "air-business",
    "name": "AIR News — Business",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "hindu-national",
@@ -178,10 +178,10 @@
    "error": null
   },
   {
-   "id": "vision-ias",
-   "name": "Vision IAS",
-   "found": 0,
-   "error": "no items parsed"
+   "id": "kpias",
+   "name": "KP IAS Academy",
+   "found": 5,
+   "error": null
   }
  ],
  "items": [
@@ -309,6 +309,67 @@
     "importance": 0,
     "reuse": 15
    }
+  },
+  {
+   "id": "438c5e0ce714",
+   "date": "2026-10-02",
+   "title": "APPSC Current Affairs October 2nd 2026",
+   "summary": "APPSC Boost Your APPSC Group-1 Preparation – New Batch & Test Series 2026 APPSC Group 1 New Batch September 6th 2026 APPSC Group-1 Preparation Booster -Test Series News at a Glance Rayalaseema Global Horticulture Hub Bharat Maritime Insurance Pool: A Domestic Safety Net for Maritime Trade Gandhi Jayanti 2026: Mahatma Gandhi’s Role, Philosophy and Contemporary […] The post APPSC Current Affairs October 2nd 2026…",
+   "facts": [],
+   "source": "KP IAS Academy",
+   "sourceId": "kpias",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://kpiasacademy.com/appsc-current-affairs-october-2nd-2026/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Indian History"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    },
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Contemporary",
+    "Post"
+   ],
+   "score": 74,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "coaching": true
   },
   {
    "id": "ed33c644654e",
@@ -2282,6 +2343,116 @@
    }
   },
   {
+   "id": "8d2ce8b5c4c4",
+   "date": "2026-10-02",
+   "title": "UPSC CARE Mains Practice October 2nd 2026",
+   "summary": "Mahatma Gandhi transformed India’s freedom struggle into a broad-based mass movement by combining political resistance with social and ethical reform. Discuss his contribution to the national movement and examine the contemporary relevance of Gandhian philosophy.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "The Bharat Maritime Insurance Pool (BMIP) is an important step towards strengthening […] The post UPSC CARE Mains Practice October 2nd 2026 appeared first on KPs 21st Century IAS Academy ."
+    }
+   ],
+   "source": "KP IAS Academy",
+   "sourceId": "kpias",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://kpiasacademy.com/upsc-care-mains-practice-october-2nd-2026/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Economy",
+    "Indian History"
+   ],
+   "units": [
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    },
+    {
+     "code": "G1-A5",
+     "exam": "G1",
+     "label": "Indian War of Independence 1857; Religious and Social Reform Movements of the 19th Century; India's Freedom Movement; Revolutionaries in India and Abroad"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Contemporary",
+    "Post"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "coaching": true
+  },
+  {
+   "id": "f1fda348ebfb",
+   "date": "2026-10-02",
+   "title": "కోటిపల్లి-నరసాపురం రైల్వేలైన్‌ భూసేకరణకు రూ.100 కోట్లు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Times of India — Top stories",
+    "The Hindu — Telangana"
+   ],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126178273",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rail"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 7,
+    "reuse": 5
+   },
+   "lang": "te"
+  },
+  {
    "id": "485d4b7baf8f",
    "date": "2026-10-02",
    "title": "After 50+ years of pulp-mill pollution, regulators propose restoring North Carolina's Roanoke River",
@@ -3143,6 +3314,51 @@
    }
   },
   {
+   "id": "e349cb19f7d5",
+   "date": "2026-10-02",
+   "title": "Photo exhibition on Mahatma marks Gandhi Jayanti at ANU",
+   "summary": "40 photographers from across India receive awards for participating in the Independence Day photography competition conducted by Photography Academy of India",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/photo-exhibition-on-mahatma-marks-gandhi-jayanti-at-anu/article71537560.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Indian History"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Award"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "0370a6998275",
    "date": "2026-10-02",
    "title": "Communicating Swachhata, Changing Behaviour",
@@ -3880,6 +4096,43 @@
    "apFloor": true
   },
   {
+   "id": "7306716002eb",
+   "date": "2026-10-02",
+   "title": "GVMC bags state and district level awards in multiple categories",
+   "summary": "GVMC bags state-level awards in the ‘Swachha Municipalities’ and ‘Swachha Government Offices’ categories",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/gvmc-bags-state-and-district-level-awards-in-multiple-categories-1127831",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [
+    "Polity"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Award"
+   ],
+   "score": 29,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
    "id": "c9d84adff2d9",
    "date": "2026-10-02",
    "title": "Pottepalem bridge ends four-decade wait in Nellore",
@@ -3991,6 +4244,357 @@
    "band": "low",
    "why": {
     "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "b69efd625d58",
+   "date": "2026-10-02",
+   "title": "SCoR launches a comprehensive cleanliness drive in Vizag station",
+   "summary": "SCoR organized a mega cleanliness and awareness drive at Visakhapatnam railway station for ‘Swachhata Hi Seva’ (SHS) – 2026",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/scor-launches-a-comprehensive-cleanliness-drive-in-vizag-station-1127834",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subjects": [],
+   "units": [],
+   "topics": [
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [],
+   "score": 28,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "d10643456d69",
+   "date": "2026-10-02",
+   "title": "Andhra Pradesh commercial tax collections rise 18% to ₹30,436 cr in H1",
+   "summary": "Andhra Pradesh collects ₹4,986.18 crore in commercial taxes in September, ₹651.34 crore or 15.03% more than a year earlier",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Andhra Pradesh collects ₹4,986.18 crore in commercial taxes in September, ₹651.34 crore or 15.03% more than a year earlier"
+    }
+   ],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/news/national/andhra-pradesh-commercial-tax-collections-rise-18-to-30436-cr-in-h1/article71536464.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 26,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "0c94cd87507c",
+   "date": "2026-10-02",
+   "title": "Hyderabad devotee donates ₹1.02 crore to TTD’s SV Pranadana Trust",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Hyderabad devotee donates ₹1.02 crore to TTD’s SV Pranadana Trust"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/hyderabad-devotee-donates-102-crore-to-ttds-sv-pranadana-trust/article71537234.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 26,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "1d126ba25592",
+   "date": "2026-10-02",
+   "title": "Minister offers silk clothes to Poleramma in Venkatagiri",
+   "summary": "Informs that devotees and donors had contributed several gold ornaments, worth Rs 1.70 crore and they were kept as fixed deposit in the temple’s name",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Informs that devotees and donors had contributed several gold ornaments, worth Rs 1.70 crore and they were kept as fixed deposit in the temple’s name"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/minister-offers-silk-clothes-to-poleramma-in-venkatagiri-1127839",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 26,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "c7929448a551",
+   "date": "2026-10-02",
+   "title": "TDP leaders happy after successful conduct of Palle Panduga 3.0 in Udayagiri",
+   "summary": "MLA says ₹52 crore earmarked for 381 works to tackle fluoride contamination in the Assembly constituency",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "MLA says ₹52 crore earmarked for 381 works to tackle fluoride contamination in the Assembly constituency"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/tdp-leaders-happy-after-successful-conduct-of-palle-panduga-30-in-udayagiri/article71537354.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [
+    "Polity",
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 26,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "c018904d3f79",
+   "date": "2026-10-02",
+   "title": "JSP MP urges Andhra Pradesh Chief Minister to mark Modi’s 25 years in public service with prayers, service activities",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "JSP MP urges Andhra Pradesh Chief Minister to mark Modi’s 25 years in public service with prayers, service activities"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/jsp-mp-urges-andhra-pradesh-chief-minister-to-mark-modis-25-years-in-public-service-with-prayers-service-activities/article71537143.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Years"
+   ],
+   "score": 25,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "6ff034d2c67a",
+   "date": "2026-10-02",
+   "title": "Rayalaseema ryots who battle the odds deserve every support, says Nirmala Sitharaman",
+   "summary": "The Union Finance Minister calls the launch of two initiatives for the benefit of farmers as a historic moment for the region",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/rayalaseema-ryots-who-battle-the-odds-deserve-every-support-says-nirmala-sitharaman/article71536806.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Finance Minister"
+   ],
+   "score": 25,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "38c7c1d96374",
+   "date": "2026-10-02",
+   "title": "Spiritual guru Kalki Bhagavan laid to rest in Andhra Pradesh",
+   "summary": "Minister for Endowments Anam Ramanarayana Reddy, as State representative, places a wreath on his mortal remains and pays tributes",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/spiritual-guru-kalki-bhagavan-laid-to-rest-in-andhra-pradesh/article71537609.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Remains"
+   ],
+   "score": 25,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true
+  },
+  {
+   "id": "070bbe87b859",
+   "date": "2026-10-02",
+   "title": "Vijayawada’s Kanaka Durga temple announces schedule for Dasara celebrations",
+   "summary": "Dasara celebrations will be organised atop Indrakeeladri from October 11 to 20; The Chief Minister will offer silk robes to the Goddess on behalf of the State government on October 16",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/cities/Vijayawada/vijayawadas-kanaka-durga-temple-announces-schedule-for-dasara-celebrations/article71537251.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subjects": [],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Goddess"
+   ],
+   "score": 25,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
     "angles": 5,
     "ap": 20,
     "importance": 0,
