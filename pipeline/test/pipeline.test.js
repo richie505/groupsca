@@ -106,8 +106,33 @@ test('offline run: AP items are kept, merged per day, and not repeated on the ne
   const index = JSON.parse(fs.readFileSync(path.join(out, 'index.json'), 'utf8'));
   assert.equal(index.days[0].date, '2026-10-02');
 
+  // Vetoed stories are looked at again (only published ones are remembered),
+  // but nothing is published twice.
   const second = await run(args);
-  assert.equal(second.report.fresh, 0);
+  assert.equal(second.kept.length, 0);
   const again = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
   assert.equal(again.items.length, day.items.length);
+});
+
+test('news sitemap: Telugu headlines, filtered to the AP section', () => {
+  const rows = F.parseSitemap(fs.readFileSync(path.join(FIX, 'eenadu-ap.xml'), 'utf8'), {
+    pathIncludes: ['/telugu-news/andhra-pradesh/'],
+  });
+  assert.equal(rows.length, 2);
+  assert.equal(rows[0].date, '2026-10-02');
+  assert.match(rows[0].headline, /పోలవరం/);
+});
+
+test('plain sitemap: the headline is read from the slug', () => {
+  assert.equal(F.slugTitle('https://visionias.in/current-affairs/news-today/green-energy-corridor-phase-iii/'), 'Green energy corridor phase iii');
+});
+
+test('Telugu: a Cabinet decision on Polavaram is examinable, a murder is vetoed', () => {
+  const good = S.score({ headline: 'పోలవరం నిధులకు కేబినెట్‌ ఆమోదం: రూ.2,800 కోట్లు', apSource: true }, vocab);
+  assert.ok(!good.vetoed);
+  assert.ok(good.anchored, JSON.stringify(good));
+  assert.ok(good.angles.includes('Cabinet'));
+  assert.ok(good.why.importance > 0);
+  assert.ok(good.score >= 35, String(good.score));
+  assert.ok(S.score({ headline: 'గుంటూరులో హత్య కేసులో ఇద్దరి అరెస్టు', apSource: true }, vocab).vetoed);
 });

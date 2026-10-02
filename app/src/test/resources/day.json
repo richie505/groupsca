@@ -1,13 +1,43 @@
 {
  "version": 1,
  "date": "2026-10-02",
- "updated": "2026-10-02T17:32:14.889Z",
+ "updated": "2026-10-02T17:53:52.514Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
    "found": 3,
    "error": null
+  },
+  {
+   "id": "pib-vijayawada",
+   "name": "PIB Vijayawada",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "pib-hyderabad",
+   "name": "PIB Hyderabad",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "air-national",
+   "name": "AIR News — National",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "air-international",
+   "name": "AIR News — International",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "air-business",
+   "name": "AIR News — Business",
+   "found": 0,
+   "error": "no fixture"
   },
   {
    "id": "hindu-national",
@@ -124,6 +154,12 @@
    "error": "no fixture"
   },
   {
+   "id": "eenadu-ap",
+   "name": "Eenadu — Andhra Pradesh",
+   "found": 2,
+   "error": null
+  },
+  {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
    "found": 0,
@@ -132,6 +168,18 @@
   {
    "id": "hindu-telangana",
    "name": "The Hindu — Telangana",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "vajiram",
+   "name": "Vajiram & Ravi",
+   "found": 0,
+   "error": "no fixture"
+  },
+  {
+   "id": "vision-ias",
+   "name": "Vision IAS",
    "found": 0,
    "error": "no fixture"
   }
@@ -254,6 +302,11 @@
      "code": "G1-D2",
      "exam": "G1",
      "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
     }
    ],
    "topics": [],
@@ -262,10 +315,10 @@
     "Bird sanctuary",
     "Wetlands"
    ],
-   "score": 75,
-   "band": "high",
+   "score": 81,
+   "band": "critical",
    "why": {
-    "syllabus": 18,
+    "syllabus": 24,
     "angles": 15,
     "ap": 20,
     "importance": 7,
@@ -333,6 +386,48 @@
     "importance": 4,
     "reuse": 15
    }
+  },
+  {
+   "id": "18791a5a32ff",
+   "date": "2026-10-02",
+   "title": "పోలవరం నిధులకు కేబినెట్‌ ఆమోదం: రూ.2,800 కోట్లు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/cabinet-polavaram/1701/126178600",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subjects": [],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Cabinet"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 12,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "bd312625438f",

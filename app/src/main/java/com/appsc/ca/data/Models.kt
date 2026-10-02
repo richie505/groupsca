@@ -61,6 +61,10 @@ data class Item(
     /** critical · high · medium */
     val band: String = "medium",
     val why: Why = Why(),
+    /** A coaching institute's note: the full analysis is read in the app, logged in. */
+    val coaching: Boolean = false,
+    /** "te" for Telugu sources (Eenadu). */
+    val lang: String = "en",
 )
 
 @Serializable

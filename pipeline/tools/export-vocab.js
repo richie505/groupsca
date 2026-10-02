@@ -73,11 +73,15 @@ const units = [...G1P_UNITS.map((u) => ({ ...u, exam: 'G1' })), ...G2_UNITS.map(
       tracker: ids.length > 1 ? ids[0].replace(/-[A-Z]+$/, '') : ids[0],
       section: t.section,
       label: ids.length > 1 ? t.section.replace(/^Screening /, 'Screening ') : t.title,
-      aliases: [...new Set([...(u.aliases || []), ...(apVocab.unitAliases[u.code] || [])])]
+      aliases: [...new Set([
+        ...(u.aliases || []),
+        ...(apVocab.unitAliases[u.code] || []),
+        ...((apVocab.telugu && apVocab.telugu.units[u.code]) || []),
+      ])]
         .map((a) => ({ a, strict: strictOf(a) })),
     };
   });
-for (const code of Object.keys(apVocab.unitAliases)) {
+for (const code of [...Object.keys(apVocab.unitAliases), ...Object.keys((apVocab.telugu || {}).units || {})]) {
   if (!units.some((u) => u.code === code)) throw new Error(`ap-vocab.json: unknown unit ${code}`);
 }
 

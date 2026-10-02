@@ -10,12 +10,19 @@
 // Two kinds:
 //   'pib-index'  the PIB release listing, parsed out of HTML
 //   'rss'        a standard RSS 2.0 channel
+//   'sitemap'    a Google News or plain sitemap, for sites with no RSS whose
+//                robots.txt allows it (headline + link only)
 //
 // Flags that change how an item is treated downstream:
 //   primary   an official source — the government saying what it did, not a
 //             paper's account of it. Weighted heavily in the review queue.
 //   ap        the feed is Andhra Pradesh-focused, so every item from it is
 //             AP-relevant regardless of what the headline says.
+//   coaching  a coaching institute's current-affairs notes. Only the headline,
+//             the feed's own summary and the link are kept; the full analysis
+//             is read in the app, logged in on the reader's own phone.
+//   lang      'te' for Telugu sources; scored with the Telugu word list in
+//             vocab/ap-vocab.json.
 //   opinion   editorials and analysis. These are the *quotation* source. The Q
 //             bank lags almost universally because nothing in a news cycle
 //             hands you a quotable line unless you are looking for one, and an
@@ -30,6 +37,46 @@ const SOURCES = [
     url: 'https://www.pib.gov.in/allrelease.aspx?reg=3&lang=1',
     primary: true,
     note: 'Cabinet decisions, scheme launches, official figures. The single most valuable source.',
+  },
+
+  {
+    // PIB's Vijayawada office: releases about Andhra Pradesh. reg=45 found
+    // by pipeline/tools/probe.js --pib-regions-high (2 Oct 2026).
+    id: 'pib-vijayawada',
+    name: 'PIB Vijayawada',
+    kind: 'pib-index',
+    url: 'https://www.pib.gov.in/allrelease.aspx?reg=45&lang=1',
+    primary: true,
+    ap: true,
+  },
+  {
+    id: 'pib-hyderabad',
+    name: 'PIB Hyderabad',
+    kind: 'pib-index',
+    url: 'https://www.pib.gov.in/allrelease.aspx?reg=5&lang=1',
+    primary: true,
+  },
+  {
+    id: 'air-national',
+    name: 'AIR News — National',
+    kind: 'rss',
+    url: 'https://www.newsonair.gov.in/category/national/feed/',
+    primary: true,
+    note: 'All India Radio (Akashvani). Public broadcaster; short, factual items.',
+  },
+  {
+    id: 'air-international',
+    name: 'AIR News — International',
+    kind: 'rss',
+    url: 'https://www.newsonair.gov.in/category/international/feed/',
+    primary: true,
+  },
+  {
+    id: 'air-business',
+    name: 'AIR News — Business',
+    kind: 'rss',
+    url: 'https://www.newsonair.gov.in/category/business/feed/',
+    primary: true,
   },
 
   // ---- National news ------------------------------------------------------
@@ -174,6 +221,17 @@ const SOURCES = [
     note: 'Telugu daily. Small feed, but state coverage the English press skips.',
   },
   {
+    // No RSS (every /rss/ path is "Page not found"), but robots.txt allows the
+    // Google News sitemap: Telugu headline, date and link of every story.
+    id: 'eenadu-ap',
+    name: 'Eenadu — Andhra Pradesh',
+    kind: 'sitemap',
+    url: 'https://www.eenadu.net/sitemap-news.xml',
+    pathIncludes: ['/telugu-news/andhra-pradesh/'],
+    ap: true,
+    lang: 'te',
+  },
+  {
     // Telangana rather than AP, but the two states share water disputes,
     // bifurcation questions and a labour market, and Hyderabad datelines carry
     // AP stories often enough to be worth reading.
@@ -188,10 +246,33 @@ const SOURCES = [
     kind: 'rss',
     url: 'https://www.thehindu.com/news/national/telangana/feeder/default.rss',
   },
+
+  // ---- Coaching institutes: headline + summary + link --------------------
+  {
+    id: 'vajiram',
+    name: 'Vajiram & Ravi',
+    kind: 'rss',
+    url: 'https://vajiramandravi.com/current-affairs/feed/',
+    coaching: true,
+  },
+  {
+    // No RSS; the current-affairs sitemap index lists a Google News sitemap.
+    id: 'vision-ias',
+    name: 'Vision IAS',
+    kind: 'sitemap',
+    url: 'https://visionias.in/current-affairs/news.xml',
+    pathIncludes: ['/current-affairs/'],
+    coaching: true,
+  },
 ];
 
 // Probed and found not to work. Kept so nobody re-derives this.
 const DEAD = [
+  { url: 'https://www.drishtiias.com/rss.rss', why: 'Works, but lists only Drishti\'s daily quizzes, not news (2 Oct 2026). Drishti is read in the app instead.' },
+  { url: 'https://www.eenadu.net/rss/*', why: '"Page not found" on every RSS path (2 Oct 2026); the news sitemap is used instead.' },
+  { url: 'https://www.ap.gov.in, ipr.ap.gov.in, apcmo.ap.gov.in', why: 'Connection refused from GitHub Actions (2 Oct 2026).' },
+  { url: 'https://www.newsonair.gov.in/category/state/feed/', why: 'Empty channel (2 Oct 2026).' },
+  { url: 'https://ddnews.gov.in/en/rss-feeds/', why: 'Connection fails from GitHub Actions (2 Oct 2026).' },
   // 403 to GitHub's Actions runners on the first live run (2 Oct 2026), though
   // they serve browsers. Left in SOURCES because they may relent; each failure
   // is listed in the run summary and costs nothing else.

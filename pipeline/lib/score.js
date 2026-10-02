@@ -37,6 +37,8 @@ function norm(text) {
     .replace(/[‘’]/g, "'")
     .replace(/[“”]/g, '"')
     .replace(/[–—]/g, '-')
+    // Zero-width joiners: Eenadu writes "ఎంవోయూ‌" with one, a search term without.
+    .replace(/[\u200b-\u200d\ufeff]/g, '')
     .replace(/\s+/g, ' ');
 }
 
@@ -97,7 +99,15 @@ function loadVocab(dir = path.join(__dirname, '..', 'vocab')) {
   }
 
   const apTerms = read('ap-terms.json').map((t) => ({ term: t, test: matcher(t, /^[A-Z0-9]{2,6}$/.test(t)) }));
-  return { units, topics, angles, apTerms };
+
+  // Telugu sources: their own angle, official-act and noise words.
+  const te = (JSON.parse(fs.readFileSync(path.join(dir, 'ap-vocab.json'), 'utf8')).telugu) || {};
+  const telugu = {
+    angles: Object.entries(te.angles || {}).map(([term, angle]) => ({ needle: norm(term), angle })),
+    instruments: (te.instruments || []).flatMap((g) => g.terms.map((t) => ({ needle: norm(t), w: g.w }))),
+    noise: (te.noise || []).map(norm),
+  };
+  return { units, topics, angles, apTerms, telugu };
 }
 
 const countOf = (re, text) => (text.match(new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g')) || []).length;
@@ -151,6 +161,12 @@ function score(article, vocab) {
   const text = `${lead} ${article.body || ''}`;
   const low = norm(text);
 
+  const isTelugu = /[\u0C00-\u0C7F]/.test(lead);
+  const leadNorm = norm(lead);
+  if (isTelugu && vocab.telugu && vocab.telugu.noise.some((n) => leadNorm.includes(n))) {
+    return { vetoed: 'crime, accident or film (Telugu)', score: 0, band: 'low' };
+  }
+
   // ---- veto: never examinable, whatever else the story carries ----
   // Tested on the headline and summary only: a PIB release body carries site
   // chrome, and one stray word there must not throw out a Cabinet decision.
@@ -201,11 +217,18 @@ function score(article, vocab) {
   // match a dozen angles that say nothing about what the release announces.
   const leadLow = norm(lead);
   const angles = vocab.angles.filter((a) => a.test(lead, leadLow)).map((a) => a.term);
+  if (isTelugu && vocab.telugu) {
+    for (const a of vocab.telugu.angles) if (leadLow.includes(a.needle) && !angles.includes(a.angle)) angles.push(a.angle);
+  }
   const angleScore = Math.min(WEIGHTS.angles, angles.length * 5);
 
   // ---- D. importance ----
   const instruments = R.INSTRUMENT.filter((i) => i.re.test(text));
-  let importance = Math.min(12, instruments.reduce((n, i) => n + i.w, 0) * 2);
+  let instrumentWeight = instruments.reduce((n, i) => n + i.w, 0);
+  if (isTelugu && vocab.telugu) {
+    for (const i of vocab.telugu.instruments) if (low.includes(i.needle)) instrumentWeight += i.w;
+  }
+  let importance = Math.min(12, instrumentWeight * 2);
   if (article.primary) importance += 3;
   if ((article.alsoIn || []).length >= 2) importance += 3;
   importance = Math.min(WEIGHTS.importance, importance);

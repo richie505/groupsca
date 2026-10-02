@@ -25,6 +25,7 @@ import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.School
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material.icons.filled.Today
@@ -42,6 +43,7 @@ import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
@@ -71,12 +73,14 @@ private enum class Tab(val label: String, val icon: ImageVector) {
     DAYS("Days", Icons.Filled.DateRange),
     SYLLABUS("Syllabus", Icons.AutoMirrored.Filled.MenuBook),
     SAVED("Saved", Icons.Filled.Bookmark),
+    COACHING("Coaching", Icons.Filled.School),
 }
 
 private sealed interface Route {
     data class DayRoute(val date: String) : Route
     data class UnitRoute(val code: String) : Route
     data object SettingsRoute : Route
+    data class ReaderRoute(val title: String, val url: String) : Route
 }
 
 @Composable
@@ -90,6 +94,9 @@ fun App(vm: AppViewModel) {
     BackHandler(enabled = stack.isNotEmpty()) { stack.removeAt(stack.lastIndex) }
     val back: () -> Unit = { if (stack.isNotEmpty()) stack.removeAt(stack.lastIndex) }
 
+    val openReader: (String, String) -> Unit = { t, u -> stack.add(Route.ReaderRoute(t, u)) }
+
+    CompositionLocalProvider(LocalReader provides openReader) {
     Scaffold(
         bottomBar = {
             if (stack.isEmpty()) {
@@ -111,14 +118,17 @@ fun App(vm: AppViewModel) {
                 is Route.DayRoute -> DayFeed(vm, speaker, fixedDate = r.date, onBack = back)
                 is Route.UnitRoute -> UnitScreen(vm, r.code, onBack = back)
                 Route.SettingsRoute -> SettingsScreen(vm, onBack = back)
+                is Route.ReaderRoute -> ReaderScreen(r.title, r.url, onBack = back)
                 null -> when (tab) {
                     Tab.TODAY -> DayFeed(vm, speaker, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
                     Tab.DAYS -> DaysScreen(vm) { stack.add(Route.DayRoute(it)) }
                     Tab.SYLLABUS -> SyllabusScreen(vm) { stack.add(Route.UnitRoute(it)) }
                     Tab.SAVED -> SavedScreen(vm)
+                    Tab.COACHING -> CoachingScreen(openReader)
                 }
             }
         }
+    }
     }
 }
 
@@ -390,8 +400,9 @@ private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
             Text("Feed last updated ${it.replace('T', ' ').take(16)} UTC", style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(horizontal = 16.dp))
         }
         Text(
-            "Where the stories come from: PIB press releases and the RSS feeds of The Hindu, Indian Express, Times of India, " +
-                "BusinessLine, The Hans India and Sakshi, collected every morning and evening. No AI is used. Each story is " +
+            "Where the stories come from: PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, Times of India, " +
+                "BusinessLine, The Hans India, Eenadu, and the free current-affairs notes of Vajiram & Ravi and Vision IAS, " +
+                "collected every morning and evening. No AI is used. Each story is " +
                 "scored by fixed rules out of 100: combined G1 + G2 syllabus units (30), APPSC blueprint keyword angles (20), " +
                 "Andhra Pradesh (20), an official act such as an order, Bill, judgment or appointment (15) and use in both " +
                 "exams (15). Stories scoring 40 or more are kept, and Andhra Pradesh stories from 30. Crime, films, weather and " +

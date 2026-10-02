@@ -136,6 +136,30 @@ function parsePibIndex(html) {
   return out;
 }
 
+// A Google News sitemap (<news:title>, <news:publication_date>) or a plain
+// sitemap (<loc>, <lastmod> only, in which case the headline is read from the
+// URL's slug). Used for sites with no RSS whose robots.txt allows the sitemap:
+// Eenadu (Telugu), Vision IAS.
+function slugTitle(url) {
+  const slug = decodeURIComponent(String(url).replace(/[?#].*$/, '').replace(/\/+$/, '').split('/').pop() || '');
+  const words = slug.replace(/\.[a-z]+$/i, '').replace(/[-_]+/g, ' ').replace(/\b\d{4,}\b/g, ' ').trim();
+  return words ? words.charAt(0).toUpperCase() + words.slice(1) : '';
+}
+
+function parseSitemap(xml, { pathIncludes = null } = {}) {
+  const out = [];
+  for (const m of String(xml).matchAll(/<url>([\s\S]*?)<\/url>/gi)) {
+    const block = m[1];
+    const url = tag(block, 'loc');
+    if (!url || (pathIncludes && !pathIncludes.some((p) => url.includes(p)))) continue;
+    const date = toIso(tag(block, 'news:publication_date') || tag(block, 'lastmod'));
+    const headline = tag(block, 'news:title') || slugTitle(url);
+    if (!headline || !date) continue;
+    out.push({ headline, date, url, summary: '', category: tag(block, 'news:keywords') });
+  }
+  return out;
+}
+
 /**
  * Readable text of a page, one block per line. Block tags become newlines
  * before the rest of the markup is stripped, so a PIB table of figures stays
@@ -251,6 +275,6 @@ function dedupe(items) {
 }
 
 module.exports = {
-  UA, decode, toIso, fetchText, parseRss, parsePibIndex, extractText, releaseBody,
+  UA, decode, toIso, fetchText, parseRss, parsePibIndex, parseSitemap, slugTitle, extractText, releaseBody,
   signature, overlap, dedupe,
 };

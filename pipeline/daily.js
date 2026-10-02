@@ -106,7 +106,10 @@ async function fetchAll(load) {
     SOURCES.map(async (src) => {
       try {
         const body = await load(src.url, src);
-        const rows = src.kind === 'pib-index' ? F.parsePibIndex(body) : F.parseRss(body);
+        const rows =
+          src.kind === 'pib-index' ? F.parsePibIndex(body)
+          : src.kind === 'sitemap' ? F.parseSitemap(body, { pathIncludes: src.pathIncludes })
+          : F.parseRss(body);
         return { src, rows, error: rows.length ? null : 'no items parsed' };
       } catch (e) {
         return { src, rows: [], error: e.message };
@@ -122,6 +125,8 @@ async function fetchAll(load) {
       primary: !!src.primary,
       apSource: !!src.ap,
       opinion: !!src.opinion,
+      coaching: !!src.coaching,
+      lang: src.lang || 'en',
     }))
   );
   return { items, status };
@@ -200,7 +205,7 @@ function toItem({ article, result, floor }) {
     id: idOf(article.url),
     date: article.date,
     title: article.headline,
-    summary: summarise(article.primary && article.body ? article.body : article.summary || article.body),
+    summary: summarise(article.body ? article.body : article.summary),
     facts: keyFacts(text.trim() ? text : article.headline),
     source: article.sourceName,
     sourceId: article.sourceId,
@@ -219,6 +224,8 @@ function toItem({ article, result, floor }) {
     score: result.score,
     band: result.band,
     why: result.why,
+    ...(article.coaching ? { coaching: true } : {}),
+    ...(article.lang && article.lang !== 'en' ? { lang: article.lang } : {}),
     ...(floor ? { apFloor: true } : {}),
   };
 }
@@ -263,7 +270,7 @@ async function run(args) {
 
   // 3. PIB release text. Official, so it is both quotable and the best
   //    evidence for scoring; newspapers are scored on headline + feed summary.
-  const pib = items.filter((i) => i.primary).slice(0, PIB_BODY_LIMIT);
+  const pib = items.filter((i) => i.primary && i.sourceId.startsWith('pib')).slice(0, PIB_BODY_LIMIT);
   let bodies = 0;
   await pool(pib, args.fixtures ? 1 : BODY_CONCURRENCY, async (it) => {
     try {
