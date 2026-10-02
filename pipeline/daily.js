@@ -248,6 +248,8 @@ function toItem({ article, result, floor }) {
   return {
     id: idOf(article.url),
     date: article.date,
+    // IST time of publication, when the source gives one.
+    ...(article.time ? { time: article.time } : {}),
     title: article.headline,
     summary: summarise(article.body ? article.body : article.summary),
     facts: keyFacts(text.trim() ? text : article.headline),
@@ -322,7 +324,10 @@ async function run(args) {
       if (m.title) it.headline = m.title;
       if (m.description) it.summary = m.description.slice(0, 700);
       // No publish date on the page: keep the run's date rather than lose it.
-      it.date = m.published || it.date;
+      if (m.published) {
+        it.date = m.published.date;
+        it.time = m.published.time;
+      }
       it.metaOk = true;
     } catch {
       it.metaOk = false;
@@ -404,4 +409,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { run, select, todayIst, addDays, MIN_SCORE, AP_MIN_SCORE, AP_FLOOR };
+module.exports = { fetchAll, loader, latestFromWpSitemap, pool, run, select, todayIst, addDays, MIN_SCORE, AP_MIN_SCORE, AP_FLOOR };

@@ -56,20 +56,37 @@ function decode(s) {
 // already an Indian date and is taken as printed.
 const IST_MS = 5.5 * 3600 * 1000;
 
-function toIso(raw) {
+/**
+ * The Indian date and, when the source gives one, the IST time of day:
+ * { date: 'YYYY-MM-DD', time: 'HH:MM' | null }, or null.
+ */
+function toIstStamp(raw) {
   const s = decode(raw);
   if (/\d{1,2}:\d{2}/.test(s) && /(?:[+-]\d{2}:?\d{2}|\bGMT|\bUTC|\dZ)\s*$/.test(s)) {
     const t = Date.parse(s);
-    if (!Number.isNaN(t)) return new Date(t + IST_MS).toISOString().slice(0, 10);
+    if (!Number.isNaN(t)) {
+      const ist = new Date(t + IST_MS).toISOString();
+      return { date: ist.slice(0, 10), time: ist.slice(11, 16) };
+    }
   }
+  let date = null;
   let m = s.match(/(\d{1,2})\s+([A-Za-z]{3})[a-z]*\.?,?\s+(\d{4})/);
-  if (m) {
-    const mon = MONTHS[m[2].toLowerCase()];
-    if (mon) return `${m[3]}-${mon}-${String(m[1]).padStart(2, '0')}`;
+  if (m && MONTHS[m[2].toLowerCase()]) date = `${m[3]}-${MONTHS[m[2].toLowerCase()]}-${String(m[1]).padStart(2, '0')}`;
+  if (!date && (m = s.match(/(\d{4})-(\d{2})-(\d{2})/))) date = `${m[1]}-${m[2]}-${m[3]}`;
+  if (!date) return null;
+  // A time with no zone is IST already: PIB's "Posted on: 02 Oct 2026 03:15PM".
+  let time = null;
+  if ((m = s.match(/(\d{1,2}):(\d{2})\s*([AaPp][Mm])?/))) {
+    let h = Number(m[1]);
+    if (m[3]) h = (h % 12) + (/p/i.test(m[3]) ? 12 : 0);
+    if (h < 24) time = `${String(h).padStart(2, '0')}:${m[2]}`;
   }
-  m = s.match(/(\d{4})-(\d{2})-(\d{2})/);
-  if (m) return `${m[1]}-${m[2]}-${m[3]}`;
-  return null;
+  return { date, time };
+}
+
+function toIso(raw) {
+  const st = toIstStamp(raw);
+  return st ? st.date : null;
 }
 
 async function fetchText(url, { timeoutMs = FETCH_TIMEOUT_MS } = {}) {
@@ -106,11 +123,12 @@ function parseRss(xml) {
     const block = m[0];
     const headline = tag(block, 'title');
     const link = tag(block, 'link') || (block.match(/<link[^>]*href="([^"]+)"/i) || [])[1] || '';
-    const date = toIso(tag(block, 'pubDate') || tag(block, 'dc:date') || tag(block, 'updated') || tag(block, 'published'));
-    if (!headline || !link || !date) continue;
+    const st = toIstStamp(tag(block, 'pubDate') || tag(block, 'dc:date') || tag(block, 'updated') || tag(block, 'published'));
+    if (!headline || !link || !st) continue;
     out.push({
       headline,
-      date,
+      date: st.date,
+      time: st.time,
       url: link.trim(),
       summary: (tag(block, 'description') || tag(block, 'summary')).slice(0, 700),
       category: tag(block, 'category'),
@@ -134,11 +152,12 @@ function parsePibIndex(html) {
       continue;
     }
     const headline = decode(m[2]);
-    const date = toIso(m[4]);
-    if (!headline || !date) continue;
+    const st = toIstStamp(m[4]);
+    if (!headline || !st) continue;
     out.push({
       headline,
-      date,
+      date: st.date,
+      time: st.time,
       url: `https://www.pib.gov.in/PressReleasePage.aspx?PRID=${m[3]}&reg=3&lang=1`,
       summary: '',
       category: ministry,
@@ -165,10 +184,10 @@ function parseSitemap(xml, { pathIncludes = null } = {}) {
     const block = m[1];
     const url = tag(block, 'loc');
     if (!url || (pathIncludes && !pathIncludes.some((p) => url.includes(p)))) continue;
-    const date = toIso(tag(block, 'news:publication_date') || tag(block, 'lastmod'));
+    const st = toIstStamp(tag(block, 'news:publication_date') || tag(block, 'lastmod'));
     const headline = tag(block, 'news:title') || slugTitle(url);
-    if (!headline || !date) continue;
-    out.push({ headline, date, url, summary: '', category: tag(block, 'news:keywords') });
+    if (!headline || !st) continue;
+    out.push({ headline, date: st.date, time: st.time, url, summary: '', category: tag(block, 'news:keywords') });
   }
   return out;
 }
@@ -188,7 +207,7 @@ function pageMeta(html) {
   return {
     title: title.replace(/\s+[-–|]\s+GKToday\s*$/i, '').trim(),
     description: meta('property', 'og:description') || meta('name', 'description'),
-    published: toIso(meta('property', 'article:published_time') || meta('property', 'og:updated_time')),
+    published: toIstStamp(meta('property', 'article:published_time') || meta('property', 'og:updated_time')),
   };
 }
 
@@ -315,6 +334,6 @@ function dedupe(items) {
 }
 
 module.exports = {
-  UA, decode, toIso, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, pageMeta, extractText, releaseBody,
+  UA, decode, toIso, toIstStamp, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, pageMeta, extractText, releaseBody,
   signature, overlap, dedupe,
 };
