@@ -19,6 +19,7 @@ async function probe(url) {
     const rows = rss.length ? rss : pib;
     console.log(`OK   ${url}\n     ${body.length} bytes · rss ${rss.length} · pib ${pib.length} · title "${F.decode(title).slice(0, 80)}"`);
     for (const r of rows.slice(0, 3)) console.log(`     - ${r.date} ${r.headline.slice(0, 100)}`);
+    if (process.env.PROBE_RAW || args.includes('--raw')) console.log(body.slice(0, 1500).replace(/\s+/g, ' '));
     if (!rows.length) {
       const links = [...body.matchAll(/href="([^"]*(?:rss|feed)[^"]*)"/gi)].map((m) => m[1]).slice(0, 8);
       if (links.length) console.log(`     feed links on page: ${[...new Set(links)].join(' ')}`);
@@ -28,8 +29,8 @@ async function probe(url) {
   }
 }
 
-async function pibRegions() {
-  for (let reg = 1; reg <= 40; reg++) {
+async function pibRegions(from = 1, to = 40) {
+  for (let reg = from; reg <= to; reg++) {
     await new Promise((r) => setTimeout(r, 300));
     const url = `https://www.pib.gov.in/allrelease.aspx?reg=${reg}&lang=1`;
     try {
@@ -48,5 +49,6 @@ async function pibRegions() {
 const args = process.argv.slice(2).concat((process.env.PROBE_URLS || '').split(/\s+/).filter(Boolean));
 (async () => {
   if (args.includes('--pib-regions')) await pibRegions();
+  if (args.includes('--pib-regions-high')) await pibRegions(41, 80);
   for (const u of args.filter((a) => !a.startsWith('--'))) await probe(u);
 })();
