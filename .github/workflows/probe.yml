@@ -1,0 +1,21 @@
+name: Probe sources
+
+# Run by hand to test candidate feeds from GitHub's network before adding them
+# to pipeline/sources.js. Prints status, item counts and sample headlines.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Space-separated URLs (add --pib-regions to list PIB regional ids)'
+        required: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node pipeline/tools/probe.js ${{ github.event.inputs.urls }}
