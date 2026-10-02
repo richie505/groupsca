@@ -19,6 +19,13 @@ async function probe(url) {
     const rows = rss.length ? rss : pib;
     console.log(`OK   ${url}\n     ${body.length} bytes · rss ${rss.length} · pib ${pib.length} · title "${F.decode(title).slice(0, 80)}"`);
     for (const r of rows.slice(0, 3)) console.log(`     - ${r.date} ${r.headline.slice(0, 100)}`);
+    if (args.includes('--links')) {
+      // Article-looking links and the markup around the first few, to write a parser.
+      const links = [...body.matchAll(/<a[^>]+href="([^"]+)"[^>]*>([^<]{30,200})<\/a>/gi)].slice(0, 25);
+      for (const l of links) console.log(`     link ${l[1]} | ${F.decode(l[2])}`);
+      const i = links.length ? body.indexOf(links[0][0]) : -1;
+      if (i > 0) console.log('     context: ' + body.slice(Math.max(0, i - 600), i + 1500).replace(/\s+/g, ' '));
+    }
     if (process.env.PROBE_RAW || args.includes('--raw')) console.log(body.slice(0, 1500).replace(/\s+/g, ' '));
     if (!rows.length) {
       const links = [...body.matchAll(/href="([^"]*(?:rss|feed)[^"]*)"/gi)].map((m) => m[1]).slice(0, 8);
