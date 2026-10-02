@@ -401,11 +401,11 @@ private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
         }
         Text(
             "Where the stories come from: PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, Times of India, " +
-                "BusinessLine, The Hans India, Eenadu, and the free current-affairs notes of Vajiram & Ravi and Vision IAS, " +
+                "BusinessLine, The Hans India, Eenadu, and the free current-affairs posts of Vajiram & Ravi and KP IAS Academy, " +
                 "collected every morning and evening. No AI is used. Each story is " +
                 "scored by fixed rules out of 100: combined G1 + G2 syllabus units (30), APPSC blueprint keyword angles (20), " +
                 "Andhra Pradesh (20), an official act such as an order, Bill, judgment or appointment (15) and use in both " +
-                "exams (15). Stories scoring 40 or more are kept, and Andhra Pradesh stories from 30. Crime, films, weather and " +
+                "exams (15). Stories scoring 40 or more are kept; Andhra Pradesh stories from 35 (30 for Eenadu headlines) when they name a syllabus unit, a blueprint angle or an official act; coaching posts always. Crime, films, weather and " +
                 "match reports are left out. Key facts are the article's own sentences.",
             style = MaterialTheme.typography.bodyMedium,
             color = C.Body,

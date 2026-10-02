@@ -21,6 +21,7 @@
 //   coaching  a coaching institute's current-affairs notes. Only the headline,
 //             the feed's own summary and the link are kept; the full analysis
 //             is read in the app, logged in on the reader's own phone.
+//   titleFilter  a regex a headline must match to be taken (KP IAS: APPSC/UPSC only).
 //   lang      'te' for Telugu sources; scored with the Telugu word list in
 //             vocab/ap-vocab.json.
 //   opinion   editorials and analysis. These are the *quotation* source. The Q
@@ -256,18 +257,20 @@ const SOURCES = [
     coaching: true,
   },
   {
-    // No RSS; the current-affairs sitemap index lists a Google News sitemap.
-    id: 'vision-ias',
-    name: 'Vision IAS',
-    kind: 'sitemap',
-    url: 'https://visionias.in/current-affairs/news.xml',
-    pathIncludes: ['/current-affairs/'],
+    // KP IAS Academy (Hyderabad) posts one daily digest per exam: APPSC,
+    // TGPSC and UPSC. TGPSC is skipped.
+    id: 'kpias',
+    name: 'KP IAS Academy',
+    kind: 'rss',
+    url: 'https://kpiasacademy.com/feed/',
     coaching: true,
+    titleFilter: 'APPSC|UPSC|Andhra',
   },
 ];
 
 // Probed and found not to work. Kept so nobody re-derives this.
 const DEAD = [
+  { url: 'https://visionias.in/current-affairs/news.xml', why: 'An empty <urlset> (2 Oct 2026). Vision IAS is read in the app instead.' },
   { url: 'https://www.drishtiias.com/rss.rss', why: 'Works, but lists only Drishti\'s daily quizzes, not news (2 Oct 2026). Drishti is read in the app instead.' },
   { url: 'https://www.eenadu.net/rss/*', why: '"Page not found" on every RSS path (2 Oct 2026); the news sitemap is used instead.' },
   { url: 'https://www.ap.gov.in, ipr.ap.gov.in, apcmo.ap.gov.in', why: 'Connection refused from GitHub Actions (2 Oct 2026).' },

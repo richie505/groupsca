@@ -40,6 +40,9 @@ const AP_MIN_SCORE = 35;
 // than this many AP items reach AP_MIN_SCORE, the best AP items that still
 // carry SOME syllabus, blueprint or official-act signal are added up to it.
 const AP_FLOOR = 15;
+// Eenadu gives a headline and nothing else, so the same story carries less
+// evidence than one with a feed summary.
+const AP_MIN_SCORE_HEADLINE_ONLY = 30;
 // Per day and per side (AP / everything else), so the day stays readable.
 const MAX_PER_SIDE = 60;
 const PIB_BODY_LIMIT = 120;
@@ -110,7 +113,8 @@ async function fetchAll(load) {
           src.kind === 'pib-index' ? F.parsePibIndex(body)
           : src.kind === 'sitemap' ? F.parseSitemap(body, { pathIncludes: src.pathIncludes })
           : F.parseRss(body);
-        return { src, rows, error: rows.length ? null : 'no items parsed' };
+        const wanted = src.titleFilter ? rows.filter((r) => new RegExp(src.titleFilter, 'i').test(r.headline)) : rows;
+        return { src, rows: wanted, error: rows.length ? null : 'no items parsed' };
       } catch (e) {
         return { src, rows: [], error: e.message };
       }
@@ -183,9 +187,13 @@ function examinable(r) {
 
 function select(scored) {
   const live = scored.filter((x) => !x.result.vetoed);
-  const keep = live.filter((x) =>
-    x.result.ap ? x.result.score >= AP_MIN_SCORE && examinable(x.result) : x.result.score >= MIN_SCORE
-  );
+  const keep = live.filter((x) => {
+    // A coaching institute already chose these as exam topics.
+    if (x.article.coaching) return true;
+    if (!x.result.ap) return x.result.score >= MIN_SCORE;
+    const bar = x.article.summary || x.article.body ? AP_MIN_SCORE : AP_MIN_SCORE_HEADLINE_ONLY;
+    return x.result.score >= bar && examinable(x.result);
+  });
   const apKept = keep.filter((x) => x.result.ap).length;
   if (apKept < AP_FLOOR) {
     const extra = live

@@ -43,6 +43,8 @@ val COACHING_SITES = listOf(
     CoachingSite("Vision IAS", "https://visionias.in/current-affairs/news-today", "News Today, daily current affairs and monthly magazine"),
     CoachingSite("Vajiram & Ravi", "https://vajiramandravi.com/current-affairs/", "Daily current affairs, editorials and The Hindu analysis"),
     CoachingSite("Drishti IAS", "https://www.drishtiias.com/current-affairs-news-analysis-editorials", "Daily news analysis, editorials and State PCS current affairs"),
+    CoachingSite("KP IAS Academy", "https://kpiasacademy.com/", "Daily APPSC, TGPSC and UPSC current affairs (Hyderabad)"),
+    CoachingSite("Civic Centre IAS", "https://www.civiccentre.in/", "APPSC / TGPSC Groups coaching (Hyderabad)"),
 )
 
 /**
@@ -58,7 +60,7 @@ fun CoachingScreen(onOpen: (String, String) -> Unit) {
                 Text("Coaching current affairs", style = MaterialTheme.typography.headlineSmall, color = C.Ink)
                 Text(
                     "Opens each site inside this app. Log in once with your own subscription and it stays logged in on this " +
-                        "phone. Stories from Vajiram and Vision IAS in your daily feed open here too (\"Read full analysis\").",
+                        "phone. Stories from Vajiram and KP IAS in your daily feed open here too (\"Read full analysis\").",
                     style = MaterialTheme.typography.bodyMedium,
                     color = C.Muted,
                     modifier = Modifier.padding(top = 4.dp),
