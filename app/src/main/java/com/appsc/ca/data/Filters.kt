@@ -4,6 +4,22 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
+/**
+ * The 6 books of the Combined Notes (the Group-app notes), in order. Every
+ * story is filed under one; book 6 holds appointments, awards, sports, days
+ * and persons in news.
+ */
+val BOOKS = listOf(
+    "History & Culture",
+    "Polity, Society & IR",
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment",
+    "Current Affairs",
+)
+
+fun bookNumber(book: String): Int = BOOKS.indexOf(book) + 1
+
 /** The lanes of the Group-II current-affairs paper, with Andhra Pradesh first: APPSC sets this exam. */
 enum class Lane(val label: String) {
     ALL("All"),
@@ -37,7 +53,7 @@ data class Filter(
     val subject: String? = null,
 ) {
     fun apply(items: List<Item>): List<Item> =
-        items.filter { lane.matches(it) && exam.matches(it) && (subject == null || subject in it.subjects) }
+        items.filter { lane.matches(it) && exam.matches(it) && (subject == null || it.book == subject) }
             .sortedWith(compareByDescending<Item> { it.score }.thenBy { it.title })
 }
 

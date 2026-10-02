@@ -8,12 +8,11 @@ fetched from the internet twice a day and sorted by the **combined syllabus** an
 GitHub Actions, 06:11 and 20:11 IST (.github/workflows/daily.yml)
   1. Fetch   PIB (Delhi, Vijayawada, Hyderabad) · AIR News (National, International, Business) ·
              The Hindu (National, AP, Vizag, Vijayawada, International, Economy, Sci-Tech, Environment,
-             Editorial, Telangana) · TOI · BusinessLine · Hans India AP · Eenadu (Telugu, news sitemap) ·
-             coaching: Vajiram & Ravi, KP IAS Academy (APPSC + UPSC daily posts)
+             Editorial, Telangana) · TOI · BusinessLine · Hans India AP · Eenadu (Telugu, news sitemap)
   2. Clean   noise filter, last 2 days only, one copy per story, nothing already published
   3. Read    the full text of PIB releases (official, so quotable)
   4. Score   out of 100 — see below
-  5. Keep    40+; Andhra Pradesh 35+ (Eenadu headlines 30+) if examinable; coaching posts always;
+  5. Keep    40+; Andhra Pradesh 35+ (Eenadu headlines 30+) if examinable;
              at least 15 AP stories a day when there are that many
   6. Write   feed/days/<date>.json + feed/index.json (committed to this repo)
         │
@@ -21,6 +20,14 @@ GitHub Actions, 06:11 and 20:11 IST (.github/workflows/daily.yml)
 The app downloads new days every 12 hours (and on pull-to-refresh), keeps 60 days offline,
 and notifies "18 new exam-relevant updates · 6 Andhra Pradesh".
 ```
+
+## Subjects
+
+Each story gets `subject`: one of the 6 books of the Combined Notes (Group-app `book1` … `book6`), so current
+affairs are read under the same subject they are studied under. Its syllabus units vote (G1-A / G2-S1 / G2-M1A →
+History & Culture, G1-B / G2-S3 / G2-M1B → Polity, Society & IR, G1-C / G2-M2A → Economy, G1-D / G2-S2 → Geography,
+G1-F / G2-M2B → Science, Tech & Environment), a unit named in the headline counting double; with no unit, keyword
+hints decide; anything left (appointments, awards, sports, days) is book 6, Current Affairs.
 
 ## The score (pipeline/lib/score.js)
 
@@ -52,10 +59,10 @@ designation, Index / rank, Judgment, Scheme / launch, Figures, …). Nothing is 
 - **Days** — every downloaded day with counts (AP, critical, unread).
 - **Syllabus** — every unit of the combined tracker (G1-A1 … G1-F22, G2-S1 … G2-M2B-U5) with the stories filed under it.
 - **Saved** — bookmarked stories, kept even after their day leaves the phone.
-- **Coaching** — Vision IAS, Vajiram & Ravi, Drishti IAS and KP IAS Academy open inside the app;
-  log in once with your own subscription and it stays logged in **on the phone only** (WebView cookies).
-  Coaching stories in the feed have "Read full analysis", which opens there. Nothing from a paid account is
-  fetched by the daily job or stored in this repository.
+- **Subjects** — the 6 books of the Combined Notes (1 History & Culture · 2 Polity, Society & IR · 3 Economy ·
+  4 Geography · 5 Science, Tech & Environment · 6 Current Affairs). Every story is filed under one book, worked out
+  from its syllabus units (tracker sections A–F); appointments, awards, sports and days go to book 6. Tap a book
+  for its stories day by day, with the AP / National / International lanes.
 - Each story: score badge, AP / National / International, Group-I / Group-II, summary; tap for key facts, syllabus
   units, blueprint angles, the score breakdown, "Read full story" and Share.
 

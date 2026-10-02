@@ -112,6 +112,62 @@ function loadVocab(dir = path.join(__dirname, '..', 'vocab')) {
 
 const countOf = (re, text) => (text.match(new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g')) || []).length;
 
+// ---------------------------------------------------------------------------
+// subjects: every story is filed under ONE of the 6 books
+// ---------------------------------------------------------------------------
+
+// The 6 books of the Combined Notes (Group-app: book1 ... book6), in order,
+// so a story is read under the same subject it is studied under. Book 6 is
+// the general current-affairs book: appointments, awards, sports, days and
+// persons in news that belong to no static subject.
+const SUBJECTS = [
+  'History & Culture',
+  'Polity, Society & IR',
+  'Economy',
+  'Geography',
+  'Science, Tech & Environment',
+  'Current Affairs',
+];
+
+/** The book a combined-tracker unit belongs to (the tracker's A-F sections). */
+function subjectOfUnit(code) {
+  if (/^G1-A|^G2-S1|^G2-M1A/.test(code)) return 'History & Culture';
+  if (/^G1-B|^G2-S3|^G2-M1B/.test(code)) return 'Polity, Society & IR';
+  if (/^G1-C|^G2-M2A/.test(code)) return 'Economy';
+  if (/^G1-D|^G2-S2/.test(code)) return 'Geography';
+  if (/^G1-F|^G2-M2B/.test(code)) return 'Science, Tech & Environment';
+  return null;
+}
+
+// rules.js SUBJECT_HINTS names -> books, for stories with no unit.
+const HINT_SUBJECT = {
+  Polity: 'Polity, Society & IR', Society: 'Polity, Society & IR', Economy: 'Economy',
+  Geography: 'Geography', Environment: 'Science, Tech & Environment',
+  'Science & Technology': 'Science, Tech & Environment',
+  'AP History': 'History & Culture', 'Indian History': 'History & Culture',
+};
+
+/**
+ * The main book and every book the story touches. Units vote, a unit named in
+ * the headline twice over; then the keyword hints; an international story
+ * with neither goes to Polity, Society & IR (its IR part); anything else
+ * (awards, appointments, days, sports) to Current Affairs.
+ */
+function subjectsFor(units, hints, scope) {
+  const votes = new Map();
+  for (const u of units) {
+    const s = subjectOfUnit(u.item.tracker || u.item.code);
+    if (s) votes.set(s, (votes.get(s) || 0) + (u.headHit ? 2 : 1));
+  }
+  for (const h of hints) {
+    const s = HINT_SUBJECT[h];
+    if (s && !votes.has(s)) votes.set(s, 0.5);
+  }
+  const ranked = [...votes.entries()].sort((a, b) => b[1] - a[1] || SUBJECTS.indexOf(a[0]) - SUBJECTS.indexOf(b[0]));
+  const main = ranked.length ? ranked[0][0] : scope === 'international' ? 'Polity, Society & IR' : 'Current Affairs';
+  return { subject: main, subjects: [main, ...ranked.map(([s]) => s).filter((s) => s !== main)] };
+}
+
 function bucketOf(text, ap) {
   if (ap) return 'ap';
   if (R.INTERNATIONAL.test(text) && countOf(R.INTERNATIONAL, text) > countOf(R.NATIONAL, text)) return 'international';
@@ -243,6 +299,9 @@ function score(article, vocab) {
     : papers.size >= 2 ? (anchored ? 10 : 5)
     : anchored ? 5 : 2;
 
+  const scope = bucketOf(text, false);
+  const { subject, subjects: subjectList } = subjectsFor(units, subjects, scope);
+
   const why = { syllabus, angles: angleScore, ap: apScore, importance, reuse };
   const total = Object.values(why).reduce((a, b) => a + b, 0);
 
@@ -254,8 +313,9 @@ function score(article, vocab) {
     // Where the story sits leaving AP aside, so an AP story about a Union
     // decision also shows under National (and an AP-India-Japan MoU under
     // International) — AP gets its own lane without leaving the others.
-    scope: bucketOf(text, false),
-    subjects,
+    scope,
+    subject,
+    subjects: subjectList,
     ap,
     // Named by the combined syllabus tracker (G1-A1, G2-M1A-U4 ...).
     units: units.slice(0, 4).map((u) => ({ code: u.item.tracker, exam: u.item.exam, label: u.item.label })),
@@ -271,4 +331,4 @@ function score(article, vocab) {
   };
 }
 
-module.exports = { loadVocab, score, bandFor, matcher, angleTerms, norm, WEIGHTS };
+module.exports = { SUBJECTS, subjectOfUnit, loadVocab, score, bandFor, matcher, angleTerms, norm, WEIGHTS };

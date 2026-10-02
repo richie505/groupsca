@@ -129,7 +129,6 @@ async function fetchAll(load) {
       primary: !!src.primary,
       apSource: !!src.ap,
       opinion: !!src.opinion,
-      coaching: !!src.coaching,
       lang: src.lang || 'en',
     }))
   );
@@ -188,8 +187,6 @@ function examinable(r) {
 function select(scored) {
   const live = scored.filter((x) => !x.result.vetoed);
   const keep = live.filter((x) => {
-    // A coaching institute already chose these as exam topics.
-    if (x.article.coaching) return true;
     if (!x.result.ap) return x.result.score >= MIN_SCORE;
     const bar = x.article.summary || x.article.body ? AP_MIN_SCORE : AP_MIN_SCORE_HEADLINE_ONLY;
     return x.result.score >= bar && examinable(x.result);
@@ -225,6 +222,7 @@ function toItem({ article, result, floor }) {
     scope: result.scope,
     ap: result.ap,
     exams: result.exams,
+    subject: result.subject,
     subjects: result.subjects,
     units: result.units,
     topics: result.topics,
@@ -232,7 +230,6 @@ function toItem({ article, result, floor }) {
     score: result.score,
     band: result.band,
     why: result.why,
-    ...(article.coaching ? { coaching: true } : {}),
     ...(article.lang && article.lang !== 'en' ? { lang: article.lang } : {}),
     ...(floor ? { apFloor: true } : {}),
   };

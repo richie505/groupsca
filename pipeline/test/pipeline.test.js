@@ -102,6 +102,7 @@ test('offline run: AP items are kept, merged per day, and not repeated on the ne
   assert.ok(first.report.keptAp >= 3);
   const day = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
   assert.ok(day.items.every((i) => i.score >= (i.ap ? 30 : 40) || i.apFloor));
+  assert.ok(day.items.every((i) => S.SUBJECTS.includes(i.subject)));
   assert.ok(!day.items.some((i) => /arrested|film/i.test(i.title)));
   const index = JSON.parse(fs.readFileSync(path.join(out, 'index.json'), 'utf8'));
   assert.equal(index.days[0].date, '2026-10-02');
@@ -144,4 +145,28 @@ test('Telugu headlines without digits are not merged into one story', () => {
     { headline: 'ఎగుమతుల్లో విశాఖ అగ్రస్థానం', sourceName: 'Eenadu' },
   ]);
   assert.equal(out.length, 3);
+});
+
+test('every story is filed under one of the 6 books', () => {
+  assert.equal(S.SUBJECTS.length, 6);
+  const cases = [
+    ['RBI keeps repo rate unchanged at 5.5%', 'Monetary Policy Committee; GDP growth projection; inflation.', 'Economy'],
+    ['India, Japan sign maritime security pact at bilateral summit', 'External Affairs Minister said the treaty...', 'Polity, Society & IR'],
+    ['ISRO launches PSLV with EOS-09 satellite from Sriharikota', '', 'Science, Tech & Environment'],
+    ['Two new Ramsar sites added in India', 'Wetlands of international importance; biodiversity conservation.', 'Science, Tech & Environment'],
+    ['Supreme Court strikes down electoral bond scheme under Article 19', 'Constitution bench held', 'Polity, Society & IR'],
+    ['Nagarjunakonda excavation finds Ikshvaku inscription', 'Archaeological Survey of India', 'History & Culture'],
+    ['Neeraj Chopra wins gold at Diamond League final', '', 'Current Affairs'],
+  ];
+  for (const [headline, summary, want] of cases) {
+    const r = S.score({ headline, summary }, vocab);
+    assert.equal(r.subject, want, headline);
+    assert.equal(r.subjects[0], want);
+    assert.ok(S.SUBJECTS.includes(r.subject));
+  }
+});
+
+test('no coaching sources are configured', () => {
+  const { SOURCES } = require('../sources');
+  assert.ok(!SOURCES.some((s) => /vajiram|kpias|vision|drishti/i.test(s.id + s.url)));
 });

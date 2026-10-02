@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-02",
- "updated": "2026-10-02T17:53:52.514Z",
+ "updated": "2026-10-02T18:39:05.095Z",
  "sources": [
   {
    "id": "pib",
@@ -170,18 +170,6 @@
    "name": "The Hindu — Telangana",
    "found": 0,
    "error": "no fixture"
-  },
-  {
-   "id": "vajiram",
-   "name": "Vajiram & Ravi",
-   "found": 0,
-   "error": "no fixture"
-  },
-  {
-   "id": "vision-ias",
-   "name": "Vision IAS",
-   "found": 0,
-   "error": "no fixture"
   }
  ],
  "items": [
@@ -219,10 +207,13 @@
     "G1",
     "G2"
    ],
+   "subject": "Economy",
    "subjects": [
-    "Polity",
     "Economy",
-    "Geography"
+    "History & Culture",
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment"
    ],
    "units": [
     {
@@ -289,8 +280,10 @@
     "G1",
     "G2"
    ],
+   "subject": "Geography",
    "subjects": [
-    "Environment"
+    "Geography",
+    "Science, Tech & Environment"
    ],
    "units": [
     {
@@ -344,6 +337,7 @@
     "G1",
     "G2"
    ],
+   "subject": "Economy",
    "subjects": [
     "Economy"
    ],
@@ -406,7 +400,10 @@
     "G1",
     "G2"
    ],
-   "subjects": [],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
    "units": [
     {
      "code": "G1-C5",
@@ -453,8 +450,9 @@
     "G1",
     "G2"
    ],
+   "subject": "Polity, Society & IR",
    "subjects": [
-    "Polity"
+    "Polity, Society & IR"
    ],
    "units": [
     {
@@ -503,7 +501,10 @@
    "exams": [
     "G2"
    ],
-   "subjects": [],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
    "units": [
     {
      "code": "G2-M1A-U2",

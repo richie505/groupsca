@@ -1,5 +1,6 @@
 package com.appsc.ca
 
+import com.appsc.ca.data.BOOKS
 import com.appsc.ca.data.Day
 import com.appsc.ca.data.Exam
 import com.appsc.ca.data.FeedIndex
@@ -43,6 +44,15 @@ class FeedParseTest {
         assertTrue(g2.all { "G2" in it.exams })
         val all = Filter().apply(day.items)
         assertEquals(all.sortedByDescending { it.score }.map { it.score }, all.map { it.score })
+    }
+
+    @Test
+    fun everyStoryIsInOneOfTheSixBooks() {
+        assertEquals(6, BOOKS.size)
+        assertTrue(day.items.all { it.book in BOOKS })
+        val economy = Filter(subject = "Economy").apply(day.items)
+        assertTrue(economy.isNotEmpty())
+        assertTrue(economy.all { it.book == "Economy" })
     }
 
     @Test

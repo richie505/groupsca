@@ -51,6 +51,9 @@ data class Item(
     val ap: Boolean = false,
     /** "G1", "G2" */
     val exams: List<String> = emptyList(),
+    /** Which of the 6 books of the Combined Notes the story is filed under. */
+    val subject: String = "",
+    /** Every book it touches, main one first. */
     val subjects: List<String> = emptyList(),
     /** Combined syllabus tracker units: G1-A1 … G1-F22, G2-S1 … G2-M2B-U5. */
     val units: List<SyllabusUnit> = emptyList(),
@@ -61,11 +64,12 @@ data class Item(
     /** critical · high · medium */
     val band: String = "medium",
     val why: Why = Why(),
-    /** A coaching institute's note: the full analysis is read in the app, logged in. */
-    val coaching: Boolean = false,
     /** "te" for Telugu sources (Eenadu). */
     val lang: String = "en",
-)
+) {
+    /** The book to file it under, for feeds written before `subject` existed too. */
+    val book: String get() = subject.ifBlank { subjects.firstOrNull { it in BOOKS } ?: BOOKS.last() }
+}
 
 @Serializable
 data class Fact(val angle: String, val text: String)

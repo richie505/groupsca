@@ -20,12 +20,12 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.LibraryBooks
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Refresh
-import androidx.compose.material.icons.filled.School
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material.icons.filled.Today
@@ -43,7 +43,6 @@ import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
@@ -60,7 +59,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.appsc.ca.BuildConfig
+import com.appsc.ca.data.BOOKS
 import com.appsc.ca.data.Exam
+import com.appsc.ca.data.bookNumber
 import com.appsc.ca.data.Filter
 import com.appsc.ca.data.Item
 import com.appsc.ca.data.Lane
@@ -70,17 +71,17 @@ import com.appsc.ca.data.shortDate
 
 private enum class Tab(val label: String, val icon: ImageVector) {
     TODAY("Today", Icons.Filled.Today),
+    SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
     DAYS("Days", Icons.Filled.DateRange),
     SYLLABUS("Syllabus", Icons.AutoMirrored.Filled.MenuBook),
     SAVED("Saved", Icons.Filled.Bookmark),
-    COACHING("Coaching", Icons.Filled.School),
 }
 
 private sealed interface Route {
     data class DayRoute(val date: String) : Route
     data class UnitRoute(val code: String) : Route
     data object SettingsRoute : Route
-    data class ReaderRoute(val title: String, val url: String) : Route
+    data class SubjectRoute(val book: String) : Route
 }
 
 @Composable
@@ -94,9 +95,6 @@ fun App(vm: AppViewModel) {
     BackHandler(enabled = stack.isNotEmpty()) { stack.removeAt(stack.lastIndex) }
     val back: () -> Unit = { if (stack.isNotEmpty()) stack.removeAt(stack.lastIndex) }
 
-    val openReader: (String, String) -> Unit = { t, u -> stack.add(Route.ReaderRoute(t, u)) }
-
-    CompositionLocalProvider(LocalReader provides openReader) {
     Scaffold(
         bottomBar = {
             if (stack.isEmpty()) {
@@ -118,17 +116,16 @@ fun App(vm: AppViewModel) {
                 is Route.DayRoute -> DayFeed(vm, speaker, fixedDate = r.date, onBack = back)
                 is Route.UnitRoute -> UnitScreen(vm, r.code, onBack = back)
                 Route.SettingsRoute -> SettingsScreen(vm, onBack = back)
-                is Route.ReaderRoute -> ReaderScreen(r.title, r.url, onBack = back)
+                is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back)
                 null -> when (tab) {
                     Tab.TODAY -> DayFeed(vm, speaker, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
                     Tab.DAYS -> DaysScreen(vm) { stack.add(Route.DayRoute(it)) }
                     Tab.SYLLABUS -> SyllabusScreen(vm) { stack.add(Route.UnitRoute(it)) }
+                    Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
                     Tab.SAVED -> SavedScreen(vm)
-                    Tab.COACHING -> CoachingScreen(openReader)
                 }
             }
         }
-    }
     }
 }
 
@@ -205,7 +202,7 @@ private fun DayFeed(
     val dayItems = day?.items.orEmpty()
     val base = Filter(exam = vm.exam)
     val shown = Filter(lane, vm.exam, subject).apply(dayItems)
-    val subjects = dayItems.flatMap { it.subjects }.groupingBy { it }.eachCount().entries.sortedByDescending { it.value }.map { it.key }
+    val perBook = Filter(lane = lane, exam = vm.exam).apply(dayItems).groupingBy { it.book }.eachCount()
 
     PullToRefreshBox(isRefreshing = vm.refreshing, onRefresh = vm::refresh, modifier = Modifier.fillMaxSize()) {
         LazyColumn(Modifier.fillMaxSize()) {
@@ -257,9 +254,12 @@ private fun DayFeed(
                     for (e in Exam.entries) {
                         FilterChip(selected = vm.exam == e, onClick = { vm.chooseExam(e) }, label = { Text(e.label) })
                     }
-                    FilterChip(selected = subject == null, onClick = { subject = null }, label = { Text("All subjects") })
-                    for (s in subjects) {
-                        FilterChip(selected = subject == s, onClick = { subject = if (subject == s) null else s }, label = { Text(s) })
+                    FilterChip(selected = subject == null, onClick = { subject = null }, label = { Text("All 6 books") })
+                    for (b in BOOKS) {
+                        val n = perBook[b] ?: 0
+                        if (n > 0 || subject == b) {
+                            FilterChip(selected = subject == b, onClick = { subject = if (subject == b) null else b }, label = { Text("${bookNumber(b)}. $b ($n)") })
+                        }
                     }
                 }
             }
@@ -275,6 +275,74 @@ private fun DayFeed(
             }
             item { Spacer(Modifier.height(24.dp)) }
         }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Subjects: the 6 books of the Combined Notes
+// ---------------------------------------------------------------------------
+
+@Composable
+private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
+    val all = Filter(exam = vm.exam).apply(vm.allItems)
+    val latest = vm.days.firstOrNull()?.date
+    LazyColumn(Modifier.fillMaxSize()) {
+        item { Header("Current affairs by subject", "The 6 books of your Combined Notes · last ${vm.days.size} days") }
+        item {
+            ChipRow {
+                for (e in Exam.entries) FilterChip(selected = vm.exam == e, onClick = { vm.chooseExam(e) }, label = { Text(e.label) })
+            }
+        }
+        items(BOOKS, key = { it }) { b ->
+            val list = all.filter { it.book == b }
+            val today = list.count { it.date == latest }
+            val ap = list.count { it.ap }
+            val unread = list.count { it.id !in vm.readIds }
+            Row(
+                Modifier.fillMaxWidth().clickable { onOpen(b) }.padding(horizontal = 16.dp, vertical = 14.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text("${bookNumber(b)}", style = MaterialTheme.typography.titleLarge, color = C.Accent, modifier = Modifier.width(36.dp))
+                Column(Modifier.weight(1f)) {
+                    Text(b, style = MaterialTheme.typography.titleMedium, color = C.Ink)
+                    Text("$today today · ${list.size} in all · $ap Andhra Pradesh · $unread unread", style = MaterialTheme.typography.labelMedium, color = C.Muted)
+                }
+            }
+            HorizontalDivider(color = C.Line)
+        }
+    }
+}
+
+/** One book's current affairs, newest day first, with the lanes on top. */
+@Composable
+private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit) {
+    var lane by rememberSaveable { mutableStateOf(Lane.ALL) }
+    val inBook = Filter(exam = vm.exam).apply(vm.allItems).filter { it.book == book }
+    val shown = Filter(lane, vm.exam).apply(inBook).sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.score })
+    LazyColumn(Modifier.fillMaxSize()) {
+        item { Header("${bookNumber(book)}. $book", "${inBook.size} stories · last ${vm.days.size} days", onBack = onBack) }
+        item {
+            ChipRow {
+                for (l in Lane.entries) {
+                    val n = inBook.count { l.matches(it) }
+                    FilterChip(selected = lane == l, onClick = { lane = l }, label = { Text("${l.label} ($n)") })
+                }
+            }
+        }
+        if (shown.isEmpty()) item { Empty("No stories under this subject yet.") }
+        var lastDate = ""
+        for (i in shown) {
+            if (i.date != lastDate) {
+                lastDate = i.date
+                item(key = "d-${i.date}") {
+                    Text(longDate(i.date).uppercase(), style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(start = 16.dp, top = 14.dp, bottom = 2.dp))
+                }
+            }
+            item(key = i.id) {
+                ItemCard(i, read = i.id in vm.readIds, saved = vm.isSaved(i.id), onToggleSave = { vm.toggleSave(i) }, onRead = { vm.markRead(i.id) })
+            }
+        }
+        item { Spacer(Modifier.height(24.dp)) }
     }
 }
 
@@ -400,12 +468,12 @@ private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
             Text("Feed last updated ${it.replace('T', ' ').take(16)} UTC", style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(horizontal = 16.dp))
         }
         Text(
-            "Where the stories come from: PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, Times of India, " +
-                "BusinessLine, The Hans India, Eenadu, and the free current-affairs posts of Vajiram & Ravi and KP IAS Academy, " +
-                "collected every morning and evening. No AI is used. Each story is " +
+            "Where the stories come from: the RSS feeds of PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, " +
+                "Times of India, BusinessLine, The Hans India and Eenadu, collected every morning and evening. Each story is " +
+                "filed under one of the 6 books of your Combined Notes. No AI is used. Each story is " +
                 "scored by fixed rules out of 100: combined G1 + G2 syllabus units (30), APPSC blueprint keyword angles (20), " +
                 "Andhra Pradesh (20), an official act such as an order, Bill, judgment or appointment (15) and use in both " +
-                "exams (15). Stories scoring 40 or more are kept; Andhra Pradesh stories from 35 (30 for Eenadu headlines) when they name a syllabus unit, a blueprint angle or an official act; coaching posts always. Crime, films, weather and " +
+                "exams (15). Stories scoring 40 or more are kept; Andhra Pradesh stories from 35 (30 for Eenadu headlines) when they name a syllabus unit, a blueprint angle or an official act. Crime, films, weather and " +
                 "match reports are left out. Key facts are the article's own sentences.",
             style = MaterialTheme.typography.bodyMedium,
             color = C.Body,

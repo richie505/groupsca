@@ -18,10 +18,7 @@
 //             paper's account of it. Weighted heavily in the review queue.
 //   ap        the feed is Andhra Pradesh-focused, so every item from it is
 //             AP-relevant regardless of what the headline says.
-//   coaching  a coaching institute's current-affairs notes. Only the headline,
-//             the feed's own summary and the link are kept; the full analysis
-//             is read in the app, logged in on the reader's own phone.
-//   titleFilter  a regex a headline must match to be taken (KP IAS: APPSC/UPSC only).
+//   titleFilter  a regex a headline must match to be taken.
 //   lang      'te' for Telugu sources; scored with the Telugu word list in
 //             vocab/ap-vocab.json.
 //   opinion   editorials and analysis. These are the *quotation* source. The Q
@@ -248,28 +245,13 @@ const SOURCES = [
     url: 'https://www.thehindu.com/news/national/telangana/feeder/default.rss',
   },
 
-  // ---- Coaching institutes: headline + summary + link --------------------
-  {
-    id: 'vajiram',
-    name: 'Vajiram & Ravi',
-    kind: 'rss',
-    url: 'https://vajiramandravi.com/current-affairs/feed/',
-    coaching: true,
-  },
-  {
-    // KP IAS Academy (Hyderabad) posts one daily digest per exam: APPSC,
-    // TGPSC and UPSC. TGPSC is skipped.
-    id: 'kpias',
-    name: 'KP IAS Academy',
-    kind: 'rss',
-    url: 'https://kpiasacademy.com/feed/',
-    coaching: true,
-    titleFilter: 'APPSC|UPSC|Andhra',
-  },
 ];
 
 // Probed and found not to work. Kept so nobody re-derives this.
 const DEAD = [
+  // Coaching institutes (Vajiram & Ravi RSS, KP IAS Academy RSS) were added
+  // on 2 Oct 2026 and removed the same day at the reader's request: the feed
+  // is news sources only.
   { url: 'https://visionias.in/current-affairs/news.xml', why: 'An empty <urlset> (2 Oct 2026). Vision IAS is read in the app instead.' },
   { url: 'https://www.drishtiias.com/rss.rss', why: 'Works, but lists only Drishti\'s daily quizzes, not news (2 Oct 2026). Drishti is read in the app instead.' },
   { url: 'https://www.eenadu.net/rss/*', why: '"Page not found" on every RSS path (2 Oct 2026); the news sitemap is used instead.' },

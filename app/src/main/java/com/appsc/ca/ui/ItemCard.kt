@@ -38,16 +38,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.appsc.ca.data.Item
+import com.appsc.ca.data.bookNumber
 import com.appsc.ca.data.shortDate
-
-/** Opens a page in the in-app reader (title, url), where coaching logins are kept. */
-val LocalReader = staticCompositionLocalOf<(String, String) -> Unit> { { _, _ -> } }
 
 /**
  * One story. Collapsed: badges, headline, source and the summary. Tapped open:
@@ -66,7 +63,6 @@ fun ItemCard(
 ) {
     var open by rememberSaveable(item.id) { mutableStateOf(false) }
     val context = LocalContext.current
-    val reader = LocalReader.current
 
     Column(
         modifier
@@ -84,10 +80,10 @@ fun ItemCard(
             FlowRow(Modifier.weight(1f), horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 BandBadge(item.band, item.score)
                 if (item.ap) Badge("Andhra Pradesh", C.Ap, C.ApSoft)
-                if (item.coaching) Badge("Coaching", C.Fact, C.FactSoft)
                 if (item.lang == "te") Badge("తెలుగు", C.Muted, C.Chip)
                 if (item.scope == "international") Badge("International", C.Muted, C.Chip)
                 else if (!item.ap || item.scope == "national") Badge("National", C.Muted, C.Chip)
+                Badge("Book ${bookNumber(item.book)} · ${item.book}", C.Fact, C.FactSoft)
                 Badge(item.exams.joinToString(" · ") { if (it == "G1") "Group-I" else "Group-II" }, C.Accent, C.AccentSoft)
             }
             if (!read) Box(Modifier.padding(start = 6.dp).size(8.dp).clip(CircleShape).background(C.Unread))
@@ -141,10 +137,10 @@ fun ItemCard(
                 }
             }
             if (item.angles.isNotEmpty() || item.subjects.isNotEmpty()) {
-                SectionLabel("Blueprint angles · subjects")
+                SectionLabel("Blueprint angles · also in")
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     for (a in item.angles) Badge(a, C.Fact, C.FactSoft)
-                    for (s in item.subjects) Badge(s, C.Muted, C.Chip)
+                    for (s in item.subjects.filter { it != item.book }) Badge(s, C.Muted, C.Chip)
                 }
             }
             SectionLabel("Why it is here")
@@ -157,15 +153,11 @@ fun ItemCard(
             )
             Row(Modifier.padding(top = 6.dp)) {
                 if (item.url.isNotBlank()) {
-                    TextButton(onClick = { if (item.coaching) reader(item.source, item.url) else openUrl(context, item.url) }) {
+                    TextButton(onClick = { openUrl(context, item.url) }) {
                         Icon(Icons.AutoMirrored.Filled.OpenInNew, null, Modifier.size(18.dp))
                         Spacer(Modifier.width(6.dp))
                         Text(
-                            when {
-                                item.coaching -> "Read full analysis"
-                                item.source.startsWith("PIB") -> "Read on PIB"
-                                else -> "Read full story"
-                            }
+                            if (item.source.startsWith("PIB")) "Read on PIB" else "Read full story"
                         )
                     }
                 }
