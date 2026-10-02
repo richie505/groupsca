@@ -30,6 +30,7 @@ async function probe(url) {
 
 async function pibRegions() {
   for (let reg = 1; reg <= 40; reg++) {
+    await new Promise((r) => setTimeout(r, 300));
     const url = `https://www.pib.gov.in/allrelease.aspx?reg=${reg}&lang=1`;
     try {
       const body = await F.fetchText(url, { timeoutMs: 20000 });
@@ -44,7 +45,7 @@ async function pibRegions() {
   }
 }
 
-const args = process.argv.slice(2);
+const args = process.argv.slice(2).concat((process.env.PROBE_URLS || '').split(/\s+/).filter(Boolean));
 (async () => {
   if (args.includes('--pib-regions')) await pibRegions();
   for (const u of args.filter((a) => !a.startsWith('--'))) await probe(u);
