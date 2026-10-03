@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-03",
- "updated": "2026-10-03T12:40:19.192Z",
+ "updated": "2026-10-03T13:07:32.792Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 187,
+   "found": 188,
    "error": null
   },
   {
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 44,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 5,
+   "found": 6,
    "error": null
   },
   {
@@ -312,7 +312,25 @@
       "BC Quota"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Election Commission",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #25 · Election Commission: Powers, Roles and Reforms",
+      "bullets": [
+       "The Election Commission of India is a permanent body.",
+       "The Election Commission of India is an independent body.",
+       "The Election Commission of India is a constitutional body.",
+       "The Election Commission of India operates under Part XV of the Constitution.",
+       "Articles 324 to 329 relate to the Election Commission of India."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "acfbe86ce9ab",
@@ -421,7 +439,54 @@
       "Great Indian Bustards"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Wildlife Protection Act And Protected Areas",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #14 · Wildlife Protection Act and Protected Areas",
+      "bullets": [
+       "The Wildlife Protection Act provides a legal framework for protecting wild animals, birds, and plants.",
+       "Conservation Reserves are protected areas under the Wildlife Protection Act.",
+       "Every wild animal is owned by the State Government under Section 39(1) of the Wildlife Protection Act.",
+       "An Indian wild ass cannot be hunted except as permitted by law.",
+       "A wild buffalo cannot be hunted except as permitted by law."
+      ]
+     },
+     {
+      "topic": "Environment Minister And CM Rajasthan",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Conservation - in-situ (protected areas, biosphere reserves) and ex-situ (zoos, gene banks, seed banks) › Zoos and conservation breeding - Central Zoo Authority, programmes",
+      "bullets": [
+       "Central Zoo Authority (CZA): statutory body under the WPA 1972 (1991 amendment), set up 1992, under MoEF&CC; recognises zoos and coordinates planned conservation breeding .",
+       "Vultures: Centre Jatayu Conservation Breeding Centre, Pinjore, Haryana (BNHS)",
+       "Great Indian Bustard: Centre Sam and Ramdevra centres, Jaisalmer, Rajasthan (with WII)",
+       "Red panda: Centre Padmaja Naidu Himalayan Zoological Park, Darjeeling",
+       "GIB (Godawan, Rajasthan state bird) is Critically Endangered (APP); population <150; a 2024 SC order mandated underground power lines in its habitat (CDI)."
+      ]
+     },
+     {
+      "topic": "GIB",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Species-specific conservation projects - Project Tiger, Project Elephant, Gangetic dolphin, Great Indian Bustard, vulture, cheetah reintroduction › Great Indian Bustard - range, zoological name, Supreme Court case, breeding",
+      "bullets": [
+       "M.K. Ranjitsinh v. Union of India (APPSC 2024) was about protecting the GIB from power lines:",
+       "in 2021 the SC ordered power lines in GIB habitat to be laid underground",
+       "Conservation breeding is run in Jaisalmer, Rajasthan . The GIB is one of MoEFCC's five new national species projects and is on the Species Recovery Programme (APPCA 2026).",
+       "M.K. Ranjitsinh v. Union of India (2024) concerned the Great Indian Bustard (APPSC-GS 2024). GIB population under 150; the Supreme Court ordered underground power lines in its habitat (CDI).",
+       "Not in your sources: GIB captive-breeding centre names."
+      ]
+     }
+    ],
+    "gaps": [
+     "Great Indian Bustards",
+     "Desert National Park",
+     "Ramdevra and Sam",
+     "GIB Conservation Breeding Centre"
+    ]
+   }
   },
   {
    "id": "6418a7b5b79b",
@@ -498,7 +563,48 @@
       "justice"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Protest Resignations And Title Renunciations",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Rowlatt Satyagraha and Jallianwala Bagh; Hunter Committee › Protest resignations and title renunciations",
+      "bullets": [
+       "Rabindranath Tagore: Protest Renounced his Knighthood",
+       "C. Sankaran Nair: Protest Resigned from the Viceroy's Executive Council (APPSC G2 2025, UPPSC 2025)",
+       "Gandhi: Protest Returned his Kaiser-i-Hind medal",
+       "Damaraju Pundarikakshudu wrote the Telugu play 'Panchala Parabhavam' on Dyer."
+      ]
+     },
+     {
+      "topic": "Three-stage Programme And Nuclear Minerals",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Nuclear energy - three-stage programme, types of reactors, PHWR/FBR/AHWR, thorium strategy › Three-stage programme and nuclear minerals",
+      "bullets": [
+       "I: Reactor PHWR (heavy water moderator + coolant); Fuel Natural uranium; Output Power + Pu-239",
+       "II: Reactor FBR (sodium, no moderator); Fuel MOX: Pu-239 + U-238; Output Power + more Pu-239; Th blanket → U-233",
+       "III: Reactor AHWR / thorium reactors; Fuel Th-232 + U-233; Output Power + U-233",
+       "Conceived by Homi J. Bhabha (1950s); closed fuel cycle; AHWR can bridge Stage I to III without Stage II.",
+       "Emerging shortcut: ANEEL fuel (thorium + HALEU) from US firm Clean Core Thorium Energy finished high-burnup tests at Idaho National Laboratory. It works in existing PHWRs and could hasten Stage III (LENSD 7 May 2026)."
+      ]
+     },
+     {
+      "topic": "BC Reservation GO",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Transgender persons - NALSA judgment, Transgender Persons (Protection of Rights) Act 2019 › Reservation and state measures - horizontal vs vertical, first service quota, AP pensions, welfare board, ID cards",
+      "bullets": [
+       "Debate: NALSA (2014) asked governments to treat transgender persons as socially and educationally backward (a vertical OBC-type quota); the community seeks horizontal reservation cutting across SC/ST/OBC/General. The issue resurfaced in June 2023 with a Mumbai protest against Maharashtra's reply to the Bombay High Court (APPSC 2022).",
+       "Karnataka - first State to give 1% reservation to transgender persons in all government services (July 2021) (APPSC 2023).",
+       "Tamil Nadu: Measure Transgender Welfare Board (2008); Third Gender Tailoring Industrial Cooperative Society (2020); Thirunangaigal app for ID registration (2021) (IYB 2026)",
+       "Kerala: Measure First State transgender policy (2015) (some notes say 2021); Sthree Suraksha scheme for EWS women and transgender persons (APPCA 2026)",
+       "Andhra Pradesh: Measure 3,125 transgender certificates issued via the National Portal (CDI on APSES 2025-26)"
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "41d2fcb128d6",
@@ -589,7 +695,38 @@
       "food"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Protest Resignations And Title Renunciations",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Rowlatt Satyagraha and Jallianwala Bagh; Hunter Committee › Protest resignations and title renunciations",
+      "bullets": [
+       "Rabindranath Tagore: Protest Renounced his Knighthood",
+       "C. Sankaran Nair: Protest Resigned from the Viceroy's Executive Council (APPSC G2 2025, UPPSC 2025)",
+       "Gandhi: Protest Returned his Kaiser-i-Hind medal",
+       "Damaraju Pundarikakshudu wrote the Telugu play 'Panchala Parabhavam' on Dyer."
+      ]
+     },
+     {
+      "topic": "Policy Cycle Stages",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Public policy - meaning, types, policy cycle (formulation, implementation, evaluation), policy instruments › Policy cycle stages",
+      "bullets": [
+       "Agenda setting: What happens Problem identified; media, advocacy and expert analysis push it onto the agenda",
+       "Formulation: What happens Research, stakeholder consultation, cost-benefit analysis and impact assessment of options",
+       "Adoption: What happens Legislature/executive debates, amends and formally adopts",
+       "Monitoring and evaluation: What happens Data and metrics test whether goals are met; feedback leads to adjustment",
+       "Communication and transparency run through every stage to build trust (UPSC Governance notes)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Reliance Data Center"
+    ]
+   }
   },
   {
    "id": "e3d0124f843f",
@@ -664,7 +801,65 @@
       "meghalaya"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Arunachal Pradesh",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-3 › Religious composition of India - distribution and change over decades › Distribution - state with largest number of each minority, map-based minority regions",
+      "bullets": [
+       "Buddhists: State with the largest number Maharashtra; Main concentration areas Maharashtra, Sikkim, Arunachal Pradesh, Ladakh, Tripura, Lahul-Spiti",
+       "Buddhists form the highest share of the population in Sikkim and Arunachal Pradesh (CDX).",
+       "Hindu: Majority / highest share Majority in most States; minority in 8 States/UTs: Lakshadweep, Mizoram, Nagaland, Meghalaya, J&K, Arunachal Pradesh, Manipur, Punjab; Concentration / largest numbers Absent as majority along Indo-Bangladesh/Pak borders and NE hill states",
+       "Buddhist: Majority / highest share Highest share in Sikkim and Arunachal Pradesh; Concentration / largest numbers Maharashtra (largest number) , Ladakh, Tripura, Lahul-Spiti",
+       "Arunachal Pradesh is not Christian-majority: Christians are its largest group but below 50% (some notes list it among Christian-majority States)."
+      ]
+     },
+     {
+      "topic": "Heavy Engineering And Defence Units",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-4 › India - automobile, engineering, electronics, pharmaceutical and IT industries › Heavy engineering and defence units - location",
+      "bullets": [
+       "Heavy Engineering Corporation (HEC): Location Ranchi, 1958; Product Heavy machinery (first such unit)",
+       "HMT: Location Bengaluru, Pinjore, Kalamassery, Hyderabad, Srinagar, Ajmer; Product Largest machine-tool maker",
+       "BHEL: Location Bhopal (and other units); Product Heavy electricals, electric locomotives",
+       "HAL: Location Bengaluru (1940, Hindustan Aircraft); HAL formed 1964; Product Nashik - MiG airframe; Koraput - MiG engines; Hyderabad - electronics; Kanpur - transport aircraft; Lucknow - accessories",
+       "BEL: Location Bengaluru; Product Defence electronics"
+      ]
+     },
+     {
+      "topic": "Indian Rainfall Zones And Monsoon Patterns",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Geography › #16 · Indian Rainfall Zones and Monsoon Patterns",
+      "bullets": [
+       "The very heavy rainfall zone includes the Western Coast and Northeast India.",
+       "The heavy rainfall zone includes the Western Ghats and Meghalaya.",
+       "The Western Ghats and the west coast receive the heaviest rainfall.",
+       "The Konkan coast and Maharashtra are key regions of heavy rainfall on the Western Coast.",
+       "The Bay of Bengal branch causes very heavy rainfall in Meghalaya."
+      ]
+     },
+     {
+      "topic": "IMD",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Disaster Management › #14 · Cyclones: Classification, Agencies and AP Impacts",
+      "bullets": [
+       "An IMD low-pressure area has wind speed below 31 km/h.",
+       "An IMD low-pressure area has wind speed below 17 knots.",
+       "An IMD depression has wind speed of 31–49 km/h.",
+       "An IMD depression has wind speed of 17–27 knots.",
+       "An IMD deep depression has wind speed of 50–61 km/h."
+      ]
+     }
+    ],
+    "gaps": [
+     "Meteorological Department IMD",
+     "Konkan and Goa",
+     "Mizoram and Tripura"
+    ]
+   }
   },
   {
    "id": "5c98c788ef8d",
@@ -768,7 +963,62 @@
       "raj"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Gram Panchayats",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Devolution of powers and finances to local levels - Finance Commission and State Finance Commission transfers › Finance Commission grants to local bodies - rural/urban share, basic vs performance, totals",
+      "bullets": [
+       "14th (2015-20): Local body grants ₹2,87,436 crore; panchayats ₹2,00,292 crore, municipalities the rest; Structure Basic + performance: gram panchayats 90:10, municipalities 80:20; shared by 2011 population (90%) and area (10%)",
+       "PYQ trap: 14th FC ratio is 90:10 for panchayats (APPSC-G2 2017) but 80:20 for municipal bodies (APPSC-GS 2019 key).",
+       "14th FC (2015-20): Local body grants Rs 2,87,436 crore in total; Rs 2,00,292 crore to panchayats, the rest (~Rs 87,144 crore) to municipalities; Split / conditions Basic : performance = 90:10 for gram panchayats, 80:20 for municipalities ; distributed by 2011 population (90%) and area (10%)",
+       "15th FC (2021-26): Local body grants Rural LBs Rs 2.36 lakh crore; Urban LBs roughly Rs 1.2-1.3 lakh crore (TH, 9 Mar 2026); Split / conditions Part tied to drinking water and sanitation; performance-linked conditions such as audited accounts and property-tax floor rates (LENSD, 22 May 2026)",
+       "Some UPSC notes give the 14th FC rural grant as \"Rs 1.18 lakh crore\" and say the 15th FC raised the \"RLB share of the divisible pool from 40% to 41%\". Both are wrong: the 14th FC gave panchayats Rs 2,00,292 crore, and 41% is the States' share."
+      ]
+     },
+     {
+      "topic": "Community Forestry",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Impact of bifurcation on the endowment of natural resources - minerals, forests, water, coastline › Community forestry - VSS, JFM, FRA titles",
+      "bullets": [
+       "Vana Samrakshana Samithis (VSS): the village JFM bodies. SFDA runs its capacity-building camps through them, and NAP works through JFM committees.",
+       "FRA 2006: gives ownership of MFP, community (nistar) rights and PVTG habitat rights; Gram Sabha recommends diversion for public utilities. PESA 1996 gives Gram Sabhas control over MFP.",
+       "MoTA (Aug 2026): FRA has no provision for gram sabha consent for Stage-II forest clearance (TH, 7 Sep 2026).",
+       "Not in your sources: number of FRA titles issued in AP."
+      ]
+     },
+     {
+      "topic": "Ownership Structure",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-1 › Basic characteristics of the Indian economy; features of a developing economy › Ownership structure - public, private, joint and cooperative sectors",
+      "bullets": [
+       "Public sector: owned/run by government (general government + public corporations); private sector: private corporations + households; joint sector: shared government-private ownership; cooperative sector: member-owned enterprises .",
+       "National accounts compile GVA separately for four institutional sectors: general government, public corporations, private corporations and households (TH, 20 Mar 2026).",
+       "Private corporate investment fell to 11.2% of GDP in FY24 (12.3% in FY23); private corporate share of Gross Fixed Capital Formation at a decadal low of 33% (LENSD, 19 Aug 2026).",
+       "Not in your sources: latest shares of the public, private and household sectors in national income/GVA."
+      ]
+     },
+     {
+      "topic": "Nyaya Panchayats Under State Laws",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Evolution of Panchayati Raj - Community Development Programme, Balwant Rai Mehta, Ashok Mehta, G.V.K. Rao and L.M. Singhvi committees › Nyaya Panchayats under state laws",
+      "bullets": [
+       "Judicial panchayats set up by some states to try petty civil and criminal cases (APP; CDI lists them among the 1960s variations).",
+       "G.R. Rajagopalan Committee on Nyaya Panchayats (1962) (CDI).",
+       "Ashok Mehta (1978): keep them separate from development panchayats, presided over by a qualified judge. L.M. Singhvi (1986): nyaya panchayats for clusters of villages (CDI).",
+       "Examples: UP (UP Panchayat Raj Act 1947); Bihar's Gram Kachahari .",
+       "They are not part of the three-tier PR structure."
+      ]
+     }
+    ],
+    "gaps": [
+     "Jal Arpan",
+     "Har Ghar Jal Certificates"
+    ]
+   }
   },
   {
    "id": "3cc254470f1a",
@@ -846,7 +1096,39 @@
       "address"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "WTO",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › International - treaties, agreements and developments in international organisations › WTO/IMF/World Bank developments - ministerial conferences, quota reforms, lending",
+      "bullets": [
+       "WTO MC14: Yaounde, Cameroon (Mar 2026), 166 members. It ended without a ministerial declaration, and the e-commerce customs-duty moratorium lapsed on 31 Mar 2026. 66 members signed a plurilateral e-commerce agreement. India blocked adding the Investment Facilitation for Development agreement to the WTO (129 of 166 backed it) (TH 6 Apr 2026).",
+       "The BRICS New Delhi Declaration (Sep 2026) asked for IMF/World Bank quota and voting reform and restoration of the two-tier WTO dispute settlement (Appellate Body) (LENSD 14 Sep 2026).",
+       "Not in your sources: status of the IMF's latest general quota review.",
+       "MC14 outcomes: e-commerce moratorium (no customs duties on electronic transmissions, since 1998) lapsed on 31 Mar 2026 for the first time; no permanent solution on public stockholding (India + African Group demand); no deal on fisheries subsidies Phase 2 (overcapacity, overfishing) - sent to General Council, Geneva; TRIPS non-violation moratorium lapsed; Investment Facilitation for Development (IFD) not added to…",
+       "Ministerial Conference = WTO's highest body, meets at least every two years (Marrakesh Agreement). Earlier breakdowns: Seattle 1999, Cancún 2003; Doha Round never concluded."
+      ]
+     },
+     {
+      "topic": "G20",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › International - summits, conferences and their outcomes › Summits → venue + host country + chair + theme (G20, BRICS, SCO, QUAD, BIMSTEC, ASEAN-India, SAARC, G7)",
+      "bullets": [
+       "20th G20: Venue / date Johannesburg, Nov 2025; Chair / host South Africa; Theme \"Solidarity, Equality, and Sustainability\" (Ubuntu philosophy) (VIS 2026)",
+       "G20: Latest edition (venue, date) 20th, Johannesburg, South Africa, Nov 2025 - first G20 on African soil; Previous edition 18th New Delhi (Sep 2023)",
+       "G20 2025 (South Africa): Theme / motto \"Solidarity, Equality, and Sustainability\"; spirit of Ubuntu (\"I am because we are\"); Chair handover -",
+       "G20 2023 (India): Theme / motto \"One Earth, One Family, One Future\" (Vasudhaiva Kutumbakam); Chair handover -",
+       "G20 structure: Finance track and Sherpa track; presidency rotates annually among five regional groups; Troika = past, present, next presidencies."
+      ]
+     }
+    ],
+    "gaps": [
+     "WTO-compliant"
+    ]
+   }
   },
   {
    "id": "a04358aa791f",
@@ -944,7 +1226,30 @@
       "civilization"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "National Quantum Mission",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 18 › National strategies and missions in S&T - Quantum Mission, Supercomputing, Deep Ocean, Bio-E3, Anusandhan NRF › National Quantum Mission - approval, outlay, hubs, qubit targets",
+      "bullets": [
+       "Targets: intermediate-scale computers of 50-1000 physical qubits in 8 years (superconducting, photonic); satellite QKD over 2000 km within India; inter-city QKD over 2000 km; quantum links with other countries; magnetometers and atomic clocks.",
+       "Quantum Communication: Host IIT Madras",
+       "Quantum Sensing & Metrology: Host IIT Bombay",
+       "Quantum Materials & Devices: Host IIT Delhi",
+       "Central Fabrication Facilities at IIT Delhi, IISc, IIT Bombay, IIT Kanpur (~₹720 crore); 8 start-ups supported: QNu Labs (500 km QKD network, QShield), QpiAI (64-qubit QPU), PQuest (Quantum Diamond Microscope), Prenishq (diode laser) (IYB 2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Quantum Key Distribution QKD",
+     "Delhi QNu Labs",
+     "QKD",
+     "IIT Gandhinagar"
+    ]
+   }
   },
   {
    "id": "c3dfeebd7d3b",
@@ -1051,7 +1356,56 @@
       "Arvind Panagariya"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Fertiliser Subsidy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural inputs - seeds, fertilisers and the subsidy regime, pesticides, mechanisation, extension services › Fertiliser subsidy - highest-subsidy fertiliser, NBS, DBT, neem-coated urea, nano urea/DAP, consumption",
+      "bullets": [
+       "The fertiliser subsidy is the second-largest subsidy after food (VIS 2026).",
+       "Budget 2026-27 allocates ₹1.71 lakh crore, but the bill may rise to about ₹2.41 lakh crore because of the West Asia crisis (TH, 19 May 2026).",
+       "Not in your sources: the current ranking of the largest fertiliser-consuming states.",
+       "Soil Health Cards: 25.79 crore generated, cutting fertiliser use 8-10% and raising yields 5-6% (LENS, May 2026) (ES: 25.55 crore as of Nov 2025); issued free every two years; launched 2015 .",
+       "PM-PRANAM (approved 28 June 2023): States get 50% of subsidy saved by cutting chemical fertiliser use (IYB 2026)."
+      ]
+     },
+     {
+      "topic": "Crisis Management Plan",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › National Cyber Security Policy 2013 and the national cyber crime policy framework › Crisis Management Plan - CISOs in ministries",
+      "bullets": [
+       "Cyber Crisis Management Plan (CCMP): MeitY framework for countering cyber attacks and cyber terrorism, implemented by all Central and State Governments; CERT-In held 205 CCMP workshops till July 2025 (IYB 2026; CDI).",
+       "Every ministry/department/organisation must designate a Chief Information Security Officer (CISO) .",
+       "NCCC (National Cyber Coordination Centre) - situational awareness and timely information-sharing (IYB 2026)."
+      ]
+     },
+     {
+      "topic": "Arvind Panagariya",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Finance Commission - composition, terms of reference, functions; 15th and 16th Finance Commission › Finance Commission number → chairman (10th to 16th)",
+      "bullets": [
+       "16th: Chairman Dr. Arvind Panagariya (ex-VC, NITI Aayog); Award period 2026-27 to 2030-31",
+       "16th: Chairman Dr. Arvind Panagariya (former NITI Aayog Vice-Chairman)"
+      ]
+     },
+     {
+      "topic": "West Asia",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › International - bilateral visits, defence deals and geopolitical developments › Conflict zones and disputed territories → countries involved (West Asia, Sahel, Falklands, Arunachal renaming)",
+      "bullets": [
+       "West Asia war (2026): the US (Operation Epic Fury) and Israel (Operation Lion's Roar) struck Iran. Iran (True Promise-4) hit Israel and Gulf states (LENS Mar 2026; NextGen CA 2026). A US-Iran 14-point MoU (Jun 2026) set a permanent ceasefire, a phased end to the US naval blockade and reopening of the Strait of Hormuz (LENSD 20 Jun 2026).",
+       "Hormuz: carries ~20% of global petroleum liquids. The US ran \"Project Freedom\" escorts. The Habshan-Fujairah pipeline bypasses the strait (NextGen CA 2026; LENS Mar 2026).",
+       "Red Sea: the Houthis took Yemen's entire Red Sea coast (TH 12 Sep 2026).",
+       "Pakistan-Afghanistan: Pakistan's Operation Ghazab Lil Haq along the Durand Line (2,670 km, 1893), which Kabul does not recognise (NextGen CA 2026).",
+       "Arunachal: India standardised 27 place names on Survey of India maps (Aug 2026), e.g. Longju, Maja, Bisa, Dzo La, Thag La, Sambho Sarovar. This answers China's renaming of places in the State (LENSD 10 Aug 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "6e7178ec24ce",
@@ -1148,7 +1502,41 @@
       "Madras High Court"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "SIT",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #71 · Supreme Court and High Court Judges",
+      "bullets": [
+       "High Court Judges are governed under Part VI, Chapter V of the Constitution.",
+       "Articles 214–231 govern High Court Judges.",
+       "Article 224A concerns retired Judges sitting in High Courts.",
+       "The Chief Justice of a High Court may request a retired High Court Judge to sit and act as a High Court Judge.",
+       "The Chief Justice of a High Court may request a retired Supreme Court Judge to sit and act as a High Court Judge."
+      ]
+     },
+     {
+      "topic": "POCSO",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Juvenile Justice Act 2015, POCSO Act 2012, Child Labour (Prohibition and Regulation) Amendment 2016 › POCSO Act 2012 - full form, commencement, age, offences, special courts, 2019 amendment, age-of-consent debate",
+      "bullets": [
+       "2019 Amendment: minimum 10 years for penetrative sexual assault (extendable to life); aggravated cases up to life or death penalty; fines for storing child pornographic material - at least Rs 5,000, repeat Rs 10,000. POCSO Rules 2020 replaced the 2012 Rules (IYB 2026).",
+       "POCSO 2012: Age of consent 18",
+       "Debate: MP High Court asked the Centre to lower the age of consent to 16 citing early puberty through social-media exposure (APPSC 2022); SC in State of UP v. Anurudh (Jan 2026) flagged misuse in consensual adolescent relationships and urged a \"Romeo-Juliet clause\" (LENS Jan 2026; VIS 2026); SC set aside a Calcutta HC ruling that excluded consensual adolescent relationships from POCSO, using Art. 142 for sentencing…",
+       "Note: IPC was replaced by the Bharatiya Nyaya Sanhita (BNS), 2023 from 1 July 2024; POCSO remains a separate special law .",
+       "Age of consent: 10 (IPC 1860) → 12 (1891) → 14 (1925) → 16 (1949) → 18 (POCSO 2012 / CLA 2013). The BNS (Sec. 63) keeps 18."
+      ]
+     }
+    ],
+    "gaps": [
+     "Let SIT",
+     "DMK",
+     "Madras High Court"
+    ]
+   }
   },
   {
    "id": "0b421570e176",
@@ -1220,7 +1608,35 @@
       "Finance Commission Chairman"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Finance Commission Chairman",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #26 · Finance Commission and Fiscal Federalism",
+      "bullets": [
+       "The Finance Commission is a constitutional body under Article 280.",
+       "The Finance Commission is a permanent body.",
+       "The Finance Commission is an independent body.",
+       "The Finance Commission is a quasi-judicial body.",
+       "The President of India constitutes the Finance Commission every five years or earlier when necessary."
+      ]
+     },
+     {
+      "topic": "Crisis Management Plan",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › National Cyber Security Policy 2013 and the national cyber crime policy framework › Crisis Management Plan - CISOs in ministries",
+      "bullets": [
+       "Cyber Crisis Management Plan (CCMP): MeitY framework for countering cyber attacks and cyber terrorism, implemented by all Central and State Governments; CERT-In held 205 CCMP workshops till July 2025 (IYB 2026; CDI).",
+       "Every ministry/department/organisation must designate a Chief Information Security Officer (CISO) .",
+       "NCCC (National Cyber Coordination Centre) - situational awareness and timely information-sharing (IYB 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "60e69bdf3890",
@@ -1321,7 +1737,65 @@
       "balwant"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Diwas",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › National Cyber Security Policy 2013 and the national cyber crime policy framework › Cyber preparedness exercises → organiser + venue (Cyber Surakshit Bharat, scenario-building, Cyber Jagrookta Diwas)",
+      "bullets": [
+       "Cyber Jagrookta Diwas: Organiser / detail 1st Wednesday of every month (CERT-In) (IYB 2026)",
+       "Cyber Security Awareness Month: Organiser / detail October every year (IYB 2026)",
+       "Safer Internet Day: Organiser / detail Tuesday of the 1st week of February (IYB 2026)",
+       "'Scenario Building & Response': Organiser / detail Held in New Delhi (APPSC 2019 PYQ)",
+       "Cyber Surakshit Bharat - MeitY initiative (2018) with industry partners to train CISOs and front-line IT officials of government bodies ."
+      ]
+     },
+     {
+      "topic": "Special Gram Sabha",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › 73rd Amendment - Part IX, Eleventh Schedule, three-tier structure, Gram Sabha, reservations, State Election Commission › Gram Sabha - definition, composition, functions, People's Plan Campaign, PESA powers",
+      "bullets": [
+       "Art. 243(b): a body of persons registered in the electoral rolls of a village within the panchayat area. It exercises the powers the State legislature gives it (Art. 243A).",
+       "People's Plan Campaign \"Sabki Yojana Sabka Vikas\" (from 2 Oct 2018 ) prepares Gram Panchayat Development Plans (GPDP) through Gram Sabhas .",
+       "PESA Act, 1996 (from the Bhuria Committee, 1995) extends Part IX to Fifth Schedule areas in ten States, including AP. There the Gram Sabha is supreme (APP):",
+       "protects traditions and community resources, and settles disputes the customary way;",
+       "New: the VB-G RAM G Act, 2025 (replaces MGNREGA; 125 days) plans works through Viksit Gram Panchayat Plans linked to PM Gati Shakti (VIS 2026)."
+      ]
+     },
+     {
+      "topic": "Swachh",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Solid waste, plastic waste, e-waste, biomedical and construction waste - rules and management › Swachh Bharat Mission, SBM-U 2.0, Swachh Survekshan",
+      "bullets": [
+       "Swachh Survekshan: the annual urban cleanliness survey, run by QCI for MoHUA. Indore (MP) keeps ranking #1 (APPCA). Indore is the city known for zero waste (APPSC-G2 2025).",
+       "Rural waste is shifting from biodegradable to plastic and sanitary waste. Gram Panchayats lack capacity, and open dumping and burning continue (LENSD, 5 Sep 2026).",
+       "10th edition (2025-26) theme: \"Swachhata Ki Nayi Pehel - Badhayein Haath, Karein Safai Saath\"; 10 sections, 160+ indicators; separate matrix for river towns (LENS Dec 2025).",
+       "Swachh Survekshan 2024-25 awards conferred by the President (VIS 2026); Indore - cleanest city (APPSC-GS 2025 key) and India's model zero-waste / landfill-free city (APPSC-G2 2025; LENS Nov 2025).",
+       "Swachh Survekshan Grameen launched in 2018."
+      ]
+     },
+     {
+      "topic": "Saivism And Shaktism",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-1 › Gupta religion - Bhagavatism, Vaishnavism, Saivism; beginnings of temple architecture (Deogarh, Bhitargaon) › Saivism and Shaktism - sects and their offshoots (Pashupata, Kapalika, Kalamukha), Shiva linga forms → earliest example site (Gudimallam)",
+      "bullets": [
+       "Pashupata: Note Oldest Shaiva sect; founder Lakulisha (Nakulisha) [GK for \"oldest\"]",
+       "Kalamukha: Note Followers of Kalanana, a disciple of Lakulisha; extreme sect; Simha Parishat (Andhra) and Shakti Parishat (Karnataka) (CDX)",
+       "Gudimallam (near Renigunta, Tirupati district) - Parasurameswara temple, the oldest Shiva linga / Shiva temple (APPSC G2 2008 key); the linga carries a standing figure of Shiva .",
+       "Shaktism: mother goddesses Durga, Amba, Kali, Chandi worshipped (APP); linga and trishula appear as sectarian symbols on coins and seals.",
+       "Kalamukha: Key facts Extremist sect; followers of Kalanana, a disciple of Lakulisha; strong in medieval Andhra (Simha Parishat) and Karnataka (Shakti Parishat)"
+      ]
+     }
+    ],
+    "gaps": [
+     "Special Gram Sabhas",
+     "Navsari District",
+     "Senior DDWS"
+    ]
+   }
   },
   {
    "id": "d6c69cac560e",
@@ -1423,7 +1897,42 @@
       "PM-SETU"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "PM-SETU",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › E-governance programmes and services - UMANG, DigiLocker, e-Sign, e-Hospital, Common Service Centres › State e-governance projects - state + service, state FIRSTs",
+      "bullets": [
+       "Akshaya: State Kerala; Service Rural IT centres; started in Malappuram as a district-wide e-literacy project",
+       "SETU: State Maharashtra; Service Citizen facilitation centres for certificates",
+       "e-Mitra / e-Sewa / Sewa Setu: State Rajasthan / Punjab / Assam; Service State service-delivery platforms (LENSD Jun 2026; UPSC)",
+       "Akshaya: State Kerala (Malappuram); Purpose e-literacy and citizen service centres",
+       "e-Seva / CARD: State Andhra Pradesh; Purpose Citizen service centres (2001) / registration (1998)"
+      ]
+     },
+     {
+      "topic": "ITI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Skill development and employment in AP - AP State Skill Development Corporation, employment schemes › AP skill schemes - target group",
+      "bullets": [
+       "Skill Census 2024: Target group / purpose household survey mapping the skills, qualifications and jobs of 100% of youth; linked to the Super Six goal of 20 lakh jobs",
+       "Nirudyoga Bruthi (Super Six promise): Target group / purpose ₹3,000 a month to unemployed youth; unpaid as of Sep 2026, according to the opposition (TH, 9 Sep 2026)",
+       "Yuva Nestham: Target group / purpose unemployment allowance for educated youth under the 2014-19 TDP government",
+       "PM-SETU (2025-26): Target group / purpose upgrade of ITIs; AP plans to upgrade all 83 Govt ITIs as 16 hubs and 67 spokes (₹3,976 cr)",
+       "ITI admissions 2025-26: 83 Govt ITIs (15,529 admissions) and 435 private ITIs (38,870). NAPS: 47,812 apprentices registered."
+      ]
+     }
+    ],
+    "gaps": [
+     "Delhi PM-SETU",
+     "NSTI",
+     "Hub-and-Spoke",
+     "Centres of Excellence"
+    ]
+   }
   },
   {
    "id": "859e98077ef3",
@@ -1500,7 +2009,40 @@
       "Governor Malhotra"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Crypto",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Blockchain and distributed ledger technology; cryptocurrency and CBDC (e-rupee) › Cryptocurrency - Bitcoin creator, tracking and regulation, VDA taxation",
+      "bullets": [
+       "Bitcoin (2009), created by the pseudonymous Satoshi Nakamoto, was the first cryptocurrency.",
+       "Crypto is decentralised and peer-to-peer. It uses public/private keys and wallets, and mining validates transactions. Stablecoins are pegged to fiat, commodities or crypto.",
+       "Crypto is not legal tender in India. Virtual digital asset service providers were brought under the PMLA in March 2023 .",
+       "Not in your sources: the current VDA tax regime (Finance Act 2022 set 30% tax on gains + 1% TDS; check for Budget 2026-27 changes).",
+       "Turkmenistan legalised crypto mining using gas-based power (APPCA 2026)."
+      ]
+     },
+     {
+      "topic": "RBI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Reserve Bank of India - establishment, organisation and functions › RBI governance - Governor, Central Board, Deputy Governors, Governors, accounting year",
+      "bullets": [
+       "Four Deputy Governors - two from RBI ranks, one commercial banker, one economist (monetary policy). Current: Rohit Jain (appointed May 2026, replacing T. Rabi Sankar), Swaminathan J, Poonam Gupta, S. C. Murmu (TH, 3 May 2026).",
+       "Sanjay Malhotra: Note Current Governor (since Dec 2024 )",
+       "Sanjay Malhotra (since Dec 2024): Note Current Governor (TH 2026); chairs the MPC and the Payments Regulatory Board [GK for start date]",
+       "Central Board of Directors: 21 members, appointed by the Government of India under the RBI Act; directors hold office for 4 years.",
+       "Four Deputy Governors: two from within RBI, one commercial banker and one economist (who heads monetary policy). Rohit Jain was appointed in May 2026 for 3 years, replacing T. Rabi Sankar. The other three are Swaminathan J, Poonam Gupta and S.C. Murmu (TH, 3 May 2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Governor Sanjay Malhotra",
+     "Governor Malhotra"
+    ]
+   }
   },
   {
    "id": "6b4b371ae8d9",
@@ -1582,7 +2124,50 @@
       "policy"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Liquidity Management",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Monetary policy - objectives, instruments (CRR, SLR, repo, reverse repo, MSF, OMO, LAF), transmission › Liquidity management - LAF, SDF, fine-tuning operations, I-CRR, OMO, VRRR, sterilisation",
+      "bullets": [
+       "LAF: the primary window for injecting (repo) and absorbing (reverse repo, SDF) day-to-day liquidity (CDI; UPSC).",
+       "SDF lets RBI absorb surplus liquidity without collateral (APPSC-G2 2025 key); introduced April 2022 .",
+       "Fine-tuning operations: short VRR/VRRR auctions to keep liquidity in line with the policy stance. There were 49 in FY24 (APPSC-G2 2025 key).",
+       "OMO: outright purchase or sale of G-secs for durable liquidity, done through banks and not with the public (APP).",
+       "SDF: proposed by RBI in 2015 and enabled by Budget 2018-19 (RBI Act amendment); it began in April 2022 [GK for the start]. It absorbs surplus liquidity without collateral, so RBI need not hold G-secs to drain funds (APPSC-G2 2025)."
+      ]
+     },
+     {
+      "topic": "SEBI",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #55 · SEBI and National Stock Exchange",
+      "bullets": [
+       "SEBI is the stock exchange regulator in India.",
+       "SEBI was established in 1988 as a non-statutory body.",
+       "SEBI became a statutory body on 12 April 1992 under the SEBI Act, 1992.",
+       "SEBI is headquartered in Mumbai.",
+       "SEBI's main objective is to protect investors."
+      ]
+     },
+     {
+      "topic": "Limits On Parliament's Legislative Competence",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Centre-State legislative relations - Articles 245-255, doctrine of repugnancy, parliamentary legislation on state list › Limits on Parliament's legislative competence",
+      "bullets": [
+       "Parliament is not sovereign: bound by the written Constitution, Fundamental Rights (Art. 13), the federal division of lists, and the Basic Structure (Kesavananda, 1973).",
+       "Cannot legislate on State List except under Arts. 249, 250, 252, 253, 356.",
+       "Art. 301-303: cannot prefer or discriminate between states in trade laws.",
+       "Not limits: extra-territorial operation of its laws (permitted by Art. 245(2)) ."
+      ]
+     }
+    ],
+    "gaps": [
+     "GST-related"
+    ]
+   }
   },
   {
    "id": "a1d22e6fffb4",
@@ -1664,7 +2249,48 @@
       "capital"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Investor Protection",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › SEBI - establishment, powers and functions; investor protection and market regulation › Investor protection - IEPF, SCORES, insider trading and PFUTP",
+      "bullets": [
+       "IEPF Authority (Companies Act 2013, Ministry of Corporate Affairs): investor awareness; refund of unclaimed dividends and shares.",
+       "SCORES: SEBI's online complaints redress system .",
+       "Insider Trading (PIT) Regulations - 2025 amendment widened UPSI; PFUTP Regulations bar fraudulent and unfair trade practices .",
+       "New investor tools: new UPI address structure for intermediaries and \"SEBI Check\", \"SEBI vs SCAM\" campaign (ES 2025-26); Mission Jagrook launched on SEBI's 38th Foundation Day (APPCA 2026)."
+      ]
+     },
+     {
+      "topic": "No-confidence Motion",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Parliamentary devices - Question Hour, Zero Hour, motions (adjournment, no-confidence, censure, calling attention) › No-confidence motion - constitutional status, support, reasons, Speaker's role, instances",
+      "bullets": [
+       "Not mentioned in the Constitution; flows from Article 75(3) - Council of Ministers collectively responsible to the Lok Sabha . Moved under Rule 198 of Lok Sabha rules .",
+       "Can be moved only in Lok Sabha; needs support of 50 members for leave; no reasons need be stated; if passed, the whole Council of Ministers must resign .",
+       "Speaker decides admissibility (APPSC-GS 2025 key: the Speaker has discretion to admit or reject the motion).",
+       "Called the most powerful weapon of executive accountability (APPSC-G2 2025).",
+       "No-confidence motion: the most powerful weapon (APPSC-G2 2025 key). It enforces collective responsibility to the Lok Sabha; if passed, the whole Council of Ministers must go."
+      ]
+     },
+     {
+      "topic": "Financial Markets And Mutual Funds",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #11 · Financial Markets and Mutual Funds",
+      "bullets": [
+       "The first SEBI Mutual Funds Regulations were introduced in 1993.",
+       "SEBI is associated with the capital and securities market.",
+       "The Forward Markets Commission was the regulator of commodity futures markets.",
+       "The Forward Markets Commission was established in 1953.",
+       "The Forward Markets Commission merged with SEBI in 2015."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "dd7bdb17b572",
@@ -1756,7 +2382,63 @@
       "Green Energy Corridor"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Green Energy Corridor",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Renewable energy sources and installed capacities in India - overall targets › Green Energy Corridors - phases, intra and inter-state",
+      "bullets": [
+       "Origin: PGCIL study 2012 (evacuation gap near solar/wind sites) → GEC report Sept 2012 → implementation from 2015.",
+       "Intra-State GEC-I: 8 states incl. Andhra Pradesh, Gujarat, HP, Karnataka, MP, Maharashtra, Rajasthan, TN; ~9,700 ckm lines, 22,600 MVA substations, ~24 GW RE; cost ₹10,141.68 cr - MNRE 40% : KfW (Germany) loan 40% : state utility 20%.",
+       "Intra-State GEC-II: approved 2022 for 7 states, ~20 GW RE .",
+       "Inter-state GEC lines are built by PGCIL; purpose - evacuate RE from RE-rich zones to load centres."
+      ]
+     },
+     {
+      "topic": "Centre → Leader",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-5 › Outbreak and spread - Mangal Pandey, Meerut; centres and leaders of the revolt › Centre → leader",
+      "bullets": [
+       "Delhi: Leader(s) Bahadur Shah Zafar (nominal); General Bakht Khan (real; led a 10-member \"Court of Soldiers\")",
+       "Kanpur: Leader(s) Nana Saheb, with Tantia Tope and Azimullah Khan",
+       "Lucknow: Leader(s) Begum Hazrat Mahal (son Birjis Qadr proclaimed Nawab)",
+       "Jhansi: Leader(s) Rani Lakshmibai",
+       "Arrah / Jagdishpur (Bihar): Leader(s) Kunwar Singh (70-year-old zamindar of Jagdishpur; guerrilla war)"
+      ]
+     },
+     {
+      "topic": "Solar Energy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Solar energy - PV vs thermal technologies, National Solar Mission, solar parks, rooftop solar, ISA › National Solar Mission - launch, targets, phases",
+      "bullets": [
+       "Jawaharlal Nehru National Solar Mission, launched January 2010 (APPSC-GS 2025), brand name \"Solar India\"; one of the 8 missions of NAPCC (2008) .",
+       "Target 20 GW grid solar by 2022, revised in June 2015 to 100 GW by 2022 = 40 GW rooftop + 60 GW large/medium grid (APP).",
+       "Other goals: solar thermal collectors 15 million sq m (2017) / 20 million (2022); 20 million solar lights for rural areas; tools - RPO, preferential tariffs, solar parks (APP; UPSC).",
+       "Launched January 2010 (brand name \"Solar India\"); one of the 8 missions of the NAPCC (2008) . Aim: promote solar power and make India a global leader in solar energy (APPSC 2025 statements).",
+       "III: Period 2017-2022; Off-grid solar PV target 2,000 MW"
+      ]
+     },
+     {
+      "topic": "United Nations",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › United Nations - principal organs, UNGA, UNSC and reform; India's candidature › UNSC sanctions and counter-terrorism committees - 1267, 1373, 1540",
+      "bullets": [
+       "1267 (1999): Subject Sanctions on Al-Qaida / ISIL (Da'esh) and associates; terrorist listings",
+       "1373 (2001): Subject Counter-Terrorism Committee (after 9/11)",
+       "1540 (2004): Subject Stopping WMD reaching non-state actors",
+       "Masood Azhar (Jaish-e-Mohammed) was listed under the 1267 Committee (2019) (APPSC-G1 2019).",
+       "India held the first capacity-building programme on UNSCR 1540 for Asia-Pacific countries at NACIN, Palasamudram (AP), Feb 2025 (IYB)."
+      ]
+     }
+    ],
+    "gaps": [
+     "GEC-III",
+     "Phase-III"
+    ]
+   }
   },
   {
    "id": "c7fafdbd29da",
@@ -1844,7 +2526,54 @@
       "Chandrayaan-3"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Impossible Trinity And Capital Flows",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Exchange rate systems and rupee movement; currency internationalisation › Impossible trinity and capital flows",
+      "bullets": [
+       "Impossible Trinity (Mundell-Fleming trilemma): a country cannot at once have a fixed exchange rate, free capital flows and an independent monetary policy - RBI's dilemma with volatile FPI flows.",
+       "Large inflows cause appreciation (Dutch disease); sudden outflows cause crashes (1991, 2013 Taper Tantrum)."
+      ]
+     },
+     {
+      "topic": "ICMR",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent public health initiatives - Ayushman Bharat, National Health Mission, Ayushman Bharat Digital Mission › ICMR - history and priorities",
+      "bullets": [
+       "Set up in 1911 as the Indian Research Fund Association (IRFA), one of the oldest medical research bodies; renamed ICMR in 1949 .",
+       "ICMR's disease consortia: MERA India (malaria), India TB Research Consortium, India Hypertension Control Initiative, Mission Delhi, India Cancer Research Consortium, Stroke Network; a Medical Device and Diagnostic Mission Secretariat reduces import dependence (IYB 2026).",
+       "Not in your sources: ICMR strategic plan / Vision 2030 pillars."
+      ]
+     },
+     {
+      "topic": "Prominent Indian Scientists",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 18 › Prominent Indian scientists - C.V. Raman, J.C. Bose, S.N. Bose, Ramanujan, Meghnad Saha, Homi Bhabha › Universal angles",
+      "bullets": [
+       "Current relevance: IACS, Kolkata (founded 1876 by Mahendra Lal Sircar; oldest institute for basic research; funded by DST and West Bengal) celebrated its 150th anniversary in 2026 - J.C. Bose, Saha, S.N. Bose and Raman all worked there (LENSD, 27 May 2026; LENS Jun 2026).",
+       "Criticism & debates: \"Matilda effect\" - women scientists like Janaki Ammal and Anna Mani left out of public memory; NBT India@75 series revives them (TH, 12 Mar 2026).",
+       "FIRST/LAST: Raman = first Asian science Nobel (1930); Kamala Sohonie = first Indian woman science PhD (1939)."
+      ]
+     },
+     {
+      "topic": "Attempt To Suicide In Law",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Other social problems - alcoholism, drug abuse, suicide, beggary and human trafficking › Attempt to suicide in law - IPC 309, Mental Healthcare Act 2017, Tele-MANAS",
+      "bullets": [
+       "Sec. 309 IPC: attempted suicide was punishable with up to one year and/or a fine (APP notes say 3 months).",
+       "P. Rathinam (1994) called 309 invalid. Gian Kaur (1996) overruled it: \"no right to die, but a right to die with dignity\" (APP) .",
+       "Mental Healthcare Act, 2017 decriminalises suicide (CDX; APP). Sec. 115 presumes severe stress, so there is no trial or punishment and the State must provide care .",
+       "BNS 2023 has no general offence of attempted suicide. Sec. 226 covers only attempts to coerce a public servant .",
+       "Exam angle: MPPSC 1991 key: suicide, whose attempt is punishable but whose completed act cannot be punished."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "7e40ae1e6392",
@@ -1921,7 +2650,25 @@
       "agriculture"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Horticulture Hub",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-4 › Andhra Pradesh - cropping pattern, major crops, horticulture, aquaculture and fisheries › Horticulture hubs → district",
+      "bullets": [
+       "Horticulture (2025-26): 46.43 lakh acres, 406.38 lakh MT (CDI Survey 2025-26) (earlier: 45.59 lakh acres, 365.92 lakh MT, 2023-24).",
+       "Eleven growth-engine crops in 24 clusters: banana, mango, chilli, oil palm, cocoa, dragon fruit, onion, cashew, coconut, tomato, coffee (Araku coffee).",
+       "Banana hub: Anantapur (Tadipatri). Not in your sources: district leaders for mango, coconut, cashew, cocoa."
+      ]
+     }
+    ],
+    "gaps": [
+     "Madanapalle in Annamayya"
+    ]
+   }
   },
   {
    "id": "574e67cfcd94",
@@ -1997,7 +2744,27 @@
       "nadu"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Tamil Literature → Author",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-2 › Chola art - Brihadeshwara temple, Dravida style elements, Chola bronzes (Nataraja), Tamil literature › Tamil literature → author",
+      "bullets": [
+       "Kamba Ramayanam (Ramavataram): Author/compiler Kamban (UPPSC 2010 key)",
+       "Tirumurai (Shaiva canon; 11 volumes, called the \"Fifth Veda\" / Tamil Veda): Author/compiler Nayanar hymns, compiled by Nambi Andar Nambi",
+       "Kamba Ramayanam (Ramavataram): Author Kamban; Note Tamil adaptation, not a mere translation of Valmiki",
+       "Nannul: Author Pavanandhi; Note Standard Tamil grammar",
+       "Tirumurai: Content Hymns of the Saiva Nayanars (Tevaram etc.); the \"Tamil Veda\"; Compiler Nambi Andar Nambi, in Rajaraja I's time"
+      ]
+     }
+    ],
+    "gaps": [
+     "POCSO"
+    ]
+   }
   },
   {
    "id": "711aaca61893",
@@ -2065,7 +2832,15 @@
       "Commerce Minister Piyush Goyal"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": [
+     "Commerce Minister Piyush Goyal",
+     "Community Foundation in Chicago"
+    ]
+   }
   },
   {
    "id": "693697ef1134",
@@ -2162,7 +2937,73 @@
       "Madras High Court"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Tamil Nadu",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Issues and challenges in Indian federalism - governor's role, GST Council, central agencies, All India Services › Governor-state government conflicts - bill assent, Tamil Nadu and Kerala",
+      "bullets": [
+       "Art. 200 options: assent; withhold; return (not a Money Bill); reserve for the President. A re-passed bill cannot be withheld again.",
+       "Precedents: Shamsher Singh (bound by aid and advice); Nabam Rebia (no general discretion); Rameshwar Prasad (actions reviewable); State of Punjab v Principal Secretary to Governor (2023) (cannot keep bills pending indefinitely).",
+       "State of Tamil Nadu v Governor of TN (April 2025): referral of 10 re-enacted bills to the President held unconstitutional; SC used Art. 142 to declare them assented (LENS, Apr 2025). Timelines read in: withholding on ministers' advice 1 month, against advice 3 months, re-presented bill 1 month; beyond that, \"deemed assent\" (APPCA). (Some notes date this to 2023; the 2023 case is the Punjab one.)",
+       "Not in your sources: the Supreme Court's Nov 2025 opinion on the Presidential Reference (Art. 143) about bill-assent timelines. Add it and check whether it limits the April 2025 timelines and deemed assent.",
+       "Hung assembly, Tamil Nadu 2026: TVK 108 seats (10 short); Governor invited C. Joseph Vijay on 120 letters of support (Art. 164), per Sarkaria/Punchhi order, with an early floor test (TH, 11 May 2026)."
+      ]
+     },
+     {
+      "topic": "Madras High Court",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #70 · High Courts: Articles, Powers and Jurisdiction",
+      "bullets": [
+       "Article 214 mandates a High Court for each State.",
+       "The Madras High Court was established in 1862.",
+       "Removal of a High Court judge requires an Address passed by each House of Parliament by a Special Majority.",
+       "The Madras High Court has jurisdiction over Tamil Nadu.",
+       "The Madras High Court has jurisdiction over Puducherry."
+      ]
+     },
+     {
+      "topic": "Activism Cases",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › High Courts and subordinate judiciary; judicial review, judicial activism, PIL and judicial overreach debate › Activism cases",
+      "bullets": [
+       "Hussainara Khatoon: Year 1979; Outcome Speedy trial for undertrials; first PIL",
+       "Olga Tellis: Year 1985; Outcome Right to livelihood within Art. 21 (pavement dwellers)",
+       "M.C. Mehta cases: Year 1980s onward; Outcome Wide environmental directives; criticised as policy-making",
+       "Vishaka: Year 1997; Outcome Workplace sexual harassment guidelines",
+       "Prakash Singh: Year 2006; Outcome Police reform directions (State Security Commission, fixed tenure)"
+      ]
+     },
+     {
+      "topic": "Police",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-4 › Administrative changes - civil services, army reorganisation, police, judiciary, local self-government (Ripon) › Police - darogas, kotwal, Police Act 1861, Police Commission",
+      "bullets": [
+       "Cornwallis reorganised police: districts divided into thanas (circles) under an Indian daroga assisted by constables; zamindars stripped of police duties .",
+       "Kotwal: the older (Mughal) chief of town police .",
+       "Police Act 1861: colonial force modelled on the Royal Irish Constabulary, meant to suppress dissent.",
+       "Police Commission 1902 under Andrew Frazer, appointed by Curzon.",
+       "Zamindars relieved of police duties; districts divided into thanas under a daroga; kotwal in towns: Introducer Cornwallis (Cornwallis Code)"
+      ]
+     },
+     {
+      "topic": "POCSO",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Juvenile Justice Act 2015, POCSO Act 2012, Child Labour (Prohibition and Regulation) Amendment 2016 › POCSO Act 2012 - full form, commencement, age, offences, special courts, 2019 amendment, age-of-consent debate",
+      "bullets": [
+       "2019 Amendment: minimum 10 years for penetrative sexual assault (extendable to life); aggravated cases up to life or death penalty; fines for storing child pornographic material - at least Rs 5,000, repeat Rs 10,000. POCSO Rules 2020 replaced the 2012 Rules (IYB 2026).",
+       "POCSO 2012: Age of consent 18",
+       "Debate: MP High Court asked the Centre to lower the age of consent to 16 citing early puberty through social-media exposure (APPSC 2022); SC in State of UP v. Anurudh (Jan 2026) flagged misuse in consensual adolescent relationships and urged a \"Romeo-Juliet clause\" (LENS Jan 2026; VIS 2026); SC set aside a Calcutta HC ruling that excluded consensual adolescent relationships from POCSO, using Art. 142 for sentencing…",
+       "Note: IPC was replaced by the Bharatiya Nyaya Sanhita (BNS), 2023 from 1 July 2024; POCSO remains a separate special law .",
+       "Age of consent: 10 (IPC 1860) → 12 (1891) → 14 (1925) → 16 (1949) → 18 (POCSO 2012 / CLA 2013). The BNS (Sec. 63) keeps 18."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "bbb4a7472803",
@@ -2258,7 +3099,75 @@
       "Madras High Court"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "DMK",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › National - polity and governance: bills, acts, ordinances, landmark judgments › Elections held - States, results",
+      "bullets": [
+       "Bihar, Nov 2025 (243 seats): Result NDA 202; BJP 89 (largest), JD(U) 85; Nitish Kumar sworn in for a record 10th time, later moved to the Rajya Sabha; Samrat Choudhary became Bihar's first BJP CM (Apr 2026)",
+       "Tamil Nadu (234): Result TVK (C. Joseph Vijay) formed the government, ending a ~60-year DMK-AIADMK duopoly; trust vote 13 May 2026",
+       "Tamil Nadu (May 2026): Result TVK's C. Joseph Vijay CM (10 May 2026) - first non-DMK/AIADMK CM since 1967, coalition",
+       "Bihar: Result Samrat Choudhary (BJP) CM from Mar 2026, replacing Nitish Kumar (who moved to Rajya Sabha)"
+      ]
+     },
+     {
+      "topic": "L. Chandra Kumar Case",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Tribunals - Articles 323A and 323B; administrative and specialised tribunals; tribunal reforms › L. Chandra Kumar case - High Court review of tribunal decisions",
+      "bullets": [
+       "In L. Chandra Kumar (1997), the SC struck down the exclusion clauses Art. 323A(2)(d) and 323B(3)(d). Judicial review under Arts. 32 and 226 is basic structure, so tribunal decisions lie before an HC Division Bench. Tribunals supplement the HCs but do not replace them.",
+       "Before: S.P. Sampath Kumar (1987).",
+       "Madras Bar Association (2021 and 2025) (CDI; TH 12 Aug 2026).",
+       "S.P. Sampath Kumar: Year 1987; Held Tribunals may replace HCs if an equally effective substitute; SC's review kept (TH, 12 Aug 2026 groups it with L. Chandra Kumar)",
+       "L. Chandra Kumar: Year 1997; Held Exclusion clauses 323A(2)(d), 323B(3)(d) struck down; review under Arts. 32, 226 is Basic Structure"
+      ]
+     },
+     {
+      "topic": "Union Ministers And Council Of Ministers",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #46 · Union Ministers and Council of Ministers",
+      "bullets": [
+       "The Prime Minister is the head of the Council of Ministers.",
+       "The President appoints other Union Ministers on the advice of the Prime Minister.",
+       "Union Ministers do not legally hold office during the pleasure of the Prime Minister.",
+       "The Council of Ministers consists of the Prime Minister, Cabinet Ministers, Ministers of State with independent charge, Ministers of State, and Deputy Ministers.",
+       "The Union Cabinet consists only of the Prime Minister and Cabinet-rank Ministers."
+      ]
+     },
+     {
+      "topic": "Tamil Literature → Author",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-2 › Chola art - Brihadeshwara temple, Dravida style elements, Chola bronzes (Nataraja), Tamil literature › Tamil literature → author",
+      "bullets": [
+       "Kamba Ramayanam (Ramavataram): Author/compiler Kamban (UPPSC 2010 key)",
+       "Tirumurai (Shaiva canon; 11 volumes, called the \"Fifth Veda\" / Tamil Veda): Author/compiler Nayanar hymns, compiled by Nambi Andar Nambi",
+       "Kamba Ramayanam (Ramavataram): Author Kamban; Note Tamil adaptation, not a mere translation of Valmiki",
+       "Nannul: Author Pavanandhi; Note Standard Tamil grammar",
+       "Tirumurai: Content Hymns of the Saiva Nayanars (Tevaram etc.); the \"Tamil Veda\"; Compiler Nambi Andar Nambi, in Rajaraja I's time"
+      ]
+     },
+     {
+      "topic": "Madras Chief Ministers Before Andhra State",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Linguistic reorganisation demand; Potti Sriramulu's fast and the formation of Andhra State 1953 › Madras Chief Ministers before Andhra State - stand on separation",
+      "bullets": [
+       "P.S. Kumaraswamy Raja: Tenure 1949-52; Stand Chaired the Partition Committee; the Madras government accepted Andhra on JVP terms (without Madras)",
+       "Partition Committee (Madras cabinet decision of 7 Dec 1949):",
+       "Tamil members: T.T. Krishnamachari, Bhaktavatsalam, Madhava Menon;",
+       "Set up after the JVP report (April 1949). The Madras Cabinet under CM P.S. Kumaraswamy Raja met on 7 Dec 1949.",
+       "Chairman: Detail Kumaraswamy Raja (Madras CM)"
+      ]
+     }
+    ],
+    "gaps": [
+     "SIT",
+     "POCSO"
+    ]
+   }
   },
   {
    "id": "2696f38a4b95",
@@ -2346,7 +3255,38 @@
       "stability"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "FSDC And Stability Bodies",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Financial instabilities - crises, systemic risk, shadow banking, macroprudential regulation › FSDC and stability bodies",
+      "bullets": [
+       "FSDC: set up December 2010; chaired by the Union Finance Minister; monitors macroprudential supervision and inter-regulatory coordination; not a NITI Aayog organ (UPSC 2016 key: only statement 3); sub-committee chaired by the RBI Governor .",
+       "Committee on Financial Sector Assessment (CFSA): co-chaired by an RBI Deputy Governor and the Finance Secretary (MPPSC 2020 key).",
+       "Financial Stability Report (FSR): published by RBI, half-yearly (June, December) . Dec 2025 FSR (foreword by Governor Sanjay Malhotra): external/geopolitical risks; macro stress tests show banks and NBFCs resilient (TH, 1 and 22 Jan 2026)."
+      ]
+     },
+     {
+      "topic": "RBI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Reserve Bank of India - establishment, organisation and functions › RBI establishment - Hilton Young Commission, Act, operation, nationalisation",
+      "bullets": [
+       "RBI Act passed: Date 1934",
+       "RBI started functioning: Date 1 April 1935 (Central Office Calcutta; moved to Bombay 1937)",
+       "Nationalisation: Date 1 January 1949 - RBI (Transfer to Public Ownership) Act 1948",
+       "90 years (RBI@90): Date 1 April 2024",
+       "RBI starts functioning (as a private shareholders' bank): Date 1 April 1935"
+      ]
+     }
+    ],
+    "gaps": [
+     "RBI Governor Sanjay Malhotra",
+     "RBI Governor Malhotra"
+    ]
+   }
   },
   {
    "id": "85a8576b4c19",
@@ -2433,7 +3373,25 @@
       "pradesh"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "AP Rainfall Patterns And Forest Zones",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #13 · AP Rainfall Patterns and Forest Zones",
+      "bullets": [
+       "The major source of rainfall is the South-West Monsoon.",
+       "The South-West Monsoon provides about two-thirds of the rainfall.",
+       "July is the month with more rainfall.",
+       "Rayalaseema receives more rainfall from the North-East Monsoon.",
+       "The Sileru–Sabari valley region is a relatively higher-rainfall area in coastal and north-eastern Andhra Pradesh."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "04886ffe64d1",
@@ -2521,7 +3479,39 @@
       "judicial"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "External Debt",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Public debt - internal and external, debt-GDP ratio, sustainability, state debt and off-budget borrowing › External debt - composition, sovereign share, currency, publisher",
+      "bullets": [
+       "India's external debt: USD 718.2 billion at end-Dec 2024, 18.4% of GDP (ES 2025-26 Summary); external debt-GDP 20.4%, forex reserves cover 90% of it (RBI Annual Report, APPCA Jun 2026). India ranks 21st in the world, 11th in G20 (ES).",
+       "Most external debt is non-sovereign (owed by companies/banks); sovereign (government) external debt is small - the Government's external debt is about 2.6% of GDP and under 5% of its total debt (ES). Not all external debt is in US dollars (UPSC 2019: both statements wrong).",
+       "Largest component historically: commercial borrowings (UPPSC 2017 key).",
+       "Sovereign external borrowing is mostly multilateral, concessional, project-linked; ADB is the largest multilateral lender (32.8%); then World Bank (IBRD/IDA), NDB, AIIB (CDI).",
+       "\"India's External Debt: A Status Report\" is published by the Ministry of Finance (DEA); RBI compiles the quarterly data ."
+      ]
+     },
+     {
+      "topic": "RBI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Financial regulators - RBI, SEBI, IRDAI, PFRDA, IBBI, IFSCA - mandate and powers › RBI - Monetary Policy Committee, banker/regulator functions, inflation-targeting mandate",
+      "bullets": [
+       "MPC: a statutory six-member body under the RBI Act, 1934 that fixes the repo rate. Its members :",
+       "3 from the RBI: the Governor (chair, casting vote), a Deputy Governor and one officer",
+       "Sec. 45ZA: the Centre, in consultation with the RBI, sets the target every 5 years",
+       "Sec. 45ZN: if the band is breached for 3 consecutive quarters, the RBI must report to the Centre with the reasons, remedies and time to restore",
+       "The Public Debt Management Cell was set up to reduce the RBI's conflict of interest between monetary policy and debt management (CDI)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Governor Malhotra"
+    ]
+   }
   },
   {
    "id": "bf2174a5895a",
@@ -2598,7 +3588,27 @@
       "system"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "RBI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Reserve Bank of India - establishment, organisation and functions › RBI governance - Governor, Central Board, Deputy Governors, Governors, accounting year",
+      "bullets": [
+       "Four Deputy Governors - two from RBI ranks, one commercial banker, one economist (monetary policy). Current: Rohit Jain (appointed May 2026, replacing T. Rabi Sankar), Swaminathan J, Poonam Gupta, S. C. Murmu (TH, 3 May 2026).",
+       "Sanjay Malhotra: Note Current Governor (since Dec 2024 )",
+       "Central Board of Directors: 21 members, appointed by the Government of India under the RBI Act; directors hold office for 4 years.",
+       "Four Deputy Governors: two from within RBI, one commercial banker and one economist (who heads monetary policy). Rohit Jain was appointed in May 2026 for 3 years, replacing T. Rabi Sankar. The other three are Swaminathan J, Poonam Gupta and S.C. Murmu (TH, 3 May 2026).",
+       "RBI accounting year: April-March since 2020-21; earlier it ran July-June ."
+      ]
+     }
+    ],
+    "gaps": [
+     "RBI Governor Sanjay Malhotra"
+    ]
+   }
   },
   {
    "id": "a73e3ec97c91",
@@ -2675,7 +3685,22 @@
       "monetary"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Sanjay Malhotra",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Reserve Bank of India - establishment, organisation and functions › RBI governance - Governor, Central Board, Deputy Governors, Governors, accounting year",
+      "bullets": [
+       "Sanjay Malhotra: Note Current Governor (since Dec 2024 )",
+       "Sanjay Malhotra (since Dec 2024): Note Current Governor (TH 2026); chairs the MPC and the Payments Regulatory Board [GK for start date]"
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "0f6e43742632",
@@ -2746,7 +3771,64 @@
       "GSTAT"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Online Behaviour Terms",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Netiquettes - digital etiquette, digital literacy, misinformation and fake news › Online behaviour terms - cyber venting, trolling, cyberbullying, doxxing, cyberstalking, remedies",
+      "bullets": [
+       "Cyber venting: Meaning Using websites to pour out one's grievances (JPSC PYQ)",
+       "Doxxing: Meaning Publicly sharing someone's private information (real name, location, workplace) online without consent to harm or shame (LENSD, 1 Aug 2026)",
+       "Cyberbullying: Meaning Repeated online harassment/humiliation, esp. of children (IYB 2026 lists it among online risks)",
+       "Trolling: Meaning Deliberately provocative or abusive posts to upset or derail discussion",
+       "Cyberstalking: Meaning Repeatedly monitoring or contacting a person online against their will"
+      ]
+     },
+     {
+      "topic": "Inter-state Water Disputes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Centre-State administrative relations - Articles 256-263, all-India services, directions to states › Inter-state water disputes - Art. 262, ISRWD Act, tribunals involving AP",
+      "bullets": [
+       "Art. 262(1): Parliament provides by law for adjudicating inter-state river water disputes (APPSC-GS 2023). Art. 262(2): Parliament may bar the Supreme Court and all other courts from hearing them. Art. 131 original jurisdiction also excludes water disputes (CDI).",
+       "Laws: the Inter-State River Water Disputes Act, 1956 (tribunals) and the River Boards Act, 1956, under which no River Board has ever been set up (LENSD 2 Aug 2026).",
+       "Water is State List Entry 17. Inter-state rivers are under Union List Entry 56.",
+       "Godavari: Year 1969; States Maharashtra, Karnataka, AP, MP, Odisha",
+       "Krishna (first, Bachawat): Year 1969; States Maharashtra, Karnataka, AP"
+      ]
+     },
+     {
+      "topic": "GST",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Impact of GST on commerce, industry and state finances; unresolved GST issues › Unresolved issues - rates, petroleum, GSTAT, inverted duty, ITC fraud",
+      "bullets": [
+       "Multiple rates: biggest drawback is misclassification of goods and services and classification disputes (APPSC-G1 2017 answer; LENS Aug 2025).",
+       "Four-slab structure was meant to be transitional; GST 2.0 (22 Sep 2025) cut it to 5/18/40 (LENS Jul 2025; APPCA).",
+       "Petroleum and electricity still outside GST (CDI).",
+       "GST Appellate Tribunal (GSTAT): created via Finance Act 2024 (APPCA, May 2026); Procedure Rules 2025; Principal Bench, New Delhi; President + Technical Members (Centre, State); first President a former Chief Justice of Jharkhand HC; formally launched Sep 2025, hearings from Dec 2025; appeals online within 3 months (LENS May, Sep 2025). Earlier absence of benches piled appeals in High Courts.",
+       "Other asks: GST 3.0 simplification (CII AP, TH 1 Feb 2026); sector pleas e.g. notebook makers hit by Sep 2025 rate revision (TH, 9 Sep 2026)."
+      ]
+     },
+     {
+      "topic": "PAN",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · World Geography › #24 · World Highways and Road Networks",
+      "bullets": [
+       "The Pan-American Highway is the longest road network.",
+       "The Pan-American Highway is approximately 30,000 km long.",
+       "The Pan-American Highway runs from Alaska in the USA to Tierra del Fuego in Argentina.",
+       "The Pan-American Highway crosses 14 countries.",
+       "The Pan-American Highway extends across North America, Central America, and South America."
+      ]
+     }
+    ],
+    "gaps": [
+     "GSTAT",
+     "GSTIN"
+    ]
+   }
   },
   {
    "id": "e30432b41ede",
@@ -2822,7 +3904,28 @@
       "judicial"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Indian National Congress Sessions And Milestones",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian History › #102 · Indian National Congress Sessions and Milestones",
+      "bullets": [
+       "The first INC session was held in Bombay from 28–30 December 1885.",
+       "The first INC session was held at Gokuldas Tejpal Sanskrit College.",
+       "The first INC session had 72 delegates.",
+       "Dadabhai Naoroji was INC President at the 1886 Calcutta Session.",
+       "Gopal Krishna Gokhale was Congress President at the 1905 Benares Session."
+      ]
+     }
+    ],
+    "gaps": [
+     "Keralam Assembly",
+     "Revised Budget"
+    ]
+   }
   },
   {
    "id": "3f83ddd77c8f",
@@ -2904,7 +4007,50 @@
       "gram"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Exit Polls And Opinion Polls",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Elections - delimitation, model code of conduct, EVM-VVPAT, NOTA, election petitions › Exit polls and opinion polls - Section 126A",
+      "bullets": [
+       "Exit poll: a poll of voters taken immediately after they leave the polling station; not the same as an opinion poll (APPSC 2018 key: a, c, d correct).",
+       "Section 126A RPA 1951: no exit poll may be conducted or published from the start of polling in the first phase until half an hour after the close of the last phase .",
+       "Opinion polls are barred in the 48 hours before the close of poll (Sec. 126) ."
+      ]
+     },
+     {
+      "topic": "Panchayati Raj",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #37 · Local Self-Government and Panchayati Raj",
+      "bullets": [
+       "Rajasthan was the first Panchayati Raj State.",
+       "The first Panchayati Raj system in Rajasthan was established in Nagaur District.",
+       "The first Panchayati Raj system was established in Rajasthan on 2 October 1959.",
+       "Andhra Pradesh was the second state to establish Panchayati Raj.",
+       "The Balwant Rai Mehta Committee recommended a three-tier Panchayati Raj system."
+      ]
+     },
+     {
+      "topic": "Gram Panchayats",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Evolution of Panchayati Raj - Community Development Programme, Balwant Rai Mehta, Ashok Mehta, G.V.K. Rao and L.M. Singhvi committees › AP Panchayati Raj laws and the Mandal Praja Parishad reform",
+      "bullets": [
+       "AP Panchayat Samithis and Zilla Parishads Act, 1959: Provision Brought in the three tiers of 1959",
+       "AP Gram Panchayats Act, 1964: Provision Consolidated the village-panchayat law",
+       "AP Panchayat Raj Act, 1994 (Act 13 of 1994, 21 April 1994): Provision Implements the 73rd Amendment; 278 sections, 8 Parts; tiers: Gram Panchayat, Mandal Parishad, Zilla Parishad",
+       "Andhra Pradesh Panchayat Samithis and Zilla Parishads Act, 1959 : Panchayat Samithi at the block and Zilla Parishad at the district, over village panchayats. It gave effect to AP's 3-tier system of 1 Nov 1959 (CDX).",
+       "Later AP laws: Gram Panchayats Act 1964 ; Mandal Praja Parishads reform 1986 ; AP Panchayat Raj Act, 1994 (TH, 8 Sep 2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Panchayat Samitis",
+     "Zila Parishads"
+    ]
+   }
   },
   {
    "id": "37ca85a21338",
@@ -2981,7 +4127,15 @@
       "human"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": [
+     "Public Service Commission UPSC",
+     "NDA"
+    ]
+   }
   },
   {
    "id": "2d5b437e2c55",
@@ -3051,7 +4205,12 @@
       "high"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "8d8ce02d257d",
@@ -3129,7 +4288,38 @@
       "FSSAI"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "AP Dairy Sector",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP agriculture - APCNF/ZBNF, horticulture, aquaculture, allied sectors › AP dairy sector - APDDCF, cooperatives, Amul partnership",
+      "bullets": [
+       "Chittoor holds the top position in AP's dairy sector (TH, 1 Aug 2026).",
+       "Paala Velluva (dairy units for women, with Amul procuring milk) [GK for the Amul link], alongside Jeeva Kranthi (sheep/goat units).",
+       "Not in your sources: APDDCF structure and the current status of the Amul partnership."
+      ]
+     },
+     {
+      "topic": "FSSAI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Sectoral regulators - TRAI, CCI, FSSAI, CERC/SERCs, PNGRB, AERA, Data Protection Board › FSSAI - parent Act, laws replaced, ministry, packaging regulations, Eat Right India",
+      "bullets": [
+       "An independent statutory authority under the Food Safety and Standards Act, 2006. The Act consolidated eight laws and orders, including the Prevention of Food Adulteration Act, 1954, the Fruit Products Order 1955 and the Meat Food Products Order 1973 (VIS 2026).",
+       "Administrative ministry: Ministry of Health & Family Welfare . It is not under the Director General of Health Services (UPSC 2018: only statement 1 was correct).",
+       "Packaging regulations: from 1 July 2019, food businesses may not use recycled plastics or newspaper to wrap food (APPSC 2019).",
+       "Eat Right India is FSSAI's movement for safe, healthy and sustainable food, launched in 2018 .",
+       "FSSAI licences and registrations now have perpetual validity."
+      ]
+     }
+    ],
+    "gaps": [
+     "Delhi Hotel Lalit",
+     "Bharat Hotels Ltd"
+    ]
+   }
   },
   {
    "id": "0004f360b9f6",
@@ -3207,7 +4397,139 @@
       "Hotel"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "AP Dairy Sector",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP agriculture - APCNF/ZBNF, horticulture, aquaculture, allied sectors › AP dairy sector - APDDCF, cooperatives, Amul partnership",
+      "bullets": [
+       "Chittoor holds the top position in AP's dairy sector (TH, 1 Aug 2026).",
+       "Paala Velluva (dairy units for women, with Amul procuring milk) [GK for the Amul link], alongside Jeeva Kranthi (sheep/goat units).",
+       "Not in your sources: APDDCF structure and the current status of the Amul partnership."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "7a0b68e440eb",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "15:58",
+   "title": "Nestle's dairy whitener collected from top Delhi hotel found to be 'unsafe', FSSAI bans sale",
+   "summary": "The sample was declared as “substandard” under the Food Safety and Standards Act, 2006.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/fssai-bans-sale-of-nestle-low-fat-dairy-whitener-at-top-delhi-hotel-after-sample-found-to-be-unsafe-101791023171852.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Sectoral regulators - TRAI, CCI, FSSAI, CERC/SERCs, PNGRB, AERA, Data Protection Board › FSSAI - parent Act, laws replaced, ministry, packaging regulations, Eat Right India",
+     "text": "FSSAI licences and registrations now have perpetual validity.",
+     "match": [
+      "FSSAI"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Sectoral regulators - TRAI, CCI, FSSAI, CERC/SERCs, PNGRB, AERA, Data Protection Board › Regulator → parent Act and year of establishment",
+     "text": "FSSAI: Parent Act Food Safety and Standards Act, 2006; Set up 2008",
+     "match": [
+      "FSSAI"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "FSSAI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Sectoral regulators - TRAI, CCI, FSSAI, CERC/SERCs, PNGRB, AERA, Data Protection Board › FSSAI - parent Act, laws replaced, ministry, packaging regulations, Eat Right India",
+      "bullets": [
+       "An independent statutory authority under the Food Safety and Standards Act, 2006. The Act consolidated eight laws and orders, including the Prevention of Food Adulteration Act, 1954, the Fruit Products Order 1955 and the Meat Food Products Order 1973 (VIS 2026).",
+       "Administrative ministry: Ministry of Health & Family Welfare . It is not under the Director General of Health Services (UPSC 2018: only statement 1 was correct).",
+       "Packaging regulations: from 1 July 2019, food businesses may not use recycled plastics or newspaper to wrap food (APPSC 2019).",
+       "Eat Right India is FSSAI's movement for safe, healthy and sustainable food, launched in 2018 .",
+       "FSSAI licences and registrations now have perpetual validity."
+      ]
+     },
+     {
+      "topic": "AP Dairy Sector",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP agriculture - APCNF/ZBNF, horticulture, aquaculture, allied sectors › AP dairy sector - APDDCF, cooperatives, Amul partnership",
+      "bullets": [
+       "Chittoor holds the top position in AP's dairy sector (TH, 1 Aug 2026).",
+       "Paala Velluva (dairy units for women, with Amul procuring milk) [GK for the Amul link], alongside Jeeva Kranthi (sheep/goat units).",
+       "Not in your sources: APDDCF structure and the current status of the Amul partnership."
+      ]
+     },
+     {
+      "topic": "Delhi",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-4 › Viceroys of India - Canning to Mountbatten: key measures, acts and events › Capital shift to Delhi, Delhi Durbars, summer capital, Partition of Bengal, Bihar reorganisation",
+      "bullets": [
+       "1877: Viceroy Lytton; Occasion Queen Victoria proclaimed Empress of India (Kaiser-i-Hind), held while millions starved in the 1876 famine",
+       "1903: Viceroy Curzon; Occasion Coronation of King Edward VII",
+       "1911 Durbar announcements (12 Dec 1911): Partition of Bengal annulled (East and West Bengal reunited), Bihar and Orissa made a separate province, and the capital shifted from Calcutta to Delhi.",
+       "Shimla declared summer capital by Sir John Lawrence (APPSC 2018 key; year 1864 ).",
+       "Delhi Conspiracy Case (1912): Rash Behari Bose and Sachin Sanyal tried to assassinate Hardinge II during the state-entry procession into Delhi."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "741f5918899d",
@@ -3286,7 +4608,27 @@
       "Allahabad High Court"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Allahabad",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-4 › Mir Jafar, Mir Qasim and the Battle of Buxar (1764); Treaty of Allahabad (1765) and Diwani › Treaty of Allahabad (1765) - separate terms; chronology",
+      "bullets": [
+       "With Shuja-ud-Daula (Awadh): paid Rs 50 lakh indemnity; gave Kora and Allahabad to the Emperor; got the rest of his lands back; Awadh became a buffer state under Company protection.",
+       "With Shah Alam II: Diwani of Bengal, Bihar, Orissa for Rs 26 lakh a year; Emperor got Kora and Allahabad and became a Company pensioner.",
+       "Chronology (UPPSC 2016): Buxar (Oct 1764) → Clive returns (May 1765) → Treaty of Allahabad (1765) → Warren Hastings Governor (1772).",
+       "Shah Alam II: Term Granted the Company the Diwani of Bengal, Bihar and Orissa in return for Rs 26 lakh a year; kept Kora and Allahabad",
+       "Shuja-ud-Daulah (Awadh): Term Got his dominions back except Kora and Allahabad; paid a war indemnity of Rs 50 lakh; Awadh became a buffer state"
+      ]
+     }
+    ],
+    "gaps": [
+     "Justice Jai Krishna Upadhyay"
+    ]
+   }
   },
   {
    "id": "99b84888211b",
@@ -3366,7 +4708,40 @@
       "raj"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Election Commission",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #25 · Election Commission: Powers, Roles and Reforms",
+      "bullets": [
+       "The Election Commission of India is a permanent body.",
+       "The Election Commission of India is an independent body.",
+       "The Election Commission of India is a constitutional body.",
+       "The Election Commission of India operates under Part XV of the Constitution.",
+       "Articles 324 to 329 relate to the Election Commission of India."
+      ]
+     },
+     {
+      "topic": "ECI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Elections - delimitation, model code of conduct, EVM-VVPAT, NOTA, election petitions › Voter facilitation - ECI apps, postal ballot, election ink",
+      "bullets": [
+       "NETA app: not conceptualised by the ECI (APPSC-GS 2019 key: only statement b true).",
+       "ECINET: one platform merging 40+ ECI apps and websites (IYB).",
+       "NETA app: Purpose / fact Lets voters rate their representatives; built by a private start-up, not the ECI (APPSC 2019 key: only statement b correct)",
+       "SVEEP (Systematic Voters' Education and Electoral Participation): Purpose / fact Voter awareness; ECI partnered Indian Railways (APPSC 2019)",
+       "New ECI measures: max 1,200 electors per polling station, mobile deposit at booths, redesigned voter slips, colour candidate photos on EVMs, candidate booths just beyond 100 m (IYB 2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "West Bengal Congress",
+     "West Bengal"
+    ]
+   }
   },
   {
    "id": "7b88ec3e826b",
@@ -3443,7 +4818,14 @@
       "NRC"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": [
+     "NRC"
+    ]
+   }
   },
   {
    "id": "423415bd3c25",
@@ -3521,7 +4903,25 @@
       "FSSAI"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "FSSAI",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Sectoral regulators - TRAI, CCI, FSSAI, CERC/SERCs, PNGRB, AERA, Data Protection Board › FSSAI - parent Act, laws replaced, ministry, packaging regulations, Eat Right India",
+      "bullets": [
+       "An independent statutory authority under the Food Safety and Standards Act, 2006. The Act consolidated eight laws and orders, including the Prevention of Food Adulteration Act, 1954, the Fruit Products Order 1955 and the Meat Food Products Order 1973 (VIS 2026).",
+       "Administrative ministry: Ministry of Health & Family Welfare . It is not under the Director General of Health Services (UPSC 2018: only statement 1 was correct).",
+       "Packaging regulations: from 1 July 2019, food businesses may not use recycled plastics or newspaper to wrap food (APPSC 2019).",
+       "Eat Right India is FSSAI's movement for safe, healthy and sustainable food, launched in 2018 .",
+       "FSSAI licences and registrations now have perpetual validity."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "1662d05fab7c",
@@ -3607,7 +5007,188 @@
       "andhra"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Hotspot",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Biodiversity hotspots in India; endemism; Biological Diversity Act 2002 and access-benefit sharing › India's hotspots - names, regions covered, common distractors",
+      "bullets": [
+       "Distractors (not hotspots): Thar Desert (the APPSC 2024 answer), the Eastern Ghats as a separate hotspot, the Sundarbans and the Deccan plateau.",
+       "Western Ghats-Sri Lanka: the hotspot has at least 6,000 vascular plants, over 3,000 (52%) endemic. The Western Ghats alone have about 5,000 vascular plants, with about 1,700 (34%) endemic and 58 endemic genera. Of the Ghats' 490 low- and mid-elevation tree species, 308 are endemic.",
+       "Exam angle: \"which of these is NOT a hotspot in India\" - the odd one out is usually a desert or the Eastern Ghats.",
+       "Western Ghats: Global hotspot? Yes (Western Ghats and Sri Lanka)",
+       "APPSC-G1 2018 answer: \"Eastern Himalayas and Western Ghats\"; that was the older two-hotspot count."
+      ]
+     },
+     {
+      "topic": "Western Vs Eastern Ghats",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-2 › India - the Northern Plains, the Peninsular Plateau, the Coastal Plains and the Islands › Western vs Eastern Ghats - names, meeting point, passes",
+      "bullets": [
+       "Continuity: Western Ghats Continuous, south of Tapti (UPSC); Eastern Ghats Discontinuous, eroded; 1,750 km, Mahanadi to Vaigai (CDI)",
+       "Local names (N to S): Western Ghats Sahyadri, Nilgiri, Anaimalai, Palani, Cardamom (APP); Eastern Ghats In AP: Papikondalu, Nallamala, Erramala, Seshachalam, Velikonda (CDI)",
+       "Highest: Western Ghats Anamudi 2,695 m (Anaimalai) - highest of peninsula (APP); Eastern Ghats Arma Konda (Sitamma Konda) 1,680 m, ASR district (CDI); some notes name Jindhagada (1,690 m) instead - learn both",
+       "Passes / gaps: Western Ghats Thalghat, Bhorghat (northern Sahyadri); Palghat gap (~24 km wide, south of Nilgiri) (APP); Eastern Ghats Cut through by Godavari, Krishna, Mahanadi",
+       "Western Ghats local names : Sahyadri (Maharashtra-Karnataka), Nilgiri (Tamil Nadu), Anaimalai and Cardamom (Kerala-TN). They are continuous, 915-1,220 m high and ~1,600 km long (IYB; UPSC)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "1bd1dd678f18",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "18:24",
+   "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah addresses Gaupalak Sammelan in Bhopal, Madhya Pradesh and inaugurates State-level Exhibition on New Criminal Laws",
+   "summary": "As part of these efforts, Union Home Minister and Minister of Cooperation Shri Amit Shah today addressed the Gaupalak Sammelan at Dussehra Maidan in Bhopal, Madhya Pradesh, and inaugurated a State-level exhibition on the New Criminal Laws.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "He said that farmers, livestock rearers and people associated with the rural economy are the biggest beneficiaries of the establishment of this Ministry."
+    },
+    {
+     "angle": "Figures",
+     "text": "Describing breed improvement as an important means of enhancing productivity in the dairy sector, the Union Home Minister and Minister of Cooperation said that he had requested the Madhya Pradesh Government to provide 50 acres of land for programmes related to breed improvement of cattle and buff…"
+    },
+    {
+     "angle": "Figures",
+     "text": "The use of modern technologies such as sex-sorted semen will also enhance the prospects of additional economic benefits for livestock rearers."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Cooperation",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2318698&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Science, Tech & Environment",
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Years",
+    "Revolution"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-4 › India - agriculture: major food crops (rice, wheat, maize, pulses) and their regions › Agricultural regionalisation - agro-climatic zones, macro regions",
+     "text": "AP itself has several state-level zones (see S2-35).",
+     "match": [
+      "State-level"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-6 › Library Movement in Andhra - origin, growth and role in awakening › Andhra Desa Library Association - year, venue, first president, periodical, \"first\"",
+     "text": "\"First\": Detail First state-level library association in India",
+     "match": [
+      "State-level"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Disaster Management › #3 · Disaster Management Institutions and Response Systems",
+     "text": "The APSDMA issues state-level alerts.",
+     "match": [
+      "State-level"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Disaster Management › #17 · Disaster Management Institutions and Responsibilities",
+     "text": "The State Crisis Management Committee handles state-level crises.",
+     "match": [
+      "State-level"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Criminal Laws",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #51 · Recent Social Justice and Criminal Laws",
+      "bullets": [
+       "The Places of Worship (Special Provisions) Act was enacted in 1991.",
+       "The Places of Worship (Special Provisions) Act came into force on July 11, 1991.",
+       "The Places of Worship (Special Provisions) Act freezes the religious character of places of worship as they existed on August 15, 1947.",
+       "The Public Examinations (Prevention of Unfair Means) Act was enacted in 2024.",
+       "The Public Examinations (Prevention of Unfair Means) Act came into force on June 21, 2024."
+      ]
+     },
+     {
+      "topic": "State-level",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #27 · NHRC Structure, Powers and Jurisdiction",
+      "bullets": [
+       "The NHRC operates at the national level under the Protection of Human Rights Act, 1993.",
+       "The State Human Rights Commission (SHRC) operates at the state level under the Protection of Human Rights Act, 1993.",
+       "Human Rights Courts provide a district- or trial-level mechanism for speedy trials.",
+       "The President of India makes appointments to the NHRC based on the recommendations of a six-member High-Level Selection Committee.",
+       "The Union Home Minister is a member of the High-Level Selection Committee."
+      ]
+     }
+    ],
+    "gaps": [
+     "Dussehra Maidan in Bhopal",
+     "Madhya Pradesh"
+    ]
+   }
   },
   {
    "id": "2e6892ce1305",
@@ -3687,7 +5268,39 @@
       "weather"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Indian Rainfall Zones And Monsoon Patterns",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Geography › #16 · Indian Rainfall Zones and Monsoon Patterns",
+      "bullets": [
+       "The very heavy rainfall zone includes the Western Coast and Northeast India.",
+       "The heavy rainfall zone includes the Western Ghats and Meghalaya.",
+       "The moderate rainfall zone includes most of the Northern Plains and parts of Central India.",
+       "The Arabian Sea branch of the Southwest Monsoon causes heavy rainfall on the Western Coast.",
+       "The Tamil Nadu coast receives rainfall from the Northeast or retreating monsoon."
+      ]
+     },
+     {
+      "topic": "El Nino",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-1 › Ocean movements - waves, tides (types and causes), ocean currents of the world › ENSO - El Nino and La Nina definitions, Pacific region warmed/cooled, periodicity, Southern Oscillation, effect on Indian monsoon",
+      "bullets": [
+       "El Nino: abnormal warming of the central and eastern Pacific. A warm current flows south along the Peru coast, replaces the cold Peruvian current and recurs about every 3-7 years (APP). LENS 2026 gives 2-7 years. The name means the \"Christ child\" .",
+       "Southern Oscillation: the atmospheric see-saw of pressure between Tahiti (Pacific) and Port Darwin (Australia). Sir Gilbert Walker described it in 1920. El Nino/La Nina are the ocean side of ENSO and the Southern Oscillation is the air side.",
+       "Indian monsoon: El Nino Delayed, weakened (drought risk); La Nina Usually good rain",
+       "IMD definition: the central equatorial Pacific is at least 0.5 deg C warmer than average for five consecutive overlapping three-month periods. 6 of 10 El Nino years brought deficient Indian rainfall. The last El Nino was 2023-24 (TH, 1 Feb 2026).",
+       "Exam angle: \"El Nino and La Nina are storms\" is the false statement (RPSC 2024). They are climate patterns."
+      ]
+     }
+    ],
+    "gaps": [
+     "Asia and the Americas"
+    ]
+   }
   },
   {
    "id": "425da8b6ede6",
@@ -3762,7 +5375,49 @@
       "disputes"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Election Commission",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #25 · Election Commission: Powers, Roles and Reforms",
+      "bullets": [
+       "The Election Commission of India is a permanent body.",
+       "The Election Commission of India is an independent body.",
+       "The Election Commission of India is a constitutional body.",
+       "The Election Commission of India adjudicates disputes concerning party mergers.",
+       "The Election Commission of India adjudicates disputes concerning party splits."
+      ]
+     },
+     {
+      "topic": "Internal Trade",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-1 › IVC economy - agriculture, crops, domesticated animals, internal and external trade, Meluhha › Internal trade - raw material source areas → material sourced",
+      "bullets": [
+       "Khetri (Rajasthan): Material Copper",
+       "Shortughai (Afghanistan) colony: Material Lapis lazuli from Badakhshan",
+       "South Rajasthan: Material Steatite",
+       "Kolar (Karnataka): Material Gold",
+       "Internal trade reached South India, UP, Maharashtra, Bihar and Rajasthan (APP)."
+      ]
+     },
+     {
+      "topic": "Disputes Regarding Election",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › Disputes regarding election - EC vs courts, Article 329 bar",
+      "bullets": [
+       "Art. 329(a): laws on delimitation and allotment of seats cannot be questioned in court; Art. 329(b): an election can be challenged only by an election petition .",
+       "By convention courts do not interfere once the poll process begins; the ECI cannot review a result. Petitions go to the High Court (Parliament, state legislatures) and the Supreme Court for President/VP (Art. 71) (UPSC).",
+       "Art. 329(b): an election to Parliament or a state legislature can be questioned only by an election petition under the RPA 1951. Such petitions are tried by the High Court, with appeal to the Supreme Court .",
+       "President/VP election disputes: decided by the Supreme Court (Art. 71) .",
+       "The ECI does not try election petitions. It decides party and symbol disputes and advises on disqualification."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "9d1a2565299c",
@@ -3830,7 +5485,25 @@
       "Texas"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Family",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Family - types, functions and changing structure in India › Changing structure and urban families - factors of disintegration, urban family typologies (T.K. Oommen)",
+      "bullets": [
+       "Industrialisation: How it changes the family (CDX) the family moves from a production unit to a consumption unit; economically independent youth",
+       "Urbanisation/migration: How it changes the family (CDX) limited housing; rural-urban migration breaks up joint families",
+       "Legislation/marital dissolution: How it changes the family (CDX) more separation, single parenting and divorce",
+       "Women's employment: How it changes the family (CDX) women enter the labour market; more female-headed households",
+       "Industrial urbanisation has not dissolved the joint family (Milton Singer, Orenstein). Ramkrishna Mukherjee: joint families are over-represented in trade and higher occupations (APP). M.S. Gore: nuclear households rise but emotional bonds persist (CDX)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "2c8c59094a7c",
@@ -3912,7 +5585,24 @@
       "local body elections"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Local Body Elections",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Challenges in local devolution - funds, functions, functionaries; parallel bodies and capacity gaps › Delays in local body elections and SEC autonomy",
+      "bullets": [
+       "Art. 243K (243ZA for municipalities): SEC appointed by the Governor, removable only like a High Court judge; service conditions cannot be varied to the SEC's disadvantage (APPCA, Apr 2026) [GK for last point].",
+       "Before 1993 states postponed local polls at will; the SEC and the 5-year term with elections before expiry (or within 6 months of dissolution, Arts. 243E/243U) made local government permanent (APP).",
+       "AP: Anil Chandra Punetha appointed SEC (APPCA, Apr 2026).",
+       "AP Cabinet (18 Aug 2026): 34% BC reservation in rural and 33⅓% in urban local bodies; elections to be expedited to secure Central funds (₹12,150 crore at risk if not done by October); direct election of Mayors and municipal chairpersons (TH, 19 Aug 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "e4b5de466c75",
@@ -3982,7 +5672,14 @@
       "bengal"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": [
+     "Bay of Bengal"
+    ]
+   }
   },
   {
    "id": "8d61b549ef2d",
@@ -4047,7 +5744,102 @@
       "Chandrababu Naidu"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": [
+     "Chandrababu Naidu"
+    ]
+   }
+  },
+  {
+   "id": "0ac77e170175",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "18:27",
+   "title": "Vizag’s Gayatri Vidya Parishad signs MoU with Bowling Green State University for academic collaboration",
+   "summary": "The agreement paves the way for student and faculty exchange programmes, joint research initiatives, collaborative teaching, and co-authored publications, say university officials",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "The agreement paves the way for student and faculty exchange programmes, joint research initiatives, collaborative teaching, and co-authored publications, say university officials"
+    }
+   ],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/vizags-gayatri-vidya-parishad-signs-mou-with-bowling-green-state-university-for-academic-collaboration/article71540423.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [
+    "Agreement",
+    "University"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 8,
+    "angles": 10,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 0
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › ISRO - organisational structure, major centres and their functions › ISRO outreach and academia - YUVIKA, SPARK, STCs, RACS",
+     "text": "2026 student initiatives (LENS, Mar 2026): Student Satellite Programme, RESPOND (funding university space research), IN-SPACe's national CanSat and Model Rocketry competition at Kushinagar (UP), AICTE-approved Space Technology course under Space Policy 2023.",
+     "match": [
+      "student",
+      "research",
+      "initiatives"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Military Research Cells At Academic Institutions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Defence indigenisation - Make in India in defence, DAP 2020, iDEX, defence corridors, FDI in defence › Military research cells at academic institutions",
+      "bullets": [
+       "Agnishodh: the Indian Army's research cell at IIT Madras. It links Army needs to academic R&D (PYQ 2025).",
+       "Similar DRDO links: 15 DIA-CoEs at IITs, IISc and central universities (IYB 2026), and JCBCAT at Jadavpur University ."
+      ]
+     },
+     {
+      "topic": "University Rankings (QS, THE)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Reports and indices - releasing agency, India's rank, key findings › University rankings (QS, THE) - top Indian institutes, South Asian comparison",
+      "bullets": [
+       "QS World University Rankings 2027 (June 2026, QS - UK): MIT 1st (15th year), Imperial and Stanford joint 2nd; 52 Indian institutions - India 5th most represented (after U.S., UK, China, Germany); IIT Delhi top Indian at 118th (from 123rd); India's count up 271% in a decade.",
+       "Weakness flagged: low international faculty and student ratios.",
+       "Not in your sources: THE World University Rankings 2026 Indian positions."
+      ]
+     }
+    ],
+    "gaps": [
+     "Gayatri Vidya Parishad"
+    ]
+   }
   },
   {
    "id": "6ae6fa56f2dc",
@@ -4128,7 +5920,25 @@
       "karnataka"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Drought Types, Indicators And Management",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Disaster Management › #8 · Drought Types, Indicators and Management",
+      "bullets": [
+       "Drought is a slow-onset disaster.",
+       "Drought is also called a creeping emergency.",
+       "Drought is a serious shortfall in the availability of water.",
+       "Drought mainly affects agriculture, drinking-water supply, and industry.",
+       "In India, drought is mainly caused by the inadequacy and uneven distribution of rainfall."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "8c241f6023e1",
@@ -4194,7 +6004,25 @@
       "five"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Manufacturing",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Make in India, PLI schemes, National Manufacturing Policy; ease of doing business reforms › Universal angles",
+      "bullets": [
+       "Significance: EoDB and PLI aim to lift manufacturing's share and join global value chains (\"China+1\").",
+       "Criticism & debates: \"assemble in India\" vs value addition; EoDB must be balanced with \"ease of living\" and workers' rights (TH, 28 Jul 2026).",
+       "AP angle: Rayalaseema manufacturing hub - JSW steel Kadapa, Kia, Royal Enfield Tirupati (APPCA, Jul 2026).",
+       "Current relevance: Economic Survey 2025-26 credits PLI and the National Manufacturing Mission with driving investment; industry GVA grew 7.0% in H1 FY26; medium- and high-tech manufacturing is 46.3% of the total (ES, 31 Jan 2026).",
+       "AP angle: the AP Electronics Manufacturing Policy (4.0) 2024-29 offers plug-and-play clusters, and semiconductors are one of AP's \"propelling sectors\"."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "d97e18c3b6da",
@@ -4257,7 +6085,14 @@
       "YSRCP"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": [
+     "YSRCP"
+    ]
+   }
   },
   {
    "id": "857ffc001d56",
@@ -4321,7 +6156,22 @@
       "Amaravati capital"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Amaravati Capital",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - agriculture, industry, IT and infrastructure › Amaravati capital - CRDA, phase-wise works",
+      "bullets": [
+       "APCRDA under the APCRDA Act, 2014 ; foundation stone 22 Oct 2015 by PM Modi ; ₹3,000 crore in Budget 2024-25 BE (APP).",
+       "Not in your sources: phase-wise status of Amaravati works."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "c3b78ac89f74",
@@ -4376,7 +6226,12 @@
       "IT policy"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "074e8d6d47e3",
@@ -4443,7 +6298,12 @@
       "special"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "38c459dd6b31",
@@ -4510,7 +6370,12 @@
       "sickness"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "7c5cbcca04fa",
@@ -4577,7 +6442,12 @@
       "sickness"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "336b454eb37f",
@@ -4639,7 +6509,25 @@
       "Nara Lokesh"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "National",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › National - committees, commissions and their reports › Committee → chairperson + subject (asset monetisation, simultaneous elections, judicial appointments, MSP)",
+      "bullets": [
+       "High-Level Committee on simultaneous elections (2023-24): Chair Ram Nath Kovind; Subject One Nation One Election",
+       "National Commission on Farmers (2004-06): Chair M.S. Swaminathan; Subject MSP at C2 + 50% (CDI)",
+       "NCRWC (2002): Chair M.N. Venkatachaliah; Subject Proposed a National Judicial Commission (CDI; LENSD 3 Aug 2026)",
+       "Asset monetisation: NMP 2.0 launched by the Finance Minister - ₹16.72 lakh crore over FY2026-30 (₹5.8 lakh crore private investment); prepared by NITI Aayog; monitored by the Core Group of Secretaries on Asset Monetisation, chaired by the Cabinet Secretary (LENS Feb 2026). NMP 1.0 = 2021.",
+       "K. Kasturirangan: Subject Draft National Education Policy 2019, became NEP 2020 (asked 2018, 2019)"
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "e7af789664a1",
@@ -4709,7 +6597,26 @@
       "push"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Rajahmundry College Student Incident",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-5 › Swadeshi and Vandemataram movement in Andhra - Bipin Chandra Pal's tour, student participation › Rajahmundry college student incident",
+      "bullets": [
+       "Principal Mark Hunter, Rajahmundry Arts / Teachers Training College, banned Vandemataram badges and the slogan (April 1907; CDX: 24 April 1907).",
+       "Gadicherla defied him by presenting an address to Pal; J. Ramachandra Rao co-organised.",
+       "Punishment: 138 students debarred from exams for two years; Gadicherla dismissed and blacklisted from government jobs.",
+       "Marked the active entry of Andhra students into the freedom struggle."
+      ]
+     }
+    ],
+    "gaps": [
+     "Star Health"
+    ]
+   }
   },
   {
    "id": "e1a45cf5e434",
@@ -4777,7 +6684,12 @@
       "incentives"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "5501e5dfba69",
@@ -4839,7 +6751,27 @@
       "Lokesh"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "AP Community-specific Welfare",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - welfare and social security › AP community-specific welfare - marriage assistance, Kapu, BC, SC and ST schemes",
+      "bullets": [
+       "Chandranna Pelli Kanuka: Community SC, ST, BC, minorities, disabled; Note TDP, 2018",
+       "YSR Kalyanamasthu / Shaadi Tohfa: Community Same groups (Shaadi Tohfa for Muslims); Note YSRCP, 2022",
+       "Dulhan: Community Muslim brides; Note April 2015, ₹50,000 at marriage (APP)",
+       "Pensions are paid through caste corporations: in Dec 2025, BC 28.32 lakh, SC 11.34 lakh, Kapu 6.84 lakh, ST 3.74 lakh (CDI AP SES 2025-26); EWS communities (incl. Kapu, Brahmin, Arya Vysya) moved from ₹3,000 to ₹4,000 (APSES).",
+       "SC: APSC Co-op Finance Corporation economic support; rehabilitation of Jogins; 8.51 lakh SC pensioners (APSES p.249). Minorities: Imams and Mouzams get ₹5,000-10,000 a month (₹180 crore a year); allocation ₹6,090 crore (2026-27); Urdu is the second official language (TH, 17 Mar 2026). Haj and Jerusalem pilgrimage aid (APSES)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Pan-IIT"
+    ]
+   }
   },
   {
    "id": "e24f981eb452",
@@ -4894,7 +6826,37 @@
       "andhra"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Currency Printing And Minting",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Reserve Bank of India - establishment, organisation and functions › Currency printing and minting - locations, note features",
+      "bullets": [
+       "SPMCIL presses: Owner Government of India; Locations Currency Note Press, Nashik (Maharashtra); Bank Note Press, Dewas (Madhya Pradesh)",
+       "BRBNMPL presses: Owner RBI; Locations Mysuru (Karnataka), Salboni (West Bengal)",
+       "SPMCIL mints: Owner Government of India; Locations Mumbai, Noida, Kolkata, Hyderabad",
+       "Notes carry 17 languages: Hindi and English on the front, a language panel of 15 scheduled languages on the back.",
+       "Printing limit: under the Minimum Reserve System RBI keeps at least ₹200 crore in gold and foreign exchange (at least ₹115 crore in gold). Beyond that, issue is unlimited."
+      ]
+     },
+     {
+      "topic": "Houses",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-1 › IVC town planning - grid layout, citadel and lower town, drainage, Great Bath, granaries › Houses - courtyard, wells, bathrooms, doors",
+      "bullets": [
+       "Rooms built round a central courtyard; staircases show multi-storey houses.",
+       "Wells were found in houses of the developed stage at Mohenjodaro (PYQ UPPSC 2004), which has the most wells.",
+       "Housing was fairly uniform, but house size varied, which shows social differentiation.",
+       "Wells inside houses or neighbourhoods - Mohenjodaro has the most wells; well irrigation at Allahdino (Sindh).",
+       "Multi-storeyed houses indicated by staircases."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "5831263e9852",
@@ -4946,7 +6908,106 @@
       "school"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "ISRO Capacity-building For Students",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Satellites for defence and for academic purposes - GSAT-7 series, EDUSAT, RISAT for surveillance › ISRO capacity-building for students - UNNATI, YUVIKA, CubeSat",
+      "bullets": [
+       "UNNATI (UNispace Nanosatellite Assembly and Training by ISRO): nanosatellite training for participants from developing countries, launched 2019 to mark 50 years of UNISPACE-I .",
+       "YUVIKA (Yuva Vigyani Karyakram): ISRO's summer programme for school students (class 9) on space science .",
+       "Student CubeSats fly on PSLV POEM (PS4 orbital platform) and as rideshares (WESAT on POEM-3).",
+       "ATL Space Challenge (Atal Innovation Mission with ISRO and CBSE) for school students; Space Labs in 75 Eklavya Model Residential Schools (LENS Apr 2026)."
+      ]
+     },
+     {
+      "topic": "Three Class",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Child welfare - ICDS, POSHAN Abhiyaan, mid-day meal (PM POSHAN), child marriage, malnutrition › Mid-day meal to PM POSHAN - year, renaming, coverage, norms, aims, financing, partners",
+      "bullets": [
+       "Coverage: children in Bal Vatika (pre-Class I) and Classes I-VIII in government and government-aided schools; one hot cooked meal to over 11.8 crore children (LENSD, 29 Jun 2026).",
+       "Aims beyond nutrition: address classroom hunger, raise enrolment, attendance, retention and concentration of disadvantaged children (IYB).",
+       "Nodal ministry: Ministry of Education (Dept of School Education and Literacy); centrally sponsored; implemented under the NFSA 2013; tenure 2021-22 to 2025-26; outlay ₹1,30,794.90 crore (CDI).",
+       "Coverage: Bal Vatika (pre-school) + Classes I-VIII in government and government-aided schools (IYB 2026); over 11 crore students (VIS 2026).",
+       "AP: Dokka Seethamma Mid-Day Meal extended to Intermediate (Classes 11-12) in 2024-25, 27.97 lakh students; 5 eggs + 3 chikkis + ragi java a week (CDI AP SES 2024-25)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "f49e0d6f8131",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "18:18",
+   "title": "Dwaraka Bus Station in Visakhapatnam bags top Swachh rank in State",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/dwaraka-bus-station-in-visakhapatnam-bags-top-swachh-rank-in-state/article71540563.ece",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Rank"
+   ],
+   "score": 25,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Reports and indices - releasing agency, India's rank, key findings › Universal angles",
+     "text": "AP angle: SEEI top performer, IJR 2nd, EPI 5th, Guntur in Swachh Vayu 2026.",
+     "match": [
+      "top",
+      "swachh"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Swachh",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Solid waste, plastic waste, e-waste, biomedical and construction waste - rules and management › Swachh Bharat Mission, SBM-U 2.0, Swachh Survekshan",
+      "bullets": [
+       "Swachh Survekshan: the annual urban cleanliness survey, run by QCI for MoHUA. Indore (MP) keeps ranking #1 (APPCA). Indore is the city known for zero waste (APPSC-G2 2025).",
+       "10th edition (2025-26) theme: \"Swachhata Ki Nayi Pehel - Badhayein Haath, Karein Safai Saath\"; 10 sections, 160+ indicators; separate matrix for river towns (LENS Dec 2025).",
+       "Swachh Survekshan 2024-25 awards conferred by the President (VIS 2026); Indore - cleanest city (APPSC-GS 2025 key) and India's model zero-waste / landfill-free city (APPSC-G2 2025; LENS Nov 2025).",
+       "Swachh Survekshan Grameen launched in 2018.",
+       "SS 2022: Visakhapatnam - 'Top Impact Creator' (million-plus category); Tirupati - first in 'Safai Mitra Surakshit Shehar' (APPSC-G1 2022 key)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "ab5233d436f6",
@@ -5023,7 +7084,12 @@
       "depletion"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "e6bbc4fa56a0",
@@ -5093,7 +7159,36 @@
       "wto"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "SpaceX Falcon",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Space policy and commercialisation - Indian Space Policy 2023, IN-SPACe, NSIL, private launch sector › NSIL - demand-driven missions, DTH leasing, vs Antrix",
+      "bullets": [
+       "GSAT-N2 (2024): Fact Fully funded and owned by NSIL; Ka-band broadband and in-flight connectivity; launched on SpaceX Falcon-9 (Nov 2024) [GK for launch details]",
+       "Leasing: 10 in-orbit communication satellites transferred to NSIL in 2022; NSIL now operates 11 communication satellites, ~300 transponders, 150+ lease agreements (IYB 2026).",
+       "NewSpace India Limited: a CPSE (2019) under the Department of Space, HQ Bengaluru, and ISRO's commercial arm. It succeeded Antrix (1992, Miniratna 2008) as the main commercial arm.",
+       "GSAT-N2 (GSAT-20): Ka-band broadband and in-flight connectivity, launched on SpaceX Falcon 9 (Nov 2024) . The APPSC-G1 2024 key accepted \"first demand-driven satellite fully funded and owned by NSIL\" (statements I and III correct)."
+      ]
+     },
+     {
+      "topic": "Dhruva Space",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Space policy and commercialisation - Indian Space Policy 2023, IN-SPACe, NSIL, private launch sector › Private satellite firms and constellations → company; manufacturing units",
+      "bullets": [
+       "Pixxel: Base Bengaluru; Product / FIRST Hyperspectral earth-observation satellites (crop health, pollution, climate); leads the IN-SPACe-approved PPP EOS constellation with Dhruva Space, SatSure Analytics India and Piersight Space (LENSD, 20 Jul 2026); \"Firefly\" - first Indian private commercial constellation, Jan 2025",
+       "Dhruva Space: Base Hyderabad; Product / FIRST Two nano-satellites flown as rideshare on PSLV-C54; partner in the EOS PPP constellation",
+       "Digantara: Base Bengaluru; Product / FIRST Space situational awareness - space-surveillance satellites that track debris",
+       "Tata Advanced Systems (TASL): Base -; Product / FIRST TSAT-1A: India's first privately built sub-metre surveillance satellite, launched on a SpaceX rocket (PYQ 2024)",
+       "Dhruva Space: HQ Hyderabad; Product / claim Nanosatellite platforms; two nano-sats flew on PSLV-C54"
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "4c902e8c8090",
@@ -5174,7 +7269,25 @@
       "birds"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Birds",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Forest and wildlife legal framework - Indian Forest Act 1927, Forest (Conservation) Act 1980, Wildlife (Protection) Act 1972 › Acts protecting wild animals, birds and plants - WPA vs EPA vs FCA, AWBI",
+      "bullets": [
+       "WPA 1972: What it does protects wild animals, birds and plants and manages their habitats (APPSC 2025 key)",
+       "EPA 1986: What it does umbrella law for environmental protection and pollution control",
+       "FCA 1980: What it does checks deforestation and regulates diversion of forest land",
+       "PCA Act 1960: What it does prevents cruelty to animals; parent Act of the Animal Welfare Board of India (1962)",
+       "The NGT hears cases under 7 laws, including FCA 1980, EPA 1986 and BD Act 2002. It cannot hear cases under WPA 1972 or the FRA 2006 (APPCA 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "de7137969a14",
@@ -5235,7 +7348,28 @@
       "Current Affairs"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Economic Times",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #67 · Economists and Economic Thought",
+      "bullets": [
+       "Adam Smith is known as the Father of Modern Economics.",
+       "David Ricardo is associated with Classical Economics.",
+       "J.B. Say is associated with Classical Economics.",
+       "J.S. Mill is associated with Classical Economics.",
+       "Alfred Marshall is associated with Neoclassical economics."
+      ]
+     }
+    ],
+    "gaps": [
+     "Current Affairs",
+     "Business Standard"
+    ]
+   }
   },
   {
    "id": "c00f7d495fd6",
@@ -5287,7 +7421,36 @@
       "asian"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Asian Games",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Olympics, Paralympics, Asian Games, CWG - hosts, medallists, new sports",
+      "bullets": [
+       "Commonwealth Games 2026: Host / dates Glasgow (Jul-Aug 2026); Key facts India 39 medals (13 G, 17 S, 9 B), 4th again; boxing 10 medals incl. a record 7 golds; athletics the most medals (16); Harsh Singh and Asmita Dey won India's first CWG judo golds; Mirabai Chanu (48 kg) became the first woman weightlifter with a 3rd consecutive CWG gold; Gulveer Singh the only double medallist",
+       "Asian Games 2026: Host / dates Aichi-Nagoya, Japan (from 19 Sep 2026); Key facts Cricket included (India's men defend their gold); Asiad boxing medallists go straight to the 2027 Worlds, the first qualifier for LA 2028",
+       "LA28: Asian Games 2026 boxing medallists go straight to the 2027 World Championships, the first LA28 qualifier (BFI, TH 17 Sep 2026).",
+       "Asian Games 2026: Aichi-Nagoya, Japan (Sep 2026); India defends Hangzhou 2023 cricket golds and Satwik-Chirag's doubles gold.",
+       "3rd Asian Youth Games 2025: Manama, Bahrain (45 nations, 26 sports) - Veer Bhadu India's first MMA medal (bronze)."
+      ]
+     },
+     {
+      "topic": "Silver Influx And Indian Ocean Commerce",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-3 › Mughal economy - agriculture, karkhanas, trade, silver influx, Indian Ocean commerce › Silver influx and Indian Ocean commerce",
+      "bullets": [
+       "European companies paid for Indian goods with bullion (gold and silver) brought from Europe; India became a \"sink of precious metals\" and in the 17th century was \"the largest producer of industrial goods in the world\".",
+       "Source: New World (Spanish American) silver, via Europe and the Pacific ; Careri (c.1690) described silver crossing the globe to India. Effect: more silver rupee coinage and a rise in prices .",
+       "Merchant groups: Asian - Gujaratis, Bohras, Chettis, Malabar Muslims, Armenians ; European - Portuguese, Dutch, English EIC (1600), French.",
+       "Trade balance favoured India until the mid-18th century; decline came with Aurangzeb's Deccan wars, insecurity and loss of Indian shipping."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "b0e1834b05ef",
@@ -5344,7 +7507,37 @@
       "asian"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Individual Satyagraha, August Offer, Cripps Mission",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Individual Satyagraha, August Offer, Cripps Mission › Chronology - August Offer to Wavell Plan",
+      "bullets": [
+       "Sept 1939: Event WWII; Viceroy Linlithgow declares India a belligerent without consulting Indians",
+       "Oct-Nov 1939: Event Congress ministries resign",
+       "22 Dec 1939: Event Muslim League's \"Day of Deliverance\"",
+       "March 1940: Event Ramgarh Congress session (Bihar)",
+       "17 Oct 1940: Event Individual Satyagraha begins"
+      ]
+     },
+     {
+      "topic": "Asian Games",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Olympics, Paralympics, Asian Games, CWG - hosts, medallists, new sports",
+      "bullets": [
+       "Commonwealth Games 2026: Host / dates Glasgow (Jul-Aug 2026); Key facts India 39 medals (13 G, 17 S, 9 B), 4th again; boxing 10 medals incl. a record 7 golds; athletics the most medals (16); Harsh Singh and Asmita Dey won India's first CWG judo golds; Mirabai Chanu (48 kg) became the first woman weightlifter with a 3rd consecutive CWG gold; Gulveer Singh the only double medallist",
+       "Asian Games 2026: Host / dates Aichi-Nagoya, Japan (from 19 Sep 2026); Key facts Cricket included (India's men defend their gold); Asiad boxing medallists go straight to the 2027 Worlds, the first qualifier for LA 2028",
+       "LA28: Asian Games 2026 boxing medallists go straight to the 2027 World Championships, the first LA28 qualifier (BFI, TH 17 Sep 2026).",
+       "Asian Games 2026: Aichi-Nagoya, Japan (Sep 2026); India defends Hangzhou 2023 cricket golds and Satwik-Chirag's doubles gold.",
+       "3rd Asian Youth Games 2025: Manama, Bahrain (45 nations, 26 sports) - Veer Bhadu India's first MMA medal (bronze)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "210d4d91ae6a",
@@ -5412,7 +7605,12 @@
       "solar"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "c9d821891d1b",
@@ -5468,7 +7666,25 @@
       "maharashtra"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Adani Group",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - projects, investments, MoUs, industrial and infrastructure developments › Investment summits and MoUs - forum, venue, investment, partner + sector",
+      "bullets": [
+       "Anchor investments: Google 1-GW AI data centre, Tarluvada (Visakhapatnam), part of $15 bn (₹1.35 lakh crore, 601 acres; stone laid 28 Apr 2026; with Adani and Airtel Nxtra); ArcelorMittal Nippon Steel 8.2 MTPA plant at Rajayyapeta near Anakapalli (~₹1.35 lakh crore; stone laid 23 Mar 2026); JSW Steel 2 MTPA plant at Kadapa.",
+       "APEX Korea: Venue / date Busan, South Korea (Jul 2026); Outcome AP's first overseas investment facilitation centre (APEDB)",
+       "Headline 17th SIPB approvals: Reliance data centre, Visakhapatnam - ₹1,08,010 crore; Reliance solar + battery storage, Sri Sathya Sai - ₹51,300 crore; Adani pumped storage, Kadapa - ₹12,297 crore; Yamanko green hydrogen, Tirupati - ₹9,398 crore; Royal Enfield, Tirupati - ₹2,508 crore; Apollo Tyres ₹6,100 crore."
+      ]
+     }
+    ],
+    "gaps": [
+     "Invest Maharashtra"
+    ]
+   }
   },
   {
    "id": "2320dfbee8b8",
@@ -5532,7 +7748,28 @@
       "WASH"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Positive Indigenisation Lists And IDEX",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Defence indigenisation - Make in India in defence, DAP 2020, iDEX, defence corridors, FDI in defence › Positive indigenisation lists and iDEX - SRIJAN, ADITI, DISC",
+      "bullets": [
+       "Positive Indigenisation Lists: there are five lists. They ban imports of the listed items after set dates (LENSD, Jun 2026).",
+       "SRIJAN is the indigenisation portal where DPSUs and the Services list import items that Indian industry can make .",
+       "iDEX (Innovations for Defence Excellence) was launched by the PM in April 2018. It works with MSMEs, start-ups, innovators and academia. It had engaged 676 start-ups and innovators by March 2026, with an outlay of ₹498.78 crore (LENSD, 21 Jun 2026).",
+       "ADITI (Acing Development of Innovative Technologies with iDEX) funds deep-tech start-ups in AI, quantum, hypersonics and directed energy (CDI). The scheme promotes innovation in critical and strategic defence technologies (PYQ 2024).",
+       "Defence India Startup Challenge (DISC): iDEX's challenge rounds, in which the Services set problem statements for start-ups to solve ."
+      ]
+     }
+    ],
+    "gaps": [
+     "WASH",
+     "NABARD"
+    ]
+   }
   },
   {
    "id": "dc90cd6f45f5",
@@ -5583,7 +7820,49 @@
       "inspection"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Models Of E-governance",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › E-governance - models, types of interaction, National e-Governance Plan, Digital India and governance outcomes › Models of e-governance - theorist",
+      "bullets": [
+       "Five models of Arie Halachmi :",
+       "Broadcasting / wider-dissemination: put government information in the public domain.",
+       "Critical flow: channel critical information to a targeted audience (e.g., corruption data to an ombudsman).",
+       "Comparative analysis: learn from best practices elsewhere.",
+       "E-advocacy / mobilisation and lobbying: online civil-society networks influence decisions."
+      ]
+     },
+     {
+      "topic": "Safety Drills And Awareness",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-1 › Disaster management framework - hazard vs disaster, DM Act 2005, NDMA, early warning systems › Safety drills and awareness - safest actions, mock exercises, education",
+      "bullets": [
+       "Earthquake (indoors): Safest action Drop, cover, hold - under a strong table; keep away from windows, balconies, staircases",
+       "Cyclone warning: Safest action Move to a safer shelter/cyclone shelter; never go to sea or stand under trees or in weak houses",
+       "Flood: Safest action Move to higher ground; avoid walking or driving through flowing water",
+       "Tsunami: Safest action Move inland/uphill immediately if the sea recedes suddenly",
+       "Preparedness tools: mock drills, Aapda Mitra community volunteers, National School Safety Programme, tsunami escape-route signage, awareness campaigns."
+      ]
+     },
+     {
+      "topic": "Building Codes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Energy efficiency - Bureau of Energy Efficiency, Energy Conservation Act, PAT scheme, star labelling, UJALA › Building codes - ECO Niwas Samhita, ECSBC",
+      "bullets": [
+       "ECBC (2007): Scope New commercial buildings; ECBC buildings use 25-40% less energy (CDI)",
+       "ECO Niwas Samhita (2018): Scope Residential buildings",
+       "ECSBC (2024): Scope Energy Conservation and Sustainable Building Code after the 2022 amendment",
+       "AP model: Super ECBC building, Sagar Nagar, Visakhapatnam (TH, 14 Jan 2026).",
+       "Eco Niwas Samhita (2018) = energy code for residential buildings ; Energy Conservation and Sustainable Building Code (ECSBC) (2024) adds sustainability to ECBC ."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "953443f476b7",
@@ -5634,7 +7913,37 @@
       "games"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Olympics, Paralympics, Asian Games, CWG",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Olympics, Paralympics, Asian Games, CWG - hosts, medallists, new sports",
+      "bullets": [
+       "Commonwealth Games 2026: Host / dates Glasgow (Jul-Aug 2026); Key facts India 39 medals (13 G, 17 S, 9 B), 4th again; boxing 10 medals incl. a record 7 golds; athletics the most medals (16); Harsh Singh and Asmita Dey won India's first CWG judo golds; Mirabai Chanu (48 kg) became the first woman weightlifter with a 3rd consecutive CWG gold; Gulveer Singh the only double medallist",
+       "Asian Games 2026: Host / dates Aichi-Nagoya, Japan (from 19 Sep 2026); Key facts Cricket included (India's men defend their gold); Asiad boxing medallists go straight to the 2027 Worlds, the first qualifier for LA 2028",
+       "LA28: Asian Games 2026 boxing medallists go straight to the 2027 World Championships, the first LA28 qualifier (BFI, TH 17 Sep 2026).",
+       "Asian Games 2026: Aichi-Nagoya, Japan (Sep 2026); India defends Hangzhou 2023 cricket golds and Satwik-Chirag's doubles gold.",
+       "3rd Asian Youth Games 2025: Manama, Bahrain (45 nations, 26 sports) - Veer Bhadu India's first MMA medal (bronze)."
+      ]
+     },
+     {
+      "topic": "Aichi-Nagoya",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Universal angles",
+      "bullets": [
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) began on 19 Sep 2026, and the Gukesh vs Sindarov World Championship match is due in Geneva (TH, 7 Sep 2026).",
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) and 46th Chess Olympiad (Samarkand) under way in Sep 2026; Gukesh-Sindarov title match due in Geneva (TH, Sep 2026).",
+       "FIRST/LAST: India hosted its first Kho Kho World Cup (2025), World Para Athletics Championships (2025) and Khelo India Tribal Games (2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Asian Games in Aichi-Nagoya"
+    ]
+   }
   },
   {
    "id": "8e786661f669",
@@ -5684,7 +7993,25 @@
       "sport"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Olympics, Paralympics, Asian Games, CWG",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Olympics, Paralympics, Asian Games, CWG - hosts, medallists, new sports",
+      "bullets": [
+       "Winter Olympics 2026: Host / dates Milan-Cortina d'Ampezzo, Italy (6-22 Feb 2026); Key facts Norway topped (18 gold); ski mountaineering (skimo) made its debut; 116 events",
+       "CWG basics: first held 1930, Hamilton (Canada); run by Commonwealth Sport (HQ London); 74 CGAs; India debuted in 1934.",
+       "PYQ fact: 28 Khelo India athletes were in India's Paris 2024 Olympic contingent.",
+       "Future Olympics: 2028 Los Angeles, 2032 Brisbane; India is preparing a bid for 2036 (TH, 17 Mar 2026).",
+       "Winter Olympics 2026: Milan-Cortina d'Ampezzo, Italy, 6-22 Feb 2026; 116 events in 16 disciplines; Norway topped (18 gold, 41 total), then USA, Netherlands; ski mountaineering (skimo) made its Olympic debut (VIS PT365 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "774b5c653060",
@@ -5735,7 +8062,35 @@
       "gold"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Asian Games",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Olympics, Paralympics, Asian Games, CWG - hosts, medallists, new sports",
+      "bullets": [
+       "Commonwealth Games 2026: Host / dates Glasgow (Jul-Aug 2026); Key facts India 39 medals (13 G, 17 S, 9 B), 4th again; boxing 10 medals incl. a record 7 golds; athletics the most medals (16); Harsh Singh and Asmita Dey won India's first CWG judo golds; Mirabai Chanu (48 kg) became the first woman weightlifter with a 3rd consecutive CWG gold; Gulveer Singh the only double medallist",
+       "Asian Games 2026: Host / dates Aichi-Nagoya, Japan (from 19 Sep 2026); Key facts Cricket included (India's men defend their gold); Asiad boxing medallists go straight to the 2027 Worlds, the first qualifier for LA 2028",
+       "LA28: Asian Games 2026 boxing medallists go straight to the 2027 World Championships, the first LA28 qualifier (BFI, TH 17 Sep 2026).",
+       "Asian Games 2026: Aichi-Nagoya, Japan (Sep 2026); India defends Hangzhou 2023 cricket golds and Satwik-Chirag's doubles gold.",
+       "3rd Asian Youth Games 2025: Manama, Bahrain (45 nations, 26 sports) - Veer Bhadu India's first MMA medal (bronze)."
+      ]
+     },
+     {
+      "topic": "Aichi-Nagoya",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Universal angles",
+      "bullets": [
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) began on 19 Sep 2026, and the Gukesh vs Sindarov World Championship match is due in Geneva (TH, 7 Sep 2026).",
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) and 46th Chess Olympiad (Samarkand) under way in Sep 2026; Gukesh-Sindarov title match due in Geneva (TH, Sep 2026).",
+       "FIRST/LAST: India hosted its first Kho Kho World Cup (2025), World Para Athletics Championships (2025) and Khelo India Tribal Games (2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "2c5ebdece450",
@@ -5791,7 +8146,37 @@
       "games"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Asian Games",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Olympics, Paralympics, Asian Games, CWG - hosts, medallists, new sports",
+      "bullets": [
+       "Commonwealth Games 2026: Host / dates Glasgow (Jul-Aug 2026); Key facts India 39 medals (13 G, 17 S, 9 B), 4th again; boxing 10 medals incl. a record 7 golds; athletics the most medals (16); Harsh Singh and Asmita Dey won India's first CWG judo golds; Mirabai Chanu (48 kg) became the first woman weightlifter with a 3rd consecutive CWG gold; Gulveer Singh the only double medallist",
+       "Asian Games 2026: Host / dates Aichi-Nagoya, Japan (from 19 Sep 2026); Key facts Cricket included (India's men defend their gold); Asiad boxing medallists go straight to the 2027 Worlds, the first qualifier for LA 2028",
+       "LA28: Asian Games 2026 boxing medallists go straight to the 2027 World Championships, the first LA28 qualifier (BFI, TH 17 Sep 2026).",
+       "Asian Games 2026: Aichi-Nagoya, Japan (Sep 2026); India defends Hangzhou 2023 cricket golds and Satwik-Chirag's doubles gold.",
+       "3rd Asian Youth Games 2025: Manama, Bahrain (45 nations, 26 sports) - Veer Bhadu India's first MMA medal (bronze)."
+      ]
+     },
+     {
+      "topic": "Aichi-Nagoya",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Universal angles",
+      "bullets": [
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) began on 19 Sep 2026, and the Gukesh vs Sindarov World Championship match is due in Geneva (TH, 7 Sep 2026).",
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) and 46th Chess Olympiad (Samarkand) under way in Sep 2026; Gukesh-Sindarov title match due in Geneva (TH, Sep 2026).",
+       "FIRST/LAST: India hosted its first Kho Kho World Cup (2025), World Para Athletics Championships (2025) and Khelo India Tribal Games (2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Aichi-Nagoya Games"
+    ]
+   }
   },
   {
    "id": "6b18a96a5274",
@@ -5849,7 +8234,37 @@
       "Wrestling"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Asian Games",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Olympics, Paralympics, Asian Games, CWG - hosts, medallists, new sports",
+      "bullets": [
+       "Commonwealth Games 2026: Host / dates Glasgow (Jul-Aug 2026); Key facts India 39 medals (13 G, 17 S, 9 B), 4th again; boxing 10 medals incl. a record 7 golds; athletics the most medals (16); Harsh Singh and Asmita Dey won India's first CWG judo golds; Mirabai Chanu (48 kg) became the first woman weightlifter with a 3rd consecutive CWG gold; Gulveer Singh the only double medallist",
+       "Asian Games 2026: Host / dates Aichi-Nagoya, Japan (from 19 Sep 2026); Key facts Cricket included (India's men defend their gold); Asiad boxing medallists go straight to the 2027 Worlds, the first qualifier for LA 2028",
+       "LA28: Asian Games 2026 boxing medallists go straight to the 2027 World Championships, the first LA28 qualifier (BFI, TH 17 Sep 2026).",
+       "Asian Games 2026: Aichi-Nagoya, Japan (Sep 2026); India defends Hangzhou 2023 cricket golds and Satwik-Chirag's doubles gold.",
+       "3rd Asian Youth Games 2025: Manama, Bahrain (45 nations, 26 sports) - Veer Bhadu India's first MMA medal (bronze)."
+      ]
+     },
+     {
+      "topic": "Aichi-Nagoya",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Sports - major tournaments, winners, records and hosting rights › Universal angles",
+      "bullets": [
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) began on 19 Sep 2026, and the Gukesh vs Sindarov World Championship match is due in Geneva (TH, 7 Sep 2026).",
+       "Current relevance: Asian Games 2026 (Aichi-Nagoya) and 46th Chess Olympiad (Samarkand) under way in Sep 2026; Gukesh-Sindarov title match due in Geneva (TH, Sep 2026).",
+       "FIRST/LAST: India hosted its first Kho Kho World Cup (2025), World Para Athletics Championships (2025) and Khelo India Tribal Games (2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Sujeet Kalkal"
+    ]
+   }
   },
   {
    "id": "9d139be13989",
@@ -5904,7 +8319,12 @@
       "signals"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": []
+   }
   },
   {
    "id": "038039a9e122",
@@ -5959,7 +8379,14 @@
       "scheme"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [],
+    "gaps": [
+     "IT Parks Affiliation Scheme"
+    ]
+   }
   },
   {
    "id": "3f209f24117d",
@@ -6010,7 +8437,25 @@
       "magma"
      ]
     }
-   ]
+   ],
+   "brief": {
+    "v": 1,
+    "sections": [
+     {
+      "topic": "Volcanic Products And Types",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-1 › Earthquakes - causes, seismic waves, measurement, distribution, effects › Volcanic products and types",
+      "bullets": [
+       "Products: pyroclastic debris, ash, volcanic bombs, lava. Gases: mostly water vapour, then CO2, SO2, H2S .",
+       "Status: active (erupting or recently erupted), dormant (quiet but may erupt), extinct (no eruption expected) .",
+       "Shield: Features Fluid basaltic lava; gentle slopes; Example Mauna Loa, Hawaii",
+       "Composite / stratovolcano: Features Thick, viscous lava; steep cones; explosive; ~60% of Earth's volcanoes (LENS Jun 2025); Example Etna, Mayon, Fuego",
+       "Caldera: Features Large depression from collapse after an explosive eruption; Example Mount Aso, one of the world's largest (LENSD, 29 Jul 2026); Taal"
+      ]
+     }
+    ],
+    "gaps": []
+   }
   }
  ]
 }
