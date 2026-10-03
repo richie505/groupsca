@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-03",
- "updated": "2026-10-03T16:50:32.941Z",
+ "updated": "2026-10-03T20:16:16.414Z",
  "sources": [
   {
    "id": "pib",
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 47,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 172,
+   "found": 109,
    "error": null
   },
   {
@@ -2858,6 +2858,124 @@
    }
   },
   {
+   "id": "761f9a2958d4",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "22:39",
+   "title": "‘Pashu seva bhi prabhu seva hai’: Reliance Executive Director Anant Ambani’s farmers-first message from Andhra Pradesh",
+   "summary": "Anant Ambani has called for greater use of technology, skills and entrepreneurship in farming as he addressed farmers in Andhra Pradesh, where Reliance is partnering on a new agriculture school.",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/india/pashu-seva-bhi-prabhu-seva-hai-reliance-executive-director-anant-ambani-s-farmers-first-message-from-andhra-pradesh-11791041182099.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Agrarian crisis - causes, farmer distress and suicides, loan waivers, small-holding viability › National Commission on Farmers (Swaminathan) - year, reports, MSP formula",
+     "text": "Other recommendations: land reforms, irrigation, cheaper institutional credit, crop insurance and market reforms. The National Policy for Farmers, 2007 drew on its reports .",
+     "match": [
+      "farmers",
+      "policy",
+      "irrigation"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #6 · MSP, APC and CACP",
+     "text": "MSP-based procurement helps build food stocks.",
+     "match": [
+      "msp",
+      "procurement",
+      "food"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Agricultural marketing · Farmers' markets → State; AP Rythu Bazar",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural marketing - APMC system, e-NAM, contract farming, model acts, FPOs, warehousing › Farmers' markets → State; AP Rythu Bazar",
+      "bullets": [
+       "Rythu Bazar: State Andhra Pradesh (1999)",
+       "Uzhavar Sandhai (farmers' market): State Tamil Nadu (asked APPSC 2024)",
+       "Krishi UDAN Yojana: moves farm produce, especially perishables, by air so farmers get better prices and higher incomes (asked APPSC 2021)."
+      ]
+     },
+     {
+      "topic": "Agricultural strategy and policy · Doubling Farmers' Income",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural strategy and policy - National Agriculture Policy, doubling farmers' income, National Missions › Doubling Farmers' Income - committee, sources of growth, target year",
+      "bullets": [
+       "Ashok Dalwai Committee (2016-18), 14 volumes; target 2022, base year 2015-16 .",
+       "Shift from \"production\" to \"income\": value addition, clusters, e-NAM/APMC reform, post-harvest infrastructure, livestock-fisheries integration, land-leasing laws.",
+       "Seven sources of income growth: crop productivity, livestock productivity, resource-use efficiency, cropping intensity, diversification to high-value crops, better price realisation, shift to non-farm jobs ."
+      ]
+     },
+     {
+      "topic": "Agrarian crisis · National Commission on Farmers (Swaminathan)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agrarian crisis - causes, farmer distress and suicides, loan waivers, small-holding viability › National Commission on Farmers (Swaminathan) - year, reports, MSP formula",
+      "bullets": [
+       "Core vision: farming should become economically viable and ecologically sustainable, and farmers' quality of life should improve (CDI).",
+       "Other recommendations: land reforms, irrigation, cheaper institutional credit, crop insurance and market reforms. The National Policy for Farmers, 2007 drew on its reports ."
+      ]
+     },
+     {
+      "topic": "E-governance in AP",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › E-governance in AP - MeeSeva, eSeva, CARD, AP Online",
+      "bullets": [
+       "Scale: 5.01 crore MeeSeva records and 5.70 crore AP Seva records are anchored on AP DigiVerify (blockchain) (CDI Block02)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
    "id": "fc3fc0c098b1",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -4994,6 +5112,165 @@
        "Evergreen forests are located in the Andaman and Nicobar Islands.",
        "Moist deciduous forests are located in the Himalayan foothills.",
        "Thorn forests are located in western Andhra Pradesh."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "f8b6297b4b3c",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "12:01",
+   "title": "NABKISAN Lists India’s First WASH-Focused Social Bond, Raises ₹180 Crore",
+   "summary": "03 OCT 2026 12:01PM by PIB Mumbai Mumbai, 3 October 2026 NABKISAN Finance Limited, a subsidiary of the National Bank for Agriculture and Rural Development (NABARD), on 1st October 2026 listed India’s first Social Bond dedicated exclusively to the Water, Sanitation and Hygiene (WASH) sector on the National Stock Exchange (NSE), Mumbai.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "03 OCT 2026 12:01PM by PIB Mumbai Mumbai, 3 October 2026 NABKISAN Finance Limited, a subsidiary of the National Bank for Agriculture and Rural Development (NABARD), on 1st October 2026 listed India’s first Social Bond dedicated exclusively to the Water, Sanitation and Hygiene (WASH) sector on the…"
+    },
+    {
+     "angle": "Figures",
+     "text": "The Social Bond issue witnessed robust investor participation and was oversubscribed 1.8 times, enabling NABKISAN to raise ₹180 crore."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "The five-year bond carries a coupon rate of 8.10%, matures in September 2031, and has been assigned the highest domestic credit ratings of CRISIL AAA (Stable) and CARE AAA (Stable)."
+    },
+    {
+     "angle": "Figures",
+     "text": "The transaction was supported by a wide range of stakeholders, including Water.org as Technical Advisor and Knowledge Partner, along with market institutions, advisors, trustees and arrangers who contributed to the successful issuance and listing of the bond."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Finance",
+   "alsoIn": [
+    "GKToday"
+   ],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2318568&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "NABARD",
+    "Stock exchange",
+    "Agriculture"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-2 › Urban programmes - AMRUT, Smart Cities Mission, SBM-Urban, PMAY-U, National Urban Livelihoods Mission › Urban scheme chronology - JNNURM, SBM-U, AMRUT, SCM; JNNURM features",
+     "text": "JNNURM features: BSUP (Basic Services for Urban Poor) and IHSDP (Integrated Housing and Slum Development); reforms - 25% of municipal budget for urban poor, 7-point charter (tenure, housing, water, sanitation, education, health, social security), 25% of developed land reserved for EWS/LIG (APP).",
+     "match": [
+      "development",
+      "social",
+      "water"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #66 · Economic Committees and Reform Areas",
+     "text": "Narasimham Committee – I focused on Financial Sector / Banking Reforms.",
+     "match": [
+      "sector",
+      "reforms",
+      "financial"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Financial markets · Bond types and bond yield drivers",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Financial markets - money market instruments and capital market segments › Bond types and bond yield drivers",
+      "bullets": [
+       "Social / sustainability bond: Feature Social projects / mix of green and social",
+       "Masala bond: Feature Rupee-denominated bond issued overseas - currency risk on the investor",
+       "Zero-coupon bond: Feature Issued at discount, no periodic interest (e.g. T-bills)",
+       "Inflation-indexed bond: Feature Principal/coupon adjusted to inflation",
+       "Sovereign Gold Bond: Feature Launched 2015, 2.5% interest + gold price; fresh issuance discontinued (APPCA 2026; LENS Apr 2025)"
+      ]
+     },
+     {
+      "topic": "Structure of the Indian financial system · Development finance institutions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Structure of the Indian financial system - banks, NBFCs, development finance institutions, cooperatives › Development finance institutions - year and sector",
+      "bullets": [
+       "ICICI: Established 1955; Sector / note Industrial credit; World Bank initiative",
+       "IDBI: Established 1964 (under RBI; autonomous 1976); Sector / note Apex industrial finance; reverse-merged with IDBI Bank 2002",
+       "EXIM Bank: Established January 1982; Sector / note Foreign trade finance; Lines of Credit abroad; HQ New Delhi",
+       "NABARD: Established 12 July 1982 (NABARD Act 1981); Sector / note Agriculture and rural credit; B. Sivaraman Committee (CRAFICARD); HQ Mumbai",
+       "EXIM Bank: Year Jan 1982; Role then / now Foreign-trade finance, lines of credit abroad; RBI-regulated"
+      ]
+     },
+     {
+      "topic": "Monetary policy · Bond market and yield curve",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Monetary policy - objectives, instruments (CRR, SLR, repo, reverse repo, MSF, OMO, LAF), transmission › Bond market and yield curve - what moves G-sec yields",
+      "bullets": [
+       "Indian G-sec yields depend on the US Federal Reserve's actions, RBI's actions, and inflation and short-term rates: all three (UPSC 2021).",
+       "RBI's OMO purchases (₹1 lakh crore, Dec 2025) were meant to stabilise bond yields (LENS, Dec 2025).",
+       "The spread of Indian sovereign yields over US bonds has narrowed, cutting borrowing costs. S&P upgraded India from BBB- to BBB (ES 2025-26)."
+      ]
+     },
+     {
+      "topic": "NABARD and Rural Credit Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #16 · NABARD and Rural Credit Institutions",
+      "bullets": [
+       "NABARD was established during the Sixth Five Year Plan.",
+       "NABARD has its headquarters in Mumbai.",
+       "NABARD is an apex institution or bank for agricultural refinance.",
+       "NABARD mainly refinances institutions.",
+       "NABARD provides direct rural credit."
       ]
      }
     ],
@@ -7283,6 +7560,139 @@
    }
   },
   {
+   "id": "3c157496303b",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "22:51",
+   "title": "As protests against CEC continue, Rahul launches ‘Satyagraha’ digital platform",
+   "summary": "Terming PM Modi and State Chief Ministers ‘illegal’ occupants of their post, Kharge demands dissolution of Lok Sabha, Assemblies; Opposition steps up campaign against SIR",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/as-protests-against-cec-continue-rahul-launches-satyagraha-digital-platform/article71541453.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Post"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › High Courts and subordinate judiciary; judicial review, judicial activism, PIL and judicial overreach debate › Basic structure as a limit - supremacy of Constitution, not of courts or Parliament",
+     "text": "Judicial review itself, independence of judiciary, and powers under Arts. 32, 136, 141, 142, 226, 227 are part of the Basic Structure.",
+     "match": [
+      "independence",
+      "structure",
+      "powers"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian History › #132 · Social Reform and National Movements",
+     "text": "Gandhi and Sardar Patel were key personalities in Kheda Satyagraha.",
+     "match": [
+      "gandhi",
+      "sardar",
+      "patel"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Legislative procedure · Lapsing of bills on dissolution of Lok Sabha",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Legislative procedure - ordinary, money, financial and constitutional amendment bills; joint sitting › Lapsing of bills on dissolution of Lok Sabha",
+      "bullets": [
+       "Bill passed by LS, pending in RS: Does not lapse Bill for which President has notified a joint sitting before dissolution",
+       "Rajya Sabha is never dissolved; a bill under dispute that lapses cannot go to joint sitting.",
+       "Dissolution of Lok Sabha: Bills See below; Motions / notices All pending before the LS lapse"
+      ]
+     },
+     {
+      "topic": "Sardar Vallabhbhai Patel · Bardoli Satyagraha",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Sardar Vallabhbhai Patel - Bardoli Satyagraha, organisational role, Deputy Prime Minister › Bardoli Satyagraha - year, leader, issue, women, inquiry and outcome",
+      "bullets": [
+       "1928, Bardoli taluk (Gujarat, Bombay Presidency); led by Sardar Vallabhbhai Patel (not Gandhi - UPPSC 2005; UPSC 2003).",
+       "Issue: land revenue enhanced by about 30% despite floods and famine; Patel ran a disciplined no-tax campaign with a village intelligence network.",
+       "Women took part in large numbers (e.g. Mithuben Petit, Bhaktiba, Maniben Patel ).",
+       "Outcome: government suspended the hike and ordered a fresh survey; the Maxwell-Broomfield inquiry cut the increase to about 6% .",
+       "Exam angle: \"who led Bardoli\" and \"which satyagraha was not led by Gandhi\"."
+      ]
+     },
+     {
+      "topic": "Dr. B.R. Ambedkar · Mahad Satyagraha",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Dr. B.R. Ambedkar - life, Mahad and Kalaram Satyagrahas, writings, Round Table Conferences › Mahad Satyagraha - year, issue, symbolic act",
+      "bullets": [
+       "Background: Bole Resolution of the Bombay Legislative Council (1923) opened public watering places to untouchables; Mahad Municipality opened the Chavdar Tank (1924), but only on paper.",
+       "20 March 1927: at the Kolaba District Depressed Classes conference (19-20 March), Ambedkar led a march and drank water from the Chavdar Tank (\"Water Satyagraha\"); organised by the Bahishkrit Hitakarini Sabha.",
+       "Upper castes \"purified\" the tank; a court injunction stalled the second satyagraha.",
+       "25 December 1927: Manusmriti Dahan - public burning of the Manusmriti at Mahad.",
+       "Ambedkar compared Mahad to the French National Assembly of 1789."
+      ]
+     },
+     {
+      "topic": "Election Commission of India · CEC and Other ECs Act 2023",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › CEC and Other ECs Act 2023 - selection committee, search committee, service conditions",
+      "bullets": [
+       "Selection Committee: Composition / rule PM (chair), Leader of Opposition (or leader of the largest opposition party) in the Lok Sabha, a Union Cabinet Minister nominated by the PM; may pick names outside the shortlist",
+       "The CEC and Other ECs (Appointment, Conditions of Service and Term of Office) Act, 2023 (Act 49 of 2023) replaced the 1991 Act.",
+       "Eligibility: holds or has held a post equal to Secretary to GoI, with election-management experience.",
+       "Removal: the CEC is removed like a Supreme Court judge, on a special-majority address by both Houses. ECs can be removed only on the CEC's recommendation. Section 11 of the 2023 Act gives the removal procedure (TH 24 Feb 2026).",
+       "Salary: the CEC and ECs are equal, on a par with a Supreme Court judge (APP). Service conditions cannot be varied to their disadvantage."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
    "id": "99b84888211b",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -7407,6 +7817,109 @@
     "gaps": []
    },
    "topicOf": "425da8b6ede6"
+  },
+  {
+   "id": "f6de774b8f0e",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "22:17",
+   "title": "Dharapuram farmers unhappy over T.N. government’s approach on crop loan waiver",
+   "summary": "A community leader says the government’s couple of changes in the waiver scheme has only created more confusion among the agriculturists",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/dharapuram-farmers-unhappy-over-tn-governments-approach-on-crop-loan-waiver/article71541041.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Agrarian crisis - causes, farmer distress and suicides, loan waivers, small-holding viability › National Commission on Farmers (Swaminathan) - year, reports, MSP formula",
+     "text": "Other recommendations: land reforms, irrigation, cheaper institutional credit, crop insurance and market reforms. The National Policy for Farmers, 2007 drew on its reports .",
+     "match": [
+      "policy",
+      "irrigation",
+      "land"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #6 · MSP, APC and CACP",
+     "text": "MSP-based procurement helps build food stocks.",
+     "match": [
+      "msp",
+      "procurement",
+      "food"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Agrarian crisis · Loan waivers",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agrarian crisis - causes, farmer distress and suicides, loan waivers, small-holding viability › Loan waivers - ADWDRS 2008, AP Runa Mafi, critique",
+      "bullets": [
+       "Agricultural Debt Waiver and Debt Relief Scheme, 2008 (Union Budget 2008-09): Key facts Full waiver for small and marginal farmers; 25% one-time settlement relief for others on paying 75%; about ₹52,000 crore",
+       "AP Agricultural Debt Redemption Scheme, 2014 (Rythu Runa Mafi): Key facts Via Rythu Sadhikara Samstha; crop/gold loans up to 31 Dec 2013; cap ₹1.5 lakh per family; horticulture ₹10,000/acre, ₹50,000/family",
+       "Telangana: Key facts Crop loan waiver for over 25 lakh families (IYB 2026)",
+       "ADWDRS 2008 (Union Budget 2008-09): full waiver of eligible overdue loans of small and marginal farmers; other farmers got 25% one-time-settlement relief on paying the remaining 75% .",
+       "Loans covered: Detail Crop loans and crop-purpose gold loans up to 31 Dec 2013"
+      ]
+     },
+     {
+      "topic": "Agricultural strategy and policy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural strategy and policy - National Agriculture Policy, doubling farmers' income, National Missions › National Commission on Agriculture and National Commission on Farmers",
+      "bullets": [
+       "National Commission on Agriculture: Years / Chair 1970-76 (report 1976); chair Nathu Ram Mirdha; Key recommendations HYVs, irrigation, credit reform; coined \"social forestry\"",
+       "National Commission on Farmers: Years / Chair Constituted 18 November 2004; chair M.S. Swaminathan; 5 reports 2004-06; Key recommendations MSP at C2 + 50%; land reforms; women as farmers; universal crop insurance; National Agricultural Risk Fund",
+       "Government MSP policy uses 1.5 x A2+FL (not C2); MSPs for 22 mandated crops (ES 2025-26)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "6d45e57d8185",
@@ -9928,7 +10441,15 @@
      }
     ],
     "gaps": []
-   }
+   },
+   "related": [
+    {
+     "id": "5aab94598db8",
+     "title": "No rush for subsidised onions at Vijayawada Rythu Bazaars",
+     "source": "The Hindu — Andhra Pradesh",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/no-rush-for-subsidised-onions-at-vijayawada-rythu-bazaars/article71541389.ece"
+    }
+   ]
   },
   {
    "id": "4ff84aa8b567",
@@ -10052,6 +10573,103 @@
     ],
     "gaps": []
    }
+  },
+  {
+   "id": "5aab94598db8",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "23:48",
+   "title": "No rush for subsidised onions at Vijayawada Rythu Bazaars",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/no-rush-for-subsidised-onions-at-vijayawada-rythu-bazaars/article71541389.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Inflation - types, causes, measurement (CPI, WPI, core inflation), effects and control measures › Control measures - monetary, fiscal, supply-side",
+     "text": "Supply-side: Tools OMSS (Domestic) - FCI sells wheat and rice at fixed prices; Price Stabilisation Fund buffer of pulses and onions; subsidised Bharat Atta, Bharat Rice, Bharat Dal (Bharat Chana Dal from July 2023 at ₹60/kg)",
+     "match": [
+      "subsidised",
+      "onions"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #29 · Regional Rural Banks and NABARD",
+     "text": "Regional Rural Banks participate in institutional agricultural credit.",
+     "match": [
+      "rural",
+      "credit",
+      "agricultural"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Agricultural marketing in Andhra Pradesh · Rythu Bazaars",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Agricultural marketing in Andhra Pradesh - market yards, Rythu Bazaars and e-marketing › Rythu Bazaars - year, coordinating officer, estate officer, management",
+      "bullets": [
+       "In a Rythu Bazar the farmer sells directly to the consumer without middlemen. The stated purpose is always a pair: a better price for the farmer and a fair price for the consumer.",
+       "The 2025 PYQ keyed as correct the option that Rythu Bazar prices are \"fixed aiming to be around 25%\" (relative to open-market prices).",
+       "124 Rythu Bazars are functioning (APSES 2024-25). The same paragraph also says 122.",
+       "Basis: Regulated market yard AP (AP&L) Markets Act, 1966; Rythu Bazar Executive scheme, 1999",
+       "Managed by: Regulated market yard Agricultural Market Committee; Rythu Bazar Estate Officer"
+      ]
+     },
+     {
+      "topic": "Agricultural marketing · Farmers' markets → State; AP Rythu Bazar",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural marketing - APMC system, e-NAM, contract farming, model acts, FPOs, warehousing › Farmers' markets → State; AP Rythu Bazar",
+      "bullets": [
+       "Rythu Bazar: State Andhra Pradesh (1999)",
+       "Rythu Bazar: farmer sells directly to consumer; run by an Estate Officer under the Revenue Department, outside the Agricultural Market Committees; 129 functional, 10 under construction (CDI SES 2025-26; earlier 124).",
+       "Idea: farmer-to-consumer sale without commission agents; AP is still expanding Rythu Bazars (CDI)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "d6f28fbe2e00"
   },
   {
    "id": "d97e18c3b6da",
@@ -11516,6 +12134,112 @@
    }
   },
   {
+   "id": "a1ac5aae9155",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "22:12",
+   "title": "Ganesh 'visarjan' over, Gyanesh Kumar 'visarjan' remains: Prakash Raj",
+   "summary": "\"Ganesh visarjan is over in Karnataka, Andhra and entire India. Now, Gyanesh Kumar visarjan remains,\" he told reporters here.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/ganesh-visarjan-over-gyanesh-kumar-visarjan-remains-prakash-raj-101791045632624.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Remains"
+   ],
+   "score": 29,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Awards and honours - national civilian awards, international prizes, film and literary awards › Appointments and FIRSTs",
+     "text": "CEC: Holder Gyanesh Kumar",
+     "match": [
+      "Gyanesh Kumar"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Persons in news - appointments, resignations and obituaries › Constitutional, statutory and executive appointments",
+     "text": "CEC: Holder (as of Sep 2026) Gyanesh Kumar",
+     "match": [
+      "Gyanesh Kumar"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Landmark judgments",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-1 › Landmark judgments - Maneka Gandhi, S.R. Bommai, Vishaka, Puttaswamy (privacy), Shreya Singhal, Navtej Johar, Shayara Bano › Case → guidelines laid down (Vishaka, D.K. Basu, Prakash Singh, Lalita Kumari)",
+      "bullets": [
+       "Vishaka (1997): Guidelines [GK except Vishaka] Workplace harassment committees, till the 2013 Act",
+       "D.K. Basu (1997): Guidelines [GK except Vishaka] Arrest and custody: arrest memo, informing kin, medical checks",
+       "Prakash Singh (2006): Guidelines [GK except Vishaka] Police reforms: State Security Commission, DGP tenure, Police Establishment Board, Complaints Authority",
+       "Lalita Kumari (2013): Guidelines [GK except Vishaka] FIR mandatory for cognizable offences (CrPC 154, now Sec. 173 BNSS)"
+      ]
+     },
+     {
+      "topic": "Evolution of Panchayati Raj · FIRST and second states",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Evolution of Panchayati Raj - Community Development Programme, Balwant Rai Mehta, Ashok Mehta, G.V.K. Rao and L.M. Singhvi committees › FIRST and second states - dates, whole-state vs partial adoption",
+      "bullets": [
+       "Rajasthan: Date 2 October 1959; Note FIRST state to adopt PR (APPSC 2018, UPPSC 2012)",
+       "Andhra Pradesh: Date 1 November 1959; Note second; first to implement PR across the entire state (APPSC 2019 key)",
+       "By the mid-1960s most states had PRIs (APP, CDI).",
+       "Exam angle: \"first state\" = Rajasthan. \"First implemented across the entire state in 1959\" = Andhra Pradesh."
+      ]
+     },
+     {
+      "topic": "Custodial violence guidelines → case (D.K. Basu, Nilabati Behera, Joginder Kumar, Arnesh Kumar)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Custodial violence, encounter deaths, prison reforms, death penalty debate › Custodial violence guidelines → case (D.K. Basu, Nilabati Behera, Joginder Kumar, Arnesh Kumar)",
+      "bullets": [
+       "Joginder Kumar v State of UP (1994): Principle Arrest must be justified, not routine; arrestee may have a friend/relative informed",
+       "Arnesh Kumar v State of Bihar (2014): Principle No automatic arrest for offences up to 7 years; checklist (CrPC s.41, now BNSS s.35)",
+       "CrPC s.176(1A) made a judicial inquiry mandatory in custodial deaths (now BNSS s.196) [GK for BNSS number]."
+      ]
+     },
+     {
+      "topic": "AP municipal laws",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Panchayati Raj and urban bodies in Andhra Pradesh - structure, elections, finances, performance › AP municipal laws - Acts, Amendment Bills, Mayor election mode",
+      "bullets": [
+       "Mayor election: until now indirect (elected by corporators). The AP Cabinet on 18 Aug 2026 approved direct election of Mayors and of Municipal/Nagar Panchayat Chairpersons (TH, 19 Aug 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
    "id": "e24f981eb452",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -12310,345 +13034,6 @@
        "Nawabganj Bird Sanctuary is located in Unnao, Uttar Pradesh.",
        "Udhwa Bird Sanctuary is located in Sahibganj, Jharkhand.",
        "Karikili Bird Sanctuary is located in Tamil Nadu."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "32c64f7cc325",
-   "date": "2026-10-03",
-   "pubDate": "2026-10-03",
-   "title": "Important Endangered Birds of India",
-   "summary": "India’s bird diversity includes several species facing an extreme risk of extinction. For Prelims revision, the most important names are the Great Indian Bustard and othe",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-endangered-birds-of-india/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 17,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "book",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Species-specific conservation projects - Project Tiger, Project Elephant, Gangetic dolphin, Great Indian Bustard, vulture, cheetah reintroduction › Great Indian Bustard - range, zoological name, Supreme Court case, breeding",
-     "text": "Great Indian Bustard (Ardeotis nigriceps [GK]) is called Godawan and is Rajasthan's state bird. It is Critically Endangered (APP), with fewer than 150 birds left (CDI).",
-     "match": [
-      "bird",
-      "great",
-      "bustard"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Environment › #18 · Birds, Species Status and Sanctuaries",
-     "text": "The Great Indian Bustard is Critically Endangered.",
-     "match": [
-      "great",
-      "bustard",
-      "endangered"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Species-specific conservation projects · Great Indian Bustard",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Species-specific conservation projects - Project Tiger, Project Elephant, Gangetic dolphin, Great Indian Bustard, vulture, cheetah reintroduction › Great Indian Bustard - range, zoological name, Supreme Court case, breeding",
-      "bullets": [
-       "Great Indian Bustard (Ardeotis nigriceps [GK]) is called Godawan and is Rajasthan's state bird. It is Critically Endangered (APP), with fewer than 150 birds left (CDI).",
-       "Conservation breeding is run in Jaisalmer, Rajasthan . The GIB is one of MoEFCC's five new national species projects and is on the Species Recovery Programme (APPCA 2026).",
-       "M.K. Ranjitsinh v. Union of India (2024) concerned the Great Indian Bustard (APPSC-GS 2024). GIB population under 150; the Supreme Court ordered underground power lines in its habitat (CDI).",
-       "GIB: CR, Rajasthan state bird (Godawan); in AP, Rollapadu WLS (Nandyal). GIB is in the species recovery programme and the national projects list (APPCA 2026).",
-       "Not in your sources: GIB captive-breeding centre names."
-      ]
-     },
-     {
-      "topic": "Birds, Species Status and Sanctuaries",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Environment › #18 · Birds, Species Status and Sanctuaries",
-      "bullets": [
-       "The Great Indian Bustard is associated with Desert National Park, Rajasthan.",
-       "The Siberian Crane is Critically Endangered.",
-       "The Sociable Lapwing is Critically Endangered.",
-       "The Himalayan Musk Deer is Endangered.",
-       "The Red Panda is Endangered."
-      ]
-     },
-     {
-      "topic": "Conservation",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Conservation - in-situ (protected areas, biosphere reserves) and ex-situ (zoos, gene banks, seed banks) › Protected landscapes and Important Bird and Biodiversity Areas",
-      "bullets": [
-       "Important Bird and Biodiversity Areas (IBAs) are designated by BirdLife International, whose Indian partner is BNHS .",
-       "Keibul Lamjao NP: State Manipur; Note World's only floating NP on phumdis of Loktak; Sangai deer (Endangered, APP)",
-       "Important Bird and Biodiversity Areas (IBAs) are recognised by BirdLife International (BPSC 2025 key: Nagi bird sanctuary)."
-      ]
-     },
-     {
-      "topic": "India",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 4 Geography › D-2 › India - tiger reserves, elephant reserves, Ramsar sites, important bird areas › Important Bird Areas and bird mass-mortality events → species (Telineelapuram, Telukunchi, Sambhar)",
-      "bullets": [
-       "Telineelapuram and Telukunchi (Srikakulam, AP): IBAs for breeding painted storks and spot-billed pelicans .",
-       "Sambhar Lake (Rajasthan): mass death of migratory birds from avian botulism, Nov 2019 .",
-       "The Rushikulya mouth (Odisha) IBA hosts the olive ridley arribada (APPCA)."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "de7137969a14",
-   "date": "2026-10-03",
-   "pubDate": "2026-10-03",
-   "time": "07:00",
-   "title": "Current Affairs 2 & 3 October 2026",
-   "summary": "We are here for you to provide the important Recent and Latest Current Affairs October 2 & 3 2026, which have unique updates of Latest Current Affairs 2026 events from all newspapers such as The Hindu, The Economic Times, PIB, Times of India, PTI, Indian Express, Business Standard and all Government official websites.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "We are here for you to provide the important Recent and Latest Current Affairs October 2 & 3 2026, which have unique updates of Latest Current Affairs 2026 events from all newspapers such as The Hindu, The Economic Times, PIB, Times of India, PTI, Indian Express, Business Standard and all Governm…"
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "Our Current Affairs October 2026 […] The post Current Affairs 2 & 3 October 2026 appeared first on AffairsCloud.com ."
-    }
-   ],
-   "source": "AffairsCloud",
-   "sourceId": "affairscloud",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://affairscloud.com/current-affairs-2-3-october-2026/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Newspaper",
-    "Post"
-   ],
-   "score": 14,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 1 History & Culture › A-4 › Viceroys of India - Canning to Mountbatten: key measures, acts and events › Universal angles",
-     "text": "Current relevance: ASI (est. 1861 under Canning, founder Cunningham) and the AMASR Act 1958 (monuments over 100 years) recur in 2026 current affairs (APPCA, Jun 2026).",
-     "match": [
-      "Current Affairs"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Economic Survey",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-4 › Economic Survey - structure and key themes of the latest Survey › Universal angles",
-      "bullets": [
-       "Current relevance: CII Business Outlook Survey - half of firms say strong macro growth is not fully reaching their business; confidence score 66 in Q2 FY27 (TH, 8 Sep 2026).",
-       "AP angle: AP Socio-Economic Survey (Planning Dept) is tabled in both Houses with the State Budget; the 2025-26 edition missed the Budget session (TH, 12 Apr 2026) and came out later.",
-       "Comparative note: UN ESCAP Economic Survey 2026 (HQ Bangkok) is a separate Asia-Pacific report (APPCA, Jun 2026)."
-      ]
-     },
-     {
-      "topic": "Make in India, PLI schemes, National Manufacturing Policy; ease of doing business reforms",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-3 › Make in India, PLI schemes, National Manufacturing Policy; ease of doing business reforms › Universal angles",
-      "bullets": [
-       "Current relevance: new wave of EoDB reforms - digital governance, trust-based regulation (LENSD, 9 Jun 2026); SIPB-approved 87 proposals worth ₹34,000 crore ratified (APPCA, Jun 2026).",
-       "Current relevance: India's IMD Competitiveness rank improved from 43 (2021) to 41 (2025) (LENSD, 9 Jun 2026); DPIIT-recognised startups 502 (2016) to 2.47 lakh (12 Aug 2026).",
-       "AP angle: AP Single Desk Portal (April 2015) - 99.20% approvals within SLA (16,458 of 16,783, 1 Apr 2024-1 Jan 2025); AP Assembly passed the AP Omnibus (Speed of Doing Business) Bill, 2026 (TH, 20 Aug 2026).",
-       "Current relevance: Economic Survey 2025-26 credits PLI and the National Manufacturing Mission with driving investment; industry GVA grew 7.0% in H1 FY26; medium- and high-tech manufacturing is 46.3% of the total (ES, 31 Jan 2026)."
-      ]
-     },
-     {
-      "topic": "Newspaper statements for a separate Andhra",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 1 History & Culture › A-6 › Role of the press and newspapers in the Andhra Movement - Krishna Patrika, Andhra Patrika, Andhra Prabha, Zamin Ryot › Newspaper statements for a separate Andhra - which paper",
-      "bullets": [
-       "The Hindu: Statement Jonnavittula Gurunatham's 6 articles in 1911. \"Are Telugu people backward?\" appeared on 15 Apr 1911: civil services 56 non-Andhras to 8 Andhras; judiciary 19 to 0",
-       "The Hindu (opposed): Statement \"Viswamitra\" letter, 29 Aug 1912, asking where Andhra would find officers",
-       "Desabhimani: Statement Urged Telugu papers to write on Andhra affairs instead of world politics"
-      ]
-     },
-     {
-      "topic": "Economic development since independence · Phases of Indian development",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-1 › Economic development since independence - phases and growth rates; the Hindu rate of growth › Phases of Indian development - boundaries and average growth",
-      "bullets": [
-       "1950-1980 (\"Hindu rate\"): Average growth ~3.5% (3.52%)",
-       "1980-81 to 1989-90: Average growth 5.13-5.18%",
-       "Post-reform (1990s-2010s): Average growth ~6.5% (6.8% from 1993-94); peak 8.5% in 2003-08",
-       "Post-Covid (new 2022-23 series): Average growth 7.2% (2023-24), 7.1% (2024-25), 7.7% (2025-26 PE)",
-       "Plan era overall: ~4.5% a year (Plans 1-11) vs ~1% before Independence; agriculture 2-3% (vs 0.3%); industry 6-8% (APP)."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "a1eb12450d63",
-   "date": "2026-10-03",
-   "pubDate": "2026-10-03",
-   "title": "Important IT Parks and Technology Hubs in India",
-   "summary": "Introduction India’s IT parks and technology hubs are planned clusters that support software services, IT-enabled services, startups, and digital enterprises.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-it-parks-and-technology-hubs-in-india/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Services"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "book",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 3 Economy › C-1 › Role of the IT and ITES industry in India's development - exports, employment and challenges › Origins of software exports - Department of Electronics, early policy, STPI",
-     "text": "Software Technology Parks of India (STPI): set up in 1991 under the Department of Electronics . It gave export units satellite data links and single-window clearances. STPI now takes the model to smaller (Tier-2/3) cities.",
-     "match": [
-      "parks",
-      "technology",
-      "software"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Indian Economy › #52-2 · Foreign Trade and Balance of Payments",
-     "text": "IT/software is an example of services exports.",
-     "match": [
-      "software",
-      "services"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Industrial clusters and parks → location",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-5 › Expressways and industrial corridors promised under the Act; Vizag-Chennai Industrial Corridor › Industrial clusters and parks → location",
-      "bullets": [
-       "APIIC, incorporated in 1973 (APPSC 2023), is the nodal agency for all industrial infrastructure, including IT, biotech and apparel parks and SEZs, using the PPP model. It has 22 JVs (APSES 2024-25).",
-       "It manages 571 industrial parks: 264 APIIC and 283 UDL (CDI; these two parts add to 547, not 571). In 2024 it allotted 5,862 acres to 816 units, with proposed investment of ₹81,062 crore and 79,261 jobs.",
-       "APIIC clusters: Location Gandrajupalle (Chittoor), Kopparthi (Kadapa), Makavarapalem (Visakhapatnam), Machilipatnam (APPSC-G2 2023)",
-       "Not in your sources: the locations of AP's electronics manufacturing clusters."
-      ]
-     },
-     {
-      "topic": "IT/ITES SEZs and parks",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › IT/ITES SEZs and parks - location",
-      "bullets": [
-       "APIIC runs 264 industrial parks among 571 clusters (APSES p.115).",
-       "Visakhapatnam IT parks: Kapuluppada Phase-1 IT Park, where RMZ plans a GCC Park (up to 10 million sq ft on ~50 acres) (TH, 21 Jan 2026). TCS and Cognizant began operations in Vizag in 2025 (CDI, SES 2025-26).",
-       "Tirupati, Vijayawada and Visakhapatnam host the new IT parks built after bifurcation (CDI Block13)."
-      ]
-     },
-     {
-      "topic": "Origins of software exports",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-1 › Role of the IT and ITES industry in India's development - exports, employment and challenges › Origins of software exports - Department of Electronics, early policy, STPI",
-      "bullets": [
-       "The Department of Electronics (set up in 1970 , reporting to the Prime Minister) saw India's export potential in software as early as the mid-1970s.",
-       "Software Export Scheme (1972): computers could be imported against an export obligation",
-       "Computer Policy (1984) and Software Export Policy (1986) liberalised imports and data links",
-       "Software Technology Parks of India (STPI): set up in 1991 under the Department of Electronics . It gave export units satellite data links and single-window clearances. STPI now takes the model to smaller (Tier-2/3) cities.",
-       "The 1990s exports boom: software exports grew about 50% a year after 1995-96, helped by low costs and international quality standards."
-      ]
-     },
-     {
-      "topic": "IT institutions → role",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › National Policy on Information Technology - objectives and outcomes › IT institutions → role",
-      "bullets": [
-       "MeitY: Role Policy on IT, electronics, internet (other than ISP licensing) and cyber security; coordinates Digital India",
-       "STPI: Role Software Technology Parks of India - export-oriented IT parks under MeitY ; runs CoEs",
-       "NIC: Role Government's IT/e-governance network and services"
       ]
      }
     ],
