@@ -64,19 +64,21 @@ story that your notes cover. Each section has its heading, where it is in the no
 
 ```
 Naidu, Sitharaman launch Rayalaseema horticulture hub; Anant Ambani pledges ₹1 lakh crore for biogas
-  1. Biogas And Biomass                       Book 5 › 21 › Other renewables › Biogas and biomass
-  2. Horticulture                             Book 3 › C-3 › Allied sectors - horticulture …
-  3. Rayalaseema Plateau And Coastal Contrast Rocket Sheets · AP Geography #27
+  1. Allied sectors · Horticulture            Book 3 › C-3
+  2. Andhra Pradesh · District-wise agriculture  Book 4 › D-4
+  3. Andhra Pradesh · Drought-prone Rayalaseema  Book 4 › D-2
+  4. Approaches and initiatives in AP agriculture · Horticulture  Book 3 › C-5
   Not in your notes: School of Agriculture
 ```
 
-The topics are the story's names (BrahMos, SEBI, Polavaram Project) and the ordinary words in its headline that
-head a subsection of the notes (*horticulture*, *biogas*). A topic gets a section only when the subsection is
-about it: the topic is in the subsection's heading, or two of its bullets name the topic alongside other topics
-of the story. A name with no such subsection goes under "Not in your notes", rather than being pinned to a
-loosely related bullet. Stories with no section fall back to the closest notes above. Everything is rule-based,
-so a section is occasionally off-topic. `BRIEF_VERSION` in `statics.js` is raised when the rules change, so every
-story on file is re-linked on the next run.
+How sections are chosen: every subsection of the notes is scored against the **whole story**. Headline words
+count double, words in the subsection's heading count 2.5×, and rare words count more than common ones. The
+story's own syllabus units and book come first; other books count for less. A subsection needs two of the
+story's informative words, or one rare headline word in its heading, so a single loose word ("protest", "stage")
+never makes a section. Each notes row gives at most one section, up to 4 sections in all. Short forms the matcher
+would miss are spelt out (BC → backward classes, ST, EWS, GO, AI…). Names that no note mentions at all are listed
+under "Not in your notes". Everything is rule-based, so a section can still be off-topic now and then.
+`BRIEF_VERSION` in `statics.js` is raised when the rules change, so every story on file is re-linked on the next run.
 
 Telugu (Eenadu) headlines are matched through an English glossary (`ap-vocab.json`, `telugu.glossary`).
 

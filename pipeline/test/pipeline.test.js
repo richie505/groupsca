@@ -257,15 +257,16 @@ test('stories published before notes existed are given notes on the next run', a
   assert.ok(after.items.every((i) => (i.notes || []).length > 0));
 });
 
-test('brief: current matter then static notes by topic, from the heading the topic is about', () => {
+test('brief: current matter then static notes by topic, the subsections about the whole story', () => {
   const b = St.briefOf(NOTES, { title: 'Monetary Policy Committee keeps repo rate unchanged', summary: '' });
   assert.equal(b.v, St.BRIEF_VERSION);
-  assert.equal(b.sections[0].topic, 'Monetary Policy Committee');
+  assert.equal(b.sections[0].topic, 'RBI and monetary policy · Monetary Policy Committee');
   assert.ok(b.sections[0].bullets.some((x) => /six members/.test(x)));
   // named only in a heading
   const p = St.briefOf(NOTES, { title: 'Centre releases funds for Polavaram Project', summary: '' });
-  assert.equal(p.sections[0].topic, 'Polavaram Project');
-  // a name the notes do not have is listed, not forced onto some note
+  assert.equal(p.sections[0].topic, 'Polavaram Project · Funding');
+  assert.deepEqual(p.gaps, []);
+  // nothing in the notes about it: no section forced onto a loosely related note
   const g = St.briefOf(NOTES, { title: 'Centre approves the Kaleshwaram Lift Scheme', summary: '' });
   assert.equal(g.sections.length, 0);
 });

@@ -486,8 +486,9 @@ module.exports = { loadNotes, buildIndex, staticFor, phrasesOf, tokens, defaultD
 // Andhra Movement). The bullets are the subsection's own, the ones naming the
 // story's topics first. Topics the notes do not cover are returned as gaps.
 
-const MAX_SECTIONS = 5;
+const MAX_SECTIONS = 4;
 const MAX_BULLETS = 5;
+const MIN_SECTION_SCORE = 6;
 
 function titleCase(s) {
   return s.replace(/(^|\s)(\p{Ll})/gu, (m, a, b) => a + b.toUpperCase());
@@ -516,7 +517,8 @@ const NEWS_WORDS = new Set(
     'presidential centric initiative initiatives programme programmes scheme schemes agreement agreements plants ' +
     'environment development developments process measures measure efforts effort implementation doing start ' +
     'starts started group groups theme themes proposals proposal north south east oct nov dec sept jan feb aug ' +
-    'times india indian lays stone foundation')
+    'times india indian lays stone foundation against stage stages protest protests protested dismissal dismissed ' +
+    'verdict verdicts move moves file files filed petition petitions flay flays slam slams demand demands demanded')
     .split(' ')
 );
 
@@ -580,128 +582,175 @@ function secHas(index, sec, words) {
   return { n, title: re.test(sec.title) };
 }
 
+// Two-letter short forms, which tokens() drops, and what they stand for.
+const SHORT_FORMS = [
+  [/\bB\.?Cs?\b/, 'backward classes'],
+  [/\bOBCs?\b/, 'backward classes'],
+  [/\bS\.?Cs?\b(?!\s+(?:against|order|verdict|ruling|bench|judgment|collegium|notice))/, 'scheduled castes'],
+  [/\bS\.?Ts?\b/, 'scheduled tribes'],
+  [/\bEWS\b/, 'economically weaker sections'],
+  [/\bGO\b/, 'government order'],
+  [/\bAI\b/, 'artificial intelligence'],
+  [/\bEV\b/, 'electric vehicles'],
+  [/\bUN\b/, 'united nations'],
+  [/\bIT\b(?= (?:sector|policy|park|hub|firms?|companies|exports))/, 'information technology'],
+];
+
+/** What a subsection is about, as its heading: "Reservation · Indra Sawhney". */
+function secLabel(sec) {
+  const parts = String(sec.head || sec.title).split('|').map((x) => x.trim()).filter(Boolean);
+  const generic = /^(key facts|overview|introduction|basics|features|facts|notes|important points|summary|universal angles|exam angles?|current relevance|pyq angles?)$/i;
+  const useful = parts.filter((x) => !generic.test(x));
+  if (!useful.length) return parts[0] || sec.title;
+  // the subsection's own heading, with its row's when the row says more
+  if (useful.length > 1 && useful[1].toLowerCase().includes(useful[0].toLowerCase())) return useful[1];
+  if (useful.length > 1 && useful[0].toLowerCase().includes(useful[1].toLowerCase())) return useful[0];
+  // a long row title ("National Commission for SCs (338), STs ...") gives way to its subsection's
+  if (useful.length > 1 && useful[0].length > 40) return useful[1];
+  // a long subsection heading ("Which rates RBI fixes vs market- or ...") gives way to its row's
+  if (useful.length > 1 && useful[1].length > 50) return useful[0];
+  return useful.join(' · ');
+}
+
 /**
- * { sections: [{ topic, src, where, bullets: [..] }], gaps: [topic, ..] }.
- * `item.lang === 'te'` stories are read through their English gloss.
+ * { sections: [{ topic, src, where, bullets: [..] }], gaps: [name, ..] }.
+ *
+ * Every subsection of the notes is scored against the WHOLE story (headline
+ * words count double, words in the subsection's heading count 2.5x, rare words
+ * more than common ones), in the story's own book and syllabus units first;
+ * the best few, one per notes row, become the numbered sections. A subsection
+ * needs two of the story's informative words, or one rare headline word in its
+ * heading, so a single loose word ("stage", "protest") never makes a section.
+ * Telugu stories are read through their English gloss.
  */
 function briefFor(index, item0) {
   if (!index || !index.size) return { sections: [], gaps: [] };
   const telugu = /[ఀ-౿]/.test(item0.title);
   const terms = telugu ? glossTerms(item0.title) : [];
   const item = telugu ? { ...item0, title: terms.join('. ') || item0.title } : item0;
-  const topics = topicsOf(index, item, terms);
-  // the story's real topics, for "does this subsection also cover the story?"
-  const allWords = new Set(
-    topics.filter((t) => t.kind === 'word' || t.words.length > 1).flatMap((t) => t.words)
-  );
+
+  const S = index.secs.length;
+  const df = (w) => index.secDf.get(w) || 0;
+  const idf = (w) => Math.log(S / (1 + df(w)));
+  // "informative": in at most 1 subsection in 12; "rare": 1 in 100 (with a
+  // floor for small note sets)
+  const informativeDf = Math.max(2, S / 12);
+  const rareDf = Math.max(1, S / 100);
+  const minScore = S > 500 ? MIN_SECTION_SCORE : 1;
+  // the story's words: headline x2, the rest x1, news verbs and fillers out
+  const want = new Map();
+  const add = (text, wt) => {
+    for (const w of tokens(text)) {
+      if (NEWS_WORDS.has(w) || w.length < 3) continue;
+      want.set(w, Math.max(want.get(w) || 0, wt));
+    }
+  };
+  add(`${item.summary || ''} ${(item.facts || []).map((f) => f.text).join(' ')}`, 1);
+  add(item.title, 2);
+  // short forms the tokenizer drops (two letters) said in full
+  const raw = `${item.title} ${item.summary || ''}`;
+  for (const [re, full] of SHORT_FORMS) {
+    if (!re.test(raw)) continue;
+    const wt = re.test(item.title) ? 2 : 1;
+    for (const w of tokens(full)) want.set(w, Math.max(want.get(w) || 0, wt));
+  }
+  const headWords = new Set([...want].filter(([, wt]) => wt === 2).map(([w]) => w));
+
+  // the story's books and Prep units
+  const books = new Set();
+  for (const sub of [item.subject, ...(item.subjects || [])]) if (BOOK_NO[sub]) books.add(BOOK_NO[sub]);
+  const units = new Set((item.units || []).map((u) => prepUnitOf(u.code)).filter(Boolean));
+
+  // candidate subsections: any sharing an informative word
+  const cand = new Set();
+  for (const [w] of want) {
+    if (df(w) > Math.max(2, S / 5)) continue;
+    for (const id of index.postings.get(w) || []) cand.add(index.entries[id].sec);
+  }
+  const scored = [];
+  for (const sid of cand) {
+    const sec = index.secs[sid];
+    const headToks = new Set(tokens(sec.head || sec.title));
+    let score = 0;
+    let informative = 0;
+    let rareHeadHit = false;
+    const hits = [];
+    for (const [w, wt] of want) {
+      if (!sec.bag.has(w)) continue;
+      const i = idf(w);
+      const inHead = headToks.has(w);
+      score += wt * i * (inHead ? 2.5 : 1) * Math.min(1.6, 0.8 + 0.2 * sec.bag.get(w));
+      if (df(w) <= informativeDf) informative++;
+      if (inHead && headWords.has(w) && df(w) <= rareDf) rareHeadHit = true;
+      hits.push(w);
+    }
+    if (informative < 2 && !rareHeadHit) continue;
+    // the story's own book and units first; Prep before Rocket on a tie
+    const inBook = books.has(sec.book) || (sec.book === 6 && books.has(6));
+    const inUnit = sec.src === 'prep' && units.has(sec.unit);
+    score *= inUnit ? 1.4 : inBook ? 1 : 0.4;
+    // long subsections share words by chance
+    score /= Math.max(1, Math.log(sec.bag.size) / Math.log(40));
+    if (sec.src === 'prep') score *= 1.05;
+    scored.push({ sec, score, hits });
+  }
+  scored.sort((a, b) => b.score - a.score);
 
   const sections = [];
-  const gaps = [];
-  const usedSecs = new Set();
-  const chosenTitles = [];
-  for (const t of topics) {
+  const rows = new Set();
+  const labels = new Set();
+  const top = scored.length ? scored[0].score : 0;
+  for (const c of scored) {
     if (sections.length >= MAX_SECTIONS) break;
-    // already covered by a chosen section's heading ("Reserve" after "Tiger Reserves")
-    if (chosenTitles.length && t.words.every((w) => chosenTitles.some((ct) => ct.has(w)))) continue;
-    // candidate subsections: those with a bullet naming the topic
-    const ids = t.words.length > 1 ? findPhrase(index, { text: t.label, kind: 'name' }) : index.postings.get(t.words[0]) || [];
-    const secIds = new Set(ids.map((id) => index.entries[id].sec));
-    // and subsections headed by a several-word name its bullets do not repeat
-    // ("Polavaram Project | Funding")
-    if (t.words.length > 1) {
-      const reName = new RegExp(`(?<![\\p{L}\\p{N}])${t.words.map(escapeRe).join('[\\s-]+')}`, 'iu');
-      for (const sec of index.secs) if (reName.test(sec.head || '')) secIds.add(sec.id);
-    }
-    const isName = t.kind !== 'word' && (t.words.length > 1 || /^[A-Z0-9-]{2,}$/.test(t.label)) && t.label.split(/\s+/).length <= 4;
-    if (!secIds.size) {
-      if (isName) gaps.push(t.label);
-      continue;
-    }
-    let best = null;
-    for (const sid of secIds) {
-      if (usedSecs.has(sid)) continue;
-      const sec = index.secs[sid];
-      const own = secHas(index, sec, t.words);
-      if (!own.n && !own.title) continue;
-      // the story's other topics this subsection also covers
-      let ctx = 0;
-      for (const w of allWords) if (!t.words.includes(w) && sec.bag.has(w)) ctx++;
-      // The subsection must be ABOUT the topic. Always good enough: two
-      // bullets naming it alongside two more of the story's topics.
-      const strongBody = own.n >= 2 && ctx >= 2;
-      const reHead = new RegExp(`(?<![\\p{L}\\p{N}])${t.words.map(escapeRe).join('[\\s-]+')}`, 'iu');
-      const inHeading = reHead.test(sec.head || sec.title);
-      let ok = strongBody && t.kind !== 'word';
-      if (t.kind === 'word') {
-        // an ordinary word: what the subsection is ABOUT (its heading before the
-        // " - " list) must be it - "Horticulture - MIDH and NHM ...", "Biogas and
-        // biomass - ...", "Tiger Reserves and Landscapes" - not a word in the list
-        // and it must share another of the story's topics, so "Quota" alone
-        // never pulls in the IMF quota or "Left" the Left parties
-        // - unless the headline itself names it and the heading opens with it
-        // ("Biogas and biomass", "Horticulture")
-        const opens = (sec.head || sec.title).split('|').some((part) => tokens(part)[0] === t.words[0]);
-        // Only headline words: the body's ordinary words ("family", "senior",
-        // "sessions") are too loose to be the story's topic.
-        ok = t.inHead && inHeading && (ctx >= 1 || opens);
-      } else if (t.words.length > 1) {
-        // a several-word name: the exact name in the heading or bullets
-        // (only in the bullets: the strong rule above, so a leader's name does
-        // not pull in whatever bullet mentions them)
-        ok = ok || inHeading;
-      } else {
-        // a one-word name or an acronym (a place, a person, a party, a body):
-        // a heading about it that also covers another of the story's topics
-        ok = ok || (inHeading && ctx >= 1);
-      }
-      if (!ok) continue;
-
-      const score = (own.title ? 6 : 0) + Math.min(own.n, 8) + 1.5 * ctx + (sec.src === 'prep' ? 0.5 : 0);
-      if (!best || score > best.score) best = { sec, score, own };
-    }
-    if (!best || best.score < 2.5) {
-      if (!best && isName) gaps.push(t.label);
-      continue;
-    }
-    usedSecs.add(best.sec.id);
-    chosenTitles.push(new Set(tokens(best.sec.title)));
-    // bullets naming this topic or the story's other topics first, in notes order
-    const re = new RegExp(`(?<![\\p{L}\\p{N}])${t.words.map(escapeRe).join('[\\s-]+')}`, 'iu');
-    const ranked = best.sec.entries
-      .map((id, order) => {
-        const e = index.entries[id];
-        const ws = new Set(tokens(e.text));
-        let s = re.test(e.text) ? 3 : 0;
-        for (const w of allWords) if (ws.has(w)) s += 1;
-        return { e, s, order };
-      })
-      .filter((x) => x.s > 0 || best.own.title);
-    const chosen = ranked
+    if (c.score < Math.max(minScore, 0.4 * top)) break;
+    // one subsection per notes row (a row is one topic: "Reservation - ...")
+    const row = c.sec.where.replace(/ › [^›]*$/, '');
+    const label = secLabel(c.sec);
+    if (rows.has(row) || labels.has(label.toLowerCase())) continue;
+    // the bullets that carry the story's words, in notes order
+    const ranked = c.sec.entries.map((id, order) => {
+      const e = index.entries[id];
+      const ws = new Set(tokens(e.text));
+      let s = 0;
+      for (const [w, wt] of want) if (ws.has(w)) s += wt * idf(w);
+      return { e, s, order };
+    });
+    const pick = c.sec.entries.length <= MAX_BULLETS ? ranked : ranked.filter((x) => x.s > 0);
+    const chosen = pick
       .sort((a, b) => b.s - a.s || a.order - b.order)
       .slice(0, MAX_BULLETS)
       .sort((a, b) => a.order - b.order)
       .map((x) => clip(x.e.text));
     if (!chosen.length) continue;
-    const sec = best.sec;
-    // an ordinary word is labelled by the heading it was found under
-    // ("prone" -> "Drought-prone areas")
-    let label = t.label;
-    if (t.kind === 'word') {
-      const part = (sec.head || '').split('|').map((x) => x.trim()).find((x) => re.test(x));
-      if (part && part.split(/\s+/).length <= 6) label = part;
-    }
+    rows.add(row);
+    labels.add(label.toLowerCase());
     sections.push({
-      topic: titleCase(label),
-      src: sec.src === 'prep' ? 'Prep notes' : 'Rocket Sheets',
-      where: sec.where,
+      topic: label,
+      src: c.sec.src === 'prep' ? 'Prep notes' : 'Rocket Sheets',
+      where: c.sec.where,
       bullets: chosen,
     });
   }
-  return { sections, gaps: gaps.slice(0, 4) };
+
+  // names in the story that no note mentions at all
+  const gaps = [];
+  for (const t of topicsOf(index, item, terms)) {
+    if (t.kind === 'word' || gaps.length >= 4) continue;
+    if (t.label.split(/\s+/).length > 4) continue;
+    // a proper name: capitalised words ("Indian School of Agriculture"), or an acronym
+    const isName =
+      /^[A-Z0-9-]{2,}$/.test(t.label) ||
+      (/^\p{Lu}[\p{L}'’.-]*(?:\s+(?:of|and|the|for|\p{Lu}[\p{L}'’.-]+))*\s+\p{Lu}[\p{L}'’.-]+$/u.test(t.label) && !/\s\p{Lu}$/u.test(t.label));
+    if (!isName) continue;
+    const ids = t.words.length > 1 ? findPhrase(index, { text: t.label, kind: 'name' }) : index.postings.get(t.words[0]) || [];
+    const reName = new RegExp(`(?<![\\p{L}\\p{N}])${t.words.map(escapeRe).join('[\\s-]+')}`, 'iu');
+    if (!ids.length && !index.secs.some((sec) => reName.test(sec.head || ''))) gaps.push(t.label);
+  }
+  return { sections, gaps };
 }
 
 // Bumped when briefFor changes, so stories on file are re-linked.
-const BRIEF_VERSION = 1;
+const BRIEF_VERSION = 2;
 
 /** briefFor as stored on a story: { v, sections, gaps }. */
 function briefOf(index, item) {
