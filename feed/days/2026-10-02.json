@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-02",
- "updated": "2026-10-02T19:31:42.259Z",
+ "updated": "2026-10-03T05:50:52.446Z",
  "sources": [
   {
    "id": "pib",
@@ -24,20 +24,20 @@
   {
    "id": "air-national",
    "name": "AIR News — National",
-   "found": 0,
-   "error": "fetch failed"
+   "found": 10,
+   "error": null
   },
   {
    "id": "air-international",
    "name": "AIR News — International",
-   "found": 0,
-   "error": "fetch failed"
+   "found": 10,
+   "error": null
   },
   {
    "id": "air-business",
    "name": "AIR News — Business",
-   "found": 0,
-   "error": "fetch failed"
+   "found": 10,
+   "error": null
   },
   {
    "id": "hindu-national",
@@ -60,7 +60,7 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 20,
+   "found": 19,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 2,
+   "found": 5,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 123,
+   "found": 165,
    "error": null
   },
   {
@@ -216,8 +216,8 @@
   {
    "id": "affairscloud",
    "name": "AffairsCloud",
-   "found": 0,
-   "error": "timed out"
+   "found": 14,
+   "error": null
   }
  ],
  "items": [
@@ -777,6 +777,69 @@
    }
   },
   {
+   "id": "013f07294fb1",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:23",
+   "title": "30 mandals declared drought-hit",
+   "summary": "The indicators included rainfall deviation, dry spell, impact indicators, sown area index, remote sensing index, moisture adequacy index and hydrology index.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The indicators included rainfall deviation, dry spell, impact indicators, sown area index, remote sensing index, moisture adequacy index and hydrology index."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/30-mandals-declared-drought-hit-1128155",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Index",
+    "Rainfall"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "30bc6ccd9169",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -818,6 +881,63 @@
    "angles": [
     "Agriculture",
     "Industries"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d411941915cb",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "04:27",
+   "title": "Prakasam to benefit from Seema horticulture programme",
+   "summary": "Union finance minister Nirmala Sitharaman, chief minister N Chandrababu Naidu, deputy chief minister K Pawan Kalyan and other ministers laid the foundation stone for the Indian School of Agriculture at Madanapalle on Friday.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/ongole/prakasam-to-benefit-from-seema-horticulture-programme-1128268",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture",
+    "Finance Minister"
    ],
    "score": 69,
    "band": "high",
@@ -958,6 +1078,69 @@
     "ap": 0,
     "importance": 9,
     "reuse": 15
+   }
+  },
+  {
+   "id": "a337f6bd20ce",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "04:06",
+   "title": "AP to move SC against HC verdict on 34% BC quota",
+   "summary": "The High Court also found that the data relied upon by the state, including the Unified Family Survey, did not satisfy the requirements for determining BC political reservations under the Supreme Court's Vikas Kishanrao Gawali framework",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/ap-to-move-sc-against-hc-verdict-on-34-bc-quota-1128248",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review",
+    "High Courts and judicial infrastructure",
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "Supreme court",
+    "High Court",
+    "Family",
+    "SC"
+   ],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 20,
+    "angles": 20,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
    }
   },
   {
@@ -1576,6 +1759,105 @@
    }
   },
   {
+   "id": "b61727e76b74",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "03:26",
+   "title": "Mahatma Gandhi remembered",
+   "summary": "YSR Congress Party has observed the event at its party office in the city.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/nellore/mahatma-gandhi-remembered-1128209",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a22b0ad6389c",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "05:09",
+   "title": "పాన్‌ ఐఐటీ అమరావతి సమిట్‌ నేడు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126178938",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "lang": "te"
+  },
+  {
    "id": "cbe1d33f3367",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -1819,6 +2101,57 @@
    "topics": [],
    "angles": [
     "Finance Minister"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "511267b5b4e1",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "03:03",
+   "title": "Rayalaseema set for major horticulture push, says Pawan",
+   "summary": "Says the govt is focusing on irrigation, roads and infrastructure to help farmers move their produce quickly to markets",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/rayalaseema-set-for-major-horticulture-push-says-pawan-1128186",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Irrigation"
    ],
    "score": 54,
    "band": "medium",
@@ -2216,6 +2549,58 @@
    }
   },
   {
+   "id": "0a7bae52e989",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "18:15",
+   "title": "UAE marks Gandhi Jayanti with tributes to Mahatma Gandhi",
+   "summary": "The Indian community in the UAE marked Gandhi Jayanti with tributes to Mahatma Gandhi, remembering his enduring message of peace, harmony and non-violence. At the Indian Embassy in Abu Dhabi, Ambassador Dr Deepak Mittal and embassy officials paid floral tribute to Mahatma Gandhi, reaffirming his timeless message of peace and non-violence.",
+   "facts": [],
+   "source": "AIR News — International",
+   "sourceId": "air-international",
+   "official": true,
+   "ministry": "International",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/uae-marks-gandhi-jayanti-with-tributes-to-mahatma-gandhi/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Ambassador",
+    "Community"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "0f0cbb0c1b42",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -2340,6 +2725,175 @@
     "angles": 5,
     "ap": 12,
     "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "729790826f92",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "10:25",
+   "title": "India & Canada aim to increase bilateral trade to nearly 70 billion dollars in 5 yrs: Canadian Trade Minister Maninder Sidhu",
+   "summary": "Canadian International Trade Minister Maninder Sidhu has said Canada wants to support India’s economic growth through deeper cooperation in energy, critical minerals and aerospace. Speaking on the sidelines of the G20 Trade Ministers’ Meeting in Milwaukee, Sidhu said India’s growing energy requirements and efforts to diversify supply chains offer significant opportunities for both countries. […]",
+   "facts": [],
+   "source": "AIR News — International",
+   "sourceId": "air-international",
+   "official": true,
+   "ministry": "International",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/indias-growing-energy-requirements-efforts-to-diversify-supply-chains-offer-significant-opportunities-for-both-countries-canadian-trade-minister-maninder-sidhu/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Economic growth"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "7d6762217aa9",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "03:50",
+   "title": "London sent 3 million tonnes of railway soil to rebuild Essex wetlands; bird numbers hit 39,000",
+   "summary": "More than three million tonnes of soil excavated for London’s Elizabeth line were transported to Wallasea Island in Essex to help create coastal wetlands. Ten years after seawalls were breached, the restored RSPB reserve has recorded a record 39,000 wintering birds, including thousands of Knot, Avocets, Grey Plovers and Bar-tailed Godwits.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Ten years after seawalls were breached, the restored RSPB reserve has recorded a record 39,000 wintering birds, including thousands of Knot, Avocets, Grey Plovers and Bar-tailed Godwits."
+    }
+   ],
+   "source": "Times of India — Science",
+   "sourceId": "toi-science",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/science/nature/london-sent-more-than-3-million-tonnes-of-excavated-railway-soil-to-an-essex-island-to-help-rebuild-coastal-wetlands-a-decade-after-seawalls-were-breached-the-reserve-reported-a-record-39000-wintering-birds/articleshow/134617485.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "Wetlands"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "73b73ef51a4d",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:30",
+   "title": "Panic grips Polavaram villages as tiger prowls hillock",
+   "summary": "Fishermen are particularly worried as they have to venture into the Godavari for fishing.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/panic-grips-polavaram-villages-as-tiger-prowls-hillock-1128161",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [
+    "Polavaram Irrigation Project"
+   ],
+   "angles": [],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
     "reuse": 5
    }
   },
@@ -2469,6 +3023,67 @@
     "ap": 0,
     "importance": 0,
     "reuse": 15
+   }
+  },
+  {
+   "id": "d5cb288a7a20",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "04:09",
+   "title": "Anant Ambani announces Rs 1L-cr Reliance bet on AP",
+   "summary": "Speaking at the foundation stone laying ceremony for the Rayalaseema Horticulture Hub and Indian School of Agriculture (ISA) in Madanapalle, Ambani said the investment would support the State’s transition towards cleaner energy while creating new opportunities for farmers.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Speaking at the foundation stone laying ceremony for the Rayalaseema Horticulture Hub and Indian School of Agriculture (ISA) in Madanapalle, Ambani said the investment would support the State’s transition towards cleaner energy while creating new opportunities for farmers."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/anant-ambani-announces-rs-1l-cr-reliance-bet-on-ap-1128249",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
    }
   },
   {
@@ -2696,6 +3311,58 @@
    }
   },
   {
+   "id": "21c8bc92d48c",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "04:21",
+   "title": "Survey conducted ahead of local polls",
+   "summary": "According to the survey findings presented by Kondeti, 59% of respondents expressed dissatisfaction over drinking water supply, while 53% cited problems with irrigation water and another 53% pointed to poor road conditions.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/survey-conducted-ahead-of-local-polls-1128261",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Findings",
+    "Irrigation"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "f99e24f987e0",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -2764,6 +3431,54 @@
    }
   },
   {
+   "id": "a5024d17e282",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:58",
+   "title": "PanIIT AP Summit 2026 to spotlight DeepTech, AI, innovation today",
+   "summary": "The event will feature discussions on AI, DeepTech and Quantum Computing, besides deliberations on innovation and investment.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/paniit-ap-summit-2026-to-spotlight-deeptech-ai-innovation-today-1128182",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Summit"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   }
+  },
+  {
    "id": "20c1f668fecb",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -2817,6 +3532,52 @@
    "digest": true
   },
   {
+   "id": "c8e3125430b1",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "05:08",
+   "title": "శ్రీవారిని దర్శించుకున్న హైకోర్టు న్యాయమూర్తులు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126178882",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te"
+  },
+  {
    "id": "11f84294f78e",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -2832,6 +3593,99 @@
     "BusinessLine — Economy"
    ],
    "url": "https://www.thehindu.com/news/cities/Visakhapatnam/bhogapuramairport-issues-alert-against-fake-job-offers/article71533593.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [
+    "AP ports and airports"
+   ],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "1e5160a80c2a",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:32",
+   "title": "International delegation hails AP’s natural farming model",
+   "summary": "The delegation visited Hafpeta village in Tenali mandal and observed natural farming and chemical farming paddy fields",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/guntur/international-delegation-hails-aps-natural-farming-model-1128163",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [
+    "AP agriculture and natural farming"
+   ],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "b22e72992c70",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:35",
+   "title": "Job-seekers alerted to be vigilant of fake recruitment offers for Bhogapuram Airport",
+   "summary": "Job seekers are urged to remain vigilant of individuals or agencies claiming to guarantee employment at Bhogapuram Airport The airport also cautions that fraudsters may use the GMR name, logo, branding and forged appointment letters to dupe people",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/job-seekers-alerted-to-be-vigilant-of-fake-recruitment-offers-for-bhogapuram-airport-1128164",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -3322,6 +4176,70 @@
    }
   },
   {
+   "id": "f3c26399e476",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "00:02",
+   "title": "Oregon couple earns $100K a year from 13 wind turbines on wheat farm",
+   "summary": "In Sherman County, Oregon, a wheat-farming family thrives, thanks to the wind turbines dotting their property. These turbines not only allow for uninterrupted traditional farming practices but also generate crucial income through payments from renewable energy projects.",
+   "facts": [],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/world/us/an-oregon-wheat-farming-couple-had-13-wind-turbines-placed-on-their-land-while-crops-continued-around-them-they-said-the-operating-turbines-were-bringing-in-about-100000-a-year/articleshow/134645276.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture",
+    "Services",
+    "Family"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "5920ca640d51",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -3506,6 +4424,62 @@
    }
   },
   {
+   "id": "804b38109a44",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:36",
+   "title": "68 individuals, organisations bag district-level awards",
+   "summary": "A district-level award ceremony of the Swachh Andhra Awards was organised Member of Parliament M Sribharat and district collector M Abhishikth attended",
+   "facts": [
+    {
+     "angle": "Award",
+     "text": "A district-level award ceremony of the Swachh Andhra Awards was organised Member of Parliament M Sribharat and district collector M Abhishikth attended"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/68-individuals-organisations-bag-district-level-awards-1128166",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Award"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "01674129a54b",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -3585,6 +4559,62 @@
     "angles": 10,
     "ap": 0,
     "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "a17fd10f2037",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "04:26",
+   "title": "Opposition parties take out rally against CEC over SIR",
+   "summary": "The protest was part of nationwide demonstrations against the SIR exercise Demand immediate resignation of CEC Gyanesh Kumar and call for reforms in the functioning of the Election Commission",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The protest was part of nationwide demonstrations against the SIR exercise Demand immediate resignation of CEC Gyanesh Kumar and call for reforms in the functioning of the Election Commission"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/opposition-parties-take-out-rally-against-cec-over-sir-1128266",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Election Commission"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
     "reuse": 5
    }
   },
@@ -3770,6 +4800,55 @@
    }
   },
   {
+   "id": "49dc2f4b99e2",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-02",
+   "time": "09:17",
+   "title": "Hindu marriage rites not sole proof of conversion: Delhi high court",
+   "summary": "The case involved a Swedish woman who sought registration of her marriage under the Hindu Marriage Act after her Swedish husband allegedly embraced Hinduism.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/rites-alone-don-t-prove-status-for-registration-under-hindu-marriage-act-hc-101790912848945.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court",
+    "Hindu marriage"
+   ],
+   "score": 41,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 10,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 5
+   }
+  },
+  {
    "id": "d14614baa409",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -3915,6 +4994,197 @@
    }
   },
   {
+   "id": "927bea4f5054",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "03:01",
+   "title": "AP tops country in SHG bank linkage with key reforms",
+   "summary": "SMSE minister Srinivas says state has emerged as the national leader in the SHG bank linkage programme, recording Rs 15,229.40 cr in loan disbursements and an outstanding credit portfolio of Rs 82,639.56 cr",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "SMSE minister Srinivas says state has emerged as the national leader in the SHG bank linkage programme, recording Rs 15,229.40 cr in loan disbursements and an outstanding credit portfolio of Rs 82,639.56 cr"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/ap-tops-country-in-shg-bank-linkage-with-key-reforms-1128183",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "56c33a732174",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:41",
+   "title": "MP meet minister over Eluru development",
+   "summary": "Key requests made by MP Putta Mahesh Kumar to Minister Lokesh included the sanction of Rs 2 crore for the construction of a BC (Backward Classes) hostel in Eluru and Rs 3 crore for the construction of a district library in Eluru town.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Key requests made by MP Putta Mahesh Kumar to Minister Lokesh included the sanction of Rs 2 crore for the construction of a BC (Backward Classes) hostel in Eluru and Rs 3 crore for the construction of a district library in Eluru town."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/mp-meet-minister-over-eluru-development-1128169",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "Construction"
+   ],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 5,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 2
+   }
+  },
+  {
+   "id": "4e5c020a0b3f",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "02:44",
+   "title": "NCC naval wing observes Gandhi Jayanti",
+   "summary": "As part of the ‘Ek Ped Maa Ke Naam’ campaign, NCC cadets planted saplings and participated in cleanliness drives and ‘waste-to-art’ activities.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/ncc-naval-wing-observes-gandhi-jayanti-1128173",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "46bf6e9230aa",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "01:22",
+   "title": "Swadeshi products can strengthen self-reliance, says BJP",
+   "summary": "Khadi Santa marks Gadhi Jayanti celebrations in Vijayawada",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/swadeshi-products-can-strengthen-self-reliance-says-bjp/article71536795.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A5",
+     "exam": "G1",
+     "label": "Indian War of Independence 1857; Religious and Social Reform Movements of the 19th Century; India's Freedom Movement; Revolutionaries in India and Abroad"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "e084711e0640",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -4004,6 +5274,86 @@
    }
   },
   {
+   "id": "a53e6a355cda",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "05:08",
+   "title": "ఏపీని అగ్రస్థానంలో నిలపడమే మా లక్ష్యం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126178933",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Rank"
+   ],
+   "score": 33,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 8,
+    "reuse": 0
+   },
+   "lang": "te"
+  },
+  {
+   "id": "75d1a434cb09",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "05:15",
+   "title": "డ్వాక్రా సంఘాలకు రుణ పంపిణీలో ఏపీ అగ్రస్థానం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126178958",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Rank"
+   ],
+   "score": 33,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 8,
+    "reuse": 0
+   },
+   "lang": "te"
+  },
+  {
    "id": "a84a1e248a86",
    "date": "2026-10-02",
    "pubDate": "2026-10-02",
@@ -4038,6 +5388,46 @@
     "angles": 0,
     "ap": 20,
     "importance": 12,
+    "reuse": 0
+   },
+   "lang": "te"
+  },
+  {
+   "id": "34f80c338bec",
+   "date": "2026-10-02",
+   "pubDate": "2026-10-03",
+   "time": "05:12",
+   "title": "జిల్లా కాంగ్రెస్‌ ఇన్‌ఛార్జుల నియామకం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126178943",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Appointed"
+   ],
+   "score": 31,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 6,
     "reuse": 0
    },
    "lang": "te"
@@ -4909,198 +6299,6 @@
    "why": {
     "syllabus": 0,
     "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "80613616600e",
-   "date": "2026-10-02",
-   "pubDate": "2026-10-02",
-   "title": "Scientists Identify Two New Australian Stick Insect Species",
-   "summary": "Scientists identified two new Australian stick insect species in 2026 after re-examining members of the genus Anchiale. The study also reinstated one previously unrecogni",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/scientists-identify-two-new-australian-stick-insect-species/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Members"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "dc90cd6f45f5",
-   "date": "2026-10-02",
-   "pubDate": "2026-10-02",
-   "title": "Types of Building Safety Categories and Inspection Models",
-   "summary": "Building safety categories and inspection models help authorities regulate construction, reduce structural risks, and protect life and property.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/types-of-building-safety-categories-and-inspection-models/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Construction"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "8e786661f669",
-   "date": "2026-10-02",
-   "pubDate": "2026-10-02",
-   "title": "Important Olympic and Non-Olympic Archery Formats",
-   "summary": "Archery is a precision sport in which athletes shoot arrows at a target using different types of bows. For Prelims revision, the key distinction is between Olympic recurv",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-olympic-and-non-olympic-archery-formats/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "774b5c653060",
-   "date": "2026-10-02",
-   "pubDate": "2026-10-02",
-   "title": "India Wins Maiden Asian Games Gold in Women’s Recurve Archery",
-   "summary": "India won its maiden Asian Games gold medal in the women’s recurve archery team event on 2 October 2026 at the Asian Games 2026 in Aichi-Nagoya, Japan.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/india-wins-maiden-asian-games-gold-in-womens-recurve-archery/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "8bd8548e4442",
-   "date": "2026-10-02",
-   "pubDate": "2026-10-02",
-   "title": "Mahindra and Embraer Select Nagpur for C-390 Assembly Line",
-   "summary": "Mahindra Group and Brazilian aerospace company Embraer have identified Nagpur in Maharashtra as the proposed location for a Final Assembly Line for the C-390 Millennium m",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/mahindra-and-embraer-select-nagpur-for-c-390-assembly-line/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
     "ap": 0,
     "importance": 0,
     "reuse": 0
