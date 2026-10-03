@@ -56,6 +56,28 @@ workflow on every run (`pipeline/lib/statics.js`). Every story gets at least one
 | **Same syllabus unit** | otherwise, the bullet of the story's own unit (tracker G1-C4 → Book 3, unit C-4) sharing the most rare words with it |
 | **Same book** | failing that, the closest bullet in the story's book |
 
+### The article: current matter, then static notes by topic
+
+Each story also carries `brief`, which sets out the story as a short article. First comes the **current matter**:
+headline, summary and key facts. Then come the **static notes**, as numbered sections, one for each topic of the
+story that your notes cover. Each section has its heading, where it is in the notes, and up to 5 bullets:
+
+```
+Naidu, Sitharaman launch Rayalaseema horticulture hub; Anant Ambani pledges ₹1 lakh crore for biogas
+  1. Biogas And Biomass                       Book 5 › 21 › Other renewables › Biogas and biomass
+  2. Horticulture                             Book 3 › C-3 › Allied sectors - horticulture …
+  3. Rayalaseema Plateau And Coastal Contrast Rocket Sheets · AP Geography #27
+  Not in your notes: School of Agriculture
+```
+
+The topics are the story's names (BrahMos, SEBI, Polavaram Project) and the ordinary words in its headline that
+head a subsection of the notes (*horticulture*, *biogas*). A topic gets a section only when the subsection is
+about it: the topic is in the subsection's heading, or two of its bullets name the topic alongside other topics
+of the story. A name with no such subsection goes under "Not in your notes", rather than being pinned to a
+loosely related bullet. Stories with no section fall back to the closest notes above. Everything is rule-based,
+so a section is occasionally off-topic. `BRIEF_VERSION` in `statics.js` is raised when the rules change, so every
+story on file is re-linked on the next run.
+
 Telugu (Eenadu) headlines are matched through an English glossary (`ap-vocab.json`, `telugu.glossary`).
 
 ## Read aloud
@@ -63,7 +85,7 @@ Telugu (Eenadu) headlines are matched through an English glossary (`ap-vocab.jso
 The app reads with the **APPSC Prep app's read-aloud** (`platform/ReadAloud*.kt` and `data/SpeechText.kt`, ported
 from Group-app, with its `abbr.json`): Indian English voice, keeps reading with the screen locked (notification with
 Pause/Stop), citations left out and short forms said in full. Each story is read as headline, summary, key facts and
-its first Prep note; it goes on to the next story in the list. Player bar: previous / next story, play-pause,
+then its static notes, section by section (or its first Prep note when it has no section); it goes on to the next story in the list. Player bar: previous / next story, play-pause,
 speed 0.75×–2×, stop. "Listen from here" on any card. Telugu headlines are skipped.
 
 ## Subjects

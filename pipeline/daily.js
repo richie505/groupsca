@@ -209,6 +209,10 @@ function backfillNotes(out, notes) {
     const day = JSON.parse(fs.readFileSync(file, 'utf8'));
     let changed = false;
     for (const it of day.items) {
+      if (!it.brief || it.brief.v !== St.BRIEF_VERSION) {
+        it.brief = St.briefOf(notes, it);
+        changed = true;
+      }
       if (it.notes && it.notes.length) continue;
       const linked = St.staticFor(notes, it);
       if (linked.length) {
@@ -417,6 +421,8 @@ async function run(args) {
   for (const it of kept) {
     const linked = St.staticFor(notes, it);
     if (linked.length) it.notes = linked;
+    // the article layout: current matter, then the static notes by topic
+    if (notes && notes.size) it.brief = St.briefOf(notes, it);
   }
   const notesLoaded = !!(notes && notes.size);
   const vetoed = scored.filter((x) => x.result.vetoed).length;

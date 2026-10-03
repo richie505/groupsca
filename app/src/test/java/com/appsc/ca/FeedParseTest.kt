@@ -73,12 +73,24 @@ class FeedParseTest {
     @Test
     fun everyStoryHasAStaticNoteAndReadsAloudWithIt() {
         assertTrue(day.items.all { i -> i.notes.any { it.src == "Prep notes" } })
-        val english = day.items.first { com.appsc.ca.ui.Listening.canRead(it) && it.notes.isNotEmpty() }
+        val english = day.items.first { com.appsc.ca.ui.Listening.canRead(it) && it.notes.isNotEmpty() && it.brief.sections.isEmpty() }
         val page = com.appsc.ca.ui.Listening.pageOf(english)
         assertEquals(english.id, page.id)
         assertTrue(page.parts.first().isNotBlank())
         assertTrue(page.parts.last().startsWith("From your notes: "))
         assertTrue(day.items.filter { it.lang == "te" }.none { com.appsc.ca.ui.Listening.canRead(it) })
+    }
+
+    @Test
+    fun aBriefIsReadAfterTheCurrentMatterTopicByTopic() {
+        val item = day.items.first { it.brief.sections.isNotEmpty() }
+        assertEquals("Biogas And Biomass", item.brief.sections[0].topic)
+        assertEquals(listOf("School of Agriculture"), item.brief.gaps)
+        val parts = com.appsc.ca.ui.Listening.pageOf(item).parts
+        val at = parts.indexOf("Static notes.")
+        assertTrue(at > 0)
+        assertTrue(parts[at + 1].startsWith("1. "))
+        assertTrue(parts.none { it.startsWith("From your notes: ") })
     }
 
     @Test

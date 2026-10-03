@@ -80,10 +80,32 @@ data class Item(
     val digest: Boolean = false,
     /** Static notes linked to the story: the Prep app's books and the Rocket Sheets' key facts. */
     val notes: List<StaticNote> = emptyList(),
+    /** The article's static part: the notes by topic, after the current matter. */
+    val brief: Brief = Brief(),
 ) {
     /** The book to file it under, for feeds written before `subject` existed too. */
     val book: String get() = subject.ifBlank { subjects.firstOrNull { it in BOOKS } ?: BOOKS.last() }
 }
+
+/** Static notes for a story, one numbered section per topic of the story the notes cover. */
+@Serializable
+data class Brief(
+    val v: Int = 0,
+    val sections: List<StaticSection> = emptyList(),
+    /** Names in the story the notes do not cover. */
+    val gaps: List<String> = emptyList(),
+)
+
+@Serializable
+data class StaticSection(
+    /** The topic, as the notes head it: "Biogas And Biomass", "Horticulture" */
+    val topic: String = "",
+    /** "Prep notes" or "Rocket Sheets" */
+    val src: String = "",
+    val where: String = "",
+    /** The subsection's bullets about the story, in notes order. */
+    val bullets: List<String> = emptyList(),
+)
 
 @Serializable
 data class StaticNote(

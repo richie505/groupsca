@@ -256,3 +256,29 @@ test('stories published before notes existed are given notes on the next run', a
   const after = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
   assert.ok(after.items.every((i) => (i.notes || []).length > 0));
 });
+
+test('brief: current matter then static notes by topic, from the heading the topic is about', () => {
+  const b = St.briefOf(NOTES, { title: 'Monetary Policy Committee keeps repo rate unchanged', summary: '' });
+  assert.equal(b.v, St.BRIEF_VERSION);
+  assert.equal(b.sections[0].topic, 'Monetary Policy Committee');
+  assert.ok(b.sections[0].bullets.some((x) => /six members/.test(x)));
+  // named only in a heading
+  const p = St.briefOf(NOTES, { title: 'Centre releases funds for Polavaram Project', summary: '' });
+  assert.equal(p.sections[0].topic, 'Polavaram Project');
+  // a name the notes do not have is listed, not forced onto some note
+  const g = St.briefOf(NOTES, { title: 'Centre approves the Kaleshwaram Lift Scheme', summary: '' });
+  assert.equal(g.sections.length, 0);
+});
+
+test('every story on file gets a brief, re-made when the brief rules change', async () => {
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'ca-'));
+  await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: false, notes: NOTES });
+  const file = path.join(out, 'days', '2026-10-02.json');
+  const day = JSON.parse(fs.readFileSync(file, 'utf8'));
+  assert.ok(day.items.every((i) => i.brief && i.brief.v === St.BRIEF_VERSION));
+  day.items[0].brief = { v: 0, sections: [], gaps: [] };
+  fs.writeFileSync(file, JSON.stringify(day));
+  await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: false, notes: NOTES });
+  const again = JSON.parse(fs.readFileSync(file, 'utf8'));
+  assert.equal(again.items[0].brief.v, St.BRIEF_VERSION);
+});

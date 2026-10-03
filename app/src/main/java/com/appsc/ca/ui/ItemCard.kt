@@ -45,6 +45,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.appsc.ca.data.Item
 import com.appsc.ca.data.StaticNote
+import com.appsc.ca.data.StaticSection
 import com.appsc.ca.data.bookNumber
 import com.appsc.ca.data.clockTime
 import com.appsc.ca.data.shortDate
@@ -138,8 +139,17 @@ fun ItemCard(
             )
         }
 
-        // the best linked note, in one line, even when the card is closed
-        item.notes.firstOrNull()?.let { n ->
+        // what the static notes cover, in one line, even when the card is closed
+        if (item.brief.sections.isNotEmpty()) {
+            Text(
+                "📘 Static notes: " + item.brief.sections.joinToString(" · ") { it.topic },
+                style = MaterialTheme.typography.labelMedium,
+                color = C.Accent,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.padding(top = 6.dp),
+            )
+        } else item.notes.firstOrNull()?.let { n ->
             Text(
                 "📘 " + noteLabel(n) + " · " + n.where.substringAfter(" · ").substringBefore(" › ").ifBlank { n.src },
                 style = MaterialTheme.typography.labelMedium,
@@ -151,8 +161,28 @@ fun ItemCard(
         }
 
         if (open) {
-            if (item.notes.isNotEmpty()) {
-                SectionLabel("From your notes (static)")
+            if (item.facts.isNotEmpty()) {
+                SectionLabel("Current matter · key facts")
+                for (f in item.facts) {
+                    Column(Modifier.padding(bottom = 8.dp)) {
+                        Badge(f.angle, C.Fact, C.FactSoft)
+                        Text(f.text, style = MaterialTheme.typography.bodyMedium, color = C.Body, modifier = Modifier.padding(top = 3.dp))
+                    }
+                }
+            }
+            if (item.brief.sections.isNotEmpty()) {
+                SectionLabel("Static notes")
+                item.brief.sections.forEachIndexed { i, sec -> StaticSectionView(i + 1, sec) }
+                if (item.brief.gaps.isNotEmpty()) {
+                    Text(
+                        "Not in your notes: " + item.brief.gaps.joinToString(", "),
+                        style = MaterialTheme.typography.labelMedium,
+                        color = C.Faint,
+                        modifier = Modifier.padding(bottom = 6.dp),
+                    )
+                }
+            } else if (item.notes.isNotEmpty()) {
+                SectionLabel("Static notes (closest in your notes)")
                 for (n in item.notes) {
                     Column(
                         Modifier.fillMaxWidth().padding(bottom = 8.dp).clip(RoundedCornerShape(10.dp))
@@ -165,15 +195,6 @@ fun ItemCard(
                         }
                         Text(n.where.substringAfter(" · "), style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(top = 4.dp))
                         Text(n.text, style = MaterialTheme.typography.bodyMedium, color = C.Body, modifier = Modifier.padding(top = 4.dp))
-                    }
-                }
-            }
-            if (item.facts.isNotEmpty()) {
-                SectionLabel("Key facts")
-                for (f in item.facts) {
-                    Column(Modifier.padding(bottom = 8.dp)) {
-                        Badge(f.angle, C.Fact, C.FactSoft)
-                        Text(f.text, style = MaterialTheme.typography.bodyMedium, color = C.Body, modifier = Modifier.padding(top = 3.dp))
                     }
                 }
             }
@@ -223,6 +244,24 @@ fun ItemCard(
                     Spacer(Modifier.width(6.dp))
                     Text("Share")
                 }
+            }
+        }
+    }
+}
+
+/** "1. Biogas And Biomass", where it is in the notes, then its bullets. */
+@Composable
+fun StaticSectionView(n: Int, sec: StaticSection) {
+    Column(
+        Modifier.fillMaxWidth().padding(bottom = 8.dp).clip(RoundedCornerShape(10.dp))
+            .background(C.AccentSoft).padding(10.dp),
+    ) {
+        Text("$n. ${sec.topic}", style = MaterialTheme.typography.titleSmall, color = C.Ink, fontWeight = FontWeight.Bold)
+        Text(sec.where.substringAfter(" · ").ifBlank { sec.src }, style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(top = 2.dp))
+        for (b in sec.bullets) {
+            Row(Modifier.padding(top = 4.dp)) {
+                Text("•", style = MaterialTheme.typography.bodyMedium, color = C.Accent, modifier = Modifier.width(14.dp))
+                Text(b, style = MaterialTheme.typography.bodyMedium, color = C.Body)
             }
         }
     }
@@ -279,7 +318,13 @@ fun share(context: Context, item: Item) {
         append(item.title).append('\n')
         for (f in item.facts) append("• ").append(f.text).append('\n')
         if (item.units.isNotEmpty()) append("Syllabus: ").append(item.units.joinToString { it.code }).append('\n')
-        item.notes.firstOrNull { it.src == "Prep notes" }?.let { append("From the notes: ").append(it.text).append('\n') }
+        if (item.brief.sections.isNotEmpty()) {
+            append("\nStatic notes\n")
+            item.brief.sections.forEachIndexed { i, sec ->
+                append(i + 1).append(". ").append(sec.topic).append('\n')
+                for (b in sec.bullets) append("  • ").append(b).append('\n')
+            }
+        } else item.notes.firstOrNull { it.src == "Prep notes" }?.let { append("From the notes: ").append(it.text).append('\n') }
         append(item.url)
     }
     val send = Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT, text)

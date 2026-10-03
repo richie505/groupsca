@@ -82,7 +82,14 @@ object Listening {
             // the summary, unless the key facts already say it
             if (item.summary.isNotBlank() && facts.none { item.summary.startsWith(it.take(60)) }) add(say(item.summary))
             facts.forEach { add(say(it)) }
-            item.notes.firstOrNull { it.src == "Prep notes" }?.let { add("From your notes: " + say(it.text)) }
+            // then the static notes, topic by topic
+            if (item.brief.sections.isNotEmpty()) {
+                add("Static notes.")
+                item.brief.sections.forEachIndexed { i, sec ->
+                    add("${i + 1}. " + say(sec.topic) + ".")
+                    sec.bullets.forEach { add(say(it)) }
+                }
+            } else item.notes.firstOrNull { it.src == "Prep notes" }?.let { add("From your notes: " + say(it.text)) }
         }.filter { it.any(Char::isLetterOrDigit) }
         return SpeechPage(item.id, item.title, parts)
     }
