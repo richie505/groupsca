@@ -3,6 +3,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- "18 new today · 6 Andhra Pradesh" after the twice-daily download -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- read-aloud keeps going with the screen locked (platform/ReadAloudService.kt, as in the APPSC Prep app) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <queries>
         <intent>
@@ -31,5 +35,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".platform.ReadAloudService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
     </application>
 </manifest>

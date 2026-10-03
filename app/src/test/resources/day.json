@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-02",
- "updated": "2026-10-02T19:29:06.175Z",
+ "updated": "2026-10-03T12:03:24.414Z",
  "sources": [
   {
    "id": "pib",
@@ -304,7 +304,31 @@
     "ap": 20,
     "importance": 15,
     "reuse": 15
-   }
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Energy and power policy - installed capacity mix, distribution reform (UDAY), renewable targets, energy security › AP energy policies - objectives, targets, incentives",
+     "text": "AP schemes: PM Surya Ghar with Virtual Net Metering (SC/ST focus); PM-KUSUM for 2.93 lakh pumps; 50,000 acres barren land for solar via NEDCAP (APPCA Apr 2026).",
+     "match": [
+      "surya",
+      "ghar",
+      "solar"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #7 · MSP, FRP and Agricultural Cost Concepts",
+     "text": "The Cabinet Committee on Economic Affairs (CCEA) approves FRP.",
+     "match": [
+      "cabinet",
+      "economic",
+      "approves"
+     ]
+    }
+   ]
   },
   {
    "id": "155bc01c92d5",
@@ -368,7 +392,45 @@
     "ap": 20,
     "importance": 7,
     "reuse": 15
-   }
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Malnutrition and food security - indicators, POSHAN Abhiyaan, fortification, PM POSHAN › State-wise malnutrition - highest-burden states",
+     "text": "Better performers: Goa, Sikkim, Manipur, Himachal Pradesh and Tamil Nadu.",
+     "match": [
+      "and Tamil Nadu"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Wind energy - potential, installed capacity, offshore wind policy, hybrid wind-solar policy › Offshore wind - 2015 policy, zones, VGF",
+     "text": "Zones: Gujarat coast and Tamil Nadu coast / Gulf of Mannar (CDI; APPCA Jun 2026).",
+     "match": [
+      "and Tamil Nadu"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Geography › #14 · Indian Mountain Ranges and Hills",
+     "text": "The mountain range in Kerala and Tamil Nadu is called Cardamom.",
+     "match": [
+      "and Tamil Nadu"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Environment › #24 · Biosphere Reserves: States and Years",
+     "text": "Agasthyamalai Biosphere Reserve is located in Kerala and Tamil Nadu.",
+     "match": [
+      "and Tamil Nadu"
+     ]
+    }
+   ]
   },
   {
    "id": "517fee770903",
@@ -433,7 +495,31 @@
     "ap": 0,
     "importance": 4,
     "reuse": 15
-   }
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Monetary Policy Committee and the flexible inflation targeting framework › Authority for monetary policy and price stability - RBI vs Finance Ministry",
+     "text": "RBI frames and implements monetary policy (APPSC 2018, 2023), and the MPC fixes the repo rate.",
+     "match": [
+      "monetary",
+      "policy",
+      "rbi"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #40 · Monetary Policy Rates and Fiscal Deficit",
+     "text": "A bank parks money with the RBI under the Reverse Repo Rate mechanism.",
+     "match": [
+      "rbi",
+      "repo",
+      "rate"
+     ]
+    }
+   ]
   },
   {
    "id": "18791a5a32ff",
@@ -480,7 +566,27 @@
     "importance": 12,
     "reuse": 5
    },
-   "lang": "te"
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-6 › Linguistic reorganisation demand; Potti Sriramulu's fast and the formation of Andhra State 1953 › Madras Chief Ministers before Andhra State - stand on separation",
+     "text": "Partition Committee (Madras cabinet decision of 7 Dec 1949):",
+     "match": [
+      "Cabinet decision"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Cabinet system, Cabinet committees, collective and individual responsibility; Attorney General of India › Universal angles",
+     "text": "Criticism & debates: concentration of power in the PMO and cabinet committees dilutes collective Cabinet decision-making.",
+     "match": [
+      "Cabinet decision"
+     ]
+    }
+   ]
   },
   {
    "id": "ac2e59689b45",
@@ -540,7 +646,31 @@
     "importance": 2,
     "reuse": 15
    },
-   "digest": true
+   "digest": true,
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Financial instabilities - crises, systemic risk, shadow banking, macroprudential regulation › FSDC and stability bodies",
+     "text": "Financial Stability Report (FSR): published by RBI, half-yearly (June, December) . Dec 2025 FSR (foreword by Governor Sanjay Malhotra): external/geopolitical risks; macro stress tests show banks and NBFCs resilient (TH, 1 and 22 Jan 2026).",
+     "match": [
+      "financial",
+      "stability",
+      "report"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #63 · Global Economic and Social Reports",
+     "text": "The International Monetary Fund (IMF) publishes the Global Financial Stability Report.",
+     "match": [
+      "financial",
+      "stability",
+      "report"
+     ]
+    }
+   ]
   },
   {
    "id": "bd312625438f",
@@ -594,7 +724,18 @@
     "ap": 0,
     "importance": 12,
     "reuse": 5
-   }
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Persons in news - appointments, resignations and obituaries › Constitutional, statutory and executive appointments",
+     "text": "CJI: Holder (as of Sep 2026) Justice Surya Kant - 53rd CJI (sworn in Nov 2025)",
+     "match": [
+      "Justice Surya Kant"
+     ]
+    }
+   ]
   },
   {
    "id": "e8a73bd6e066",
@@ -644,7 +785,31 @@
     "ap": 20,
     "importance": 4,
     "reuse": 5
-   }
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-3 › Folk arts, festivals and fairs of Andhra Pradesh › Handicrafts and GI-tagged arts → place",
+     "text": "Lacquerware toys: Place Etikoppaka; Note GI-tagged; Anakapalli district",
+     "match": [
+      "lacquerware",
+      "toys",
+      "etikoppaka"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · AP History › #11 · Telugu Language, Scripts and Literary Milestones",
+     "text": "The World Telugu Conference was first held to encourage Telugu language, literature, and culture.",
+     "match": [
+      "telugu",
+      "language",
+      "literature"
+     ]
+    }
+   ]
   },
   {
    "id": "7b18b4b54719",
@@ -683,7 +848,18 @@
     "importance": 0,
     "reuse": 0
    },
-   "digest": true
+   "digest": true,
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-4 › Viceroys of India - Canning to Mountbatten: key measures, acts and events › Universal angles",
+     "text": "Current relevance: ASI (est. 1861 under Canning, founder Cunningham) and the AMASR Act 1958 (monuments over 100 years) recur in 2026 current affairs (APPCA, Jun 2026).",
+     "match": [
+      "Current Affairs"
+     ]
+    }
+   ]
   }
  ]
 }

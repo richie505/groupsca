@@ -71,6 +71,24 @@ class FeedParseTest {
     }
 
     @Test
+    fun everyStoryHasAStaticNoteAndReadsAloudWithIt() {
+        assertTrue(day.items.all { i -> i.notes.any { it.src == "Prep notes" } })
+        val english = day.items.first { com.appsc.ca.ui.Listening.canRead(it) && it.notes.isNotEmpty() }
+        val page = com.appsc.ca.ui.Listening.pageOf(english)
+        assertEquals(english.id, page.id)
+        assertTrue(page.parts.first().isNotBlank())
+        assertTrue(page.parts.last().startsWith("From your notes: "))
+        assertTrue(day.items.filter { it.lang == "te" }.none { com.appsc.ca.ui.Listening.canRead(it) })
+    }
+
+    @Test
+    fun speechSaysShortFormsInFull() {
+        val said = com.appsc.ca.data.SpeechText.speakable("RBI cut the repo rate to 5.5% (TH, 2 Oct 2026) [GK]")
+        assertTrue(said, !said.contains("[GK]") && !said.contains("TH,"))
+        assertTrue(said, said.contains("per cent"))
+    }
+
+    @Test
     fun unitsInTrackerOrder() {
         assertTrue(unitOrder("G1-C4") < unitOrder("G1-C10"))
         assertTrue(unitOrder("G2-S2") < unitOrder("G2-M1A-U1"))

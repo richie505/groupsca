@@ -30,6 +30,7 @@ const { SOURCES, isNoise } = require('./sources');
 const F = require('./lib/fetch');
 const S = require('./lib/score');
 const { keyFacts, summarise } = require('./lib/facts');
+const St = require('./lib/statics');
 
 // When the collection runs (IST), set from ops/publish-times.md: after the
 // morning papers' uploads (closes yesterday), after PIB's and the daytime
@@ -387,11 +388,20 @@ async function run(args) {
   // 4-5. score and keep
   const scored = items.map((article) => ({ article, result: S.score(article, vocab) }));
   const kept = select(scored).map(toItem);
+
+  // 6. static notes from the Prep app's books and the Rocket Sheets
+  const notes = args.notes !== undefined ? args.notes : St.loadNotes(St.defaultDirs());
+  for (const it of kept) {
+    const linked = St.staticFor(notes, it);
+    if (linked.length) it.notes = linked;
+  }
+  const notesLoaded = !!(notes && notes.size);
   const vetoed = scored.filter((x) => x.result.vetoed).length;
 
   const report = {
     date, fetched: fetched.length, inWindow, afterNoise, afterDedupe, fresh, pibBodies: bodies,
     vetoed, kept: kept.length, keptAp: kept.filter((i) => i.ap).length,
+    notesLoaded, withExactNote: kept.filter((i) => (i.notes || []).some((n) => n.tier === 'exact')).length,
     failedSources: status.filter((s) => s.error).map((s) => `${s.id}: ${s.error}`),
   };
 
@@ -422,6 +432,7 @@ function printReport({ report, kept }, dryRun) {
     `fetched ${report.fetched} · in window ${report.inWindow} · after noise ${report.afterNoise} · ` +
       `one per story ${report.afterDedupe} · new ${report.fresh} · PIB texts ${report.pibBodies}`,
     `vetoed ${report.vetoed} · **kept ${report.kept}** (Andhra Pradesh ${report.keptAp})`,
+    report.notesLoaded ? `static notes: exact match for ${report.withExactNote} of ${report.kept}, the rest linked by unit or book` : 'static notes: NOT LOADED (Group-app / groupsrocket notes not found)',
   ];
   if (report.failedSources.length) lines.push('', `Sources that failed: ${report.failedSources.join('; ')}`);
   lines.push('', '| score | bucket | title | units |', '|---|---|---|---|');

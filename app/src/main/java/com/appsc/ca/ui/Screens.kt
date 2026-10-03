@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -60,6 +61,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.appsc.ca.BuildConfig
 import com.appsc.ca.data.BOOKS
+import com.appsc.ca.platform.ReadAloud
 import com.appsc.ca.data.Exam
 import com.appsc.ca.data.bookNumber
 import com.appsc.ca.data.clockTime
@@ -92,15 +94,15 @@ private sealed interface Route {
 fun App(vm: AppViewModel) {
     var tab by rememberSaveable { mutableStateOf(Tab.TODAY) }
     val stack = remember { mutableStateListOf<Route>() }
-    val context = LocalContext.current
-    val speaker = remember { Speaker(context) }
-    DisposableEffect(Unit) { onDispose { speaker.shutdown() } }
 
     BackHandler(enabled = stack.isNotEmpty()) { stack.removeAt(stack.lastIndex) }
     val back: () -> Unit = { if (stack.isNotEmpty()) stack.removeAt(stack.lastIndex) }
 
     Scaffold(
         bottomBar = {
+            Column {
+            // read-aloud's controls, on every screen while a session runs
+            PlayerBar(rate = vm.speechRate, onRate = vm::chooseRate)
             if (stack.isEmpty()) {
                 NavigationBar {
                     for (t in Tab.entries) {
@@ -113,16 +115,17 @@ fun App(vm: AppViewModel) {
                     }
                 }
             }
+            }
         },
     ) { pad ->
         Box(Modifier.padding(pad).fillMaxSize()) {
             when (val r = stack.lastOrNull()) {
-                is Route.DayRoute -> DayFeed(vm, speaker, fixedDate = r.date, onBack = back)
+                is Route.DayRoute -> DayFeed(vm, fixedDate = r.date, onBack = back)
                 is Route.UnitRoute -> UnitScreen(vm, r.code, onBack = back)
                 Route.SettingsRoute -> SettingsScreen(vm, onBack = back)
                 is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back)
                 null -> when (tab) {
-                    Tab.TODAY -> DayFeed(vm, speaker, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
+                    Tab.TODAY -> DayFeed(vm, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
                     Tab.DAYS -> DaysScreen(vm) { stack.add(Route.DayRoute(it)) }
                     Tab.SYLLABUS -> SyllabusScreen(vm) { stack.add(Route.UnitRoute(it)) }
                     Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
@@ -180,8 +183,32 @@ private fun Empty(text: String) {
     Text(text, style = MaterialTheme.typography.bodyMedium, color = C.Muted, modifier = Modifier.padding(24.dp))
 }
 
-private fun spokenList(items: List<Item>): List<String> = items.flatMap { i ->
-    listOf(i.title + ".") + i.facts.map { it.text }.ifEmpty { listOfNotNull(i.summary.takeIf { it.isNotBlank() }) }
+/** A card in a list that read-aloud can start from and highlight. */
+@Composable
+private fun ListCard(vm: AppViewModel, list: List<Item>, index: Int, readFlag: Boolean? = null, savedFlag: Boolean? = null) {
+    val i = list[index]
+    val pb by ReadAloud.playback
+    ItemCard(
+        i,
+        read = readFlag ?: (i.id in vm.readIds),
+        saved = savedFlag ?: vm.isSaved(i.id),
+        onToggleSave = { vm.toggleSave(i) },
+        onRead = { vm.markRead(i.id) },
+        reading = pb.active && pb.pageId == i.id,
+        onListen = if (Listening.canRead(i)) ({ Listening.play(list, index, vm.speechRate) }) else null,
+    )
+}
+
+/** Keeps the story being read in view. [rowOf] gives a story's row in the LazyColumn. */
+@Composable
+private fun FollowReading(state: androidx.compose.foundation.lazy.LazyListState, rowOf: (String) -> Int) {
+    val pb by ReadAloud.playback
+    androidx.compose.runtime.LaunchedEffect(pb.pageId) {
+        if (pb.active && pb.pageId.isNotBlank()) {
+            val row = rowOf(pb.pageId)
+            if (row >= 0) state.animateScrollToItem(row)
+        }
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -192,7 +219,6 @@ private fun spokenList(items: List<Item>): List<String> = items.flatMap { i ->
 @Composable
 private fun DayFeed(
     vm: AppViewModel,
-    speaker: Speaker,
     fixedDate: String?,
     onBack: (() -> Unit)? = null,
     onSettings: (() -> Unit)? = null,
@@ -209,8 +235,14 @@ private fun DayFeed(
     val shown = Filter(lane, vm.exam, subject).apply(dayItems)
     val perBook = Filter(lane = lane, exam = vm.exam).apply(dayItems).groupingBy { it.book }.eachCount()
 
+    // rows before the stories, in the order they are added below
+    val headRows = 1 + (if (date != null) 1 else 0) + (if (vm.message != null) 1 else 0) +
+        (if (fixedDate == null && vm.days.size > 1) 1 else 0) + 2 + (if (day == null || shown.isEmpty()) 1 else 0)
+    val listState = androidx.compose.foundation.lazy.rememberLazyListState()
+    FollowReading(listState) { id -> shown.indexOfFirst { it.id == id }.let { if (it < 0) -1 else headRows + it } }
+
     PullToRefreshBox(isRefreshing = vm.refreshing, onRefresh = vm::refresh, modifier = Modifier.fillMaxSize()) {
-        LazyColumn(Modifier.fillMaxSize()) {
+        LazyColumn(Modifier.fillMaxSize(), state = listState) {
             item {
                 Header(
                     title = when {
@@ -223,10 +255,11 @@ private fun DayFeed(
                     },
                     onBack = onBack,
                 ) {
+                    val pb by ReadAloud.playback
                     IconButton(onClick = {
-                        if (speaker.speaking) speaker.stop() else speaker.speak(spokenList(shown))
+                        if (pb.active) ReadAloud.stop() else Listening.play(shown, 0, vm.speechRate)
                     }) {
-                        Icon(if (speaker.speaking) Icons.Filled.Stop else Icons.AutoMirrored.Filled.VolumeUp, if (speaker.speaking) "Stop" else "Listen")
+                        Icon(if (pb.active) Icons.Filled.Stop else Icons.AutoMirrored.Filled.VolumeUp, if (pb.active) "Stop" else "Listen to this list")
                     }
                     if (onSettings != null) {
                         IconButton(onClick = vm::refresh) { Icon(Icons.Filled.Refresh, "Refresh") }
@@ -281,9 +314,7 @@ private fun DayFeed(
             } else if (shown.isEmpty()) {
                 item { Empty("Nothing under this filter for ${shortDate(day.date)}.") }
             }
-            items(shown, key = { it.id }) { i ->
-                ItemCard(i, read = i.id in vm.readIds, saved = vm.isSaved(i.id), onToggleSave = { vm.toggleSave(i) }, onRead = { vm.markRead(i.id) })
-            }
+            itemsIndexed(shown, key = { _, x -> x.id }) { idx, _ -> ListCard(vm, shown, idx) }
             item { Spacer(Modifier.height(24.dp)) }
         }
     }
@@ -330,7 +361,20 @@ private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit) {
     var lane by rememberSaveable { mutableStateOf(Lane.ALL) }
     val inBook = Filter(exam = vm.exam).apply(vm.allItems).filter { it.book == book }
     val shown = Filter(lane, vm.exam).apply(inBook).sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.score })
-    LazyColumn(Modifier.fillMaxSize()) {
+    // story id -> its row (2 head rows, then a date heading before each new day)
+    val rows = remember(shown) {
+        val map = HashMap<String, Int>()
+        var row = 2 + (if (shown.isEmpty()) 1 else 0)
+        var last = ""
+        for ((idx, i) in shown.withIndex()) {
+            if (i.date != last) { last = i.date; row++ }
+            map[i.id] = row++
+        }
+        map
+    }
+    val listState = androidx.compose.foundation.lazy.rememberLazyListState()
+    FollowReading(listState) { id -> rows[id] ?: -1 }
+    LazyColumn(Modifier.fillMaxSize(), state = listState) {
         item { Header("${bookNumber(book)}. $book", "${inBook.size} stories · last ${vm.days.size} days", onBack = onBack) }
         item {
             ChipRow {
@@ -342,7 +386,7 @@ private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit) {
         }
         if (shown.isEmpty()) item { Empty("No stories under this subject yet.") }
         var lastDate = ""
-        for (i in shown) {
+        for ((idx, i) in shown.withIndex()) {
             if (i.date != lastDate) {
                 lastDate = i.date
                 item(key = "d-${i.date}") {
@@ -350,7 +394,7 @@ private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit) {
                 }
             }
             item(key = i.id) {
-                ItemCard(i, read = i.id in vm.readIds, saved = vm.isSaved(i.id), onToggleSave = { vm.toggleSave(i) }, onRead = { vm.markRead(i.id) })
+                ListCard(vm, shown, idx)
             }
         }
         item { Spacer(Modifier.height(24.dp)) }
@@ -462,9 +506,8 @@ private fun UnitScreen(vm: AppViewModel, code: String, onBack: () -> Unit) {
     LazyColumn(Modifier.fillMaxSize()) {
         item { Header(code, group?.label, onBack = onBack) }
         if (group == null) item { Empty("No stories under this unit.") }
-        items(group?.items.orEmpty(), key = { it.id }) { i ->
-            ItemCard(i, read = i.id in vm.readIds, saved = vm.isSaved(i.id), onToggleSave = { vm.toggleSave(i) }, onRead = { vm.markRead(i.id) })
-        }
+        val list = group?.items.orEmpty()
+        itemsIndexed(list, key = { _, x -> x.id }) { idx, _ -> ListCard(vm, list, idx) }
         item { Spacer(Modifier.height(24.dp)) }
     }
 }
@@ -478,9 +521,7 @@ private fun SavedScreen(vm: AppViewModel) {
     LazyColumn(Modifier.fillMaxSize()) {
         item { Header("Saved", "${vm.saved.size} stories kept for revision") }
         if (vm.saved.isEmpty()) item { Empty("Tap the bookmark on any story to keep it here. Saved stories stay even after the day is removed from the phone.") }
-        items(vm.saved, key = { it.id }) { i ->
-            ItemCard(i, read = true, saved = true, onToggleSave = { vm.toggleSave(i) }, onRead = {})
-        }
+        itemsIndexed(vm.saved, key = { _, x -> x.id }) { idx, _ -> ListCard(vm, vm.saved, idx, readFlag = true, savedFlag = true) }
     }
 }
 

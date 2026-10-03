@@ -17,8 +17,8 @@ android {
         applicationId = "com.appsc.ca"
         minSdk = 26
         targetSdk = 35
-        versionCode = 7
-        versionName = "1.6"
+        versionCode = 8
+        versionName = "1.7"
         buildConfigField("String", "FEED_URL", "\"$feedUrl\"")
     }
 
@@ -61,6 +61,7 @@ dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2024.12.01")
     implementation(composeBom)
     implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.media:media:1.7.0") // MediaStyle notification for read-aloud
     implementation("androidx.activity:activity-compose:1.9.3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")

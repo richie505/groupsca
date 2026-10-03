@@ -23,6 +23,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.BookmarkBorder
+import androidx.compose.material.icons.filled.Headphones
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -43,6 +44,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.appsc.ca.data.Item
+import com.appsc.ca.data.StaticNote
 import com.appsc.ca.data.bookNumber
 import com.appsc.ca.data.clockTime
 import com.appsc.ca.data.shortDate
@@ -61,6 +63,10 @@ fun ItemCard(
     onToggleSave: () -> Unit,
     onRead: () -> Unit,
     modifier: Modifier = Modifier,
+    /** Read-aloud is on this story now. */
+    reading: Boolean = false,
+    /** Starts read-aloud from this story (null: not offered, e.g. a Telugu headline). */
+    onListen: (() -> Unit)? = null,
 ) {
     var open by rememberSaveable(item.id) { mutableStateOf(false) }
     val context = LocalContext.current
@@ -70,7 +76,16 @@ fun ItemCard(
             .fillMaxWidth()
             .padding(horizontal = 16.dp, vertical = 6.dp)
             .clip(RoundedCornerShape(14.dp))
-            .border(1.dp, if (item.band == "critical") C.Critical.copy(alpha = 0.35f) else C.Line, RoundedCornerShape(14.dp))
+            .border(
+                if (reading) 2.dp else 1.dp,
+                when {
+                    reading -> C.Accent
+                    item.band == "critical" -> C.Critical.copy(alpha = 0.35f)
+                    else -> C.Line
+                },
+                RoundedCornerShape(14.dp),
+            )
+            .background(if (reading) C.AccentSoft.copy(alpha = 0.45f) else Color.Transparent)
             .clickable {
                 open = !open
                 onRead()
@@ -123,7 +138,36 @@ fun ItemCard(
             )
         }
 
+        // the best linked note, in one line, even when the card is closed
+        item.notes.firstOrNull()?.let { n ->
+            Text(
+                "📘 " + noteLabel(n) + " · " + n.where.substringAfter(" · ").substringBefore(" › ").ifBlank { n.src },
+                style = MaterialTheme.typography.labelMedium,
+                color = C.Accent,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.padding(top = 6.dp),
+            )
+        }
+
         if (open) {
+            if (item.notes.isNotEmpty()) {
+                SectionLabel("From your notes (static)")
+                for (n in item.notes) {
+                    Column(
+                        Modifier.fillMaxWidth().padding(bottom = 8.dp).clip(RoundedCornerShape(10.dp))
+                            .background(if (n.tier == "exact") C.AccentSoft else C.Surface).padding(10.dp),
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Badge(noteLabel(n), if (n.tier == "exact") C.Accent else C.Muted, Color.White)
+                            Spacer(Modifier.width(6.dp))
+                            Text(n.src, style = MaterialTheme.typography.labelMedium, color = C.Faint)
+                        }
+                        Text(n.where.substringAfter(" · "), style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(top = 4.dp))
+                        Text(n.text, style = MaterialTheme.typography.bodyMedium, color = C.Body, modifier = Modifier.padding(top = 4.dp))
+                    }
+                }
+            }
             if (item.facts.isNotEmpty()) {
                 SectionLabel("Key facts")
                 for (f in item.facts) {
@@ -167,6 +211,13 @@ fun ItemCard(
                         )
                     }
                 }
+                if (onListen != null) {
+                    TextButton(onClick = onListen) {
+                        Icon(Icons.Filled.Headphones, null, Modifier.size(18.dp))
+                        Spacer(Modifier.width(6.dp))
+                        Text("Listen from here")
+                    }
+                }
                 TextButton(onClick = { share(context, item) }) {
                     Icon(Icons.Filled.Share, null, Modifier.size(18.dp))
                     Spacer(Modifier.width(6.dp))
@@ -175,6 +226,13 @@ fun ItemCard(
             }
         }
     }
+}
+
+/** How the note was linked, in words. */
+fun noteLabel(n: StaticNote): String = when (n.tier) {
+    "exact" -> if (n.match.isNotEmpty()) "Exact: " + n.match.joinToString(", ") else "Exact match"
+    "unit" -> "Same syllabus unit"
+    else -> "Same book"
 }
 
 @Composable
@@ -221,6 +279,7 @@ fun share(context: Context, item: Item) {
         append(item.title).append('\n')
         for (f in item.facts) append("• ").append(f.text).append('\n')
         if (item.units.isNotEmpty()) append("Syllabus: ").append(item.units.joinToString { it.code }).append('\n')
+        item.notes.firstOrNull { it.src == "Prep notes" }?.let { append("From the notes: ").append(it.text).append('\n') }
         append(item.url)
     }
     val send = Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT, text)

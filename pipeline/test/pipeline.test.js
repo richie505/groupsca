@@ -11,6 +11,8 @@ const F = require('../lib/fetch');
 const S = require('../lib/score');
 const { keyFacts, summarise } = require('../lib/facts');
 const { run, todayIst } = require('../daily');
+const St = require('../lib/statics');
+const NOTES = St.loadNotes({ prepDir: path.join(__dirname, 'fixtures', 'notes', 'prep'), rocketDir: path.join(__dirname, 'fixtures', 'notes', 'rocket') });
 
 const vocab = S.loadVocab();
 const FIX = path.join(__dirname, 'fixtures');
@@ -111,7 +113,7 @@ test('news day: 06:00 IST to 05:59 IST next morning', () => {
 
 test('offline run: AP items are kept, merged per day, and not repeated on the next run', async () => {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
-  const args = { date: '2026-10-02', fixtures: FIX, out, dryRun: false };
+  const args = { date: '2026-10-02', fixtures: FIX, out, dryRun: false, notes: NOTES };
   const first = await run(args);
   assert.ok(first.report.kept >= 5, JSON.stringify(first.report));
   assert.ok(first.report.keptAp >= 3);
@@ -191,7 +193,7 @@ test('sitemap index: child sitemaps in order', () => {
 
 test('offline run: GKToday newest posts (quizzes skipped) and the AffairsCloud digest are taken', async () => {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
-  const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true });
+  const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true, notes: NOTES });
   const urls = r.scored.map((x) => x.article.url);
   assert.ok(urls.some((u) => /financial-stability-report/.test(u)));
   assert.ok(!urls.some((u) => /quizbase/.test(u)));
@@ -215,8 +217,32 @@ test('no coaching sources are configured', () => {
 
 test('GKToday posts are kept as current-affairs picks', async () => {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
-  const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true });
+  const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true, notes: NOTES });
   const gk = r.kept.filter((i) => i.sourceId === 'gktoday');
   assert.ok(gk.some((i) => /Financial Stability Report/.test(i.title)));
   assert.ok(gk.every((i) => i.digest));
+});
+
+test('static notes: exact links from the headline, a unit/book note for every story', () => {
+  const ramsar = St.staticFor(NOTES, { title: 'Kolleru Lake declared a Ramsar site', summary: '', units: [], subject: 'Science, Tech & Environment' });
+  assert.equal(ramsar[0].tier, 'exact');
+  assert.match(ramsar[0].text, /Kolleru Lake/);
+  const repo = St.staticFor(NOTES, { title: 'RBI keeps repo rate unchanged', summary: '', units: [{ code: 'G1-C4' }], subject: 'Economy' });
+  assert.ok(repo.some((n) => n.src === 'Prep notes' && /repo rate/.test(n.text)));
+  assert.ok(repo.some((n) => n.src === 'Rocket Sheets' && /repo rate/.test(n.text)), 'Rocket key facts, not the raw sheet text');
+  assert.ok(!repo.some((n) => /raw scan/.test(n.text)));
+  assert.ok(!repo.some((n) => /\[Indian Economy/.test(n.text)), 'source tags are stripped');
+  // headline names win over side names in the summary
+  const g = St.staticFor(NOTES, { title: 'Mahatma Gandhi remembered', summary: 'Polavaram project leaders paid tributes.', units: [{ code: 'G1-A6' }], subject: 'History & Culture' });
+  assert.match(g[0].text, /Mahatma/);
+  // a Telugu headline links through its English gloss
+  const te = St.staticFor(NOTES, { title: 'పోలవరం నిధులకు కేబినెట్‌ ఆమోదం', summary: '', units: [], subject: 'Economy', lang: 'te' });
+  assert.match(te[0].text, /Polavaram/);
+});
+
+test('offline run: every kept story carries a Prep note', async () => {
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
+  const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true, notes: NOTES });
+  const missing = r.kept.filter((i) => !(i.notes || []).some((n) => n.src === 'Prep notes'));
+  assert.deepEqual(missing.map((i) => i.title), []);
 });

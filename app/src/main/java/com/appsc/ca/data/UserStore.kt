@@ -32,7 +32,12 @@ class UserStore(context: Context) {
         get() = runCatching { Exam.valueOf(prefs.getString(KEY_EXAM, null) ?: "BOTH") }.getOrDefault(Exam.BOTH)
         set(v) = prefs.edit().putString(KEY_EXAM, v.name).apply()
 
+    var speechRate: Float
+        get() = prefs.getFloat(KEY_RATE, 1f)
+        set(v) = prefs.edit().putFloat(KEY_RATE, v).apply()
+
     private companion object {
+        const val KEY_RATE = "speech_rate"
         const val KEY_READ = "read"
         const val KEY_NOTIFY = "notify"
         const val KEY_EXAM = "exam"

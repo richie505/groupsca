@@ -30,6 +30,18 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+      # The reader's own notes, for each story's static notes: the APPSC Prep
+      # app's 6 books and the Rocket Sheets' key facts (both public repos).
+      - uses: actions/checkout@v4
+        with:
+          repository: richie505/Group-app
+          path: ext/Group-app
+          sparse-checkout: app/src/main/assets
+      - uses: actions/checkout@v4
+        with:
+          repository: richie505/groupsrocket
+          path: ext/groupsrocket
+          sparse-checkout: android/app/src/main/assets
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -78,10 +78,25 @@ data class Item(
     val lang: String = "en",
     /** A current-affairs site's daily digest post (AffairsCloud). */
     val digest: Boolean = false,
+    /** Static notes linked to the story: the Prep app's books and the Rocket Sheets' key facts. */
+    val notes: List<StaticNote> = emptyList(),
 ) {
     /** The book to file it under, for feeds written before `subject` existed too. */
     val book: String get() = subject.ifBlank { subjects.firstOrNull { it in BOOKS } ?: BOOKS.last() }
 }
+
+@Serializable
+data class StaticNote(
+    /** exact (the note names the same thing) · unit (same syllabus unit) · book (same book) */
+    val tier: String = "book",
+    /** "Prep notes" or "Rocket Sheets" */
+    val src: String = "",
+    /** Where it is: "Prep notes · Book 5 … › 22 › Wetlands › Ramsar sites" */
+    val where: String = "",
+    val text: String = "",
+    /** The names it was matched on, for an exact note. */
+    val match: List<String> = emptyList(),
+)
 
 @Serializable
 data class Fact(val angle: String, val text: String)

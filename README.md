@@ -43,6 +43,29 @@ So Eenadu's 5 AM upload on 3 Oct is filed under 2 Oct, the day it reports. The c
 The app shows each day's span, whether it is *Updating* (last and next update) or *Final*, and every story's
 publish time.
 
+## Static notes for every story
+
+Each story carries `notes`: the matching static notes from the reader's own notes, the **APPSC Prep app's 6
+books** ([Group-app](https://github.com/richie505/Group-app) `book1-6.json`) and the **Rocket Sheets' key facts**
+([groupsrocket](https://github.com/richie505/groupsrocket) `android/app/src/main/assets`), fetched by the daily
+workflow on every run (`pipeline/lib/statics.js`). Every story gets at least one Prep note, in three tiers:
+
+| Tier | Meaning |
+|---|---|
+| **Exact** | a note names the same specific thing as the headline (Buxa Tiger Reserve, Ramsar, RELIEF, CII Partnership Summit, DWCRA…), and the name is rare in the notes |
+| **Same syllabus unit** | otherwise, the bullet of the story's own unit (tracker G1-C4 → Book 3, unit C-4) sharing the most rare words with it |
+| **Same book** | failing that, the closest bullet in the story's book |
+
+Telugu (Eenadu) headlines are matched through an English glossary (`ap-vocab.json`, `telugu.glossary`).
+
+## Read aloud
+
+The app reads with the **APPSC Prep app's read-aloud** (`platform/ReadAloud*.kt` and `data/SpeechText.kt`, ported
+from Group-app, with its `abbr.json`): Indian English voice, keeps reading with the screen locked (notification with
+Pause/Stop), citations left out and short forms said in full. Each story is read as headline, summary, key facts and
+its first Prep note; it goes on to the next story in the list. Player bar: previous / next story, play-pause,
+speed 0.75×–2×, stop. "Listen from here" on any card. Telugu headlines are skipped.
+
 ## Subjects
 
 Each story gets `subject`: one of the 6 books of the Combined Notes (Group-app `book1` … `book6`), so current

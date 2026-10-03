@@ -39,6 +39,13 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         private set
     var notify by mutableStateOf(true)
         private set
+    var speechRate by mutableStateOf(1f)
+        private set
+
+    fun chooseRate(r: Float) {
+        speechRate = r
+        user.speechRate = r
+    }
 
     val allItems: List<Item> get() = days.flatMap { it.items }
 
@@ -51,7 +58,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val r = user.readIds()
                 withContext(Dispatchers.Main) {
                     days = d; index = i; saved = s; readIds = r
-                    exam = user.exam; notify = user.notify
+                    exam = user.exam; notify = user.notify; speechRate = user.speechRate
                 }
             }
             refresh()
