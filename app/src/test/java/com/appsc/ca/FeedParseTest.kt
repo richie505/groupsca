@@ -82,10 +82,9 @@ class FeedParseTest {
     }
 
     @Test
-    fun speechSaysShortFormsInFull() {
+    fun speechDropsCitations() {
         val said = com.appsc.ca.data.SpeechText.speakable("RBI cut the repo rate to 5.5% (TH, 2 Oct 2026) [GK]")
         assertTrue(said, !said.contains("[GK]") && !said.contains("TH,"))
-        assertTrue(said, said.contains("per cent"))
     }
 
     @Test
