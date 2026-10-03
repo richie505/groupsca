@@ -246,3 +246,13 @@ test('offline run: every kept story carries a Prep note', async () => {
   const missing = r.kept.filter((i) => !(i.notes || []).some((n) => n.src === 'Prep notes'));
   assert.deepEqual(missing.map((i) => i.title), []);
 });
+
+test('stories published before notes existed are given notes on the next run', async () => {
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
+  await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: false, notes: { size: 0 } });
+  const before = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
+  assert.ok(before.items.every((i) => !i.notes));
+  await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: false, notes: NOTES });
+  const after = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
+  assert.ok(after.items.every((i) => (i.notes || []).length > 0));
+});

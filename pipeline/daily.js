@@ -200,6 +200,29 @@ function readDay(out, date) {
   }
 }
 
+function backfillNotes(out, notes) {
+  let n = 0;
+  const dir = path.join(out, 'days');
+  if (!fs.existsSync(dir)) return 0;
+  for (const f of fs.readdirSync(dir).filter((x) => /^\d{4}-\d{2}-\d{2}\.json$/.test(x))) {
+    const file = path.join(dir, f);
+    const day = JSON.parse(fs.readFileSync(file, 'utf8'));
+    let changed = false;
+    for (const it of day.items) {
+      if (it.notes && it.notes.length) continue;
+      const linked = St.staticFor(notes, it);
+      if (linked.length) {
+        it.notes = linked;
+        changed = true;
+        n++;
+      }
+    }
+    // the day's `updated` stamp changes too, so the app downloads it again
+    if (changed) fs.writeFileSync(file, JSON.stringify({ ...day, updated: new Date().toISOString() }, null, 1) + '\n');
+  }
+  return n;
+}
+
 function writeIndex(out) {
   const dir = path.join(out, 'days');
   const days = fs
@@ -421,6 +444,9 @@ async function run(args) {
     const day = { version: 1, date: d, updated: now, sources: status, items: merged };
     fs.writeFileSync(dayPath(args.out, d), JSON.stringify(day, null, 1) + '\n');
   }
+  // Every story on file gets its static notes, including ones published before
+  // notes existed or while the notes could not be fetched.
+  if (notesLoaded) report.backfilled = backfillNotes(args.out, notes);
   writeIndex(args.out);
   return { report, kept, scored };
 }
@@ -432,7 +458,7 @@ function printReport({ report, kept }, dryRun) {
     `fetched ${report.fetched} · in window ${report.inWindow} · after noise ${report.afterNoise} · ` +
       `one per story ${report.afterDedupe} · new ${report.fresh} · PIB texts ${report.pibBodies}`,
     `vetoed ${report.vetoed} · **kept ${report.kept}** (Andhra Pradesh ${report.keptAp})`,
-    report.notesLoaded ? `static notes: exact match for ${report.withExactNote} of ${report.kept}, the rest linked by unit or book` : 'static notes: NOT LOADED (Group-app / groupsrocket notes not found)',
+    report.notesLoaded ? `static notes: exact match for ${report.withExactNote} of ${report.kept}, the rest linked by unit or book; ${report.backfilled || 0} earlier stories given notes` : 'static notes: NOT LOADED (Group-app / groupsrocket notes not found)',
   ];
   if (report.failedSources.length) lines.push('', `Sources that failed: ${report.failedSources.join('; ')}`);
   lines.push('', '| score | bucket | title | units |', '|---|---|---|---|');
