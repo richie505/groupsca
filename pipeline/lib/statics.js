@@ -582,6 +582,30 @@ function secHas(index, sec, words) {
   return { n, title: re.test(sec.title) };
 }
 
+// Words every kind of story has, which say little about which note it needs:
+// a court ruling on BC quota is about reservation, not about the courts.
+const WEAK_WORDS = new Set(
+  ('court courts high supreme judge judges bench petition plea hearing award awards honour honours prize ' +
+    'english rendering address celebration celebrations centenary prime president governor shri smt ' +
+    'ministry department secretary commissioner collector district districts city town village villages')
+    .split(' ')
+);
+const INSTITUTION_NAME =
+  /(?:\b\p{Lu}[\p{L}.'’]*\s+){1,4}(?:hospital|university|college|school|stadium|road|nagar|colony|memorial|institute|airport|station|bhavan|park)\b/giu;
+
+const GAP_KINDS =
+  /\b(?:Act|Mission|Scheme|Yojana|Programme|Program|Project|Reserve|Park|Sanctuary|Policy|Summit|Index|Survey|Commission|Committee|Authority|Board|Council|Fund|Bank|Corridor|Port|Dam|App|Portal|Abhiyan|Award|Awards|Treaty|Agreement|Accord|Bill|Code|University|Institute|School|Organisation|Organization|Agency|Exercise|Games|Festival|Day|Week|Tribunal|Court|Corporation|Zone|Hub|Platform|Initiative|Campaign)\b/;
+
+// Headings that use an everyday word in a special sense, and the word the
+// story must also have for them: a PSU dividend is no demographic dividend.
+const SENSES = [
+  [/demographic dividend|harness the dividend/i, 'demographic'],
+  [/tropic of cancer/i, 'tropic'],
+  [/tropic of capricorn/i, 'tropic'],
+  [/green revolution|white revolution|blue revolution/i, 'revolution'],
+  [/\bcabinet mission\b/i, 'mission'],
+];
+
 // Two-letter short forms, which tokens() drops, and what they stand for.
 const SHORT_FORMS = [
   [/\bB\.?Cs?\b/, 'backward classes'],
@@ -639,10 +663,13 @@ function briefFor(index, item0) {
   const minScore = S > 500 ? MIN_SECTION_SCORE : 1;
   // the story's words: headline x2, the rest x1, news verbs and fillers out
   const want = new Map();
-  const add = (text, wt) => {
+  const add = (text0, wt) => {
+    // a hospital, college or road named after someone is not about them
+    // ("Mahatma Gandhi hospital", "NTR stadium")
+    const text = String(text0).replace(INSTITUTION_NAME, ' ');
     for (const w of tokens(text)) {
       if (NEWS_WORDS.has(w) || w.length < 3) continue;
-      want.set(w, Math.max(want.get(w) || 0, wt));
+      want.set(w, Math.max(want.get(w) || 0, wt * (WEAK_WORDS.has(w) ? 0.3 : 1)));
     }
   };
   add(`${item.summary || ''} ${(item.facts || []).map((f) => f.text).join(' ')}`, 1);
@@ -688,7 +715,14 @@ function briefFor(index, item0) {
     // the story's own book and units first; Prep before Rocket on a tie
     const inBook = books.has(sec.book) || (sec.book === 6 && books.has(6));
     const inUnit = sec.src === 'prep' && units.has(sec.unit);
-    score *= inUnit ? 1.4 : inBook ? 1 : 0.4;
+    // a heading that uses a story word in another sense
+    if (SENSES.some(([re, need]) => re.test(sec.head || sec.title) && !want.has(need))) continue;
+    // another book's subsection must share two informative words: one shared
+    // word across books is usually a homonym ("cancer" surgery vs Tropic of Cancer)
+    if (!inBook && informative < 2) continue;
+    score *= inUnit ? 1.4 : inBook ? 1 : 0.6;
+    // an Andhra Pradesh subsection for a story from elsewhere comes after the national one
+    if (!item.ap && /\b(?:Andhra Pradesh|AP)\b/.test(sec.head || '')) score *= 0.6;
     // long subsections share words by chance
     score /= Math.max(1, Math.log(sec.bag.size) / Math.log(40));
     if (sec.src === 'prep') score *= 1.05;
@@ -744,13 +778,15 @@ function briefFor(index, item0) {
     if (!isName) continue;
     const ids = t.words.length > 1 ? findPhrase(index, { text: t.label, kind: 'name' }) : index.postings.get(t.words[0]) || [];
     const reName = new RegExp(`(?<![\\p{L}\\p{N}])${t.words.map(escapeRe).join('[\\s-]+')}`, 'iu');
+    // a person's name is no gap; a scheme, body, place or law is
+    if (!/^[A-Z0-9-]{2,}$/.test(t.label) && !GAP_KINDS.test(t.label)) continue;
     if (!ids.length && !index.secs.some((sec) => reName.test(sec.head || ''))) gaps.push(t.label);
   }
   return { sections, gaps };
 }
 
 // Bumped when briefFor changes, so stories on file are re-linked.
-const BRIEF_VERSION = 2;
+const BRIEF_VERSION = 3;
 
 /** briefFor as stored on a story: { v, sections, gaps }. */
 function briefOf(index, item) {

@@ -77,7 +77,11 @@ story's own syllabus units and book come first; other books count for less. A su
 story's informative words, or one rare headline word in its heading, so a single loose word ("protest", "stage")
 never makes a section. Each notes row gives at most one section, up to 4 sections in all. Short forms the matcher
 would miss are spelt out (BC → backward classes, ST, EWS, GO, AI…). Names that no note mentions at all are listed
-under "Not in your notes". Everything is rule-based, so a section can still be off-topic now and then.
+under "Not in your notes" (schemes, bodies, places and laws; not people). A hospital or road named after
+someone does not bring in notes about them; a subsection from another book needs two shared words, so homonyms
+("cancer" surgery vs Tropic of Cancer) are kept out; AP subsections come after national ones for a story from
+elsewhere; court, award and ministry words count little, so a court ruling on BC quota brings in *reservation*,
+not the courts. Everything is rule-based, so a section can still be off-topic now and then.
 `BRIEF_VERSION` in `statics.js` is raised when the rules change, so every story on file is re-linked on the next run.
 
 Telugu (Eenadu) headlines are matched through an English glossary (`ap-vocab.json`, `telugu.glossary`).
