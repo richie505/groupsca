@@ -283,3 +283,31 @@ test('every story on file gets a brief, re-made when the brief rules change', as
   const again = JSON.parse(fs.readFileSync(file, 'utf8'));
   assert.equal(again.items[0].brief.v, St.BRIEF_VERSION);
 });
+
+test('one card per topic: reports of the same story grouped under the best one', () => {
+  const T = require('../lib/topics');
+  const sec = (w) => ({ topic: w, src: 'Prep notes', where: w, bullets: ['x'] });
+  const items = [
+    { id: 'a', title: 'GST revenue rises to ₹2.03 lakh crore in September', score: 70, brief: { sections: [sec('GST trend')] } },
+    { id: 'b', title: 'September GST collections cross ₹2 trillion again', score: 60, brief: { sections: [sec('GST trend')] } },
+    { id: 'c', title: 'GST Council meeting may consider ITC relief', score: 65, brief: { sections: [sec('GST Council')] } },
+    { id: 'd', title: 'బీసీలకు 34% రిజర్వేషన్ల జీవోల రద్దు', lang: 'te', score: 50, brief: { sections: [sec('Reservation'), sec('NCBC')] } },
+    { id: 'e', title: 'AP to move SC against HC verdict on 34% BC quota', score: 77, brief: { sections: [sec('Reservation'), sec('NCBC')] } },
+  ];
+  assert.equal(T.groupTopics(items), 2);
+  const byId = Object.fromEntries(items.map((i) => [i.id, i]));
+  assert.equal(byId.b.topicOf, 'a');
+  assert.ok(!byId.c.topicOf);
+  assert.equal(byId.d.topicOf, 'e');
+  assert.deepEqual(byId.e.related.map((r) => r.id), ['d']);
+});
+
+test('static notes never repeat a bullet or the current matter', () => {
+  const b = St.briefFor(NOTES, {
+    title: 'Monetary Policy Committee keeps repo rate unchanged',
+    summary: 'The Monetary Policy Committee of the RBI sets the repo rate; six members, three from the RBI.',
+  });
+  const all = b.sections.flatMap((s) => s.bullets);
+  assert.ok(!all.some((x) => /six members/.test(x)));
+  assert.equal(new Set(all).size, all.length);
+});

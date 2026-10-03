@@ -733,6 +733,24 @@ function briefFor(index, item0) {
   const sections = [];
   const rows = new Set();
   const labels = new Set();
+  // no bullet twice, and none that only repeats the current matter
+  const seen = [];
+  const bag = (t) => new Set(tokens(t));
+  const near = (a, b) => {
+    let n = 0;
+    for (const w of a) if (b.has(w)) n++;
+    return n / Math.min(a.size, b.size || 1) >= 0.7;
+  };
+  for (const t of [item.summary || '', ...(item.facts || []).map((f) => f.text)]) {
+    for (const sent of String(t).split(/(?<=[.!?])\s+/)) if (tokens(sent).length >= 5) seen.push(bag(sent));
+  }
+  const fresh = (text) => {
+    const b = bag(text);
+    if (b.size < 3) return true;
+    if (seen.some((x) => near(b, x))) return false;
+    seen.push(b);
+    return true;
+  };
   const top = scored.length ? scored[0].score : 0;
   for (const c of scored) {
     if (sections.length >= MAX_SECTIONS) break;
@@ -752,6 +770,7 @@ function briefFor(index, item0) {
     const pick = c.sec.entries.length <= MAX_BULLETS ? ranked : ranked.filter((x) => x.s > 0);
     const chosen = pick
       .sort((a, b) => b.s - a.s || a.order - b.order)
+      .filter((x) => fresh(x.e.text))
       .slice(0, MAX_BULLETS)
       .sort((a, b) => a.order - b.order)
       .map((x) => clip(x.e.text));
@@ -786,7 +805,7 @@ function briefFor(index, item0) {
 }
 
 // Bumped when briefFor changes, so stories on file are re-linked.
-const BRIEF_VERSION = 3;
+const BRIEF_VERSION = 4;
 
 /** briefFor as stored on a story: { v, sections, gaps }. */
 function briefOf(index, item) {
@@ -798,3 +817,4 @@ module.exports.briefFor = briefFor;
 module.exports.briefOf = briefOf;
 module.exports.BRIEF_VERSION = BRIEF_VERSION;
 module.exports.topicsOf = topicsOf;
+module.exports.NEWS_WORDS = NEWS_WORDS;

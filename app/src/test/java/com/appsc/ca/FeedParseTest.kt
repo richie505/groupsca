@@ -3,12 +3,15 @@ package com.appsc.ca
 import com.appsc.ca.data.BOOKS
 import com.appsc.ca.data.Day
 import com.appsc.ca.data.Exam
+import com.appsc.ca.data.Fact
 import com.appsc.ca.data.FeedIndex
 import com.appsc.ca.data.FeedJson
 import com.appsc.ca.data.Filter
 import com.appsc.ca.data.Lane
 import com.appsc.ca.data.groupByUnit
 import com.appsc.ca.data.newsDaySpan
+import com.appsc.ca.data.oneCardPerTopic
+import com.appsc.ca.data.Related
 import com.appsc.ca.data.nextUpdate
 import com.appsc.ca.data.unitOrder
 import kotlinx.serialization.decodeFromString
@@ -91,6 +94,17 @@ class FeedParseTest {
         assertTrue(at > 0)
         assertTrue(parts[at + 1].startsWith("1. "))
         assertTrue(parts.none { it.startsWith("From your notes: ") })
+    }
+
+    @Test
+    fun oneCardPerTopicAndNoRepeatedFacts() {
+        val lead = day.items[0].copy(id = "lead", related = listOf(Related("other", "Same story", "Mint", "")))
+        val other = day.items[1].copy(id = "other", topicOf = "lead")
+        assertEquals(listOf("lead"), oneCardPerTopic(listOf(lead, other)).map { it.id })
+        // without its lead in the list, the report stays
+        assertEquals(listOf("other"), oneCardPerTopic(listOf(other)).map { it.id })
+        val repeat = lead.copy(summary = "The RBI kept the repo rate at 5.5%. It meets again in December.", facts = listOf(Fact("Figures", "The RBI kept the repo rate at 5.5%."), Fact("Index", "A new fact.")))
+        assertEquals(listOf("A new fact."), repeat.newFacts.map { it.text })
     }
 
     @Test

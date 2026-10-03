@@ -82,10 +82,19 @@ data class Item(
     val notes: List<StaticNote> = emptyList(),
     /** The article's static part: the notes by topic, after the current matter. */
     val brief: Brief = Brief(),
+    /** Other reports of the same story, shown on this card (it leads the topic). */
+    val related: List<Related> = emptyList(),
+    /** The id of the card this report is shown on, when another report leads its topic. */
+    val topicOf: String = "",
 ) {
+    /** Key facts that say something the context line does not already say. */
+    val newFacts: List<Fact> get() = facts.filter { f -> summary.isBlank() || !summary.contains(f.text.take(60)) }
     /** The book to file it under, for feeds written before `subject` existed too. */
     val book: String get() = subject.ifBlank { subjects.firstOrNull { it in BOOKS } ?: BOOKS.last() }
 }
+
+@Serializable
+data class Related(val id: String = "", val title: String = "", val source: String = "", val url: String = "")
 
 /** Static notes for a story, one numbered section per topic of the story the notes cover. */
 @Serializable

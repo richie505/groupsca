@@ -31,6 +31,7 @@ const F = require('./lib/fetch');
 const S = require('./lib/score');
 const { keyFacts, summarise } = require('./lib/facts');
 const St = require('./lib/statics');
+const T = require('./lib/topics');
 
 // When the collection runs (IST), set from ops/publish-times.md: after the
 // morning papers' uploads (closes yesterday), after PIB's and the daytime
@@ -221,6 +222,10 @@ function backfillNotes(out, notes) {
         n++;
       }
     }
+    // one card per topic: reports of the same story grouped under the best one
+    const before = JSON.stringify(day.items.map((i) => [i.topicOf, i.related]));
+    T.groupTopics(day.items);
+    if (JSON.stringify(day.items.map((i) => [i.topicOf, i.related])) !== before) changed = true;
     // the day's `updated` stamp changes too, so the app downloads it again
     if (changed) fs.writeFileSync(file, JSON.stringify({ ...day, updated: new Date().toISOString() }, null, 1) + '\n');
   }

@@ -40,7 +40,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.appsc.ca.data.Item
@@ -101,8 +104,6 @@ fun ItemCard(
                 if (item.digest) Badge(if (item.title.startsWith("Current Affairs")) "Daily digest" else "CA site pick", C.High, C.HighSoft)
                 if (item.scope == "international") Badge("International", C.Muted, C.Chip)
                 else if (!item.ap || item.scope == "national") Badge("National", C.Muted, C.Chip)
-                Badge("Book ${bookNumber(item.book)} · ${item.book}", C.Fact, C.FactSoft)
-                Badge(item.exams.joinToString(" · ") { if (it == "G1") "Group-I" else "Group-II" }, C.Accent, C.AccentSoft)
             }
             if (!read) Box(Modifier.padding(start = 6.dp).size(8.dp).clip(CircleShape).background(C.Unread))
             IconButton(onClick = onToggleSave) {
@@ -113,6 +114,7 @@ fun ItemCard(
                 )
             }
         }
+        Text(topicTag(item), style = MaterialTheme.typography.labelMedium, color = C.Accent, fontWeight = FontWeight.Bold)
         Text(item.title, style = MaterialTheme.typography.titleMedium, color = C.Ink)
         Text(
             buildString {
@@ -123,7 +125,8 @@ fun ItemCard(
                 append(" · ")
                 if (item.time.isNotBlank()) append(shortDate(item.pubDate.ifBlank { item.date })).append(", ").append(clockTime(item.time))
                 else append(shortDate(item.pubDate.ifBlank { item.date }))
-                if (item.alsoIn.isNotEmpty()) append(" · also in ${item.alsoIn.size} more")
+                val more = item.alsoIn.size + item.related.size
+                if (more > 0) append(" · also in $more more")
             },
             style = MaterialTheme.typography.labelMedium,
             color = C.Faint,
@@ -131,7 +134,10 @@ fun ItemCard(
         )
         if (item.summary.isNotBlank()) {
             Text(
-                item.summary,
+                buildAnnotatedString {
+                    withStyle(SpanStyle(fontWeight = FontWeight.Bold, color = C.Ink)) { append("Context (${shortSource(item.source)}): ") }
+                    append(item.summary)
+                },
                 style = MaterialTheme.typography.bodyMedium,
                 color = C.Body,
                 maxLines = if (open) Int.MAX_VALUE else 3,
@@ -161,13 +167,20 @@ fun ItemCard(
         }
 
         if (open) {
-            if (item.facts.isNotEmpty()) {
-                SectionLabel("Current matter · key facts")
-                for (f in item.facts) {
-                    Column(Modifier.padding(bottom = 8.dp)) {
-                        Badge(f.angle, C.Fact, C.FactSoft)
-                        Text(f.text, style = MaterialTheme.typography.bodyMedium, color = C.Body, modifier = Modifier.padding(top = 3.dp))
-                    }
+            // the current matter: what the context line does not already say
+            if (item.newFacts.isNotEmpty()) {
+                SectionLabel("Current matter")
+                for (f in item.newFacts) Bullet(f.text, label = f.angle)
+            }
+            if (item.related.isNotEmpty()) {
+                SectionLabel("Same topic, also reported")
+                for (r in item.related) {
+                    Text(
+                        "${r.source}: ${r.title}",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = C.Muted,
+                        modifier = Modifier.fillMaxWidth().clickable(enabled = r.url.isNotBlank()) { openUrl(context, r.url) }.padding(vertical = 3.dp),
+                    )
                 }
             }
             if (item.brief.sections.isNotEmpty()) {
@@ -257,15 +270,50 @@ fun StaticSectionView(n: Int, sec: StaticSection) {
             .background(C.AccentSoft).padding(10.dp),
     ) {
         Text("$n. ${sec.topic}", style = MaterialTheme.typography.titleSmall, color = C.Ink, fontWeight = FontWeight.Bold)
-        Text(sec.where.substringAfter(" · ").ifBlank { sec.src }, style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(top = 2.dp))
-        for (b in sec.bullets) {
-            Row(Modifier.padding(top = 4.dp)) {
-                Text("•", style = MaterialTheme.typography.bodyMedium, color = C.Accent, modifier = Modifier.width(14.dp))
-                Text(b, style = MaterialTheme.typography.bodyMedium, color = C.Body)
-            }
-        }
+        for (b in sec.bullets) Bullet(b)
+        Text(
+            "Read more > " + sec.where.substringAfter(" · ").ifBlank { sec.src } + if (sec.src == "Rocket Sheets") " (Rocket Sheets)" else "",
+            style = MaterialTheme.typography.labelMedium,
+            color = C.Muted,
+            modifier = Modifier.padding(top = 6.dp),
+        )
     }
 }
+
+/** A bullet, with a bold "Label:" lead when given (the LENS way: "Coverage: ..."). */
+@Composable
+fun Bullet(text: String, label: String = "") {
+    Row(Modifier.padding(top = 4.dp)) {
+        Text("•", style = MaterialTheme.typography.bodyMedium, color = C.Accent, modifier = Modifier.width(14.dp))
+        Text(
+            buildAnnotatedString {
+                if (label.isNotBlank()) withStyle(SpanStyle(fontWeight = FontWeight.Bold, color = C.Ink)) { append("$label: ") }
+                append(text)
+            },
+            style = MaterialTheme.typography.bodyMedium,
+            color = C.Body,
+        )
+    }
+}
+
+/** "{Group-I · II – Economy – C-3} **": exams, book, syllabus unit; ** critical, * high. */
+fun topicTag(item: Item): String {
+    val exams = when {
+        item.exams.containsAll(listOf("G1", "G2")) -> "Group-I · II"
+        "G1" in item.exams -> "Group-I"
+        else -> "Group-II"
+    }
+    val unit = item.units.firstOrNull()?.code?.let { " – $it" } ?: ""
+    val stars = when (item.band) {
+        "critical" -> " **"
+        "high" -> " *"
+        else -> ""
+    }
+    return "{$exams – ${bookNumber(item.book)}. ${item.book}$unit}$stars"
+}
+
+/** "The Hindu — Andhra Pradesh" → "The Hindu". */
+fun shortSource(s: String): String = s.substringBefore(" — ").substringBefore(" - ").trim()
 
 /** How the note was linked, in words. */
 fun noteLabel(n: StaticNote): String = when (n.tier) {
@@ -316,7 +364,8 @@ fun openUrl(context: Context, url: String) {
 fun share(context: Context, item: Item) {
     val text = buildString {
         append(item.title).append('\n')
-        for (f in item.facts) append("• ").append(f.text).append('\n')
+        if (item.summary.isNotBlank()) append("Context: ").append(item.summary).append('\n')
+        for (f in item.newFacts) append("• ").append(f.text).append('\n')
         if (item.units.isNotEmpty()) append("Syllabus: ").append(item.units.joinToString { it.code }).append('\n')
         if (item.brief.sections.isNotEmpty()) {
             append("\nStatic notes\n")

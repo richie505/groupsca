@@ -78,10 +78,9 @@ object Listening {
         val say = { t: String -> SpeechText.speakable(t, book) }
         val parts = buildList {
             add(say(item.title.trimEnd('.') + "."))
-            val facts = item.facts.map { it.text }
-            // the summary, unless the key facts already say it
-            if (item.summary.isNotBlank() && facts.none { item.summary.startsWith(it.take(60)) }) add(say(item.summary))
-            facts.forEach { add(say(it)) }
+            // the context, then only the facts it does not already say
+            if (item.summary.isNotBlank()) add(say(item.summary))
+            item.newFacts.forEach { add(say(it.text)) }
             // then the static notes, topic by topic
             if (item.brief.sections.isNotEmpty()) {
                 add("Static notes.")

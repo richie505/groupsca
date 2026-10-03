@@ -56,6 +56,24 @@ workflow on every run (`pipeline/lib/statics.js`). Every story gets at least one
 | **Same syllabus unit** | otherwise, the bullet of the story's own unit (tracker G1-C4 → Book 3, unit C-4) sharing the most rare words with it |
 | **Same book** | failing that, the closest bullet in the story's book |
 
+### One card per topic, laid out like a daily CA magazine
+
+The layout follows the daily current-affairs magazines (PMF IAS LENS was the model; none of its text is used):
+
+```
+{Group-I · II – 3. Economy – G1-C3} *              ← exams, book, syllabus unit; ** critical, * high
+Naidu, Sitharaman launch Rayalaseema horticulture hub …
+Context (The Hindu): the summary
+Current matter   • Figures: … (only facts the context line does not already say)
+Same topic, also reported   The Hans India: …, Eenadu: …
+Static notes   1. Allied sectors · Horticulture  • … • …  Read more > Book 3 Economy › C-3 › …
+```
+
+No duplicates: reports of the same story from different papers, in English or Telugu, are grouped under the best
+one (`pipeline/lib/topics.js`: shared headline words, or the same static notes; `related` on the lead, `topicOf`
+on the others), so a topic appears once a day; a key fact that repeats the context line is not shown again; no
+static bullet appears twice in a story, nor one that repeats the current matter.
+
 ### The article: current matter, then static notes by topic
 
 Each story also carries `brief`, which sets out the story as a short article. First comes the **current matter**:

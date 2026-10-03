@@ -53,8 +53,14 @@ data class Filter(
     val subject: String? = null,
 ) {
     fun apply(items: List<Item>): List<Item> =
-        items.filter { lane.matches(it) && exam.matches(it) && (subject == null || it.book == subject) }
+        oneCardPerTopic(items.filter { lane.matches(it) && exam.matches(it) && (subject == null || it.book == subject) })
             .sortedWith(compareByDescending<Item> { it.score }.thenBy { it.title })
+}
+
+/** Drops the reports shown on another card of the same list (the topic's lead). */
+fun oneCardPerTopic(items: List<Item>): List<Item> {
+    val ids = items.mapTo(HashSet()) { it.id }
+    return items.filter { it.topicOf.isEmpty() || it.topicOf !in ids }
 }
 
 /** One syllabus unit with the stories filed under it. */
@@ -67,7 +73,7 @@ data class UnitGroup(val code: String, val exam: String, val label: String, val 
 fun groupByUnit(items: List<Item>): List<UnitGroup> {
     val byCode = linkedMapOf<String, MutableList<Item>>()
     val meta = hashMapOf<String, SyllabusUnit>()
-    for (i in items.distinctBy { it.id }) for (u in i.units) {
+    for (i in oneCardPerTopic(items.distinctBy { it.id })) for (u in i.units) {
         byCode.getOrPut(u.code) { mutableListOf() }.add(i)
         meta.putIfAbsent(u.code, u)
     }
