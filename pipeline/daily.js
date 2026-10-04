@@ -33,6 +33,7 @@ const { keyFacts, summarise } = require('./lib/facts');
 const St = require('./lib/statics');
 const T = require('./lib/topics');
 const X = require('./lib/extras');
+const Th = require('./lib/threads');
 
 // When the collection runs (IST), set from ops/publish-times.md: after the
 // morning papers' uploads (closes yesterday), after PIB's and the daytime
@@ -206,38 +207,42 @@ function backfillNotes(out, notes, blocks = St.loadBlocks(path.join(out, 'wrong-
   let n = 0;
   const dir = path.join(out, 'days');
   if (!fs.existsSync(dir)) return 0;
+  const days = [];
   for (const f of fs.readdirSync(dir).filter((x) => /^\d{4}-\d{2}-\d{2}\.json$/.test(x))) {
     const file = path.join(dir, f);
-    const day = JSON.parse(fs.readFileSync(file, 'utf8'));
-    let changed = false;
+    const text = fs.readFileSync(file, 'utf8');
+    const day = JSON.parse(text);
     for (const it of day.items) {
       // re-linked when the rules change, or when one of its notes was reported wrong
       const reported = it.brief && (it.brief.sections || []).some((sec) => St.blocked(blocks, sec.where, it));
-      if (!it.brief || it.brief.v !== St.BRIEF_VERSION || reported) {
-        it.brief = St.briefOf(notes, it, blocks);
-        changed = true;
-      }
+      if (!it.brief || it.brief.v !== St.BRIEF_VERSION || reported) it.brief = St.briefOf(notes, it, blocks);
       if (it.notes && it.notes.length) continue;
       const linked = St.staticFor(notes, it);
       if (linked.length) {
         it.notes = linked;
-        changed = true;
         n++;
       }
     }
     // one card per topic: reports of the same story grouped under the best one
-    const before = JSON.stringify(day.items.map((i) => [i.topicOf, i.related]));
     T.groupTopics(day.items);
-    if (JSON.stringify(day.items.map((i) => [i.topicOf, i.related])) !== before) changed = true;
-    // the study layer: top 25, one-liners, the day's quiz
-    const study = JSON.stringify([day.items.map((i) => [i.top, i.oneLiner, i.line]), day.quiz]);
+    days.push({ file, day, before: stable(day) });
+  }
+  // topics across days: a story continuing an earlier day's topic is an update on it
+  Th.threadDays(days.map((d) => d.day));
+  for (const { file, day, before } of days) {
+    // the study layer: new today, updates, one-liners, the day's quiz
     X.markDay(day.items);
     day.quiz = X.quizFor(day.items);
-    if (JSON.stringify([day.items.map((i) => [i.top, i.oneLiner, i.line]), day.quiz]) !== study) changed = true;
     // the day's `updated` stamp changes too, so the app downloads it again
-    if (changed) fs.writeFileSync(file, JSON.stringify({ ...day, updated: new Date().toISOString() }, null, 1) + '\n');
+    if (stable(day) !== before) fs.writeFileSync(file, JSON.stringify({ ...day, updated: new Date().toISOString() }, null, 1) + '\n');
   }
   return n;
+}
+
+/** A day's content without its `updated` stamp, to see whether anything changed. */
+function stable(day) {
+  const { updated, ...rest } = day;
+  return JSON.stringify(rest);
 }
 
 function writeIndex(out) {

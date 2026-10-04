@@ -121,6 +121,15 @@ class FeedParseTest {
     }
 
     @Test
+    fun weeksAndMonthsForTheDigest() {
+        val weeks = com.appsc.ca.ui.periodsOf(listOf("2026-10-04", "2026-10-03", "2026-09-30", "2026-09-27"), "week")
+        assertEquals(listOf("2026-09-28", "2026-09-21"), weeks.map { it.start.toString() })
+        assertTrue(weeks[0].has("2026-10-04") && !weeks[0].has("2026-10-05"))
+        val months = com.appsc.ca.ui.periodsOf(listOf("2026-10-04", "2026-09-30"), "month")
+        assertEquals(listOf("2026-10-01", "2026-09-01"), months.map { it.start.toString() })
+    }
+
+    @Test
     fun speechDropsCitations() {
         val said = com.appsc.ca.data.SpeechText.speakable("RBI cut the repo rate to 5.5% (TH, 2 Oct 2026) [GK]")
         assertTrue(said, !said.contains("[GK]") && !said.contains("TH,"))

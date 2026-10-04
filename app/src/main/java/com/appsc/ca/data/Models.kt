@@ -103,8 +103,15 @@ data class Item(
     val related: List<Related> = emptyList(),
     /** The id of the card this report is shown on, when another report leads its topic. */
     val topicOf: String = "",
-    /** One of the day's 25 stories most worth revising. */
+    /** One of the day's new topics most worth reading ("New today"). */
     val top: Boolean = false,
+    /** The topic (thread) this story belongs to: the id of the story that started it. */
+    val thread: String = "",
+    /** The topic started on an earlier day: this story is an update on it, read as [line]. */
+    val update: Boolean = false,
+    /** The headline and date of the story that started the topic (on updates). */
+    val threadTitle: String = "",
+    val threadStart: String = "",
     /** Appointments, awards, sports, days...: read as [line]. */
     val oneLiner: Boolean = false,
     val line: String = "",

@@ -75,6 +75,11 @@ fun ItemCard(
     onListen: (() -> Unit)? = null,
     /** Hides a static note the reader marks wrong for this story (null: no "Wrong note" button). */
     onHideNote: ((StaticSection) -> Unit)? = null,
+    /** Every story of this story's topic on the phone, oldest first (shown when there are several). */
+    timeline: List<Item> = emptyList(),
+    /** The topic is marked done; [onDone] marks or unmarks it (null: no button). */
+    done: Boolean = false,
+    onDone: (() -> Unit)? = null,
 ) {
     var wrong by remember { mutableStateOf<StaticSection?>(null) }
     wrong?.let { sec ->
@@ -146,7 +151,7 @@ fun ItemCard(
             }
         }
         Text(topicTag(item), style = MaterialTheme.typography.labelMedium, color = C.Accent, fontWeight = FontWeight.Bold)
-        Text(item.title, style = MaterialTheme.typography.titleMedium, color = C.Ink)
+        Text((if (done) "✓ " else "") + item.title, style = MaterialTheme.typography.titleMedium, color = if (done) C.Muted else C.Ink)
         Text(
             buildString {
                 append(item.source)
@@ -202,6 +207,26 @@ fun ItemCard(
             if (item.newFacts.isNotEmpty()) {
                 SectionLabel("Current matter")
                 for (f in item.newFacts) Bullet(f.text, label = f.angle)
+            }
+            if (timeline.size > 1) {
+                SectionLabel("Topic timeline")
+                for (t in timeline) {
+                    Row(Modifier.padding(vertical = 2.dp)) {
+                        Text(
+                            shortDate(t.date),
+                            style = MaterialTheme.typography.labelMedium,
+                            color = if (t.id == item.id) C.Accent else C.Muted,
+                            fontWeight = if (t.id == item.id) FontWeight.Bold else FontWeight.Normal,
+                            modifier = Modifier.width(76.dp),
+                        )
+                        Text(
+                            t.title,
+                            style = MaterialTheme.typography.labelMedium,
+                            color = if (t.id == item.id) C.Ink else C.Body,
+                            modifier = Modifier.clickable(enabled = t.url.isNotBlank()) { openUrl(context, t.url) },
+                        )
+                    }
+                }
             }
             if (item.related.isNotEmpty()) {
                 SectionLabel("Same topic, also reported")
@@ -284,6 +309,9 @@ fun ItemCard(
                         Spacer(Modifier.width(6.dp))
                         Text("Listen from here")
                     }
+                }
+                if (onDone != null) {
+                    TextButton(onClick = onDone) { Text(if (done) "✓ Done" else "Mark done") }
                 }
                 TextButton(onClick = { share(context, item) }) {
                     Icon(Icons.Filled.Share, null, Modifier.size(18.dp))

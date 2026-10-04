@@ -26,9 +26,46 @@ import androidx.compose.ui.unit.dp
 import com.appsc.ca.data.Item
 import com.appsc.ca.data.QuizQ
 import com.appsc.ca.data.ReviseCard
+import com.appsc.ca.data.shortDate
 
 /** What the day screen lists. */
-enum class DayView(val label: String) { TOP("Top 25"), ALL("All"), ONE_LINERS("One-liners"), QUIZ("Quiz"), REVISE("Revise") }
+enum class DayView(val label: String) {
+    TOP("New today"), UPDATES("Updates"), ONE_LINERS("One-liners"), QUIZ("Quiz"), REVISE("Revise"), ALL("All"),
+}
+
+/** Minutes to read a day: new topics in full (200 words a minute), updates and one-liners as lines. */
+fun readingMinutes(newTopics: List<Item>, lines: Int): Int {
+    val words = newTopics.sumOf { i ->
+        val text = i.summary + " " + i.newFacts.joinToString(" ") { it.text } + " " +
+            i.brief.sections.joinToString(" ") { s -> s.bullets.joinToString(" ") }
+        text.split(Regex("\\s+")).size
+    }
+    return maxOf(1, (words / 200.0 + lines * 0.15).toInt() + 1)
+}
+
+/** An update on a topic read before: its headline, the topic and when it started; tap for the full story. */
+@Composable
+fun UpdateRow(item: Item, done: Boolean, expanded: @Composable () -> Unit) {
+    var open by rememberSaveable(item.id) { mutableStateOf(false) }
+    Column(Modifier.fillMaxWidth()) {
+        Column(Modifier.fillMaxWidth().clickable { open = !open }.padding(horizontal = 20.dp, vertical = 8.dp)) {
+            Row {
+                Text("↻", style = MaterialTheme.typography.bodyMedium, color = C.Accent, modifier = Modifier.width(18.dp))
+                Column {
+                    Text(item.line.ifBlank { item.title }, style = MaterialTheme.typography.bodyMedium, color = C.Body)
+                    Text(
+                        (if (done) "✓ " else "") + "Topic since ${shortDate(item.threadStart)}: ${item.threadTitle}",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = C.Faint,
+                        maxLines = 2,
+                        modifier = Modifier.padding(top = 2.dp),
+                    )
+                }
+            }
+        }
+        if (open) expanded()
+    }
+}
 
 /** A one-liner: the line, then where it is from; tap for the headline. */
 @Composable

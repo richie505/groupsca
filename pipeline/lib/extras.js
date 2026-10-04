@@ -1,11 +1,12 @@
 'use strict';
 // The day's study layer, made by fixed rules (no AI):
-//  - top: the 25 stories most worth revising (one per topic, Andhra Pradesh kept in)
+//  - top ("New today"): the 15 new topics most worth reading, Andhra Pradesh kept in;
+//    a topic that started on an earlier day is an update (threads.js), read as one line
 //  - oneLiner: appointments, awards, sports, days and the like, as one line each
 //  - quiz: fill-in-the-blank questions from the stories' own figures and years
 
-const TOP_N = 25;
-const TOP_AP_MIN = 8;
+const TOP_N = 15;
+const TOP_AP_MIN = 5;
 const QUIZ_N = 15;
 
 /** Book 6 stories (appointments, awards, sports, days, persons) read best as one line. */
@@ -44,12 +45,15 @@ function markDay(items) {
     if (isOneLiner(it)) {
       it.oneLiner = true;
       it.line = lineOf(it);
+    } else if (it.update) {
+      // a follow-up on a topic read before: its headline says what is new
+      it.line = it.title;
     }
   }
   // politics and incidents (protests, attacks, cases) are news, rarely exam topics
   const rankScore = (i) => i.score - (NOT_TOP.test(i.title) ? 20 : 0) - (i.lang === 'te' ? 5 : 0);
   const order = (a, b) => rankScore(b) - rankScore(a) || a.title.localeCompare(b.title);
-  const pool = leads.filter((i) => !i.oneLiner && rankScore(i) >= 45).sort(order);
+  const pool = leads.filter((i) => !i.oneLiner && !i.update && rankScore(i) >= 45).sort(order);
   const ap = pool.filter((i) => i.ap).slice(0, TOP_AP_MIN);
   const chosen = new Set(ap);
   for (const it of pool) {
@@ -57,7 +61,11 @@ function markDay(items) {
     chosen.add(it);
   }
   for (const it of chosen) it.top = true;
-  return { top: chosen.size, oneLiners: leads.filter((i) => i.oneLiner).length };
+  return {
+    top: chosen.size,
+    oneLiners: leads.filter((i) => i.oneLiner).length,
+    updates: leads.filter((i) => i.update && !i.oneLiner).length,
+  };
 }
 
 // ---------------------------------------------------------------------------

@@ -71,6 +71,24 @@ function sameTopic(a, b) {
   return false;
 }
 
+/**
+ * The same topic on a LATER day? Stricter than sameTopic: two informative headline words
+ * in common and a real overlap, or two words plus two of the same static notes.
+ */
+function sameThread(a, b) {
+  const wa = words(a);
+  const wb = words(b);
+  let shared = 0;
+  for (const w of wa) if (wb.has(w)) shared++;
+  if (shared < 2) return false;
+  const j = jaccard(wa, wb);
+  if (j >= 0.25) return true;
+  const sa = secsOf(a);
+  let common = 0;
+  for (const w of secsOf(b)) if (sa.has(w)) common++;
+  return common >= 2 && j >= 0.12;
+}
+
 const rank = (i) => (i.lang === 'te' ? -100 : 0) + i.score + (i.official ? 5 : 0) + (i.digest ? -50 : 0) + Math.min(10, (i.summary || '').length / 40);
 
 /**
@@ -102,4 +120,4 @@ function groupTopics(items) {
   return grouped;
 }
 
-module.exports = { groupTopics, sameTopic };
+module.exports = { groupTopics, sameTopic, sameThread };

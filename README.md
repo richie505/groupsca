@@ -56,11 +56,25 @@ workflow on every run (`pipeline/lib/statics.js`). Every story gets at least one
 | **Same syllabus unit** | otherwise, the bullet of the story's own unit (tracker G1-C4 → Book 3, unit C-4) sharing the most rare words with it |
 | **Same book** | failing that, the closest bullet in the story's book |
 
+### Read each topic once: New today, Updates, Mark done, weekly and monthly digests
+
+News runs for days (BC quota: HC strikes the GOs → AP moves SC → SLP filed → CM's statement). Each topic is
+read in full once; every later report is a one-line update on it (`pipeline/lib/threads.js`, over every day on
+file: a lead story whose headline shares two informative words with a topic from the last 21 days, and enough
+overlap or the same static notes, joins it as `update`, with `thread`, `threadTitle`, `threadStart`).
+
+- **New today** (default view): at most 15 new topics, at least 5 Andhra Pradesh, with context, current matter
+  and static notes, and an estimate of the day's reading time.
+- **Updates**: follow-ups on earlier topics, one line each ("Topic since 1 Oct: …"); tap for the full story.
+- **Topic timeline** on every card, and **Mark done**: a done topic sinks to the end and is ticked in updates.
+- **Digest** tab: a weekly (Monday–Sunday) and monthly digest, every topic once by book, with its timeline in the
+  period, its static notes, the period's one-liners and all its quiz questions; "Main topics" or "All topics".
+
 ### Top 25, one-liners, the day's quiz, revision and "Wrong note"
 
 Each day is made into a study layer by fixed rules (`pipeline/lib/extras.js`, no AI):
 
-- **Top 25**, the app's default view: the day's 25 stories most worth revising, one per topic, at least 8 of them
+- **New today** (was Top 25): the day's 15 new topics most worth reading, one per topic, at least 5 of them
   Andhra Pradesh; protests, attacks, cases and arrests are ranked down, being news rather than exam topics.
 - **One-liners**: appointments, awards, sports, days and anniversaries (book 6, or short news with no static
   notes) as one line each, like a CA magazine's last page.

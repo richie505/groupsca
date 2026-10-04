@@ -52,6 +52,11 @@ class UserStore(context: Context) {
         reviseFile.writeText(FeedJson.encodeToString(cards))
     }
 
+    /** Topics marked done (read and revised): their thread ids. */
+    fun doneThreads(): Set<String> = prefs.getStringSet(KEY_DONE, emptySet()).orEmpty()
+
+    fun setDoneThreads(s: Set<String>) = prefs.edit().putStringSet(KEY_DONE, HashSet(s)).apply()
+
     /** Static notes hidden on this phone as wrong for a story: "storyId|where". */
     fun hiddenNotes(): Set<String> = prefs.getStringSet(KEY_HIDDEN, emptySet()).orEmpty()
 
@@ -65,6 +70,7 @@ class UserStore(context: Context) {
         const val KEY_RATE = "speech_rate"
         const val KEY_ANSWERS = "quiz_answers"
         const val KEY_HIDDEN = "hidden_notes"
+        const val KEY_DONE = "done_threads"
         const val KEY_READ = "read"
         const val KEY_NOTIFY = "notify"
         const val KEY_EXAM = "exam"

@@ -312,7 +312,7 @@ test('static notes never repeat a bullet or the current matter', () => {
   assert.equal(new Set(all).size, all.length);
 });
 
-test('study layer: top 25 with AP kept in, one-liners, a quiz from the stories\' own figures', () => {
+test('study layer: new today (15) with AP kept in, one-liners, a quiz from the stories\' own figures', () => {
   const X = require('../lib/extras');
   const mk = (i, extra = {}) => ({ id: `s${i}`, date: '2026-10-02', title: `Story number ${i} about a scheme`, score: 90 - i, ap: i % 4 === 0, subject: 'Economy', ...extra });
   const items = Array.from({ length: 40 }, (_, i) => mk(i));
@@ -320,7 +320,7 @@ test('study layer: top 25 with AP kept in, one-liners, a quiz from the stories\'
   items.push(mk(51, { title: 'Activists stage protest over a scheme', score: 62 }));
   const r = X.markDay(items);
   assert.equal(r.top, X.TOP_N);
-  assert.ok(items.filter((i) => i.top && i.ap).length >= 8);
+  assert.ok(items.filter((i) => i.top && i.ap).length >= 5);
   assert.ok(!items.find((i) => i.id === 's51').top, 'a protest is news, not a top exam story');
   const one = items.find((i) => i.id === 's50');
   assert.ok(one.oneLiner && !one.top);
@@ -347,4 +347,23 @@ test('"Wrong note" reports stop that note being linked to similar stories', () =
   const where = 'Prep notes · Book 1 › A-6 › Rowlatt › Protest resignations';
   assert.ok(St.blocked(reports, where, { title: 'BC groups protest in Kurnool over BC Reservation' }));
   assert.ok(!St.blocked(reports, where, { title: 'Tagore renounced knighthood after Jallianwala Bagh' }));
+});
+
+test('topics across days: a continuing story is an update, read as its headline', () => {
+  const Th = require('../lib/threads');
+  const X = require('../lib/extras');
+  const sec = (w) => ({ topic: w, src: 'Prep notes', where: w, bullets: ['x'] });
+  const s = [sec('Reservation'), sec('NCBC')];
+  const days = [
+    { date: '2026-10-01', items: [{ id: 'a', title: 'High Court strikes down 34% BC reservation GOs in local bodies', score: 80, brief: { sections: s } }] },
+    { date: '2026-10-02', items: [{ id: 'b', title: 'AP to move Supreme Court against HC verdict on 34% BC reservation', score: 77, brief: { sections: s } },
+                                  { id: 'c', title: 'Cabinet approves Rabi MSP hike for 2027-28 season', score: 70, brief: { sections: [sec('MSP')] } }] },
+  ];
+  assert.equal(Th.threadDays(days), 1);
+  const b = days[1].items[0];
+  assert.ok(b.update && b.thread === 'a' && b.threadStart === '2026-10-01');
+  assert.ok(!days[1].items[1].update);
+  X.markDay(days[1].items);
+  assert.ok(!b.top && b.line === b.title, 'an update is a line, not a new topic');
+  assert.ok(days[1].items[1].top);
 });

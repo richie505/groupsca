@@ -78,7 +78,7 @@ import com.appsc.ca.data.shortDate
 private enum class Tab(val label: String, val icon: ImageVector) {
     TODAY("Today", Icons.Filled.Today),
     SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
-    DAYS("Days", Icons.Filled.DateRange),
+    DAYS("Digest", Icons.Filled.DateRange),
     SYLLABUS("Syllabus", Icons.AutoMirrored.Filled.MenuBook),
     SAVED("Saved", Icons.Filled.Bookmark),
 }
@@ -88,6 +88,7 @@ private sealed interface Route {
     data class UnitRoute(val code: String) : Route
     data object SettingsRoute : Route
     data class SubjectRoute(val book: String) : Route
+    data class DigestRoute(val kind: String, val start: String) : Route
 }
 
 @Composable
@@ -124,9 +125,10 @@ fun App(vm: AppViewModel) {
                 is Route.UnitRoute -> UnitScreen(vm, r.code, onBack = back)
                 Route.SettingsRoute -> SettingsScreen(vm, onBack = back)
                 is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back)
+                is Route.DigestRoute -> DigestScreen(vm, Period(r.kind, java.time.LocalDate.parse(r.start)), onBack = back)
                 null -> when (tab) {
                     Tab.TODAY -> DayFeed(vm, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
-                    Tab.DAYS -> DaysScreen(vm) { stack.add(Route.DayRoute(it)) }
+                    Tab.DAYS -> DaysScreen(vm, onDigest = { p -> stack.add(Route.DigestRoute(p.kind, p.start.toString())) }) { stack.add(Route.DayRoute(it)) }
                     Tab.SYLLABUS -> SyllabusScreen(vm) { stack.add(Route.UnitRoute(it)) }
                     Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
                     Tab.SAVED -> SavedScreen(vm)
@@ -190,6 +192,9 @@ private fun ListCard(vm: AppViewModel, list: List<Item>, index: Int, readFlag: B
     val pb by ReadAloud.playback
     ItemCard(
         i,
+        timeline = vm.timeline(list[index]),
+        done = vm.isDone(i),
+        onDone = { vm.toggleDone(i) },
         onHideNote = { sec -> vm.hideNote(list[index], sec) },
         read = readFlag ?: (i.id in vm.readIds),
         saved = savedFlag ?: vm.isSaved(i.id),
@@ -238,16 +243,22 @@ private fun DayFeed(
     // Top 25 needs a feed that marks it; an older day file shows everything
     val hasTop = dayItems.any { it.top }
     val shown = when (view) {
-        DayView.TOP -> if (hasTop) filtered.filter { it.top } else filtered
+        // new topics, the ones marked done last
+        DayView.TOP -> (if (hasTop) filtered.filter { it.top } else filtered).sortedBy { vm.isDone(it) }
+        DayView.UPDATES -> filtered.filter { it.update && !it.oneLiner }
         DayView.ONE_LINERS -> filtered.filter { it.oneLiner }
         DayView.ALL -> filtered
         DayView.QUIZ, DayView.REVISE -> emptyList()
     }
+    val newTopics = if (hasTop) filtered.filter { it.top } else filtered
+    val updateCount = filtered.count { it.update && !it.oneLiner }
+    val oneLinerCount = filtered.count { it.oneLiner }
     val perBook = Filter(lane = lane, exam = vm.exam).apply(dayItems).groupingBy { it.book }.eachCount()
 
     // rows before the stories, in the order they are added below
     val headRows = 1 + (if (date != null) 1 else 0) + (if (vm.message != null) 1 else 0) +
-        (if (fixedDate == null && vm.days.size > 1) 1 else 0) + 3 + (if (day == null || shown.isEmpty()) 1 else 0)
+        (if (fixedDate == null && vm.days.size > 1) 1 else 0) + 3 + (if (day != null && hasTop) 1 else 0) +
+        (if (day == null || shown.isEmpty()) 1 else 0)
     val listState = androidx.compose.foundation.lazy.rememberLazyListState()
     FollowReading(listState) { id -> shown.indexOfFirst { it.id == id }.let { if (it < 0) -1 else headRows + it } }
 
@@ -299,7 +310,8 @@ private fun DayFeed(
                 ChipRow {
                     for (v in DayView.entries) {
                         val n = when (v) {
-                            DayView.TOP -> if (hasTop) filtered.count { it.top } else filtered.size
+                            DayView.TOP -> newTopics.size
+                            DayView.UPDATES -> updateCount
                             DayView.ALL -> filtered.size
                             DayView.ONE_LINERS -> filtered.count { it.oneLiner }
                             DayView.QUIZ -> day?.quiz?.size ?: 0
@@ -311,6 +323,19 @@ private fun DayFeed(
                         }
                         FilterChip(selected = view == v, onClick = { view = v }, label = { Text(label) })
                     }
+                }
+            }
+            if (day != null && hasTop) {
+                item {
+                    val left = newTopics.count { !vm.isDone(it) }
+                    Text(
+                        "≈ ${readingMinutes(newTopics.filter { !vm.isDone(it) }, updateCount + oneLinerCount)} min today: " +
+                            "$left new topics to read in full, $updateCount updates on topics read before, " +
+                            "$oneLinerCount one-liners, then the quiz.",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = C.Muted,
+                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp),
+                    )
                 }
             }
             item {
@@ -357,6 +382,13 @@ private fun DayFeed(
                         item { Empty(if (vm.revise.isEmpty()) "Nothing to revise. Quiz answers you get wrong come back here after 1, 3 and 7 days." else "Nothing due today. ${vm.revise.size} questions are waiting for later days.") }
                     }
                     items(due, key = { it.q.id }) { c -> ReviseCardView(c) { ok -> vm.reviseAnswer(c, ok) } }
+                }
+                DayView.UPDATES -> {
+                    if (shown.isEmpty()) item { Empty("No updates on earlier topics for ${shortDate(day.date)}.") }
+                    else item { Empty("Follow-ups on topics that started on an earlier day: the static notes are on the first day's card. Tap one for the full story and the topic's timeline.") }
+                    itemsIndexed(shown, key = { _, x -> x.id }) { idx, x ->
+                        UpdateRow(x, vm.isDone(x)) { ListCard(vm, shown, idx) }
+                    }
                 }
                 DayView.ONE_LINERS -> {
                     if (shown.isEmpty()) item { Empty("No one-liners under this filter for ${shortDate(day.date)}.") }
@@ -486,9 +518,32 @@ private fun NewsDayBar(date: String, summary: com.appsc.ca.data.DaySummary?, upd
 // ---------------------------------------------------------------------------
 
 @Composable
-private fun DaysScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
+private fun DaysScreen(vm: AppViewModel, onDigest: (Period) -> Unit, onOpen: (String) -> Unit) {
+    val dates = vm.days.map { it.date }
+    val weeks = periodsOf(dates, "week")
+    val months = periodsOf(dates, "month")
     LazyColumn(Modifier.fillMaxSize()) {
-        item { Header("All days", "Last ${vm.days.size} days are on this phone and read offline") }
+        item { Header("Days & digests", "Last ${vm.days.size} days are on this phone and read offline") }
+        if (weeks.isNotEmpty()) {
+            item {
+                Text(
+                    "Revise from the digests: each topic once, by book, with its timeline and static notes, the one-liners and the quiz.",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = C.Muted,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                )
+            }
+            item {
+                ChipRow {
+                    for (w in weeks) FilterChip(selected = false, onClick = { onDigest(w) }, label = { Text(if (w == weeks.first()) "This week" else w.title.removePrefix("Week of ")) })
+                }
+            }
+            item {
+                ChipRow {
+                    for (m in months) FilterChip(selected = false, onClick = { onDigest(m) }, label = { Text(m.title) })
+                }
+            }
+        }
         if (vm.days.isEmpty()) item { Empty("Nothing downloaded yet.") }
         items(vm.days, key = { it.date }) { d ->
             val ap = d.items.count { it.ap }

@@ -50,6 +50,25 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         private set
     var hiddenNotes by mutableStateOf<Set<String>>(emptySet())
         private set
+    var doneThreads by mutableStateOf<Set<String>>(emptySet())
+        private set
+
+    /** The topic a story belongs to (older feeds: the story itself). */
+    fun threadOf(item: Item): String = item.thread.ifBlank { item.id }
+
+    fun isDone(item: Item) = threadOf(item) in doneThreads
+
+    fun toggleDone(item: Item) {
+        val t = threadOf(item)
+        doneThreads = if (t in doneThreads) doneThreads - t else doneThreads + t
+        user.setDoneThreads(doneThreads)
+    }
+
+    /** Every story of a topic on this phone, oldest first: the topic's timeline. */
+    fun timeline(item: Item): List<Item> {
+        if (item.thread.isBlank()) return emptyList()
+        return allItems.filter { it.thread == item.thread && it.topicOf.isEmpty() }.distinctBy { it.id }.sortedBy { it.date }
+    }
 
     private fun today() = java.time.LocalDate.now().toEpochDay()
 
@@ -111,8 +130,9 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val a = user.answers()
                 val rv = user.revise()
                 val h = user.hiddenNotes()
+                val dn = user.doneThreads()
                 withContext(Dispatchers.Main) {
-                    days = d; index = i; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h
+                    days = d; index = i; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn
                     exam = user.exam; notify = user.notify; speechRate = user.speechRate
                 }
             }
