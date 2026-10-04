@@ -35,6 +35,23 @@ data class Day(
     val date: String,
     val updated: String = "",
     val items: List<Item> = emptyList(),
+    /** The day's quiz: fill-in-the-blank questions from the stories' own figures and years. */
+    val quiz: List<QuizQ> = emptyList(),
+)
+
+@Serializable
+data class QuizQ(
+    val id: String,
+    /** The story it comes from. */
+    val item: String = "",
+    val title: String = "",
+    /** The sentence with "____" for the answer. */
+    val q: String,
+    val options: List<String> = emptyList(),
+    /** Index of the right option. */
+    val answer: Int = 0,
+    /** figure · year */
+    val kind: String = "",
 )
 
 @Serializable
@@ -86,6 +103,11 @@ data class Item(
     val related: List<Related> = emptyList(),
     /** The id of the card this report is shown on, when another report leads its topic. */
     val topicOf: String = "",
+    /** One of the day's 25 stories most worth revising. */
+    val top: Boolean = false,
+    /** Appointments, awards, sports, days...: read as [line]. */
+    val oneLiner: Boolean = false,
+    val line: String = "",
 ) {
     /** Key facts that say something the context line does not already say. */
     val newFacts: List<Fact> get() = facts.filter { f -> summary.isBlank() || !summary.contains(f.text.take(60)) }

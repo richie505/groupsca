@@ -56,6 +56,23 @@ workflow on every run (`pipeline/lib/statics.js`). Every story gets at least one
 | **Same syllabus unit** | otherwise, the bullet of the story's own unit (tracker G1-C4 → Book 3, unit C-4) sharing the most rare words with it |
 | **Same book** | failing that, the closest bullet in the story's book |
 
+### Top 25, one-liners, the day's quiz, revision and "Wrong note"
+
+Each day is made into a study layer by fixed rules (`pipeline/lib/extras.js`, no AI):
+
+- **Top 25**, the app's default view: the day's 25 stories most worth revising, one per topic, at least 8 of them
+  Andhra Pradesh; protests, attacks, cases and arrests are ranked down, being news rather than exam topics.
+- **One-liners**: appointments, awards, sports, days and anniversaries (book 6, or short news with no static
+  notes) as one line each, like a CA magazine's last page.
+- **Quiz**: up to 15 fill-in-the-blank questions a day, one per top story, from the story's own figures and years
+  (₹5,313 crore, 14.7%, 1974) with three near-miss choices; citations are left out and the news year itself is
+  never asked. A wrong answer goes to **Revise**, where it comes back after 1, then 3, then 7 days.
+- **Wrong note?** under every static section: *Hide on this phone*, or *Hide and report*, which opens a GitHub issue
+  in this repository ("Wrong note: …", with the note and the story). The daily run reads the issues
+  (`pipeline/tools/wrong-notes.js` → `feed/wrong-notes.json`) and stops linking that note to stories that share
+  two headline words with the reported one, on every day already on file too. Close a mistaken report with the
+  label `not-wrong` to undo it.
+
 ### One card per topic, laid out like a daily CA magazine
 
 The layout follows the daily current-affairs magazines (PMF IAS LENS was the model; none of its text is used):

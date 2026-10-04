@@ -108,6 +108,19 @@ class FeedParseTest {
     }
 
     @Test
+    fun readsTheStudyLayer() {
+        val d = FeedJson.decodeFromString<Day>(
+            """{"date":"2026-10-02","items":[{"id":"a","date":"2026-10-02","title":"t","top":true},
+               {"id":"b","date":"2026-10-02","title":"Panghal wins gold","oneLiner":true,"line":"Panghal won 80 kg gold."}],
+              "quiz":[{"id":"a:1","item":"a","title":"t","q":"NABARD sets aside ____ for horticulture.",
+                       "options":["₹3,985 crore","₹5,313 crore","₹7,970 crore","₹10,626 crore"],"answer":1,"kind":"figure"}]}""".trimIndent(),
+        )
+        assertTrue(d.items[0].top)
+        assertEquals("Panghal won 80 kg gold.", d.items[1].line)
+        assertEquals("₹5,313 crore", d.quiz[0].options[d.quiz[0].answer])
+    }
+
+    @Test
     fun speechDropsCitations() {
         val said = com.appsc.ca.data.SpeechText.speakable("RBI cut the repo rate to 5.5% (TH, 2 Oct 2026) [GK]")
         assertTrue(said, !said.contains("[GK]") && !said.contains("TH,"))

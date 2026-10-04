@@ -32,6 +32,7 @@ const S = require('./lib/score');
 const { keyFacts, summarise } = require('./lib/facts');
 const St = require('./lib/statics');
 const T = require('./lib/topics');
+const X = require('./lib/extras');
 
 // When the collection runs (IST), set from ops/publish-times.md: after the
 // morning papers' uploads (closes yesterday), after PIB's and the daytime
@@ -201,7 +202,7 @@ function readDay(out, date) {
   }
 }
 
-function backfillNotes(out, notes) {
+function backfillNotes(out, notes, blocks = St.loadBlocks(path.join(out, 'wrong-notes.json'))) {
   let n = 0;
   const dir = path.join(out, 'days');
   if (!fs.existsSync(dir)) return 0;
@@ -210,8 +211,10 @@ function backfillNotes(out, notes) {
     const day = JSON.parse(fs.readFileSync(file, 'utf8'));
     let changed = false;
     for (const it of day.items) {
-      if (!it.brief || it.brief.v !== St.BRIEF_VERSION) {
-        it.brief = St.briefOf(notes, it);
+      // re-linked when the rules change, or when one of its notes was reported wrong
+      const reported = it.brief && (it.brief.sections || []).some((sec) => St.blocked(blocks, sec.where, it));
+      if (!it.brief || it.brief.v !== St.BRIEF_VERSION || reported) {
+        it.brief = St.briefOf(notes, it, blocks);
         changed = true;
       }
       if (it.notes && it.notes.length) continue;
@@ -226,6 +229,11 @@ function backfillNotes(out, notes) {
     const before = JSON.stringify(day.items.map((i) => [i.topicOf, i.related]));
     T.groupTopics(day.items);
     if (JSON.stringify(day.items.map((i) => [i.topicOf, i.related])) !== before) changed = true;
+    // the study layer: top 25, one-liners, the day's quiz
+    const study = JSON.stringify([day.items.map((i) => [i.top, i.oneLiner, i.line]), day.quiz]);
+    X.markDay(day.items);
+    day.quiz = X.quizFor(day.items);
+    if (JSON.stringify([day.items.map((i) => [i.top, i.oneLiner, i.line]), day.quiz]) !== study) changed = true;
     // the day's `updated` stamp changes too, so the app downloads it again
     if (changed) fs.writeFileSync(file, JSON.stringify({ ...day, updated: new Date().toISOString() }, null, 1) + '\n');
   }
@@ -427,7 +435,7 @@ async function run(args) {
     const linked = St.staticFor(notes, it);
     if (linked.length) it.notes = linked;
     // the article layout: current matter, then the static notes by topic
-    if (notes && notes.size) it.brief = St.briefOf(notes, it);
+    if (notes && notes.size) it.brief = St.briefOf(notes, it, St.loadBlocks(path.join(args.out, 'wrong-notes.json')));
   }
   const notesLoaded = !!(notes && notes.size);
   const vetoed = scored.filter((x) => x.result.vetoed).length;

@@ -11,7 +11,10 @@ import com.appsc.ca.data.Exam
 import com.appsc.ca.data.FeedIndex
 import com.appsc.ca.data.FeedStore
 import com.appsc.ca.data.Item
+import com.appsc.ca.data.QuizQ
 import com.appsc.ca.data.RefreshResult
+import com.appsc.ca.data.ReviseCard
+import com.appsc.ca.data.StaticSection
 import com.appsc.ca.data.UserStore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -41,6 +44,55 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         private set
     var speechRate by mutableStateOf(1f)
         private set
+    var answers by mutableStateOf<Map<String, Boolean>>(emptyMap())
+        private set
+    var revise by mutableStateOf<List<ReviseCard>>(emptyList())
+        private set
+    var hiddenNotes by mutableStateOf<Set<String>>(emptySet())
+        private set
+
+    private fun today() = java.time.LocalDate.now().toEpochDay()
+
+    /** Revision cards due today or earlier. */
+    val dueCards: List<ReviseCard> get() = revise.filter { it.due <= today() }
+
+    /** A day's quiz answer; a wrong one goes to revision (back tomorrow). */
+    fun answer(q: QuizQ, chosen: Int) {
+        if (q.id in answers) return
+        val right = chosen == q.answer
+        answers = answers + (q.id to right)
+        user.setAnswers(answers)
+        if (!right && revise.none { it.q.id == q.id }) saveRevise(revise + ReviseCard(q, today() + 1, 0))
+    }
+
+    /** A revision answer: right moves it to 3, then 7 days on, then it is learnt; wrong starts it again. */
+    fun reviseAnswer(card: ReviseCard, right: Boolean) {
+        val gaps = listOf(1L, 3L, 7L)
+        val rest = revise.filterNot { it.q.id == card.q.id }
+        saveRevise(
+            when {
+                !right -> rest + card.copy(due = today() + 1, step = 0)
+                card.step + 1 >= gaps.size -> rest
+                else -> rest + card.copy(due = today() + gaps[card.step + 1], step = card.step + 1)
+            },
+        )
+    }
+
+    private fun saveRevise(cards: List<ReviseCard>) {
+        revise = cards
+        viewModelScope.launch(Dispatchers.IO) { user.setRevise(cards) }
+    }
+
+    /** The story with the static notes hidden on this phone left out. */
+    fun visible(item: Item): Item {
+        if (hiddenNotes.isEmpty() || item.brief.sections.none { "${item.id}|${it.where}" in hiddenNotes }) return item
+        return item.copy(brief = item.brief.copy(sections = item.brief.sections.filterNot { "${item.id}|${it.where}" in hiddenNotes }))
+    }
+
+    fun hideNote(item: Item, sec: StaticSection) {
+        hiddenNotes = hiddenNotes + "${item.id}|${sec.where}"
+        user.setHiddenNotes(hiddenNotes)
+    }
 
     fun chooseRate(r: Float) {
         speechRate = r
@@ -56,8 +108,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val i = feed.cachedIndex()
                 val s = user.saved()
                 val r = user.readIds()
+                val a = user.answers()
+                val rv = user.revise()
+                val h = user.hiddenNotes()
                 withContext(Dispatchers.Main) {
-                    days = d; index = i; saved = s; readIds = r
+                    days = d; index = i; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h
                     exam = user.exam; notify = user.notify; speechRate = user.speechRate
                 }
             }

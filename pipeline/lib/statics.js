@@ -647,7 +647,7 @@ function secLabel(sec) {
  * heading, so a single loose word ("stage", "protest") never makes a section.
  * Telugu stories are read through their English gloss.
  */
-function briefFor(index, item0) {
+function briefFor(index, item0, blocks = []) {
   if (!index || !index.size) return { sections: [], gaps: [] };
   const telugu = /[ఀ-౿]/.test(item0.title);
   const terms = telugu ? glossTerms(item0.title) : [];
@@ -715,6 +715,8 @@ function briefFor(index, item0) {
     // the story's own book and units first; Prep before Rocket on a tie
     const inBook = books.has(sec.book) || (sec.book === 6 && books.has(6));
     const inUnit = sec.src === 'prep' && units.has(sec.unit);
+    // a note the reader marked wrong for a story like this one
+    if (blocked(blocks, sec.where, item)) continue;
     // a heading that uses a story word in another sense
     if (SENSES.some(([re, need]) => re.test(sec.head || sec.title) && !want.has(need))) continue;
     // another book's subsection must share two informative words: one shared
@@ -804,12 +806,62 @@ function briefFor(index, item0) {
   return { sections, gaps };
 }
 
+// ---------------------------------------------------------------------------
+// "Wrong note" reports from the app (GitHub issues)
+// ---------------------------------------------------------------------------
+
+const REPORT_SKIP = new Set(['andhra', 'pradesh', 'india', 'govt', 'government', 'centre', 'state', 'says', 'minister']);
+const reportWords = (title) => {
+  const ws = new Set(tokens(title).filter((w) => !NEWS_WORDS.has(w) && !REPORT_SKIP.has(w)));
+  // two-letter short forms tokens() leaves out: BC, SC, ST
+  for (const m of String(title).matchAll(/\b([A-Z]{2})\b/g)) if (!['AP', 'CM', 'PM'].includes(m[1])) ws.add(m[1].toLowerCase());
+  return [...ws];
+};
+
+/**
+ * Issues titled "Wrong note: ..." with a body holding "where: <note>" and "story: <headline>":
+ * [{ where, words }]. Closed issues labelled "not-wrong" are dropped (a mistaken report).
+ */
+function parseReports(issues) {
+  const out = [];
+  for (const i of issues || []) {
+    if (!/^wrong note\b/i.test(i.title || '')) continue;
+    if ((i.labels || []).some((l) => (l.name || l) === 'not-wrong')) continue;
+    const body = String(i.body || '');
+    const where = (body.match(/^where:\s*(.+)$/im) || [])[1];
+    const story = (body.match(/^story:\s*(.+)$/im) || [])[1] || '';
+    if (!where) continue;
+    out.push({ where: where.trim(), words: reportWords(story), story: story.trim() });
+  }
+  return out;
+}
+
+/** Was this note reported wrong for a story sharing two headline words with this one? */
+function blocked(blocks, where, item) {
+  if (!blocks || !blocks.length) return false;
+  const mine = new Set(reportWords(item.title));
+  return blocks.some((b) => b.where === where && b.words.filter((w) => mine.has(w)).length >= Math.min(2, b.words.length));
+}
+
+/** feed/wrong-notes.json, written by the daily workflow from the reports. */
+function loadBlocks(file) {
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch {
+    return [];
+  }
+}
+
+module.exports.parseReports = parseReports;
+module.exports.loadBlocks = loadBlocks;
+module.exports.blocked = blocked;
+
 // Bumped when briefFor changes, so stories on file are re-linked.
 const BRIEF_VERSION = 4;
 
 /** briefFor as stored on a story: { v, sections, gaps }. */
-function briefOf(index, item) {
-  const { sections, gaps } = briefFor(index, item);
+function briefOf(index, item, blocks = []) {
+  const { sections, gaps } = briefFor(index, item, blocks);
   return { v: BRIEF_VERSION, sections, gaps };
 }
 

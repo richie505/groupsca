@@ -9,6 +9,9 @@ import java.io.File
  * What belongs to the reader: saved stories (kept in full, so they outlive the
  * 60-day cache), which stories were opened, and settings.
  */
+@kotlinx.serialization.Serializable
+data class ReviseCard(val q: QuizQ, val due: Long, val step: Int = 0)
+
 class UserStore(context: Context) {
     private val prefs = context.getSharedPreferences("user", Context.MODE_PRIVATE)
     private val savedFile = File(context.filesDir, "saved.json")
@@ -32,12 +35,36 @@ class UserStore(context: Context) {
         get() = runCatching { Exam.valueOf(prefs.getString(KEY_EXAM, null) ?: "BOTH") }.getOrDefault(Exam.BOTH)
         set(v) = prefs.edit().putString(KEY_EXAM, v.name).apply()
 
+    /** Quiz answers: question id -> answered right. */
+    fun answers(): Map<String, Boolean> =
+        prefs.getStringSet(KEY_ANSWERS, emptySet()).orEmpty().associate { it.substringBeforeLast('|') to it.endsWith("|1") }
+
+    fun setAnswers(a: Map<String, Boolean>) =
+        prefs.edit().putStringSet(KEY_ANSWERS, a.mapTo(HashSet()) { (k, v) -> "$k|${if (v) 1 else 0}" }).apply()
+
+    private val reviseFile = File(context.filesDir, "revise.json")
+
+    /** Questions answered wrong, coming back after 1, 3 and 7 days. */
+    fun revise(): List<ReviseCard> =
+        runCatching { FeedJson.decodeFromString<List<ReviseCard>>(reviseFile.readText()) }.getOrDefault(emptyList())
+
+    fun setRevise(cards: List<ReviseCard>) {
+        reviseFile.writeText(FeedJson.encodeToString(cards))
+    }
+
+    /** Static notes hidden on this phone as wrong for a story: "storyId|where". */
+    fun hiddenNotes(): Set<String> = prefs.getStringSet(KEY_HIDDEN, emptySet()).orEmpty()
+
+    fun setHiddenNotes(s: Set<String>) = prefs.edit().putStringSet(KEY_HIDDEN, HashSet(s)).apply()
+
     var speechRate: Float
         get() = prefs.getFloat(KEY_RATE, 1f)
         set(v) = prefs.edit().putFloat(KEY_RATE, v).apply()
 
     private companion object {
         const val KEY_RATE = "speech_rate"
+        const val KEY_ANSWERS = "quiz_answers"
+        const val KEY_HIDDEN = "hidden_notes"
         const val KEY_READ = "read"
         const val KEY_NOTIFY = "notify"
         const val KEY_EXAM = "exam"

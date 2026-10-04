@@ -186,16 +186,17 @@ private fun Empty(text: String) {
 /** A card in a list that read-aloud can start from and highlight. */
 @Composable
 private fun ListCard(vm: AppViewModel, list: List<Item>, index: Int, readFlag: Boolean? = null, savedFlag: Boolean? = null) {
-    val i = list[index]
+    val i = vm.visible(list[index])
     val pb by ReadAloud.playback
     ItemCard(
         i,
+        onHideNote = { sec -> vm.hideNote(list[index], sec) },
         read = readFlag ?: (i.id in vm.readIds),
         saved = savedFlag ?: vm.isSaved(i.id),
         onToggleSave = { vm.toggleSave(i) },
         onRead = { vm.markRead(i.id) },
         reading = pb.active && pb.pageId == i.id,
-        onListen = if (Listening.canRead(i)) ({ Listening.play(list, index, vm.speechRate) }) else null,
+        onListen = if (Listening.canRead(i)) ({ Listening.play(list.map(vm::visible), index, vm.speechRate) }) else null,
     )
 }
 
@@ -226,18 +227,27 @@ private fun DayFeed(
     var picked by rememberSaveable { mutableStateOf<String?>(null) }
     var lane by rememberSaveable { mutableStateOf(Lane.ALL) }
     var subject by rememberSaveable { mutableStateOf<String?>(null) }
+    var view by rememberSaveable { mutableStateOf(DayView.TOP) }
 
     val date = fixedDate ?: picked ?: vm.days.firstOrNull()?.date
     val day = vm.days.find { it.date == date }
     val summary = vm.index?.days?.find { it.date == date }
     val dayItems = day?.items.orEmpty()
     val base = Filter(exam = vm.exam)
-    val shown = Filter(lane, vm.exam, subject).apply(dayItems)
+    val filtered = Filter(lane, vm.exam, subject).apply(dayItems)
+    // Top 25 needs a feed that marks it; an older day file shows everything
+    val hasTop = dayItems.any { it.top }
+    val shown = when (view) {
+        DayView.TOP -> if (hasTop) filtered.filter { it.top } else filtered
+        DayView.ONE_LINERS -> filtered.filter { it.oneLiner }
+        DayView.ALL -> filtered
+        DayView.QUIZ, DayView.REVISE -> emptyList()
+    }
     val perBook = Filter(lane = lane, exam = vm.exam).apply(dayItems).groupingBy { it.book }.eachCount()
 
     // rows before the stories, in the order they are added below
     val headRows = 1 + (if (date != null) 1 else 0) + (if (vm.message != null) 1 else 0) +
-        (if (fixedDate == null && vm.days.size > 1) 1 else 0) + 2 + (if (day == null || shown.isEmpty()) 1 else 0)
+        (if (fixedDate == null && vm.days.size > 1) 1 else 0) + 3 + (if (day == null || shown.isEmpty()) 1 else 0)
     val listState = androidx.compose.foundation.lazy.rememberLazyListState()
     FollowReading(listState) { id -> shown.indexOfFirst { it.id == id }.let { if (it < 0) -1 else headRows + it } }
 
@@ -287,6 +297,24 @@ private fun DayFeed(
             }
             item {
                 ChipRow {
+                    for (v in DayView.entries) {
+                        val n = when (v) {
+                            DayView.TOP -> if (hasTop) filtered.count { it.top } else filtered.size
+                            DayView.ALL -> filtered.size
+                            DayView.ONE_LINERS -> filtered.count { it.oneLiner }
+                            DayView.QUIZ -> day?.quiz?.size ?: 0
+                            DayView.REVISE -> vm.dueCards.size
+                        }
+                        val label = when (v) {
+                            DayView.QUIZ -> "Quiz (${day?.quiz?.count { it.id in vm.answers } ?: 0}/$n)"
+                            else -> "${v.label} ($n)"
+                        }
+                        FilterChip(selected = view == v, onClick = { view = v }, label = { Text(label) })
+                    }
+                }
+            }
+            item {
+                ChipRow {
                     for (l in Lane.entries) {
                         val n = base.copy(lane = l).apply(dayItems).size
                         FilterChip(selected = lane == l, onClick = { lane = l }, label = { Text("${l.label} ($n)") })
@@ -311,10 +339,34 @@ private fun DayFeed(
                 item {
                     Empty(if (vm.refreshing) "Downloading today's updates…" else "No updates on this phone yet. Pull down to download.")
                 }
-            } else if (shown.isEmpty()) {
-                item { Empty("Nothing under this filter for ${shortDate(day.date)}.") }
+            } else when (view) {
+                DayView.QUIZ -> {
+                    if (day.quiz.isEmpty()) item { Empty("No quiz for ${shortDate(day.date)} yet: it is made at the next update.") }
+                    else item {
+                        val got = day.quiz.count { vm.answers[it.id] == true }
+                        val done = day.quiz.count { it.id in vm.answers }
+                        Empty("From the day's own figures and years. $got right of $done answered; wrong ones go to Revise.")
+                    }
+                    itemsIndexed(day.quiz, key = { _, q -> q.id }) { n, q ->
+                        QuizCard(n + 1, q, vm.answers[q.id]) { vm.answer(q, it) }
+                    }
+                }
+                DayView.REVISE -> {
+                    val due = vm.dueCards
+                    if (due.isEmpty()) {
+                        item { Empty(if (vm.revise.isEmpty()) "Nothing to revise. Quiz answers you get wrong come back here after 1, 3 and 7 days." else "Nothing due today. ${vm.revise.size} questions are waiting for later days.") }
+                    }
+                    items(due, key = { it.q.id }) { c -> ReviseCardView(c) { ok -> vm.reviseAnswer(c, ok) } }
+                }
+                DayView.ONE_LINERS -> {
+                    if (shown.isEmpty()) item { Empty("No one-liners under this filter for ${shortDate(day.date)}.") }
+                    items(shown, key = { it.id }) { OneLinerRow(it) }
+                }
+                else -> {
+                    if (shown.isEmpty()) item { Empty("Nothing under this filter for ${shortDate(day.date)}.") }
+                    itemsIndexed(shown, key = { _, x -> x.id }) { idx, _ -> ListCard(vm, shown, idx) }
+                }
             }
-            itemsIndexed(shown, key = { _, x -> x.id }) { idx, _ -> ListCard(vm, shown, idx) }
             item { Spacer(Modifier.height(24.dp)) }
         }
     }

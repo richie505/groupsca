@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: write
+  issues: read
 
 concurrency:
   group: daily-feed
@@ -47,6 +48,14 @@ jobs:
           node-version: 22
       - name: Test the pipeline
         run: npm test
+      - name: Read "Wrong note" reports
+        # Reports the app opens as issues ("Wrong note: ..."); the run stops linking
+        # that note to similar stories. Not fatal: no reports, no change.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/issues?state=all&per_page=100" > /tmp/issues.json || echo '[]' > /tmp/issues.json
+          node pipeline/tools/wrong-notes.js < /tmp/issues.json || true
       - name: Collect and score
         run: node pipeline/daily.js ${{ github.event.inputs.date && format('--date {0}', github.event.inputs.date) || '' }}
       - name: Publish

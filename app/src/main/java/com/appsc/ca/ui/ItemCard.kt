@@ -29,6 +29,8 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.runtime.remember
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -71,7 +73,36 @@ fun ItemCard(
     reading: Boolean = false,
     /** Starts read-aloud from this story (null: not offered, e.g. a Telugu headline). */
     onListen: (() -> Unit)? = null,
+    /** Hides a static note the reader marks wrong for this story (null: no "Wrong note" button). */
+    onHideNote: ((StaticSection) -> Unit)? = null,
 ) {
+    var wrong by remember { mutableStateOf<StaticSection?>(null) }
+    wrong?.let { sec ->
+        val ctx = LocalContext.current
+        AlertDialog(
+            onDismissRequest = { wrong = null },
+            title = { Text("Wrong note?") },
+            text = {
+                Text(
+                    "\"${sec.topic}\" does not fit this story.\n\nHide it here, or also report it: the report opens a " +
+                        "GitHub page (sign in once) and from the next update this note is no longer linked to stories like this one, on every day.",
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    openUrl(ctx, wrongNoteUrl(item, sec))
+                    onHideNote?.invoke(sec)
+                    wrong = null
+                }) { Text("Hide and report") }
+            },
+            dismissButton = {
+                TextButton(onClick = {
+                    onHideNote?.invoke(sec)
+                    wrong = null
+                }) { Text("Hide on this phone") }
+            },
+        )
+    }
     var open by rememberSaveable(item.id) { mutableStateOf(false) }
     val context = LocalContext.current
 
@@ -185,7 +216,9 @@ fun ItemCard(
             }
             if (item.brief.sections.isNotEmpty()) {
                 SectionLabel("Static notes")
-                item.brief.sections.forEachIndexed { i, sec -> StaticSectionView(i + 1, sec) }
+                item.brief.sections.forEachIndexed { i, sec ->
+                    StaticSectionView(i + 1, sec, onWrong = onHideNote?.let { { wrong = sec } })
+                }
                 if (item.brief.gaps.isNotEmpty()) {
                     Text(
                         "Not in your notes: " + item.brief.gaps.joinToString(", "),
@@ -264,7 +297,7 @@ fun ItemCard(
 
 /** "1. Biogas And Biomass", where it is in the notes, then its bullets. */
 @Composable
-fun StaticSectionView(n: Int, sec: StaticSection) {
+fun StaticSectionView(n: Int, sec: StaticSection, onWrong: (() -> Unit)? = null) {
     Column(
         Modifier.fillMaxWidth().padding(bottom = 8.dp).clip(RoundedCornerShape(10.dp))
             .background(C.AccentSoft).padding(10.dp),
@@ -277,7 +310,25 @@ fun StaticSectionView(n: Int, sec: StaticSection) {
             color = C.Muted,
             modifier = Modifier.padding(top = 6.dp),
         )
+        if (onWrong != null) {
+            Text(
+                "Wrong note?",
+                style = MaterialTheme.typography.labelMedium,
+                color = C.Faint,
+                modifier = Modifier.padding(top = 4.dp).clickable(onClick = onWrong).padding(vertical = 4.dp),
+            )
+        }
     }
+}
+
+/** Where a "Wrong note" report goes: a new issue in the feed's repository, read by the next update. */
+const val REPORT_REPO = "https://github.com/richie505/groupsca"
+
+fun wrongNoteUrl(item: Item, sec: StaticSection): String {
+    val enc = { t: String -> java.net.URLEncoder.encode(t, "UTF-8") }
+    val title = "Wrong note: ${sec.topic}".take(120)
+    val body = "where: ${sec.where}\nstory: ${item.title}\n\n(Sent from the APPSC Daily CA app. The next update stops linking this note to stories like this one.)"
+    return "$REPORT_REPO/issues/new?title=${enc(title)}&body=${enc(body)}"
 }
 
 /** A bullet, with a bold "Label:" lead when given (the LENS way: "Coverage: ..."). */

@@ -311,3 +311,40 @@ test('static notes never repeat a bullet or the current matter', () => {
   assert.ok(!all.some((x) => /six members/.test(x)));
   assert.equal(new Set(all).size, all.length);
 });
+
+test('study layer: top 25 with AP kept in, one-liners, a quiz from the stories\' own figures', () => {
+  const X = require('../lib/extras');
+  const mk = (i, extra = {}) => ({ id: `s${i}`, date: '2026-10-02', title: `Story number ${i} about a scheme`, score: 90 - i, ap: i % 4 === 0, subject: 'Economy', ...extra });
+  const items = Array.from({ length: 40 }, (_, i) => mk(i));
+  items.push(mk(50, { subject: 'Current Affairs', title: 'Ankush Panghal wins Asian Games gold', facts: [{ angle: 'Sports', text: 'Ankush Panghal won the men’s 80 kg gold at the Asian Games.' }] }));
+  items.push(mk(51, { title: 'Activists stage protest over a scheme', score: 62 }));
+  const r = X.markDay(items);
+  assert.equal(r.top, X.TOP_N);
+  assert.ok(items.filter((i) => i.top && i.ap).length >= 8);
+  assert.ok(!items.find((i) => i.id === 's51').top, 'a protest is news, not a top exam story');
+  const one = items.find((i) => i.id === 's50');
+  assert.ok(one.oneLiner && !one.top);
+  assert.match(one.line, /80 kg gold/);
+
+  const q = X.questionFrom('NABARD sets aside ₹5,313 crore for horticulture in Rayalaseema and Prakasam (TH, 5 Jan 2026).', 7, 2026);
+  assert.equal(q.options[q.answer], '₹5,313 crore');
+  assert.equal(q.options.length, 4);
+  assert.equal(new Set(q.options).size, 4);
+  assert.ok(!/TH, 5 Jan/.test(q.q), 'citations are left out');
+  // a year of the news itself is no question; an older one is
+  assert.equal(X.questionFrom('The policy was notified by the State government in the year 2026 for all districts.', 3, 2026), null);
+  const y = X.questionFrom('The Central Pollution Control Board was constituted under the Water Act, 1974.', 3, 2026);
+  assert.equal(y.options[y.answer], '1974');
+});
+
+test('"Wrong note" reports stop that note being linked to similar stories', () => {
+  const reports = St.parseReports([
+    { title: 'Wrong note: Protest resignations', body: 'where: Prep notes · Book 1 › A-6 › Rowlatt › Protest resignations\nstory: BC leaders stage protest in Nellore over BC Reservation GO' },
+    { title: 'Wrong note: x', labels: [{ name: 'not-wrong' }], body: 'where: Prep notes · Book 3\nstory: anything' },
+    { title: 'Some other issue', body: 'where: y' },
+  ]);
+  assert.equal(reports.length, 1);
+  const where = 'Prep notes · Book 1 › A-6 › Rowlatt › Protest resignations';
+  assert.ok(St.blocked(reports, where, { title: 'BC groups protest in Kurnool over BC Reservation' }));
+  assert.ok(!St.blocked(reports, where, { title: 'Tagore renounced knighthood after Jallianwala Bagh' }));
+});
