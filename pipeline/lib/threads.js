@@ -18,12 +18,16 @@ const dayNo = (iso) => Math.floor(Date.parse(`${iso}T00:00:00Z`) / 86400000);
  *   update       true when the topic started on an earlier day
  *   threadTitle  that first story's headline (on updates)
  *   threadStart  the date it started (on updates)
+ * `links`: the reader's corrections, story id -> the topic (thread id) it belongs to, or "" for
+ * a topic of its own ("Not this topic" / "Same topic as ..." reports from the app).
  * Returns the number of updates.
  */
-function threadDays(days) {
+function threadDays(days, links = {}) {
   const sorted = [...days].sort((a, b) => a.date.localeCompare(b.date));
   const threads = [];
   let updates = 0;
+  // how common each headline word is, over every story on file: a link needs a rare shared subject
+  const df = T.headlineDf(sorted.flatMap((d) => d.items.filter((i) => !i.topicOf && !i.digest)));
   for (const day of sorted) {
     const today = dayNo(day.date);
     const opened = [];
@@ -36,9 +40,16 @@ function threadDays(days) {
     const leads = day.items.filter((i) => !i.topicOf && !i.digest).sort((a, b) => b.score - a.score);
     for (const it of leads) {
       // the topic it continues: an earlier day's, still open, matching its first story or a recent update
-      const t = threads.find(
-        (x) => today - x.last <= OPEN_DAYS && [x.members[0], ...x.members.slice(-3)].some((m) => T.sameThread(m, it))
-      );
+      const forced = links[it.id];
+      const t =
+        forced === '' ? null
+        : forced ? threads.find((x) => x.id === forced || x.members.some((m) => m.id === forced))
+        : threads.find(
+            (x) =>
+              today - x.last <= OPEN_DAYS &&
+              !x.members.some((m) => links[m.id] === '' && m !== x.members[0]) &&
+              [x.members[0], ...x.members.slice(-3)].some((m) => T.sameThread(m, it, df))
+          );
       if (t) {
         it.thread = t.id;
         it.update = true;

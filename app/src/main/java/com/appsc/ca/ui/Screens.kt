@@ -185,6 +185,11 @@ private fun Empty(text: String) {
     Text(text, style = MaterialTheme.typography.bodyMedium, color = C.Muted, modifier = Modifier.padding(24.dp))
 }
 
+/** New today: the feed's new topics, without stories the reader put in an earlier topic, plus those taken out of one. */
+private fun newTopicsOf(vm: AppViewModel, filtered: List<Item>, hasTop: Boolean): List<Item> =
+    if (!hasTop) filtered
+    else filtered.filter { (it.top && !vm.isUpdate(it)) || (it.update && !vm.isUpdate(it) && !it.oneLiner) }
+
 /** A card in a list that read-aloud can start from and highlight. */
 @Composable
 private fun ListCard(vm: AppViewModel, list: List<Item>, index: Int, readFlag: Boolean? = null, savedFlag: Boolean? = null) {
@@ -195,6 +200,9 @@ private fun ListCard(vm: AppViewModel, list: List<Item>, index: Int, readFlag: B
         timeline = vm.timeline(list[index]),
         done = vm.isDone(i),
         onDone = { vm.toggleDone(i) },
+        isUpdate = vm.isUpdate(list[index]),
+        earlierTopics = { vm.earlierTopics(list[index]) },
+        onLinkTopic = { thread -> vm.linkTopic(list[index], thread) },
         onHideNote = { sec -> vm.hideNote(list[index], sec) },
         read = readFlag ?: (i.id in vm.readIds),
         saved = savedFlag ?: vm.isSaved(i.id),
@@ -244,14 +252,14 @@ private fun DayFeed(
     val hasTop = dayItems.any { it.top }
     val shown = when (view) {
         // new topics, the ones marked done last
-        DayView.TOP -> (if (hasTop) filtered.filter { it.top } else filtered).sortedBy { vm.isDone(it) }
-        DayView.UPDATES -> filtered.filter { it.update && !it.oneLiner }
+        DayView.TOP -> newTopicsOf(vm, filtered, hasTop).sortedBy { vm.isDone(it) }
+        DayView.UPDATES -> filtered.filter { vm.isUpdate(it) && !it.oneLiner }
         DayView.ONE_LINERS -> filtered.filter { it.oneLiner }
         DayView.ALL -> filtered
         DayView.QUIZ, DayView.REVISE -> emptyList()
     }
-    val newTopics = if (hasTop) filtered.filter { it.top } else filtered
-    val updateCount = filtered.count { it.update && !it.oneLiner }
+    val newTopics = newTopicsOf(vm, filtered, hasTop)
+    val updateCount = filtered.count { vm.isUpdate(it) && !it.oneLiner }
     val oneLinerCount = filtered.count { it.oneLiner }
     val perBook = Filter(lane = lane, exam = vm.exam).apply(dayItems).groupingBy { it.book }.eachCount()
 
@@ -520,8 +528,8 @@ private fun NewsDayBar(date: String, summary: com.appsc.ca.data.DaySummary?, upd
 @Composable
 private fun DaysScreen(vm: AppViewModel, onDigest: (Period) -> Unit, onOpen: (String) -> Unit) {
     val dates = vm.days.map { it.date }
-    val weeks = periodsOf(dates, "week")
-    val months = periodsOf(dates, "month")
+    val weeks = periodsOf(dates, "week", vm.index?.digests.orEmpty())
+    val months = periodsOf(dates, "month", vm.index?.digests.orEmpty())
     LazyColumn(Modifier.fillMaxSize()) {
         item { Header("Days & digests", "Last ${vm.days.size} days are on this phone and read offline") }
         if (weeks.isNotEmpty()) {

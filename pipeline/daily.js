@@ -34,6 +34,7 @@ const St = require('./lib/statics');
 const T = require('./lib/topics');
 const X = require('./lib/extras');
 const Th = require('./lib/threads');
+const Dg = require('./lib/digests');
 
 // When the collection runs (IST), set from ops/publish-times.md: after the
 // morning papers' uploads (closes yesterday), after PIB's and the daytime
@@ -228,7 +229,7 @@ function backfillNotes(out, notes, blocks = St.loadBlocks(path.join(out, 'wrong-
     days.push({ file, day, before: stable(day) });
   }
   // topics across days: a story continuing an earlier day's topic is an update on it
-  Th.threadDays(days.map((d) => d.day));
+  Th.threadDays(days.map((d) => d.day), T.loadLinks(path.join(out, 'topic-links.json')));
   for (const { file, day, before } of days) {
     // the study layer: new today, updates, one-liners, the day's quiz
     X.markDay(day.items);
@@ -274,6 +275,8 @@ function writeIndex(out) {
     // IST times of the collection runs (.github/workflows/daily.yml).
     schedule: SCHEDULE_IST,
     days,
+    // weekly and monthly digests (feed/digests/), newest first
+    digests: Dg.writeDigests(out),
   };
   fs.writeFileSync(path.join(out, 'index.json'), JSON.stringify(index, null, 1) + '\n');
   return index;

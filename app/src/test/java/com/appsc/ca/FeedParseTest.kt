@@ -121,6 +121,22 @@ class FeedParseTest {
     }
 
     @Test
+    fun readsADigestFile() {
+        val d = FeedJson.decodeFromString<com.appsc.ca.data.DigestFile>(
+            """{"kind":"week","start":"2026-09-28","days":["2026-10-01","2026-10-02"],
+              "topics":[{"thread":"a","main":true,"lead":{"id":"a","date":"2026-10-01","title":"HC strikes BC GOs","subject":"Polity, Society & IR"},
+                         "stories":[{"id":"a","date":"2026-10-01","title":"HC strikes BC GOs","line":"HC strikes BC GOs"},{"id":"b","date":"2026-10-02","title":"AP to move SC","line":"AP to move SC"}],
+                         "sections":[{"topic":"Reservation","where":"w","bullets":["x"]}],"score":80}],
+              "oneLiners":[{"id":"c","date":"2026-10-02","title":"X wins gold","line":"X won gold."}],"quiz":[]}""".trimIndent(),
+        )
+        assertEquals(2, d.topics[0].stories.size)
+        assertEquals("Polity, Society & IR", d.topics[0].lead.book)
+        assertEquals("X won gold.", d.oneLiners[0].line)
+        val weeks = com.appsc.ca.ui.periodsOf(emptyList(), "week", listOf(com.appsc.ca.data.DigestRef("week", "2026-08-03")))
+        assertEquals("2026-08-03", weeks.single().start.toString())
+    }
+
+    @Test
     fun weeksAndMonthsForTheDigest() {
         val weeks = com.appsc.ca.ui.periodsOf(listOf("2026-10-04", "2026-10-03", "2026-09-30", "2026-09-27"), "week")
         assertEquals(listOf("2026-09-28", "2026-09-21"), weeks.map { it.start.toString() })

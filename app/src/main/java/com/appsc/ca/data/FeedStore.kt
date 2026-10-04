@@ -61,6 +61,18 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
         RefreshResult(newItems, newAp, firstRun = old == null)
     }
 
+    private val digestDir = File(daysDir.parentFile, "digests")
+
+    /** A weekly or monthly digest: downloaded when the feed has a newer one, else the copy kept from before. */
+    suspend fun digest(ref: DigestRef): DigestFile? = withContext(Dispatchers.IO) {
+        val file = File(digestDir, ref.file.substringAfterLast('/'))
+        val fresh = runCatching {
+            val text = get(ref.file)
+            FeedJson.decodeFromString<DigestFile>(text).also { writeAtomically(file, text) }
+        }.getOrNull()
+        fresh ?: read<DigestFile>(file)
+    }
+
     private fun get(path: String): String {
         val conn = URL(baseUrl + path).openConnection() as HttpURLConnection
         conn.connectTimeout = 15_000

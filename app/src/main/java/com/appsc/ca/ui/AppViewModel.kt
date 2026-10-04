@@ -53,8 +53,33 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var doneThreads by mutableStateOf<Set<String>>(emptySet())
         private set
 
-    /** The topic a story belongs to (older feeds: the story itself). */
-    fun threadOf(item: Item): String = item.thread.ifBlank { item.id }
+    var topicLinks by mutableStateOf<Map<String, String>>(emptyMap())
+        private set
+
+    /** The topic a story belongs to: the reader's correction, else the feed's (older feeds: the story itself). */
+    fun threadOf(item: Item): String = topicLinks[item.id]?.ifEmpty { item.id } ?: item.thread.ifBlank { item.id }
+
+    /** A follow-up on a topic from an earlier day (after the reader's corrections). */
+    fun isUpdate(item: Item): Boolean = topicLinks[item.id]?.let { it.isNotEmpty() && it != item.id } ?: item.update
+
+    /** Puts a story in a topic ([thread]) or, with "", makes it a topic of its own. */
+    fun linkTopic(item: Item, thread: String) {
+        topicLinks = topicLinks + (item.id to thread)
+        user.setTopicLinks(topicLinks)
+    }
+
+    /** Topics that started before [item]'s day (last 3 weeks), newest first: to put it in one. */
+    fun earlierTopics(item: Item): List<Item> {
+        val from = runCatching { java.time.LocalDate.parse(item.date).minusDays(21).toString() }.getOrDefault("")
+        return allItems
+            .filter { it.topicOf.isEmpty() && !it.digest && !it.oneLiner && it.date < item.date && it.date >= from && !isUpdate(it) }
+            .distinctBy { threadOf(it) }
+            .sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.score })
+            .take(40)
+    }
+
+    /** A weekly or monthly digest file from the feed (null offline with no copy). */
+    suspend fun digest(ref: com.appsc.ca.data.DigestRef) = feed.digest(ref)
 
     fun isDone(item: Item) = threadOf(item) in doneThreads
 
@@ -66,8 +91,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Every story of a topic on this phone, oldest first: the topic's timeline. */
     fun timeline(item: Item): List<Item> {
-        if (item.thread.isBlank()) return emptyList()
-        return allItems.filter { it.thread == item.thread && it.topicOf.isEmpty() }.distinctBy { it.id }.sortedBy { it.date }
+        val t = threadOf(item)
+        return allItems.filter { it.topicOf.isEmpty() && threadOf(it) == t }.distinctBy { it.id }.sortedBy { it.date }
     }
 
     private fun today() = java.time.LocalDate.now().toEpochDay()
@@ -131,8 +156,9 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val rv = user.revise()
                 val h = user.hiddenNotes()
                 val dn = user.doneThreads()
+                val tl = user.topicLinks()
                 withContext(Dispatchers.Main) {
-                    days = d; index = i; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn
+                    days = d; index = i; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn; topicLinks = tl
                     exam = user.exam; notify = user.notify; speechRate = user.speechRate
                 }
             }

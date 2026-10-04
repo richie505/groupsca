@@ -367,3 +367,51 @@ test('topics across days: a continuing story is an update, read as its headline'
   assert.ok(!b.top && b.line === b.title, 'an update is a line, not a new topic');
   assert.ok(days[1].items[1].top);
 });
+
+test('cross-day topics need a shared subject, not just the same person, office or place', () => {
+  const T = require('../lib/topics');
+  const a = { id: 'a', title: 'Governor of Odisha Hari Babu Kambhampati meets Prime Minister', summary: '' };
+  const b = { id: 'b', title: 'Odisha Governor Hari Babu Kambhampati directs filling of teaching posts', summary: '' };
+  assert.ok(!T.sameThread(a, b));
+  const c = { id: 'c', title: 'IMD forecasts heavy rainfall over Arunachal Pradesh today' };
+  const d = { id: 'd', title: 'IMD forecasts heavy rainfall over Kerala and Tamil Nadu' };
+  assert.ok(!T.sameThread(c, d), 'routine forecasts are not one topic');
+  const e = { id: 'e', title: 'Farmers stage protest opposing land acquisition for Reliance Data Center' };
+  const f = { id: 'f', title: 'Reliance data centre at Bhogapuram will create jobs, says Collector after farmers protest' };
+  assert.ok(T.sameThread(e, f));
+});
+
+test('the reader can take a story out of a topic or put it in one ("Topic link" reports)', () => {
+  const T = require('../lib/topics');
+  const Th = require('../lib/threads');
+  const links = T.parseLinks([
+    { title: 'Topic link: x', created_at: '2026-10-04', body: 'story: b\nthread: none' },
+    { title: 'Topic link: y', created_at: '2026-10-04', body: 'story: c\nthread: a' },
+  ]);
+  assert.deepEqual(links, { b: '', c: 'a' });
+  const days = [
+    { date: '2026-10-01', items: [{ id: 'a', title: 'High Court strikes down 34% BC reservation GOs', score: 80 }] },
+    { date: '2026-10-02', items: [{ id: 'b', title: 'AP to move Supreme Court on 34% BC reservation GOs', score: 70 },
+                                  { id: 'c', title: 'Cabinet sub-committee on local body polls', score: 60 }] },
+  ];
+  Th.threadDays(days, links);
+  assert.ok(!days[1].items[0].update, 'taken out: a topic of its own');
+  assert.equal(days[1].items[1].thread, 'a');
+});
+
+test('weekly and monthly digests: each topic once, with its stories in the period', () => {
+  const Dg = require('../lib/digests');
+  assert.equal(Dg.weekStart('2026-10-04'), '2026-09-28');
+  assert.equal(Dg.weekStart('2026-09-28'), '2026-09-28');
+  const days = [
+    { date: '2026-10-01', items: [{ id: 'a', date: '2026-10-01', title: 'HC strikes BC GOs', score: 80, top: true, thread: 'a', brief: { sections: [{ topic: 'Reservation', where: 'w', bullets: ['x'] }] } }], quiz: [{ id: 'q1' }] },
+    { date: '2026-10-02', items: [{ id: 'b', date: '2026-10-02', title: 'AP to move SC', score: 70, update: true, thread: 'a', line: 'AP to move SC' },
+                                  { id: 'c', date: '2026-10-02', title: 'X wins gold', oneLiner: true, line: 'X won gold.', score: 40 }] },
+  ];
+  const dg = Dg.digestOf('week', '2026-09-28', days, days.flatMap((d) => d.items));
+  assert.equal(dg.topics.length, 1);
+  assert.deepEqual(dg.topics[0].stories.map((s) => s.id), ['a', 'b']);
+  assert.equal(dg.topics[0].sections[0].topic, 'Reservation');
+  assert.equal(dg.oneLiners[0].line, 'X won gold.');
+  assert.equal(dg.quiz.length, 1);
+});

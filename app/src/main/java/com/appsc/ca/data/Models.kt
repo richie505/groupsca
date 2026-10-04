@@ -15,6 +15,35 @@ data class FeedIndex(
     /** IST times of the collection runs. */
     val schedule: List<String> = listOf("06:30", "13:00", "18:30", "23:30"),
     val days: List<DaySummary> = emptyList(),
+    /** Weekly and monthly digests (feed/digests/), newest first. */
+    val digests: List<DigestRef> = emptyList(),
+)
+
+@Serializable
+data class DigestRef(val kind: String, val start: String, val file: String = "", val topics: Int = 0, val main: Int = 0)
+
+/** A digest as the feed writes it: every topic of the period once. */
+@Serializable
+data class DigestFile(
+    val kind: String = "week",
+    val start: String = "",
+    val days: List<String> = emptyList(),
+    val topics: List<DigestTopicFile> = emptyList(),
+    val oneLiners: List<Item> = emptyList(),
+    val quiz: List<QuizQ> = emptyList(),
+)
+
+@Serializable
+data class DigestTopicFile(
+    val thread: String = "",
+    /** Made New today on one of the period's days. */
+    val main: Boolean = false,
+    /** The story the topic started with. */
+    val lead: Item,
+    /** The topic's stories in the period, oldest first. */
+    val stories: List<Item> = emptyList(),
+    val sections: List<StaticSection> = emptyList(),
+    val score: Int = 0,
 )
 
 @Serializable

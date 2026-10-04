@@ -54,7 +54,8 @@ fun UpdateRow(item: Item, done: Boolean, expanded: @Composable () -> Unit) {
                 Column {
                     Text(item.line.ifBlank { item.title }, style = MaterialTheme.typography.bodyMedium, color = C.Body)
                     Text(
-                        (if (done) "✓ " else "") + "Topic since ${shortDate(item.threadStart)}: ${item.threadTitle}",
+                        (if (done) "✓ " else "") +
+                            if (item.threadStart.isBlank()) "Put in an earlier topic by you" else "Topic since ${shortDate(item.threadStart)}: ${item.threadTitle}",
                         style = MaterialTheme.typography.labelMedium,
                         color = C.Faint,
                         maxLines = 2,

@@ -29,6 +29,9 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.runtime.remember
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.TextButton
@@ -80,7 +83,65 @@ fun ItemCard(
     /** The topic is marked done; [onDone] marks or unmarks it (null: no button). */
     done: Boolean = false,
     onDone: (() -> Unit)? = null,
+    /** This story is an update on an earlier topic (after the reader's corrections). */
+    isUpdate: Boolean = false,
+    /** Earlier topics to put this story in, and how ("" = a topic of its own); null: no topic buttons. */
+    earlierTopics: (() -> List<Item>)? = null,
+    onLinkTopic: ((String) -> Unit)? = null,
 ) {
+    // "Not this topic" / "Same topic as ...": the choice, then whether to report it too
+    var picking by remember { mutableStateOf(false) }
+    var linkTo by remember { mutableStateOf<Pair<String, String>?>(null) } // thread id ("" = own) to its label
+    if (picking && earlierTopics != null) {
+        val options = remember(item.id) { earlierTopics() }
+        AlertDialog(
+            onDismissRequest = { picking = false },
+            title = { Text("Same topic as…") },
+            text = {
+                Column(Modifier.heightIn(max = 420.dp).verticalScroll(rememberScrollState())) {
+                    if (options.isEmpty()) Text("No topics from the 3 weeks before this day on the phone.")
+                    for (o in options) {
+                        Text(
+                            "${shortDate(o.date)} · ${o.title}",
+                            style = MaterialTheme.typography.bodyMedium,
+                            modifier = Modifier.fillMaxWidth().clickable {
+                                linkTo = (o.thread.ifBlank { o.id }) to o.title
+                                picking = false
+                            }.padding(vertical = 8.dp),
+                        )
+                    }
+                }
+            },
+            confirmButton = { TextButton(onClick = { picking = false }) { Text("Cancel") } },
+        )
+    }
+    linkTo?.let { (thread, label) ->
+        val ctx = LocalContext.current
+        AlertDialog(
+            onDismissRequest = { linkTo = null },
+            title = { Text(if (thread.isEmpty()) "Not this topic" else "Same topic") },
+            text = {
+                Text(
+                    (if (thread.isEmpty()) "This story becomes a topic of its own." else "This story becomes an update on \"$label\".") +
+                        "\n\nOnly on this phone, or also report it: the report opens a GitHub page (sign in once) and from the " +
+                        "next update the feed links it this way for everyone, on every day.",
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    onLinkTopic?.invoke(thread)
+                    openUrl(ctx, topicLinkUrl(item, thread, label))
+                    linkTo = null
+                }) { Text("Apply and report") }
+            },
+            dismissButton = {
+                TextButton(onClick = {
+                    onLinkTopic?.invoke(thread)
+                    linkTo = null
+                }) { Text("Only on this phone") }
+            },
+        )
+    }
     var wrong by remember { mutableStateOf<StaticSection?>(null) }
     wrong?.let { sec ->
         val ctx = LocalContext.current
@@ -293,7 +354,7 @@ fun ItemCard(
                 style = MaterialTheme.typography.labelMedium,
                 color = C.Muted,
             )
-            Row(Modifier.padding(top = 6.dp)) {
+            FlowRow(Modifier.padding(top = 6.dp)) {
                 if (item.url.isNotBlank()) {
                     TextButton(onClick = { openUrl(context, item.url) }) {
                         Icon(Icons.AutoMirrored.Filled.OpenInNew, null, Modifier.size(18.dp))
@@ -312,6 +373,10 @@ fun ItemCard(
                 }
                 if (onDone != null) {
                     TextButton(onClick = onDone) { Text(if (done) "✓ Done" else "Mark done") }
+                }
+                if (onLinkTopic != null) {
+                    if (isUpdate) TextButton(onClick = { linkTo = "" to "" }) { Text("Not this topic") }
+                    else if (earlierTopics != null) TextButton(onClick = { picking = true }) { Text("Same topic as…") }
                 }
                 TextButton(onClick = { share(context, item) }) {
                     Icon(Icons.Filled.Share, null, Modifier.size(18.dp))
@@ -356,6 +421,16 @@ fun wrongNoteUrl(item: Item, sec: StaticSection): String {
     val enc = { t: String -> java.net.URLEncoder.encode(t, "UTF-8") }
     val title = "Wrong note: ${sec.topic}".take(120)
     val body = "where: ${sec.where}\nstory: ${item.title}\n\n(Sent from the APPSC Daily CA app. The next update stops linking this note to stories like this one.)"
+    return "$REPORT_REPO/issues/new?title=${enc(title)}&body=${enc(body)}"
+}
+
+/** A "Topic link" report: a new issue the next update reads ("thread: none" = a topic of its own). */
+fun topicLinkUrl(item: Item, thread: String, label: String): String {
+    val enc = { t: String -> java.net.URLEncoder.encode(t, "UTF-8") }
+    val title = "Topic link: ${item.title}".take(120)
+    val body = "story: ${item.id}\nthread: ${thread.ifEmpty { "none" }}\nheadline: ${item.title}\n" +
+        (if (thread.isEmpty()) "(Not the same topic as before.)" else "topic: $label") +
+        "\n\n(Sent from the APPSC Daily CA app. The next update links this story this way.)"
     return "$REPORT_REPO/issues/new?title=${enc(title)}&body=${enc(body)}"
 }
 

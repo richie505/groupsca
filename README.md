@@ -69,6 +69,16 @@ overlap or the same static notes, joins it as `update`, with `thread`, `threadTi
 - **Topic timeline** on every card, and **Mark done**: a done topic sinks to the end and is ticked in updates.
 - **Digest** tab: a weekly (Monday–Sunday) and monthly digest, every topic once by book, with its timeline in the
   period, its static notes, the period's one-liners and all its quiz questions; "Main topics" or "All topics".
+  The feed writes them as files (`pipeline/lib/digests.js` → `feed/digests/week-<monday>.json`,
+  `month-<yyyy-mm>.json`, listed in `index.json`), so a week or month stays available after its days have left
+  the phone.
+
+A topic link needs a shared **subject** that is rare across the headlines on file (BC/reservation, WTO, bustards,
+Pan IIT): the same governor, minister, state or office is not one topic, and routine items (forecasts, rallies,
+courtesy calls, explainers) are never linked. Where the rules still get it wrong, every card has **Not this topic**
+(on an update) or **Same topic as…** (on a new topic): it applies on the phone at once, and *Apply and report* opens
+a GitHub issue ("Topic link: …", `story:` / `thread:`) that the next run reads (`feed/topic-links.json`) so the feed
+links it that way for everyone.
 
 ### Top 25, one-liners, the day's quiz, revision and "Wrong note"
 

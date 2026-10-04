@@ -32,7 +32,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.remember
 import com.appsc.ca.data.BOOKS
+import com.appsc.ca.data.DigestFile
+import com.appsc.ca.data.DigestRef
+import com.appsc.ca.data.DigestTopicFile
 import com.appsc.ca.data.Item
 import com.appsc.ca.data.bookNumber
 import com.appsc.ca.data.shortDate
@@ -58,36 +63,51 @@ data class Period(val kind: String, val start: LocalDate) {
     }
 }
 
-/** One topic of the period: where it started, its stories in the period, and its static notes. */
-private data class DigestTopic(val lead: Item, val stories: List<Item>, val notesFrom: Item?)
-
-/** The weeks and months the days on this phone fall in, newest first. */
-fun periodsOf(dates: List<String>, kind: String): List<Period> =
-    dates.mapNotNull { runCatching { if (kind == "week") Period.weekOf(it) else Period.monthOf(it) }.getOrNull() }
+/** The weeks or months to offer: those the feed has digests for, and those of the days on this phone. */
+fun periodsOf(dates: List<String>, kind: String, feed: List<DigestRef> = emptyList()): List<Period> =
+    (dates.mapNotNull { runCatching { if (kind == "week") Period.weekOf(it) else Period.monthOf(it) }.getOrNull() } +
+        feed.filter { it.kind == kind }.mapNotNull { r -> runCatching { Period(kind, LocalDate.parse(r.start)) }.getOrNull() })
         .distinct().sortedByDescending { it.start }
 
-/**
- * The weekly or monthly digest: every topic once, by book, with its timeline in the period and its static notes,
- * then the period's one-liners and its quiz.
- */
-@Composable
-fun DigestScreen(vm: AppViewModel, period: Period, onBack: () -> Unit) {
+/** A digest made on the phone from the days it has (when the feed's file cannot be had). */
+private fun localDigest(vm: AppViewModel, period: Period): DigestFile {
     val days = vm.days.filter { period.has(it.date) }.sortedBy { it.date }
     val items = days.flatMap { it.items }.filter { it.topicOf.isEmpty() && !it.digest }
-    val oneLiners = items.filter { it.oneLiner }
-    val quiz = days.flatMap { it.quiz }
-    // topics: stories of the same thread together; the topic's first story leads
     val topics = items.filterNot { it.oneLiner }
         .groupBy { vm.threadOf(it) }
         .map { (thread, list) ->
             val all = vm.allItems.filter { vm.threadOf(it) == thread && it.topicOf.isEmpty() }.sortedBy { it.date }
-            val lead = all.firstOrNull() ?: list.first()
-            DigestTopic(lead, list.sortedBy { it.date }, (all + list).firstOrNull { it.brief.sections.isNotEmpty() })
+            DigestTopicFile(
+                thread = thread,
+                main = list.any { it.top },
+                lead = all.firstOrNull() ?: list.first(),
+                stories = list.sortedBy { it.date },
+                sections = (all + list).firstOrNull { it.brief.sections.isNotEmpty() }?.brief?.sections.orEmpty(),
+                score = list.maxOf { it.score },
+            )
         }
-        // topics that made New today on some day, then the rest by score
-        .sortedWith(compareByDescending<DigestTopic> { t -> t.stories.any { it.top } }.thenByDescending { t -> t.stories.maxOf { it.score } })
+        .sortedWith(compareByDescending<DigestTopicFile> { it.main }.thenByDescending { it.score })
+    return DigestFile(period.kind, period.start.toString(), days.map { it.date }, topics, items.filter { it.oneLiner }, days.flatMap { it.quiz })
+}
+
+/**
+ * The weekly or monthly digest: every topic once, by book, with its timeline in the period and its static notes,
+ * then the period's one-liners and its quiz. The feed's digest file when it can be had (it covers days no longer
+ * on the phone), else one made from the days on the phone.
+ */
+@Composable
+fun DigestScreen(vm: AppViewModel, period: Period, onBack: () -> Unit) {
+    val ref = vm.index?.digests?.firstOrNull { it.kind == period.kind && it.start == period.start.toString() }
+    var remote by remember(period) { mutableStateOf<DigestFile?>(null) }
+    var loading by remember(period) { mutableStateOf(ref != null) }
+    LaunchedEffect(period) {
+        if (ref != null) remote = vm.digest(ref)
+        loading = false
+    }
+    val dg = remote ?: localDigest(vm, period)
     var onlyTop by rememberSaveable { mutableStateOf(true) }
-    val shown = if (onlyTop && topics.any { t -> t.stories.any { it.top } }) topics.filter { t -> t.stories.any { it.top } } else topics
+    val topics = dg.topics
+    val shown = if (onlyTop && topics.any { it.main }) topics.filter { it.main } else topics
     val byBook = BOOKS.associateWith { b -> shown.filter { it.lead.book == b } }.filter { it.value.isNotEmpty() }
 
     LazyColumn(Modifier.fillMaxSize()) {
@@ -97,7 +117,8 @@ fun DigestScreen(vm: AppViewModel, period: Period, onBack: () -> Unit) {
                 Column(Modifier.weight(1f)) {
                     Text(if (period.kind == "week") "Weekly digest" else "Monthly digest", style = MaterialTheme.typography.headlineSmall, color = C.Ink)
                     Text(
-                        "${period.title} · ${days.size} days on this phone · ${topics.size} topics · ${oneLiners.size} one-liners",
+                        "${period.title} · ${dg.days.size} days · ${topics.size} topics · ${dg.oneLiners.size} one-liners" +
+                            if (loading) " · loading…" else "",
                         style = MaterialTheme.typography.labelMedium,
                         color = C.Muted,
                     )
@@ -106,12 +127,12 @@ fun DigestScreen(vm: AppViewModel, period: Period, onBack: () -> Unit) {
         }
         item {
             Row(Modifier.padding(horizontal = 16.dp, vertical = 4.dp)) {
-                FilterChip(selected = onlyTop, onClick = { onlyTop = true }, label = { Text("Main topics") })
+                FilterChip(selected = onlyTop, onClick = { onlyTop = true }, label = { Text("Main topics (${topics.count { it.main }})") })
                 Spacer(Modifier.width(8.dp))
-                FilterChip(selected = !onlyTop, onClick = { onlyTop = false }, label = { Text("All topics") })
+                FilterChip(selected = !onlyTop, onClick = { onlyTop = false }, label = { Text("All topics (${topics.size})") })
             }
         }
-        if (days.isEmpty()) item { Text("No days of this period are on the phone.", color = C.Muted, modifier = Modifier.padding(24.dp)) }
+        if (dg.days.isEmpty() && !loading) item { Text("Nothing for this period yet.", color = C.Muted, modifier = Modifier.padding(24.dp)) }
         for ((book, list) in byBook) {
             item(key = "book-$book") {
                 Text(
@@ -123,24 +144,24 @@ fun DigestScreen(vm: AppViewModel, period: Period, onBack: () -> Unit) {
             }
             items(list, key = { "t-" + it.lead.id }) { t -> TopicCard(vm, t) }
         }
-        if (oneLiners.isNotEmpty()) {
+        if (dg.oneLiners.isNotEmpty()) {
             item(key = "ol") {
                 Text("One-liners", style = MaterialTheme.typography.titleMedium, color = C.Accent, modifier = Modifier.padding(start = 16.dp, top = 16.dp, bottom = 4.dp))
             }
-            items(oneLiners, key = { "ol-" + it.id }) { OneLinerRow(it) }
+            items(dg.oneLiners, key = { "ol-" + it.id }) { OneLinerRow(it) }
         }
-        if (quiz.isNotEmpty()) {
+        if (dg.quiz.isNotEmpty()) {
             item(key = "qz") {
-                val got = quiz.count { vm.answers[it.id] == true }
-                val done = quiz.count { it.id in vm.answers }
+                val got = dg.quiz.count { vm.answers[it.id] == true }
+                val done = dg.quiz.count { it.id in vm.answers }
                 Text(
-                    "Quiz of the ${period.kind}: $got right of $done answered (${quiz.size} questions)",
+                    "Quiz of the ${period.kind}: $got right of $done answered (${dg.quiz.size} questions)",
                     style = MaterialTheme.typography.titleMedium,
                     color = C.Accent,
                     modifier = Modifier.padding(start = 16.dp, top = 16.dp, bottom = 4.dp),
                 )
             }
-            itemsIndexed(quiz, key = { _, q -> "q-" + q.id }) { n, q -> QuizCard(n + 1, q, vm.answers[q.id]) { vm.answer(q, it) } }
+            itemsIndexed(dg.quiz, key = { _, q -> "q-" + q.id }) { n, q -> QuizCard(n + 1, q, vm.answers[q.id]) { vm.answer(q, it) } }
         }
         item { Spacer(Modifier.height(32.dp)) }
     }
@@ -148,7 +169,7 @@ fun DigestScreen(vm: AppViewModel, period: Period, onBack: () -> Unit) {
 
 /** A topic: its headline, the period's timeline, and the static notes (tap to open), with Mark done. */
 @Composable
-private fun TopicCard(vm: AppViewModel, t: DigestTopic) {
+private fun TopicCard(vm: AppViewModel, t: DigestTopicFile) {
     var open by rememberSaveable(t.lead.id) { mutableStateOf(false) }
     val done = vm.isDone(t.lead)
     Column(
@@ -172,7 +193,7 @@ private fun TopicCard(vm: AppViewModel, t: DigestTopic) {
                 Text(s.line.ifBlank { s.title }, style = MaterialTheme.typography.labelMedium, color = C.Body)
             }
         }
-        val notes = t.notesFrom?.let { vm.visible(it) }?.brief?.sections.orEmpty()
+        val notes = t.sections.filterNot { "${t.lead.id}|${it.where}" in vm.hiddenNotes }
         if (open) {
             if (notes.isNotEmpty()) {
                 Text("STATIC NOTES", style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(top = 10.dp, bottom = 4.dp))

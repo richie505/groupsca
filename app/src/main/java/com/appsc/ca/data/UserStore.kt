@@ -57,6 +57,13 @@ class UserStore(context: Context) {
 
     fun setDoneThreads(s: Set<String>) = prefs.edit().putStringSet(KEY_DONE, HashSet(s)).apply()
 
+    /** The reader's topic corrections: story id -> the topic it belongs to ("" = a topic of its own). */
+    fun topicLinks(): Map<String, String> =
+        prefs.getStringSet(KEY_LINKS, emptySet()).orEmpty().associate { it.substringBefore('|') to it.substringAfter('|') }
+
+    fun setTopicLinks(m: Map<String, String>) =
+        prefs.edit().putStringSet(KEY_LINKS, m.mapTo(HashSet()) { (k, v) -> "$k|$v" }).apply()
+
     /** Static notes hidden on this phone as wrong for a story: "storyId|where". */
     fun hiddenNotes(): Set<String> = prefs.getStringSet(KEY_HIDDEN, emptySet()).orEmpty()
 
@@ -71,6 +78,7 @@ class UserStore(context: Context) {
         const val KEY_ANSWERS = "quiz_answers"
         const val KEY_HIDDEN = "hidden_notes"
         const val KEY_DONE = "done_threads"
+        const val KEY_LINKS = "topic_links"
         const val KEY_READ = "read"
         const val KEY_NOTIFY = "notify"
         const val KEY_EXAM = "exam"
