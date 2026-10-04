@@ -84,18 +84,14 @@ function loadNotes({ prepDir, rocketDir } = {}) {
       const f = path.join(prepDir, `book${n}.json`);
       if (!fs.existsSync(f)) continue;
       const book = read(f);
-      let rowNo = -1; // rows are numbered across the book's units, as the Prep app numbers them
       for (const u of book.units || []) {
         for (const row of u.rows || []) {
-          rowNo++;
-          (row.secs || []).forEach((s, secNo) => {
+          for (const s of row.secs || []) {
             const id = secs.length;
             const where = `Prep notes · Book ${n} ${book.short || ''} › ${u.code ? `${u.code} › ` : ''}${row.title} › ${s.t}`;
             // `head`: what the subsection is about - each title before its " - " list
             const head = `${String(row.title).split(' - ')[0]} | ${String(s.t).split(' - ')[0]}`;
-            // where it is in the Prep app: book, row, subsection (titles too, in case the numbering moves)
-            const ref = { book: n, row: rowNo, sec: secNo, rowTitle: String(row.title), secTitle: String(s.t) };
-            secs.push({ id, src: 'prep', book: n, unit: u.code || '', where, title: `${row.title} ${s.t}`, head, ref, entries: [] });
+            secs.push({ id, src: 'prep', book: n, unit: u.code || '', where, title: `${row.title} ${s.t}`, head, entries: [] });
             for (const b of s.b || []) {
               for (const text of blockTexts(b)) {
                 if (text.length < 25) continue;
@@ -104,7 +100,7 @@ function loadNotes({ prepDir, rocketDir } = {}) {
                 secs[id].entries.push(e.id);
               }
             }
-          });
+          }
         }
       }
     }
@@ -786,7 +782,6 @@ function briefFor(index, item0) {
       src: c.sec.src === 'prep' ? 'Prep notes' : 'Rocket Sheets',
       where: c.sec.where,
       bullets: chosen,
-      ...(c.sec.ref ? { ref: c.sec.ref } : {}),
     });
   }
 
@@ -810,7 +805,7 @@ function briefFor(index, item0) {
 }
 
 // Bumped when briefFor changes, so stories on file are re-linked.
-const BRIEF_VERSION = 5;
+const BRIEF_VERSION = 4;
 
 /** briefFor as stored on a story: { v, sections, gaps }. */
 function briefOf(index, item) {
