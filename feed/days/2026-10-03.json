@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-03",
- "updated": "2026-10-03T20:16:16.414Z",
+ "updated": "2026-10-04T06:27:52.155Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 192,
+   "found": 198,
    "error": null
   },
   {
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 48,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 6,
+   "found": 7,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 53,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 109,
+   "found": 152,
    "error": null
   },
   {
@@ -373,8 +373,160 @@
      "title": "BC leaders stage protest in Nellore over dismissal of BC Reservation GO",
      "source": "The Hans India — Andhra Pradesh",
      "url": "https://www.thehansindia.com/andhra-pradesh/bc-leaders-stage-protest-in-nellore-over-dismissal-of-bc-reservation-go-1128402"
+    },
+    {
+     "id": "bbb064a00111",
+     "title": "MLA Sunitha lashes out at YCP for obstructing BC quota",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/anantapur/mla-sunitha-lashes-out-at-ycp-for-obstructing-bc-quota-1128537"
     }
    ]
+  },
+  {
+   "id": "e9617be64d14",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "02:36",
+   "title": "Jagan attacks Rs 1Lakh cr horticulture investment claim",
+   "summary": "Alleges no budget allocation or expenditure for project; questions government’s record on farmer welfare Points to drought, drying borewells and stalled Rayalaseema Lift Irrigation Project; seeks immediate relief",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Alleges no budget allocation or expenditure for project; questions government’s record on farmer welfare Points to drought, drying borewells and stalled Rayalaseema Lift Irrigation Project; seeks immediate relief"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/jagan-attacks-rs-1lakh-cr-horticulture-investment-claim-1128509",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Irrigation",
+    "Allocation",
+    "Irrigation Project"
+   ],
+   "score": 80,
+   "band": "critical",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Make in India, PLI schemes, National Manufacturing Policy; ease of doing business reforms › National Manufacturing Policy 2011 - release, objectives, targets, NIMZs",
+     "text": "NIMZs (National Investment and Manufacturing Zones): large integrated industrial townships. They differ from SEZs in size, infrastructure planning, governance, exit policy and fiscal incentives.",
+     "match": [
+      "industrial",
+      "policy",
+      "sezs"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #6 · MSP, APC and CACP",
+     "text": "Production incentives support food security.",
+     "match": [
+      "food",
+      "security",
+      "production"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Agricultural inputs · Farm subsidies vs public investment",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural inputs - seeds, fertilisers and the subsidy regime, pesticides, mechanisation, extension services › Farm subsidies vs public investment - classifying input subsidies, MSP, research, irrigation",
+      "bullets": [
+       "Input subsidies: fertiliser, power, irrigation water, seed, credit (interest subvention) - current transfers; public investment: irrigation projects, research, rural infrastructure - capital formation .",
+       "MSP = price support, not an input subsidy .",
+       "Debate: subsidies helped small farmers adopt HYV but mostly benefit prosperous regions and the fertiliser industry (APP)."
+      ]
+     },
+     {
+      "topic": "Allied sectors · Horticulture",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Allied sectors - horticulture, animal husbandry, dairy, fisheries (PMMSY), agro-processing › Horticulture - MIDH and NHM, fruit largest producer state, export mango varieties, Indo-Israel CoEs in AP",
+      "bullets": [
+       "MIDH, a Centrally Sponsored Scheme, has been implemented since 2014-15 (APPSC-GS 2023). It subsumed NHM (2005-06) and the NE/Himalayan horticulture mission .",
+       "The Golden Revolution (1991-2003) is the name for the horticulture boom (APP).",
+       "India's horticulture output was 367.72 MT in 2024-25, more than foodgrains (357.73 MT). It is about 33% of agri GVA (LENSD, 8 Jun 2026); older 2026 notes say 30.4%.",
+       "Rayalaseema is being built up as a horticulture hub: banana, oil palm, cashew, coconut, Araku coffee (CDI).",
+       "NABARD's 2026-27 AP plan sets aside ₹5,313 crore for horticulture in Rayalaseema and Prakasam (TH, 6 May 2026)."
+      ]
+     },
+     {
+      "topic": "Rayalaseema development issues",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Compensation for loss of revenue and the development of backward districts (Rayalaseema and North Coastal) › Rayalaseema development issues - drought, irrigation deficit, industrial backwardness",
+      "bullets": [
+       "Drought and low density: population density is low because of recurring droughts and famines (APP). Rayalaseema has 8 districts (Kurnool, Nandyal, Anantapur, Sri Satya Sai, YSR, Annamayya, Tirupati, Chittoor).",
+       "Godavari-Penna link, Phase I: Status / aim 73 TMC of Godavari flood water to the Pennar via a 5-stage lift; about 21% done",
+       "Strengths: a Horticulture Hub, holding 43% of AP's horticulture area and 52% of its output, with 71% of micro-irrigation. Six AP districts are in India's top 10 for micro-irrigation: five from Rayalaseema plus Prakasam.",
+       "Industrial backwardness: investment is skewed towards the coast. Rayalaseema lacks anchor industries, which leads to distress migration and agrarian crisis (CDI Block10).",
+       "Historical root: the Sri Bagh Pact (16 Nov 1937) promised Rayalaseema priority in irrigation for 10 years (APP)."
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-4 › Andhra Pradesh - cropping pattern, major crops, horticulture, aquaculture and fisheries › Irrigation projects of AP → river, district, purpose",
+      "bullets": [
+       "Polavaram: River / source Godavari; Area served / note National Project; multipurpose: irrigation, drinking water, hydropower, flood control",
+       "Pattiseema lift: River / source Godavari to Krishna via Polavaram right canal; Area served / note West Godavari; Godavari-Krishna link",
+       "Handri-Neeva (HNSS): River / source Krishna, lift; Area served / note Drought-prone Rayalaseema",
+       "Polavaram status: 88% civil works, 93% land acquisition, 45% R&R done; left-canal water via the Purushothapatnam lift from July (TH, 19 May 2026).",
+       "Irrigation White Paper (Jul 2026): 36 projects by December 2028, cost Rs 35,555 crore; Rs 24,611 crore spent in two years; Irrigation Action Calendar (APPCA/CDCA Jul 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "7ec2773fb031",
@@ -804,10 +956,22 @@
    },
    "related": [
     {
+     "id": "3048df547ff2",
+     "title": "అమరావతిలో తిరుపతి ఐఐటీ బ్రాంచ్‌ క్యాంపస్‌",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179576"
+    },
+    {
      "id": "857ffc001d56",
      "title": "అమరావతి ఓఆర్‌ఆర్‌కు టెండర్లు",
      "source": "Eenadu — Andhra Pradesh",
      "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/tenders-for-amaravati-orr/1799/126178839"
+    },
+    {
+     "id": "9d4db78e93ff",
+     "title": "అమరావతిలో భూసేకరణకు ముసాయిదా ఆర్‌అండ్‌ఆర్‌ ప్రకటన",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179675"
     }
    ]
   },
@@ -1205,7 +1369,15 @@
     "gaps": [
      "Pan-IIT World Council"
     ]
-   }
+   },
+   "related": [
+    {
+     "id": "d3a5a4ab8843",
+     "title": "Will turn Amaravati into global deep tech hub: CM Naidu",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/amaravati/will-turn-amaravati-into-global-deep-tech-hub-cm-naidu-1128490"
+    }
+   ]
   },
   {
    "id": "41d2fcb128d6",
@@ -1560,6 +1732,137 @@
     ],
     "gaps": []
    }
+  },
+  {
+   "id": "b011011fdb16",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "03:29",
+   "title": "APPCB stresses compliance with pollution control board norms for rice millers",
+   "summary": "APPCB officials warn Nellore rice millers to install boiler dust control equipment or face penalties, following directives from Deputy CM Pawan Kalyan to prevent pollution.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/nellore/appcb-stresses-compliance-with-pollution-control-board-norms-for-rice-millers-1128550",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Pollution"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Environmental institutions - MoEFCC, CPCB and SPCBs, National Green Tribunal, National Biodiversity Authority › SPCBs - APPCB, labs, enforcement, consents",
+     "text": "Not in your sources: APPCB head office location and its laboratory network/instruments.",
+     "match": [
+      "APPCB"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Air pollution - sources, pollutants, NAAQS, AQI, National Clean Air Programme, stubble burning › Universal angles",
+     "text": "AP angle: APPCB monitoring network and the Bhogi advisory (APSES 2024-25; TH Jan 2026).",
+     "match": [
+      "APPCB"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Environmental legislation in India · AP Pollution Control Board",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Environmental legislation in India - Water Act 1974, Air Act 1981, Environment (Protection) Act 1986 › AP Pollution Control Board - head office, functions, online consent, compensation",
+      "bullets": [
+       "Established in 1976 by the Government of AP under the Water Act 1974 (APSES 2024-25). PYQ: APPCB implements environmental laws and rules in AP.",
+       "Implements the Water, Air and EP Acts and waste rules (Hazardous, Bio-medical, Plastic, Solid); siting guidelines for industries; SOPs for marine outfall monitoring and hazardous waste (CDI on APSES 2025-26).",
+       "Ease of Doing Business: computerised inspection allocation - high-risk industries inspected more often (CDI on APSES 2025-26).",
+       "Levies environmental compensation under Sec 33A Water Act / Sec 31A Air Act (power upheld by SC, Aug 2025).",
+       "Not in your sources: APPCB head-office location (moved from Hyderabad after bifurcation) and the name of its online consent system."
+      ]
+     },
+     {
+      "topic": "Air pollution · AP thermal power clusters",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Air pollution - sources, pollutants, NAAQS, AQI, National Clean Air Programme, stubble burning › AP thermal power clusters - SO2 norms compliance",
+      "bullets": [
+       "AP coal clusters: Dr NTTPS, Vijayawada (Ibrahimpatnam), Krishnapatnam (Nellore), Simhadri (Visakhapatnam) .",
+       "National picture: 2015 mandate for FGD; only 39 of 537 coal plants had FGD; the government relaxed the FGD mandate citing high costs (LENS Aug 2025).",
+       "Not in your sources: plant-wise FGD/SO2 compliance status of AP stations."
+      ]
+     },
+     {
+      "topic": "Recent legal changes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent projects, acts and initiatives to reduce environmental pollution in India › Recent legal changes - Jan Vishwas amendments, environmental compensation rules",
+      "bullets": [
+       "Jan Vishwas (Amendment of Provisions) Act, 2023 decriminalised minor offences under the Air Act and EP Act - jail replaced by monetary penalties ; Water Act amended likewise in 2024 .",
+       "Economic Survey 2025-26: Jan Vishwas moved regulation from \"command and control\" to trust-based, technology-enabled regulation.",
+       "Environmental (Protection) Fund Rules, 2026: penalties go into the Fund under Sec 16 EPA (Public Account); 75% States/UTs, 25% Centre; used for monitoring, remediation of contaminated sites, labs, clean-tech R&D; audited by CAG (VIS PT365 2026; LENS Jan 2026).",
+       "Environment Audit Rules, 2025: third-party auditors for compliance (ES 2025-26).",
+       "Industry categories revised - new Blue category (e.g. Compressed Biogas); mandatory 33% green belt replaced by pollution-potential norms (ES 2025-26)."
+      ]
+     },
+     {
+      "topic": "CPCB and Water Pollution Control",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #21 · CPCB and Water Pollution Control",
+      "bullets": [
+       "The Central Pollution Control Board (CPCB) is a statutory organization.",
+       "The CPCB was constituted under the Water (Prevention and Control of Pollution) Act, 1974.",
+       "The CPCB is the national-level pollution-control board.",
+       "The State Pollution Control Boards (SPCBs) operate at the state level.",
+       "The SPCBs implement pollution-control functions at the state level."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "1a03516a7634",
+     "title": "APPCB warns Nellore rice mills on emissions, fines for violations",
+     "source": "The Hindu — Andhra Pradesh",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/appcb-warns-nellore-rice-mills-on-emissions-fines-for-violations/article71541318.ece"
+    }
+   ]
   },
   {
    "id": "5c98c788ef8d",
@@ -1995,7 +2298,15 @@
      }
     ],
     "gaps": []
-   }
+   },
+   "related": [
+    {
+     "id": "5e3bf80a2c46",
+     "title": "Guest lecture on quantum mechanics held",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/vijayawada/guest-lecture-on-quantum-mechanics-held-1128517"
+    }
+   ]
   },
   {
    "id": "c3dfeebd7d3b",
@@ -2146,6 +2457,131 @@
       "bullets": [
        "Character of the crisis: high inflation, low forex reserves, large fiscal deficit (PYQ 2025).",
        "Forex reserves (June 1991): Value $975 million - about 2 weeks of imports"
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "85af35af4d9c",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "02:13",
+   "title": "New greenfield highway to pass through 128 villages in Alluri district",
+   "summary": "The Centre and Andhra Pradesh approve a new greenfield high-speed national highway connecting Kharagpur to Vijayawada, bringing major infrastructure transformation to the ASR district.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/new-greenfield-highway-to-pass-through-128-villages-in-alluri-district-1128498",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [
+    "National Highways and land use"
+   ],
+   "angles": [],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-4 › Services sector geography - tourism (India and AP circuits), IT, banking; salient features › Eco-tourism sites and hill stations → district and nicknames",
+     "text": "Lambasingi: District Alluri Sitharama Raju; Note \"Kashmir of Andhra Pradesh\" (near-freezing winters)",
+     "match": [
+      "andhra",
+      "pradesh",
+      "district"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Geography › #13 · Indian Mountain Passes: Locations and Associations",
+     "text": "Debsa is a major pass in Himachal Pradesh.",
+     "match": [
+      "pradesh",
+      "major",
+      "pass"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Transport in India · Highway network",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-4 › Transport in India - roads (NH network, Bharatmala), railways (zones), pipelines › Highway network - GQ, N-S and E-W corridors, Bharatmala",
+      "bullets": [
+       "Golden Quadrilateral (NHDP): Delhi, Mumbai, Chennai, Kolkata, ~5,846 km; Hyderabad is not on it; longest arm Kolkata-Chennai (1,649 km); longest state share Andhra Pradesh (1,014 km).",
+       "North-South: Srinagar - Kanyakumari, spur to Kochi; East-West: Porbandar - Silchar, 3,300 km; junction at Jhansi.",
+       "Bharatmala Pariyojana: 22,590 km built (APPCA 2026). Not in your sources: Bharatmala progress by state.",
+       "Golden Quadrilateral 2.0 high-speed expressway network planned (LENS, Oct 2025); Vision 2047 master plan - 98% of people within 100 km of a high-speed corridor."
+      ]
+     },
+     {
+      "topic": "Transport in Andhra Pradesh · Airports of AP → category",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-4 › Transport in Andhra Pradesh - highways, railway network, ports (Visakhapatnam, Krishnapatnam, Gangavaram, Kakinada), airports › Airports of AP → category",
+      "bullets": [
+       "Bhogapuram (Alluri Sitarama Raju Intl), Vizianagaram: Category / facts greenfield international; GMR (GVIAL) PPP; Rs 5,640 crore; 6 MPPA. Inaugurated by the PM on 1 Aug 2026; commercial flights from 17 Aug 2026 (IATA code VTZ)",
+       "Vijayawada (Gannavaram), Tirupati (Renigunta): Category / facts international",
+       "Dagadarthi (Nellore): Category / facts proposed no-frills greenfield airport, PPP, Rs 1,499.17 crore, with a cargo hub",
+       "Bhogapuram - Alluri Sitarama Raju International Airport, Vizianagaram district: GMR (GVIAL), PPP-DBFOT, ~2,703 acres; validation flight 4 Jan 2026; PM to inaugurate 1 Aug 2026, commercial flights from 17 Aug 2026, replacing civil flights at INS Dega; AP's first international airport since 2014 (CDCA Jul 2026; Survey 2025-26).",
+       "Proposed greenfield: Dagadarthi (Nellore, cargo hub), Kuppam, Srikakulam, Ongole, Nagarjuna Sagar, Amaravati (4,500 acres). Nodal SPV APADCL (formerly BIACL). Seaplane water aerodromes planned at 10 sites incl. Prakasam Barrage (Survey 2025-26)."
+      ]
+     },
+     {
+      "topic": "Earth",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-1 › Earth - shape, size, geoid; latitudes and longitudes, the graticule › Parallels and meridians → countries they pass through",
+      "bullets": [
+       "Equator (0°): Countries Ecuador, Colombia, Brazil, Sao Tome and Principe, Gabon, Rep. of Congo, DR Congo, Uganda, Kenya, Somalia, Maldives, Indonesia, Kiribati; Commonly tested \"does NOT pass\" Equatorial Guinea, Rwanda (UPPSC 2020)",
+       "Tropic of Cancer (23½°N): Countries 17 countries incl. Mexico, Bahamas, Mauritania, Mali, Algeria, Niger, Libya, Egypt, Saudi Arabia, UAE, Oman, India, Bangladesh, Myanmar, China, Taiwan; Commonly tested \"does NOT pass\" -",
+       "Tropic of Capricorn (23½°S): Countries Chile, Argentina, Paraguay, Brazil, Namibia, Botswana, South Africa, Mozambique, Madagascar, Australia; Commonly tested \"does NOT pass\" -",
+       "Arctic Circle (66½°N): Countries Norway, Sweden, Finland, Russia, USA (Alaska), Canada, Greenland; Commonly tested \"does NOT pass\" Iceland lies just south of it (UPPSC 2013)",
+       "Prime Meridian (0°): Countries UK, France, Spain, Algeria, Mali, Burkina Faso, Togo, Ghana; Commonly tested \"does NOT pass\" Niger (UPPSC 2010)"
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - projects, investments, MoUs, industrial and infrastructure developments › National highway and road projects, SCoR, economic corridors",
+      "bullets": [
+       "South Coast Railway (SCoR): 18th zone, HQ Visakhapatnam, working from 1 June 2026; 4 divisions (Visakhapatnam, Vijayawada, Guntur, Guntakal), 3,532 route km; ₹54,479 crore of works; GM Sandeep Mathur.",
+       "Corridors: Raipur-Visakhapatnam and Nagpur-Vijayawada greenfield expressways; Kharagpur-Visakhapatnam-Amaravati; Ballari-Guntakal 3rd/4th lines (₹1,264 crore, CCEA Jul 2026)."
       ]
      }
     ],
@@ -2858,6 +3294,240 @@
    }
   },
   {
+   "id": "3048df547ff2",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:18",
+   "title": "అమరావతిలో తిరుపతి ఐఐటీ బ్రాంచ్‌ క్యాంపస్‌",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179576",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › AP IT policies - IT Policy 2021-24, IT & GCC Policy 4.0",
+     "text": "AP IT Policy 2021-24 was notified to boost growth and jobs (IYB 2026 p.571). Not in your sources: its definitions.",
+     "match": [
+      "IT policy"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › AP state finances - revenue receipts and expenditure, debt and interest payments, latest AP Budget › Capital outlay - Polavaram, Amaravati, roads, ports",
+     "text": "Amaravati capital: Allocation ₹6,000 crore",
+     "match": [
+      "Amaravati capital"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "ITE&C policy acronyms",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › ITE&C policy acronyms",
+      "bullets": [
+       "LIFT Policy 4.0 (2024-29): Full form Land Incentive for Tech Hubs (land for GCCs and IT infrastructure developers)",
+       "GCC: Full form Global Capability Centre",
+       "RTIH: Full form Ratan Tata Innovation Hub",
+       "AQV / AQRF: Full form Amaravati Quantum Valley / Amaravati Quantum Reference Facilities",
+       "OSAT: Full form Outsourced Semiconductor Assembly and Test"
+      ]
+     },
+     {
+      "topic": "Urbanisation and smart cities in AP · Amaravati capital region",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Urbanisation and smart cities in AP - Amaravati capital region, Visakhapatnam, Kakinada, Tirupati › Amaravati capital region - APCRDA, foundation, land pooling, master plan, funding",
+      "bullets": [
+       "APCRDA = Andhra Pradesh Capital Region Development Authority, under the APCRDA Act, 2014; headquarters Rayapudi. Capital city area is 217 sq km across 29 villages (APP notes say 375 sq km), and the wider capital region is 8,352.69 sq km (APP; CA notes say ~8,452 sq km).",
+       "Foundation stone laid by PM Modi on 22 Oct 2015 at Uddandarayunipalem (Guntur). The PM relaunched the project on 2 May 2025; the 'Restart Amaravati' project office opened in April 2025."
+      ]
+     },
+     {
+      "topic": "Amaravati capital city funding",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Projects of external assistance in Andhra Pradesh - World Bank, ADB, JICA and other funded projects › Amaravati capital city funding - lenders and loan size",
+      "bullets": [
+       "Phase-I lenders: World Bank and Asian Development Bank (APPSC G2 2025).",
+       "₹15,000 crore special assistance fast-tracked for Amaravati works (APPCA, Jan 2026); Union Budget 2026-27: ₹432.09 crore for the Amaravati Integrated Urban Development Programme through IBRD (TH, 2 Feb 2026).",
+       "A World Bank-ADB delegation reviewed APCRDA's capital works on 11 May 2026 (TH, 12 May 2026).",
+       "Not in your sources: the separate World Bank and ADB loan amounts."
+      ]
+     },
+     {
+      "topic": "Releases for Amaravati",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Central government's assistance for building a new capital - commitments and actual releases › Releases for Amaravati - UGD grants, amounts released",
+      "bullets": [
+       "Direct central grants: Rs 2,500 crore in total under Sec 94(3) (APP). According to the BJP State president, this was Rs 1,500 crore at first for building the capital plus a special Rs 1,000 crore later for essential infrastructure (TH, 6 Apr 2026).",
+       "Cost gap: the AP government estimated the capital at about Rs 1.2 lakh crore. CDI says the Centre's commitment was far smaller (Rs 27,000 crore), and heavy borrowing followed (CDI Block13).",
+       "Not in your sources: how the releases were split for Vijayawada-Guntur underground drainage (UGD), and year-wise release figures."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "d288925afac5"
+  },
+  {
+   "id": "1644080e9f7e",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:41",
+   "title": "నిర్దేశిత సమయానికి పోలవరం ప్రాజెక్టు పూర్తిచేయాలి: పీపీఏ సీఈవో సంజీవ్‌ వోహ్రా",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179653",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Forest Rights Act 2006, CAMPA, compensatory afforestation, joint forest management, agroforestry › FRA implementation in AP - titles, ITDA areas",
+     "text": "Tribal conflict: the Koya and Kondh oppose the Polavaram project over land rights and rehabilitation (APP).",
+     "match": [
+      "Polavaram project"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-4 › Services sector geography - tourism (India and AP circuits), IT, banking; salient features › Eco-tourism sites and hill stations → district and nicknames",
+     "text": "Papikondalu: District Godavari gorge (Polavaram project area); Note National Park; boating on the Godavari (APTDC)",
+     "match": [
+      "Polavaram project"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Polavaram Project · GWDT clauses",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Polavaram Project - status, funding, national project status, submergence and R&R issues › GWDT clauses - Polavaram and Godavari-to-Krishna diversion",
+      "bullets": [
+       "Godavari Water Disputes Tribunal set up 1969 (APP); award 1980 (LENS).",
+       "The award cleared Polavaram with FRL +150 ft and allowed 80 TMC of Godavari water to be diverted into the Krishna above Vijayawada; of this, 45 TMC goes to AP and 35 TMC to Karnataka and Maharashtra (21 + 14) .",
+       "Link projects built on this: Pattiseema (temporary lift into the Polavaram RMC) and the proposed Polavaram-Nallamala Sagar (earlier Banakacherla) link. Telangana says the link violates APRA 2014 and the 1980 GWDT award (LENS Jul 2025; TH Jan 2026)."
+      ]
+     },
+     {
+      "topic": "Central assistance to Andhra Pradesh · Polavaram funding",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Central assistance to Andhra Pradesh - Finance Commission transfers and centrally sponsored schemes › Polavaram funding - national project status, cost reimbursement",
+      "bullets": [
+       "National project status under Sec. 90, APRA 2014; Centre to fund it; estimated cost cited as Rs. 55,548 Cr (CDI; older figure) with delayed releases.",
+       "State budget lines: Rs. 6,705 Cr (2025-26) and Rs. 6,105 Cr (2026-27).",
+       "Not in your sources: latest Centre-approved project cost and reimbursement released to date."
+      ]
+     },
+     {
+      "topic": "Polavaram in APRA 2014",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Special assistance and the A.P. Reorganisation Act commitments › Polavaram in APRA 2014 - section, status, executing authority, clearances",
+      "bullets": [
+       "Declared a National Project under Section 90 of the AP Reorganisation Act, 2014 (APPSC 2021 x2; 2022 statement question - all three parts of Sec 90 true). Some notes (Carpe Diem CA, Apr 2026) print \"Section 89\" - wrong; Sec 90 is the answer."
+      ]
+     },
+     {
+      "topic": "Later reorganisation of states",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Later reorganisation of states - 1960s to 2000; creation of Telangana 2014 › Polavaram national project, transfer of mandals, SCS, Ramapada Sagaram",
+      "bullets": [
+       "Polavaram Ordinance - AP Reorganisation (Amendment) Ordinance, 2014 - amended Sec. 3 to move Khammam villages in the submergence zone (G.O.Ms. No. 111, 27 June 2005) to AP; seven mandals moved .",
+       "Original name Ramapada Sagaram, proposed by Sir Shonthi Venkataramamurthy (not Arthur Cotton or K.L. Rao).",
+       "Special Category Status: an assurance by the PM in the Rajya Sabha, not in the Act; AP says it is not fulfilled in full (CDI)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
    "id": "761f9a2958d4",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -3380,6 +4050,112 @@
     ],
     "gaps": []
    }
+  },
+  {
+   "id": "d3a5a4ab8843",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "01:57",
+   "title": "Will turn Amaravati into global deep tech hub: CM Naidu",
+   "summary": "Naidu unveils Rs 500-crore Pan-IIT venture fund",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Naidu unveils Rs 500-crore Pan-IIT venture fund"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/will-turn-amaravati-into-global-deep-tech-hub-cm-naidu-1128490",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region"
+   ],
+   "angles": [
+    "IIT"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › AP data centre and AI initiatives - AI hub city, Google data centre, Quantum Valley",
+     "text": "Visakhapatnam is being developed as the global AI hub (APPSC 2025 key). The state's tech clusters: Data & AI City (Vizag), Quantum Valley (Amaravati), Green Hydrogen (Kakinada), Drone City (Orvakal) (APPCA Feb 2026).",
+     "match": [
+      "amaravati",
+      "global",
+      "tech"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #63 · Global Economic and Social Reports",
+     "text": "The International Monetary Fund (IMF) publishes the Global Financial Stability Report.",
+     "match": [
+      "fund",
+      "global"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Quantum Valley Amaravati and deep tech",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › Quantum Valley Amaravati and deep tech",
+      "bullets": [
+       "India's first Quantum Test and Reference Facilities: test beds 1S (SRM University-AP) and 1Q (Medha Towers, Gannavaram), launched 14 April 2026 (World Quantum Day) (TH, 13-15 Apr 2026).",
+       "50 acres under the National Quantum Mission. Two 18-storey towers, ₹1,205 crore, built by L&T (TH, 19 Mar, 5 Aug 2026). The IBM-TCS quantum computer was promised for 2026; the CM now says the Valley launches in January (TH, 7 Aug 2026).",
+       "Seven MoUs (Feb 2026): UNICC CoE; IBM to train 1 lakh youth; a NIELIT Quantum AI deemed university (TH, 21 Feb 2026).",
+       "The Quantum Computing Policy drew 50+ proposals and 7 approvals (CDI). PanIIT Summit on deep tech, Vijayawada, 3 Oct 2026 (TH, 18 Sep 2026)."
+      ]
+     },
+     {
+      "topic": "Vision documents",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Basic features of the Andhra Pradesh economy after bifurcation - GSDP, growth rate, sectoral shares › Vision documents - goals and target years",
+      "bullets": [
+       "Swarna Andhra: \"Wealthy, Healthy, Happy\" State; 10 Padi Sutralu (Zero Poverty ... Deep Tech); foundation year 2025-26; medium-term GSDP ₹29.29 lakh cr by 2028-29 (16.45% a year); investment ₹40.43 lakh cr (77% private) (SES 2025-26).",
+       "Three economic regions: Visakhapatnam (NITI Aayog growth-hub pilot, $750-800 bn by 2047), Amaravati, Tirupati.",
+       "Vision 2020: the first long-term vision of undivided AP, released in 1999 by the Chandrababu Naidu government .",
+       "Swarna Andhra Vision 2047: launched by CM N. Chandrababu Naidu on 13 December 2024. It aligns with Viksit Bharat 2047 and aims at a \"Wealthy, Healthy and Happy\" AP, guided by Ten Sutras (guiding principles).",
+       "10 priorities (CM, TH 16 Aug 2026): poverty eradication, employment, skills, water security, agri-tech, logistics, energy, quality products, clean Andhra, deep technology."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "4729a9a3a50e"
   },
   {
    "id": "6b4b371ae8d9",
@@ -4296,7 +5072,8 @@
      }
     ],
     "gaps": []
-   }
+   },
+   "topicOf": "b011011fdb16"
   },
   {
    "id": "711aaca61893",
@@ -4702,6 +5479,268 @@
     "gaps": []
    },
    "topicOf": "6e7178ec24ce"
+  },
+  {
+   "id": "bcbacb302c54",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "09:33",
+   "title": "A floor under honey exports, not under beekeeper incomes",
+   "summary": "The government should track procurement prices, producer margins, processing and compliance costs, inventory accumulation and the share of export value reaching beekeepers",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/a-floor-under-honey-exports-not-under-beekeeper-incomes/article71539582.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Export",
+    "Exports"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Minimum Support Price - mechanism, CACP, crops covered, procurement, criticism; PM-AASHA › Agricultural policy since 1991 - WTO AoA, input subsidies, GM crops, trade liberalisation",
+     "text": "Impact: after WTO entry in 1995, subsidies fell as a share of farm income while import competition rose. Input costs (fertiliser, seed, pesticide) rose over 300% since the early 2000s while real farm incomes stagnated (LENS Jan 2026).",
+     "match": [
+      "costs",
+      "share",
+      "wto"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #7 · MSP, FRP and Agricultural Cost Concepts",
+     "text": "The Commission for Agricultural Costs and Prices (CACP) recommends MSP for 22 crops.",
+     "match": [
+      "prices",
+      "costs",
+      "agricultural"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "International trade · India's share in world merchandise exports",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › International trade - composition and direction of India's exports and imports; trade deficit › India's share in world merchandise exports - trend and rank",
+      "bullets": [
+       "2.2% (1948) → 0.5% (1983); world trade share 1.78% (1950) → 0.6% (1995) (APP).",
+       "Services now make up about 49% of total exports, up from 39% in 2014 (TH, 18 May 2026); services surplus record $188.8 bn in FY25 (ES 2025-26).",
+       "Merchandise: India 18th exporter (1.8% share) and 9th importer (2.8%) in 2024 (WTO, per IYB 2026).",
+       "Not in your sources: India's current share and rank in world services exports."
+      ]
+     },
+     {
+      "topic": "Allied sectors · Food processing",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Allied sectors - horticulture, animal husbandry, dairy, fisheries (PMMSY), agro-processing › Food processing - Operation Greens, PM Kisan SAMPADA, mega food parks, processed food export share, PMFME and ODOP",
+      "bullets": [
+       "PM Kisan SAMPADA Yojana: the Ministry of Food Processing Industries' umbrella scheme (VIS 2026).",
+       "Mega Food Parks: a cluster approach linking farms to processing to markets .",
+       "PMFME: formalises micro food-processing units under the One District One Product (ODOP) approach (LENSD, 6 Sep 2026; for ODOP).",
+       "Processed food exports: 20.4% of the agri export basket (LENSD, 8 Jun 2026). The APPSC-GS 2025 key for 2024-25 is \"around 23%\". Answer with the option offered.",
+       "Agri exports reached a record $51.9 billion (2024-25), 11.86% of merchandise exports (LENSD, 8 Jun 2026; IYB 2026)."
+      ]
+     },
+     {
+      "topic": "Foreign Trade Policy · Agri-export promotion",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Foreign Trade Policy - objectives, incentives, EOUs; trade facilitation and logistics costs › Agri-export promotion - nodal agency and facilities",
+      "bullets": [
+       "APEDA is the nodal agency for Agri Export Zones (PYQ 2019); APEDA works under the Department of Commerce (IYB 2026).",
+       "Agriculture Export Facilitation Centre: India's first at Pune (May 2021) (PYQ 2022).",
+       "Agriculture Export Policy 2018 aimed to double agri exports ; MPEDA handles marine products (IYB 2026)."
+      ]
+     },
+     {
+      "topic": "Price concepts",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Public distribution, procurement and buffer-stocking; food subsidy and FCI reform › Price concepts - MSP vs procurement price vs issue price, components of FCI economic cost",
+      "bullets": [
+       "MSP: Meaning Floor price announced before sowing (CACP → CCEA)",
+       "Procurement price: Meaning Price at which the government actually buys grain for PDS and buffer (APP)",
+       "Economic cost of FCI = MSP + bonus (if any) + procurement incidentals + distribution costs (APP). The pooled cost of grain (MSP plus state bonuses) is about two-thirds of the economic cost (UPSC notes)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "628f696007b4",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "03:59",
+   "title": "Finance system resilient, economy braved West Asia crisis: RBI governor",
+   "summary": "'Can't afford to be complacent, must stay alert'",
+   "facts": [],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/india/finance-system-resilient-economy-braved-west-asia-crisis-rbi-governor/articleshow/134668307.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "RBI"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Monetary policy - objectives, instruments (CRR, SLR, repo, reverse repo, MSF, OMO, LAF), transmission › Evolution of monetary policy since 1991 - phases, challenges, monetary vs fiscal tools",
+     "text": "Authority: Fiscal policy Government (Finance Ministry, Parliament); Monetary policy RBI / MPC",
+     "match": [
+      "policy",
+      "rbi",
+      "monetary"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
+     "text": "Judicial Review permits the higher judiciary to declare executive orders void when they contravene constitutional provisions.",
+     "match": [
+      "constitutional",
+      "executive",
+      "judiciary"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Structure of the Indian financial system · Development finance institutions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Structure of the Indian financial system - banks, NBFCs, development finance institutions, cooperatives › Development finance institutions - year and sector",
+      "bullets": [
+       "IDBI: Established 1964 (under RBI; autonomous 1976); Sector / note Apex industrial finance; reverse-merged with IDBI Bank 2002",
+       "NHB: Established 9 July 1988 (NHB Act 1987); Sector / note Housing finance; C. Rangarajan high-level group; RBI stake transferred to Government 2019",
+       "IDBI: Year 1964 (under RBI; autonomous 1976); Role then / now Apex DFI and refinancer; now a commercial bank, reclassified private after LIC took majority control (2019)",
+       "EXIM Bank: Year Jan 1982; Role then / now Foreign-trade finance, lines of credit abroad; RBI-regulated",
+       "RBI regulates and supervises 5 AIFIs: EXIM Bank, NABARD, NHB, SIDBI, NaBFID . The APPSC GS 2024 key (\"out of 17 AIFIs\") marks option (b), 9; your sources do not explain that count."
+      ]
+     },
+     {
+      "topic": "Finance Commission number → chairman (10th to 16th)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Finance Commission - composition, terms of reference, functions; 15th and 16th Finance Commission › Finance Commission number → chairman (10th to 16th)",
+      "bullets": [
+       "14th: Chairman Y.V. Reddy (ex-RBI Governor); Award period 2015-20"
+      ]
+     },
+     {
+      "topic": "Banking in India",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Banking in India - nationalisation, structure, priority sector, small finance and payments banks › Development finance institutions → year and purpose",
+      "bullets": [
+       "IFCI: Year 1948; Purpose First DFI; long-term industrial finance",
+       "IDBI: Year 1964; Purpose Apex industrial development bank (set up with RBI)",
+       "Exim Bank: Year 1982; Purpose Export-import finance",
+       "NaBFID: Year NaBFID Act, 2021; Purpose Long-term infrastructure finance; regulated by RBI",
+       "NABARD took over RBI's agricultural-credit functions and ARDC's refinance portfolio."
+      ]
+     },
+     {
+      "topic": "Reserve Bank of India · RBI establishment",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Reserve Bank of India - establishment, organisation and functions › RBI establishment - Hilton Young Commission, Act, operation, nationalisation",
+      "bullets": [
+       "RBI Act passed: Date 1934",
+       "RBI started functioning: Date 1 April 1935 (Central Office Calcutta; moved to Bombay 1937)",
+       "RBI starts functioning (as a private shareholders' bank): Date 1 April 1935",
+       "Headquarters: Mumbai; offices in 31 locations (APP). The seal shows a tiger and palm tree. Ambedkar's 1925 guidelines to the Royal Commission shaped RBI's design.",
+       "Not in your sources: the list of RBI regional offices (Hyderabad and the office serving Andhra Pradesh)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
   },
   {
    "id": "2696f38a4b95",
@@ -5278,6 +6317,139 @@
    }
   },
   {
+   "id": "8499d93c7ac0",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "03:07",
+   "title": "Odisha Governor directs filling of teaching posts amid 70% vacancy in public universities",
+   "summary": "The recruitment process for vacant teaching posts should be initiated by the first week of November and complete it by the end of the month, said Hari Babu Kambhampati",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "The recruitment process for vacant teaching posts should be initiated by the first week of November and complete it by the end of the month, said Hari Babu Kambhampati"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/odisha/odisha-governor-directs-filling-of-teaching-posts-amid-70-vacancy-in-public-universities/article71541172.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "Post"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Statutory bodies - NHRC and SHRCs, National Commission for Women, NCPCR, National Commission for Minorities › National Commission for Minorities - notified communities, recent additions",
+     "text": "July 2026: Harjit Singh Grewal appointed Chairperson, filling a post vacant since April 2025 (after Iqbal Singh Lalpura); Munawari Begum Vice-Chairperson; Glenn E. Souza Ticlo member; now 4 of 7 posts filled (TH, 18 Jul 2026). The Delhi High Court had sought the Centre's reply on the vacancies (APPCA 2026).",
+     "match": [
+      "vacant",
+      "posts",
+      "post"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #44 · Constitutional Days and Time Limits",
+     "text": "Article 62(2) governs the filling of a Presidential vacancy.",
+     "match": [
+      "filling",
+      "vacancy"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "President of India · Vacancy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › President of India - election, qualifications, term, impeachment; executive, legislative, financial, judicial powers › Vacancy - election time limit and acting President",
+      "bullets": [
+       "Vacancy by expiry of term, death, resignation, impeachment, disqualification, or election declared void.",
+       "Art 65: Vice-President acts (ceases to act as RS Chairman); if both offices are vacant, the Chief Justice of India acts, then the senior-most SC judge (President (Discharge of Functions) Act, 1969) .",
+       "Contrast: VP vacancy (Art 68) has no 6-month deadline (LENS, Jul 2025).",
+       "If VP's office is also vacant: CJI, then senior-most SC judge [GK for last step] (APP)."
+      ]
+     },
+     {
+      "topic": "Statutory bodies · National Commission for Minorities",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Statutory bodies - NHRC and SHRCs, National Commission for Women, NCPCR, National Commission for Minorities › National Commission for Minorities - notified communities, recent additions",
+      "bullets": [
+       "NCM Act does not define \"minority\"; Section 2(c) = any community notified by the Centre.",
+       "Notified in 1993: Muslims, Christians, Sikhs, Buddhists, Parsis; Jains added 27 January 2014 (six total).",
+       "Composition: 7 (Chairperson, Vice-Chairperson (added by the 1995 amendment), 5 members); 5 including the Chairperson must be from minority communities (Section 3(2)); 3-year term; appointed by the Central Government, not the President.",
+       "Has civil-court powers while inquiring into complaints (LENSD, Jul 2026) (older notes say it has no automatic civil-court powers).",
+       "July 2026: Harjit Singh Grewal appointed Chairperson, filling a post vacant since April 2025 (after Iqbal Singh Lalpura); Munawari Begum Vice-Chairperson; Glenn E. Souza Ticlo member; now 4 of 7 posts filled (TH, 18 Jul 2026). The Delhi High Court had sought the Centre's reply on the vacancies (APPCA 2026)."
+      ]
+     },
+     {
+      "topic": "Constitutional Days and Time Limits",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #44 · Constitutional Days and Time Limits",
+      "bullets": [
+       "Sixty days is the period after which an MP's seat may be declared vacant for unauthorised absence.",
+       "Article 101(4) provides that an MP's seat may be declared vacant if the MP is absent from all House meetings for sixty days without permission.",
+       "A vacancy in the office of the President caused by death or resignation must be filled within six months.",
+       "Article 62(2) governs the filling of a Presidential vacancy.",
+       "The Vice-President acts as President during an interim Presidential vacancy."
+      ]
+     },
+     {
+      "topic": "M.M. Punchhi Commission (2007) · Recommendations on the Governor",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › M.M. Punchhi Commission (2007) - recommendations and their status › Recommendations on the Governor - tenure, removal and impeachment, role in universities",
+      "bullets": [
+       "Delete \"during the pleasure of the President\" from Article 156. The Governor should be removed only by impeachment by the State Legislature, on the same lines as the President's impeachment.",
+       "Governors should not be made Chancellors of universities or given other statutory roles, so that the office stays out of day-to-day clashes with State governments.",
+       "Bills: a six-month deadline for the Governor to decide on bills passed by the Assembly, set by constitutional amendment. This repeats Sarkaria's call for a fixed time limit.",
+       "The Governor should not misuse discretionary powers. The nominee should be an eminent person who has not been in active politics, even at the local level, for a couple of years before appointment .",
+       "Exam angle: impeachment of the Governor, the 5-year tenure and the chancellor role are Punchhi's. Periodic \"rotation of Governors\" and \"abolish the office\" are distractors."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
    "id": "04886ffe64d1",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -5817,7 +6989,8 @@
      }
     ],
     "gaps": []
-   }
+   },
+   "topicOf": "687859ece58b"
   },
   {
    "id": "0f6e43742632",
@@ -6038,6 +7211,142 @@
     ],
     "gaps": []
    }
+  },
+  {
+   "id": "687859ece58b",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-03",
+   "time": "09:41",
+   "title": "The price floor India forgot: Why livestock farmers deserve an MSP too!",
+   "summary": "A system like CACP for livestock prices, deficiency payment experiments for milk in regions facing gluts, and acknowledgement of the volatility in livestock prices as a policymaking blind spot would be a reasonable way to begin with",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/the-price-floor-india-forgot-why-livestock-farmers-deserve-an-msp-too/article71539596.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "MSP"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Minimum Support Price - mechanism, CACP, crops covered, procurement, criticism; PM-AASHA › PM-AASHA - components (PSS, PDPS, PPSS), target group, financial outlay",
+     "text": "PDPS (Price Deficiency Payment): What it does No procurement; pays the gap between MSP and market price directly to farmers, mainly for oilseeds",
+     "match": [
+      "deficiency",
+      "payment",
+      "msp"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #7 · MSP, FRP and Agricultural Cost Concepts",
+     "text": "The Commission for Agricultural Costs and Prices (CACP) recommends MSP for 22 crops.",
+     "match": [
+      "cacp",
+      "prices",
+      "agricultural"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Minimum Support Price · Price support beyond MSP",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Minimum Support Price - mechanism, CACP, crops covered, procurement, criticism; PM-AASHA › Price support beyond MSP - Price Stabilisation Fund, state MSP for fruits and vegetables",
+      "bullets": [
+       "Price Stabilisation Fund: set up 2014-15 to hold buffers of onion, potato and pulses and release them to curb price spikes .",
+       "MIS (above) covers perishables not under MSP. Kerala was the first State to fix floor prices for 16 vegetables (Nov 2020) .",
+       "FCI and state agencies procure wheat and paddy under price support; coarse grains are procured by state agencies for the Central Pool; the states decide where purchase centres go (IYB). Pulses, oilseeds and copra go through PSS, capped at 25% of production. Cotton goes through CCI.",
+       "Procurement is concentrated in paddy and wheat and in a few states (Punjab, Haryana, Telangana, AP, Chhattisgarh). For pulses, oilseeds and coarse grains, MSP is largely symbolic (CDI)."
+      ]
+     },
+     {
+      "topic": "MSP, APC and CACP",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #6 · MSP, APC and CACP",
+      "bullets": [
+       "MSP stands for Minimum Support Price.",
+       "MSP is a government-announced minimum price for selected agricultural commodities.",
+       "The purpose of MSP is to protect farmers against a sharp fall in market prices.",
+       "MSP provides a remunerative and stable price environment.",
+       "MSP promotes price stability."
+      ]
+     },
+     {
+      "topic": "Price concepts",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Public distribution, procurement and buffer-stocking; food subsidy and FCI reform › Price concepts - MSP vs procurement price vs issue price, components of FCI economic cost",
+      "bullets": [
+       "MSP: Meaning Floor price announced before sowing (CACP → CCEA)",
+       "Procurement price: Meaning Price at which the government actually buys grain for PDS and buffer (APP)",
+       "Central Issue Price (CIP): Meaning Price at which the Centre issues grain to States and beneficiaries (UPSC notes)",
+       "Economic cost: Meaning MSP + bonus + procurement incidentals + distribution cost (UPSC 2019)",
+       "Pooled grain cost (MSP plus State bonuses) is about two-thirds of the economic cost (UPSC notes)."
+      ]
+     },
+     {
+      "topic": "Agricultural strategy and policy · Schemes for better price realisation",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural strategy and policy - National Agriculture Policy, doubling farmers' income, National Missions › Schemes for better price realisation - PM-AASHA, e-NAM, Operation Greens",
+      "bullets": [
+       "PM-AASHA (2018 ): Objective Remunerative prices: PSS (NAFED/NCCF procurement), PDPS (pay MSP-price gap, coverage raised to 40% of State oilseed output), MIS (25%), Price Stabilisation Fund",
+       "e-NAM (April 2016, SFAC): Objective Online unified market over APMC mandis; 1,656 mandis, 23 States + 4 UTs (Mar 2026)",
+       "Operation Greens (Budget 2018-19): Objective Stabilise Tomato-Onion-Potato prices \"on the lines of Operation Flood\"; widened to 22 perishables from 2021-22",
+       "Krishi UDAN: Objective Air transport of perishables to raise value realisation",
+       "Agriculture Integrated Command and Control Centre was inaugurated in Delhi in March 2024 (APPSC 2024 key)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "49cb804ec1de",
+     "title": "Farmers’ body protests delay in payment for maize procured under MSP",
+     "source": "The Hindu — National",
+     "url": "https://www.thehindu.com/news/national/karnataka/farmers-body-protests-delay-in-payment-for-maize-procured-under-msp/article71540935.ece"
+    }
+   ]
   },
   {
    "id": "4c0250bd7eee",
@@ -6423,6 +7732,133 @@
    }
   },
   {
+   "id": "c6b977ccb116",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:44",
+   "title": "సివిల్‌ వివాదాల్లో జోక్యం వద్దు.. పోలీసులను ఆదేశించిన హైకోర్టు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179670",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Regulatory governance issues - independence, capacity, accountability, regulatory capture, appellate structures › Appellate structures → regulator and further appeal forum",
+     "text": "Under L. Chandra Kumar (1997), High Court judicial review of tribunals survives as part of the basic structure (CDI).",
+     "match": [
+      "structure",
+      "judicial",
+      "review"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
+     "text": "Judicial Review is vested jointly in the Supreme Court and the High Courts.",
+     "match": [
+      "judicial",
+      "review",
+      "high"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "High Court of AP",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › High Courts and subordinate judiciary; judicial review, judicial activism, PIL and judicial overreach debate › High Court of AP - Andhra State HC, united AP HC, separate HC at Amaravati, first Chief Justice, AP Reorganisation Act 2014",
+      "bullets": [
+       "Andhra State High Court: Seat and date Guntur, 5 July 1954; first CJ Koka Subba Rao",
+       "High Court of Andhra Pradesh (united AP): Seat and date Hyderabad, from 1 Nov 1956",
+       "Separate High Court of AP (Sec. 31; judges under Sec. 32): Seat and date Amaravati, from 1 Jan 2019 (APPSC-GS 2022; IYB)",
+       "High Court of Andhra Pradesh: Fact Moved to Hyderabad with the formation of Andhra Pradesh (1 Nov 1956)",
+       "Common High Court (2014-2018): Fact After bifurcation (2 June 2014) AP and Telangana shared the High Court at Hyderabad (AP Reorganisation Act 2014)"
+      ]
+     },
+     {
+      "topic": "Supreme Court and High Court Judges",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #71 · Supreme Court and High Court Judges",
+      "bullets": [
+       "High Court Judges are governed under Part VI, Chapter V of the Constitution.",
+       "Articles 214–231 govern High Court Judges.",
+       "The President of India appoints High Court Judges.",
+       "The Governor has no power to appoint High Court Judges.",
+       "Proved misbehaviour is a ground for removing High Court Judges."
+      ]
+     },
+     {
+      "topic": "Supreme Court · Retired and ad hoc judges",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Supreme Court - composition, appointment, collegium and NJAC, jurisdictions (original, appellate, advisory, writ) › Retired and ad hoc judges - Articles 127, 128; additional judges",
+      "bullets": [
+       "Art. 128: the CJI, with the President's previous consent, may ask a retired SC, Federal Court or HC judge to sit as an SC judge. Such a judge has full powers but is not deemed a judge of the court (APPSC-G2 2025).",
+       "There are no additional judges in the SC. Additional and acting judges exist only in High Courts (Art. 224)."
+      ]
+     },
+     {
+      "topic": "High Court of Andhra State",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Linguistic reorganisation demand; Potti Sriramulu's fast and the formation of Andhra State 1953 › High Court of Andhra State - Guntur",
+      "bullets": [
+       "The High Court was at Guntur (Coastal Andhra) and the capital at Kurnool (Rayalaseema), following the Sreebagh Pact balance.",
+       "The Madras High Court served Andhra until it was set up in 1954 (CDI), on 5 July 1954 .",
+       "Exam angle: \"capital Kurnool, High Court Guntur\" pair (APPSC G2 2008 and 2025)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "2d5b437e2c55",
+     "title": "హైకోర్టు శాశ్వత న్యాయమూర్తులుగా ఐదుగురు",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/five-permanent-judges-for-the-high-court/1799/126178821"
+    }
+   ]
+  },
+  {
    "id": "2d5b437e2c55",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -6539,7 +7975,8 @@
      }
     ],
     "gaps": []
-   }
+   },
+   "topicOf": "c6b977ccb116"
   },
   {
    "id": "8d8ce02d257d",
@@ -9764,6 +11201,69 @@
    }
   },
   {
+   "id": "e1b035e2f7c2",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:48",
+   "title": "6న ఆయుష్మాన్‌ ఆరోగ్య మందిరాల ప్రారంభం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179682",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Launched"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Other social problems - alcoholism, drug abuse, suicide, beggary and human trafficking › Attempt to suicide in law - IPC 309, Mental Healthcare Act 2017, Tele-MANAS",
+     "text": "Tele-MANAS: tele-mental-health helpline launched 10 Oct 2022, toll-free 14416 .",
+     "match": [
+      "launched",
+      "health"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   }
+  },
+  {
    "id": "e4b5de466c75",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -9873,6 +11373,231 @@
        "Vizhinjam (near Thiruvananthapuram, Kerala) is India's first deep-water transshipment hub and first semi-automated port. It is a Kerala Govt and Adani Ports DBFOT project, with a natural depth of 18-20 m close to the shore. In Aug 2026 CBIC designated it a customs port (LENSD, 4 Aug 2026).",
        "Galathea Bay (Great Nicobar) is to host an International Container Transshipment Terminal under the Rs 72,000-crore Great Nicobar Project, near the Malacca Strait. The bay is a nesting site of the leatherback turtle (APPCA; LENS).",
        "Shipbuilding: a Rs 69,725 crore package, including a Maritime Development Fund of Rs 25,000 crore (ES 2025-26)."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "5e3bf80a2c46",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "02:53",
+   "title": "Guest lecture on quantum mechanics held",
+   "summary": "Siddhartha Academy in Vijayawada hosts a guest lecture on quantum computing, exploring quantum mechanics and its technological applications for computer science students.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/guest-lecture-on-quantum-mechanics-held-1128517",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Applications"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Emerging technology frontiers - artificial intelligence, quantum computing, robotics, 3D printing, advanced materials › Quantum computing - qubit, superposition, entanglement, supremacy",
+     "text": "2025 = International Year of Quantum Science and Technology (UN; centenary of quantum mechanics) ; World Quantum Day = 14 April.",
+     "match": [
+      "quantum",
+      "mechanics",
+      "science"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Physics › #8 · Physics Theories, Experiments and Scientists",
+     "text": "Max Planck is associated with quantum mechanics.",
+     "match": [
+      "quantum",
+      "mechanics"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Emerging technology frontiers · Quantum computing",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Emerging technology frontiers - artificial intelligence, quantum computing, robotics, 3D printing, advanced materials › Quantum computing - qubit, superposition, entanglement, supremacy",
+      "bullets": [
+       "Qubit can be 0, 1 or any state between (superposition); entanglement links qubits regardless of distance; decoherence (loss of quantum state through the environment) is the main barrier (TH, 9 Jul 2026).",
+       "Entanglement sudden death = abrupt total loss of entanglement; Raman Research Institute showed one well-timed local \"quantum flip\" can delay or prevent it (LENS daily, 16 Sep 2026).",
+       "DST quantum-safe report: post-quantum cryptography migration for Critical Information Infrastructure by 2029, others by 2033 (LENS daily, 31 May 2026).",
+       "Supremacy machines: Google Sycamore (2019) ; China's photonic Jiuzhang (2020) . Micius (China, 2016) = first quantum communication satellite . Microsoft's Majorana 2 chip raised qubit stability to 20-60 s (APPCA, 2026).",
+       "2025 = International Year of Quantum Science and Technology (UN; centenary of quantum mechanics) ; World Quantum Day = 14 April."
+      ]
+     },
+     {
+      "topic": "Computer types",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Nature and scope of ICT; basics of hardware, software, memory and operating systems › Computer types - analog, digital, hybrid, PC, supercomputer, quantum",
+      "bullets": [
+       "Quantum computer: uses qubits (superposition, entanglement) (UPSC notes: quantum mechanics for ultra-fast calculation, cryptography, optimisation). Q-Day = when quantum computers can break RSA-2048 public-key encryption, via Shor's algorithm (1994); (LENS Dec 2025)."
+      ]
+     },
+     {
+      "topic": "National strategies and missions in S&T · National Quantum Mission",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 18 › National strategies and missions in S&T - Quantum Mission, Supercomputing, Deep Ocean, Bio-E3, Anusandhan NRF › National Quantum Mission - approval, outlay, hubs, qubit targets",
+      "bullets": [
+       "Targets: intermediate-scale computers of 50-1000 physical qubits in 8 years (superconducting, photonic); satellite QKD over 2000 km within India; inter-city QKD over 2000 km; quantum links with other countries; magnetometers and atomic clocks.",
+       "Quantum Computing: Host IISc Bengaluru",
+       "Quantum Communication: Host IIT Madras",
+       "Quantum Sensing & Metrology: Host IIT Bombay",
+       "Quantum Materials & Devices: Host IIT Delhi"
+      ]
+     },
+     {
+      "topic": "Data analytics for environment and governance",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Big data, cloud computing, edge computing and data centres › Data analytics for environment and governance - large datasets with AI and quantum computing",
+      "bullets": [
+       "AI, quantum computing and data science together analyse large datasets to predict pollution, optimise resource use and support decisions (APPSC 2025 key).",
+       "eTaal 3.0: 4,451+ e-services and 21,206.13 crore e-transactions (Jul 2025)",
+       "MoSPI's Data Innovation Lab and Research and Analysis Division (IYB 2026)",
+       "ES 2025-26 suggests surveys through UDISE+, AISHE and ABDM plus AI to find \"health hotspots\""
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "a04358aa791f"
+  },
+  {
+   "id": "357ccb3c3989",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "03:23",
+   "title": "JNTU VC stresses student skill development in tech sector",
+   "summary": "JNTU Vice-Chancellor Professor H Sudarshan Rao urges students to master AI and digital technologies during the Silver Jubilee celebrations of BIT Institute of Technology in Hindupur.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/jntu-vc-stresses-student-skill-development-in-tech-sector-1128540",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Digital technologies"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › ICT and industry - Industry 4.0, Internet of Things, robotics and automation › Universal angles",
+     "text": "AP angle: IIITDM Kurnool ranked 1st in DoT's \"100 5G Use Case Labs\" assessment for Jan-Jun 2026 (APPCA Jul 2026). Efftronics and JNTU Kakinada launched an industry-sponsored M.Tech in IoT (CDCA Jul 2026).",
+     "match": [
+      "JNTU"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Skill development and employment in AP · APSSDC",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Skill development and employment in AP - AP State Skill Development Corporation, employment schemes › APSSDC - skill hubs, skill colleges, Centres of Excellence",
+      "bullets": [
+       "APSSDC (AP State Skill Development Corporation) is the nodal agency for placement-linked training through Skill Hubs, Skill Spokes, colleges and Sector Skill Councils.",
+       "FY 2025-26: 2,58,416 trained or enrolled and 78,669 placed. Skill Hubs trained 22,878 and placed 11,510. Employability Skill Centres trained 1,11,159 and CM's Skill Excellence Centres 30,615. The PM Internship Scheme had 72,481 enrolments; PM Vishwakarma had 31,326 loan sanctions.",
+       "APSSDC partnered with tech companies to set up 50 skill hubs in rural colleges (APPCA Jan 2026).",
+       "Skill International offers German (A1-B2) training for overseas placement, mainly of nurses, and has a Letter of Intent with Japan's FVCC (TH, 6 May 2026).",
+       "All skill departments are being merged into one Commissionerate of Skill, Employment and Training under a \"One District - One Skill\" plan (TH, 24 Apr 2026)."
+      ]
+     },
+     {
+      "topic": "Student, university and women-built satellites → builder",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Recent Indian satellite launches and their applications › Student, university and women-built satellites → builder",
+      "bullets": [
+       "AzaadiSAT: Builder Space Kidz India, built by 750 girl students",
+       "WESAT: Builder LBS Institute of Technology for Women, Kerala; first Indian satellite fully built by women students",
+       "GSAT-1 is not a student satellite (it was the first GSLV payload, 2001)."
+      ]
+     },
+     {
+      "topic": "Programmes promoting S&T and innovation",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 18 › Programmes promoting S&T and innovation - INSPIRE, Ramanujan and J.C. Bose fellowships, Atal Innovation Mission, Atal Tinkering Labs › Student-scientist and hackathon programmes → partner bodies and objective",
+      "bullets": [
+       "JIGYASA: Partners CSIR + Kendriya Vidyalaya Sangathan (2017); Objective Student-scientist connect: KV students into CSIR labs",
+       "Smart India Hackathon: Partners Ministry of Education (Innovation Cell) + AICTE (from 2017); Objective Students solve problems posed by ministries and industry",
+       "VIPNET: Partners Vigyan Prasar; Objective Network of science clubs across India"
+      ]
+     },
+     {
+      "topic": "Quantum Valley Amaravati and deep tech",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › Quantum Valley Amaravati and deep tech",
+      "bullets": [
+       "India's first Quantum Test and Reference Facilities: test beds 1S (SRM University-AP) and 1Q (Medha Towers, Gannavaram), launched 14 April 2026 (World Quantum Day) (TH, 13-15 Apr 2026).",
+       "50 acres under the National Quantum Mission. Two 18-storey towers, ₹1,205 crore, built by L&T (TH, 19 Mar, 5 Aug 2026). The IBM-TCS quantum computer was promised for 2026; the CM now says the Valley launches in January (TH, 7 Aug 2026).",
+       "Seven MoUs (Feb 2026): UNICC CoE; IBM to train 1 lakh youth; a NIELIT Quantum AI deemed university (TH, 21 Feb 2026).",
+       "The Quantum Computing Policy drew 50+ proposals and 7 approvals (CDI). PanIIT Summit on deep tech, Vijayawada, 3 Oct 2026 (TH, 18 Sep 2026)."
       ]
      }
     ],
@@ -10098,6 +11823,160 @@
    }
   },
   {
+   "id": "f2eb7f085a17",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:29",
+   "title": "పాన్‌ ఐఐటీ సదస్సులో జరిగిన చర్చల్లో నిపుణుల అభిప్రాయాలు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179592",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Summit"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › AP IT policies - IT Policy 2021-24, IT & GCC Policy 4.0",
+     "text": "AP IT Policy 2021-24 was notified to boost growth and jobs (IYB 2026 p.571). Not in your sources: its definitions.",
+     "match": [
+      "IT policy"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "AP ESDM Policy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › AP ESDM Policy - zone-wise incentives, stamp duty, land",
+      "bullets": [
+       "Not in your sources: the Zone A / Zone B fiscal incentives and the stamp duty and land concessions of the earlier AP ESDM Policy.",
+       "Current analogue: the Quantum Valley has a 100% exemption on stamp duty and registration fees (APPCA, Jun 2026)."
+      ]
+     },
+     {
+      "topic": "National Policy on Information Technology 2012",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › National Policy on Information Technology - objectives and outcomes › National Policy on Information Technology 2012 - vision, key objectives",
+      "bullets": [
+       "NPIT 2012: uses ICT as a driver of growth, jobs, governance reform and inclusion.",
+       "Twin goals: bring the full power of ICT within reach of the whole of India, and make India the Global Hub and Destination for IT and ITES Services by 2020.",
+       "Context: Indian IT was a USD 100 billion industry in 2011-12, 80% of revenue from exports; six hubs (Bengaluru, Chennai, Hyderabad, Mumbai, Pune, NCR) had ~90% of the industry and were near saturation, so the policy pushed IT into Tier II and Tier III cities.",
+       "Objectives: strengthen the global IT position; generate jobs; use ICT in education, health, skills, financial inclusion and governance; e-literacy for all.",
+       "The later Digital India, Aadhaar, UPI, BharatNet and DigiLocker are described as putting NPIT's vision into practice (CDI)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "c3b78ac89f74",
+     "title": "పాన్‌ ఐఐటీ సమ్మిట్‌.. కొత్త ఆవిష్కరణలు, స్టార్టప్‌లను పరిశీలించిన చంద్రబాబు",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/chandrababu-participated-in-the-pan-iit-summit/1701/126179139"
+    }
+   ]
+  },
+  {
+   "id": "dbd6cf1452d3",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "04:53",
+   "title": "రిజర్వేషన్లకు 50% పరిమితి అన్నివేళలా వర్తించదు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/the-50-percent-limit-for-reservations-does-not-always-apply/1799/126179503",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Reservation"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › 74th Amendment - Part IXA, Twelfth Schedule, types of urban local bodies, ward committees, DPC and MPC › Part IXA - Articles 243P to 243ZG",
+     "text": "243T: Subject Reservation",
+     "match": [
+      "reservation"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   }
+  },
+  {
    "id": "6ae6fa56f2dc",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -10220,6 +12099,292 @@
       "bullets": [
        "Kerala Education Bill (Art. 143 reference): Year 1958; Held [GK] Article 30 right is not absolute; the State may impose reasonable conditions for aid and recognition",
        "T.M.A. Pai Foundation v State of Karnataka (2002), 11-judge bench: religious and linguistic minorities are to be identified State-wise, not nationally (APP, UPSC) [GK for the case title - APP writes \"v. State of Kerala\"]."
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "c851e90e50ad",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:58",
+   "title": "రూ.142 కోట్లు ఇస్తే.. వంశధార ప్రాజెక్టు పూర్తి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179696",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 41,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-3 › Demographic dividend, ageing and population policy › Total Fertility Rate - replacement level, NFHS-5, states, population bills",
+     "text": "AP Population Management Policy (Feb 2026): moves from population control to managing ageing and the dividend; Sanjeevani health screening of 66 lakh high-risk people and 5 lakh hostel students (APPCA Feb 2026).",
+     "match": [
+      "screening"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   }
+  },
+  {
+   "id": "6db14c88c0a2",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "03:16",
+   "title": "Cops trace married woman missing for eight years",
+   "summary": "Nellore Anti-Human Trafficking Unit (AHTU) police successfully trace a woman who went missing eight years ago near Srikalahasti temple and reunite her with family.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/nellore/cops-trace-married-woman-missing-for-eight-years-1128534",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "Family"
+   ],
+   "score": 38,
+   "band": "low",
+   "why": {
+    "syllabus": 6,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-5 › Women's question in the 19th century - widow remarriage, age of consent, education, women's organisations › Social-reform Acts → year, Governor-General, minimum ages",
+     "text": "1845: Law Anti-Human Sacrifice Act; Governor-General Hardinge I; Reformer / mover -",
+     "match": [
+      "Anti-Human"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-4 › Governors-General of Bengal and of India - Warren Hastings to Dalhousie: key measures › Governor-General - key measure",
+     "text": "Hardinge I: Key measures Preference for English education; Treaty of Lahore 1846; Anti-Human-Sacrifice Act 1845 (APP)",
+     "match": [
+      "Anti-Human"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Missing and exploited children",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Juvenile Justice Act 2015, POCSO Act 2012, Child Labour (Prohibition and Regulation) Amendment 2016 › Missing and exploited children - CHILDLINE, Operation Muskaan/Smile, AHTUs",
+      "bullets": [
+       "CHILDLINE 1098 (APPSC 2019); now integrated with ERSS-112 across 36 States/UTs (CDI 2026).",
+       "Operation Smile / Operation Muskaan: MHA-led drives to trace and rescue missing children (2015) ; AP task force rescued over 1,200 children from urban hubs, scanning railway stations, bus stands, markets and dhabas (APPCA Feb 2026).",
+       "Anti-Human Trafficking Units (AHTUs) in districts under MHA funding ; the Criminal Law Amendment Act 2013 widened \"trafficking\" to sexual exploitation, slavery, servitude, forced labour and organ removal, irrespective of consent (TH, 19 Jan 2026) - now Section 143, BNS 2023 ."
+      ]
+     },
+     {
+      "topic": "Other social problems · Human trafficking",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Other social problems - alcoholism, drug abuse, suicide, beggary and human trafficking › Human trafficking - AHTUs, ITPA 1956",
+      "bullets": [
+       "Art. 23(1); Sec. 143 BNS 2023 defines trafficking, and the victim's consent is immaterial (LENSD, 2 Jun 2026).",
+       "ITPA 1956 (SITA renamed in 1986 ): prostitution itself is not a crime; it punishes brothel-keeping, living on earnings and soliciting (CDX). States run protective homes (IYB).",
+       "AHTUs: district task forces funded by MHA for intelligence, rescue and prosecution. A Victim Protection Plan sets a common protocol for aid and livelihood (LENS Jun 2026).",
+       "UNODC ranks India high as both an origin and a destination country (APP).",
+       "Not in your sources: the latest NCRB data on trafficking and ITPA enforcement."
+      ]
+     },
+     {
+      "topic": "Crimes against women · Gender sensitisation of police",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Crimes against women - trafficking, honour crimes, acid attacks; Criminal Law Amendments 2013 and 2018 › Gender sensitisation of police - women police stations, AHTUs",
+      "bullets": [
+       "Only 11.7% of India's police are women (LENS Apr 2026).",
+       "The first all-women police station was at Kozhikode, Kerala (1973) .",
+       "Other measures: Women Help Desks in police stations; Mahila Police Volunteers (MWCD-MHA, Nirbhaya Fund).",
+       "Anti-Human Trafficking Units (AHTUs): district-level task forces funded by the MHA for trafficking intelligence, rescue and prosecution (LENS Jun 2026).",
+       "The Witness Protection Scheme 2018 is enforced under Art. 141 until Parliament enacts a law (VIS 2026)."
+      ]
+     },
+     {
+      "topic": "Matrilineal family systems → community + region",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Family - types, functions and changing structure in India › Matrilineal family systems → community + region",
+      "bullets": [
+       "Nair (tharavad): Region Kerala; Feature Marumakkathayam; abolished by the Joint Family System (Abolition) Act 1975 (CDX)",
+       "Tiyans, some Moplas, Bants: Region Malabar / Kanara; Feature tharawad: a woman, her siblings and her sisters' children; no husband in the unit (APP)",
+       "Khasi: Region Meghalaya; Feature matrilocal; youngest daughter inherits (ultimogeniture)",
+       "Garo: Region Meghalaya; Feature matrilineage \"Machong\"; the heiress's husband (nokma) heads the household",
+       "Lakshadweep Muslims: Region Lakshadweep; Feature duolocal; \"Taravad\""
+      ]
+     }
+    ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "df63f8b4d321",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "03:35",
+   "title": "Devotees set out for ‘Somnath Swabhiman Yatra’ from Simhachalam",
+   "summary": "Selected devotees from Simhachalam Devasthanam depart for Vijayawada to join the Andhra Pradesh Somnath Swabhiman Yatra-2026, organized by the Endowments Department.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/devotees-set-out-for-somnath-swabhiman-yatra-from-simhachalam-1128559",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-2 › Arab conquest of Sindh (712 CE); Ghaznavid and Ghurid invasions - Mahmud, Muhammad Ghori, Battles of Tarain › Universal angles",
+     "text": "Current relevance: Somnath Swabhiman Parv was launched to mark 1,000 years since Mahmud's attack on Somnath (LENS Jan 2026).",
+     "match": [
+      "somnath",
+      "swabhiman"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · AP History › #15 · Telugu Literature and Press",
+     "text": "Asamarthuni Jeevitha Yatra was celebrated as the first psychological novel in Telugu literature.",
+     "match": [
+      "yatra",
+      "telugu",
+      "literature"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Sources → content (Madala Panji, Ferishta, Gajapati inscriptions at Srikurmam, Simhachalam)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-2 › Gajapatis of Orissa in Andhra; Bahmani incursions into Andhradesa › Sources → content (Madala Panji, Ferishta, Gajapati inscriptions at Srikurmam, Simhachalam)",
+      "bullets": [
+       "Penugonda inscription: Content Kapileswara's attack on Tiran Andhra (1448)",
+       "Victory pillars at Simhachalam, Potnuru: Content Krishnadevaraya's triumph over the Gajapatis"
+      ]
+     },
+     {
+      "topic": "Role of communists in Andhra · Leaders → party affiliation, odd-one-out",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-5 › Role of communists in Andhra - Andhra Mahasabha, peasant mobilisation › Leaders → party affiliation, odd-one-out",
+      "bullets": [
+       "Swami Ramananda Tirtha: Affiliation / role Hyderabad State Congress: led the \"Join Indian Union\" movement. Odd one out among communists"
+      ]
+     },
+     {
+      "topic": "Arab conquest of Sindh (712 CE); Ghaznavid and Ghurid invasions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-2 › Arab conquest of Sindh (712 CE); Ghaznavid and Ghurid invasions - Mahmud, Muhammad Ghori, Battles of Tarain › Universal angles",
+      "bullets": [
+       "Current relevance: Somnath Swabhiman Parv was launched to mark 1,000 years since Mahmud's attack on Somnath (LENS Jan 2026).",
+       "Significance: Tarain II (1192) was the turning point for Turkish rule in North India. The Arab contact of 712 moved Indian science westward.",
+       "Comparative note: Mahmud raided for plunder; Ghori conquered and stayed."
+      ]
+     },
+     {
+      "topic": "Rajput states and society; Chandella (Khajuraho), Solanki (Dilwara, Modhera), Paramara contributions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-2 › Rajput states and society; Chandella (Khajuraho), Solanki (Dilwara, Modhera), Paramara contributions › Universal angles",
+      "bullets": [
+       "Current relevance: the Madhya Pradesh High Court declared Bhojshala a Hindu temple on the strength of ASI findings. The ASI survey had been ordered in 2024. Under a 2003 ASI arrangement, both communities worshipped on separate days (LENS daily 18 May 2026).",
+       "Criticism & debates: the origin theories, and the \"Indian feudalism\" thesis."
       ]
      }
     ],
@@ -11140,6 +13305,128 @@
    "topicOf": "d288925afac5"
   },
   {
+   "id": "9d4db78e93ff",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:47",
+   "title": "అమరావతిలో భూసేకరణకు ముసాయిదా ఆర్‌అండ్‌ఆర్‌ ప్రకటన",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179675",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › AP state finances - revenue receipts and expenditure, debt and interest payments, latest AP Budget › Capital outlay - Polavaram, Amaravati, roads, ports",
+     "text": "Amaravati capital: Allocation ₹6,000 crore",
+     "match": [
+      "Amaravati capital"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - agriculture, industry, IT and infrastructure › AP externally aided projects - funding agency",
+     "text": "Amaravati capital loans: Funding agency World Bank and ADB",
+     "match": [
+      "Amaravati capital"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
+     "text": "The Ninth Schedule was enacted largely to overcome early judicial interpretations restricting land acquisition measures.",
+     "match": [
+      "land acquisition"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Urbanisation and smart cities in AP · Amaravati capital region",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Urbanisation and smart cities in AP - Amaravati capital region, Visakhapatnam, Kakinada, Tirupati › Amaravati capital region - APCRDA, foundation, land pooling, master plan, funding",
+      "bullets": [
+       "APCRDA = Andhra Pradesh Capital Region Development Authority, under the APCRDA Act, 2014; headquarters Rayapudi. Capital city area is 217 sq km across 29 villages (APP notes say 375 sq km), and the wider capital region is 8,352.69 sq km (APP; CA notes say ~8,452 sq km).",
+       "Foundation stone laid by PM Modi on 22 Oct 2015 at Uddandarayunipalem (Guntur). The PM relaunched the project on 2 May 2025; the 'Restart Amaravati' project office opened in April 2025.",
+       "Land Pooling Scheme, Phase I: 93.1% of 37,921 acres pooled; 70,550 returnable plots allotted. Phase II notified for about 16,666 acres in 7 villages. Farmers have received ₹2,038.61 cr in annuity; 17,601 landless labourers get pensions."
+      ]
+     },
+     {
+      "topic": "Amaravati capital city funding",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Projects of external assistance in Andhra Pradesh - World Bank, ADB, JICA and other funded projects › Amaravati capital city funding - lenders and loan size",
+      "bullets": [
+       "Phase-I lenders: World Bank and Asian Development Bank (APPSC G2 2025).",
+       "₹15,000 crore special assistance fast-tracked for Amaravati works (APPCA, Jan 2026); Union Budget 2026-27: ₹432.09 crore for the Amaravati Integrated Urban Development Programme through IBRD (TH, 2 Feb 2026).",
+       "A World Bank-ADB delegation reviewed APCRDA's capital works on 11 May 2026 (TH, 12 May 2026).",
+       "Not in your sources: the separate World Bank and ADB loan amounts."
+      ]
+     },
+     {
+      "topic": "Releases for Amaravati",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Central government's assistance for building a new capital - commitments and actual releases › Releases for Amaravati - UGD grants, amounts released",
+      "bullets": [
+       "Direct central grants: Rs 2,500 crore in total under Sec 94(3) (APP). According to the BJP State president, this was Rs 1,500 crore at first for building the capital plus a special Rs 1,000 crore later for essential infrastructure (TH, 6 Apr 2026).",
+       "Cost gap: the AP government estimated the capital at about Rs 1.2 lakh crore. CDI says the Centre's commitment was far smaller (Rs 27,000 crore), and heavy borrowing followed (CDI Block13).",
+       "Not in your sources: how the releases were split for Vijayawada-Guntur underground drainage (UGD), and year-wise release figures."
+      ]
+     },
+     {
+      "topic": "AP state finances · Capital outlay",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › AP state finances - revenue receipts and expenditure, debt and interest payments, latest AP Budget › Capital outlay - Polavaram, Amaravati, roads, ports",
+      "bullets": [
+       "Budget 2026-27: Polavaram Rs. 6,105 Cr; Amaravati Rs. 6,000 Cr; higher capital outlay for irrigation & flood control, water supply & sanitation, urban development.",
+       "Transport: 2024-25 RE 7,192; 2025-26 BE 8,055 (+12%); Key item Capital outlay on roads & bridges Rs. 1,968 Cr",
+       "Not in your sources: port-specific capital outlay.",
+       "Amaravati capital: Allocation ₹6,000 crore"
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "d288925afac5"
+  },
+  {
    "id": "c3b78ac89f74",
    "date": "2026-10-03",
    "pubDate": "2026-10-03",
@@ -11219,7 +13506,8 @@
      }
     ],
     "gaps": []
-   }
+   },
+   "topicOf": "f2eb7f085a17"
   },
   {
    "id": "074e8d6d47e3",
@@ -11555,6 +13843,142 @@
     ],
     "gaps": []
    }
+  },
+  {
+   "id": "bbb064a00111",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "03:21",
+   "title": "MLA Sunitha lashes out at YCP for obstructing BC quota",
+   "summary": "Notes that during YCP’s previous rule, 16,800 BC individuals lost their local body positions because the party failed to appeal the court’s strike-down in the Supreme Court",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/anantapur/mla-sunitha-lashes-out-at-ycp-for-obstructing-bc-quota-1128537",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 35,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Lokpal and Lokayuktas Act 2013 - structure, jurisdiction, working; Central Vigilance Commission › Lokpal and Lokayuktas Act 2013 - assent, commencement, composition, selection committee, jurisdiction",
+     "text": "The Chairperson or a Member cannot be an MP or MLA .",
+     "match": [
+      "MLA"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › President of India - election, qualifications, term, impeachment; executive, legislative, financial, judicial powers › Electoral college - who votes, who does not, value of vote",
+     "text": "MLA vote = (State population / elected MLAs) x 1/1000.",
+     "match": [
+      "MLA"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #36 · Election Machinery and Electoral Systems",
+     "text": "MLA vote value is based on population ratios.",
+     "match": [
+      "MLA"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #77 · Anti-Defection Law and Disqualification",
+     "text": "A party-elected member includes an MP or MLA.",
+     "match": [
+      "MLA"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Reservation · Backward Classes in the Constitution",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Reservation - constitutional basis, Indra Sawhney, creamy layer, EWS reservation, promotion in reservation › Backward Classes in the Constitution",
+      "bullets": [
+       "\"Backward Classes\" is not defined in the Constitution (APPSC G2 2017 key: the \"defined\" statement is the wrong one).",
+       "27% OBC quota in central jobs from 1993; in central educational institutions under the CEI (Reservation in Admission) Act, 2006, in force Jan 2007 (IYB 2026 says 2007) after the 2005 amendment to Art. 15 (IYB) [GK for the Act's year].",
+       "NCBC: constitutional body under Art. 338B, examines inclusion/exclusion requests (APPCA Apr 2026).",
+       "Central Educational Institutions (Reservation in Admission) Act, 2006 (in force 2007): 27% OBC seats in central institutions (IYB; GS 2007 key: 93rd Amendment); OBC = classes \"so determined by the Central Government\" (APP)."
+      ]
+     },
+     {
+      "topic": "Indra Sawhney and creamy layer link to NCBC",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › National Commission for SCs (338), STs (338A) and Backward Classes (338B); Special Officer for Linguistic Minorities (350B) › Indra Sawhney and creamy layer link to NCBC",
+      "bullets": [
+       "*Indra Sawhney v UoI* (16 Nov 1992) upheld 27% OBC reservation, introduced the creamy layer, and directed a permanent body for OBC-list inclusion/exclusion → NCBC Act, 1993 (in force 2 April 1993).",
+       "102nd Amendment Act, 2018 inserted Art. 338B - NCBC became constitutional; composition: Chairperson, Vice-Chairperson and 3 members appointed by the President; civil court powers.",
+       "The 102nd Amendment also removed backward classes from the NCSC's purview .",
+       "105th Amendment, 2021 restored the States' power to prepare their own SEBC lists (after the Maratha quota judgment) ."
+      ]
+     },
+     {
+      "topic": "Social movements in Andhra Pradesh",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Social movements in Andhra Pradesh - Dalit, backward class, farmers' and anti-arrack movements › National Backward Classes Commissions (Kaka Kalelkar, Mandal) → year + chairman",
+      "bullets": [
+       "First BC Commission: Chairman Kaka Kalelkar; Year Set up 1953; report 1955; Key point Listed 2,399 backward castes (APP: \"nearly 3,000 castes, 1956\")",
+       "Second BC Commission: Chairman B.P. Mandal; Year Set up 1979 (Janata govt); report 1980; Key point OBCs about 52% of the population; 27% reservation, implemented in 1990",
+       "102nd Amendment (2018) gave the National Commission for Backward Classes constitutional status under Art. 338B [GK: amendment number]."
+      ]
+     },
+     {
+      "topic": "Constitutional Rights and Landmark Judgements",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #45 · Constitutional Rights and Landmark Judgements",
+      "bullets": [
+       "Indra Sawhney v. Union of India upheld a 27% quota for Other Backward Classes.",
+       "Indra Sawhney v. Union of India ruled out quotas in promotions.",
+       "Janki Prasad Parimoo v. State of J&K concerns Other Backward Classes.",
+       "The 103rd Constitutional Amendment Act provides a 10% quota for Economically Weaker Sections."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "7da9e7f18422"
   },
   {
    "id": "336b454eb37f",
@@ -11904,6 +14328,62 @@
       ]
      }
     ],
+    "gaps": []
+   }
+  },
+  {
+   "id": "c77a08304471",
+   "date": "2026-10-03",
+   "pubDate": "2026-10-04",
+   "time": "05:46",
+   "title": "న్యాయవాదుల రక్షణ చట్టం అమలు చేయాలి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126179629",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Act"
+   ],
+   "score": 31,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › National - polity and governance: bills, acts, ordinances, landmark judgments › New Acts replacing old laws → old law repealed + new name",
+     "text": "VB-G RAM G Act, 2025: Replaced MGNREGA, 2005",
+     "match": [
+      "act"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
     "gaps": []
    }
   },
@@ -12536,504 +15016,6 @@
        "AP angle: Cyclone Montha (Kakinada, Oct 2025); Hamataliwa papikonda (Papikonda NP); Guntur in Swachh Vayu 2026; kumki elephants from Karnataka (camps at Musalimadugu and Guchimi, Parvathipuram-Manyam), with a 70% fall in human deaths (TH, 14 Aug 2026); gaur translocation to NSTR from Sep 2026 and four female tigers from Maharashtra and MP (APPCA Jul 2026).",
        "AP angle: AP top in SEEI 2024, 2nd in MISHTI; Guntur 2nd in Swachh Vayu 2026; NSTR the largest TR; Tirupati in line for Wetland City status; Seshachalam BR (2010); Koundinya the only Elephant Reserve in AP.",
        "Criticism & debates: India's EPI rank vs its CCPI rank; the protected-area network is only about 5% of land against the 30x30 target (LENS Mar 2026)."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "b61a46b14920",
-   "date": "2026-10-03",
-   "pubDate": "2026-10-03",
-   "title": "Important Amphibian Species in India",
-   "summary": "Amphibians are an important part of India’s biodiversity, linking aquatic and terrestrial ecosystems. From frogs and toads to caecilians, these vertebrates are useful ind",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-amphibian-species-in-india/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    },
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Biodiversity"
-   ],
-   "score": 22,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "unit",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Sustainable development in practice - green economy, circular economy and ESG › Green Skill Development Programme",
-     "text": "Launched in 2017 by the Ministry of Environment, Forest and Climate Change, building on the ENVIS network. It trains youth for green jobs in biodiversity conservation, pollution monitoring, waste management, forestry and wildlife, and allied environment sectors .",
-     "match": [
-      "biodiversity",
-      "conservation",
-      "wildlife"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Biology › #40 · DNA Fingerprinting and Genomic Biotechnology",
-     "text": "Gene therapy is a biotechnology and genetic-engineering application.",
-     "match": [
-      "biotechnology",
-      "genetic",
-      "engineering"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Loss of biodiversity · New species discoveries in news",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Loss of biodiversity - causes, invasive alien species, IUCN Red List categories › New species discoveries in news - region or state",
-      "bullets": [
-       "2025 totals: India added 709 animal species (483 new to science) and 353 plant taxa. India's fauna now stands at 1,05,953 species (TH, 1 Jul 2026).",
-       "By state: Kerala had the most (98), then West Bengal 76, Karnataka 67 and Arunachal 65.",
-       "ZSI alone in 2025: 117 new species, including fishes, reptiles, amphibians and bats, plus 128 new records, from 168 surveys (IYB 2026).",
-       "AP: three new plant species were found in the Eastern Ghats (APPCA, May 2026).",
-       "Western Ghats dragonflies and damselflies: only about 65% of historically recorded species were found. The survey recorded 143 species, 40 of them endemic, across 144 sites in five States (TH, 10 May 2026)."
-      ]
-     },
-     {
-      "topic": "Biodiversity · Species estimates and the largest taxonomic groups",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Biodiversity - levels, values, measurement; India as a megadiverse country › Species estimates and the largest taxonomic groups",
-      "bullets": [
-       "About 1.5 million living and 300,000 fossil species have been described; Wilson (1992) estimates 10-50 million living species in total (Robert May's estimate is about 7 million ).",
-       "Over 70% of recorded species are animals and plants are about 22%; among animals, insects are the richest group (over 70%) .",
-       "In India, VIS (Apr 2026) records about 135 bat species, 16 of them endemic."
-      ]
-     },
-     {
-      "topic": "Conservation",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Conservation - in-situ (protected areas, biosphere reserves) and ex-situ (zoos, gene banks, seed banks) › Protected landscapes and Important Bird and Biodiversity Areas",
-      "bullets": [
-       "Important Bird and Biodiversity Areas (IBAs) are designated by BirdLife International, whose Indian partner is BNHS .",
-       "Important Bird and Biodiversity Areas (IBAs) are recognised by BirdLife International (BPSC 2025 key: Nagi bird sanctuary)."
-      ]
-     },
-     {
-      "topic": "Endemic species and their regions",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Biodiversity hotspots in India; endemism; Biological Diversity Act 2002 and access-benefit sharing › Endemic species and their regions - AP Eastern Ghats and Seshachalam, Hangul, Asiatic lion",
-      "bullets": [
-       "Endemism means a species occurs naturally in one region and nowhere else. Endemics have small ranges, so habitat loss and climate change hit them hardest."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "ab5233d436f6",
-   "date": "2026-10-03",
-   "pubDate": "2026-10-03",
-   "title": "Important Narcotic Drugs and Psychotropic Substances in India",
-   "summary": "India treats narcotic drugs and psychotropic substances as both a public health challenge and a national security issue. The response combines law enforcement, prevention",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-narcotic-drugs-and-psychotropic-substances-in-india/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    },
-    {
-     "code": "G2-M2B-U5",
-     "exam": "G2",
-     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Health"
-   ],
-   "score": 22,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "unit",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Sustainable development in practice - green economy, circular economy and ESG › Green Skill Development Programme",
-     "text": "Launched in 2017 by the Ministry of Environment, Forest and Climate Change, building on the ENVIS network. It trains youth for green jobs in biodiversity conservation, pollution monitoring, waste management, forestry and wildlife, and allied environment sectors .",
-     "match": [
-      "biodiversity",
-      "climate",
-      "change"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Environment › #27 · Ozone Layer, Depletion and Protection",
-     "text": "Ozone depletion is associated with CFCs and other ozone-depleting substances.",
-     "match": [
-      "substances",
-      "ozone",
-      "depletion"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Preparedness and response · International Health Regulations 2005",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Preparedness and response - surveillance, Epidemic Diseases Act, National Health Emergency framework › International Health Regulations 2005 - PHEIC, India's obligations",
-      "bullets": [
-       "The IHR (2005) are a legally binding WHO instrument, in force since 2007. Member states must build core capacities for surveillance and response, report possible PHEICs to WHO within 24 hours, and name a National IHR Focal Point .",
-       "The 2024 amendments added a higher \"pandemic emergency\" tier . The May 2026 Ebola outbreak was a PHEIC but did not meet the pandemic-emergency criteria (TH 18 May 2026).",
-       "WHO Pandemic Agreement adopted 20 May 2025 (TH 7 Apr 2026)."
-      ]
-     },
-     {
-      "topic": "Code on Social Security 2020",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important flagship programmes of the Central Government - social sector (health, education, nutrition, housing) › Code on Social Security 2020 - gig and platform workers, e-Shram, unorganised workers",
-      "bullets": [
-       "It merges 9 laws (EPF, ESI, Maternity Benefit, Gratuity, Unorganised Workers' Social Security Act, etc.). The four Labour Codes came into force on 21 Nov 2025, with the 2026 Central Rules (CDI Block15).",
-       "It recognises gig workers, platform workers and aggregators in law for the first time. Aggregators pay 1-2% of annual turnover (capped at 5% of payouts) into a social security fund. A National Social Security Board recommends schemes (CDI; LENS Jul 2025). Maternity leave stays at 26 weeks; a creche is required at 50+ employees.",
-       "e-Shram (26 Aug 2021, MoLE): Aadhaar-verified National Database of Unorganised Workers; 12-digit UAN; age 16-59; excludes income-tax payers and EPFO/ESIC members. The 2024 One-Stop Solution joins up 15 schemes; 31.87 crore registered (LENSD, 26 Aug and 16 Aug 2026).",
-       "State example: Rajasthan Platform-Based Gig Workers Act 2023 (welfare cess) (LENS Jul 2025)."
-      ]
-     },
-     {
-      "topic": "Health financing in India · Cutting medicine costs",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Health financing in India - public expenditure, out-of-pocket spending and insurance › Cutting medicine costs - Jan Aushadhi, AP generic stores, NPPA",
-      "bullets": [
-       "Private pharmacies dominate over Jan Aushadhi: outpatient medicine bills about 6 times higher (BMJ Open survey 2022-23; LENSD 4 Sep 2026).",
-       "Free Drugs Service Initiative under NHM: free generic medicines at public facilities; DVDMS manages drug procurement/inventory (IYB 2026).",
-       "NPPA (1997) fixes ceiling prices of scheduled (NLEM) drugs under the Drugs Price Control Order, 2013 .",
-       "Not in your sources: current Jan Aushadhi Kendra count and AP's generic-medicine store network."
-      ]
-     },
-     {
-      "topic": "Recent public health initiatives · National Health Policy",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent public health initiatives - Ayushman Bharat, National Health Mission, Ayushman Bharat Digital Mission › National Health Policy - years, NHP 2017 priorities and targets",
-      "bullets": [
-       "Policies: 1983, 2002, 2017 [GK for 1983]. NHP 2002 called for more public spending and a bigger private/NGO role.",
-       "NHP 2017: assurance-based approach; comprehensive primary care package (NCDs, mental health, geriatric, palliative care); Health and Wellness Centres; free drugs, diagnostics and emergency care in public hospitals.",
-       "Targets: public health spending 2.5% of GDP by 2025 (missed - 1.43% in 2022-23, NHA); life expectancy 67.5 to 70 by 2025, TFR 2.1 by 2025, IMR 28 by 2019, MMR 100 by 2020 .",
-       "Other policies: National Policy for Rare Diseases 2021; India Newborn Action Plan 2014."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "e6bbc4fa56a0",
-   "date": "2026-10-03",
-   "pubDate": "2026-10-03",
-   "title": "Indian Start-ups Launch Payloads on SpaceX Transporter-18",
-   "summary": "On 2 October 2026, payloads from Dhruva Space, TakeMe2Space, SatLeo Labs and EON Space Labs reached orbit aboard SpaceX’s Falcon 9 rocket on the Transporter-18 rideshare",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/indian-start-ups-launch-payloads-on-spacex-transporter-18/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Rocket"
-   ],
-   "score": 22,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "unit",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 3 Economy › C-3 › Start-up India, Stand-up India, innovation and entrepreneurship ecosystem › AP start-up and innovation policy - AP Innovation Society, Ratan Tata Innovation Hub",
-     "text": "AP Innovation Society (APIS) - State nodal agency for start-ups and innovation.",
-     "match": [
-      "start",
-      "ups"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Indian Economy › #12 · WTO and GATT Trade Frameworks",
-     "text": "WTO is an international trade organization.",
-     "match": [
-      "international",
-      "trade",
-      "wto"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Space policy and commercialisation",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Space policy and commercialisation - Indian Space Policy 2023, IN-SPACe, NSIL, private launch sector › Private launch and propulsion firms → products + FIRST",
-      "bullets": [
-       "Skyroot Aerospace (Hyderabad): Product Vikram-S (suborbital); FIRST / date Mission Prarambh, 18 Nov 2022 - India's first private rocket launch; 89.5 km, 155 s, 3 payloads; authorised by IN-SPACe",
-       "Bellatrix Aerospace (Bengaluru ): Product Indigenous green propulsion system; FIRST / date Demonstrated in space on PSLV-C58 (POEM-3, Jan 2024); developed under the Technology Development Fund (TDF) (PYQ)",
-       "Worldwide only a few private firms have reached orbit (SpaceX, Rocket Lab, Firefly, some Chinese firms) (TH, 19 Jul 2026).",
-       "Vikram-1: Developer Skyroot; Detail 18 Jul 2026: first privately developed Indian rocket to reach orbit (TH 25 Aug 2026)",
-       "TSAT-1A: Developer TASL (with Satellogic ); Detail India's first privately built sub-metre \"spy\" satellite, launched on a SpaceX rocket (2024)"
-      ]
-     },
-     {
-      "topic": "Human spaceflight · Indians in space",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Human spaceflight - Gaganyaan programme, Bharatiya Antariksh Station roadmap › Indians in space - FIRST Indian, Indian-origin astronauts, Axiom-4",
-      "bullets": [
-       "Rakesh Sharma: Fact First Indian in space, April 1984, Soviet Soyuz T-11 to Salyut-7",
-       "Kalpana Chawla: Fact Indian-origin; first Indian-born woman in space (1997); died in Columbia disaster 2003",
-       "Axiom-4 (Ax-4): launched 25 June 2025 on SpaceX Dragon (partners NASA, Axiom Space, ESA); Shukla's 18-day ISS stay; returned 15 July 2025; seven microgravity experiments by Indian institutions under HSFC (muscle regeneration, algae, crop viability, microbes, cognition, cyanobacteria) (IYB 2026).",
-       "Launched 25 June 2025 on a SpaceX Dragon spacecraft (Falcon 9 rocket ), a commercial mission of NASA, Axiom Space and ESA. Shubhanshu Shukla spent 18 days on the ISS and returned on 15 July 2025.",
-       "He is the first Indian aboard the ISS and the second Indian in space, after Rakesh Sharma (Soyuz T-11, 2 Apr 1984)."
-      ]
-     },
-     {
-      "topic": "Space science missions · Aditya-L1",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Space science missions - Chandrayaan-1, 2 and 3; Mangalyaan; AstroSat; Aditya-L1; XPoSat › Aditya-L1 - L1 point, payloads, dates",
-      "bullets": [
-       "India's first space-based solar observatory; launched 2 September 2023 by PSLV-C57 from Sriharikota.",
-       "Placed in a halo orbit around Sun-Earth L1, about 1.5 million km from Earth; halo-orbit insertion on 6 January 2024 (TH, 9 Jan 2026). Halo orbit gives continuous view of the Sun with no occultation/eclipse.",
-       "7 payloads - 4 remote sensing + 3 in-situ:",
-       "Some notes (prep-app) give the launch date as \"25 January 2024\" - wrong; launch was 2 Sept 2023, halo orbit Jan 2024.",
-       "India's first space-based solar observatory. It sits in a halo orbit around Sun-Earth L1, about 1.5 million km from Earth, which gives an unbroken view of the Sun with no eclipses. It reached the halo orbit on 6 Jan 2024."
-      ]
-     },
-     {
-      "topic": "Private surveillance satellites → builder + launcher",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Satellites for defence and for academic purposes - GSAT-7 series, EDUSAT, RISAT for surveillance › Private surveillance satellites → builder + launcher",
-      "bullets": [
-       "TSAT-1A: sub-metre optical surveillance satellite built by Tata Advanced Systems with Satellogic, launched on SpaceX Falcon 9 in 2024 .",
-       "EOS-N1 (2026) was built for strategic purposes and lost on PSLV-C62 (TH, 12 Jan 2026).",
-       "IN-SPACe approved a PPP earth-observation constellation led by Pixxel with Dhruva Space, SatSure Analytics India and Piersight Space (LENSD, 20 Jul 2026).",
-       "Under SBS-3, 31 of the 52 satellites are to be built by private industry (IYB 2026)."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "4c902e8c8090",
-   "date": "2026-10-03",
-   "pubDate": "2026-10-03",
-   "title": "Wayanad Vulture Survey Records 65 Birds",
-   "summary": "A two-day synchronous vulture survey was conducted in Wayanad Wildlife Sanctuary in Kerala on 26 and 27 September 2026. The survey recorded 65 vultures, including 54 whit",
-   "facts": [
-    {
-     "angle": "GI tag / designation",
-     "text": "A two-day synchronous vulture survey was conducted in Wayanad Wildlife Sanctuary in Kerala on 26 and 27 September 2026."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/wayanad-vulture-survey-records-65-birds/",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Wildlife sanctuary"
-   ],
-   "score": 22,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "unit",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 4 Geography › D-2 › Andhra Pradesh - national parks, wildlife sanctuaries (Nagarjunasagar-Srisailam, Coringa, Papikonda, Rollapadu, Kolleru) and Ramsar sites › Tiger reserve and elephant reserve of AP",
-     "text": "APSES lists 1 tiger reserve and 1 biosphere reserve. One CDI flora note says NSTR is a BR and names \"Sri Venkateswara\" and \"Papikondalu\" tiger reserves; the survey does not support either claim. APP calls Sri Venkateswara the \"1st Biosphere Reserve\"; the BR's name is Seshachalam.",
-     "match": [
-      "survey",
-      "biosphere",
-      "reserves"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Indian Geography › #33 · Wildlife Sanctuaries and Locations",
-     "text": "Keoladeo Wildlife Sanctuary is associated with birds.",
-     "match": [
-      "wildlife",
-      "sanctuary",
-      "birds"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Forest and wildlife legal framework · Acts protecting wild animals, birds and plants",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Forest and wildlife legal framework - Indian Forest Act 1927, Forest (Conservation) Act 1980, Wildlife (Protection) Act 1972 › Acts protecting wild animals, birds and plants - WPA vs EPA vs FCA, AWBI",
-      "bullets": [
-       "WPA 1972: What it does protects wild animals, birds and plants and manages their habitats (APPSC 2025 key)",
-       "The NGT hears cases under 7 laws, including FCA 1980, EPA 1986 and BD Act 2002. It cannot hear cases under WPA 1972 or the FRA 2006 (APPCA 2026)."
-      ]
-     },
-     {
-      "topic": "India",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 4 Geography › D-2 › India - tiger reserves, elephant reserves, Ramsar sites, important bird areas › Migratory birds → migration pattern (Bar-headed goose, Amur falcon) and Central Asian Flyway",
-      "bullets": [
-       "Central Asian Flyway: from the Arctic/Siberia to the Indian Ocean. India is its key wintering ground and hosted CMS COP13 (Gandhinagar, 2020) .",
-       "Bar-headed goose: breeds on Central Asian high lakes and crosses the Himalaya to winter in India. It is one of the highest-flying birds .",
-       "Amur falcon: from SE Siberia/N China, stops over in Nagaland (Doyang, Pangti) in Oct-Nov, then winters in southern Africa. This is the longest raptor migration ."
-      ]
-     },
-     {
-      "topic": "Species-specific conservation projects · Vultures",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Species-specific conservation projects - Project Tiger, Project Elephant, Gangetic dolphin, Great Indian Bustard, vulture, cheetah reintroduction › Vultures - decline, diclofenac ban, action plan, breeding centres",
-      "bullets": [
-       "Action Plan for Vulture Conservation 2020-25 called for a State-level vulture committee in each State and more breeding centres.",
-       "2026: the first attempt to release a captive-bred vulture in the Nilgiris landscape failed. The bird did not settle and died (TH, 30 Jun 2026).",
-       "India has 9 vulture species; 4 CR: white-rumped, slender-billed, long-billed, red-headed (APPCA 2026).",
-       "Cause: veterinary drug diclofenac (kidney failure); safe alternative meloxicam. Decline noticed at Keoladeo, 1998; veterinary diclofenac banned May 2006; Vulture Recovery Plan 2006.",
-       "Breeding: Vulture Conservation and Breeding Centre, Pinjore (Haryana); Vulture Safe Zones. SAVE = Saving Asia's Vultures from Extinction consortium ."
-      ]
-     },
-     {
-      "topic": "Birds, Species Status and Sanctuaries",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Environment › #18 · Birds, Species Status and Sanctuaries",
-      "bullets": [
-       "Nawabganj Bird Sanctuary is located in Unnao, Uttar Pradesh.",
-       "Udhwa Bird Sanctuary is located in Sahibganj, Jharkhand.",
-       "Karikili Bird Sanctuary is located in Tamil Nadu."
       ]
      }
     ],
