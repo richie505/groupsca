@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-04T20:31:36.602Z",
+ "updated": "2026-10-05T06:20:50.324Z",
  "newsDayStarts": "06:00",
  "schedule": [
   "06:30",
@@ -10,18 +10,27 @@
  ],
  "days": [
   {
-   "date": "2026-10-04",
+   "date": "2026-10-05",
    "final": false,
-   "updated": "2026-10-04T20:31:36.586Z",
-   "count": 92,
-   "ap": 33,
+   "updated": "2026-10-05T06:20:50.309Z",
+   "count": 18,
+   "ap": 1,
    "critical": 0,
-   "high": 14
+   "high": 2
+  },
+  {
+   "date": "2026-10-04",
+   "final": true,
+   "updated": "2026-10-05T06:20:50.305Z",
+   "count": 107,
+   "ap": 47,
+   "critical": 0,
+   "high": 18
   },
   {
    "date": "2026-10-03",
    "final": true,
-   "updated": "2026-10-04T20:31:36.579Z",
+   "updated": "2026-10-05T06:20:50.299Z",
    "count": 120,
    "ap": 60,
    "critical": 2,
@@ -30,7 +39,7 @@
   {
    "date": "2026-10-02",
    "final": true,
-   "updated": "2026-10-04T20:31:36.571Z",
+   "updated": "2026-10-05T06:20:50.291Z",
    "count": 120,
    "ap": 60,
    "critical": 0,
@@ -39,7 +48,7 @@
   {
    "date": "2026-10-01",
    "final": true,
-   "updated": "2026-10-04T20:31:36.564Z",
+   "updated": "2026-10-05T06:20:50.285Z",
    "count": 95,
    "ap": 41,
    "critical": 1,
@@ -48,17 +57,24 @@
  ],
  "digests": [
   {
+   "kind": "week",
+   "start": "2026-10-05",
+   "file": "digests/week-2026-10-05.json",
+   "topics": 13,
+   "main": 4
+  },
+  {
    "kind": "month",
    "start": "2026-10-01",
    "file": "digests/month-2026-10.json",
-   "topics": 275,
-   "main": 60
+   "topics": 296,
+   "main": 64
   },
   {
    "kind": "week",
    "start": "2026-09-28",
    "file": "digests/week-2026-09-28.json",
-   "topics": 275,
+   "topics": 284,
    "main": 60
   }
  ]
