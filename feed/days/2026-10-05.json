@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-05",
- "updated": "2026-10-06T06:57:03.060Z",
+ "updated": "2026-10-06T14:21:01.039Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 256,
+   "found": 298,
    "error": null
   },
   {
@@ -18,26 +18,26 @@
   {
    "id": "pib-hyderabad",
    "name": "PIB Hyderabad",
-   "found": 136,
+   "found": 171,
    "error": null
   },
   {
    "id": "air-national",
    "name": "AIR News — National",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "air-international",
    "name": "AIR News — International",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "air-business",
    "name": "AIR News — Business",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "hindu-national",
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 43,
+   "found": 44,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 9,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 58,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 148,
+   "found": 154,
    "error": null
   },
   {
@@ -216,8 +216,8 @@
   {
    "id": "affairscloud",
    "name": "AffairsCloud",
-   "found": 0,
-   "error": "timed out"
+   "found": 15,
+   "error": null
   }
  ],
  "items": [
@@ -14216,6 +14216,125 @@
     "gaps": []
    },
    "thread": "04a54e506931"
+  },
+  {
+   "id": "e7f9ac4607f3",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "02:32",
+   "title": "MITS secures place in THE World University Rankings–2027",
+   "summary": "Madanapalle Institute of Technology & Science (MITS) secures a position in the 1401–1600 ranking band in the Times Higher Education World University Rankings–2027.",
+   "facts": [
+    {
+     "angle": "Index / rank",
+     "text": "Madanapalle Institute of Technology & Science (MITS) secures a position in the 1401–1600 ranking band in the Times Higher Education World University Rankings–2027."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/mits-secures-place-in-the-world-university-rankings2027-1129299",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "University",
+    "Ranking"
+   ],
+   "score": 34,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › UN specialised agencies and programmes - WHO, ILO, UNESCO, FAO, UNICEF, UNDP, UNEP, UNHCR › Flagship reports → agency",
+     "text": "Global Education Monitoring (GEM), UNESCO Science Report, World Water Development Report: Agency UNESCO",
+     "match": [
+      "science",
+      "education",
+      "world"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Society › #10 · Rights, Welfare and Protective Acts",
+     "text": "The University Grants Commission Act regulates higher education.",
+     "match": [
+      "higher",
+      "education",
+      "university"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Cooperative and competitive federalism · State rankings",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Cooperative and competitive federalism - NITI Aayog, GST Council, state rankings › State rankings - publisher and AP's rank",
+      "bullets": [
+       "Latest AP news: Alluri Sitharama Raju (ASR) district ranked 1st in India in the Basic Infrastructure theme of the ADP (March 2026 rankings) (CDCA, Jul 2026).",
+       "SDG India Index 2023-24: AP's position Score 74/100, \"Frontrunner\"",
+       "Fiscal Health Index 2023-24: AP's position 17th",
+       "National Panchayat Awards 2025: AP's position 5 awards, second after Karnataka (6); tied with Odisha"
+      ]
+     },
+     {
+      "topic": "Crimes against women",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Crimes against women - trafficking, honour crimes, acid attacks; Criminal Law Amendments 2013 and 2018 › NCRB data on child marriage and dowry deaths → state rankings",
+      "bullets": [
+       "UP, Bihar, MP and Rajasthan account for most cases (LENS May 2026).",
+       "35,493 brides were killed in 2017-2022 (CDX).",
+       "Child marriage: 23.3% of women were married before 18 (NFHS-5), down from 26.8% (NFHS-4).",
+       "Not in your sources: NCRB state ranking for Prohibition of Child Marriage Act cases. A 2023 APPSC PYQ matched states with child-marriage counts from NCRB data up to 2021."
+      ]
+     },
+     {
+      "topic": "State EoDB rankings",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Make in India, PLI schemes, National Manufacturing Policy; ease of doing business reforms › State EoDB rankings - BRAP, ACI rankings, AP rank by year",
+      "bullets": [
+       "BRAP 2015: AP position 2nd (Gujarat 1st)",
+       "BRAP 2016: AP position 1st (jointly with Telangana)",
+       "BRAP 2016 onwards: AP position No. 1 consistently (APSES 2024-25)",
+       "Not in your sources: Asian Competitiveness Institute (NUS) EoDB ranking of AP (year and rank).",
+       "Not in your sources: state-wise top rankers of each BRAP edition and the ACI ranking."
+      ]
+     },
+     {
+      "topic": "Energy efficiency rankings → agency + AP position (SEEI, implementation readiness)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Energy efficiency - Bureau of Energy Efficiency, Energy Conservation Act, PAT scheme, star labelling, UJALA › Energy efficiency rankings → agency + AP position (SEEI, implementation readiness)",
+      "bullets": [
+       "Not in your sources: the \"Energy Efficiency Implementation Readiness\" ranking (agency, year, AP's rank) and AP's latest SEEI category."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "e7f9ac4607f3"
   },
   {
    "id": "8fbe00caf074",
