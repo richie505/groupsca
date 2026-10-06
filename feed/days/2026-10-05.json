@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-05",
- "updated": "2026-10-05T23:23:54.053Z",
+ "updated": "2026-10-06T06:57:03.060Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 252,
+   "found": 256,
    "error": null
   },
   {
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 43,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 2,
+   "found": 11,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 101,
+   "found": 148,
    "error": null
   },
   {
@@ -216,8 +216,8 @@
   {
    "id": "affairscloud",
    "name": "AffairsCloud",
-   "found": 14,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   }
  ],
  "items": [
@@ -654,6 +654,130 @@
    "top": true
   },
   {
+   "id": "48d820c121b4",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-05",
+   "time": "19:28",
+   "title": "YSRCP protests Nellore’s exclusion from drought-hit mandals",
+   "summary": "YSRCP leaders protest against the government order excluding mandals of the district from the list of drought-affected, despite the prevalence of severe rainfall deficit conditions",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ysrcp-protests-nellores-exclusion-from-drought-hit-mandals/article71547140.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 74,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 10,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Indian political parties - evolution, ideology and classification › Splits and mergers → parent party and year (CPI and CPI(M), NCP, Congress splits, Janata Party, Janata Dal family)",
+     "text": "YSRCP formed: Parent INC; Year 2011",
+     "match": [
+      "YSRCP"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Legislature of Andhra Pradesh - structure and functioning › AP Legislative Assemblies by number - notable features",
+     "text": "15th Assembly (2019): YSRCP won 151 .",
+     "match": [
+      "YSRCP"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Andhra Pradesh · Rain-shadow and drought-prone zone",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-2 › Andhra Pradesh - climate, rainfall regions, cyclone vulnerability, drought-prone areas › Rain-shadow and drought-prone zone",
+      "bullets": [
+       "Rayalaseema lies in the rain shadow of the Western Ghats and the Karnataka/Telangana highlands, so it gets little SW-monsoon rain (CDI). Anantapur is the lowest-rainfall district.",
+       "Chronic droughts hit Rayalaseema and southern Prakasam when the NE monsoon fails; groundwater depletion adds to this (CDI).",
+       "2026: a deficient year. The SW monsoon deficit reached 51.2% (1 Jun-25 Aug), with all 28 districts deficient. Causes: El Nino subsidence, and all seven low-pressure systems forming at the head of the Bay (CDCA Aug 2026)."
+      ]
+     },
+     {
+      "topic": "India · Drought-prone areas",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-2 › India - rainfall distribution, variability, El Nino linkage, drought and flood-prone areas › Drought-prone areas - thresholds, share of land, chronic regions",
+      "bullets": [
+       "About 68% of India's agricultural (cultivable) land is drought-prone in varying degrees (PYQ 2023 key).",
+       "Chronic drought: western India - Rajasthan, Gujarat (PYQ 2025), rain-shadow Deccan; in AP Rayalaseema and south Prakasam (NE monsoon failure + groundwater depletion) (CDI).",
+       "Types: meteorological (rain deficit), agricultural (soil moisture), hydrological (river/groundwater), flash drought (sudden heat + no rain) (LENS Jun 2025).",
+       "Manual for Drought Management (2016, revised 2020) uses rainfall deficit, vegetation, soil moisture and water indicators for declaration [GK]. Not in your sources: exact trigger thresholds of the current Manual."
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh · Revenue divisions and mandals",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-2 › Andhra Pradesh - location, extent, districts, physiographic divisions › Revenue divisions and mandals - counts",
+      "bullets": [
+       "Not in your sources: state-wide revenue division and mandal totals after the Dec 2025 reorganisation. Only the new districts' figures are given: Polavaram 11 mandals and 2 divisions (TH)."
+      ]
+     },
+     {
+      "topic": "Rainfall by zone",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Agro-climatic zones of Andhra Pradesh and their cropping suitability › Rainfall by zone - drought-prone zones",
+      "bullets": [
+       "The Scarce Rainfall Zone (Kurnool, Anantapuramu) is the chronically drought-prone zone. North Coastal and the tribal highlands receive the most rain (CDI).",
+       "Kharif 2026: all 28 districts are in deficit, and Annamayya, Prakasam, Chittoor, Markapuram and Visakhapatnam are the worst hit (CDCA Aug 2026; TH 7 Sep 2026).",
+       "Not in your sources: zone-wise normal annual rainfall ranges."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "013f07294fb1",
+   "update": true,
+   "threadTitle": "30 mandals declared drought-hit",
+   "threadStart": "2026-10-02",
+   "line": "YSRCP protests Nellore’s exclusion from drought-hit mandals"
+  },
+  {
    "id": "85d20346f8a2",
    "date": "2026-10-05",
    "pubDate": "2026-10-05",
@@ -812,6 +936,131 @@
    },
    "thread": "85d20346f8a2",
    "top": true
+  },
+  {
+   "id": "def5a813476d",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:37",
+   "title": "డేటా సెంటర్‌కు భూకేటాయింపుపై హైకోర్టు విచారణ",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181019",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 67,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 8,
+    "reuse": 10
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Regulatory governance issues - independence, capacity, accountability, regulatory capture, appellate structures › Appellate structures → regulator and further appeal forum",
+     "text": "Under L. Chandra Kumar (1997), High Court judicial review of tribunals survives as part of the basic structure (CDI).",
+     "match": [
+      "structure",
+      "judicial",
+      "review"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
+     "text": "Judicial Review is vested jointly in the Supreme Court and the High Courts.",
+     "match": [
+      "judicial",
+      "review",
+      "high"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Sectoral regulators · Data Protection Board of India",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Sectoral regulators - TRAI, CCI, FSSAI, CERC/SERCs, PNGRB, AERA, Data Protection Board › Data Protection Board of India - composition, powers, appellate forum",
+      "bullets": [
+       "Decides complaints and references, and orders urgent remedial action after a data breach.",
+       "Has civil-court powers under the CPC, 1908 (CDI).",
+       "Appeal: to TDSAT within 60 days (CDI, DPDP Rules notes), then to the Supreme Court . (One CDI block says appeals go directly to the Supreme Court. That is wrong.)",
+       "Data protection - DPDP Act 2023",
+       "consent-based processing of digital personal data"
+      ]
+     },
+     {
+      "topic": "Enforcement data",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › SC/ST (Prevention of Atrocities) Act 1989 and amendments; Civil Rights Protection Act 1955 › Enforcement data - NCRB and AP",
+      "bullets": [
+       "Chronic pendency (LENSD 2 Sep 2026 cites a 97% pendency rate); a High Court petition noted a probe dragging 26 months against the 60-day limit (TH 24 Aug 2026).",
+       "AP: 14 Special Sessions Courts + 1 Exclusive Court (Laxmipet, Srikakulam); SOP drawn up with Police, Revenue, Judiciary and Welfare (APSES 2024-25). Crimes against SCs/STs fell 24.32% in 2025 (Home Minister, TH 1 Jan 2026); DGP reported a 30% fall (TH, 9 May 2026).",
+       "NCRB data on crimes against SCs - top states, trend"
+      ]
+     },
+     {
+      "topic": "Big data, cloud computing, edge computing and data centres",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Big data, cloud computing, edge computing and data centres › Big data - Vs, data mining, data warehouse, metadata, data lake",
+      "bullets": [
+       "Big data means large volumes of high-velocity, complex and variable data (APPSC 2019 key).",
+       "Data mining: Meaning Finding patterns and relationships in large datasets",
+       "Data warehouse: Meaning Central store of cleaned, structured data for analysis and reporting",
+       "Metadata: Meaning \"Data about data\" (author, date, size)",
+       "Data lake: Meaning Store of raw data in native format, structured or unstructured"
+      ]
+     },
+     {
+      "topic": "National · Key data releases → agency + frequency + base year",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › National - economy: Union Budget and Economic Survey highlights, RBI policy, key data releases › Key data releases → agency + frequency + base year",
+      "bullets": [
+       "Latest: GDP 7.7% in 2025-26 (PE) and 7.8% in Q1 2026-27; CPI inflation 4.45% in Jul 2026 (19-month high)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "def5a813476d"
   },
   {
    "id": "5b8ac2c81db5",
@@ -1077,6 +1326,14 @@
     ],
     "gaps": []
    },
+   "related": [
+    {
+     "id": "7b1a9bc5cbc2",
+     "title": "మలేరియా మాత్రలు వికటించిన కేసు.. పర్యవేక్షణ బాధ్యత ఏపీ హైకోర్టుకు",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181034"
+    }
+   ],
    "thread": "fee4a5b8d754",
    "top": true
   },
@@ -3588,6 +3845,146 @@
    "thread": "54fe82349ad2"
   },
   {
+   "id": "c82a7387ae3c",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:43",
+   "title": "‘స్థానిక ఎన్నికల’పై సుప్రీంకోర్టును ఆశ్రయించిన వైకాపా",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181028",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-2 › Population policy of India - NPP 2000, family welfare programme, ageing and migration issues › Population stabilisation incentives - two-child norms, seat freeze amendments",
+     "text": "Two-child norms: AP's draft policy (Mar 2026) removes the two-child norm for local body elections (APPCA).",
+     "match": [
+      "local body elections"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Panchayati Raj and urban bodies in Andhra Pradesh - structure, elections, finances, performance › AP State Election Commission",
+     "text": "The SEC does not conduct elections to State legislatures or co-operative bodies (APPSC 2025: SEC conducts local body elections).",
+     "match": [
+      "local body elections"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #65 · Constitutional and Statutory Bodies",
+     "text": "The State Election Commission conducts local body elections.",
+     "match": [
+      "local body elections"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #25 · Election Commission: Powers, Roles and Reforms",
+     "text": "The Election Commission of India does not conduct local body elections.",
+     "match": [
+      "local body elections"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Challenges in local devolution · Delays in local body elections and SEC autonomy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Challenges in local devolution - funds, functions, functionaries; parallel bodies and capacity gaps › Delays in local body elections and SEC autonomy",
+      "bullets": [
+       "Art. 243K (243ZA for municipalities): SEC appointed by the Governor, removable only like a High Court judge; service conditions cannot be varied to the SEC's disadvantage (APPCA, Apr 2026) [GK for last point].",
+       "Before 1993 states postponed local polls at will; the SEC and the 5-year term with elections before expiry (or within 6 months of dissolution, Arts. 243E/243U) made local government permanent (APP).",
+       "AP Cabinet (18 Aug 2026): 34% BC reservation in rural and 33⅓% in urban local bodies; elections to be expedited to secure Central funds (₹12,150 crore at risk if not done by October); direct election of Mayors and municipal chairpersons (TH, 19 Aug 2026)."
+      ]
+     },
+     {
+      "topic": "Evolution of Panchayati Raj",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Evolution of Panchayati Raj - Community Development Programme, Balwant Rai Mehta, Ashok Mehta, G.V.K. Rao and L.M. Singhvi committees › Unit of decentralisation, lower tier, political parties, elections",
+      "bullets": [
+       "Official participation of political parties at all levels of panchayat elections.",
+       "Elections to be run by the state's Chief Electoral Officer with the Chief Election Commissioner. If a body is superseded, elections within 6 months."
+      ]
+     },
+     {
+      "topic": "73rd Amendment",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › 73rd Amendment - Part IX, Eleventh Schedule, three-tier structure, Gram Sabha, reservations, State Election Commission › Term, dissolution and fresh elections (Article 243E)",
+      "bullets": [
+       "If dissolved earlier: election within six months; not needed if the remaining term is under six months; the new body serves only the remainder of the term."
+      ]
+     },
+     {
+      "topic": "Elections",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Elections - delimitation, model code of conduct, EVM-VVPAT, NOTA, election petitions › Universal angles",
+      "bullets": [
+       "Current relevance: SC in State of Karnataka v Prathik Parasrampuria (2026) - removing black money from elections is a core ECI duty (LENSD, 19 Aug 2026); a petition alleged the PM's national broadcast in the 2026 Assembly polls breached MCC Part VII (LENSD, 5 May 2026); the ECI delisted 808 RUPPs (IYB 2026).",
+       "Significance: ECI constituted 1950, a permanent independent constitutional body; its IIIDEM trains election managers (IYB 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "6937eeccff84",
+     "title": "స్థానిక ఎన్నికలపై సుప్రీంకోర్టులో వైకాపా పిటిషన్‌",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/ysrcp-filed-petition-in-the-supreme-court-regarding-local-body-elections/1701/126180420"
+    }
+   ],
+   "thread": "c82a7387ae3c"
+  },
+  {
    "id": "e65232a75f4b",
    "date": "2026-10-05",
    "pubDate": "2026-10-05",
@@ -4124,7 +4521,7 @@
     ],
     "gaps": []
    },
-   "thread": "6937eeccff84"
+   "topicOf": "c82a7387ae3c"
   },
   {
    "id": "8857a96de7fc",
@@ -4773,12 +5170,6 @@
      "title": "A year on, many IIMs yet to submit reservation rosters",
      "source": "Hindustan Times — India",
      "url": "https://www.hindustantimes.com/india-news/a-year-on-many-iims-yet-to-submit-reservation-rosters-101791140531468.html"
-    },
-    {
-     "id": "4f1359f83a16",
-     "title": "IIMs yet to complete faculty reservation rosters nearly a year after centre’s directive",
-     "source": "Hindustan Times — India",
-     "url": "https://www.hindustantimes.com/education/indian-institute-of-management-yet-to-complete-faculty-reservation-rosters-nearly-a-year-after-centre-s-directive-101791168360831.html"
     }
    ],
    "thread": "657d69768b21"
@@ -5724,6 +6115,158 @@
     "gaps": []
    },
    "topicOf": "6a9b0e5c9e43"
+  },
+  {
+   "id": "60a2098bcd0e",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:38",
+   "title": "National Commission for Women seeks gender-neutral childcare leave, shared caregiving by parents",
+   "summary": "National Commission for Women has proposed several recommendations to improve maternity and childcare laws in India. The commission advocates for gender-neutral childcare leave to be extended to the private sector. It also suggests increasing leave for adoptive mothers from 12 weeks to 26 weeks. Recommendations include creating more childcare facilities and offering maternity benefits to informal workers.",
+   "facts": [
+    {
+     "angle": "Report / committee",
+     "text": "National Commission for Women has proposed several recommendations to improve maternity and childcare laws in India."
+    },
+    {
+     "angle": "Figures",
+     "text": "Recommendations include creating more childcare facilities and offering maternity benefits to informal workers."
+    }
+   ],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/india/national-commission-for-women-seeks-gender-neutral-childcare-leave-shared-caregiving-by-parents/articleshow/134720169.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Family",
+    "National Commission for Women"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › NHRC and SHRCs - composition, powers, functions and limitations › Deemed members - chairpersons of other national commissions",
+     "text": "National Commission for Women: Added in 2019 (3) -",
+     "match": [
+      "Commission for Women"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Women's rights - constitutional provisions and the legal framework › Landmark judgements on women's rights → issue",
+     "text": "Babita Puniya (2020): Issue decided Permanent commission for women Army officers",
+     "match": [
+      "Commission for Women"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Society › #1 · Indian Society: Firsts and Welfare Institutions",
+     "text": "The first National Commission for Women was established in 1992.",
+     "match": [
+      "Commission for Women"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Society › #1 · Indian Society: Firsts and Welfare Institutions",
+     "text": "Jayanti Patnaik was the first Chairperson of the National Commission for Women.",
+     "match": [
+      "Commission for Women"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Women's rights · Maternity Benefit Act 1961 and Amendment Act 2017",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Women's rights - constitutional provisions and the legal framework › Maternity Benefit Act 1961 and Amendment Act 2017 - leave weeks, creche, work from home",
+      "bullets": [
+       "1961 Act: 12 weeks paid leave; applies to establishments with 10+ employees.",
+       "Adopting and commissioning mothers get 12 weeks (some notes wrongly say 26).",
+       "Creche compulsory where there are 50+ employees, with 4 visits a day; work-from-home option by agreement after the leave.",
+       "Maternity Benefit (Amendment) Act 2017 - leave, adoptive/commissioning mothers, creche, work from home",
+       "Work from home: 2017 position After leave, if work allows, by mutual agreement"
+      ]
+     },
+     {
+      "topic": "Laws for women · Other women-specific laws → year",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Laws for women - Dowry Prohibition Act, Domestic Violence Act 2005, POSH Act 2013, Maternity Benefit Amendment › Other women-specific laws → year",
+      "bullets": [
+       "Commission of Sati (Prevention) Act: Year 1987 (in force 1988)",
+       "Muslim Women (Protection of Rights on Marriage) Act - triple talaq: Year 2019 (passed 30 July 2019)",
+       "Indecent Representation: bans denigrating depiction in ads, publications etc.; monitoring extended to digital and AI-generated content (2025) (IYB 2026)."
+      ]
+     },
+     {
+      "topic": "Crimes against women · Gender sensitisation of police",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Crimes against women - trafficking, honour crimes, acid attacks; Criminal Law Amendments 2013 and 2018 › Gender sensitisation of police - women police stations, AHTUs",
+      "bullets": [
+       "Only 11.7% of India's police are women (LENS Apr 2026).",
+       "The first all-women police station was at Kozhikode, Kerala (1973) .",
+       "Other measures: Women Help Desks in police stations; Mahila Police Volunteers (MWCD-MHA, Nirbhaya Fund).",
+       "Anti-Human Trafficking Units (AHTUs): district-level task forces funded by the MHA for trafficking intelligence, rescue and prosecution (LENS Jun 2026).",
+       "The Witness Protection Scheme 2018 is enforced under Art. 141 until Parliament enacts a law (VIS 2026)."
+      ]
+     },
+     {
+      "topic": "Women's political participation · Gender indices",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Women's political participation - 73rd/74th Amendment reservation, 106th Amendment; gender indices (GII, GGGI) › Gender indices - publisher, sub-indices, India's rank, top countries",
+      "bullets": [
+       "Gender Development Index (GDI): Publisher UNDP (Human Development Report); What it measures Ratio of female to male HDI across health (life expectancy), education (expected and mean years of schooling) and command over economic resources (earned income)",
+       "Gender Inequality Index (GII): Publisher UNDP (introduced 2010 ); What it measures Reproductive health (MMR, adolescent birth rate), empowerment (share of parliamentary seats, secondary education) and labour market (female LFPR)",
+       "Global Gender Gap Index (GGGI): Publisher World Economic Forum (since 2006 ); What it measures Four sub-indices: Economic Participation & Opportunity, Educational Attainment, Health & Survival, Political Empowerment",
+       "Women, Peace and Security (WPS) Index: Publisher Georgetown Institute for Women, Peace and Security with PRIO; What it measures Inclusion, justice and security of women",
+       "GDI is read as parity near 1; the 0-to-1 \"loss\" scale where 1 = women fare worst belongs to the GII, not the GDI (your APP note attaches it to the GDI)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "60a2098bcd0e"
   },
   {
    "id": "99519c3914fe",
@@ -10099,6 +10642,130 @@
    "thread": "ce9d904b8340"
   },
   {
+   "id": "27f54e9431e2",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-05",
+   "time": "19:38",
+   "title": "CII Regional Partnership Summit on October 7 in Visakhapatnam",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "CII Regional Partnership Summit on October 7 in Visakhapatnam"
+    }
+   ],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/cii-regional-partnership-summit-on-october-7-in-visakhapatnam/article71547100.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Summit"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Civil society, NGOs, SHGs and pressure groups in governance; FCRA regulation › Pressure groups - definition, types, most influential, techniques",
+     "text": "Business: Examples FICCI, CII, ASSOCHAM",
+     "match": [
+      "CII"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Civil society, NGOs, SHGs and pressure groups in governance; FCRA regulation › Pressure groups - definition, types, most influential, techniques",
+     "text": "Business: Indian examples FICCI, CII, ASSOCHAM (CDI names FICCI and CII)",
+     "match": [
+      "CII"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "India in UN peacekeeping; development partnership and lines of credit; diaspora policy; soft power",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › India in UN peacekeeping; development partnership and lines of credit; diaspora policy; soft power › Universal angles",
+      "bullets": [
+       "Current relevance: 210 UN Medals for Indian peacekeepers in UNMISS (LENSD, 20 Aug 2026). The PM's 2026 visits to the diaspora in the Netherlands and Australia (TH, May and Jul 2026). New World Bank Country Partnership Framework for 2026-31 (APPCA, Jun 2026).",
+       "Criticism & debates: in Australia the diaspora can be recast \"as a liability\" in domestic politics; recognition is not the same as strategic alignment (TH, Jul 2026).",
+       "Liberia was the first all-women FPU. The first PBD was held in 2003."
+      ]
+     },
+     {
+      "topic": "India-Russia, India-EU, India-Japan, India-Israel, India-Gulf and India-Africa relations",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › India-Russia, India-EU, India-Japan, India-Israel, India-Gulf and India-Africa relations › India-Japan - partnership, bullet train, ODA, Act East Forum, 2+2, JIMEX",
+      "bullets": [
+       "Special Strategic and Global Partnership (IYB).",
+       "Mumbai-Ahmedabad High Speed Rail (Shinkansen technology) with Japanese ODA ; Act East Forum for the North-East .",
+       "15th Summit (2025): Japanese firms committed 10 trillion yen (~$67 billion) over ten years; 16th Annual Summit held 2026 (LENSD, Jul 2026).",
+       "Trade $27.47 billion (FY 2025-26); CEPA since 2011; Japan is the 5th-largest FDI source (LENSD).",
+       "Defence: 2+2 dialogue, ACSA (2020), UNICORN naval antenna (LENSD)."
+      ]
+     },
+     {
+      "topic": "Investment summits",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP industry - industrial policy, single desk, MSMEs, industrial nodes › Investment summits - Partnership Summits, GIS Visakhapatnam - MoUs",
+      "bullets": [
+       "CII Partnership Summit 2025: 14-15 Nov 2025, Visakhapatnam, theme \"Transforming AP into a Trillion-Dollar Economy\". It led to 610 MoUs worth ₹13.25 lakh crore and 16 lakh+ jobs (TH, 1 Jan 2026). In the SES tally, the Industries Department received 193 proposals worth ₹2,80,384 cr.",
+       "Global Investors Summit was held at Visakhapatnam in March 2023 [GK]. Not in your sources: its MoU totals."
+      ]
+     },
+     {
+      "topic": "Plurilateral groupings · Quad",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Plurilateral groupings - G20, G7, BRICS, QUAD, I2U2, IBSA, BASIC, Colombo Security Conclave › Quad - origin, revival, summits, initiatives",
+      "bullets": [
+       "Origin: Tsunami Core Group after the 2004 Indian Ocean tsunami; first meeting 2007; revived 2017 .",
+       "First leaders' summit virtual, March 2021; first in-person Washington, Sep 2021 .",
+       "Dec 2024 joint statement marked the 20th anniversary of Quad cooperation.",
+       "Initiatives: Quad Vaccine Partnership, Critical and Emerging Technologies group, IPMDA (Indo-Pacific Partnership for Maritime Domain Awareness, 2022) ."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "9625c13748d9",
+   "update": true,
+   "threadTitle": "Andhra to hold five regional MSME conferences from October 7 ahead of CII Partnership Summit",
+   "threadStart": "2026-10-02",
+   "line": "CII Regional Partnership Summit on October 7 in Visakhapatnam"
+  },
+  {
    "id": "68e61bdddefc",
    "date": "2026-10-05",
    "pubDate": "2026-10-05",
@@ -10538,6 +11205,356 @@
     "gaps": []
    },
    "thread": "c7f1e8d82209"
+  },
+  {
+   "id": "c81431402717",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:20",
+   "title": "పోలవరం జలవిద్యుత్కేంద్రంలో స్టార్టర్‌ ఏర్పాటు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/installation-of-starter-at-polavaram-hydroelectric-power-station/1799/126180968",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Established"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Forest Rights Act 2006, CAMPA, compensatory afforestation, joint forest management, agroforestry › FRA implementation in AP - titles, ITDA areas",
+     "text": "Tribal conflict: the Koya and Kondh oppose the Polavaram project over land rights and rehabilitation (APP).",
+     "match": [
+      "Polavaram project"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-4 › Services sector geography - tourism (India and AP circuits), IT, banking; salient features › Eco-tourism sites and hill stations → district and nicknames",
+     "text": "Papikondalu: District Godavari gorge (Polavaram project area); Note National Park; boating on the Godavari (APTDC)",
+     "match": [
+      "Polavaram project"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Polavaram Project · GWDT clauses",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Polavaram Project - status, funding, national project status, submergence and R&R issues › GWDT clauses - Polavaram and Godavari-to-Krishna diversion",
+      "bullets": [
+       "Godavari Water Disputes Tribunal set up 1969 (APP); award 1980 (LENS).",
+       "The award cleared Polavaram with FRL +150 ft and allowed 80 TMC of Godavari water to be diverted into the Krishna above Vijayawada; of this, 45 TMC goes to AP and 35 TMC to Karnataka and Maharashtra (21 + 14) .",
+       "Link projects built on this: Pattiseema (temporary lift into the Polavaram RMC) and the proposed Polavaram-Nallamala Sagar (earlier Banakacherla) link. Telangana says the link violates APRA 2014 and the 1980 GWDT award (LENS Jul 2025; TH Jan 2026)."
+      ]
+     },
+     {
+      "topic": "Central assistance to Andhra Pradesh · Polavaram funding",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Central assistance to Andhra Pradesh - Finance Commission transfers and centrally sponsored schemes › Polavaram funding - national project status, cost reimbursement",
+      "bullets": [
+       "Centre to fund it; estimated cost cited as Rs. 55,548 Cr (CDI; older figure) with delayed releases.",
+       "State budget lines: Rs. 6,705 Cr (2025-26) and Rs. 6,105 Cr (2026-27).",
+       "Not in your sources: latest Centre-approved project cost and reimbursement released to date."
+      ]
+     },
+     {
+      "topic": "Energy and power policy · Electricity Act 2003 and schemes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Energy and power policy - installed capacity mix, distribution reform (UDAY), renewable targets, energy security › Electricity Act 2003 and schemes",
+      "bullets": [
+       "Replaced Indian Electricity Act 1910, Electricity (Supply) Act 1948, ERC Act 1998; open access; tariffs by ERCs; Section 63 = competitive bidding ."
+      ]
+     },
+     {
+      "topic": "Power incentives",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP industry - industrial policy, single desk, MSMEs, industrial nodes › Power incentives - power cost reimbursement, electricity duty",
+      "bullets": [
+       "Fixed power cost reimbursed at ₹1 per unit for 2 years from DCP (APSES).",
+       "Not in your sources: electricity duty exemption under 4.0."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "c81431402717"
+  },
+  {
+   "id": "7b1a9bc5cbc2",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:59",
+   "title": "మలేరియా మాత్రలు వికటించిన కేసు.. పర్యవేక్షణ బాధ్యత ఏపీ హైకోర్టుకు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181034",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Regulatory governance issues - independence, capacity, accountability, regulatory capture, appellate structures › Appellate structures → regulator and further appeal forum",
+     "text": "Under L. Chandra Kumar (1997), High Court judicial review of tribunals survives as part of the basic structure (CDI).",
+     "match": [
+      "structure",
+      "judicial",
+      "review"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
+     "text": "Judicial Review is vested jointly in the Supreme Court and the High Courts.",
+     "match": [
+      "judicial",
+      "review",
+      "high"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "High Court of AP",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › High Courts and subordinate judiciary; judicial review, judicial activism, PIL and judicial overreach debate › High Court of AP - Andhra State HC, united AP HC, separate HC at Amaravati, first Chief Justice, AP Reorganisation Act 2014",
+      "bullets": [
+       "Andhra State High Court: Seat and date Guntur, 5 July 1954; first CJ Koka Subba Rao",
+       "High Court of Andhra Pradesh (united AP): Seat and date Hyderabad, from 1 Nov 1956",
+       "Separate High Court of AP (Sec. 31; judges under Sec. 32): Seat and date Amaravati, from 1 Jan 2019 (APPSC-GS 2022; IYB)",
+       "High Court of Andhra Pradesh: Fact Moved to Hyderabad with the formation of Andhra Pradesh (1 Nov 1956)",
+       "Common High Court (2014-2018): Fact After bifurcation (2 June 2014) AP and Telangana shared the High Court at Hyderabad (AP Reorganisation Act 2014)"
+      ]
+     },
+     {
+      "topic": "Supreme Court and High Court Judges",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #71 · Supreme Court and High Court Judges",
+      "bullets": [
+       "High Court Judges are governed under Part VI, Chapter V of the Constitution.",
+       "Articles 214–231 govern High Court Judges.",
+       "The President of India appoints High Court Judges.",
+       "The Governor has no power to appoint High Court Judges.",
+       "Proved misbehaviour is a ground for removing High Court Judges."
+      ]
+     },
+     {
+      "topic": "Supreme Court · Retired and ad hoc judges",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Supreme Court - composition, appointment, collegium and NJAC, jurisdictions (original, appellate, advisory, writ) › Retired and ad hoc judges - Articles 127, 128; additional judges",
+      "bullets": [
+       "Art. 128: the CJI, with the President's previous consent, may ask a retired SC, Federal Court or HC judge to sit as an SC judge. Such a judge has full powers but is not deemed a judge of the court (APPSC-G2 2025).",
+       "There are no additional judges in the SC. Additional and acting judges exist only in High Courts (Art. 224)."
+      ]
+     },
+     {
+      "topic": "High Court of Andhra State",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Linguistic reorganisation demand; Potti Sriramulu's fast and the formation of Andhra State 1953 › High Court of Andhra State - Guntur",
+      "bullets": [
+       "The High Court was at Guntur (Coastal Andhra) and the capital at Kurnool (Rayalaseema), following the Sreebagh Pact balance.",
+       "The Madras High Court served Andhra until it was set up in 1954 (CDI), on 5 July 1954 .",
+       "Exam angle: \"capital Kurnool, High Court Guntur\" pair (APPSC G2 2008 and 2025)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "fee4a5b8d754"
+  },
+  {
+   "id": "38680155ea95",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:23",
+   "title": "రైతు పురోగతే లక్ష్యంగా… ఏపీయూఎన్‌ఏతో ఏపీ కార్ల్‌ ఒప్పందం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126180976",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agreement"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Minimum Support Price - mechanism, CACP, crops covered, procurement, criticism; PM-AASHA › Procurement - open-ended vs limited procurement crops, decentralised procurement states, AP paddy procurement system",
+     "text": "AP: State agencies procure paddy for FCI's Central Pool under the Paddy Procurement Scheme. DBT to farmers is due within a 48-hour window (APPCA Mar 2026; APSES 2024-25). DCMS societies procure so that farmers actually get MSP. APMARKFED is the apex cooperative marketing body (APSES 2024-25).",
+     "match": [
+      "marketing",
+      "msp",
+      "procurement"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #59 · Public Funds, NIF and RIDF",
+     "text": "Agriculture and related sectors are broad areas of the Rural Infrastructure Development Fund.",
+     "match": [
+      "sectors",
+      "development",
+      "agriculture"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Agricultural strategy and policy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural strategy and policy - National Agriculture Policy, doubling farmers' income, National Missions › National Commission on Agriculture and National Commission on Farmers",
+      "bullets": [
+       "National Commission on Agriculture: Years / Chair 1970-76 (report 1976); chair Nathu Ram Mirdha; Key recommendations HYVs, irrigation, credit reform; coined \"social forestry\"",
+       "National Commission on Farmers: Years / Chair Constituted 18 November 2004; chair M.S. Swaminathan; 5 reports 2004-06; Key recommendations MSP at C2 + 50%; land reforms; women as farmers; universal crop insurance; National Agricultural Risk Fund",
+       "Government MSP policy uses 1.5 x A2+FL (not C2); MSPs for 22 mandated crops (ES 2025-26)."
+      ]
+     },
+     {
+      "topic": "Awards to AP natural farmers",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP agriculture - APCNF/ZBNF, horticulture, aquaculture, allied sectors › Awards to AP natural farmers - award → farmer's district",
+      "bullets": [
+       "Not in your sources: ISHA Foundation (or other) awards to individual AP natural farmers and their districts."
+      ]
+     },
+     {
+      "topic": "Sources of institutional finance for AP farmers",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Institutional credit to agriculture in Andhra Pradesh - banks, NABARD and SHGs › Sources of institutional finance for AP farmers",
+      "bullets": [
+       "AP farmers borrow from commercial banks, RRBs and PACS, i.e. all of them (PYQ 2008). Other formal sources are SHGs/JLGs, microfinance and KCC.",
+       "Nationally, scheduled commercial banks give over 70% of formal farm credit. The cooperative system (PACS-DCCB-SCB) gives short-term credit, and ARDBs give long-term credit (LENS Apr 2026).",
+       "AP Annual Credit Plan 2025-26 review (Jan 2026): Rs 2.96 lakh crore disbursed to agriculture and allied sectors, Rs 1,490 crore to tenant farmers and Rs 95,714 crore to MSMEs (TH, 24 Jan 2026).",
+       "Formal credit excludes many tenant, tribal, women and oral-lessee farmers because it needs land records. A NABARD Guntur study found formal interest rates of about 2.5-10%.",
+       "KCC (1998, NABARD model scheme on the R.V. Gupta Committee): RBI's revised KCC Directions of 19 Jun 2026 apply to loans from 1 Jan 2027, with a maximum tenure of 6 years (earlier 5)."
+      ]
+     },
+     {
+      "topic": "Indian agriculture · Agricultural census",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Indian agriculture - importance, land use classification, cropping seasons and cropping pattern › Agricultural census - size classes, women's share, largest holding state, AP holdings",
+      "bullets": [
+       "India, 10th Agriculture Census (2015-16): 146 million holdings with an average size of 1.08 ha, down from 2.28 ha in 1971. Small and marginal holdings make up 86.2% of holdings but only 47.3% of the area (APPCA; UPSC).",
+       "Size classes above are the standard Agriculture Census classes ; \"small and marginal farmers\" = holdings up to 2 ha.",
+       "Tenth Agriculture Census 2015-16 (still the standard all-India reference): 146 million operational holdings, average size 1.08 ha, down from 2.28 ha in 1971 - fragmentation (APPCA 2026).",
+       "Small and marginal farmers are about 86.2% of all farmers but hold only about 47% of the crop area (APPCA, May 2026).",
+       "Eleventh Agriculture Census 2021-22: provisional State results out; All-India 2021-22 figures are not yet the standard reference."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "38680155ea95"
   },
   {
    "id": "4d02be47fa31",
@@ -11054,147 +12071,6 @@
    "thread": "c0399c991f4f"
   },
   {
-   "id": "4f1359f83a16",
-   "date": "2026-10-05",
-   "pubDate": "2026-10-05",
-   "time": "09:35",
-   "title": "IIMs yet to complete faculty reservation rosters nearly a year after centre’s directive",
-   "summary": "The ministry first discussed implementing reservation policies on September 23, 2025 meeting, when it asked all IIMs to prepare their rosters and share them",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "The ministry first discussed implementing reservation policies on September 23, 2025 meeting, when it asked all IIMs to prepare their rosters and share them"
-    }
-   ],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/education/indian-institute-of-management-yet-to-complete-faculty-reservation-rosters-nearly-a-year-after-centre-s-directive-101791168360831.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B5",
-     "exam": "G1",
-     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
-    },
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [],
-   "score": 45,
-   "band": "medium",
-   "why": {
-    "syllabus": 30,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "notes": [
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 3 Economy › C-5 › Special assistance and the A.P. Reorganisation Act commitments › Central institutions under APRA → location",
-     "text": "IIM: Location Visakhapatnam (CDI)",
-     "match": [
-      "IIM"
-     ]
-    },
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - projects, investments, MoUs, industrial and infrastructure developments › New medical colleges and health institutions → location",
-     "text": "IIT / NIT / IIM: District Tirupati / Tadepalligudem / Visakhapatnam",
-     "match": [
-      "IIM"
-     ]
-    },
-    {
-     "tier": "exact",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · AP Geography › #18 · AP Space, Atmospheric and Defence Institutions",
-     "text": "IIM Visakhapatnam is an IIM.",
-     "match": [
-      "IIM"
-     ]
-    },
-    {
-     "tier": "exact",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · AP Geography › #18 · AP Space, Atmospheric and Defence Institutions",
-     "text": "IIM Visakhapatnam is located at Visakhapatnam.",
-     "match": [
-      "IIM"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Women's rights · Women's reservation in local bodies",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Women's rights - constitutional provisions and the legal framework › Women's reservation in local bodies - AP share, AP reservation in nominated posts and jobs",
-      "bullets": [
-       "AP gives 50% to women in panchayats and municipalities, above the 1/3 floor (APP Unit 10). It also gives 50% of nominated posts and work contracts (TH, 14 Apr 2026).",
-       "AP direct recruitment: 33 1/3% horizontal reservation for women .",
-       "About 46% of PRI representatives are women nationally (TH, 26 Jan 2026). Sashakt Panchayat Netri Abhiyan trains women elected representatives (APPCA 2026)."
-      ]
-     },
-     {
-      "topic": "Reservation · Creamy layer",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Reservation - constitutional basis, Indra Sawhney, creamy layer, EWS reservation, promotion in reservation › Creamy layer - criteria, income limit, SC/ST debate",
-      "bullets": [
-       "Union of India v Rohith Nathan (11 March 2026): parental salary alone cannot place a candidate in the creamy layer; the Court ordered supernumerary posts (TH 13 Mar 2026). In Aug 2026 the Centre asked for clarification on 958 CSE-2025 candidates; SC likely to set up a special Bench (TH 26 Aug 2026).",
-       "Justice G. Rohini Commission (Oct 2017, 14 extensions) to sub-categorise about 3,000 Central-list OBC castes (APP); found ~97% of benefits taken by 25% of sub-castes and ~1,000 communities with zero representation (LENS Sep 2025); report submitted to the President on 31 July 2023 (UPSC notes say October 2023), not yet public; proposes 3-4 sub-groups (UPSC)."
-      ]
-     },
-     {
-      "topic": "Transgender persons · Reservation and state measures",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Transgender persons - NALSA judgment, Transgender Persons (Protection of Rights) Act 2019 › Reservation and state measures - horizontal vs vertical, first service quota, AP pensions, welfare board, ID cards",
-      "bullets": [
-       "Debate: NALSA (2014) asked governments to treat transgender persons as socially and educationally backward (a vertical OBC-type quota); the community seeks horizontal reservation cutting across SC/ST/OBC/General. The issue resurfaced in June 2023 with a Mumbai protest against Maharashtra's reply to the Bombay High Court (APPSC 2022).",
-       "Karnataka - first State to give 1% reservation to transgender persons in all government services (July 2021) (APPSC 2023)."
-      ]
-     },
-     {
-      "topic": "Directive Principles of State Policy · Article 39 clauses",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-1 › Directive Principles of State Policy - Articles 36-51, classification, implementation › Article 39 clauses",
-      "bullets": [
-       "39(a): Directive Adequate means of livelihood for men and women equally",
-       "39(b): Directive Ownership and control of material resources of the community distributed to subserve the common good",
-       "39(c): Directive Economic system not to result in concentration of wealth and means of production to the common detriment",
-       "39(e): Directive Health and strength of workers and tender age of children not abused; no one forced by economic necessity into unsuited work",
-       "39(f): Directive Children to develop in freedom and dignity; protected from exploitation and moral/material abandonment (42nd Amendment)"
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "topicOf": "657d69768b21"
-  },
-  {
    "id": "12e9db44afbe",
    "date": "2026-10-05",
    "pubDate": "2026-10-06",
@@ -11320,6 +12196,69 @@
     ]
    },
    "thread": "12e9db44afbe"
+  },
+  {
+   "id": "f644ad8f8d54",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:40",
+   "title": "‘జనాభా నిష్పత్తికి అనుగుణంగా రిజర్వేషన్ల’పై కౌంటర్‌ వేయండి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181025",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Reservation"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › 74th Amendment - Part IXA, Twelfth Schedule, types of urban local bodies, ward committees, DPC and MPC › Part IXA - Articles 243P to 243ZG",
+     "text": "243T: Subject Reservation",
+     "match": [
+      "reservation"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "f644ad8f8d54"
   },
   {
    "id": "df1d5f547aa0",
@@ -12061,6 +13000,132 @@
    "thread": "b9f453d103cf"
   },
   {
+   "id": "fd5936de0865",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:37",
+   "title": "ఈ ఏడాది 5 లక్షల మంది విద్యార్థులకు నైపుణ్య శిక్షణ",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126180988",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 39,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › India in UN peacekeeping; development partnership and lines of credit; diaspora policy; soft power › Scholarships and training - ICCR, Study in India, e-ITEC",
+     "text": "Study in India: Ministry of Education programme (2018) to attract foreign students .",
+     "match": [
+      "education",
+      "students"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Society › #28 · Network Society: Features and Examples",
+     "text": "Online education is an example of network society.",
+     "match": [
+      "society",
+      "education"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Education programmes → objective",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important flagship programmes of the Central Government - social sector (health, education, nutrition, housing) › Education programmes → objective",
+      "bullets": [
+       "Operation Blackboard (1987, under NPE 1986): Objective Minimum facilities in primary schools. APPSC key: primary education in educationally backward areas",
+       "PM-Vidyalaxmi (2024): Objective Collateral-free, guarantor-free loans for students admitted to top-quality HEIs",
+       "Samagra Shiksha (2018): Objective Merged SSA, RMSA and Teacher Education; pre-school to Class 12"
+      ]
+     },
+     {
+      "topic": "Minority rights · Scholarships for OBC/EBC/DNT",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Minority rights - Articles 29 and 30, National Commission for Minorities, Sachar Committee, schemes › Scholarships for OBC/EBC/DNT - PM YASASVI, SHREYAS, minority scholarships",
+      "bullets": [
+       "PM-YASASVI (2021, MoSJE): for OBC/EBC/DNT students with family income below Rs 2.5 lakh; cost shared 60:40.",
+       "Pre-matric (Class IX-X): Rs 4,000. Post-matric: Rs 5,000-20,000.",
+       "Also top-class school and college education and hostels; 30% of slots for girls.",
+       "SHREYAS: higher education support; funds 8,571 SC students at IITs and IIMs (LENSD, Aug 2026)."
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh · Education schemes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - government decisions, new schemes, appointments and administrative changes › Education schemes - objective",
+      "bullets": [
+       "Talliki Vandanam (was Amma Vodi, Jan 2020): Objective / latest figure ₹15,000 a year to the mother for each school-going child (Classes 1-10, 75% attendance) - a conditional cash transfer; ₹10,090 crore to 67.27 lakh students (APPCA, Jan 2026); ₹8,456 crore in Budget 2026-27",
+       "Dokka Seethamma Madhyahna Bhojanam: Objective / latest figure Mid-day meal extended to Intermediate; 27.97 lakh students; AI revamp under MoU with International Innovation Corps (Feb 2026)",
+       "Akshara Andhra: Objective / latest figure Adult Education Department's 100% literacy drive; 24.7 lakh adults passed FLNAT-2026 (34,406 centres, 15 Mar 2026); literacy said to rise from 73% to 83% (TH, 2 Apr 2026)",
+       "Fee reimbursement (Post-Matric): Objective / latest figure ₹1,543.17 crore for 5.40 lakh SC students (TH, 11 Jun 2026)",
+       "Dokka Seethamma Madhyahna Bhojanam (Jagananna Gorumudda): Objective / beneficiaries mid-day meal extended to Intermediate; 27.97 lakh students; 5 eggs and 3 chikkis a week"
+      ]
+     },
+     {
+      "topic": "Welfare Schemes for Vulnerable Groups",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #35 · Welfare Schemes for Vulnerable Groups",
+      "bullets": [
+       "SHRESHTA provides residential education in top private schools.",
+       "SHRESHTA targets meritorious Scheduled Caste students.",
+       "EMRS provides quality middle-school and high-school education.",
+       "EMRS serves tribal students in remote areas.",
+       "Naya Savera and Nai Udaan provide free coaching for minority students clearing UPSC prelims."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "6fec0fa0df8e",
+     "title": "విద్యార్థుల దినచర్యలో యోగా భాగం కావాలి",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126180972"
+    }
+   ],
+   "thread": "fd5936de0865"
+  },
+  {
    "id": "9fc847ad61b4",
    "date": "2026-10-05",
    "pubDate": "2026-10-05",
@@ -12639,6 +13704,446 @@
    "topicOf": "7cea675f6f8d"
   },
   {
+   "id": "f4aa635eea61",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:34",
+   "title": "కడపలో శ్రీ సిమెంట్‌ పరిశ్రమ",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181007",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-1 › Basic characteristics of the Indian economy; features of a developing economy › AP economy profile - agriculture share of GSDP, per capita income vs India",
+     "text": "Share of GVA, current prices: Andhra Pradesh Services 43%, Agriculture & allied 33%, Industry 24%; India Agriculture below 20%, services 54.3%",
+     "match": [
+      "agriculture",
+      "allied",
+      "services"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #52 · Economic Indices and Their Measures",
+     "text": "IIP measures industrial production.",
+     "match": [
+      "industrial",
+      "production"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Indian industry · AP industrial profile",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Indian industry - structure, growth and contribution; IIP; public sector role and performance › AP industrial profile - GSVA share of industry, major industrial clusters",
+      "bullets": [
+       "AP Industrial Development Policy 4.0 (2024-29) targets (APSES 2024-25 via CDI):",
+       "Not in your sources: industry's share of AP GSVA in the latest Survey and the list of major industrial clusters."
+      ]
+     },
+     {
+      "topic": "Industrial GVA share of residual AP",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › New challenges to industry and commerce after bifurcation - loss of industrial base, relocation › Industrial GVA share of residual AP - before and after",
+      "bullets": [
+       "Just after bifurcation, residual AP was ~60% agriculture-dependent; industry is put at \"only around 10.5% of GSDP\" (CDI Block13). That figure matches manufacturing, not the whole industry sector (which also includes mining, construction and utilities).",
+       "2025-26 (current prices): services 43%, agriculture & allied 33%, industry 24% of GVA; manufacturing 10.84% (CDI AP Survey 2025-26 analysis)."
+      ]
+     },
+     {
+      "topic": "AP's rank in industrial output (Handbook of Statistics on Indian States)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP industry - industrial policy, single desk, MSMEs, industrial nodes › AP's rank in industrial output (Handbook of Statistics on Indian States)",
+      "bullets": [
+       "AP ranked 7th in industrial output (RBI Handbook of Statistics on Indian States 2020-21; APPSC 2023).",
+       "Not in your sources: the rank in the latest edition of the Handbook."
+      ]
+     },
+     {
+      "topic": "Industrial policy institutions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Industrial policy - resolutions of 1948, 1956, 1977, 1980 and the New Industrial Policy 1991 › Industrial policy institutions - DIPP / DPIIT",
+      "bullets": [
+       "DIPP = Department of Industrial Policy & Promotion (APPSC-GS 2019).",
+       "1961: Change Department of Industry set up under Ministry of Commerce & Industry",
+       "1967: Change Renamed Department of Industrial Development",
+       "2000: Change Dept of Industrial Development merged with DIPP",
+       "2019: Change Renamed DPIIT - Department for Promotion of Industry and Internal Trade (internal trade, traders' welfare, Startups added)"
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "f4aa635eea61"
+  },
+  {
+   "id": "15320f42b3db",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:14",
+   "title": "రాజమహేంద్రవరం, తుని నగర, పురపాలక సంస్థల్లో విలీనం నుంచి 15 గ్రామాల మినహాయింపు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126180969",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Evolution of Panchayati Raj - Community Development Programme, Balwant Rai Mehta, Ashok Mehta, G.V.K. Rao and L.M. Singhvi committees › Committee → distinctive recommendation",
+     "text": "Committees that cut the Collector's development role: Balwant Rai Mehta (despite making the Collector ZP chairman), First ARC, Ashok Mehta, G.V.K. Rao. Hanumantha Rao (1984) was the exception.",
+     "match": [
+      "development",
+      "balwant",
+      "rai"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #76 · Women’s Political Representation and Reservation",
+     "text": "Women's political reservation was first constitutionally institutionalized through the 73rd and 74th Constitutional Amendment Acts, 1992.",
+     "match": [
+      "73rd",
+      "74th",
+      "constitutional"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "15320f42b3db"
+  },
+  {
+   "id": "6fec0fa0df8e",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:16",
+   "title": "విద్యార్థుల దినచర్యలో యోగా భాగం కావాలి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126180972",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › India in UN peacekeeping; development partnership and lines of credit; diaspora policy; soft power › Scholarships and training - ICCR, Study in India, e-ITEC",
+     "text": "Study in India: Ministry of Education programme (2018) to attract foreign students .",
+     "match": [
+      "education",
+      "students"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Society › #28 · Network Society: Features and Examples",
+     "text": "Online education is an example of network society.",
+     "match": [
+      "society",
+      "education"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Education programmes → objective",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important flagship programmes of the Central Government - social sector (health, education, nutrition, housing) › Education programmes → objective",
+      "bullets": [
+       "Operation Blackboard (1987, under NPE 1986): Objective Minimum facilities in primary schools. APPSC key: primary education in educationally backward areas",
+       "PM-Vidyalaxmi (2024): Objective Collateral-free, guarantor-free loans for students admitted to top-quality HEIs",
+       "Samagra Shiksha (2018): Objective Merged SSA, RMSA and Teacher Education; pre-school to Class 12"
+      ]
+     },
+     {
+      "topic": "Minority rights · Scholarships for OBC/EBC/DNT",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Minority rights - Articles 29 and 30, National Commission for Minorities, Sachar Committee, schemes › Scholarships for OBC/EBC/DNT - PM YASASVI, SHREYAS, minority scholarships",
+      "bullets": [
+       "PM-YASASVI (2021, MoSJE): for OBC/EBC/DNT students with family income below Rs 2.5 lakh; cost shared 60:40.",
+       "Pre-matric (Class IX-X): Rs 4,000. Post-matric: Rs 5,000-20,000.",
+       "Also top-class school and college education and hostels; 30% of slots for girls.",
+       "SHREYAS: higher education support; funds 8,571 SC students at IITs and IIMs (LENSD, Aug 2026)."
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh · Education schemes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - government decisions, new schemes, appointments and administrative changes › Education schemes - objective",
+      "bullets": [
+       "Talliki Vandanam (was Amma Vodi, Jan 2020): Objective / latest figure ₹15,000 a year to the mother for each school-going child (Classes 1-10, 75% attendance) - a conditional cash transfer; ₹10,090 crore to 67.27 lakh students (APPCA, Jan 2026); ₹8,456 crore in Budget 2026-27",
+       "Dokka Seethamma Madhyahna Bhojanam: Objective / latest figure Mid-day meal extended to Intermediate; 27.97 lakh students; AI revamp under MoU with International Innovation Corps (Feb 2026)",
+       "Akshara Andhra: Objective / latest figure Adult Education Department's 100% literacy drive; 24.7 lakh adults passed FLNAT-2026 (34,406 centres, 15 Mar 2026); literacy said to rise from 73% to 83% (TH, 2 Apr 2026)",
+       "Fee reimbursement (Post-Matric): Objective / latest figure ₹1,543.17 crore for 5.40 lakh SC students (TH, 11 Jun 2026)",
+       "Dokka Seethamma Madhyahna Bhojanam (Jagananna Gorumudda): Objective / beneficiaries mid-day meal extended to Intermediate; 27.97 lakh students; 5 eggs and 3 chikkis a week"
+      ]
+     },
+     {
+      "topic": "Welfare Schemes for Vulnerable Groups",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #35 · Welfare Schemes for Vulnerable Groups",
+      "bullets": [
+       "SHRESHTA provides residential education in top private schools.",
+       "SHRESHTA targets meritorious Scheduled Caste students.",
+       "EMRS provides quality middle-school and high-school education.",
+       "EMRS serves tribal students in remote areas.",
+       "Naya Savera and Nai Udaan provide free coaching for minority students clearing UPSC prelims."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "fd5936de0865"
+  },
+  {
+   "id": "1d7a412e3082",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:31",
+   "title": "సంక్షేమం, అభివృద్ధి.. సరిజోడుగా..",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/foundation-stones-laid-and-projects-inaugurated-worth-rs-2--lakh-crore-in-just-a-month-and-half/1799/126180903",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Centre-State administrative relations - Articles 256-263, all-India services, directions to states › Universal angles",
+     "text": "Criticism & debates: the ISC meets rarely. CDI proposes making it a permanent screening body for bills that affect the Concurrent List.",
+     "match": [
+      "screening"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "1d7a412e3082"
+  },
+  {
+   "id": "1b0ddd37208a",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:53",
+   "title": "స్థానిక సంస్థల ఎన్నికలపై నేడు చంద్రబాబు, పవన్‌కల్యాణ్‌ భేటీ",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181046",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Devolution of powers and finances to local levels - Finance Commission and State Finance Commission transfers › Decentralisation concepts - democratic decentralisation vs delegation, what the 73rd Amendment decentralised",
+     "text": "Democratic decentralisation (Balwant Rai Mehta's term) moves power to elected local bodies; administrative delegation or deconcentration moves work to field officers who stay inside the bureaucracy.",
+     "match": [
+      "balwant",
+      "rai",
+      "mehta"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Society › #1 · Indian Society: Firsts and Welfare Institutions",
+     "text": "The 73rd and 74th Amendments provided the first women reservation in local bodies.",
+     "match": [
+      "73rd",
+      "74th",
+      "local"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "1b0ddd37208a"
+  },
+  {
    "id": "04a54e506931",
    "date": "2026-10-05",
    "pubDate": "2026-10-05",
@@ -12940,6 +14445,61 @@
    "line": "Rajaka community stages protest in Visakhapatnam seeking SC status"
   },
   {
+   "id": "050be2e3aeb9",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "05:35",
+   "title": "కొత్త పోలీసు కమిషనరేట్లకు ఉత్తర్వులు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181015",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 32,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 20,
+    "importance": 12,
+    "reuse": 0
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - government decisions, new schemes, appointments and administrative changes › State schemes launched - name, department, objective, beneficiaries, launch date",
+     "text": "P4 (Public-Private-People Partnership): Dept / nature Planning / poverty eradication; Key facts (latest) Goal: complete eradication of poverty; well-off 'Margadarsis' (mentors) adopt poor 'Bangaru Kutumbams'; ~9,000 Kuppam families adopted by Adani, TVS Motor, MEIL (TH, 6 Jul 2026)"
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "050be2e3aeb9",
+   "oneLiner": true,
+   "line": "కొత్త పోలీసు కమిషనరేట్లకు ఉత్తర్వులు"
+  },
+  {
    "id": "f579f3a7a2a5",
    "date": "2026-10-05",
    "pubDate": "2026-10-05",
@@ -13202,6 +14762,20 @@
    "kind": "year"
   },
   {
+   "id": "48d820c121b4:in4ejq",
+   "item": "48d820c121b4",
+   "title": "YSRCP protests Nellore’s exclusion from drought-hit mandals",
+   "q": "2026: a deficient year. The SW monsoon deficit reached 51.2%, with all ____ deficient. Causes: El Nino subsidence, and all seven low-pressure systems forming at the head of the Bay.",
+   "options": [
+    "17 districts",
+    "14 districts",
+    "21 districts",
+    "28 districts"
+   ],
+   "answer": 3,
+   "kind": "figure"
+  },
+  {
    "id": "6a9b0e5c9e43:1yw8y0k",
    "item": "6a9b0e5c9e43",
    "title": "Next phase of GST reforms to reach Council shortly, says FM Nirmala Sitharaman",
@@ -13242,20 +14816,6 @@
    ],
    "answer": 1,
    "kind": "figure"
-  },
-  {
-   "id": "f9acf93b0706:3gwiwd",
-   "item": "f9acf93b0706",
-   "title": "UN ‘pre-COP’ climate summit kicks off in Fiji",
-   "q": "UN Climate Action Summit, ____: India launched CDRI there.",
-   "options": [
-    "2016",
-    "2017",
-    "2018",
-    "2019"
-   ],
-   "answer": 3,
-   "kind": "year"
   }
  ]
 }
