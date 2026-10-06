@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-05",
- "updated": "2026-10-06T14:21:01.039Z",
+ "updated": "2026-10-06T18:41:47.477Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 298,
+   "found": 309,
    "error": null
   },
   {
@@ -24,20 +24,20 @@
   {
    "id": "air-national",
    "name": "AIR News — National",
-   "found": 0,
-   "error": "timed out"
+   "found": 10,
+   "error": null
   },
   {
    "id": "air-international",
    "name": "AIR News — International",
-   "found": 0,
-   "error": "timed out"
+   "found": 10,
+   "error": null
   },
   {
    "id": "air-business",
    "name": "AIR News — Business",
-   "found": 0,
-   "error": "timed out"
+   "found": 10,
+   "error": null
   },
   {
    "id": "hindu-national",
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 46,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 9,
+   "found": 10,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 154,
+   "found": 104,
    "error": null
   },
   {
@@ -14337,6 +14337,121 @@
    "thread": "e7f9ac4607f3"
   },
   {
+   "id": "0546fa94e1db",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "02:31",
+   "title": "Officials urged to work with more commitment",
+   "summary": "District Collector Himanshu Shukla presents Swachh Andhra Awards to 79 achievers from Nellore district, encouraging continued dedication toward a clean and healthy community.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/nellore/officials-urged-to-work-with-more-commitment-1129298",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Award",
+    "Community"
+   ],
+   "score": 34,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Juvenile Justice Act 2015, POCSO Act 2012, Child Labour (Prohibition and Regulation) Amendment 2016 › PENCIL portal and National Child Labour Project - ministry, enforcement",
+     "text": "Background: the Gurupadswamy Committee (1979) named poverty as the root cause and urged banning hazardous work while regulating the rest. The National Policy on Child Labour followed in 1987 (LENS).",
+     "match": [
+      "urged",
+      "work"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #37 · Local Self-Government and Panchayati Raj",
+     "text": "Panchayat audit laws are not enacted by the District Collector.",
+     "match": [
+      "district",
+      "collector"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Evolution of Panchayati Raj · Community Development Programme",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Evolution of Panchayati Raj - Community Development Programme, Balwant Rai Mehta, Ashok Mehta, G.V.K. Rao and L.M. Singhvi committees › Community Development Programme - launch, objectives, components, NES",
+      "bullets": [
+       "Began with 55 community projects as pilot areas .",
+       "Early planners expected the village panchayat plus trained CDP staff to push land reforms, organise voluntary labour for community work, and set up cooperatives (UPSC notes).",
+       "AP angle: the Andhra State Plan (1953, capital Kurnool) came under the First Plan, and the CDP was part of it (APP AP Economy)."
+      ]
+     },
+     {
+      "topic": "Bhakti in Andhra · Telugu women poets → literary work",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-3 › Bhakti in Andhra - Annamacharya, Bammera Potana, Vemana, the Tallapaka poets › Telugu women poets → literary work",
+      "bullets": [
+       "Tallapaka Timmakka (Tirumalamma): Work Subhadra Kalyanam (Subhadra Parinayam), a Dvipada kavya; Note Annamacharya's first wife; first woman poet of the Andhra region",
+       "Molla: Work Molla Ramayanam; Note First Telugu woman poet to translate the Ramayana; simple, elegant Telugu; from Gopavaram (CDX places it in Nellore)",
+       "Gangadevi: Work Madhura Vijayam (Veera Kamparaya Charitam), in Sanskrit; Note Describes Kumara Kampana's conquest of Madurai",
+       "Oduva Tirumalamba: Work Varadambika Parinayam (Sanskrit court epic); Note Marriage of Achyuta Deva Raya and Varadambika",
+       "Tarigonda Vengamamba: Work Venkatachala Mahatyamu; Note 18th-c. devotee of Venkateswara, Tirumala"
+      ]
+     },
+     {
+      "topic": "Civic and sanitation campaigns",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - welfare and social security › Civic and sanitation campaigns - CLAP, Swachha Andhra",
+      "bullets": [
+       "CLAP (Clean Andhra Pradesh): door-to-door segregated garbage collection and sanitation . Results: waste segregation 96.07%, 6,890 tonnes/day processed; 104 STPs (690.90 MLD), 171 under construction; waste-to-energy, compost units, MRFs (APSES 2024-25 via CDI).",
+       "Jal Jeevan Mission: 70.04 lakh households (73%) with tap connections; all rural households by 2027 (APSES 2024-25 via CDI).",
+       "Not in your sources: details of the current Swachha Andhra drive.",
+       "CLAP was launched on 2 Oct 2021 (Gandhi Jayanti) .",
+       "Current: Swachh Andhra is one of the 10 Sutralu; 500 ODF Plus villages milestone (Jan 2026)."
+      ]
+     },
+     {
+      "topic": "Clean Andhra Pradesh (CLAP) programme",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Solid waste, plastic waste, e-waste, biomedical and construction waste - rules and management › Clean Andhra Pradesh (CLAP) programme",
+      "bullets": [
+       "Launched on 2 Oct 2021 as Jagananna Swachha Sankalpam .",
+       "Not in your sources: CLAP components (household bins, tipper fleet) and its implementing agency. The current State drive is Swarna Andhra-Swachh Andhra, launched January 2025 (TH, 22 Feb 2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Swachh Andhra Awards"
+    ]
+   },
+   "thread": "0546fa94e1db"
+  },
+  {
    "id": "8fbe00caf074",
    "date": "2026-10-05",
    "pubDate": "2026-10-05",
@@ -14450,7 +14565,135 @@
     ],
     "gaps": []
    },
+   "related": [
+    {
+     "id": "fdbf45db9196",
+     "title": "Kurnool: SC Colony women hit streets at midnight over water crisis",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/kurnool/sc-colony-women-hit-streets-at-midnight-over-water-crisis-1129303"
+    }
+   ],
    "thread": "8fbe00caf074"
+  },
+  {
+   "id": "fdbf45db9196",
+   "date": "2026-10-05",
+   "pubDate": "2026-10-06",
+   "time": "03:36",
+   "title": "Kurnool: SC Colony women hit streets at midnight over water crisis",
+   "summary": "Women from the SC Colony in Panchalingala village staged a late-night road protest with empty vessels, protesting a two-week stoppage of drinking water",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kurnool/sc-colony-women-hit-streets-at-midnight-over-water-crisis-1129303",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "SC"
+   ],
+   "score": 33,
+   "band": "low",
+   "why": {
+    "syllabus": 6,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-1 › Motions of the earth - rotation and revolution; effects (day and night, Coriolis force, tides) › Day and night - causes, day-length variation, midnight sun",
+     "text": "Equator ~12 h all year; variation grows with latitude. Beyond the Arctic/Antarctic Circles the Sun stays up for 24 h in summer (midnight sun) - e.g., northern Norway (\"Land of the Midnight Sun\"); poles get ~6 months day and 6 months night .",
+     "match": [
+      "night",
+      "midnight"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · AP Geography › #22 · Andhra Pradesh Irrigation Tanks",
+     "text": "Mudasarlova Tank supplies drinking water.",
+     "match": [
+      "drinking",
+      "water"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Women’s Political Representation and Reservation",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #76 · Women’s Political Representation and Reservation",
+      "bullets": [
+       "Women's political reservation was first constitutionally institutionalized through the 73rd and 74th Constitutional Amendment Acts, 1992.",
+       "Women's reservation in the House of the People covers seats reserved for Scheduled Castes and Scheduled Tribes.",
+       "Women's reservation in the Legislative Assembly of the National Capital Territory of Delhi covers Scheduled Caste-reserved seats.",
+       "Not less than one-third of the total seats reserved for Scheduled Castes and Scheduled Tribes under Article 243D(2) must be reserved for women belonging to Scheduled Castes and Scheduled Tribes.",
+       "The mandatory sub-quota for Scheduled Caste and Scheduled Tribe women within Scheduled Caste and Scheduled Tribe reserved seats is one-third."
+      ]
+     },
+     {
+      "topic": "Sanitation and drinking water",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important flagship programmes of the Central Government - social sector (health, education, nutrition, housing) › Sanitation and drinking water - SBM, NAMASTE, ISC, JJM",
+      "bullets": [
+       "SBM-G Phase II targets ODF Plus.",
+       "NAMASTE: ends hazardous manual cleaning of sewers and septic tanks. It profiles workers, gives PM-JAY cover, training with a ₹3,000 stipend, and PPE (CDX). The new phase covers 500 AMRUT cities, with Emergency Response Sanitation Units and PMKVY training (VIS Schemes 2026).",
+       "India Sanitation Coalition: a multi-stakeholder platform led by FICCI (2015) .",
+       "Jal Jeevan Mission (2019): a Functional Household Tap Connection for every rural home. Village Water and Sanitation Committees plan and run supply (CDCA). AP link: the Madanapalle Water Grid in Rayalaseema."
+      ]
+     },
+     {
+      "topic": "Women's political participation · Studies on women sarpanches",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Women's political participation - 73rd/74th Amendment reservation, 106th Amendment; gender indices (GII, GGGI) › Studies on women sarpanches - Chattopadhyay-Duflo, proxy representation",
+      "bullets": [
+       "Chattopadhyay & Duflo (2004) used the random reservation of pradhan posts in West Bengal and Rajasthan. Women leaders invested more in goods women asked for, such as drinking water and roads.",
+       "Proxy representation (\"sarpanch-pati\"): a male relative exercises the elected woman's office. Evaluation studies find it declines markedly in a second term (APP). Proxies, intimidation and online trolling remain barriers (LENS Jul 2025)."
+      ]
+     },
+     {
+      "topic": "Scheduled Tribes · Area and habitation programmes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Scheduled Tribes - Forest Rights Act 2006, Fifth and Sixth Schedules, TSP, Eklavya schools › Area and habitation programmes - PM-AJAY, PM-JANMAN, Dharti Aaba Janjatiya Gram Utkarsh Abhiyan",
+      "bullets": [
+       "PM-AJAY (2021-22, 100% central, MoSJE) merged SCA to SCSP + PMAGY + BJRCY.",
+       "It targets SC poverty; saying it is for STs is wrong (APPSC G1 2024).",
+       "PM-JANMAN: Key facts Nov 2023; 75 PVTGs; Rs 24,104 crore; houses, roads, water, MMUs, hostels",
+       "Dharti Aaba Janjatiya Gram Utkarsh Abhiyan: Key facts Sept 2024; Rs 79,156 crore; 17 ministries; about 63,000 tribal villages",
+       "AP: 79 PM-JANMAN hostels and 4 DAJGUA hostels in Alluri Sitarama Raju and other districts (CDI AP Survey 2025-26)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "8fbe00caf074"
   },
   {
    "id": "6281ed1931a2",
