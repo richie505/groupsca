@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-06",
- "updated": "2026-10-07T06:37:42.310Z",
+ "updated": "2026-10-07T14:40:05.883Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 318,
+   "found": 374,
    "error": null
   },
   {
@@ -24,20 +24,20 @@
   {
    "id": "air-national",
    "name": "AIR News — National",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "air-international",
    "name": "AIR News — International",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "air-business",
    "name": "AIR News — Business",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "hindu-national",
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 43,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 11,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 48,
+   "found": 49,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 152,
+   "found": 157,
    "error": null
   },
   {
@@ -216,7 +216,7 @@
   {
    "id": "affairscloud",
    "name": "AffairsCloud",
-   "found": 15,
+   "found": 14,
    "error": null
   }
  ],
@@ -4977,6 +4977,138 @@
     "gaps": []
    },
    "topicOf": "c0ff103a99d1"
+  },
+  {
+   "id": "54700da0f824",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-06",
+   "time": "18:59",
+   "title": "World Bank raises India FY27 growth forecast to 7.1% on resilient demand, exports",
+   "summary": "The World Bank expects the Indian economy to withstand external shocks, with strong industrial activity, investment and exports offsetting risks from higher oil prices and weaker rainfall, while AI could provide a new productivity boost.",
+   "facts": [],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/world-bank-raises-india-fy27-growth-forecast-to-7-1-on-resilient-demand-exports-11791288081027.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U4",
+     "exam": "G2",
+     "label": "Structure of the Andhra Pradesh Economy and Public Finance - GSDP and Sectoral Contribution, Per Capita Income, State Revenue, Expenditure, Debt, Central Assistance, External Assistance, Recent AP Budget"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Export",
+    "Exports",
+    "Rainfall"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › National - economy: Union Budget and Economic Survey highlights, RBI policy, key data releases › Union Budget and Economic Survey",
+     "text": "FY27 real GDP projection: Value 6.8%-7.2%",
+     "match": [
+      "FY27"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Economic Survey - structure and key themes of the latest Survey › Latest Survey (2025-26) - growth projection, HFIs, sectors, fiscal and monetary response",
+     "text": "Projection FY27: Value (ES 2025-26) 6.8% - 7.2%",
+     "match": [
+      "FY27"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "International trade · India's share in world merchandise exports",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › International trade - composition and direction of India's exports and imports; trade deficit › India's share in world merchandise exports - trend and rank",
+      "bullets": [
+       "1% (2005) → 1.8% (2024); rank 18th as exporter; 9th importer with 2.8% (IYB 2026; ES 2025-26).",
+       "Services now make up about 49% of total exports, up from 39% in 2014 (TH, 18 May 2026); services surplus record $188.8 bn in FY25 (ES 2025-26).",
+       "Not in your sources: India's current share and rank in world services exports."
+      ]
+     },
+     {
+      "topic": "World Bank Doing Business",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Make in India, PLI schemes, National Manufacturing Policy; ease of doing business reforms › World Bank Doing Business - publisher, indicators, India's rank, discontinuation",
+      "bullets": [
+       "Published by the World Bank Group; concept of the IFC (its private-sector arm); rankings mainly guide foreign investors (APPSC-GS 2019).",
+       "Discontinued in 2021 after data irregularities and ethics concerns about World Bank staff influencing rankings (UPSC notes) [GK for year]."
+      ]
+     },
+     {
+      "topic": "Bretton Woods institutions · Asian Development Bank",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Bretton Woods institutions - IMF (quota, SDR), World Bank Group; ADB, AIIB, NDB › Asian Development Bank",
+      "bullets": [
+       "Est. 1966, HQ Manila, Philippines; created at UN-ESCAP's initiative; India a founding member.",
+       "69 members (49 Asia-Pacific, 20 non-regional); Türkiye newest (2025).",
+       "Japan: Voting share 15.7%",
+       "ADB raised India's FY26 growth forecast to 7.2% from 6.5% (Dec 2025)."
+      ]
+     },
+     {
+      "topic": "Economic reforms of 1991 · IMF-World Bank conditionalities and loans",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Economic reforms of 1991 - background, stabilisation and structural adjustment measures › IMF-World Bank conditionalities and loans",
+      "bullets": [
+       "SAPs = IMF and World Bank loans to crisis countries, conditional on austerity, privatisation, deregulation, currency devaluation and better tax collection (LENSD, 14 May 2026).",
+       "The Eighth Plan (1992-97) began right after structural adjustment and macro-stabilisation."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "54700da0f824"
   },
   {
    "id": "2f93d16175e4",
@@ -11164,147 +11296,7 @@
     ],
     "gaps": []
    },
-   "topicOf": "210876710623"
-  },
-  {
-   "id": "210876710623",
-   "date": "2026-10-06",
-   "pubDate": "2026-10-06",
-   "time": "22:51",
-   "title": "CM Samrat Choudhary reviews Bihar flood situation, seeks damage report",
-   "summary": "Bihar has been hit hard by severe floods caused by unprecedented water levels in rivers, leading Chief Minister Samrat Choudhary to assess the situation closely. Several districts reported significant destruction, and immediate relief efforts were set in motion. The Indian Air Force played a vital role by air-dropping food supplies to areas cut off from road access.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "Bihar has been hit hard by severe floods caused by unprecedented water levels in rivers, leading Chief Minister Samrat Choudhary to assess the situation closely."
-    }
-   ],
-   "source": "Times of India — India",
-   "sourceId": "toi-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://timesofindia.indiatimes.com/india/cm-samrat-choudhary-reviews-bihar-flood-situation-seeks-damage-report/articleshow/134746625.cms",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Rivers"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "notes": [
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 6 Current Affairs › National - polity and governance: bills, acts, ordinances, landmark judgments › Elections held - States, results",
-     "text": "Bihar: Result Samrat Choudhary (BJP) CM from Mar 2026, replacing Nitish Kumar (who moved to Rajya Sabha)",
-     "match": [
-      "Samrat Choudhary"
-     ]
-    },
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 6 Current Affairs › National - polity and governance: bills, acts, ordinances, landmark judgments › Elections held - States, results",
-     "text": "Bihar, Nov 2025 (243 seats): Result NDA 202; BJP 89 (largest), JD(U) 85; Nitish Kumar sworn in for a record 10th time, later moved to the Rajya Sabha; Samrat Choudhary became Bihar's first BJP CM (Apr 2026)",
-     "match": [
-      "Samrat Choudhary"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "India · Flood-prone areas",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 4 Geography › D-2 › India - rainfall distribution, variability, El Nino linkage, drought and flood-prone areas › Flood-prone areas - share of area, basins and states, mitigation",
-      "bullets": [
-       "~12% of India's land is prone to floods and river erosion (NIDM Annual Report 2023-24; PYQ 2025).",
-       "Worst-hit: Brahmaputra valley (\"sorrow of Assam\"), Kosi and Ganga plains (Bihar, UP), coastal deltas (Godavari, Krishna, Kaveri, Odisha, WB) hit by Andaman Sea depressions (UPSC CSAT passage).",
-       "Himalayan rivers swell in monsoon and flood frequently; cloudburst flash floods are rising in the Himalaya and NE (IYB; LENS Jul 2025).",
-       "Mitigation: embankments, drainage channels, sea dykes, real-time flood forecasting (e.g., 37,760 sq km flood-prone area protected in West Bengal - IYB state chapter)."
-      ]
-     },
-     {
-      "topic": "Flood Hazards, Agencies and Major Events",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Disaster Management › #11 · Flood Hazards, Agencies and Major Events",
-      "bullets": [
-       "Flood water flows in rivers, streams, and other water bodies and cannot be contained.",
-       "Floods cause damage worth thousands of crores annually.",
-       "Bihar experienced a major flood in 2008.",
-       "An embankment breach caused the 2008 Bihar flood in the Kosi region.",
-       "Wetland destruction contributed to the 2015 Chennai flood."
-      ]
-     },
-     {
-      "topic": "Hydrological Disasters and Flood Management",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · General Geography › #11 · Hydrological Disasters and Flood Management",
-      "bullets": [
-       "A river flood causes crop damage.",
-       "A flash flood causes very rapid destruction.",
-       "Sudden water release can trigger a flash flood.",
-       "Flash floods are associated with infrastructure damage.",
-       "A flood causes water contamination as a secondary hazard."
-      ]
-     },
-     {
-      "topic": "Andhra Pradesh · Godavari and Krishna flood management",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 4 Geography › D-2 › Andhra Pradesh - climate, rainfall regions, cyclone vulnerability, drought-prone areas › Godavari and Krishna flood management - embankments, Polavaram",
-      "bullets": [
-       "Godavari Anicut (Arthur Cotton): built 1847 - April 1852 for a delta hit by floods, cyclones and famine (1833 cyclone, 1840 gale). Today it is the Sir Arthur Cotton (Dowleswaram) Barrage near Rajamahendravaram (CDX; CDCA Jul 2026).",
-       "Krishna Anicut at Bezwada: built 1853-54 under Charles Orr (CDX).",
-       "Under AP Reorganisation Act Schedule 11, the Krishna and Godavari River Management Boards advise both states on water releases for flood and drought mitigation (APP).",
-       "Godavari floods, July 2026: relief camps, NDRF/SDRF deployment and early flood warnings (APPCA Jul 2026).",
-       "Not in your sources: the Polavaram flood-cushion figure."
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "related": [
-    {
-     "id": "2eb5457fb306",
-     "title": "CM Samrat Choudhary directs officials to submit detailed report on flood damage in Bihar",
-     "source": "The Hindu — National",
-     "url": "https://www.thehindu.com/news/national/bihar/cm-samrat-choudhary-directs-officials-to-submit-detailed-report-on-flood-damage-in-bihar/article71552720.ece"
-    }
-   ],
-   "thread": "210876710623"
+   "thread": "2eb5457fb306"
   },
   {
    "id": "320a2402bde2",
