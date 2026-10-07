@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-06",
- "updated": "2026-10-06T21:56:08.698Z",
+ "updated": "2026-10-07T06:37:42.310Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 309,
+   "found": 318,
    "error": null
   },
   {
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 45,
    "error": null
   },
   {
@@ -180,8 +180,8 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 48,
+   "error": null
   },
   {
    "id": "sakshi",
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 104,
+   "found": 152,
    "error": null
   },
   {
@@ -2047,6 +2047,12 @@
      "url": "https://www.livemint.com/economy/gst-council-aims-to-ease-compliance-expedite-refunds-curb-frequent-rate-tweaks-11791297868065.html"
     },
     {
+     "id": "8277b835801d",
+     "title": "Karnataka Chief Minister leaves for Delhi ahead of GST Council meeting",
+     "source": "The Hindu — National",
+     "url": "https://www.thehindu.com/news/national/karnataka/karnataka-chief-minister-leaves-for-delhi-ahead-of-gst-council-meeting/article71551971.ece"
+    },
+    {
      "id": "fd8c53f57dcc",
      "title": "GST Council to deliberate on five focus areas to further ease of doing business",
      "source": "BusinessLine — Economy",
@@ -2360,38 +2366,6 @@
     ],
     "gaps": []
    },
-   "related": [
-    {
-     "id": "d07d2415290e",
-     "title": "Defence Ministry signs ₹660 crore contract with BrahMos Aerospace for Navy",
-     "source": "AIR News — National",
-     "url": "https://newsonair.gov.in/defence-ministry-signs-%e2%82%b9660-crore-contract-with-brahmos-aerospace-for-navy/"
-    },
-    {
-     "id": "71383784dcf5",
-     "title": "Defence Minister launches first indigenous FSS 'Surya' at HSL",
-     "source": "The Hans India — Andhra Pradesh",
-     "url": "https://www.thehansindia.com/news/cities/visakhapatnam/defence-minister-launches-first-indigenous-fss-surya-at-hsl-1129553"
-    },
-    {
-     "id": "7e25fef73d21",
-     "title": "Defence Minister launches Fleet Support Ship-1 at HSL in Vizag",
-     "source": "BusinessLine — Economy",
-     "url": "https://www.thehindubusinessline.com/economy/logistics/defence-minister-launches-fleet-support-ship-1-at-hsl-in-vizag/article71550150.ece"
-    },
-    {
-     "id": "41dfbd5f0f7c",
-     "title": "Rajnath Singh Launches First India-Made Fleet Support Ship In Vizag",
-     "source": "NDTV — India",
-     "url": "https://www.ndtv.com/india-news/rajnath-singh-launches-first-india-made-fleet-support-ship-in-vizag-12147979#publisher=newsstand"
-    },
-    {
-     "id": "cd338645319a",
-     "title": "Rajnath Singh launches Navy’s first indigenous fleet support ship ‘Surya’ at Visakhapatnam",
-     "source": "The Hindu — Andhra Pradesh",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/rajnath-singh-launches-navys-first-indigenous-fleet-support-ship-surya-at-visakhapatnam-shipyard/article71549953.ece"
-    }
-   ],
    "thread": "0979301bc33f",
    "top": true
   },
@@ -2516,6 +2490,12 @@
     "gaps": []
    },
    "related": [
+    {
+     "id": "320a2402bde2",
+     "title": "34% బీసీ రిజర్వేషన్ల సాధనే లక్ష్యంగా న్యాయపోరాటం",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181729"
+    },
     {
      "id": "36c84c1c5d2b",
      "title": "బీసీ రిజర్వేషన్లు పెంచుతామనే భయంతోనే కోర్టులకు వైకాపా: మంత్రి మండిపల్లి",
@@ -2688,6 +2668,131 @@
    },
    "thread": "f833d38c6408",
    "top": true
+  },
+  {
+   "id": "d9fbd9c926a5",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "05:54",
+   "title": "VMC steps up measures for safe water supply",
+   "summary": "Vijayawada Municipal Corporation Commissioner HM Dhyanachandra reviews sanitation, drinking water supply, mosquito-control measures and other civic amenities in several areas",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/vmc-steps-up-measures-for-safe-water-supply-1129785",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Air pollution - sources, pollutants, NAAQS, AQI, National Clean Air Programme, stubble burning › AP air quality action",
+     "text": "SVS 2026: Vijayawada ward 60 ranked 2nd nationally (Best Performing Wards); ward 31 best in State; VMC got ₹30 lakh, National Clean Air Day, New Delhi (TH, 8 Sep 2026).",
+     "match": [
+      "VMC"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Sanitation and drinking water",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important flagship programmes of the Central Government - social sector (health, education, nutrition, housing) › Sanitation and drinking water - SBM, NAMASTE, ISC, JJM",
+      "bullets": [
+       "SBM-G Phase II targets ODF Plus.",
+       "NAMASTE: ends hazardous manual cleaning of sewers and septic tanks. It profiles workers, gives PM-JAY cover, training with a ₹3,000 stipend, and PPE (CDX). The new phase covers 500 AMRUT cities, with Emergency Response Sanitation Units and PMKVY training (VIS Schemes 2026).",
+       "India Sanitation Coalition: a multi-stakeholder platform led by FICCI (2015) .",
+       "Jal Jeevan Mission (2019): a Functional Household Tap Connection for every rural home. Village Water and Sanitation Committees plan and run supply (CDCA). AP link: the Madanapalle Water Grid in Rayalaseema."
+      ]
+     },
+     {
+      "topic": "74th Amendment · FIRST Municipal Corporation",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › 74th Amendment - Part IXA, Twelfth Schedule, types of urban local bodies, ward committees, DPC and MPC › FIRST Municipal Corporation - city and year, early municipalities",
+      "bullets": [
+       "1688: Milestone First Municipal Corporation at Madras (charter 30 Dec 1687; started 29 Sep 1688)",
+       "1726: Milestone Municipal Corporations of Bombay and Calcutta",
+       "1953 / 1959: Milestone UP set up corporations in the five KAVAL towns (Kanpur, Agra, Varanasi, Allahabad, Lucknow); UP Municipal Corporations Act 1959",
+       "Madras, 1688 - charter 30 Dec 1687, corporation began 29 Sep 1688; Bombay and Calcutta, 1726 (CDI, IYB 2026)."
+      ]
+     },
+     {
+      "topic": "Civic and sanitation campaigns",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - welfare and social security › Civic and sanitation campaigns - CLAP, Swachha Andhra",
+      "bullets": [
+       "CLAP (Clean Andhra Pradesh): door-to-door segregated garbage collection and sanitation . Results: waste segregation 96.07%, 6,890 tonnes/day processed; 104 STPs (690.90 MLD), 171 under construction; waste-to-energy, compost units, MRFs (APSES 2024-25 via CDI).",
+       "Jal Jeevan Mission: 70.04 lakh households (73%) with tap connections; all rural households by 2027 (APSES 2024-25 via CDI).",
+       "Not in your sources: details of the current Swachha Andhra drive.",
+       "CLAP was launched on 2 Oct 2021 (Gandhi Jayanti) .",
+       "Current: Swachh Andhra is one of the 10 Sutralu; 500 ODF Plus villages milestone (Jan 2026)."
+      ]
+     },
+     {
+      "topic": "Continental resources · Water resources",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-1 › Continental resources - land, forest, water, mineral and energy resources; conservation › Water resources - world share, groundwater categories, per capita availability",
+      "bullets": [
+       "India: 4% of world renewable water for >18% of population.",
+       "Per-capita availability: >5,000 m3 at Independence, ~1,400 m3 now (TH 13 May 2026).",
+       "India is the world's largest groundwater user, with ~a quarter of global extraction (TH 13 May 2026).",
+       "CGWB assessment units are classed safe, semi-critical, critical, over-exploited (plus saline) . Over-exploitation is worst in Punjab, Haryana, Rajasthan and Delhi .",
+       "Governance: Ministry of Jal Shakti is nodal; CWC handles surface-water planning and flood control; CGWB handles groundwater (TH May 2026). CWPRS Pune (1916) is the national hydraulic research institute (IYB 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "126e3b48d0e6",
+   "update": true,
+   "threadTitle": "Naidu to launch water schemes worth ₹30,156 crore in Kadapa on October 5",
+   "threadStart": "2026-10-04",
+   "line": "VMC steps up measures for safe water supply"
   },
   {
    "id": "50b3a5b22e5c",
@@ -2932,6 +3037,125 @@
     "gaps": []
    },
    "thread": "62d168f45dfe",
+   "top": true
+  },
+  {
+   "id": "3679f4ce51d5",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "05:30",
+   "title": "Rs 10,000 cr fund fuels MSME growth in state",
+   "summary": "The minister said MSMEs would play a key role in realising the ‘Swarna Andhra’ vision under the visionary leadership of Chief Minister N Chandrababu Naidu.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/rs-10000-cr-fund-fuels-msme-growth-in-state-1129818",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U4",
+     "exam": "G2",
+     "label": "Structure of the Andhra Pradesh Economy and Public Finance - GSDP and Sectoral Contribution, Per Capita Income, State Revenue, Expenditure, Debt, Central Assistance, External Assistance, Recent AP Budget"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Balance of Payments - structure, current and capital account, convertibility, forex reserves › BoP structure - current account vs capital account items",
+     "text": "Invisibles: services, primary income (interest, dividends, profits): Capital (and financial) account ECB, external assistance, trade credit",
+     "match": [
+      "credit",
+      "trade",
+      "services"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #49 · Land Reforms and Landholding Categories",
+     "text": "Land reforms promote agricultural growth.",
+     "match": [
+      "land",
+      "reforms",
+      "agricultural"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "MSMEs · AP MSME policy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › MSMEs - definition, contribution, problems, credit guarantee and support schemes › AP MSME policy - AP MSME Development Policy, MSME parks, YSR Navodayam",
+      "bullets": [
+       "AP MSME & Entrepreneur Development Policy 4.0 (2024-29): G.O.Ms.No.71, dated 26 Oct 2024 (APSES 2024-25).",
+       "A revamped MSME Policy 2026 adds incentives for women-led MSMEs (APPCA Feb 2026).",
+       "AP has about 20.77 lakh MSMEs: manufacturing 4.98 lakh (24%), services about 10 lakh (48%), trading 5.74 lakh (28%) (TH, 23 May 2026).",
+       "YSR Navodayam (2019): one-time restructuring of stressed MSME loans .",
+       "Not in your sources: status of the AP plan for MSME parks in every constituency."
+      ]
+     },
+     {
+      "topic": "Vision documents",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Basic features of the Andhra Pradesh economy after bifurcation - GSDP, growth rate, sectoral shares › Vision documents - goals and target years",
+      "bullets": [
+       "Vision 2020: the first long-term vision of undivided AP, released in 1999 by the Chandrababu Naidu government .",
+       "Swarna Andhra Vision 2047: launched by CM N. Chandrababu Naidu on 13 December 2024. It aligns with Viksit Bharat 2047 and aims at a \"Wealthy, Healthy and Happy\" AP, guided by Ten Sutras (guiding principles).",
+       "Rupee targets restated by the Planning Department: GSDP ₹308 lakh crore, PCI ₹55 lakh, growth >15% a year (TH, 15 Jul 2026; APPCA Jul 2026). The dollar and rupee targets are separate statements; do not convert one into the other. Interim milestone, Swarna Andhra Vision 2030: GSDP ₹31 lakh crore, PCI ₹5.15 lakh, 15% annual growth (TH, 10 Feb 2026).",
+       "Swarna Andhra Vision 2047 - goals, Sutralu, milestones",
+       "Zero Poverty-P4 (Public-Private-People Partnership): launched on Ugadi, 30 Mar 2025; well-off Margadarsis adopt poor Bangaru Kutumbam families; nodal body Swarna Andhra P4 Foundation (Planning Dept.); 21.8 lakh+ families in phase 1; models: Adopt a Family, Adopt a Community, Fund a Need."
+      ]
+     },
+     {
+      "topic": "MSME clusters and CDP projects",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP industry - industrial policy, single desk, MSMEs, industrial nodes › MSME clusters and CDP projects",
+      "bullets": [
+       "MSME clusters and ODOP products of AP",
+       "22 plug-and-play industrial clusters announced to link MSMEs with anchor units."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "3679f4ce51d5",
    "top": true
   },
   {
@@ -3492,12 +3716,6 @@
      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2319864&reg=3&lang=1"
     },
     {
-     "id": "7493dc494bdd",
-     "title": "Election Commission: Was ready to meet 240 opposition MPs but not at their chosen venue",
-     "source": "Times of India — India",
-     "url": "https://timesofindia.indiatimes.com/india/election-commission-was-ready-to-meet-240-opposition-mps-but-not-at-their-chosen-venue/articleshow/134749929.cms"
-    },
-    {
      "id": "6e68f63be3f5",
      "title": "‘240 MPs at Parliament Annexe unusual and unacceptable': Why ECI rejected meeting with Opposition MPs",
      "source": "Hindustan Times — India",
@@ -3611,6 +3829,14 @@
     ],
     "gaps": []
    },
+   "related": [
+    {
+     "id": "0b19aa1f4a15",
+     "title": "DSS calls for effective implementation of SC/ST Act",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/vijayawada/dss-calls-for-effective-implementation-of-scst-act-1129779"
+    }
+   ],
    "thread": "96e72a604028"
   },
   {
@@ -3767,6 +3993,14 @@
     ],
     "gaps": []
    },
+   "related": [
+    {
+     "id": "cd338645319a",
+     "title": "Rajnath Singh launches Navy’s first indigenous fleet support ship ‘Surya’ at Visakhapatnam",
+     "source": "The Hindu — Andhra Pradesh",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/rajnath-singh-launches-navys-first-indigenous-fleet-support-ship-surya-at-visakhapatnam-shipyard/article71549953.ece"
+    }
+   ],
    "thread": "30fb5e8e1813",
    "update": true,
    "threadTitle": "Raksha Mantri Shri Rajnath Singh to Launch First Fleet Support Ship (FSS-1), Lay Keel of FSS-5 and Inaugurate Upgraded Slipway-4 & 300-Tonne Goliath Crane at Visakhapatnam",
@@ -4345,8 +4579,7 @@
     ],
     "gaps": []
    },
-   "thread": "384508a42b79",
-   "top": true
+   "thread": "384508a42b79"
   },
   {
    "id": "12294a3e7f0b",
@@ -5635,6 +5868,82 @@
    "thread": "e907949bf5a1"
   },
   {
+   "id": "03bc1ba3b9a1",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "05:14",
+   "title": "మా తుది తీర్పునకు లోబడే డేటా సెంటర్‌ ఏర్పాటు చేయాలి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181659",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Established"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 10,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-1 › Basic characteristics of the Indian economy; features of a developing economy › AP economy profile - agriculture share of GSDP, per capita income vs India",
+     "text": "Share of GVA, current prices: Andhra Pradesh Services 43%, Agriculture & allied 33%, Industry 24%; India Agriculture below 20%, services 54.3%",
+     "match": [
+      "agriculture",
+      "allied",
+      "services"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #29 · Regional Rural Banks and NABARD",
+     "text": "Regional Rural Banks participate in institutional agricultural credit.",
+     "match": [
+      "rural",
+      "credit",
+      "agricultural"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "03bc1ba3b9a1"
+  },
+  {
    "id": "24746d47b1ee",
    "date": "2026-10-06",
    "pubDate": "2026-10-06",
@@ -6646,6 +6955,133 @@
    "topicOf": "df63e85ec7b7"
   },
   {
+   "id": "48c3d8a43ec5",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "03:50",
+   "title": "Lake Hartwell Shoreline Cleanup: Drought exposes long-hidden trash; volunteers pull record 36 tires",
+   "summary": "In a remarkable display of community spirit, volunteers have gathered over 8,300 pounds of litter from the shores of Lake Hartwell, driven by an ongoing drought that has unveiled hidden debris. Amid concerns regarding the Clemson Lower Diversion Dam Saddle Dike, the U.S. Army Corps of Engineers has enforced specific restrictions.",
+   "facts": [],
+   "source": "Times of India — Science",
+   "sourceId": "toi-science",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/science/nature/regional-drought-pushed-lake-hartwell-low-enough-to-expose-trash-usually-hidden-underwater-148-volunteers-across-14-sites-in-five-counties-removed-about-8300-pounds-including-a-record-36-tires/articleshow/134703511.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community",
+    "Lake"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-2 › Andhra Pradesh - coastline, deltas, hill ranges (Eastern Ghats, Nallamala, Seshachalam) › Physiographic regions of AP - districts in each",
+     "text": "Western plateau (Rayalaseema): Districts Kurnool, Anantapur, Sri Sathya Sai (plateau); Chittoor, Kadapa, Annamayya (Mysore plateau extension); Features 150-600 m, crystalline rocks, red soils, drought-prone",
+     "match": [
+      "drought",
+      "soils",
+      "rocks"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Geography › #37 · Indian Lakes: Locations and Associations",
+     "text": "Kolleru Lake is located in Andhra Pradesh.",
+     "match": [
+      "lake",
+      "andhra",
+      "pradesh"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Urbanisation in India · Census towns growth and hidden urbanisation",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-3 › Urbanisation in India - trends, class-size of towns, million-plus cities, urban agglomerations › Census towns growth and hidden urbanisation",
+      "bullets": [
+       "Hidden urbanisation estimates:"
+      ]
+     },
+     {
+      "topic": "Migration · Causes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-3 › Migration - types, streams, causes and consequences; internal migration in India › Causes - push and pull factors, reasons by gender",
+      "bullets": [
+       "Low farm productivity, monsoon failure, rural unemployment: Pull (area of destination) Jobs, higher wages",
+       "Poverty, poor rural infrastructure: Pull (area of destination) Education, health care, public facilities",
+       "Conflict, political instability, disasters: Pull (area of destination) Better living standards, transport access",
+       "Unemployment, low farm income, drought, famine, conflict, persecution: Pull (destination) Jobs, higher wages, education, health care, security, amenities",
+       "Other factors: age (adults are the most mobile), information networks (Keralites, Sikhs) and the environment (drought in the Sahel) (APP)."
+      ]
+     },
+     {
+      "topic": "World Rivers: Rankings, Features and Drainage",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · World Geography › #7 · World Rivers: Rankings, Features and Drainage",
+      "bullets": [
+       "The Nile is 6,650 km long.",
+       "The Volga River is 3,530 km long.",
+       "The Murray River is approximately 2,508 km long.",
+       "Diversion of the Amu Darya and Syr Darya for irrigation contributed to the shrinkage of the Aral Sea.",
+       "Lake Mead is associated with the Colorado River."
+      ]
+     },
+     {
+      "topic": "Hydrological Disasters and Flood Management",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · General Geography › #11 · Hydrological Disasters and Flood Management",
+      "bullets": [
+       "A drought is a prolonged water deficit.",
+       "A drought affects agriculture.",
+       "A drought affects water supply.",
+       "A drought affects ecosystems.",
+       "Debris is a main danger associated with flash floods."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "48c3d8a43ec5"
+  },
+  {
    "id": "423ddebacf65",
    "date": "2026-10-06",
    "pubDate": "2026-10-06",
@@ -7274,6 +7710,142 @@
    "topicOf": "f4e7a1896154"
   },
   {
+   "id": "8277b835801d",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "04:19",
+   "title": "Karnataka Chief Minister leaves for Delhi ahead of GST Council meeting",
+   "summary": "Sources said the visit could also provide an opportunity for Mr. Shivakumar to meet senior Congress leaders and discuss pending issues",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/karnataka/karnataka-chief-minister-leaves-for-delhi-ahead-of-gst-council-meeting/article71551971.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "GST"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Goods and Services Tax - structure, slabs, GST Council, IGST settlement, compensation cess › Constitutional amendment for GST - Bill, Act, rollout, first State",
+     "text": "279A: Content GST Council",
+     "match": [
+      "GST Council"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Centre-State financial relations - Articles 264-293; taxes assigned, grants-in-aid, borrowing powers › GST and state fiscal autonomy - compensation cess, GST Council voting weights",
+     "text": "GST Council - vote shares, Mohit Minerals",
+     "match": [
+      "GST Council"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #15 · GST Structure, Council and Constitutional Provisions",
+     "text": "The GST Council makes recommendations.",
+     "match": [
+      "GST Council"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #15 · GST Structure, Council and Constitutional Provisions",
+     "text": "Article 279A relates to the GST Council.",
+     "match": [
+      "GST Council"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Goods and Services Tax · GST Council",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Goods and Services Tax - structure, slabs, GST Council, IGST settlement, compensation cess › GST Council - Article 279A, composition, voting, nature",
+      "bullets": [
+       "Union of India v. Mohit Minerals (2022): SC held Council recommendations are not binding on Union and States; Parliament and State legislatures have simultaneous power to legislate on GST (CDI)."
+      ]
+     },
+     {
+      "topic": "Consuming vs producing states under destination-based tax",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Impact of GST on commerce, industry and state finances; unresolved GST issues › Consuming vs producing states under destination-based tax",
+      "bullets": [
+       "GST is a destination-based consumption tax: revenue goes to the State where goods/services are consumed, not produced.",
+       "IGST on inter-state supply (Art. 269A) is levied by the Centre and apportioned; the destination state gets the state share.",
+       "Effect: consuming states gain, manufacturing states (e.g., Maharashtra, Gujarat, Tamil Nadu, Karnataka) feared loss - a key reason for the 5-year compensation guarantee ."
+      ]
+     },
+     {
+      "topic": "GST Structure, Council and Constitutional Provisions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #15 · GST Structure, Council and Constitutional Provisions",
+      "bullets": [
+       "GST is a multi-stage, destination-based tax.",
+       "The GST Council is a constitutional body.",
+       "Article 279A provides for the GST Council.",
+       "The Union Finance Minister is the chairperson of the GST Council.",
+       "The GST Council makes recommendations regarding tax rates."
+      ]
+     },
+     {
+      "topic": "Cooperative and competitive federalism · GST Council as a cooperative federalism model",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Cooperative and competitive federalism - NITI Aayog, GST Council, state rankings › GST Council as a cooperative federalism model",
+      "bullets": [
+       "Art. 279A; Centre and states decide jointly: Centre one-third of votes, states two-thirds (LENS, Jan 2026).",
+       "Usual pairing: GST Council = cooperative federalism; NITI Aayog rankings = competitive federalism (CDX).",
+       "Critique: GST curtailed states' taxation powers because many local taxes were subsumed; compensation disputes (LENS, Jan 2026; CDI)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "f4e7a1896154"
+  },
+  {
    "id": "a3d49c32fa6b",
    "date": "2026-10-06",
    "pubDate": "2026-10-06",
@@ -7558,6 +8130,108 @@
     "gaps": []
    },
    "topicOf": "780b1dbd9693"
+  },
+  {
+   "id": "e58d0c01cf46",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-06",
+   "time": "14:59",
+   "title": "India’s services sector growth touches three-month high in September on strong domestic demand: PMI",
+   "summary": "The HSBC India Services PMI rose to 55.2 in September from 54.1 in August, even as quarterly growth remained the weakest since early 2022",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "BusinessLine — Economy",
+    "Mint — Economy"
+   ],
+   "url": "https://www.thehindu.com/business/indias-services-sector-growth-touches-three-month-high-in-september-on-strong-domestic-demand-pmi/article71550628.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-1 › Services sector - growth, composition and contribution to GDP and employment › Services PMI and high-frequency indicators",
+     "text": "PMI: a reading above 50 means expansion, below 50 contraction .",
+     "match": [
+      "PMI"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Indian industry - structure, growth and contribution; IIP; public sector role and performance › Structural problems - under-utilisation, concentration, capital intensity, jobless growth",
+     "text": "Main cause of capacity under-utilisation: deficient basic infrastructure (APPSC-GS 2007); weak demand too - Manufacturing PMI in Jul 2026 fell to its lowest since Aug 2021 (TH, 24 Aug 2026).",
+     "match": [
+      "PMI"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Services sector geography · Top states by domestic and foreign tourist visits",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-4 › Services sector geography - tourism (India and AP circuits), IT, banking; salient features › Top states by domestic and foreign tourist visits",
+      "bullets": [
+       "Not in your sources: the latest State-wise ranking of domestic and foreign visits (India Tourism Statistics).",
+       "2024 (IYB 2026): FTAs 9.95 million; International Tourist Arrivals 20.57 million (+8.9%); foreign exchange earnings ₹2,93,033 crore; domestic tourist visits 2,947.63 million.",
+       "e-Visa (with ETA) since 2014; MHA added 11 entry ports in Aug 2026, taking e-visa checkpoints from 77 to 88 (LENS Aug 2026).",
+       "Not in your sources: current top states for domestic and foreign tourist visits (check India Tourism Statistics 2025)."
+      ]
+     },
+     {
+      "topic": "Services sector · Services PMI and high-frequency indicators",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-1 › Services sector - growth, composition and contribution to GDP and employment › Services PMI and high-frequency indicators",
+      "bullets": [
+       "PMI: a reading above 50 means expansion, below 50 contraction .",
+       "Index of Services Production (ISP): MoSPI's first trial ISP (for April 2026), the services counterpart of the IIP."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "e58d0c01cf46"
   },
   {
    "id": "3a5e20578f0a",
@@ -8364,6 +9038,126 @@
    "thread": "ad6cd9747b84"
   },
   {
+   "id": "1d32969a4001",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-06",
+   "time": "06:11",
+   "title": "హైకోర్టు శాశ్వత న్యాయమూర్తులుగా ఐదుగురి ప్రమాణం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/five-sworn-in-as-permanent-high-court-judges/1799/126181055",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Regulatory governance issues - independence, capacity, accountability, regulatory capture, appellate structures › Appellate structures → regulator and further appeal forum",
+     "text": "Under L. Chandra Kumar (1997), High Court judicial review of tribunals survives as part of the basic structure (CDI).",
+     "match": [
+      "structure",
+      "judicial",
+      "review"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
+     "text": "Judicial Review is vested jointly in the Supreme Court and the High Courts.",
+     "match": [
+      "judicial",
+      "review",
+      "high"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "High Court of AP",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › High Courts and subordinate judiciary; judicial review, judicial activism, PIL and judicial overreach debate › High Court of AP - Andhra State HC, united AP HC, separate HC at Amaravati, first Chief Justice, AP Reorganisation Act 2014",
+      "bullets": [
+       "Andhra State High Court: Seat and date Guntur, 5 July 1954; first CJ Koka Subba Rao",
+       "High Court of Andhra Pradesh (united AP): Seat and date Hyderabad, from 1 Nov 1956",
+       "Separate High Court of AP (Sec. 31; judges under Sec. 32): Seat and date Amaravati, from 1 Jan 2019 (APPSC-GS 2022; IYB)",
+       "High Court of Andhra Pradesh: Fact Moved to Hyderabad with the formation of Andhra Pradesh (1 Nov 1956)",
+       "Common High Court (2014-2018): Fact After bifurcation (2 June 2014) AP and Telangana shared the High Court at Hyderabad (AP Reorganisation Act 2014)"
+      ]
+     },
+     {
+      "topic": "Supreme Court and High Court Judges",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #71 · Supreme Court and High Court Judges",
+      "bullets": [
+       "High Court Judges are governed under Part VI, Chapter V of the Constitution.",
+       "Articles 214–231 govern High Court Judges.",
+       "The President of India appoints High Court Judges.",
+       "The Governor has no power to appoint High Court Judges.",
+       "Proved misbehaviour is a ground for removing High Court Judges."
+      ]
+     },
+     {
+      "topic": "Supreme Court · Retired and ad hoc judges",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Supreme Court - composition, appointment, collegium and NJAC, jurisdictions (original, appellate, advisory, writ) › Retired and ad hoc judges - Articles 127, 128; additional judges",
+      "bullets": [
+       "Art. 128: the CJI, with the President's previous consent, may ask a retired SC, Federal Court or HC judge to sit as an SC judge. Such a judge has full powers but is not deemed a judge of the court (APPSC-G2 2025).",
+       "There are no additional judges in the SC. Additional and acting judges exist only in High Courts (Art. 224)."
+      ]
+     },
+     {
+      "topic": "High Court of Andhra State",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-6 › Linguistic reorganisation demand; Potti Sriramulu's fast and the formation of Andhra State 1953 › High Court of Andhra State - Guntur",
+      "bullets": [
+       "The High Court was at Guntur (Coastal Andhra) and the capital at Kurnool (Rayalaseema), following the Sreebagh Pact balance.",
+       "The Madras High Court served Andhra until it was set up in 1954 (CDI), on 5 July 1954 .",
+       "Exam angle: \"capital Kurnool, High Court Guntur\" pair (APPSC G2 2008 and 2025)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "1d32969a4001"
+  },
+  {
    "id": "5ea9c7606c51",
    "date": "2026-10-06",
    "pubDate": "2026-10-07",
@@ -8484,6 +9278,116 @@
     "gaps": []
    },
    "thread": "5ea9c7606c51"
+  },
+  {
+   "id": "0b19aa1f4a15",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "05:47",
+   "title": "DSS calls for effective implementation of SC/ST Act",
+   "summary": "Addressing a Legal Clinic organised by DSS at Hotel Swarna Palace here on Monday, Jhansi Geddam said the SC/ST (Prevention of Atrocities) Act was a special legislation intended to provide comprehensive protection to victims of atrocities.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/dss-calls-for-effective-implementation-of-scst-act-1129779",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "SC",
+    "ST   Act",
+    "ST"
+   ],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 4,
+    "angles": 15,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Applications of space technology - agriculture, disaster management, telemedicine, tele-education, navigation › Agriculture - drought monitoring, FASAL, CHAMAN, soil moisture",
+     "text": "Krishi-DSS: Purpose Decision-support platform for farm-level planning (LENS Aug 2025)",
+     "match": [
+      "DSS"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Applications of space technology - agriculture, disaster management, telemedicine, tele-education, navigation › Agriculture - drought monitoring, FASAL, CHAMAN, soil moisture",
+     "text": "Krishi-DSS, CROPIC, WINDS: Purpose Farm decision support, crop photos, weather network",
+     "match": [
+      "DSS"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Scheduled Tribes in AP",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Scheduled Tribes - Forest Rights Act 2006, Fifth and Sixth Schedules, TSP, Eklavya schools › Scheduled Tribes in AP",
+      "bullets": [
+       "Not in your sources: number of STs notified in AP, largest tribes and ST population share."
+      ]
+     },
+     {
+      "topic": "Rights Protection Acts and Welfare Laws",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #50 · Rights Protection Acts and Welfare Laws",
+      "bullets": [
+       "The Protection of Civil Rights Act (PCR) was enacted in 1955.",
+       "The Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act was enacted in 1989.",
+       "The Panchayats (Extension to Scheduled Areas) Act is also known as PESA.",
+       "The Forest Rights Act vests individual forest rights in forest-dwelling Scheduled Tribes.",
+       "The Maintenance and Welfare of Parents and Senior Citizens Act places a legal maintenance obligation on children."
+      ]
+     },
+     {
+      "topic": "PoA Act procedure sections → content",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › SC/ST (Prevention of Atrocities) Act 1989 and amendments; Civil Rights Protection Act 1955 › PoA Act procedure sections → content",
+      "bullets": [
+       "Section 4A (2018): FIR to be registered immediately, no preliminary inquiry (APPCA 2026; Madras HC ruling applied it).",
+       "Special Courts to finish trial, as far as possible, within two months of the charge sheet (2015) (UPSC).",
+       "Appeals from Special Court orders (incl. bail) lie to the High Court within 90 days ; Central Govt has rule-making power (Rules, 1995) ; States must ensure implementation (legal aid, travel/maintenance for victims and witnesses, identification of atrocity-prone areas) (UPSC).",
+       "\"Economic boycott\" and \"social boycott\" defined and made atrocities by the 2015 amendment (UPSC)."
+      ]
+     },
+     {
+      "topic": "Books on Indian tribes → author",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Tribe - definition, classification, distribution and characteristics › Books on Indian tribes → author",
+      "bullets": [
+       "The Tribes and Castes of the Central Provinces of India: Author R.V. Russell and Hira Lal",
+       "The Scheduled Tribes (1963): Author G.S. Ghurye"
+      ]
+     }
+    ],
+    "gaps": [
+     "Prevention of Atrocities Act"
+    ]
+   },
+   "topicOf": "96e72a604028"
   },
   {
    "id": "5c9a5f55d592",
@@ -10403,337 +11307,71 @@
    "thread": "210876710623"
   },
   {
-   "id": "d07d2415290e",
-   "date": "2026-10-06",
-   "pubDate": "2026-10-06",
-   "time": "21:14",
-   "title": "Defence Ministry signs ₹660 crore contract with BrahMos Aerospace for Navy",
-   "summary": "The Ministry of Defence has signed a contract worth over 660 crore rupees with BrahMos Aerospace Private Limited for procurement of BrahMos Fire Control System and Launchers for Indian Navy ships. The contract under the Buy (Indian-Indigenously Designed, Developed and Manufactured) Category was inked in the presence of Defence Secretary Rajesh Kumar Singh in New […]",
-   "facts": [
-    {
-     "angle": "Agreement / MoU",
-     "text": "The Ministry of Defence has signed a contract worth over 660 crore rupees with BrahMos Aerospace Private Limited for procurement of BrahMos Fire Control System and Launchers for Indian Navy ships."
-    }
-   ],
-   "source": "AIR News — National",
-   "sourceId": "air-national",
-   "official": true,
-   "ministry": "National",
-   "alsoIn": [],
-   "url": "https://newsonair.gov.in/defence-ministry-signs-%e2%82%b9660-crore-contract-with-brahmos-aerospace-for-navy/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-F20",
-     "exam": "G1",
-     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 5,
-    "reuse": 15
-   },
-   "notes": [
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 6 Current Affairs › International - bilateral visits, defence deals and geopolitical developments › Dialogue mechanisms - 2+2 Ministerial, finance and trade dialogues → partner + venue + edition",
-     "text": "Raksha (3 Sep 2026): Defence Ministry's 10-year framework for defence diplomacy; Rajnath Singh's Colombo trip - first Indian Defence Minister visit in nearly four decades (Sep 2026).",
-     "match": [
-      "Defence Ministry"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Defence indigenisation · DAP 2020",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Defence indigenisation - Make in India in defence, DAP 2020, iDEX, defence corridors, FDI in defence › DAP 2020 - procurement categories and priority order",
-      "bullets": [
-       "1: Category Buy (Indian-IDDM)",
-       "3: Category Buy and Make (Indian)",
-       "IDDM means Indigenously Designed, Developed and Manufactured. The category was first added in DPP 2016, which replaced DPP 2013, on the Dhirendra Singh committee's advice, and it is the most preferred category.",
-       "Defence Procurement Manual (DPM) 2025 was released on 23 Oct 2025 and took effect on 1 Nov 2025. It covers about ₹1 lakh crore of revenue procurement (IYB 2026).",
-       "Buy (Indian-IDDM) = Indigenously Designed, Developed and Manufactured; introduced in DPP 2016; top priority in DAP 2020."
-      ]
-     },
-     {
-      "topic": "Missiles beyond IGMDP · BrahMos",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Missiles beyond IGMDP - BrahMos, Nirbhay, Astra, Pralay, hypersonic technology, Mission Shakti (ASAT) › BrahMos - partner, name, speed, variants, test sites",
-      "bullets": [
-       "A joint venture of India and Russia. The Inter-Governmental Agreement was signed in Moscow in 1998 and created BrahMos Aerospace, owned by DRDO (50.5%) and NPOM, Russia (49.5%) (LENS May 2025).",
-       "Land, ship, submarine, air (Su-30MKI): Feature Base BrahMos can be launched from all four platforms",
-       "BrahMos-NG: Feature Lighter (about 1.5 t against 2.5 t), for Tejas, smaller warships and submarines; about Mach 3.5",
-       "Exam angle: \"BrahMos is developed by India and ___\" (Russia). This was asked in APPSC G2 2025.",
-       "BrahMos-NG: lighter (~1.5 t vs 2.5 t), for Tejas, smaller ships and submarines. BrahMos-II: planned hypersonic (> Mach 5)."
-      ]
-     },
-     {
-      "topic": "Defence platforms and systems · Naval platforms",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Defence platforms and systems - Tejas LCA, Arjun MBT, radar and EW systems, naval platforms › Naval platforms - class, type, builder; commissionings",
-      "bullets": [
-       "Nilgiri class: Class / project and type Project 17A, 7 multi-mission stealth frigates (CODOG, 28+ knots, BrahMos, MRSAM/Barak-8, MF-STAR AESA, about 75% indigenous); Builder MDL and GRSE",
-       "Varunastra: Class / project and type Indigenous heavyweight anti-submarine torpedo; Builder Designed by NSTL Visakhapatnam",
-       "AIP system: Class / project and type DRDO-NMRL fuel-cell Air Independent Propulsion, which keeps a submarine submerged longer; Builder DRDO (not a Russian partnership)",
-       "Maareech: Type Anti-torpedo decoy system for ships",
-       "Tavasya: Class / detail Indigenously built stealth frigate launched by the Navy (APPSC 2024 key) - Goa Shipyard, P-1135.6 follow-on"
-      ]
-     },
-     {
-      "topic": "Space-Based Surveillance, Defence Space Agency, DSRO",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 20 › Satellites for defence and for academic purposes - GSAT-7 series, EDUSAT, RISAT for surveillance › Space-Based Surveillance, Defence Space Agency, DSRO",
-      "bullets": [
-       "SBS-3: Fact 52 satellites (21 by ISRO, 31 by private industry); ₹25,221.75 crore; CCS approval November 2024",
-       "Cost sharing: Fact Army, Navy, Air Force 20% each; NTRO and ARC 15% each; MHA 10%",
-       "Defence Space Agency (DSA): Fact Tri-service agency (2019, Bengaluru) ; ran the first tri-services space exercise \"Antariksha Abhyas-2024\"",
-       "DSRO (Defence Space Research Organisation): Fact R&D arm that develops space-warfare systems and technologies for the DSA"
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "topicOf": "0979301bc33f"
-  },
-  {
-   "id": "ac2d5c432559",
-   "date": "2026-10-06",
-   "pubDate": "2026-10-06",
-   "time": "22:32",
-   "title": "Earthquake Today: Tremors felt in Delhi-NCR as 4.9 magnitude quake hit Uttarakhand",
-   "summary": "Earthquake tremors were felt in the national capital on Tuesday. So far, there have been no reports of casualties.",
-   "facts": [],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/india/earthquake-today-tremors-felt-in-delhincr-11791305998834.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Reports"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "notes": [
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Air pollution - sources, pollutants, NAAQS, AQI, National Clean Air Programme, stubble burning › Stubble burning and NCR measures - CAQM, decomposer, machinery, GRAP",
-     "text": "Coal banned in industrial/domestic use in Delhi-NCR from 1 January 2023.",
-     "match": [
-      "Delhi-NCR"
-     ]
-    },
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Air pollution - sources, pollutants, NAAQS, AQI, National Clean Air Programme, stubble burning › Emergency measures - GRAP, smog towers, cloud seeding",
-     "text": "GRAP enforced in Delhi-NCR by CAQM; MoES 400 m forecasting supports it (IYB 2026).",
-     "match": [
-      "Delhi-NCR"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Major disasters in India → type and place",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 4 Geography › D-2 › India - earthquake zones, landslide-prone areas, cyclone-prone coasts; seismic zoning map › Major disasters in India → type and place",
-      "bullets": [
-       "Koyna: Type Reservoir-induced quake; Place / year Maharashtra, 1967",
-       "Killari: Type Intraplate quake; Place / year Latur, Maharashtra, 1993",
-       "Bhuj: Type Quake; Place / year Kutch, Gujarat, 26 Jan 2001",
-       "Kedarnath: Type Cloudburst, flash flood; Place / year Uttarakhand, June 2013",
-       "Chamoli: Type Glacier/rock-ice flood; Place / year Uttarakhand, 2021 (LENS)"
-      ]
-     },
-     {
-      "topic": "Earthquakes · Measurement",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 4 Geography › D-1 › Earthquakes - causes, seismic waves, measurement, distribution, effects › Measurement - magnitude vs intensity, scales and instruments",
-      "bullets": [
-       "Energy released at the focus; quantitative; one value per quake (APPSC 2025): Intensity Observed effect/damage at a place; qualitative; falls with distance from the epicentre",
-       "Richter scale (Charles F. Richter, 1935); moment magnitude (Mw): Intensity Modified Mercalli (MMI) and MSK scales, I to XII",
-       "Exam angle: \"Richter scale measures intensity\" is wrong - it measures magnitude; earthquakes still cannot be predicted accurately (APPSC 2022).",
-       "Nature: Magnitude Quantitative; one value per quake; Intensity Qualitative; varies from place to place, falling with distance from the epicentre",
-       "MMI runs from I (not felt) to XII (total destruction) (CDI)."
-      ]
-     },
-     {
-      "topic": "Earthquake Hazards and Seismic Management",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Disaster Management › #10 · Earthquake Hazards and Seismic Management",
-      "bullets": [
-       "The Assam earthquake had a magnitude of 8.1.",
-       "The Kangra earthquake had a magnitude of 7.8.",
-       "The Bihar-Nepal earthquake had a magnitude of 8.1.",
-       "The Koyna earthquake had a magnitude of 6.3.",
-       "The Latur or Killari earthquake had a magnitude of 6.2."
-      ]
-     },
-     {
-      "topic": "National Capital Region",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 4 Geography › D-3 › Metropolitan regions and megacities of India; problems of large cities › National Capital Region - constituent states and towns, NCR Planning Board",
-      "bullets": [
-       "NCR = NCT of Delhi plus parts of Haryana, Uttar Pradesh and Rajasthan. The four participating units are listed in LENSD (18 Jul 2026). Punjab and Madhya Pradesh are not in the NCR (UPPSC 2008, 2017).",
-       "NCR towns include Rohtak, Karnal, Panipat, Sonipat, Gurugram, Faridabad (Haryana); Khurja (Bulandshahr), Meerut, Ghaziabad, Noida (UP); Alwar (Rajasthan). Ambala is not in the NCR (UPPSC 2011) .",
-       "The NCR Planning Board was set up under the NCRPB Act, 1985 .",
-       "It approved four greenfield \"Namo Cities\", one each in the Delhi, Haryana, UP and Rajasthan parts of the NCR. They follow the Transit-Oriented Development model around Namo Bharat (RRTS) corridors (LENS, Jun 2026).",
-       "The UN treats Delhi-Gurugram-Noida-Ghaziabad-Faridabad as one agglomeration; the Census counts them separately (LENS, Dec 2025)."
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "thread": "ac2d5c432559"
-  },
-  {
-   "id": "7493dc494bdd",
+   "id": "320a2402bde2",
    "date": "2026-10-06",
    "pubDate": "2026-10-07",
-   "time": "02:18",
-   "title": "Election Commission: Was ready to meet 240 opposition MPs but not at their chosen venue",
-   "summary": "Election Commission declined a meeting with opposition MPs led by Rahul Gandhi at Parliament House annexe. The commission emphasized meetings should occur on its premises and through authorized representatives. Despite being offered a chance to submit a memorandum, the MPs rejected this proposal. The Commission stated it had not received prior appointment requests from the parties until late in the day.",
+   "time": "05:32",
+   "title": "34% బీసీ రిజర్వేషన్ల సాధనే లక్ష్యంగా న్యాయపోరాటం",
+   "summary": "",
    "facts": [],
-   "source": "Times of India — India",
-   "sourceId": "toi-india",
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
    "official": false,
    "ministry": "",
-   "alsoIn": [
-    "Times of India — Top stories"
-   ],
-   "url": "https://timesofindia.indiatimes.com/india/election-commission-was-ready-to-meet-240-opposition-mps-but-not-at-their-chosen-venue/articleshow/134749929.cms",
-   "bucket": "national",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181729",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
-    "G1",
     "G2"
    ],
    "subject": "Polity, Society & IR",
    "subjects": [
-    "Polity, Society & IR",
-    "History & Culture"
+    "Polity, Society & IR"
    ],
    "units": [
     {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U8",
+     "code": "G2-S3",
      "exam": "G2",
-     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
-    },
-    {
-     "code": "G1-B2",
-     "exam": "G1",
-     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+     "label": "Screening S3. Indian Society"
     }
    ],
    "topics": [],
    "angles": [
-    "Election Commission"
+    "Reservation"
    ],
-   "score": 44,
+   "score": 42,
    "band": "medium",
    "why": {
-    "syllabus": 24,
+    "syllabus": 12,
     "angles": 5,
-    "ap": 0,
+    "ap": 20,
     "importance": 0,
-    "reuse": 15
+    "reuse": 5
    },
+   "lang": "te",
    "notes": [
     {
-     "tier": "exact",
+     "tier": "book",
      "src": "Prep notes",
-     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Supreme Court - composition, appointment, collegium and NJAC, jurisdictions (original, appellate, advisory, writ) › Supreme Court FIRSTs - persons, inauguration",
-     "text": "Inaugurated 28 January 1950, in a part of the old Parliament House. It moved to its Tilak Marg building in 1958 (IYB).",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › 73rd Amendment - Part IX, Eleventh Schedule, three-tier structure, Gram Sabha, reservations, State Election Commission › Features of the 73rd Amendment - compulsory vs voluntary, non-features, significance",
+     "text": "Direct election to all seats at all levels: Voluntary Reservation for backward classes",
      "match": [
-      "Parliament House"
+      "reservation",
+      "backward",
+      "classes"
      ]
     },
     {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Supreme Court - composition, appointment, collegium and NJAC, jurisdictions (original, appellate, advisory, writ) › Supreme Court FIRSTs - persons, inauguration",
-     "text": "Inaugurated on 28 Jan 1950 in the old Parliament House, after replacing the Federal Court (1937) on 26 Jan 1950. It moved to Tilak Marg in 1958 (IYB). Privy Council appeals were abolished in 1949.",
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #41 · Landmark Constitutional Judgments",
+     "text": "Indra Sawhney upheld 27% reservation for Other Backward Classes.",
      "match": [
-      "Parliament House"
+      "reservation",
+      "backward",
+      "classes"
      ]
     }
    ],
@@ -10741,52 +11379,49 @@
     "v": 4,
     "sections": [
      {
-      "topic": "Election Commission of India · Anoop Baranwal case",
+      "topic": "Reservation · Backward Classes in the Constitution",
       "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › Anoop Baranwal case - interim selection mechanism",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Reservation - constitutional basis, Indra Sawhney, creamy layer, EWS reservation, promotion in reservation › Backward Classes in the Constitution",
       "bullets": [
-       "Anoop Baranwal v Union of India (2023), Constitution Bench: until Parliament legislates, CEC and ECs to be chosen by PM + LoP (or largest opposition party leader) in the Lok Sabha + CJI (LENS, May 2026; TH, 8 May 2026).",
-       "Before it, the President appointed them on the PM's advice alone; the 2023 Act replaced the CJI with a Union Cabinet Minister.",
-       "The Tarkunde Committee (1975), set up by Jayaprakash Narayan, had proposed PM + LoP + CJI and a three-member Commission (APP)."
+       "\"Backward Classes\" is not defined in the Constitution (APPSC G2 2017 key: the \"defined\" statement is the wrong one).",
+       "27% OBC quota in central jobs from 1993; in central educational institutions under the CEI (Reservation in Admission) Act, 2006, in force Jan 2007 (IYB 2026 says 2007) after the 2005 amendment to Art. 15 (IYB) [GK for the Act's year].",
+       "Central Educational Institutions (Reservation in Admission) Act, 2006 (in force 2007): 27% OBC seats in central institutions (IYB; GS 2007 key: 93rd Amendment); OBC = classes \"so determined by the Central Government\" (APP)."
       ]
      },
      {
-      "topic": "Productivity and decline of Parliament · Role of opposition and Leader of Opposition",
+      "topic": "Indra Sawhney and creamy layer link to NCBC",
       "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Productivity and decline of Parliament - issues of debate quality, disruptions and reforms › Role of opposition and Leader of Opposition",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › National Commission for SCs (338), STs (338A) and Backward Classes (338B); Special Officer for Linguistic Minorities (350B) › Indra Sawhney and creamy layer link to NCBC",
       "bullets": [
-       "LoP recognised by the Speaker if the party has at least one-tenth of the House's strength (quorum-size: 55 in LS) ; statutory status under the Salary and Allowances of Leaders of Opposition in Parliament Act, 1977 .",
-       "Opposition tools: Question Hour, motions, committees (PAC chaired by Opposition since 1967). Monsoon 2026: united opposition pushed the FCRA (Amendment) Bill, 2026 to a JPC (TH 14 Aug 2026).",
-       "Not in your sources: current Leaders of Opposition in Lok Sabha and Rajya Sabha."
+       "*Indra Sawhney v UoI* (16 Nov 1992) upheld 27% OBC reservation, introduced the creamy layer, and directed a permanent body for OBC-list inclusion/exclusion → NCBC Act, 1993 (in force 2 April 1993).",
+       "The 102nd Amendment also removed backward classes from the NCSC's purview ."
       ]
      },
      {
-      "topic": "Central Information Commission and State Information Commissions; CBI and its legal basis",
+      "topic": "Mobility through reservation, education, migration",
       "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Central Information Commission and State Information Commissions; CBI and its legal basis › CBI - legal basis, recommending committee, year, first Director, Director's appointment",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Social stratification and mobility in India › Mobility through reservation, education, migration",
       "bullets": [
-       "Director: appointed by the Centre on a three-member committee: PM (chair), Leader of Opposition in Lok Sabha, CJI or an SC judge he nominates, a process added by the Lokpal Act 2013 (till 2014 it ran under the DSPE Act alone). Minimum tenure two years .",
-       "May 2026: the Leader of Opposition recorded dissent over the selection of the new CBI Director (LENS, May 2026).",
-       "Committee (Lokpal Act 2013 amendment to DSPE Act): Fact PM (chair), Leader of Opposition in Lok Sabha (or leader of the largest opposition party ), CJI or an SC judge nominated by the CJI (UPSC; LENS May 2026)",
-       "Vineet Narain v Union of India (1997; reported (1998) 1 SCC 226): quashed the \"Single Directive\" (prior sanction to probe senior officers); the CBI alone decides whether to investigate; led to the 2003 DSPE revision and statutory CVC (TH 19 Jan 2026; UPSC).",
-       "Officers of SP rank and above: chosen by a committee led by the CVC (UPSC)."
+       "Education: better education brings better jobs and higher social standing; the emerging class system allows upward mobility (APP).",
+       "Reservation: backward classes in the South (Self-Respect Movement of Periyar) demanded reservation in government jobs; reservation led to group mobility (APP).",
+       "Reservation has also broadened the urban middle class by bringing in backward classes and Dalits (APP).",
+       "Occupational mobility: e.g., Ezhavas of Kerala moved from toddy tapping into tailoring and cottage industries (APP).",
+       "Migration and urbanisation: city anonymity and caste-blind public spaces weaken caste identity, but migrants carry caste networks and prejudices into cities (APP)."
       ]
      },
      {
-      "topic": "Finance Commission · Statement-based",
+      "topic": "Transgender persons · Reservation and state measures",
       "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Finance Commission - composition, terms of reference, functions; 15th and 16th Finance Commission › Statement-based - nature, composition, qualifications, advisory",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Transgender persons - NALSA judgment, Transgender Persons (Protection of Rights) Act 2019 › Reservation and state measures - horizontal vs vertical, first service quota, AP pensions, welfare board, ID cards",
       "bullets": [
-       "Qualifications fixed by Parliament in the Finance Commission Act, 1951: Chairman - experience in public affairs; members from - a High Court judge (or qualified), expert in government finance and accounts, person experienced in financial matters and administration, and one with special knowledge of economics. Full title: Finance Commission (Miscellaneous Provisions) Act, 1951",
-       "Recommendations are advisory, not binding; per P.V. Rajamannar they should not be rejected without compelling reasons.",
-       "Art. 280: the President constitutes the Finance Commission every fifth year or earlier. APPSC-G2 2025 marked \"Article 290\" as the incorrect statement.",
-       "Art. 281: the President lays the recommendations, with an explanatory memorandum on action taken, before each House of Parliament ."
+       "Debate: NALSA (2014) asked governments to treat transgender persons as socially and educationally backward (a vertical OBC-type quota); the community seeks horizontal reservation cutting across SC/ST/OBC/General. The issue resurfaced in June 2023 with a Mumbai protest against Maharashtra's reply to the Bombay High Court (APPSC 2022).",
+       "Karnataka - first State to give 1% reservation to transgender persons in all government services (July 2021) (APPSC 2023)."
       ]
      }
     ],
     "gaps": []
    },
-   "topicOf": "780b1dbd9693"
+   "topicOf": "04416143d57f"
   },
   {
    "id": "3a7d3b560945",
@@ -10891,7 +11526,7 @@
     ],
     "gaps": []
    },
-   "thread": "3a7d3b560945"
+   "topicOf": "54011fe5cc9d"
   },
   {
    "id": "eda839ee0810",
@@ -11138,6 +11773,121 @@
    "thread": "5979699cec80"
   },
   {
+   "id": "54011fe5cc9d",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "05:59",
+   "title": "Six Ayushman Arogya Mandirs inaugurated",
+   "summary": "Speaking on the occasion, Collector Kirti Chekuri said non-communicable diseases such as hypertension, diabetes and cancer were increasing and changes in lifestyle were among the major reasons",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/rajahmundry/six-ayushman-arogya-mandirs-inaugurated-1129789",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Diseases"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent trends in India's disease burden - communicable and non-communicable diseases › NCD prevalence - diabetes, hypertension, cancer, COPD",
+     "text": "NP-NCD (formerly NPCDCS, 2010) runs NCD clinics at district hospitals and CHCs. Everyone over 30 is screened; funding is 60:40 (90:10 for NE and hilly states) (IYB). Ayushman Arogya Mandirs screen for hypertension, diabetes, and oral, breast and cervical cancer (IYB).",
+     "match": [
+      "hypertension",
+      "diabetes",
+      "cancer"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Chemistry › #12 · Gases and Non-Metals",
+     "text": "Carbon dioxide contributes to global warming and climate change.",
+     "match": [
+      "global",
+      "warming",
+      "climate"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Healthcare delivery in India · Ayushman Arogya Mandirs",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Healthcare delivery in India - three-tier structure, human resources and infrastructure › Ayushman Arogya Mandirs - service package",
+      "bullets": [
+       "Launched in 2018; 1,50,000 HWCs were built by Dec 2022 by upgrading SHCs and PHCs and later renamed Ayushman Arogya Mandirs. More than 1.79 lakh now function (IYB 2026).",
+       "CPHC package: maternal and child health, communicable diseases, NCD screening (hypertension, diabetes, and oral, breast and cervical cancer), mental health, ENT, eye, oral health, geriatric and palliative care, trauma care, and Yoga and wellness (IYB; APP).",
+       "172 drugs and 63 diagnostics at AAM-PHCs; 106 drugs and 14 diagnostics at AAM-SHCs (IYB)."
+      ]
+     },
+     {
+      "topic": "Recent trends in India's disease burden · Communicable vs lifestyle diseases",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent trends in India's disease burden - communicable and non-communicable diseases › Communicable vs lifestyle diseases - classification, odd-one-out",
+      "bullets": [
+       "Malaria, dengue, TB, typhoid, cholera, chikungunya, JE, Nipah: Lifestyle / NCD Diabetes, hypertension, obesity, heart disease, stroke, cancer, COPD",
+       "Odd-one-out: malaria is NOT a lifestyle disease (PYQ). The \"big four\" NCDs are cardiovascular, cancers, chronic respiratory and diabetes (LENS Sep 2025; VIS 2026).",
+       "Meningococcal meningitis spreads person to person through respiratory droplets, not mosquitoes; vomiting and neck stiffness are symptoms ."
+      ]
+     },
+     {
+      "topic": "Recent public health initiatives · Ayushman Bharat",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent public health initiatives - Ayushman Bharat, National Health Mission, Ayushman Bharat Digital Mission › Ayushman Bharat - pillars, PM-ABHIM, Ayushman Arogya Mandirs, insurance cover",
+      "bullets": [
+       "Ayushman Arogya Mandir (earlier AB-HWCs): Role Comprehensive primary care; target 1,50,000 centres - 1.73 lakh+ converted (LENSD Sep 2026); primary care meets 80-90% of needs",
+       "PM-ABHIM: Role Health infrastructure for pandemics - launched 25 Oct 2021 at Varanasi [GK for venue]; ₹64,180 crore, FY 2021-22 to 2025-26; critical care blocks, Integrated Public Health Labs in all districts, BSL-3 labs",
+       "ABDM: Role Digital backbone (ABHA, HPR, HFR, UHI, NHCX)",
+       "AAM services: NCD screening (hypertension, diabetes, oral/breast/cervix cancers), mental health, ENT, eye, oral, geriatric, palliative and trauma care; campaigns: Ayushman Sabhas, weekly Ayushman Melas, Ayushman Gram (100% saturation of cards and TB/sickle-cell screening)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "3a7d3b560945",
+     "title": "56 Ayushman Arogya Mandirs launched in Kurnool and Anantapur",
+     "source": "The Hindu — Andhra Pradesh",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/56-ayushman-arogya-mandirs-launched-in-kurnool-and-anantapur/article71551512.ece"
+    }
+   ],
+   "thread": "54011fe5cc9d"
+  },
+  {
    "id": "36c84c1c5d2b",
    "date": "2026-10-06",
    "pubDate": "2026-10-06",
@@ -11255,6 +12005,126 @@
    "topicOf": "04416143d57f"
   },
   {
+   "id": "cf46e55948c6",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "05:45",
+   "title": "‘Stree Shakti’ crosses 100 cr free journeys, saves women Rs 3,550 cr",
+   "summary": "Launched on August 15 last year, the scheme has emerged as a significant component of women’s daily mobility, with an average of 24 lakh women availing themselves of free travel every day, according to the Chief Minister.",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "Launched on August 15 last year, the scheme has emerged as a significant component of women’s daily mobility, with an average of 24 lakh women availing themselves of free travel every day, according to the Chief Minister."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/stree-shakti-crosses-100-cr-free-journeys-saves-women-rs-3550-cr-1129819",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - welfare and social security › AP welfare flagships - beneficiary, benefit, eligibility (Super Six, Navaratnalu, Talliki Vandanam, Cheyutha, Aasara, Vahana Mitra)",
+     "text": "Stree Shakti: Beneficiary Women; Benefit Free bus travel across the State",
+     "match": [
+      "Stree Shakti"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 1 History & Culture › A-6 › Women's movement in Andhra Pradesh, 1956-2014 › Women's organisations → founder + year",
+     "text": "Stree Shakti Sanghatana: Founder / sponsor Vasantha Kannabiran, K. Lalita and others, Hyderabad; Year 1978",
+     "match": [
+      "Stree Shakti"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Women's welfare schemes · Mission Shakti and the MWCD umbrella missions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Women's welfare schemes - Beti Bachao Beti Padhao, Mission Shakti, PMMVY, Ujjwala › Mission Shakti and the MWCD umbrella missions",
+      "bullets": [
+       "From 1 April 2022 MWCD schemes sit under three umbrella missions: Mission Shakti, Mission Vatsalya, Saksham Anganwadi & Poshan 2.0 (APP; APPSC 2021 key \"Three\").",
+       "Samarthya (empowerment): Components Shakti Sadan (Swadhar Greh + Ujjawala merged), Sakhi Niwas (ex-Working Women Hostel), Palna (ex-National Creche Scheme), PMMVY, SANKALP-Hub for Empowerment of Women, Gap Funding for Economic Empowerment",
+       "Discontinued (exam trap): Mahila Shakti Kendra and Mahila Police Volunteers (CDI).",
+       "Stree Mano Raksha (Mar 2022): MWCD with NIMHANS, Bengaluru for women's mental health (APPSC 2021 key).",
+       "Exam angle: \"Which is a sub-scheme of Mission Shakti?\" Swadhar and Ujjawala no longer exist under their own names."
+      ]
+     },
+     {
+      "topic": "AP welfare flagships",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - welfare and social security › AP welfare flagships - beneficiary, benefit, eligibility (Super Six, Navaratnalu, Talliki Vandanam, Cheyutha, Aasara, Vahana Mitra)",
+      "bullets": [
+       "Deepam: Beneficiary Eligible households; Benefit 3 free LPG cylinders a year",
+       "Stree Shakti: Benefit design Free bus travel for women and transgender persons (AP domicile) in 5 APSRTC bus categories; later extended to PwD; Status / data Launched 15 Aug 2025; 71 crore+ free journeys (TH, 13 Jun 2026); women's share of bus travel 40% → 65%",
+       "Deepam-2: Benefit design 3 free LPG cylinders a year; Status / data Launched 2024; about 2 crore cylinders, ₹2,684 crore (TH, 1 Jan 2026); earlier Deepam (1999) gave LPG connections",
+       "Keys: Stree Shakti means free bus travel for women (G2-GS 2025); CDI AP SES 2025-26 counted 33.32 crore trips and 92% occupancy in Stree Shakti buses.",
+       "Deepam-2: Benefit 3 free LPG cylinders/yr to 83 lakh families (APSES 2024-25)"
+      ]
+     },
+     {
+      "topic": "Social welfare programmes in AP · Women and child welfare",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Social welfare programmes in AP - SC/ST/BC/minority welfare, pensions, housing, women and child welfare › Women and child welfare - Disha, ICDS, Kalyanamasthu/Shaadi Tohfa, Mahila Shakti",
+      "bullets": [
+       "The AP Disha Bill, 2019 (after the Hyderabad case) promised a 7-day investigation, a 14-day trial and the death penalty. It never got assent, and the Cabinet withdrew it in Aug 2026 on the Centre's advice after the BNS and BNSS came in (TH, 7 Aug 2026).",
+       "ICDS: 55,746 Anganwadis and 257 projects. Mission Shakti runs One Stop Centres in all districts and the 181 helpline.",
+       "Stree Shakti (from 15 Aug 2025) gives free bus travel to women and transgender persons: 71 crore+ journeys (Jun 2026). The women's share of bus passengers rose from 40% to 65%. Divyang Shakti (Mar 2026) extends the benefit to persons with disabilities.",
+       "Kalyanamasthu / Shaadi Tohfa: marriage assistance for poor brides and minority brides respectively [GK]. Not in your sources: the current amounts, or any AP scheme named \"Mahila Shakti\"."
+      ]
+     },
+     {
+      "topic": "AP Socio-Economic Survey · Welfare scheme coverage",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › AP Socio-Economic Survey - key indicators of the latest edition › Welfare scheme coverage - beneficiaries and expenditure",
+      "bullets": [
+       "NTR Bharosa Pensions: Coverage / spend (SES 2025-26) Rs 32,754.90 crore released (Dec 2024-Nov 2025)",
+       "Deepam-2 (3 free LPG cylinders a year): Coverage / spend (SES 2025-26) 1.84 crore beneficiaries, Rs 1,554.06 crore",
+       "Anna Canteens: Coverage / spend (SES 2025-26) 204 canteens in 123 ULBs"
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "cf46e55948c6"
+  },
+  {
    "id": "43a6da53abeb",
    "date": "2026-10-06",
    "pubDate": "2026-10-06",
@@ -11365,6 +12235,68 @@
     "gaps": []
    },
    "thread": "43a6da53abeb"
+  },
+  {
+   "id": "4f003f89ba3c",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "04:52",
+   "title": "6 నెలల్లో 4,400 ఆయుష్మాన్‌ ఆరోగ్య మందిరాలకు కొత్త భవనాలు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181638",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent trends in India's disease burden - communicable and non-communicable diseases › Universal angles",
+     "text": "Significance: the move to NCDs means the health system must shift from curative care to screening and prevention (UPSC; LENSD 18 May 2026).",
+     "match": [
+      "screening",
+      "health"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "4f003f89ba3c"
   },
   {
    "id": "0b6e22f1b2e5",
@@ -11704,6 +12636,174 @@
    "thread": "79e4b97c2706"
   },
   {
+   "id": "79e84f02ae31",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "04:49",
+   "title": "అవకతవకలు ఉఫ్‌.. చిన్నారుల ఆరోగ్యం భేష్‌!",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181630",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent trends in India's disease burden - communicable and non-communicable diseases › Universal angles",
+     "text": "Significance: the move to NCDs means the health system must shift from curative care to screening and prevention (UPSC; LENSD 18 May 2026).",
+     "match": [
+      "screening",
+      "health"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "79e84f02ae31"
+  },
+  {
+   "id": "0ac3126303cd",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "04:56",
+   "title": "కరవు ప్రభావిత మండలాల్లో రుణాల రీషెడ్యూల్‌",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181651",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Agricultural marketing - APMC system, e-NAM, contract farming, model acts, FPOs, warehousing › Agriculture Infrastructure Fund - size, interest subvention, eligible projects",
+     "text": "3% interest subvention on loans up to ₹2 crore, with a credit guarantee through CGTMSE (APPCA 2026).",
+     "match": [
+      "loans",
+      "credit"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Interest-free crop loans",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Institutional credit to agriculture in Andhra Pradesh - banks, NABARD and SHGs › Interest-free crop loans - YSR Zero Interest Crop Loan scheme",
+      "bullets": [
+       "At the scheme's payout on 20 Apr 2021, farmers were covered for crop loans up to Rs 1 lakh (rabi season) repaid on time (PYQ 2023). The state bears the interest, so the farmer pays nothing.",
+       "Central equivalent: under the Modified Interest Subvention Scheme, short-term crop loans up to Rs 3 lakh at 4% for prompt repayers. It is implemented by RBI and NABARD and covers farmers, tenant farmers and SHGs (VIS 2026; APP).",
+       "Not in your sources: the present status of the state interest-free crop loan scheme under the current government."
+      ]
+     },
+     {
+      "topic": "Minority rights · Credit institutions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Minority rights - Articles 29 and 30, National Commission for Minorities, Sachar Committee, schemes › Credit institutions - NBCFDC, NMDFC - loan schemes and channelling agencies",
+      "bullets": [
+       "NBCFDC: Key facts 1992, MoSJE; lends through State Channelising Agencies; New Swarnima (women), Saksham (young professionals)",
+       "NMDFC: Key facts Section 8 company under MoMA; lends through SCAs",
+       "NMDFC credit lines: Key facts Credit Line-1 for family income up to Rs 3 lakh, Credit Line-2 up to Rs 8 lakh; term loan up to Rs 20-30 lakh, funded 90:5:5",
+       "NMDFC other loans: Key facts Education loans, micro-finance, Virasat loans for artisans"
+      ]
+     },
+     {
+      "topic": "Agricultural credit · Interest subvention",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural credit - institutional structure, NABARD, Kisan Credit Card, priority sector lending, interest subvention › Interest subvention - MISS, prompt repayment incentive, Kisan Rin Portal",
+      "bullets": [
+       "MISS (Central Sector; RBI and NABARD): short-term KCC loans at 7%, 1.5% subvention to lenders, 3% prompt repayment incentive → effective 4%.",
+       "Limit ₹5 lakh (CDI, Aug 2026; earlier ₹3 lakh); post-harvest loans against negotiable warehouse receipts for 6 months for small and marginal farmers.",
+       "RBI + NABARD): short-term crop loans up to Rs 3 lakh at 7%, 3% prompt repayment incentive → effective 4% (APP; LENS, Apr 2026)."
+      ]
+     },
+     {
+      "topic": "NABARD and Rural Credit Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #16 · NABARD and Rural Credit Institutions",
+      "bullets": [
+       "Regional Rural Banks provide direct rural banking and credit.",
+       "Land Development Banks provide long-term rural and agricultural loans.",
+       "The Kisan Credit Card Plan was established in 1998.",
+       "NABARD provides direct rural credit.",
+       "Regional Rural Banks provide loans to rural borrowers."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "0ac3126303cd"
+  },
+  {
    "id": "2fa4da703660",
    "date": "2026-10-06",
    "pubDate": "2026-10-06",
@@ -11839,6 +12939,238 @@
     "gaps": []
    },
    "thread": "2fa4da703660"
+  },
+  {
+   "id": "85d57d620860",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "05:30",
+   "title": "బిట్స్‌ పిలానీ అమరావతి డైరెక్టర్‌గా మోహన్‌ కృష్ణమూర్తి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181739",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › AP state finances - revenue receipts and expenditure, debt and interest payments, latest AP Budget › Capital outlay - Polavaram, Amaravati, roads, ports",
+     "text": "Amaravati capital: Allocation ₹6,000 crore",
+     "match": [
+      "Amaravati capital"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › Urbanisation and smart cities in AP - Amaravati capital region, Visakhapatnam, Kakinada, Tirupati › Amaravati capital region - APCRDA, foundation, land pooling, master plan, funding",
+     "text": "Capital region - Amaravati capital city plan, APCRDA area",
+     "match": [
+      "Amaravati capital"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Amaravati capital city funding",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Projects of external assistance in Andhra Pradesh - World Bank, ADB, JICA and other funded projects › Amaravati capital city funding - lenders and loan size",
+      "bullets": [
+       "Phase-I lenders: World Bank and Asian Development Bank (APPSC G2 2025).",
+       "Union Budget 2026-27: ₹432.09 crore for the Amaravati Integrated Urban Development Programme through IBRD (TH, 2 Feb 2026).",
+       "A World Bank-ADB delegation reviewed APCRDA's capital works on 11 May 2026 (TH, 12 May 2026).",
+       "Not in your sources: the separate World Bank and ADB loan amounts."
+      ]
+     },
+     {
+      "topic": "Releases for Amaravati",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Central government's assistance for building a new capital - commitments and actual releases › Releases for Amaravati - UGD grants, amounts released",
+      "bullets": [
+       "Direct central grants: Rs 2,500 crore in total under Sec 94(3) (APP). According to the BJP State president, this was Rs 1,500 crore at first for building the capital plus a special Rs 1,000 crore later for essential infrastructure (TH, 6 Apr 2026).",
+       "Cost gap: the AP government estimated the capital at about Rs 1.2 lakh crore. CDI says the Centre's commitment was far smaller (Rs 27,000 crore), and heavy borrowing followed (CDI Block13).",
+       "Not in your sources: how the releases were split for Vijayawada-Guntur underground drainage (UGD), and year-wise release figures."
+      ]
+     },
+     {
+      "topic": "Urbanisation and smart cities in AP · Amaravati capital region",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Urbanisation and smart cities in AP - Amaravati capital region, Visakhapatnam, Kakinada, Tirupati › Amaravati capital region - APCRDA, foundation, land pooling, master plan, funding",
+      "bullets": [
+       "Foundation stone laid by PM Modi on 22 Oct 2015 at Uddandarayunipalem (Guntur). The PM relaunched the project on 2 May 2025; the 'Restart Amaravati' project office opened in April 2025.",
+       "Capital city project - Amaravati foundation, APCRDA, land pooling farmers",
+       "Recent decisions: the Cabinet approved land pooling of 6,212.50 acres for the Inner Ring Road. It also approved the Rs 759 crore Amaravati Sangamam at Sakhamuru, comprising the State Public Library, an auditorium and the Global Institute of Good Governance (TH, 4 Sep 2026).",
+       "Capital region - Amaravati capital city plan, APCRDA area",
+       "2026: Parliament passed the AP Reorganisation (Amendment) Act, 2026 making Amaravati the sole capital (TH, 3 Apr 2026; APPCA Jun 2026)"
+      ]
+     },
+     {
+      "topic": "AP state finances · Capital outlay",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › AP state finances - revenue receipts and expenditure, debt and interest payments, latest AP Budget › Capital outlay - Polavaram, Amaravati, roads, ports",
+      "bullets": [
+       "Budget 2026-27: Polavaram Rs. 6,105 Cr; Amaravati Rs. 6,000 Cr; higher capital outlay for irrigation & flood control, water supply & sanitation, urban development.",
+       "Transport: 2024-25 RE 7,192; 2025-26 BE 8,055 (+12%); Key item Capital outlay on roads & bridges Rs. 1,968 Cr",
+       "Not in your sources: port-specific capital outlay.",
+       "Amaravati capital: Allocation ₹6,000 crore"
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "85d57d620860"
+  },
+  {
+   "id": "460e8419255b",
+   "date": "2026-10-06",
+   "pubDate": "2026-10-07",
+   "time": "04:56",
+   "title": "రైతు సమస్యల పరిష్కారంలో ప్రభుత్వాలు విఫలం: బీకేఎస్‌",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126181645",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-3 › Minimum Support Price - mechanism, CACP, crops covered, procurement, criticism; PM-AASHA › Procurement - open-ended vs limited procurement crops, decentralised procurement states, AP paddy procurement system",
+     "text": "AP: State agencies procure paddy for FCI's Central Pool under the Paddy Procurement Scheme. DBT to farmers is due within a 48-hour window (APPCA Mar 2026; APSES 2024-25). DCMS societies procure so that farmers actually get MSP. APMARKFED is the apex cooperative marketing body (APSES 2024-25).",
+     "match": [
+      "marketing",
+      "msp",
+      "procurement"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #59 · Public Funds, NIF and RIDF",
+     "text": "Agriculture and related sectors are broad areas of the Rural Infrastructure Development Fund.",
+     "match": [
+      "sectors",
+      "development",
+      "agriculture"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Agricultural strategy and policy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Agricultural strategy and policy - National Agriculture Policy, doubling farmers' income, National Missions › National Commission on Agriculture and National Commission on Farmers",
+      "bullets": [
+       "National Commission on Agriculture: Years / Chair 1970-76 (report 1976); chair Nathu Ram Mirdha; Key recommendations HYVs, irrigation, credit reform; coined \"social forestry\"",
+       "National Commission on Farmers: Years / Chair Constituted 18 November 2004; chair M.S. Swaminathan; 5 reports 2004-06; Key recommendations MSP at C2 + 50%; land reforms; women as farmers; universal crop insurance; National Agricultural Risk Fund",
+       "Government MSP policy uses 1.5 x A2+FL (not C2); MSPs for 22 mandated crops (ES 2025-26)."
+      ]
+     },
+     {
+      "topic": "Awards to AP natural farmers",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP agriculture - APCNF/ZBNF, horticulture, aquaculture, allied sectors › Awards to AP natural farmers - award → farmer's district",
+      "bullets": [
+       "Not in your sources: ISHA Foundation (or other) awards to individual AP natural farmers and their districts."
+      ]
+     },
+     {
+      "topic": "Sources of institutional finance for AP farmers",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Institutional credit to agriculture in Andhra Pradesh - banks, NABARD and SHGs › Sources of institutional finance for AP farmers",
+      "bullets": [
+       "AP farmers borrow from commercial banks, RRBs and PACS, i.e. all of them (PYQ 2008). Other formal sources are SHGs/JLGs, microfinance and KCC.",
+       "Nationally, scheduled commercial banks give over 70% of formal farm credit. The cooperative system (PACS-DCCB-SCB) gives short-term credit, and ARDBs give long-term credit (LENS Apr 2026).",
+       "AP Annual Credit Plan 2025-26 review (Jan 2026): Rs 2.96 lakh crore disbursed to agriculture and allied sectors, Rs 1,490 crore to tenant farmers and Rs 95,714 crore to MSMEs (TH, 24 Jan 2026).",
+       "Formal credit excludes many tenant, tribal, women and oral-lessee farmers because it needs land records. A NABARD Guntur study found formal interest rates of about 2.5-10%.",
+       "KCC (1998, NABARD model scheme on the R.V. Gupta Committee): RBI's revised KCC Directions of 19 Jun 2026 apply to loans from 1 Jan 2027, with a maximum tenure of 6 years (earlier 5)."
+      ]
+     },
+     {
+      "topic": "Indian agriculture · Agricultural census",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Indian agriculture - importance, land use classification, cropping seasons and cropping pattern › Agricultural census - size classes, women's share, largest holding state, AP holdings",
+      "bullets": [
+       "India, 10th Agriculture Census (2015-16): 146 million holdings with an average size of 1.08 ha, down from 2.28 ha in 1971. Small and marginal holdings make up 86.2% of holdings but only 47.3% of the area (APPCA; UPSC).",
+       "Size classes above are the standard Agriculture Census classes ; \"small and marginal farmers\" = holdings up to 2 ha.",
+       "Tenth Agriculture Census 2015-16 (still the standard all-India reference): 146 million operational holdings, average size 1.08 ha, down from 2.28 ha in 1971 - fragmentation (APPCA 2026).",
+       "Small and marginal farmers are about 86.2% of all farmers but hold only about 47% of the crop area (APPCA, May 2026).",
+       "Eleventh Agriculture Census 2021-22: provisional State results out; All-India 2021-22 figures are not yet the standard reference."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "460e8419255b"
   },
   {
    "id": "69f426d4c986",
@@ -12323,7 +13655,21 @@
     ],
     "gaps": []
    },
-   "topicOf": "0979301bc33f"
+   "related": [
+    {
+     "id": "7e25fef73d21",
+     "title": "Defence Minister launches Fleet Support Ship-1 at HSL in Vizag",
+     "source": "BusinessLine — Economy",
+     "url": "https://www.thehindubusinessline.com/economy/logistics/defence-minister-launches-fleet-support-ship-1-at-hsl-in-vizag/article71550150.ece"
+    },
+    {
+     "id": "41dfbd5f0f7c",
+     "title": "Rajnath Singh Launches First India-Made Fleet Support Ship In Vizag",
+     "source": "NDTV — India",
+     "url": "https://www.ndtv.com/india-news/rajnath-singh-launches-first-india-made-fleet-support-ship-in-vizag-12147979#publisher=newsstand"
+    }
+   ],
+   "thread": "71383784dcf5"
   },
   {
    "id": "3545609cb2f3",
@@ -12796,7 +14142,7 @@
     ],
     "gaps": []
    },
-   "topicOf": "0979301bc33f"
+   "topicOf": "71383784dcf5"
   },
   {
    "id": "96fcf954a8d0",
@@ -13021,7 +14367,7 @@
     ],
     "gaps": []
    },
-   "topicOf": "0979301bc33f"
+   "topicOf": "71383784dcf5"
   },
   {
    "id": "9d332b5831c5",
@@ -13246,7 +14592,7 @@
     ],
     "gaps": []
    },
-   "topicOf": "0979301bc33f"
+   "topicOf": "976fba8882c7"
   },
   {
    "id": "17daeb9edfe9",
@@ -13855,6 +15201,20 @@
    "kind": "figure"
   },
   {
+   "id": "3679f4ce51d5:16854qx",
+   "item": "3679f4ce51d5",
+   "title": "Rs 10,000 cr fund fuels MSME growth in state",
+   "q": "AP MSME & Entrepreneur Development Policy 4.0: G.O.Ms.No.71, dated 26 Oct ____.",
+   "options": [
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "answer": 3,
+   "kind": "year"
+  },
+  {
    "id": "a1c1f2e19963:1ryy41a",
    "item": "a1c1f2e19963",
    "title": "Visakhapatnam Port Authority marks 93rd foundation day with record cargo throughput",
@@ -13892,20 +15252,6 @@
     "₹8.05 lakh",
     "₹4.03 lakh",
     "₹6.04 lakh"
-   ],
-   "answer": 1,
-   "kind": "figure"
-  },
-  {
-   "id": "384508a42b79:c6uno4",
-   "item": "384508a42b79",
-   "title": "Step up pace of Amaravati construction works, Andhra CM Naidu asks contracting agencies",
-   "q": "Increase the monthly execution value to ____ through better planning and coordination, says the Chief Minister",
-   "options": [
-    "₹4,000 crore",
-    "₹2,000 crore",
-    "₹2,500 crore",
-    "₹1,200 crore"
    ],
    "answer": 1,
    "kind": "figure"
