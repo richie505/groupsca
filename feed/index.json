@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-07T22:19:53.128Z",
+ "updated": "2026-10-08T06:43:48.949Z",
  "newsDayStarts": "06:00",
  "schedule": [
   "06:30",
@@ -10,18 +10,27 @@
  ],
  "days": [
   {
-   "date": "2026-10-07",
+   "date": "2026-10-08",
    "final": false,
-   "updated": "2026-10-07T22:19:53.105Z",
+   "updated": "2026-10-08T06:43:48.925Z",
+   "count": 50,
+   "ap": 6,
+   "critical": 0,
+   "high": 4
+  },
+  {
+   "date": "2026-10-07",
+   "final": true,
+   "updated": "2026-10-08T06:43:48.920Z",
    "count": 120,
    "ap": 60,
    "critical": 1,
-   "high": 33
+   "high": 34
   },
   {
    "date": "2026-10-06",
    "final": true,
-   "updated": "2026-10-07T22:19:53.099Z",
+   "updated": "2026-10-08T06:43:48.913Z",
    "count": 115,
    "ap": 55,
    "critical": 0,
@@ -30,7 +39,7 @@
   {
    "date": "2026-10-05",
    "final": true,
-   "updated": "2026-10-07T22:19:53.093Z",
+   "updated": "2026-10-08T06:43:48.906Z",
    "count": 119,
    "ap": 59,
    "critical": 0,
@@ -39,7 +48,7 @@
   {
    "date": "2026-10-04",
    "final": true,
-   "updated": "2026-10-07T22:19:53.087Z",
+   "updated": "2026-10-08T06:43:48.899Z",
    "count": 107,
    "ap": 47,
    "critical": 0,
@@ -48,7 +57,7 @@
   {
    "date": "2026-10-03",
    "final": true,
-   "updated": "2026-10-07T22:19:53.081Z",
+   "updated": "2026-10-08T06:43:48.894Z",
    "count": 120,
    "ap": 60,
    "critical": 2,
@@ -57,7 +66,7 @@
   {
    "date": "2026-10-02",
    "final": true,
-   "updated": "2026-10-07T22:19:53.074Z",
+   "updated": "2026-10-08T06:43:48.886Z",
    "count": 120,
    "ap": 60,
    "critical": 0,
@@ -66,7 +75,7 @@
   {
    "date": "2026-10-01",
    "final": true,
-   "updated": "2026-10-07T22:19:53.068Z",
+   "updated": "2026-10-08T06:43:48.880Z",
    "count": 95,
    "ap": 41,
    "critical": 1,
@@ -78,15 +87,15 @@
    "kind": "week",
    "start": "2026-10-05",
    "file": "digests/week-2026-10-05.json",
-   "topics": 252,
-   "main": 45
+   "topics": 271,
+   "main": 53
   },
   {
    "kind": "month",
    "start": "2026-10-01",
    "file": "digests/month-2026-10.json",
-   "topics": 520,
-   "main": 105
+   "topics": 537,
+   "main": 113
   },
   {
    "kind": "week",
