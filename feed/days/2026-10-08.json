@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-08",
- "updated": "2026-10-08T22:32:07.998Z",
+ "updated": "2026-10-09T06:51:14.765Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 460,
+   "found": 468,
    "error": null
   },
   {
@@ -24,20 +24,20 @@
   {
    "id": "air-national",
    "name": "AIR News — National",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "fetch failed"
   },
   {
    "id": "air-international",
    "name": "AIR News — International",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "fetch failed"
   },
   {
    "id": "air-business",
    "name": "AIR News — Business",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "fetch failed"
   },
   {
    "id": "hindu-national",
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 41,
    "error": null
   },
   {
@@ -126,7 +126,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 9,
    "error": null
   },
   {
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 118,
+   "found": 159,
    "error": null
   },
   {
@@ -863,6 +863,135 @@
    },
    "thread": "fec4215a40c9",
    "top": true
+  },
+  {
+   "id": "3dfda8929c20",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "05:48",
+   "title": "అమరావతి పాన్‌ ఐఐటీ శాశ్వత కౌన్సిల్‌ ఏర్పాటుకు చర్యలు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126183097",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Council",
+    "Established"
+   ],
+   "score": 73,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 15
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › AP IT policies - IT Policy 2021-24, IT & GCC Policy 4.0",
+     "text": "AP IT Policy 2021-24 was notified to boost growth and jobs (IYB 2026 p.571). Not in your sources: its definitions.",
+     "match": [
+      "IT policy"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › AP state finances - revenue receipts and expenditure, debt and interest payments, latest AP Budget › Capital outlay - Polavaram, Amaravati, roads, ports",
+     "text": "Amaravati capital: Allocation ₹6,000 crore",
+     "match": [
+      "Amaravati capital"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "ITE&C policy acronyms",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Information technology and e-governance in Andhra Pradesh - IT policy, RTGS, e-Pragati › ITE&C policy acronyms",
+      "bullets": [
+       "LIFT Policy 4.0 (2024-29): Full form Land Incentive for Tech Hubs (land for GCCs and IT infrastructure developers)",
+       "GCC: Full form Global Capability Centre",
+       "RTIH: Full form Ratan Tata Innovation Hub",
+       "AQV / AQRF: Full form Amaravati Quantum Valley / Amaravati Quantum Reference Facilities",
+       "OSAT: Full form Outsourced Semiconductor Assembly and Test"
+      ]
+     },
+     {
+      "topic": "Amaravati capital city funding",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Projects of external assistance in Andhra Pradesh - World Bank, ADB, JICA and other funded projects › Amaravati capital city funding - lenders and loan size",
+      "bullets": [
+       "Phase-I lenders: World Bank and Asian Development Bank (APPSC G2 2025).",
+       "Union Budget 2026-27: ₹432.09 crore for the Amaravati Integrated Urban Development Programme through IBRD (TH, 2 Feb 2026).",
+       "A World Bank-ADB delegation reviewed APCRDA's capital works on 11 May 2026 (TH, 12 May 2026).",
+       "Not in your sources: the separate World Bank and ADB loan amounts."
+      ]
+     },
+     {
+      "topic": "Releases for Amaravati",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Central government's assistance for building a new capital - commitments and actual releases › Releases for Amaravati - UGD grants, amounts released",
+      "bullets": [
+       "Direct central grants: Rs 2,500 crore in total under Sec 94(3) (APP). According to the BJP State president, this was Rs 1,500 crore at first for building the capital plus a special Rs 1,000 crore later for essential infrastructure (TH, 6 Apr 2026).",
+       "Cost gap: the AP government estimated the capital at about Rs 1.2 lakh crore. CDI says the Centre's commitment was far smaller (Rs 27,000 crore), and heavy borrowing followed (CDI Block13).",
+       "Not in your sources: how the releases were split for Vijayawada-Guntur underground drainage (UGD), and year-wise release figures."
+      ]
+     },
+     {
+      "topic": "Urbanisation and smart cities in AP · Amaravati capital region",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Urbanisation and smart cities in AP - Amaravati capital region, Visakhapatnam, Kakinada, Tirupati › Amaravati capital region - APCRDA, foundation, land pooling, master plan, funding",
+      "bullets": [
+       "Foundation stone laid by PM Modi on 22 Oct 2015 at Uddandarayunipalem (Guntur). The PM relaunched the project on 2 May 2025; the 'Restart Amaravati' project office opened in April 2025.",
+       "Capital city project - Amaravati foundation, APCRDA, land pooling farmers",
+       "Recent decisions: the Cabinet approved land pooling of 6,212.50 acres for the Inner Ring Road. It also approved the Rs 759 crore Amaravati Sangamam at Sakhamuru, comprising the State Public Library, an auditorium and the Global Institute of Good Governance (TH, 4 Sep 2026).",
+       "Capital region - Amaravati capital city plan, APCRDA area",
+       "2026: Parliament passed the AP Reorganisation (Amendment) Act, 2026 making Amaravati the sole capital (TH, 3 Apr 2026; APPCA Jun 2026)"
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "a22b0ad6389c",
+   "update": true,
+   "threadTitle": "పాన్‌ ఐఐటీ అమరావతి సమిట్‌ నేడు",
+   "threadStart": "2026-10-02",
+   "line": "అమరావతి పాన్‌ ఐఐటీ శాశ్వత కౌన్సిల్‌ ఏర్పాటుకు చర్యలు"
   },
   {
    "id": "552ca039fbd6",
@@ -2289,6 +2418,12 @@
      "title": "GST Council unveils reforms to ease refund, registration and reduce litigation",
      "source": "The Hindu — National",
      "url": "https://www.thehindu.com/business/Economy/gst-council-scraps-arrest-powers-of-gst-officers-ups-prosecution-threshold-to-5-crore/article71559868.ece"
+    },
+    {
+     "id": "f0fd46c73b60",
+     "title": "Bhatti seeks protection of States’ revenues in GST reforms",
+     "source": "The Hindu — National",
+     "url": "https://www.thehindu.com/news/national/telangana/bhatti-seeks-protection-of-states-revenues-in-gst-reforms/article71560866.ece"
     },
     {
      "id": "590209bc4320",
@@ -6391,6 +6526,153 @@
    "line": "Dasara festivities at Srisailam to commence from October 11"
   },
   {
+   "id": "b9af4a8311eb",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "04:19",
+   "title": "Gold, silver imports by banks, nominated agencies to attract 3% IGST",
+   "summary": "This is done to ensure parity of taxes imposed on gold and other precious metal imports through other routes, including bullion",
+   "facts": [],
+   "source": "The Hindu — Economy",
+   "sourceId": "hindu-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Business"
+   ],
+   "url": "https://www.thehindu.com/business/Economy/gold-silver-imports-by-banks-nominated-agencies-to-attract-3-igst/article71561342.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Import",
+    "Banks",
+    "Imports"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Goods and Services Tax - structure, slabs, GST Council, IGST settlement, compensation cess › Rate-change procedure - notification vs Parliament, ceilings",
+     "text": "Ceilings in the Acts: CGST 20%, IGST 40% .",
+     "match": [
+      "IGST"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Impact of GST on commerce, industry and state finances; unresolved GST issues › Impact on States - autonomy, compensation dependency, consuming vs producing",
+     "text": "AP's \"Net GST\" = SGST + IGST settlement share (APPCA, Jun 2026).",
+     "match": [
+      "IGST"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #26 · Finance Commission and Fiscal Federalism",
+     "text": "Article 269A concerns IGST.",
+     "match": [
+      "IGST"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #15 · GST Structure, Council and Constitutional Provisions",
+     "text": "IGST stands for Integrated Goods and Services Tax.",
+     "match": [
+      "IGST"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "International trade · Composition of exports and imports",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › International trade - composition and direction of India's exports and imports; trade deficit › Composition of exports and imports - top items by share",
+      "bullets": [
+       "Telecom instruments: Share 5.96%; Top imports 2024-25 Gold; Share 8.04%",
+       "Pearls, precious and semi-precious stones: Share 3.56%; Top imports 2024-25 Electronic components; Share 5.1%",
+       "Source: IYB 2026 (2024-25 data). POL has been the largest import item through most of the post-reform period (PYQ 2018); crude, gold and petroleum products = about one-third of imports (ES 2025-26).",
+       "Bulk imports: crude and products, cereals, pulses, edible oils, sugar, fertiliser, metals and ores; non-bulk: capital goods, precious products, chemicals (APP).",
+       "Largest import item since the reforms: crude petroleum and products, followed by gold, coal, electronic goods and machinery; crude, gold and petroleum products are about one-third of imports (ES 2025-26)."
+      ]
+     },
+     {
+      "topic": "Goods and Services Tax · Dual GST components, IGST settlement, GSTN",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Goods and Services Tax - structure, slabs, GST Council, IGST settlement, compensation cess › Dual GST components, IGST settlement, GSTN",
+      "bullets": [
+       "IGST: Levied by Centre, apportioned under Art. 269A; Supply Inter-State and imports",
+       "IGST revenue settles to the destination (consuming) State; only Parliament legislates on IGST (APPCA, May 2026).",
+       "IGST: Levied by / on Centre, inter-State and imports; revenue goes to destination State"
+      ]
+     },
+     {
+      "topic": "FDI and FPI policy in India · FDI routes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › FDI and FPI policy in India - routes, sectoral caps, trends; FTAs and CEPAs signed by India › FDI routes - automatic vs government, prohibited sectors, 100% sectors",
+      "bullets": [
+       "Categories: (1) 100% automatic (civil aviation MRO, ports, railway infrastructure); (2) Government route up to 100% (multi-brand retail, satellites); (3) automatic up to a cap, approval beyond (private banks); (4) fixed cap only.",
+       "Automatic route: no prior approval of RBI or Government; only post-facto reporting to RBI. Government route: prior approval of the concerned Ministry through the Foreign Investment Facilitation Portal (FIFP).",
+       "Prohibited: lottery; gambling and betting (including casinos); chit funds; Nidhi companies; trading in TDRs; real estate business and farmhouses; manufacture of cigars/cigarettes of tobacco; atomic energy; railway operations (other than permitted activities) ."
+      ]
+     },
+     {
+      "topic": "Mughal economy · Silver influx and Indian Ocean commerce",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 1 History & Culture › A-3 › Mughal economy - agriculture, karkhanas, trade, silver influx, Indian Ocean commerce › Silver influx and Indian Ocean commerce",
+      "bullets": [
+       "European companies paid for Indian goods with bullion (gold and silver) brought from Europe; India became a \"sink of precious metals\" and in the 17th century was \"the largest producer of industrial goods in the world\".",
+       "Source: New World (Spanish American) silver, via Europe and the Pacific ; Careri (c.1690) described silver crossing the globe to India. Effect: more silver rupee coinage and a rise in prices .",
+       "Merchant groups: Asian - Gujaratis, Bohras, Chettis, Malabar Muslims, Armenians ; European - Portuguese, Dutch, English EIC (1600), French.",
+       "Trade balance favoured India until the mid-18th century; decline came with Aurangzeb's Deccan wars, insecurity and loss of Indian shipping."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "c1a9cb0cbd1f",
+   "update": true,
+   "threadTitle": "GST exemption for banks, nominated agencies for gold, silver imports may be withdrawn",
+   "threadStart": "2026-10-04",
+   "line": "Gold, silver imports by banks, nominated agencies to attract 3% IGST"
+  },
+  {
    "id": "ba724d782bdc",
    "date": "2026-10-08",
    "pubDate": "2026-10-08",
@@ -6621,6 +6903,142 @@
     "gaps": []
    },
    "thread": "4d14f03c695c"
+  },
+  {
+   "id": "f0fd46c73b60",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "04:50",
+   "title": "Bhatti seeks protection of States’ revenues in GST reforms",
+   "summary": "GST accounts for about 35% of Telangana’s own tax revenue and any decline in collections would directly affect expenditure on schools, hospitals, welfare programmes and infrastructure, he said",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Telangana"
+   ],
+   "url": "https://www.thehindu.com/news/national/telangana/bhatti-seeks-protection-of-states-revenues-in-gst-reforms/article71560866.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G2-M2A-U4",
+     "exam": "G2",
+     "label": "Structure of the Andhra Pradesh Economy and Public Finance - GSDP and Sectoral Contribution, Per Capita Income, State Revenue, Expenditure, Debt, Central Assistance, External Assistance, Recent AP Budget"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "GST",
+    "States"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Indian tax system - direct and indirect taxes, tax buoyancy, tax-GDP ratio, progressivity › Tax buoyancy vs tax elasticity",
+     "text": "Recent: Centre's gross tax buoyancy 0.8 in 2026-27 (BE) - direct taxes 1.1, indirect 0.3 (GST not keeping pace with GDP) (TH, 5 Feb 2026). ES 2025-26 credits buoyant revenues for fiscal consolidation (deficit 4.4% of GDP in FY26).",
+     "match": [
+      "gst",
+      "tax",
+      "fiscal"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #15 · GST Structure, Council and Constitutional Provisions",
+     "text": "An RNR is a rate or structure intended to generate approximately the same revenue under GST as under the earlier tax system.",
+     "match": [
+      "gst",
+      "tax",
+      "revenue"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "GST collections trend",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Impact of GST on commerce, industry and state finances; unresolved GST issues › GST collections trend - national and AP",
+      "bullets": [
+       "FY 2017-18: Gross GST avg ₹82,000 cr/month (IYB)",
+       "April 2024: Gross GST first time above ₹2 lakh cr in a month (APPCA)",
+       "Apr-Dec 2025: Gross GST ₹17.4 lakh cr, +6.7% (ES 2025-26)",
+       "AP: Net GST Dec 2025 ₹2,652 cr, +5.78% vs national 5.61% - highest December ever (TH, 2 Jan 2026); commercial taxes ₹25,449.80 cr up to Aug 2026 (+18.05%), net GST ₹16,452.62 cr (TH, 2 Sep 2026); GST collections +21% to ₹13,282 cr (CDCA, Aug 2026).",
+       "Import-side GST is growing faster than domestic GST (domestic +9.3% in Aug 2026); buoyancy is weak as the rate cut's revenue loss awaits volume gains (TH, 2 Sep and 21 Aug 2026; ES 2025-26)."
+      ]
+     },
+     {
+      "topic": "Impact of bifurcation on state revenue · Loss of Hyderabad revenues",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Impact of bifurcation on state revenue - revenue deficit, loss of Hyderabad revenues, resource gap › Loss of Hyderabad revenues - share of undivided State revenue, tax base lost",
+      "bullets": [
+       "The Hyderabad region (with Rangareddy and Medak) gave nearly 50% of the undivided State's tax and non-tax revenue - corporate taxes, stamp duties, commercial taxes (CDI Block13).",
+       "Lost with it: HITEC City and the Financial District (IT/ITeS exports), Genome Valley pharma cluster, corporate and bank head offices, commercial real estate, and the MSME supply chains around them. This cut GST (then VAT), stamp duty and motor-vehicle tax collections."
+      ]
+     },
+     {
+      "topic": "Goods and Services Tax · Committees on GST design",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Goods and Services Tax - structure, slabs, GST Council, IGST settlement, compensation cess › Committees on GST design",
+      "bullets": [
+       "Kelkar Task Force (FRBM implementation, 2004): Chair Vijay Kelkar; Role First recommended a comprehensive national GST (APP; CDI dates the roadmap 2002)",
+       "Empowered Committee of State Finance Ministers (2000): Chair Asim Dasgupta (first chair); Role \"A Model and Roadmap for GST\" (Apr 2008); First Discussion Paper (Nov 2009)",
+       "GST idea first proposed under the Vajpayee government (APP).",
+       "Collections: Feb 2026 ₹1.83 lakh crore (+8.1%), Jan 2026 ₹1.93 lakh crore (TH 2 Mar 2026); April-July 2026 ₹8.43 lakh crore (+10.1%) (TH 2 Aug 2026).",
+       "Not in your sources: the all-time record monthly gross GST collection."
+      ]
+     },
+     {
+      "topic": "Direct tax reforms · Direct tax committees",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-4 › Direct tax reforms - income tax slabs, corporate tax cuts, faceless assessment, DTC debate › Direct tax committees - chairperson and focus",
+      "bullets": [
+       "Wanchoo (Direct Taxes Enquiry): Year 1971; Focus Black money, tax evasion",
+       "Nicholas Kaldor: Year 1956; Area Indian tax reform: wealth tax (1957), expenditure tax (1958), gift tax (1958)",
+       "Raja J. Chelliah (Tax Reforms Committee): Year 1991; Area Lower rates, broader base, fewer exemptions; basis of 1992 wealth-tax revision",
+       "Vijay Kelkar Task Force: Year 2002 (direct and indirect taxes); 2004 (FRBM implementation - proposed GST); Area Tax simplification; CDI credits it with the GST roadmap",
+       "Expenditure tax in independent India was first introduced by T.T. Krishnamachari (APPSC 2019), in 1958 on Kaldor's advice."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "146bf8860cdc"
   },
   {
    "id": "b0f619862bfd",
@@ -7744,6 +8162,14 @@
     ],
     "gaps": []
    },
+   "related": [
+    {
+     "id": "51a72fd38481",
+     "title": "Jharkhand should 'revisit' DGP appointment rules, says Supreme Court",
+     "source": "Times of India — India",
+     "url": "https://timesofindia.indiatimes.com/india/jharkhand-should-revisit-dgp-appointment-rules-says-supreme-court/articleshow/134802834.cms"
+    }
+   ],
    "thread": "1e065f722e0b"
   },
   {
@@ -10755,14 +11181,6 @@
     ],
     "gaps": []
    },
-   "related": [
-    {
-     "id": "a3b13a2d19ef",
-     "title": "FSSAI send notices to Dr Reddy's, Nestle Health Science, Amazon, Flipkart over misleading protein supplement",
-     "source": "Mint — News",
-     "url": "https://www.livemint.com/news/fssai-send-notices-to-dr-reddys-nestle-health-science-amazon-flipkart-over-misleading-protein-supplement-11791479386322.html"
-    }
-   ],
    "thread": "e0c597ba03e3"
   },
   {
@@ -11138,6 +11556,134 @@
     "gaps": []
    },
    "thread": "955bbf77c79f"
+  },
+  {
+   "id": "51a72fd38481",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "04:32",
+   "title": "Jharkhand should 'revisit' DGP appointment rules, says Supreme Court",
+   "summary": "The Supreme Court stated that the appointment process for Jharkhand's DGP likely violated its previous judgment regarding officer tenure. The court issued a notice to Tadasha Singh, appointed shortly before her retirement. The Central Government argued that Jharkhand's amended regulations overstepped the Supreme Court's mandate on DGP appointments.",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "The court issued a notice to Tadasha Singh, appointed shortly before her retirement."
+    }
+   ],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/india/jharkhand-should-revisit-dgp-appointment-rules-says-supreme-court/articleshow/134802834.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court",
+    "Appointed"
+   ],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - government decisions, new schemes, appointments and administrative changes › Administrative changes and appointments",
+     "text": "DGP: Holder / fact Harish Kumar Gupta",
+     "match": [
+      "DGP"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - awards, GI tags, cultural events, sports and persons in news › Appointments - Governor, Chief Justice, ministers → portfolio, district judges, heads of authorities",
+     "text": "DGP: Holder (latest) Harish Kumar Gupta; Note (TH, Jul 2026)",
+     "match": [
+      "DGP"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Supreme Court · Appointment",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Supreme Court - composition, appointment, collegium and NJAC, jurisdictions (original, appellate, advisory, writ) › Appointment - collegium and Judges cases, NJAC, 99th Amendment, CJI appointment",
+      "bullets": [
+       "The CJI is appointed by the President (APPSC-GS 2025). The convention, upheld by the Court, is that the senior-most judge becomes CJI.",
+       "Supreme Court: Members CJI + 4 senior-most SC judges (5 members); Handles SC appointments, HC transfers",
+       "For HC appointments (SC side): Members CJI + 2 senior-most SC judges; Handles HC judges and HC Chief Justices",
+       "High Court: Members HC Chief Justice + 2 senior-most HC judges; Handles Initiates HC appointments",
+       "Some notes date the First Judges Case to 1982 (judgment of 30 Dec 1981 reported in 1982)."
+      ]
+     },
+     {
+      "topic": "Comptroller and Auditor General · CAG appointment and removal",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Comptroller and Auditor General - appointment, duties, types of audit, audit reports and PAC linkage › CAG appointment and removal",
+      "bullets": [
+       "Art. 148: appointed by the President by warrant under his hand and seal.",
+       "Removal: like a Supreme Court judge - address of both Houses by special majority on proved misbehaviour or incapacity; not at the President's pleasure.",
+       "Post-retirement bar: no further office under GoI or any state.",
+       "Salary, leave, pension and retirement age cannot be varied to his disadvantage after appointment."
+      ]
+     },
+     {
+      "topic": "Governor · Appointment and office",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Governor - appointment, powers, discretionary powers, position and controversies (Article 200/201, Article 356 reports) › Appointment and office - Articles 153-158, same Governor for two states, qualifications, pleasure (B.P. Singhal)",
+      "bullets": [
+       "In B.P. Singhal v. UoI (2010), the pleasure doctrine is not unfettered: a Governor cannot be removed arbitrarily or merely because the Centre's government changes, and removal is open to limited judicial review . No grounds for removal are stated in the Constitution.",
+       "159: Provision Oath administered by the Chief Justice of the High Court (in his absence, the senior-most judge)",
+       "Grounds for removal are not stated in the Constitution. The President may transfer a Governor, and a Governor may be reappointed (APP).",
+       "Appointed by the President (Art 155). Must be a citizen aged 35 or above (IYB).",
+       "Art 200 reservation: mandatory for bills endangering the High Court's position (APP; IYB). The President has an absolute veto over reserved bills (APP). APPSC 2025 key: reservation is an example of central control over states."
+      ]
+     },
+     {
+      "topic": "NHRC and SHRCs · NHRC appointment, term and removal",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › NHRC and SHRCs - composition, powers, functions and limitations › NHRC appointment, term and removal",
+      "bullets": [
+       "Chairperson and members appointed by the President on the recommendation of a committee.",
+       "Sitting SC judge or HC Chief Justice appointed only after consulting the CJI .",
+       "Exam angle: \"appointed by\" = President (APPSC 2025).",
+       "Chairperson: a former Chief Justice of India or a Judge of the Supreme Court (after 2019).",
+       "Resigns to the President (2006 amendment); removed by the President (insolvency, paid employment, infirmity, unsound mind, conviction; or proved misbehaviour/incapacity after an SC inquiry) ; not eligible for further government employment after tenure ."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "1e065f722e0b"
   },
   {
    "id": "0209bd6f7452",
@@ -12344,382 +12890,6 @@
    "line": "Food waste, a major contributor to climate change"
   },
   {
-   "id": "a3b13a2d19ef",
-   "date": "2026-10-08",
-   "pubDate": "2026-10-08",
-   "time": "23:21",
-   "title": "FSSAI send notices to Dr Reddy's, Nestle Health Science, Amazon, Flipkart over misleading protein supplement",
-   "summary": "The Food Safety and Standards Authority of India (FSSAI) has sent notices to companies, including Dr Reddy's and Nestle Health Science, regarding products which can possibly mislead consumers regarding its health benefits. It issued notices for non-compliant advertising and misleading claims.",
-   "facts": [],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "Business Standard"
-   ],
-   "url": "https://www.livemint.com/news/fssai-send-notices-to-dr-reddys-nestle-health-science-amazon-flipkart-over-misleading-protein-supplement-11791479386322.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-B4",
-     "exam": "G1",
-     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
-    },
-    {
-     "code": "G2-M2B-U5",
-     "exam": "G2",
-     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Health"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "notes": [
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 3 Economy › C-2 › Poverty eradication and livelihood programmes - DAY-NRLM, DAY-NULM, SHG movement › AP SHG movement",
-     "text": "AP SHGs also sell through e-commerce platforms such as Amazon and Flipkart (APSES 2024-25).",
-     "match": [
-      "Flipkart"
-     ]
-    },
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 1 History & Culture › A-5 › Anti-caste and non-Brahmin movements - Jyotiba Phule and Satyashodhak Samaj, Narayana Guru, Periyar, Justice Party › Caste movements → region and caste group",
-     "text": "Justice Party: Region Madras Presidency; Caste / group Non-Brahmin castes (Reddys, Kammas, Kapus, Vellalas, Chettis)",
-     "match": [
-      "Reddys"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Sectoral regulators · FSSAI",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Sectoral regulators - TRAI, CCI, FSSAI, CERC/SERCs, PNGRB, AERA, Data Protection Board › FSSAI - parent Act, laws replaced, ministry, packaging regulations, Eat Right India",
-      "bullets": [
-       "An independent statutory authority under the Food Safety and Standards Act, 2006. The Act consolidated eight laws and orders, including the Prevention of Food Adulteration Act, 1954, the Fruit Products Order 1955 and the Meat Food Products Order 1973 (VIS 2026).",
-       "Administrative ministry: Ministry of Health & Family Welfare . It is not under the Director General of Health Services (UPSC 2018: only statement 1 was correct).",
-       "Packaging regulations: from 1 July 2019, food businesses may not use recycled plastics or newspaper to wrap food (APPSC 2019).",
-       "Eat Right India is FSSAI's movement for safe, healthy and sustainable food, launched in 2018 .",
-       "FSSAI licences and registrations now have perpetual validity."
-      ]
-     },
-     {
-      "topic": "Recent public health initiatives · Public health campaigns",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Recent public health initiatives - Ayushman Bharat, National Health Mission, Ayushman Bharat Digital Mission › Public health campaigns - Swachh Bharat, Fit India, Eat Right India",
-      "bullets": [
-       "Swachh Bharat Abhiyan (2014): Objective Sanitation and hygiene for disease prevention",
-       "Fit India Movement (2019): Objective Build fitness into daily life; fight sedentary lifestyles",
-       "Eat Right India and Fit India together aim to cut NCD deaths (LENS May 2026)."
-      ]
-     },
-     {
-      "topic": "Food technology",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 18 › Relevance of science and technology to day-to-day life - health, food, transport, communication, household › Food technology - additives, adulterants, preservation, fortification, irradiation, cold chain, packaging",
-      "bullets": [
-       "Food additives: chemicals added intentionally during production, processing or storage to improve the qualities of food (APPSC-GS 2019) - preservatives, colours, emulsifiers, sweeteners, flavour enhancers (MSG) .",
-       "Irradiation: ionising radiation destroys harmful organisms without altering nutrition, cutting the need for chemical additives and refrigeration (APP); radiolytic products cause negligible chemical change (VIS 2026). DAE: 25 food irradiators installed in PPP mode; gamma rays extend shelf life of potatoes and onions to 8 months without cold storage (IYB 2026).",
-       "Fortification: adding micronutrients - iodised salt, rice with iron, folic acid and B12, oil and milk with vitamins A and D; FSSAI \"+F\" logo .",
-       "Safety reforms (Jul 2026): Food Safety on Wheels, blockchain batch tracing, \"One Nation, One Regulator\" ending dual BIS/AGMARK certification (LENS, Jul 2026)."
-      ]
-     },
-     {
-      "topic": "Consumer rights · Standards, marks and food laws → product/year",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Consumer rights - Consumer Protection Act 2019, CCPA, e-commerce rules › Standards, marks and food laws → product/year",
-      "bullets": [
-       "ISI mark: Product Industrial and consumer products; Year / authority [GK] BIS (BIS Act 1986; now BIS Act 2016)",
-       "Agmark: Product Agricultural produce; Year / authority [GK] Agricultural Produce (Grading & Marking) Act 1937",
-       "Hallmark: Product Gold and silver jewellery; Year / authority [GK] BIS; mandatory for gold from June 2021",
-       "FPO mark: Product Processed fruit products; Year / authority [GK] Fruit Products Order 1955"
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "topicOf": "e0c597ba03e3"
-  },
-  {
-   "id": "0cc808523dca",
-   "date": "2026-10-08",
-   "pubDate": "2026-10-08",
-   "time": "15:07",
-   "title": "Haryana Human Rights Commission orders structural audit of all govt schools",
-   "summary": "Haryana Human Rights Commission orders structural audit of all govt schools",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/haryana-human-rights-commission-orders-structural-audit-of-all-govt-schools-101791452262169.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B5",
-     "exam": "G1",
-     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
-    },
-    {
-     "code": "G2-M1B-U8",
-     "exam": "G2",
-     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Human Rights"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "notes": [
-    {
-     "tier": "unit",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › NHRC and SHRCs - composition, powers, functions and limitations › NHRC composition - chairperson before/after 2019, members, deemed members, selection committee",
-     "text": "Also: Centre may confer UT human-rights functions on SHRCs (Delhi stays with NHRC); Secretary-General may exercise all administrative and financial powers (not judicial) under the Chairperson's control.",
-     "match": [
-      "human",
-      "rights",
-      "powers"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Indian Polity › #65 · Constitutional and Statutory Bodies",
-     "text": "Pairing the National Human Rights Commission with a constitutional Article is false.",
-     "match": [
-      "human",
-      "rights",
-      "commission"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Human Rights Courts and Special Public Prosecutors",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Human rights in the Indian Constitution; Protection of Human Rights Act 1993 › Human Rights Courts and Special Public Prosecutors",
-      "bullets": [
-       "Sec. 30: State Govt, with concurrence of the Chief Justice of the High Court, notifies a Court of Session in each district as a Human Rights Court for speedy trial .",
-       "Sec. 31: State Govt specifies a Public Prosecutor, or appoints an advocate in practice for not less than 7 years, as Special Public Prosecutor.",
-       "During inquiry the Commission has civil court powers under CPC 1908 (summons, documents, affidavits, public records).",
-       "Its proceedings are deemed judicial proceedings for the IPC offences of false evidence (s.193) and insulting a public servant in judicial proceedings (s.228); since 1 July 2024 these read as the corresponding BNS/BNSS provisions ."
-      ]
-     },
-     {
-      "topic": "Human rights",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Human rights - concept, generations of rights, UDHR, ICCPR and ICESCR; UN human rights machinery › Rights newly recognised by the UN General Assembly → year",
-      "bullets": [
-       "Right to development: UNGA recognition [GK] Declaration on the Right to Development, 1986",
-       "Right to a clean, healthy and sustainable environment: UNGA recognition [GK] Resolution of 28 July 2022, declared a universal human right (APPSC 2021 paper)"
-      ]
-     },
-     {
-      "topic": "Scheduled Tribes · Eklavya Model Residential Schools",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Scheduled Tribes - Forest Rights Act 2006, Fifth and Sixth Schedules, TSP, Eklavya schools › Eklavya Model Residential Schools",
-      "bullets": [
-       "Central sector, Ministry of Tribal Affairs (CDX); run through NESTS (TH 13 Sep 2026); modelled on Navodaya Vidyalayas; day-boarding schools merged into EMRS (CDI).",
-       "AP: 10 EMRS students chosen to meet President Murmu on 15 Sep 2026; AP's tribal residential schools run by APTWREIS (Gurukulam) (TH 13 Sep 2026).",
-       "One in every block with 50%+ ST population and at least 20,000 STs; target 740 schools.",
-       "511 schools with 1.68 lakh students (LENSD, Aug 2026); Rs 7,150 crore in 2026-27.",
-       "Tribal welfare runs 371 Ashram schools with 1.65 lakh students (APSES)."
-      ]
-     },
-     {
-      "topic": "Audit of local bodies",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Devolution of powers and finances to local levels - Finance Commission and State Finance Commission transfers › Audit of local bodies - CAG, AP State Audit",
-      "bullets": [
-       "The State legislature provides for the maintenance and audit of LB accounts (Art. 243J / 243Z).",
-       "CAG Technical Guidance and Support (TGS) over LB audit, as recommended by the 11th FC.",
-       "CAG published the 2nd edition of State Finances 2023-24: SOTR is about 47% of State revenue receipts (VIS 2026).",
-       "Not in your sources: the role of the AP State Audit Department."
-      ]
-     }
-    ],
-    "gaps": [
-     "Haryana Human Rights Commission"
-    ]
-   },
-   "thread": "0cc808523dca"
-  },
-  {
-   "id": "45299907a34f",
-   "date": "2026-10-08",
-   "pubDate": "2026-10-09",
-   "time": "00:31",
-   "title": "INDIA bloc leaders submit memorandum to Bihar Governor, demand CEC removal and re-election in State",
-   "summary": "In the memorandum, the INDIA bloc alleged that Gyanesh Kumar has been acting at the behest of Prime Minister Narendra Modi and Union Home Minister Amit Shah",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/bihar/india-bloc-leaders-submit-memorandum-to-bihar-governor-demand-cec-removal-and-re-election-in-state/article71559445.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Governor"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "notes": [
-    {
-     "tier": "unit",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › Universal angles",
-     "text": "Current relevance: Opposition's removal motion against CEC Gyanesh Kumar, the first against a CEC appointed under the 2023 Act (LENS, Mar 2026); SC hearing on the 2023 Act (TH, May 2026).",
-     "match": [
-      "gyanesh",
-      "kumar",
-      "cec"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
-     "text": "Judicial Review permits the higher judiciary to declare executive orders void when they contravene constitutional provisions.",
-     "match": [
-      "constitutional",
-      "executive",
-      "judiciary"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Election Commission of India · CEC and Other ECs Act 2023",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › CEC and Other ECs Act 2023 - selection committee, search committee, service conditions",
-      "bullets": [
-       "Eligibility: Composition / rule Present or past Secretary to GoI rank, with election-management experience",
-       "The CEC and Other ECs (Appointment, Conditions of Service and Term of Office) Act, 2023 (Act 49 of 2023) replaced the 1991 Act.",
-       "Eligibility: holds or has held a post equal to Secretary to GoI, with election-management experience.",
-       "ECs can be removed only on the CEC's recommendation. Section 11 of the 2023 Act gives the removal procedure (TH 24 Feb 2026).",
-       "Salary: the CEC and ECs are equal, on a par with a Supreme Court judge (APP). Service conditions cannot be varied to their disadvantage."
-      ]
-     },
-     {
-      "topic": "Appointment and removal of UPSC and SPSC members (Art. 316-317)",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Union Public Service Commission and State Public Service Commissions - composition, functions, removal › Appointment and removal of UPSC and SPSC members (Art. 316-317)",
-      "bullets": [
-       "Appointed by: UPSC President; SPSC Governor",
-       "For misbehaviour the President must refer the matter to the Supreme Court (Art. 317); removal only if the SC upholds the cause - its advice is binding. The President (Governor for SPSC) may suspend the member during the inquiry.",
-       "President appoints an Acting Chairman during vacancy/absence of the Chairman.",
-       "Removal grounds: insolvency, paid employment outside duties, infirmity of mind or body; and misbehaviour only after reference to the Supreme Court, whose advice is binding (Art. 317). President may suspend the member during the SC inquiry.",
-       "Exam angle: \"Governor appoints, President removes\" for SPSC chairman is the favourite trap."
-      ]
-     },
-     {
-      "topic": "Indian political parties",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Indian political parties - evolution, ideology and classification › Leaders → party (national presidents, FIRST presidents, founders, regional leaders)",
-      "bullets": [
-       "Madduri Annapurnayya: first Andhra leader in Bose's Forward Bloc (1939);"
-      ]
-     },
-     {
-      "topic": "Elections · Commencement of the election process",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Elections - delimitation, model code of conduct, EVM-VVPAT, NOTA, election petitions › Commencement of the election process - Sections 14 and 15 RPA",
-      "bullets": [
-       "Lok Sabha: the President issues the notification (Sec. 14), on the ECI's recommendation .",
-       "Assembly: the Governor issues it (Sec. 15) on the ECI's recommendation ; the ECI fixes the schedule and nomination dates.",
-       "Bypolls within 6 months of a vacancy, except when the remaining term is under one year or the ECI, consulting the Centre, certifies difficulty (TH, 5 Jul 2026)."
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "thread": "45299907a34f"
-  },
-  {
    "id": "d7e64dc59103",
    "date": "2026-10-08",
    "pubDate": "2026-10-08",
@@ -13292,6 +13462,105 @@
    "thread": "044bba58f9fd"
   },
   {
+   "id": "f46c3a8dae21",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "05:12",
+   "title": "పోలవరం ఫేజ్‌-2కు రూ.42,500 కోట్ల సాయం కోరాం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/we-sought-42500-crore-in-assistance-for-polavaram-phase-2/1799/126182998",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 39,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Forest Rights Act 2006, CAMPA, compensatory afforestation, joint forest management, agroforestry › FRA implementation in AP - titles, ITDA areas",
+     "text": "Tribal conflict: the Koya and Kondh oppose the Polavaram project over land rights and rehabilitation (APP).",
+     "match": [
+      "Polavaram project"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 4 Geography › D-4 › Services sector geography - tourism (India and AP circuits), IT, banking; salient features › Eco-tourism sites and hill stations → district and nicknames",
+     "text": "Papikondalu: District Godavari gorge (Polavaram project area); Note National Park; boating on the Godavari (APTDC)",
+     "match": [
+      "Polavaram project"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Polavaram Project · GWDT clauses",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Polavaram Project - status, funding, national project status, submergence and R&R issues › GWDT clauses - Polavaram and Godavari-to-Krishna diversion",
+      "bullets": [
+       "Godavari Water Disputes Tribunal set up 1969 (APP); award 1980 (LENS).",
+       "The award cleared Polavaram with FRL +150 ft and allowed 80 TMC of Godavari water to be diverted into the Krishna above Vijayawada; of this, 45 TMC goes to AP and 35 TMC to Karnataka and Maharashtra (21 + 14) .",
+       "Link projects built on this: Pattiseema (temporary lift into the Polavaram RMC) and the proposed Polavaram-Nallamala Sagar (earlier Banakacherla) link. Telangana says the link violates APRA 2014 and the 1980 GWDT award (LENS Jul 2025; TH Jan 2026)."
+      ]
+     },
+     {
+      "topic": "Central assistance to Andhra Pradesh · Polavaram funding",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Central assistance to Andhra Pradesh - Finance Commission transfers and centrally sponsored schemes › Polavaram funding - national project status, cost reimbursement",
+      "bullets": [
+       "Centre to fund it; estimated cost cited as Rs. 55,548 Cr (CDI; older figure) with delayed releases.",
+       "State budget lines: Rs. 6,705 Cr (2025-26) and Rs. 6,105 Cr (2026-27).",
+       "Not in your sources: latest Centre-approved project cost and reimbursement released to date."
+      ]
+     },
+     {
+      "topic": "Polavaram in APRA 2014",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Special assistance and the A.P. Reorganisation Act commitments › Polavaram in APRA 2014 - section, status, executing authority, clearances",
+      "bullets": [
+       "Declared a National Project under Section 90 of the AP Reorganisation Act, 2014 (APPSC 2021 x2; 2022 statement question - all three parts of Sec 90 true). Some notes (Carpe Diem CA, Apr 2026) print \"Section 89\" - wrong; Sec 90 is the answer."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "f46c3a8dae21"
+  },
+  {
    "id": "483ed274eb63",
    "date": "2026-10-08",
    "pubDate": "2026-10-08",
@@ -13404,6 +13673,108 @@
     "gaps": []
    },
    "thread": "483ed274eb63"
+  },
+  {
+   "id": "92ea7182bc74",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "05:54",
+   "title": "192 ఎకరాల వక్ఫ్‌ భూముల్లో సోలార్‌ విద్యుత్‌ ప్రాజెక్టు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126183060",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Energy policy of India - Integrated Energy Policy, NITI Aayog National Energy Policy, energy transition targets › Energy policy documents - year and drafting body",
+     "text": "National Electricity Policy: Year 2005; Body Ministry of Power",
+     "match": [
+      "power",
+      "electricity"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Electricity sector · Power markets",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 21 › Electricity sector - installed capacity mix, generation, transmission, discom finances, Electricity Act 2003 › Power markets - exchanges, GDAM, RTM, LPS Rules",
+      "bullets": [
+       "Power exchanges: IEX, PXIL and HPX . The Real-Time Market started in 2020 and the Green Day-Ahead Market in 2021 .",
+       "Electricity (Late Payment Surcharge and Related Matters) Rules 2022 let discoms clear old dues in instalments and cut power exchange access for defaulters .",
+       "Not in your sources: current exchange volumes and prices."
+      ]
+     },
+     {
+      "topic": "Energy and power policy · Electricity Act 2003 and schemes",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-3 › Energy and power policy - installed capacity mix, distribution reform (UDAY), renewable targets, energy security › Electricity Act 2003 and schemes",
+      "bullets": [
+       "Replaced Indian Electricity Act 1910, Electricity (Supply) Act 1948, ERC Act 1998; open access; tariffs by ERCs; Section 63 = competitive bidding ."
+      ]
+     },
+     {
+      "topic": "Power incentives",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Approaches and initiatives in AP industry - industrial policy, single desk, MSMEs, industrial nodes › Power incentives - power cost reimbursement, electricity duty",
+      "bullets": [
+       "Fixed power cost reimbursed at ₹1 per unit for 2 years from DCP (APSES).",
+       "Not in your sources: electricity duty exemption under 4.0."
+      ]
+     },
+     {
+      "topic": "Seventh Schedule funds and power sharing",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Division of assets, liabilities, employees and institutions; Ninth and Tenth Schedule institutions › Seventh Schedule funds and power sharing - fund category, electricity allocation formula",
+      "bullets": [
+       "The Seventh Schedule of the Act is the \"List of Funds\" in the Public Account, including provident, pension and insurance funds (APPSC 2022). Securities held against these funds are divided by population ratio (Sec 52).",
+       "Electricity (Twelfth Schedule): power from Central Generating Stations is shared on the actual consumption of the DISCOMs over the last 5 years. APGENCO plants go by location, and existing PPAs continue.",
+       "AP says this gave it about 46% of the power for 58% of the population (CDI Block13).",
+       "The APPSC-GS 2019 key marked \"Gadgil formula\" for the \"electricity distribution formula\" question. The Act's rule is the 5-year consumption basis. If the options force a choice, the key's answer is Gadgil.",
+       "A deficit State has first right of refusal on the other State's surplus power for 10 years."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "92ea7182bc74"
   },
   {
    "id": "1950d159cf2e",
@@ -13872,6 +14243,80 @@
    "thread": "a64b2c9e409a"
   },
   {
+   "id": "25057f5da6b6",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "05:55",
+   "title": "డేటా సెంటర్లను అడ్డుకునేందుకు వైకాపా కుట్రలు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126183093",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-1 › Basic characteristics of the Indian economy; features of a developing economy › AP economy profile - agriculture share of GSDP, per capita income vs India",
+     "text": "Share of GVA, current prices: Andhra Pradesh Services 43%, Agriculture & allied 33%, Industry 24%; India Agriculture below 20%, services 54.3%",
+     "match": [
+      "agriculture",
+      "allied",
+      "services"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #29 · Regional Rural Banks and NABARD",
+     "text": "Regional Rural Banks participate in institutional agricultural credit.",
+     "match": [
+      "rural",
+      "credit",
+      "agricultural"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "25057f5da6b6"
+  },
+  {
    "id": "59b937e4026f",
    "date": "2026-10-08",
    "pubDate": "2026-10-08",
@@ -14333,6 +14778,125 @@
     "gaps": []
    },
    "thread": "136db950718d"
+  },
+  {
+   "id": "7fd22137d559",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "05:26",
+   "title": "ప్రజాప్రయోజనాలకే స.హ.చట్టం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126183047",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Act"
+   ],
+   "score": 31,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › National - polity and governance: bills, acts, ordinances, landmark judgments › New Acts replacing old laws → old law repealed + new name",
+     "text": "Income Tax Act, 2025: Replaced Income-tax Act, 1961",
+     "match": [
+      "act"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "7fd22137d559",
+   "oneLiner": true,
+   "line": "ప్రజాప్రయోజనాలకే స.హ.చట్టం"
+  },
+  {
+   "id": "bfebf7214008",
+   "date": "2026-10-08",
+   "pubDate": "2026-10-09",
+   "time": "05:56",
+   "title": "ఇంధన పెట్టుబడుల ఆకర్షణలో రాష్ట్రానికి పురస్కారం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126183101",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Awards",
+    "Investment"
+   ],
+   "score": 30,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "lang": "te",
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › International - treaties, agreements and developments in international organisations › WTO agreements and subsidy boxes - Amber, Blue, Green, TRIPS, TRIMs, Dunkel Draft, GATT",
+     "text": "TRIMs: Subject trade-related investment measures",
+     "match": [
+      "investment"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "bfebf7214008",
+   "oneLiner": true,
+   "line": "ఇంధన పెట్టుబడుల ఆకర్షణలో రాష్ట్రానికి పురస్కారం"
   }
  ],
  "quiz": [
