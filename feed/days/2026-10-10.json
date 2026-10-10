@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-10",
- "updated": "2026-10-10T17:32:25.629Z",
+ "updated": "2026-10-10T20:46:24.932Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 540,
+   "found": 542,
    "error": null
   },
   {
@@ -66,7 +66,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 44,
    "error": null
   },
   {
@@ -180,8 +180,8 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 60,
+   "error": null
   },
   {
    "id": "sakshi",
@@ -192,7 +192,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 169,
+   "found": 106,
    "error": null
   },
   {
@@ -505,16 +505,34 @@
    },
    "related": [
     {
+     "id": "2dd17650ca22",
+     "title": "GO on BC quota in local bodies caps total reservations at 50%",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/amaravati/go-on-bc-quota-in-local-bodies-caps-total-reservations-at-50-1131147"
+    },
+    {
      "id": "7ce5f5660203",
      "title": "AP Cabinet meets to discuss on BC reservation data",
      "source": "The Hans India — Andhra Pradesh",
      "url": "https://www.thehansindia.com/news/cities/amaravati/ap-cabinet-meets-to-discuss-on-bc-reservation-data-1130971"
     },
     {
+     "id": "53bafaef4128",
+     "title": "NDA parties in Andhra Pradesh to provide 34% representation for BCs in local body elections",
+     "source": "The Hindu — Andhra Pradesh",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/nda-parties-in-andhra-pradesh-to-provide-34-representation-for-bcs-in-local-body-elections/article71567750.ece"
+    },
+    {
      "id": "a951d5b7009d",
      "title": "AP Cabinet finalises BC quota for local bodies",
      "source": "The Hans India — Andhra Pradesh",
      "url": "https://www.thehansindia.com/andhra-pradesh/ap-cabinet-finalises-bc-quota-for-local-bodies-1130996"
+    },
+    {
+     "id": "9466702b6d51",
+     "title": "Rajiv panel recommendations approved…Cabinet clears BC quota across eight categories",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/amaravati/rajiv-panel-recommendations-approvedcabinet-clears-bc-quota-across-eight-categories-1131140"
     },
     {
      "id": "361078513413",
@@ -534,6 +552,141 @@
    "threadTitle": "YSRCP, Left parties flay govt.’s ‘flawed approach’ to BC reservation issue",
    "threadStart": "2026-10-01",
    "line": "Naidu’s promise of reservations to BCs is a fraud: Jagan"
+  },
+  {
+   "id": "2dd17650ca22",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-11",
+   "time": "02:11",
+   "title": "GO on BC quota in local bodies caps total reservations at 50%",
+   "summary": "Rajiv Ranjan Mishra Commission’s recommendations accepted Govt cites SC’s triple-test requirements, Oct 9 ruling",
+   "facts": [
+    {
+     "angle": "Report / committee",
+     "text": "Rajiv Ranjan Mishra Commission’s recommendations accepted Govt cites SC’s triple-test requirements, Oct 9 ruling"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/go-on-bc-quota-in-local-bodies-caps-total-reservations-at-50-1131147",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies",
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "SC"
+   ],
+   "score": 74,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Reservation - constitutional basis, Indra Sawhney, creamy layer, EWS reservation, promotion in reservation › OBC reservation in AP - BC groups, Muslim quota, Kapus",
+     "text": "Local-body OBC quota must pass the Supreme Court's triple test - dedicated commission, local-body-wise proportion, total within 50% .",
+     "match": [
+      "commission",
+      "triple",
+      "test"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Society › #43 · Committees on Women and Child Welfare",
+     "text": "The Justice Pam Rajput Committee recommended 50% reservation for women in local bodies.",
+     "match": [
+      "women",
+      "local",
+      "bodies"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Reservation · Backward Classes Commissions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Reservation - constitutional basis, Indra Sawhney, creamy layer, EWS reservation, promotion in reservation › Backward Classes Commissions - Article 340",
+      "bullets": [
+       "Art. 340: the President appoints a commission on socially and educationally backward classes (APP).",
+       "The Constitution does not define \"backward classes\" (G2 2017 key: that was the incorrect statement). Art. 16(4) backward classes are mainly identified by caste/social backwardness (Indra Sawhney).",
+       "Before 2018, Art. 338(10) treated references to SCs as including such backward classes as the President specified - hence BC complaints went to the SC commission ; the 102nd Amendment added Art. 366(26C) defining SEBCs by reference to Art. 342A .",
+       "National Backward Classes Commissions (Kaka Kalelkar, Mandal) → year + chairman",
+       "102nd Amendment (2018) gave the National Commission for Backward Classes constitutional status under Art. 338B [GK: amendment number]."
+      ]
+     },
+     {
+      "topic": "Indra Sawhney and creamy layer link to NCBC",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › National Commission for SCs (338), STs (338A) and Backward Classes (338B); Special Officer for Linguistic Minorities (350B) › Indra Sawhney and creamy layer link to NCBC",
+      "bullets": [
+       "The 102nd Amendment also removed backward classes from the NCSC's purview .",
+       "105th Amendment, 2021 restored the States' power to prepare their own SEBC lists (after the Maratha quota judgment) ."
+      ]
+     },
+     {
+      "topic": "Constitutional and Statutory Bodies",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #65 · Constitutional and Statutory Bodies",
+      "bullets": [
+       "The National Commission for Scheduled Castes is governed by Article 338.",
+       "The President appoints the National Commission for Scheduled Castes.",
+       "The National Commission for Backward Classes is governed by Article 338-B.",
+       "The National Commission for Backward Classes received full constitutional status through the 102nd Constitutional Amendment Act, 2018.",
+       "The National Commission for Backward Classes is not merely a statutory body under the 1993 Act."
+      ]
+     },
+     {
+      "topic": "73rd Amendment · OBC reservation in local bodies",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › 73rd Amendment - Part IX, Eleventh Schedule, three-tier structure, Gram Sabha, reservations, State Election Commission › OBC reservation in local bodies - K. Krishna Murthy and Vikas Kishanrao Gawali",
+      "bullets": [
+       "K. Krishna Murthy (2010), Constitution Bench: upheld 243D(6)/243T(6); political backwardness differs from social/educational backwardness; total vertical reservation normally within 50% .",
+       "Vikas Kishanrao Gawali (2021): triple test - (1) a dedicated commission for a rigorous empirical inquiry; (2) local-body-wise proportion fixed on its findings; (3) SC+ST+OBC total not above 50% .",
+       "G.O. Rt. No. 1065 notified 33.33% BC quota for ULB polls (TH, 20 Aug 2026)."
+      ]
+     }
+    ],
+    "gaps": [
+     "Rajiv Ranjan Mishra Commission"
+    ]
+   },
+   "topicOf": "e2126a34886a"
   },
   {
    "id": "7ce5f5660203",
@@ -789,6 +942,160 @@
     "gaps": []
    },
    "thread": "aec5ca8c5ca8",
+   "top": true
+  },
+  {
+   "id": "53fac01c02be",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-11",
+   "time": "01:17",
+   "title": "Pattiseema delivered water security to Delta, Seems: Nimmala",
+   "summary": "Irrigation minister says 57 tmc ft of Godavari water diverted to Krishna this year Lift scheme ensured irrigation to 7 lakh acres, drinking water for 30 lakh people",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Irrigation minister says 57 tmc ft of Godavari water diverted to Krishna this year Lift scheme ensured irrigation to 7 lakh acres, drinking water for 30 lakh people"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/pattiseema-delivered-water-security-to-delta-seems-nimmala-1131104",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    }
+   ],
+   "topics": [
+    "Krishna and Godavari river disputes"
+   ],
+   "angles": [
+    "Irrigation"
+   ],
+   "score": 66,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "unit",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › Irrigation in AP - major and medium projects, Handri-Neeva, Pattiseema, Galeru-Nagari, Vamsadhara › Major projects - river, districts, plan period, foundation",
+     "text": "Pattiseema: Type / river Lift irrigation, Godavari → Krishna; Key facts Lifts Godavari water into the Polavaram right canal to supply the Krishna delta; a temporary scheme until Polavaram is ready (PYQ 2018, 2017)",
+     "match": [
+      "irrigation",
+      "godavari",
+      "water"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · AP Geography › #16 · AP Irrigation and Renewable Projects",
+     "text": "Pattiseema LIS transfers water to the Krishna River above Prakasam Barrage.",
+     "match": [
+      "water",
+      "krishna",
+      "river"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Irrigation in AP · Pattiseema",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Irrigation in AP - major and medium projects, Handri-Neeva, Pattiseema, Galeru-Nagari, Vamsadhara › Pattiseema - type, rivers linked, beneficiaries, temporary nature",
+      "bullets": [
+       "A lift irrigation scheme (PYQ) on the Godavari at Pattiseema, lifting water into the Polavaram Right Main Canal, which carries it to the Krishna at Prakasam Barrage - the first Godavari-Krishna link .",
+       "Beneficiary: Krishna delta farmers (PYQ); 24 pumps (TH, 25 Jul 2026). Built 2014-19, commissioned 2015 .",
+       "A temporary scheme until Polavaram's gravity flow starts. The claim \"canal runs 100 km through West Godavari\" is the false statement in the PYQ.",
+       "About 450 TMC transferred so far; it kept the Krishna delta supplied during the 2026 El Nino deficit (TH, 19 Jul & 10 Aug 2026)."
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 4 Geography › D-2 › Andhra Pradesh - drainage: Godavari, Krishna, Penna, Vamsadhara, Nagavali; reservoirs and canals › Canals, river linking and lift schemes → purpose and beneficiaries",
+      "bullets": [
+       "Pattiseema lift: Purpose / beneficiary Godavari water → Krishna at Prakasam Barrage; 17.52 tmc ft diverted this season (TH, 10 Aug 2026)",
+       "AP plans (2026): intra-linking from Vamsadhara to Penna; Vamsadhara-Nagavali link by December; ~200 TMC Godavari water to Nagarjunasagar ayacut via Nallamala Sagar and Veligonda; 100-day \"Jaladhara\" water plan (TH, Feb-Apr 2026).",
+       "Design: 194.6 TMC storage, 7.20 lakh acres, 960 MW, and 80 TMC diverted to the Krishna (CDI; APSES).",
+       "Left Main Canal: Godavari water was set to reach North Coastal Andhra on 2 Sep 2026, using pumps (the dam itself is not finished). 27 TMC is planned for the Visakhapatnam region, including 5 TMC to the Kanithi reservoir at the steel plant (TH, 1 Sep 2026).",
+       "Godavari-Penna Phase-I: Status / facts 73 TMC, 5-stage lift, 7,000 cusecs; ~21% done"
+      ]
+     },
+     {
+      "topic": "River water sharing disputes · Contested projects",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › River water sharing disputes - Krishna and Godavari; KWDT-I and II, GWDT, Apex Council, Krishna and Godavari River Management Boards › Contested projects - river and State",
+      "bullets": [
+       "Pothireddypadu head regulator / Rayalaseema Lift: River Krishna (Srisailam); Built by AP; Objection TG: Srisailam is mainly a power project",
+       "Pattiseema, Polavaram: River Godavari; Built by AP; Objection TG and Odisha - submergence",
+       "Polavaram-Banakacherla, now Polavaram-Nallamala Sagar Link: River Godavari → Krishna → Penna; Built by AP; Objection TG: AP would exceed its Krishna share",
+       "AP plans to divert 200 tmcft of Polavaram flood water; it would benefit ~80 lakh people and ~7.5 lakh acres through reservoirs at Bollapalli and Banakacherla (TH, 31 Jan 2026; LENS, Jul 2025).",
+       "10.7 TMC, 1.19 lakh acres (CDCA, Aug 2026)."
+      ]
+     },
+     {
+      "topic": "Polavaram Project · GWDT clauses",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-5 › Polavaram Project - status, funding, national project status, submergence and R&R issues › GWDT clauses - Polavaram and Godavari-to-Krishna diversion",
+      "bullets": [
+       "Godavari Water Disputes Tribunal set up 1969 (APP); award 1980 (LENS).",
+       "The award cleared Polavaram with FRL +150 ft and allowed 80 TMC of Godavari water to be diverted into the Krishna above Vijayawada; of this, 45 TMC goes to AP and 35 TMC to Karnataka and Maharashtra (21 + 14) .",
+       "Link projects built on this: Pattiseema (temporary lift into the Polavaram RMC) and the proposed Polavaram-Nallamala Sagar (earlier Banakacherla) link. Telangana says the link violates APRA 2014 and the 1980 GWDT award (LENS Jul 2025; TH Jan 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "4e253edf9e76",
+     "title": "Krishna delta farmers felicitate Chief Minister Naidu for bringing water through Pattiseema",
+     "source": "The Hindu — Andhra Pradesh",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/krishna-delta-farmers-felicitate-chief-minister-naidu-for-bringing-water-through-pattiseema/article71568216.ece"
+    }
+   ],
+   "thread": "53fac01c02be",
    "top": true
   },
   {
@@ -1105,8 +1412,7 @@
      "Rajiv Ranjan Mishra Commission"
     ]
    },
-   "thread": "53bafaef4128",
-   "top": true
+   "topicOf": "e2126a34886a"
   },
   {
    "id": "ba31fc46d6d3",
@@ -2064,8 +2370,7 @@
     ],
     "gaps": []
    },
-   "thread": "4e253edf9e76",
-   "top": true
+   "topicOf": "53fac01c02be"
   },
   {
    "id": "d69dfd08ffef",
@@ -4030,6 +4335,12 @@
      "title": "CM Chandrababu directs ministers to ensure alliance candidates win local body elections",
      "source": "The Hans India — Andhra Pradesh",
      "url": "https://www.thehansindia.com/andhra-pradesh/cm-chandrababu-directs-ministers-to-ensure-alliance-candidates-win-local-body-elections-1131024"
+    },
+    {
+     "id": "f94caaca7e26",
+     "title": "CM Naidu sets Nov 15 deadline for local polls",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/news/cities/amaravati/cm-naidu-sets-nov-15-deadline-for-local-polls-1131142"
     }
    ],
    "thread": "33df96c12606",
@@ -4169,7 +4480,8 @@
     ],
     "gaps": []
    },
-   "thread": "d74ea891de06"
+   "thread": "d74ea891de06",
+   "top": true
   },
   {
    "id": "150ae8c30b08",
@@ -5594,6 +5906,157 @@
    "thread": "85c35517630f"
   },
   {
+   "id": "55c3f82d493c",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-10",
+   "time": "23:04",
+   "title": "Young Innovators showcase their talent in ‘Robotics for Good Youth Challenge India 2026’ hosted by Department of Telecommunications (DoT) and International Telecommunication Union (ITU) during India Mobile Congress 2026",
+   "summary": "The Challenge, a flagship initiative under ITU’s AI for Good programme, brought together 57 teams – 28 in the Junior Category and 29 in the Senior Category – with around 300 students and mentors from 14 States across India.",
+   "facts": [
+    {
+     "angle": "Award",
+     "text": "At the Closing and Award Ceremony, awards were presented to the winning teams in both categories by the dignitaries, along with special awards for Design, Innovation and Creative Thinking."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "Senior Category: Winner – Team Ferrum Incubators (Cambridge School, Noida, Uttar Pradesh); First Runner-up – Team Mech Minds (Lions Calcutta Greater Vidya Mandir, West Bengal); Second Runner-up – Team Botics Alpha (Vidya Pratishthan’s Magarpatta City Public School, Maharashtra)."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The winner teams of Junior and Senior category will represent India at the Grand Finale in Geneva, Switzerland, during the AI for Good Global Summit in June 2027, among participating countries."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The Robotics for Good Youth Challenge India began in 2024, when the first Challenge was held during the World Telecommunication Standardization Assembly (WTSA-24) hosted by India, and has continued since then, with editions held at IMC 2025 and IMC 2026."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Communications",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2321853&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-C1",
+     "exam": "G1",
+     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "IIT",
+    "Robotics"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › Telecom technologies - 3G to 5G and 6G roadmap, satellite communication, optical fibre › 5G - spectrum bands, network slicing, uses, indigenous stack, launch, hackathons",
+     "text": "Launch: world first in South Korea (April 2019); India on 1 October 2022 at India Mobile Congress .",
+     "match": [
+      "Mobile Congress"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › International - summits, conferences and their outcomes › World Economic Forum and ministerial/business summits → venue + organiser + theme",
+     "text": "India Mobile Congress 2025: Venue / date Yashobhoomi, New Delhi, 8-11 Oct 2025; Theme or focus \"Innovate to Transform\"",
+     "match": [
+      "Mobile Congress"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "International environmental treaties · CMS",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › International environmental treaties - Stockholm 1972, Rio 1992, Ramsar, CITES, CBD and its protocols › CMS - appendices, COP hosted by India",
+      "bullets": [
+       "Appendix I: endangered migratory species (strict protection); Appendix II: species needing international cooperation agreements .",
+       "India a party since 1983; hosted CMS COP-13, Gandhinagar, Feb 2020 - Great Indian Bustard, Asian elephant, Bengal florican added to Appendix I .",
+       "Regional flyway links: AEWA, East Asian-Australasian Flyway Partnership (UPSC notes p.48)."
+      ]
+     },
+     {
+      "topic": "Species-specific conservation projects · Project Cheetah and International Big Cat Alliance",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Species-specific conservation projects - Project Tiger, Project Elephant, Gangetic dolphin, Great Indian Bustard, vulture, cheetah reintroduction › Project Cheetah and International Big Cat Alliance",
+      "bullets": [
+       "Project Cheetah brought 8 cheetahs from Namibia (17 Sep 2022) and 12 from South Africa (Feb 2023) to Kuno NP (Sheopur, MP). Counting cubs born in India, there are about 30 (APP). More cubs have since been born to a South African female (VIS Apr 2026).",
+       "Lion translocation debate : Kuno was first chosen for a second home for Gir's Asiatic lions. The SC ordered that translocation in 2013, but Gujarat did not carry it out, and Kuno went to cheetahs.",
+       "IBCA headquarters: New Delhi, not Geneva. The India-IBCA agreement was signed on 17 April 2025 (IYB).",
+       "IBCA membership: it was pitched to 96 range and non-range countries (APPSC 2024: statement I true, II false). Saudi Arabia joined as the 26th member and Bangladesh as the 27th (LENS Jul 2026; APPCA). IYB says 37 countries have consented to join.",
+       "First IBCA summit: New Delhi, 1-3 June 2026. China is unlikely to join (TH, 12 May 2026)."
+      ]
+     },
+     {
+      "topic": "Cost of environmental degradation to India (World Bank)",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 3 Economy › C-1 › Environmental degradation as a development challenge; green accounting and green GDP › Cost of environmental degradation to India (World Bank)",
+      "bullets": [
+       "World Bank (2013) put India's annual cost of environmental degradation at about 5.7% of GDP (Rs 3.75 lakh crore, 2009) .",
+       "The mechanism: higher healthcare spending and lower labour productivity (CDI)."
+      ]
+     },
+     {
+      "topic": "ICT and industry · Robotics",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › ICT and industry - Industry 4.0, Internet of Things, robotics and automation › Robotics - types, Indian robots → developer + purpose, standards bodies",
+      "bullets": [
+       "Standards: ISO (Technical Committee 299 Robotics) sets norms such as ISO 10218 for industrial-robot safety .",
+       "MeitY set up an inter-ministerial committee (Secretary MeitY as convener) to build a robotics ecosystem (IYB 2026). Robotics is one of the verticals of the 25 Technology Innovation Hubs under NM-ICPS.",
+       "Robotics - indigenous robots → purpose",
+       "DRDO CAIR builds unmanned and multi-agent robotic systems; MeitY's inter-ministerial committee (DoT, DSIR, DST, DPIIT, NITI Aayog) is drafting a robotics ecosystem strategy.",
+       "Trends: soft robots, exoskeletons, swarm robotics, cobots."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "55c3f82d493c"
+  },
+  {
    "id": "d21b417f921c",
    "date": "2026-10-10",
    "pubDate": "2026-10-10",
@@ -5934,6 +6397,132 @@
    "topicOf": "14359d760550"
   },
   {
+   "id": "9bcebcf37048",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-10",
+   "time": "22:59",
+   "title": "‘System can’t be honest when you win and rigged when you lose’: 124 ex-bureaucrats defend Election Commission, SIR exercise",
+   "summary": "Defending SIR, the ex-civil servants described it as a necessary process to maintain accurate electoral rolls by identifying deceased voters, duplicate entries",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Defending SIR, the ex-civil servants described it as a necessary process to maintain accurate electoral rolls by identifying deceased voters, duplicate entries"
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/system-can-t-be-honest-when-you-win-and-rigged-when-you-lose-124-ex-bureaucrats-defend-election-commission-sir-exercise-101791652421101.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Election Commission"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › Powers of Election Commission - Article 324, elections, parties and symbols, disqualification advice",
+     "text": "Special Intensive Revision (SIR) of rolls ordered under Art. 324 and Section 21, RPA 1950 (IYB).",
+     "match": [
+      "SIR"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › Universal angles",
+     "text": "AP angle: ASR district's 100% SIR digitalisation, and the new SEC Anil Chandra Punetha for local-body polls.",
+     "match": [
+      "SIR"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Election Commission of India · Powers of Election Commission",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › Powers of Election Commission - Article 324, elections, parties and symbols, disqualification advice",
+      "bullets": [
+       "Art. 324(1): superintendence, direction and control of electoral rolls and elections to Parliament, State Legislatures, President and Vice-President. Not panchayat or municipal polls: those go to the SEC (Arts. 243K, 243ZA).",
+       "Recognises parties and allots symbols under the Election Symbols (Reservation and Allotment) Order, 1968 (issued under RPA 1951 and Art. 324); settles symbol disputes like a court.",
+       "Special Intensive Revision (SIR) of rolls ordered under Art. 324 and Section 21, RPA 1950 (IYB).",
+       "Administrative: prepares and revises electoral rolls; notifies schedules; scrutinises nominations; decides territorial constituencies under the Delimitation Commission Act; enforces the Model Code of Conduct; regulates expenses; can cancel polls for rigging or booth capturing.",
+       "State machinery: the Chief Electoral Officer of each state. At district level, the Collector (APP calls this the District Returning Officer; officially the District Election Officer ) appoints Returning and Presiding Officers."
+      ]
+     },
+     {
+      "topic": "Elections · Electoral rolls",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Elections - delimitation, model code of conduct, EVM-VVPAT, NOTA, election petitions › Electoral rolls - qualifying dates, overseas electors, revisions",
+      "bullets": [
+       "Four qualifying dates: 1 January, 1 April, 1 July, 1 October (Election Laws (Amendment) Act 2021) .",
+       "Overseas electors: NRIs can enrol at their passport address (Sec. 20A, RPA 1950, 2010) .",
+       "Summary revision is annual; a Special Intensive Revision (SIR) rebuilds the roll - SC allowed the ECI's Bihar SIR to proceed (LENS Jul 2025)."
+      ]
+     },
+     {
+      "topic": "Electoral reforms · Election expenditure limits",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Electoral reforms - state funding, electoral bonds, criminalisation of politics, RPA 1951 provisions › Election expenditure limits",
+      "bullets": [
+       "RPA Sec. 77: keep expense accounts; Sec. 78: file within 30 days with the District Election Officer (LENS Aug 2026).",
+       "Limits are fixed by Rule 90, Conduct of Election Rules 1961 (LENSD, 19 Aug 2026)."
+      ]
+     },
+     {
+      "topic": "Election Machinery and Electoral Systems",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #36 · Election Machinery and Electoral Systems",
+      "bullets": [
+       "The Election Commission of India is established under Article 324.",
+       "The Election Commission of India conducts elections for the President.",
+       "The State Election Commission is provided for under Articles 243K and 243ZA.",
+       "The Election Commission of India does not conduct elections for presiding officers chosen internally by the respective Houses.",
+       "The Election Commission recommends election dates."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "14359d760550"
+  },
+  {
    "id": "1460432f507f",
    "date": "2026-10-10",
    "pubDate": "2026-10-10",
@@ -6191,6 +6780,18 @@
      "title": "'Suspicion Is Not Proof': 124 Ex-Bureaucrats Defend Election Commission",
      "source": "NDTV — India",
      "url": "https://www.ndtv.com/india-news/gyanesh-kumar-election-commission-cjp-jantar-mantar-do-you-doubt-system-or-result-124-ex-bureaucrats-diplomats-back-poll-body-12166334#publisher=newsstand"
+    },
+    {
+     "id": "9bcebcf37048",
+     "title": "‘System can’t be honest when you win and rigged when you lose’: 124 ex-bureaucrats defend Election Commission, SIR exercise",
+     "source": "Hindustan Times — India",
+     "url": "https://www.hindustantimes.com/india-news/system-can-t-be-honest-when-you-win-and-rigged-when-you-lose-124-ex-bureaucrats-defend-election-commission-sir-exercise-101791652421101.html"
+    },
+    {
+     "id": "128c6c0888a8",
+     "title": "Former IAS, IFS officers defend Election Commission and SIR in an open letter",
+     "source": "The Hindu — National",
+     "url": "https://www.thehindu.com/news/national/former-ias-ifs-officers-defend-election-commission-and-sir-in-an-open-letter/article71568900.ece"
     }
    ],
    "thread": "14359d760550"
@@ -6316,11 +6917,7 @@
      "Election Commission and SIR"
     ]
    },
-   "thread": "bf9ae571a663",
-   "update": true,
-   "threadTitle": "Election Commission SIR 2026: Meet 5 retired SC, HC judges on panel examining legality, impact on voters",
-   "threadStart": "2026-10-04",
-   "line": "Former IAS, IFS officers defend Election Commission and SIR in an open letter"
+   "topicOf": "14359d760550"
   },
   {
    "id": "238871810d4c",
@@ -7898,6 +8495,201 @@
    "thread": "a967dd0d4f4a"
   },
   {
+   "id": "89fe4be62157",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-11",
+   "time": "01:24",
+   "title": "CPI warns of intensified stir against restrictions on citizens’ constitutional rights",
+   "summary": "CPI organized a protest in Tirupati demanding the resignation of Chief Election Commissioner Gyanesh Kumar over alleged electoral irregularities CPI leader P Harinath Reddy alleged that 13.7 crore votes were removed under the SIR process",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "CPI organized a protest in Tirupati demanding the resignation of Chief Election Commissioner Gyanesh Kumar over alleged electoral irregularities CPI leader P Harinath Reddy alleged that 13.7 crore votes were removed under the SIR process"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/cpi-warns-of-intensified-stir-against-restrictions-on-citizens-constitutional-rights-1131115",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-4 › Monetary policy - objectives, instruments (CRR, SLR, repo, reverse repo, MSF, OMO, LAF), transmission › Evolution of monetary policy since 1991 - phases, challenges, monetary vs fiscal tools",
+     "text": "Monetary vs fiscal policy - complementary roles against inflation",
+     "match": [
+      "monetary",
+      "policy",
+      "inflation"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Economy › #51 · Inflation Concepts, Indices and Policy Links",
+     "text": "CPI-Combined is used as the monetary policy inflation measure.",
+     "match": [
+      "cpi",
+      "monetary",
+      "policy"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Fundamental Rights: Articles, Rights and Restrictions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #16 · Fundamental Rights: Articles, Rights and Restrictions",
+      "bullets": [
+       "The Right to Property was removed from the list of Fundamental Rights by the 44th Amendment in 1978.",
+       "Five Fundamental Rights are available only to citizens.",
+       "Article 15 concerns a Fundamental Right available only to citizens.",
+       "The remaining Fundamental Rights are available to both citizens and foreigners.",
+       "The Right to Constitutional Remedies is covered by Article 32."
+      ]
+     },
+     {
+      "topic": "Fundamental Rights",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-1 › Fundamental Rights - Article 12 (State), Article 13 and doctrines of eclipse, severability, waiver › Rights available only to citizens vs to all persons (Articles 14-30)",
+      "bullets": [
+       "15, 16, 19, 29, 30: All persons (citizens + foreigners) 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27, 28 [GK for 21A, 22, 24]",
+       "Articles denied to aliens: Arts. 29-30, 19, 16 (PYQ G1 2022) - not Arts. 23-24.",
+       "Enemy aliens lose even the Art. 22 safeguards (Art. 22(3)).",
+       "Legal persons (companies) can claim the all-persons rights, but not Art. 19 (UPSC notes)."
+      ]
+     },
+     {
+      "topic": "Election Commission of India · Post-retirement restrictions",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Election Commission of India - composition, appointment (2023 Act), powers and functions › Post-retirement restrictions - constitutional position",
+      "bullets": [
+       "The Constitution does not bar retiring ECs from further government appointment; this is a listed flaw (APPSC-G1 2024: that statement is false).",
+       "The 2023 Act bars reappointment (LENSD, 7 May 2026). Contrast: the CAG (Art. 148(4)) and UPSC Chairman (Art. 319) have constitutional bars . (Some notes say the CEC cannot hold any office of profit after retirement; the Constitution has no such bar.)"
+      ]
+     },
+     {
+      "topic": "Rights of the elderly",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Rights of the elderly - Maintenance and Welfare of Parents and Senior Citizens Act 2007, schemes › National Policy on Older Persons 1999 and National Policy for Senior Citizens 2011",
+      "bullets": [
+       "NPOP 1999 (MoSJE): older person = 60+ ; 14 principal areas of intervention incl. health care and nutrition; encourages self-provision for old age, family care, NGO support, geriatric training (APP; IYB).",
+       "NPSC 2011: responds to growing numbers, destitution among rural elderly, focus on elderly women and \"ageing in place\", harsh punishment for elder abuse, income security, homecare and health insurance (APP).",
+       "NPHCE launched by MoHFW in 2010-11 (APP).",
+       "National Policy on Older Persons and National Policy for Senior Citizens - key features",
+       "NPOP 1999 (MoSJE): covers 60+; financial and food security, health, shelter, protection from abuse."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "89fe4be62157"
+  },
+  {
+   "id": "13cf08e94887",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-10",
+   "time": "23:38",
+   "title": "IGP reviews passenger security at Vijayawada railway station",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/igp-reviews-passenger-security-at-vijayawada-railway-station/article71568836.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Custodial violence, encounter deaths, prison reforms, death penalty debate › Universal angles",
+     "text": "NHRC sought reports (Jun 2026); SC gave the SIT (IGP M. Ravi Prakash) 7-day custody of suspended CI Nagaraju (TH, 31 Jul 2026).",
+     "match": [
+      "IGP"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - government decisions, new schemes, appointments and administrative changes › State commissions, task forces and special forces → name + chairperson + mandate",
+     "text": "EAGLE (HQ Vijayawada; head IGP Ake Ravi Krishna) signed an MoU with the Indian Red Cross Society on 28 Aug 2026 to check ganja/drugs at village level.",
+     "match": [
+      "IGP"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "13cf08e94887"
+  },
+  {
    "id": "a57526518d1d",
    "date": "2026-10-10",
    "pubDate": "2026-10-10",
@@ -8091,6 +8883,363 @@
    "thread": "b47e2dc73d45"
   },
   {
+   "id": "d203a646804d",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-11",
+   "time": "01:30",
+   "title": "BJP condemns attacks on police, pressure on courts",
+   "summary": "BJP leaders in Kakinada condemned attacks on police during Delhi youth protests over the CEC's resignation and voter list revisions, urging youth to await the Supreme Court's ruling.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kakinada/bjp-condemns-attacks-on-police-pressure-on-courts-1131120",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 35,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
+   },
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-1 › Structure of the Indian government - separation of powers and checks and balances › Separation of powers - Article 50 and the degree adopted",
+     "text": "Legislature-executive fusion (parliamentary system; ministers must be legislators); judiciary insulated (Arts. 50, 121, 211, 235 control of subordinate courts) (CDI).",
+     "match": [
+      "legislature",
+      "executive",
+      "judiciary"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #51 · Judicial Review and Constitutional Limits",
+     "text": "Judicial Review is vested jointly in the Supreme Court and the High Courts.",
+     "match": [
+      "supreme",
+      "court",
+      "judicial"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Trade unions → party affiliation",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-4 › Civil society, NGOs, SHGs and pressure groups in governance; FCRA regulation › Trade unions → party affiliation",
+      "bullets": [
+       "BMS: Founded [GK] 1955; Affiliation BJP (Sangh Parivar)",
+       "Exam angle: UPPSC 2022 asked a match of unions with parties, e.g. BMS with BJP and INTUC with Congress.",
+       "BMS: Year 1955; Affiliated to RSS/BJP",
+       "All of the above are . Legal recognition came with the Trade Unions Act, 1926, after five years of pressure (TH, 1 May 2026)."
+      ]
+     },
+     {
+      "topic": "Federal structure of India",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Federal structure of India - features of federalism and unitary bias; Seventh Schedule (three lists), residuary powers › Subject → List (social security, opium, High Courts, mineral-right taxes, education, police, forests, cruelty to animals, panchayats, prisons)",
+      "bullets": [
+       "Defence; foreign affairs; atomic energy: List (Entry) Union (Entries 1, 10, 6)",
+       "Constitution and organisation of High Courts: List (Entry) Union (Entry 78)",
+       "Opium - cultivation, manufacture, sale for export: List (Entry) Union (Entry 59)",
+       "Public order; police; prisons: List (Entry) State (Entries 1, 2, 4)",
+       "\"Police and public order are State subjects\" - under the Seventh Schedule (APPSC 2019)."
+      ]
+     },
+     {
+      "topic": "Crimes against women · Gender sensitisation of police",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Crimes against women - trafficking, honour crimes, acid attacks; Criminal Law Amendments 2013 and 2018 › Gender sensitisation of police - women police stations, AHTUs",
+      "bullets": [
+       "Only 11.7% of India's police are women (LENS Apr 2026).",
+       "The first all-women police station was at Kozhikode, Kerala (1973) .",
+       "Other measures: Women Help Desks in police stations; Mahila Police Volunteers (MWCD-MHA, Nirbhaya Fund).",
+       "Anti-Human Trafficking Units (AHTUs): district-level task forces funded by the MHA for trafficking intelligence, rescue and prosecution (LENS Jun 2026).",
+       "The Witness Protection Scheme 2018 is enforced under Art. 141 until Parliament enacts a law (VIS 2026)."
+      ]
+     },
+     {
+      "topic": "Indian political parties",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Indian political parties - evolution, ideology and classification › Party → founder and year of founding (INC, CPI, Jana Sangh, BJP, DMK, BSP, SP, AAP, Republican Party of India, Swatantra)",
+      "bullets": [
+       "BJP: Founder(s) A.B. Vajpayee (first president); Year 1980"
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "d203a646804d"
+  },
+  {
+   "id": "c2e67af1e72a",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-11",
+   "time": "01:14",
+   "title": "NTR Vaidya Seva Trust penalises 203 hospitals, slaps Rs 34 cr fines",
+   "summary": "25 hospitals suspended, payments withheld to 13 others; five removed from network Trust steps up scrutiny of suspicious bills, plans AI-assisted verification",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/ntr-vaidya-seva-trust-penalises-203-hospitals-slaps-rs-34-cr-fines-1131100",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Bill",
+    "Bills"
+   ],
+   "score": 34,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Health financing in India - public expenditure, out-of-pocket spending and insurance › AP health assurance - Aarogyasri / NTR Vaidya Seva, Employee Health Scheme",
+     "text": "AP Budget 2024-25 BE: Health & FW ₹18,732 Cr (+24%), of which ₹4,000 Cr for the Dr. NTR Vaidya Seva Trust.",
+     "match": [
+      "NTR Vaidya Seva Trust"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 6 Current Affairs › Andhra Pradesh - government decisions, new schemes, appointments and administrative changes › State schemes launched - name, department, objective, beneficiaries, launch date",
+     "text": "NTR Vaidya Seva: Dept / nature Health - Dr NTR Vaidya Seva Trust; Key facts (latest) Cashless care for BPL families; 3,257 procedures; 1.43 crore health cards (APSES 2024-25); 5 more cardiac procedures (Mar 2026)",
+     "match": [
+      "NTR Vaidya Seva Trust"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Health financing in India · AP health assurance",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Health financing in India - public expenditure, out-of-pocket spending and insurance › AP health assurance - Aarogyasri / NTR Vaidya Seva, Employee Health Scheme",
+      "bullets": [
+       "Dr. NTR Vaidya Seva (earlier YSR Aarogyasri) is AP's flagship cashless health assurance scheme for economically vulnerable families; implemented in convergence with PM-JAY (portability, wider empanelment).",
+       "Mar 2026: five more critical cardiovascular procedures added to widen advanced cardiac care (APPCA Mar 2026).",
+       "AP Budget 2024-25 BE: Health & FW ₹18,732 Cr (+24%), of which ₹4,000 Cr for the Dr. NTR Vaidya Seva Trust.",
+       "State scheme + Employee Health Scheme + RSBY + ESIS + CGHS together covered 70% of AP households; 2,700 private hospitals registered, 540 speciality (IYB 2026).",
+       "Not in your sources: current NTR Vaidya Seva cover limit per family, number of procedures, and EHS entitlements."
+      ]
+     },
+     {
+      "topic": "Health welfare",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-6 › Important policies and programmes of the Government of Andhra Pradesh - welfare and social security › Health welfare - Dr NTR Vaidya Seva/Aarogyasri, 104/108, Family Physician",
+      "bullets": [
+       "Aarogyasri began in 2007 under YSR ; renamed NTR Vaidya Seva (2014), YSR Aarogyasri (2019), now Dr NTR Vaidya Seva .",
+       "Coverage: cashless care to 1.43 crore families, 3,257 procedures (APSES 2024-25); ₹4,000 crore to the Trust in Budget 2024-25 BE (APP).",
+       "EHS (Employees Health Scheme): cashless treatment for State government employees and pensioners through the same Trust ."
+      ]
+     },
+     {
+      "topic": "ICT in Andhra Pradesh · Mee Seva",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 5 Science, Tech & Environment › 19 › ICT in Andhra Pradesh - e-Pragati, RTGS, Mee Seva and state digital initiatives › Mee Seva - meaning, service categories, departments, channels, launch",
+      "bullets": [
+       "\"MeeSeva\" in Telugu = \"At your service\" (APPSC 2023).",
+       "Service categories: Category B services are statutory, needing notices, hearings or field verification. Category A are over-the-counter services issued on the spot (e.g. certified copies) (APPSC 2023 key; for Category A).",
+       "Departments inside MeeSeva: EDS department prints MeeSeva certificates; Education department issues migration certificates (passed candidates) (APPSC 2023: all three pairs correct).",
+       "Launched 2011 in the combined state . Delivery through MeeSeva franchise centres and the online portal . Also an enrolment channel for schemes such as Aarogya Raksha (APSES 2024-25 p.227)."
+      ]
+     },
+     {
+      "topic": "Productivity and decline of Parliament · Bills passed without committee scrutiny",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Productivity and decline of Parliament - issues of debate quality, disruptions and reforms › Bills passed without committee scrutiny",
+      "bullets": [
+       "14th: Bills referred to committees 60%",
+       "17th LS: 58% of Bills passed within two weeks of introduction; 35% debated for less than one hour (PRS, via LENSD Jun 2026). Less than a fifth of Bills go to committees; in the UK every Bill is examined by committees of both Houses (TH 16 Apr 2026)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "c2e67af1e72a"
+  },
+  {
+   "id": "9466702b6d51",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-11",
+   "time": "02:01",
+   "title": "Rajiv panel recommendations approved…Cabinet clears BC quota across eight categories",
+   "summary": "Average fixed at 28.18 per cent; share varies across rural and urban local bodies NDA promises over 34% party-level opportunities where statutory quota falls short",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Average fixed at 28.18 per cent; share varies across rural and urban local bodies NDA promises over 34% party-level opportunities where statutory quota falls short"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/rajiv-panel-recommendations-approvedcabinet-clears-bc-quota-across-eight-categories-1131140",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [],
+   "score": 34,
+   "band": "low",
+   "why": {
+    "syllabus": 2,
+    "angles": 0,
+    "ap": 20,
+    "importance": 12,
+    "reuse": 0
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Indian political parties - evolution, ideology and classification › Leaders → party (national presidents, FIRST presidents, founders, regional leaders)",
+     "text": "N. Chandrababu Naidu: TDP, now an NDA partner;",
+     "match": [
+      "NDA"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 3 Economy › C-5 › Impact of bifurcation on state revenue - revenue deficit, loss of Hyderabad revenues, resource gap › State demands to the Centre citing the revenue loss",
+     "text": "The SCS row led the TDP to leave the NDA in 2018 (TH, 18 May 2026).",
+     "match": [
+      "NDA"
+     ]
+    },
+    {
+     "tier": "exact",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian History › #105 · Interim Government and Prime Ministers",
+     "text": "Atal Bihari Vajpayee was Prime Minister during the NDA era.",
+     "match": [
+      "NDA"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "International",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 6 Current Affairs › International - treaties, agreements and developments in international organisations › IMF quota, SDR (\"paper gold\") basket and India's voting share",
+      "bullets": [
+       "SDR = IMF reserve asset (\"paper gold\"); basket of USD, euro, yuan, yen, pound . India's forex = foreign currency assets + gold + SDRs + reserve tranche (reserve position rose to $4.7 bn, ES 2025-26).",
+       "BRICS had 20% of world GDP but 11% of IMF votes in 2011; now ~40% of GDP with barely higher vote share (TH, 14 Sep 2026); New Delhi Declaration seeks quota and voting reform.",
+       "SHANTI Act 2025 caps nuclear liability at 300 million SDRs (~₹3,900 crore).",
+       "Not in your sources: India's exact current IMF quota and voting share."
+      ]
+     },
+     {
+      "topic": "Reservation · Backward Classes in the Constitution",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-5 › Reservation - constitutional basis, Indra Sawhney, creamy layer, EWS reservation, promotion in reservation › Backward Classes in the Constitution",
+      "bullets": [
+       "\"Backward Classes\" is not defined in the Constitution (APPSC G2 2017 key: the \"defined\" statement is the wrong one).",
+       "27% OBC quota in central jobs from 1993; in central educational institutions under the CEI (Reservation in Admission) Act, 2006, in force Jan 2007 (IYB 2026 says 2007) after the 2005 amendment to Art. 15 (IYB) [GK for the Act's year].",
+       "Central Educational Institutions (Reservation in Admission) Act, 2006 (in force 2007): 27% OBC seats in central institutions (IYB; GS 2007 key: 93rd Amendment); OBC = classes \"so determined by the Central Government\" (APP)."
+      ]
+     },
+     {
+      "topic": "Indra Sawhney and creamy layer link to NCBC",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › National Commission for SCs (338), STs (338A) and Backward Classes (338B); Special Officer for Linguistic Minorities (350B) › Indra Sawhney and creamy layer link to NCBC",
+      "bullets": [
+       "Statutory NCBC under the NCBC Act, 1993 (in force 2 April 1993), set up on the Indra Sawhney (1992) direction; had 5 members.",
+       "The 102nd Amendment also removed backward classes from the NCSC's purview .",
+       "105th Amendment, 2021 restored the States' power to prepare their own SEBC lists (after the Maratha quota judgment) ."
+      ]
+     },
+     {
+      "topic": "Constitutional and Statutory Bodies",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #65 · Constitutional and Statutory Bodies",
+      "bullets": [
+       "An extra-constitutional or non-statutory body is established through an executive order or cabinet resolution.",
+       "The National Commission for Backward Classes is governed by Article 338-B.",
+       "The President appoints the National Commission for Backward Classes.",
+       "The National Commission for Backward Classes received full constitutional status through the 102nd Constitutional Amendment Act, 2018.",
+       "The National Commission for Backward Classes is not merely a statutory body under the 1993 Act."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "e2126a34886a"
+  },
+  {
    "id": "aa514a901cf2",
    "date": "2026-10-10",
    "pubDate": "2026-10-10",
@@ -8208,6 +9357,130 @@
     ],
     "gaps": []
    }
+  },
+  {
+   "id": "f94caaca7e26",
+   "date": "2026-10-10",
+   "pubDate": "2026-10-11",
+   "time": "02:05",
+   "title": "CM Naidu sets Nov 15 deadline for local polls",
+   "summary": "AP Chief Minister N Chandrababu Naidu has set November 15 as the deadline to complete local body elections, asking Ministers to target a 100 per cent victory for the NDA alliance.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "AP Chief Minister N Chandrababu Naidu has set November 15 as the deadline to complete local body elections, asking Ministers to target a 100 per cent victory for the NDA alliance."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/cm-naidu-sets-nov-15-deadline-for-local-polls-1131142",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [],
+   "score": 32,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 2
+   },
+   "apFloor": true,
+   "notes": [
+    {
+     "tier": "book",
+     "src": "Prep notes",
+     "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Chief Minister and the State Council of Ministers; Advocate General of the State › Chief Minister - appointment (Article 164), floor test, oath, non-member time limit, collective responsibility, salaries",
+     "text": "In a hung Assembly the Governor uses his discretion, because the Constitution sets no criteria. Sarkaria (1987) and Punchhi (2010) give an order of preference: pre-poll alliance, then single largest party with support, then post-poll coalition, then post-poll alliance with outside support. An early floor test follows (LENSD 7 May 2026; TH 11 May 2026).",
+     "match": [
+      "alliance",
+      "sarkaria",
+      "punchhi"
+     ]
+    },
+    {
+     "tier": "book",
+     "src": "Rocket Sheets",
+     "where": "Rocket Sheets · Indian Polity › #1 · Constitutional Development and Key Firsts",
+     "text": "The 52nd Amendment of 1985 provided constitutional recognition to political parties through the Tenth Schedule and anti-defection provisions.",
+     "match": [
+      "political",
+      "parties",
+      "anti"
+     ]
+    }
+   ],
+   "brief": {
+    "v": 4,
+    "sections": [
+     {
+      "topic": "Elections · Exit polls and opinion polls",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Elections - delimitation, model code of conduct, EVM-VVPAT, NOTA, election petitions › Exit polls and opinion polls - Section 126A",
+      "bullets": [
+       "Exit poll: a poll of voters taken immediately after they leave the polling station; not the same as an opinion poll (APPSC 2018 key: a, c, d correct).",
+       "Section 126A RPA 1951: no exit poll may be conducted or published from the start of polling in the first phase until half an hour after the close of the last phase .",
+       "Opinion polls are barred in the 48 hours before the close of poll (Sec. 126) ."
+      ]
+     },
+     {
+      "topic": "Challenges in local devolution · Delays in local body elections and SEC autonomy",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Challenges in local devolution - funds, functions, functionaries; parallel bodies and capacity gaps › Delays in local body elections and SEC autonomy",
+      "bullets": [
+       "Art. 243K (243ZA for municipalities): SEC appointed by the Governor, removable only like a High Court judge; service conditions cannot be varied to the SEC's disadvantage (APPCA, Apr 2026) [GK for last point].",
+       "Before 1993 states postponed local polls at will; the SEC and the 5-year term with elections before expiry (or within 6 months of dissolution, Arts. 243E/243U) made local government permanent (APP).",
+       "AP Cabinet (18 Aug 2026): 34% BC reservation in rural and 33⅓% in urban local bodies; elections to be expedited to secure Central funds (₹12,150 crore at risk if not done by October); direct election of Mayors and municipal chairpersons (TH, 19 Aug 2026)."
+      ]
+     },
+     {
+      "topic": "Elections",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-3 › Panchayati Raj and urban bodies in Andhra Pradesh - structure, elections, finances, performance › Elections - unanimous-election incentives, recent polls",
+      "bullets": [
+       "The last GP polls were held in four phases in February 2021.",
+       "Second ordinary MPTC/ZPTC elections are being prepared; terms of the MPPs and ZPPs end on 23 and 24 September 2026.",
+       "Not in your sources: current cash incentive for unanimously elected (ekagreeva) panchayats."
+      ]
+     },
+     {
+      "topic": "Chief Ministers",
+      "src": "Prep notes",
+      "where": "Prep notes · Book 2 Polity, Society & IR › B-2 › Chief Minister and the State Council of Ministers; Advocate General of the State › Chief Ministers - FIRST woman CM and AP FIRSTs",
+      "bullets": [
+       "Woman CM of an Indian state: Person Sucheta Kripalani (UP, 1963)",
+       "CM of united AP (1956-60): Person Neelam Sanjeeva Reddy; first cabinet of 13 ministers (CDX)",
+       "CM of residuary AP (2014): Person N. Chandrababu Naidu",
+       "The first Speaker of the united AP Assembly was Nallapati Venkata Ramaiah (CDX)."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "c2267b63823a"
   },
   {
    "id": "7ba04d79e42c",
@@ -10613,231 +11886,6 @@
     ],
     "gaps": []
    }
-  },
-  {
-   "id": "8cfc93ef54a3",
-   "date": "2026-10-10",
-   "pubDate": "2026-10-10",
-   "title": "Red-Headed Vulture Sighted in Uttarakhand’s Munsiyari",
-   "summary": "A Red-Headed Vulture (Sarcogyps calvus), classified as Critically Endangered by the International Union for Conservation of Nature (IUCN), was sighted on 5 October 2026 i",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/red-headed-vulture-sighted-in-uttarakhands-munsiyari/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 8,
-   "band": "low",
-   "why": {
-    "syllabus": 6,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 2
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "exact",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Species-specific conservation projects - Project Tiger, Project Elephant, Gangetic dolphin, Great Indian Bustard, vulture, cheetah reintroduction › Vultures - decline, diclofenac ban, action plan, breeding centres",
-     "text": "India has 9 vulture species; 4 CR: white-rumped, slender-billed, long-billed, red-headed (APPCA 2026).",
-     "match": [
-      "Red-Headed"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "Loss of biodiversity · IUCN and Red Data Book",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Loss of biodiversity - causes, invasive alien species, IUCN Red List categories › IUCN and Red Data Book - HQ, publisher, colour pages, specialist groups",
-      "bullets": [
-       "IUCN was set up in 1948 and is headquartered at Gland, Switzerland (APPSC 2025). It is not a UN agency. It publishes the Red List and Red Data Books (APPCA; APP).",
-       "Red Data Book pages are colour-coded : pink pages for critically endangered species and green pages for species that were endangered but have recovered.",
-       "India's Red List Roadmap: assess 70,000 species by 2027, led by the NBA (APPCA 2026). IYB 2026 counts 7,076 Indian animal species in the various IUCN categories.",
-       "The Red Data Book / IUCN Red List is published by the International Union for Conservation of Nature and Natural Resources (IUCN); it lists threatened plant and animal species (not endemic species of hotspots, not protected sites - a UPSC trap).",
-       "The list prepared by IUCN for endangered species is called the Red List (not Brown/White/Black list); endangered species are listed in the red data book."
-      ]
-     },
-     {
-      "topic": "IUCN Categories and Species Statuses",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Environment › #19 · IUCN Categories and Species Statuses",
-      "bullets": [
-       "Critically Endangered is an IUCN species category.",
-       "The Great Indian Bustard is Critically Endangered.",
-       "The Siberian Crane is Critically Endangered.",
-       "The Sociable Lapwing is Critically Endangered.",
-       "The Red Panda is Endangered."
-      ]
-     },
-     {
-      "topic": "Species-specific conservation projects · Vultures",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Species-specific conservation projects - Project Tiger, Project Elephant, Gangetic dolphin, Great Indian Bustard, vulture, cheetah reintroduction › Vultures - decline, diclofenac ban, action plan, breeding centres",
-      "bullets": [
-       "Action Plan for Vulture Conservation 2020-25 called for a State-level vulture committee in each State and more breeding centres.",
-       "2026: the first attempt to release a captive-bred vulture in the Nilgiris landscape failed. The bird did not settle and died (TH, 30 Jun 2026).",
-       "India has 9 vulture species; 4 CR: white-rumped, slender-billed, long-billed, red-headed (APPCA 2026).",
-       "Action Plan for Vulture Conservation 2020-25, extended to 2030; \"The Vulture Network\" - first vulture conservation portal (APPCA 2026).",
-       "Breeding: Vulture Conservation and Breeding Centre, Pinjore (Haryana); Vulture Safe Zones. SAVE = Saving Asia's Vultures from Extinction consortium ."
-      ]
-     },
-     {
-      "topic": "Zoos and conservation breeding",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 5 Science, Tech & Environment › 22 › Conservation - in-situ (protected areas, biosphere reserves) and ex-situ (zoos, gene banks, seed banks) › Zoos and conservation breeding - Central Zoo Authority, programmes",
-      "bullets": [
-       "Central Zoo Authority (CZA): statutory body under the WPA 1972 (1991 amendment), set up 1992, under MoEF&CC; recognises zoos and coordinates planned conservation breeding .",
-       "Red panda: Centre Padmaja Naidu Himalayan Zoological Park, Darjeeling",
-       "GIB (Godawan, Rajasthan state bird) is Critically Endangered (APP); population <150; a 2024 SC order mandated underground power lines in its habitat (CDI)."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "9a8b92c547cd",
-   "date": "2026-10-10",
-   "pubDate": "2026-10-10",
-   "title": "Centre Approves German Funding Proposal for Telangana Urban Initiative",
-   "summary": "The Department of Economic Affairs (DEA) screening committee approved a proposal for ₹5,000 crore in external assistance from Germany’s development bank KfW for the Telan",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "The Department of Economic Affairs (DEA) screening committee approved a proposal for ₹5,000 crore in external assistance from Germany’s development bank KfW for the Telan"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/centre-approves-german-funding-proposal-for-telangana-urban-initiative/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 6,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 2,
-    "reuse": 0
-   },
-   "digest": true,
-   "notes": [
-    {
-     "tier": "book",
-     "src": "Prep notes",
-     "where": "Prep notes · Book 3 Economy › C-5 › Projects of external assistance in Andhra Pradesh - World Bank, ADB, JICA and other funded projects › Externally aided project → funding agency",
-     "text": "Green Energy Corridor Phase-I: Funding agency KfW (Germany)",
-     "match": [
-      "germany",
-      "kfw",
-      "funding"
-     ]
-    },
-    {
-     "tier": "book",
-     "src": "Rocket Sheets",
-     "where": "Rocket Sheets · Indian Economy › #7 · MSP, FRP and Agricultural Cost Concepts",
-     "text": "The Cabinet Committee on Economic Affairs (CCEA) approves FRP.",
-     "match": [
-      "economic",
-      "affairs",
-      "committee"
-     ]
-    }
-   ],
-   "brief": {
-    "v": 4,
-    "sections": [
-     {
-      "topic": "External funding for the capital",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-5 › Central government's assistance for building a new capital - commitments and actual releases › External funding for the capital - World Bank and ADB loans, HUDCO, Union Budget 2024-25 assistance",
-      "bullets": [
-       "World Bank and ADB: Amount sanctioned Rs 15,000 crore; Terms Concessional, 0.6% + TONA",
-       "HUDCO: Amount sanctioned Rs 11,000 crore; Terms Term loan for urban infrastructure",
-       "NABARD (NIDA): Amount sanctioned Rs 7,387.70 crore; Terms NABARD Infrastructure Development Assistance",
-       "The Union Budget 2024-25 promised Rs 15,000 crore of Centre-facilitated multilateral support . That assistance was fast-tracked in January 2026 (APPCA Jan 2026), and TH (18 Aug 2026) reports the Centre sanctioned Rs 15,000 crore for Amaravati."
-      ]
-     },
-     {
-      "topic": "Externally aided project → funding agency",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-5 › Projects of external assistance in Andhra Pradesh - World Bank, ADB, JICA and other funded projects › Externally aided project → funding agency",
-      "bullets": [
-       "AP Integrated Irrigation and Agriculture Transformation Project (APIIATP): Funding agency World Bank (APPSC G2 2025; G1 2022)",
-       "AP Irrigation and Livelihood Project Phase-II (APILIP-II): Funding agency JICA",
-       "AP Health Systems Strengthening: Funding agency World Bank",
-       "Green Energy Corridor Phase-I: Funding agency KfW (Germany)",
-       "AP Roads & Bridges Reconstruction; Mandal Connectivity & Rural Connectivity Improvement: Funding agency New Development Bank"
-      ]
-     },
-     {
-      "topic": "Status and funding",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-5 › Expressways and industrial corridors promised under the Act; Vizag-Chennai Industrial Corridor › Status and funding - loan tranches, land acquisition, node development",
-      "bullets": [
-       "Policy-Based Loan (reforms): ADB $125 mn; GoAP nil; Total $125 mn",
-       "Tranche-I and Policy-Based Loan agreements signed 23 Feb 2017 (DEA, ADB, GoAP); Tranche-I works (~₹2,300 crore) at an advanced stage (APP; APSES 2024-25).",
-       "Kopparthy: ₹202 crore under PM Gati Shakti-SASCI for a 46 MLD water supply and railway siding (APSES 2024-25).",
-       "Progress described as slow (CDI Block04); industry (CII) sought a special fund for VCIC and HBIC plug-and-play infrastructure before Budget 2026-27 (TH 1 Feb 2026)."
-      ]
-     },
-     {
-      "topic": "SCS vs Special Assistance Package",
-      "src": "Prep notes",
-      "where": "Prep notes · Book 3 Economy › C-5 › Special Assistance Package vs Special Category Status - Government's stand and measures taken › SCS vs Special Assistance Package - benefit by benefit",
-      "bullets": [
-       "CSS funding: SCS 90:10 grant, automatic; Special Assistance Package Money equal to the extra share, only via EAP repayments",
-       "Tax concessions for industry: SCS Yes; Special Assistance Package Only Sec 94(1) incentives; weaker",
-       "Legal footing: SCS Recognised category, automatic yearly flows; Special Assistance Package Executive package, no statutory permanence",
-       "Use of funds: SCS Across all schemes; Special Assistance Package Tied to approved external projects",
-       "Duration: SCS Promised 5 years; Special Assistance Package 2015-16 to 2019-20"
-      ]
-     }
-    ],
-    "gaps": []
-   }
   }
  ],
  "quiz": [
@@ -10856,6 +11904,20 @@
    "kind": "figure"
   },
   {
+   "id": "53fac01c02be:1ep8pvw",
+   "item": "53fac01c02be",
+   "title": "Pattiseema delivered water security to Delta, Seems: Nimmala",
+   "q": "Irrigation minister says 57 tmc ft of Godavari water diverted to Krishna this year Lift scheme ensured irrigation to ____ acres, drinking water for 30 lakh people",
+   "options": [
+    "5 lakh",
+    "7 lakh",
+    "11 lakh",
+    "14 lakh"
+   ],
+   "answer": 1,
+   "kind": "figure"
+  },
+  {
    "id": "28060664df90:rqrbsy",
    "item": "28060664df90",
    "title": "NBA Disburses Rs 2.02 Crore of ABS Funds from Seed Sector to Support Biodiversity Conservation and Community Well-Being at Grassroots Level",
@@ -10868,20 +11930,6 @@
    ],
    "answer": 3,
    "kind": "figure"
-  },
-  {
-   "id": "53bafaef4128:12zdbln",
-   "item": "53bafaef4128",
-   "title": "NDA parties in Andhra Pradesh to provide 34% representation for BCs in local body elections",
-   "q": "Before ____, Art. 338 treated references to SCs as including such backward classes as the President specified - hence BC complaints went to the SC commission; the 102nd Amendment added Art. 366 defining SEBCs by reference to Art. 342A.",
-   "options": [
-    "2017",
-    "2018",
-    "2019",
-    "2020"
-   ],
-   "answer": 1,
-   "kind": "year"
   },
   {
    "id": "ba31fc46d6d3:1dinynm",
@@ -10937,20 +11985,6 @@
     "22 percent"
    ],
    "answer": 1,
-   "kind": "figure"
-  },
-  {
-   "id": "4e253edf9e76:12txh9t",
-   "item": "4e253edf9e76",
-   "title": "Krishna delta farmers felicitate Chief Minister Naidu for bringing water through Pattiseema",
-   "q": "They lauded him for ensuring water security for Andhra Pradesh by successfully diverting 500 tmc ft of water to the Krishna delta over the last ____",
-   "options": [
-    "6 years",
-    "8 years",
-    "11 years",
-    "17 years"
-   ],
-   "answer": 2,
    "kind": "figure"
   },
   {
@@ -11035,6 +12069,20 @@
     "2020"
    ],
    "answer": 3,
+   "kind": "year"
+  },
+  {
+   "id": "d74ea891de06:wxa32t",
+   "item": "d74ea891de06",
+   "title": "How can lift irrigation projects help India take water to more farms?",
+   "q": "Per Drop More Crop: Content Micro-irrigation; under PMKSY ____-Dec 2021, now under RKVY",
+   "options": [
+    "2014",
+    "2015",
+    "2016",
+    "2017"
+   ],
+   "answer": 1,
    "kind": "year"
   },
   {
