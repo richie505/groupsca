@@ -105,3 +105,35 @@ val BRIEF_FILTERS: List<Pair<String, List<String>>> = listOf(
     "Ethics" to listOf("Ethics"),
     "Disaster Mgmt" to listOf("Disaster Management"),
 )
+
+/** The 6 books of the Combined Notes each briefing subject belongs to. */
+private val SUBJECT_BOOK = mapOf(
+    "Indian History & Culture" to "History & Culture",
+    "AP History & Culture" to "History & Culture",
+    "Constitution" to "Polity, Society & IR",
+    "Polity" to "Polity, Society & IR",
+    "Indian Society" to "Polity, Society & IR",
+    "Social Justice" to "Polity, Society & IR",
+    "International Relations" to "Polity, Society & IR",
+    "Governance" to "Polity, Society & IR",
+    "Public Administration" to "Polity, Society & IR",
+    "Ethics" to "Polity, Society & IR",
+    "Indian Economy" to "Economy",
+    "AP Economy" to "Economy",
+    "Indian Geography" to "Geography",
+    "AP Geography" to "Geography",
+    "Science & Technology" to "Science, Tech & Environment",
+    "Health" to "Science, Tech & Environment",
+    "Environment & Ecology" to "Science, Tech & Environment",
+    "Disaster Management" to "Science, Tech & Environment",
+)
+
+/** Categories read best under book 6 (general current affairs). */
+private val GENERAL = Regex("Awards|Sports|Appointments|Persons in News|Important Days|Books")
+
+/** The books (of the 6) this briefing item is filed under: by its subjects, and book 6 for awards, sports, people and days. */
+fun BriefItem.books(): List<String> {
+    val b = subjects.mapNotNull { SUBJECT_BOOK[it] }.toMutableList()
+    if (GENERAL.containsMatchIn(category) || b.isEmpty()) b += "Current Affairs"
+    return b.distinct()
+}

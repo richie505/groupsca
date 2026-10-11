@@ -209,7 +209,7 @@ private fun statusColors(s: String): Pair<Color, Color> = when (s) {
 /** One briefing item: headline, chips, paper mapping, status, text, Prelims, Mains, AP link, sources. */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
+fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
     val context = LocalContext.current
     var open by rememberSaveable(it.headline) { mutableStateOf(false) }
     var marking by remember { mutableStateOf(false) }

@@ -4,6 +4,7 @@ import com.appsc.ca.data.BOOKS
 import com.appsc.ca.data.Day
 import com.appsc.ca.data.Exam
 import com.appsc.ca.data.Fact
+import com.appsc.ca.data.books
 import com.appsc.ca.data.FeedIndex
 import com.appsc.ca.data.FeedJson
 import com.appsc.ca.data.Filter
@@ -155,6 +156,16 @@ class FeedParseTest {
         // the Economy filter finds the item by its subject
         val economy = com.appsc.ca.data.BRIEF_FILTERS.first { it.first == "Economy" }.second
         assertTrue(b.sections.national[0].subjects.any { it in economy })
+    }
+
+    @Test
+    fun briefingItemsAreFiledUnderTheSixBooks() {
+        fun item(subjects: List<String>, category: String = "") = com.appsc.ca.data.BriefItem(headline = "h", subjects = subjects, category = category)
+        assertEquals(listOf("Geography", "Economy"), item(listOf("AP Geography", "AP Economy")).books())
+        assertEquals(listOf("Polity, Society & IR"), item(listOf("Constitution", "Governance")).books())
+        assertEquals(listOf("Science, Tech & Environment"), item(listOf("Disaster Management")).books())
+        assertEquals(listOf("Polity, Society & IR", "Current Affairs"), item(listOf("International Relations"), "Awards & Prizes").books())
+        assertEquals(listOf("Current Affairs"), item(emptyList()).books())
     }
 
     @Test

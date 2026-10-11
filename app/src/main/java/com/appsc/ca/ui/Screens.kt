@@ -75,6 +75,7 @@ import com.appsc.ca.data.newsDaySpan
 import com.appsc.ca.data.nextUpdate
 import com.appsc.ca.data.Filter
 import com.appsc.ca.data.Item
+import com.appsc.ca.data.books
 import com.appsc.ca.data.Lane
 import com.appsc.ca.data.groupByUnit
 import com.appsc.ca.data.longDate
@@ -490,6 +491,8 @@ private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
             val ap = list.count { it.ap }
             val unread = list.count { it.id !in vm.readIds && !it.oneLiner }
             val (fg, bg) = bookColor(b)
+            val briefN = vm.briefings.sumOf { br -> br.allItems.count { b in it.books() } }
+            val briefToday = vm.briefings.firstOrNull()?.allItems?.count { b in it.books() } ?: 0
             Row(
                 Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp).clip(RoundedCornerShape(14.dp)).background(bg)
                     .clickable { onOpen(b) }.padding(16.dp),
@@ -498,8 +501,13 @@ private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
                 Text("${bookNumber(b)}", style = MaterialTheme.typography.headlineSmall, color = fg, modifier = Modifier.width(40.dp))
                 Column(Modifier.weight(1f)) {
                     Text(b, style = MaterialTheme.typography.titleMedium, color = C.Ink, fontWeight = FontWeight.Bold)
+                    if (briefN > 0) Text(
+                        "📰 Briefing: $briefToday in the latest · $briefN in all",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = fg,
+                    )
                     Text(
-                        "$today new today · ${list.count { !it.oneLiner }} stories · $ap Andhra Pradesh · $unread unread",
+                        "News feed: $today new today · ${list.count { !it.oneLiner }} stories · $ap Andhra Pradesh · $unread unread",
                         style = MaterialTheme.typography.labelMedium,
                         color = C.Muted,
                     )
@@ -514,13 +522,42 @@ private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
 @Composable
 private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit, onArticle: (List<String>, Int) -> Unit) {
     var lane by rememberSaveable { mutableStateOf(Lane.ALL) }
+    var showBrief by rememberSaveable { mutableStateOf(vm.briefings.isNotEmpty()) }
+    var section by rememberSaveable { mutableStateOf<String?>(null) }
+    // the daily briefing's items filed under this book, newest day first
+    val briefed = vm.briefings.map { br -> br.date to br.allItems.filter { book in it.books() && (section == null || it.section == section) }.sortedBy { it.importance } }
+        .filter { it.second.isNotEmpty() }
     val inBook = Filter(exam = vm.exam).apply(vm.shown(vm.allItems)).filter { it.book == book && !it.digest }
     val stories = Filter(lane, vm.exam).apply(inBook).filter { !it.oneLiner }
         .sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.top }.thenByDescending { it.score })
     val oneLiners = Filter(lane, vm.exam).apply(inBook).filter { it.oneLiner }.sortedByDescending { it.date }
     val ids = stories.map { it.id }
     LazyColumn(Modifier.fillMaxSize()) {
-        item { Header("${bookNumber(book)}. $book", "${stories.size} stories · last ${vm.days.size} days", onBack = onBack) }
+        item { Header("${bookNumber(book)}. $book", "${briefed.sumOf { it.second.size }} briefing items · ${stories.size} news stories", onBack = onBack) }
+        item {
+            ChipRow {
+                FilterChip(selected = showBrief, onClick = { showBrief = true }, label = { Text("📰 Daily briefing (${briefed.sumOf { it.second.size }})") })
+                FilterChip(selected = !showBrief, onClick = { showBrief = false }, label = { Text("News feed (${stories.size})") })
+            }
+        }
+        if (showBrief) {
+            item {
+                ChipRow {
+                    for ((label, key) in listOf("All" to null, "International" to "INTERNATIONAL", "National" to "NATIONAL", "Andhra Pradesh" to "ANDHRA PRADESH")) {
+                        FilterChip(selected = section == key, onClick = { section = key }, label = { Text(label) })
+                    }
+                }
+            }
+            if (briefed.isEmpty()) item { Empty("No briefing items under this subject yet.") }
+            for ((d, list) in briefed) {
+                item(key = "bd-$d") {
+                    Text(longDate(d).uppercase(), style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(start = 18.dp, top = 14.dp, bottom = 2.dp))
+                }
+                items(list, key = { "b-$d-" + it.section + it.headline }) { BriefCard(vm, d, it) }
+            }
+            item { Spacer(Modifier.height(24.dp)) }
+            return@LazyColumn
+        }
         item {
             ChipRow {
                 for (l in Lane.entries) {
