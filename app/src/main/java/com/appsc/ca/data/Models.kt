@@ -19,6 +19,50 @@ data class FeedIndex(
     val digests: List<DigestRef> = emptyList(),
 )
 
+/** feed/trending.json: exam topics among Google's trending searches, and the week's most covered topics. */
+@Serializable
+data class Trending(
+    val updated: String = "",
+    val google: List<TrendItem> = emptyList(),
+    val topics: List<TopTopic> = emptyList(),
+)
+
+@Serializable
+data class TrendItem(
+    val query: String,
+    val traffic: String = "",
+    val date: String = "",
+    val time: String = "",
+    val subject: String = "",
+    val units: List<SyllabusUnit> = emptyList(),
+    val score: Int = 0,
+    val ap: Boolean = false,
+    val news: List<TrendNews> = emptyList(),
+    /** Stories on file about it. */
+    val related: List<TrendStory> = emptyList(),
+    /** Its Rocket notes. */
+    val sections: List<StaticSection> = emptyList(),
+)
+
+@Serializable
+data class TrendNews(val title: String = "", val url: String = "", val source: String = "")
+
+@Serializable
+data class TrendStory(val id: String = "", val date: String = "", val title: String = "")
+
+@Serializable
+data class TopTopic(
+    val thread: String = "",
+    val title: String = "",
+    val latest: String = "",
+    val latestId: String = "",
+    val subject: String = "",
+    val ap: Boolean = false,
+    val reports: Int = 0,
+    val days: Int = 0,
+    val since: String = "",
+)
+
 @Serializable
 data class DigestRef(val kind: String, val start: String, val file: String = "", val topics: Int = 0, val main: Int = 0)
 

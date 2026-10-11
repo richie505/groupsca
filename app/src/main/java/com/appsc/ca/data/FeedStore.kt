@@ -22,6 +22,9 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
     private val root = File(context.filesDir, "feed")
     private val daysDir = File(root, "days")
     private val indexFile = File(root, "index.json")
+    private val trendingFile = File(root, "trending.json")
+
+    fun cachedTrending(): Trending? = read(trendingFile)
 
     fun cachedIndex(): FeedIndex? = read(indexFile)
 
@@ -54,6 +57,12 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
             }
         }
         writeAtomically(indexFile, indexText)
+        // Trending is extra: a failure there never fails the refresh
+        runCatching {
+            val t = get("trending.json")
+            FeedJson.decodeFromString<Trending>(t)
+            writeAtomically(trendingFile, t)
+        }
 
         val wanted = keep.mapTo(HashSet()) { "${it.date}.json" }
         daysDir.listFiles()?.filter { it.name !in wanted }?.forEach { it.delete() }

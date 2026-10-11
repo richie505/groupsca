@@ -15,6 +15,9 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.icons.filled.Newspaper
+import androidx.compose.material.icons.automirrored.filled.TrendingUp
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.filled.Quiz
 import androidx.compose.foundation.lazy.items
@@ -78,10 +81,10 @@ import com.appsc.ca.data.longDate
 import com.appsc.ca.data.shortDate
 
 private enum class Tab(val label: String, val icon: ImageVector) {
-    TODAY("Today", Icons.Filled.Today),
-    SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
-    DIGEST("Digest", Icons.Filled.DateRange),
-    QUIZ("Quiz", Icons.Filled.Quiz),
+    HOME("Home", Icons.Filled.Home),
+    TRENDING("Trending", Icons.AutoMirrored.Filled.TrendingUp),
+    NEWS("News", Icons.Filled.Newspaper),
+    PRACTICE("Practice", Icons.Filled.Quiz),
     SAVED("Saved", Icons.Filled.Bookmark),
 }
 
@@ -91,15 +94,19 @@ private sealed interface Route {
     data object SettingsRoute : Route
     data class SubjectRoute(val book: String) : Route
     data class DigestRoute(val kind: String, val start: String) : Route
+    data class ArticleRoute(val ids: List<String>, val index: Int) : Route
+    data object SearchRoute : Route
 }
 
 @Composable
 fun App(vm: AppViewModel) {
-    var tab by rememberSaveable { mutableStateOf(Tab.TODAY) }
+    var tab by rememberSaveable { mutableStateOf(Tab.HOME) }
     val stack = remember { mutableStateListOf<Route>() }
 
     BackHandler(enabled = stack.isNotEmpty()) { stack.removeAt(stack.lastIndex) }
     val back: () -> Unit = { if (stack.isNotEmpty()) stack.removeAt(stack.lastIndex) }
+    val openArticle: (List<String>, Int) -> Unit = { ids, i -> stack.add(Route.ArticleRoute(ids, i)) }
+    val openDigest: (Period) -> Unit = { p -> stack.add(Route.DigestRoute(p.kind, p.start.toString())) }
 
     // Settings → Larger text
     val d = androidx.compose.ui.platform.LocalDensity.current
@@ -133,12 +140,22 @@ fun App(vm: AppViewModel) {
                 Route.SettingsRoute -> SettingsScreen(vm, onBack = back)
                 is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back)
                 is Route.DigestRoute -> DigestScreen(vm, Period(r.kind, java.time.LocalDate.parse(r.start)), onBack = back)
+                is Route.ArticleRoute -> ArticleScreen(vm, r.ids, r.index, onBack = back)
+                Route.SearchRoute -> SearchScreen(vm, onArticle = openArticle, onBack = back)
                 null -> when (tab) {
-                    Tab.TODAY -> DayFeed(vm, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
-                    Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
-                    Tab.DIGEST -> DaysScreen(vm, onDigest = { p -> stack.add(Route.DigestRoute(p.kind, p.start.toString())) }) { stack.add(Route.DayRoute(it)) }
-                    Tab.QUIZ -> PracticeScreen(vm)
-                    Tab.SAVED -> SavedScreen(vm)
+                    Tab.HOME -> HomeScreen(
+                        vm,
+                        onArticle = openArticle,
+                        onNews = { tab = Tab.NEWS },
+                        onPractice = { tab = Tab.PRACTICE },
+                        onDigest = openDigest,
+                        onSearch = { stack.add(Route.SearchRoute) },
+                        onSettings = { stack.add(Route.SettingsRoute) },
+                    )
+                    Tab.TRENDING -> TrendingScreen(vm, onArticle = openArticle)
+                    Tab.NEWS -> NewsScreen(vm, onArticle = openArticle, onDigest = openDigest)
+                    Tab.PRACTICE -> PracticeScreen(vm)
+                    Tab.SAVED -> SavedScreen(vm, onArticle = openArticle)
                 }
             }
         }
@@ -664,11 +681,12 @@ private fun UnitScreen(vm: AppViewModel, code: String, onBack: () -> Unit) {
 // ---------------------------------------------------------------------------
 
 @Composable
-private fun SavedScreen(vm: AppViewModel) {
+private fun SavedScreen(vm: AppViewModel, onArticle: (List<String>, Int) -> Unit) {
+    val ids = vm.saved.map { it.id }
     LazyColumn(Modifier.fillMaxSize()) {
         item { Header("Saved", "${vm.saved.size} stories kept for revision") }
         if (vm.saved.isEmpty()) item { Empty("Tap the bookmark on any story to keep it here. Saved stories stay even after the day is removed from the phone.") }
-        itemsIndexed(vm.saved, key = { _, x -> x.id }) { idx, _ -> ListCard(vm, vm.saved, idx, readFlag = true, savedFlag = true) }
+        items(vm.saved, key = { it.id }) { i -> ArticleRow(i, true, vm.isDone(i)) { onArticle(ids, ids.indexOf(i.id)) } }
     }
 }
 

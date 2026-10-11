@@ -44,6 +44,22 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         private set
     var speechRate by mutableStateOf(1f)
         private set
+    var trending by mutableStateOf<com.appsc.ca.data.Trending?>(null)
+        private set
+
+    /** A story by id, from the days on the phone or the saved ones. */
+    fun itemById(id: String): Item? = allItems.firstOrNull { it.id == id } ?: saved.firstOrNull { it.id == id }
+
+    /** Stories whose headline or summary has every word of [query] (search). */
+    fun search(query: String): List<Item> {
+        val words = query.lowercase().split(Regex("\\s+")).filter { it.length > 1 }
+        if (words.isEmpty()) return emptyList()
+        return shown(allItems).filter { it.topicOf.isEmpty() }.filter { i ->
+            val text = (i.title + " " + i.summary).lowercase()
+            words.all { it in text }
+        }.distinctBy { it.id }.sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.score }).take(60)
+    }
+
     var perDay by mutableStateOf(15)
         private set
     var largeText by mutableStateOf(false)
@@ -174,6 +190,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             withContext(Dispatchers.IO) {
                 val d = feed.cachedDays()
                 val i = feed.cachedIndex()
+                val tr = feed.cachedTrending()
                 val s = user.saved()
                 val r = user.readIds()
                 val a = user.answers()
@@ -182,7 +199,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val dn = user.doneThreads()
                 val tl = user.topicLinks()
                 withContext(Dispatchers.Main) {
-                    days = d; index = i; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn; topicLinks = tl
+                    days = d; index = i; trending = tr; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn; topicLinks = tl
                     exam = user.exam; notify = user.notify; speechRate = user.speechRate
                     perDay = user.perDay; largeText = user.largeText; telugu = user.telugu
                 }
@@ -201,6 +218,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val d = withContext(Dispatchers.IO) { feed.cachedDays() }
                 days = d
                 index = feed.cachedIndex()
+                trending = withContext(Dispatchers.IO) { feed.cachedTrending() }
                 pruneRead(d)
             } catch (e: Exception) {
                 message = if (days.isEmpty()) {

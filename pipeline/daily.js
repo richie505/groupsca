@@ -36,6 +36,7 @@ const X = require('./lib/extras');
 const Th = require('./lib/threads');
 const Dg = require('./lib/digests');
 const E = require('./lib/exam');
+const Tr = require('./lib/trends');
 
 // When the collection runs (IST), set from ops/publish-times.md: after the
 // morning papers' uploads (closes yesterday), after PIB's and the daytime
@@ -501,6 +502,20 @@ async function run(args) {
   // Every story on file gets its static notes, including ones published before
   // notes existed or while the notes could not be fetched.
   if (notesLoaded) report.backfilled = backfillNotes(args.out, notes);
+  // Trending: Google's trending searches in India that are exam material (not for a backfill)
+  if (!args.prefetched) {
+    try {
+      const all = fs.readdirSync(path.join(args.out, 'days')).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort()
+        .map((f) => JSON.parse(fs.readFileSync(path.join(args.out, 'days', f), 'utf8')));
+      const stories = all.slice(-3).flatMap((d) => d.items.filter((i) => !i.topicOf));
+      const trends = Tr.parseTrends(await load(Tr.TRENDS_URL));
+      const fresh = trends.map((t) => Tr.assess(t, { vocab, notes, stories })).filter(Boolean);
+      report.trends = `${fresh.length} of ${trends.length}`;
+      Tr.writeTrending(args.out, fresh, all);
+    } catch (e) {
+      report.trends = `failed: ${e.message}`;
+    }
+  }
   writeIndex(args.out);
   return { report, kept, scored };
 }

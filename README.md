@@ -7,7 +7,7 @@
 > chosen by its facts that share two of the story's subject words). AIR News is read through its WordPress API
 > (every English post, not the RSS feeds' latest 10). Days before the feed began are collected by
 > **Actions → Backfill past days** (`pipeline/tools/backfill.js`: The Hindu and BusinessLine archive sitemaps,
-> AIR's API and PIB releases by number). The app has five tabs (Today · Subjects · Digest · Quiz · Saved; Settings is the gear on Today);
+> AIR's API and PIB releases by number). The app (4.0, laid out like a daily CA app) has five tabs: **Home** (highlights, today's reading, revision, weekly focus, updates, one-liners), **Trending** (exam topics among Google's trending searches in India, `pipeline/lib/trends.js` → `feed/trending.json`, and the week's most covered topics), **News** (News Today by the 6 subjects and any day, Weekly focus, Monthly), **Practice** (revise and quiz) and **Saved**; each story opens as a page with its context, the news, "About …" sections from the Rocket Sheets, how the story moved, tags, sources, Previous / Next and a table of contents; Settings and search are on Home;
 > filters fold away; Settings sets new topics a day (10/15/25), larger text, Telugu headlines and read-aloud speed.
 
 Daily current affairs for APPSC **Group-I and Group-II**, with **Andhra Pradesh as a full lane of its own** —

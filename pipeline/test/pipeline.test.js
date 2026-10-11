@@ -447,3 +447,21 @@ test('AIR News through its WordPress API: English posts only, with their categor
   assert.equal(rows[0].summary, 'The launch was from Sriharikota.');
   assert.deepEqual(rows[0].categories, [12]);
 });
+
+test('trending: Google trending searches kept only when they are exam material', () => {
+  const Tr = require('../lib/trends');
+  const xml = `<rss><channel>
+    <item><title>lottery sambad</title><ht:approx_traffic>50000+</ht:approx_traffic><pubDate>Sun, 11 Oct 2026 08:00:00 -0700</pubDate>
+      <ht:news_item><ht:news_item_title>Nagaland Dear Lottery Result Today</ht:news_item_title><ht:news_item_url>https://x</ht:news_item_url><ht:news_item_source>G</ht:news_item_source></ht:news_item></item>
+    <item><title>repo rate</title><ht:approx_traffic>20000+</ht:approx_traffic><pubDate>Sun, 11 Oct 2026 08:00:00 -0700</pubDate>
+      <ht:news_item><ht:news_item_title>RBI Monetary Policy Committee hikes repo rate by 25 basis points to curb inflation</ht:news_item_title><ht:news_item_url>https://y</ht:news_item_url><ht:news_item_source>The Hindu</ht:news_item_source></ht:news_item></item>
+  </channel></rss>`;
+  const trends = Tr.parseTrends(xml);
+  assert.equal(trends.length, 2);
+  assert.equal(trends[1].news[0].source, 'The Hindu');
+  const vocab = S.loadVocab();
+  assert.equal(Tr.assess(trends[0], { vocab, notes: NOTES }), null);
+  const repo = Tr.assess(trends[1], { vocab, notes: NOTES, stories: [{ id: 's', date: '2026-10-10', title: 'RBI repo rate decision today', score: 70 }] });
+  assert.ok(repo && repo.subject === 'Economy');
+  assert.deepEqual(repo.related.map((r) => r.id), ['s']);
+});
