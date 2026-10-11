@@ -84,8 +84,8 @@ private enum class Tab(val label: String, val icon: ImageVector) {
     HOME("Home", Icons.Filled.Home),
     TRENDING("Trending", Icons.AutoMirrored.Filled.TrendingUp),
     NEWS("News", Icons.Filled.Newspaper),
+    SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
     PRACTICE("Practice", Icons.Filled.Quiz),
-    SAVED("Saved", Icons.Filled.Bookmark),
 }
 
 private sealed interface Route {
@@ -96,6 +96,7 @@ private sealed interface Route {
     data class DigestRoute(val kind: String, val start: String) : Route
     data class ArticleRoute(val ids: List<String>, val index: Int) : Route
     data object SearchRoute : Route
+    data object SavedRoute : Route
 }
 
 @Composable
@@ -138,10 +139,11 @@ fun App(vm: AppViewModel) {
                 is Route.DayRoute -> DayFeed(vm, fixedDate = r.date, onBack = back)
                 is Route.UnitRoute -> UnitScreen(vm, r.code, onBack = back)
                 Route.SettingsRoute -> SettingsScreen(vm, onBack = back)
-                is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back)
+                is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back, onArticle = openArticle)
                 is Route.DigestRoute -> DigestScreen(vm, Period(r.kind, java.time.LocalDate.parse(r.start)), onBack = back)
                 is Route.ArticleRoute -> ArticleScreen(vm, r.ids, r.index, onBack = back)
                 Route.SearchRoute -> SearchScreen(vm, onArticle = openArticle, onBack = back)
+                Route.SavedRoute -> SavedScreen(vm, onArticle = openArticle, onBack = back)
                 null -> when (tab) {
                     Tab.HOME -> HomeScreen(
                         vm,
@@ -151,11 +153,12 @@ fun App(vm: AppViewModel) {
                         onDigest = openDigest,
                         onSearch = { stack.add(Route.SearchRoute) },
                         onSettings = { stack.add(Route.SettingsRoute) },
+                        onSaved = { stack.add(Route.SavedRoute) },
                     )
                     Tab.TRENDING -> TrendingScreen(vm, onArticle = openArticle)
                     Tab.NEWS -> NewsScreen(vm, onArticle = openArticle, onDigest = openDigest)
+                    Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
                     Tab.PRACTICE -> PracticeScreen(vm)
-                    Tab.SAVED -> SavedScreen(vm, onArticle = openArticle)
                 }
             }
         }
@@ -467,10 +470,10 @@ private fun DayFeed(
 
 @Composable
 private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
-    val all = Filter(exam = vm.exam).apply(vm.shown(vm.allItems))
+    val all = Filter(exam = vm.exam).apply(vm.shown(vm.allItems)).filter { !it.digest || it.oneLiner }
     val latest = vm.days.firstOrNull()?.date
     LazyColumn(Modifier.fillMaxSize()) {
-        item { Header("Current affairs by subject", "The 6 books of your Combined Notes · last ${vm.days.size} days") }
+        item { Header("Subjects", "Current affairs by the 6 books of your Combined Notes · last ${vm.days.size} days") }
         item {
             ChipRow {
                 for (e in Exam.entries) FilterChip(selected = vm.exam == e, onClick = { vm.chooseExam(e) }, label = { Text(e.label) })
@@ -478,65 +481,63 @@ private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
         }
         items(BOOKS, key = { it }) { b ->
             val list = all.filter { it.book == b }
-            val today = list.count { it.date == latest }
+            val today = list.count { it.date == latest && !it.oneLiner }
             val ap = list.count { it.ap }
-            val unread = list.count { it.id !in vm.readIds }
+            val unread = list.count { it.id !in vm.readIds && !it.oneLiner }
+            val (fg, bg) = bookColor(b)
             Row(
-                Modifier.fillMaxWidth().clickable { onOpen(b) }.padding(horizontal = 16.dp, vertical = 14.dp),
+                Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp).clip(RoundedCornerShape(14.dp)).background(bg)
+                    .clickable { onOpen(b) }.padding(16.dp),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
-                Text("${bookNumber(b)}", style = MaterialTheme.typography.titleLarge, color = C.Accent, modifier = Modifier.width(36.dp))
+                Text("${bookNumber(b)}", style = MaterialTheme.typography.headlineSmall, color = fg, modifier = Modifier.width(40.dp))
                 Column(Modifier.weight(1f)) {
-                    Text(b, style = MaterialTheme.typography.titleMedium, color = C.Ink)
-                    Text("$today today · ${list.size} in all · $ap Andhra Pradesh · $unread unread", style = MaterialTheme.typography.labelMedium, color = C.Muted)
+                    Text(b, style = MaterialTheme.typography.titleMedium, color = C.Ink, fontWeight = FontWeight.Bold)
+                    Text(
+                        "$today new today · ${list.count { !it.oneLiner }} stories · $ap Andhra Pradesh · $unread unread",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = C.Muted,
+                    )
                 }
             }
-            HorizontalDivider(color = C.Line)
         }
+        item { Spacer(Modifier.height(24.dp)) }
     }
 }
 
 /** One book's current affairs, newest day first, with the lanes on top. */
 @Composable
-private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit) {
+private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit, onArticle: (List<String>, Int) -> Unit) {
     var lane by rememberSaveable { mutableStateOf(Lane.ALL) }
-    val inBook = Filter(exam = vm.exam).apply(vm.shown(vm.allItems)).filter { it.book == book }
-    val shown = Filter(lane, vm.exam).apply(inBook).sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.score })
-    // story id -> its row (2 head rows, then a date heading before each new day)
-    val rows = remember(shown) {
-        val map = HashMap<String, Int>()
-        var row = 2 + (if (shown.isEmpty()) 1 else 0)
-        var last = ""
-        for ((idx, i) in shown.withIndex()) {
-            if (i.date != last) { last = i.date; row++ }
-            map[i.id] = row++
-        }
-        map
-    }
-    val listState = androidx.compose.foundation.lazy.rememberLazyListState()
-    FollowReading(listState) { id -> rows[id] ?: -1 }
-    LazyColumn(Modifier.fillMaxSize(), state = listState) {
-        item { Header("${bookNumber(book)}. $book", "${inBook.size} stories · last ${vm.days.size} days", onBack = onBack) }
+    val inBook = Filter(exam = vm.exam).apply(vm.shown(vm.allItems)).filter { it.book == book && !it.digest }
+    val stories = Filter(lane, vm.exam).apply(inBook).filter { !it.oneLiner }
+        .sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.top }.thenByDescending { it.score })
+    val oneLiners = Filter(lane, vm.exam).apply(inBook).filter { it.oneLiner }.sortedByDescending { it.date }
+    val ids = stories.map { it.id }
+    LazyColumn(Modifier.fillMaxSize()) {
+        item { Header("${bookNumber(book)}. $book", "${stories.size} stories · last ${vm.days.size} days", onBack = onBack) }
         item {
             ChipRow {
                 for (l in Lane.entries) {
-                    val n = inBook.count { l.matches(it) }
+                    val n = inBook.count { l.matches(it) && !it.oneLiner }
                     FilterChip(selected = lane == l, onClick = { lane = l }, label = { Text("${l.label} ($n)") })
                 }
             }
         }
-        if (shown.isEmpty()) item { Empty("No stories under this subject yet.") }
+        if (stories.isEmpty()) item { Empty("No stories under this subject yet.") }
         var lastDate = ""
-        for ((idx, i) in shown.withIndex()) {
+        for (i in stories) {
             if (i.date != lastDate) {
                 lastDate = i.date
                 item(key = "d-${i.date}") {
-                    Text(longDate(i.date).uppercase(), style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(start = 16.dp, top = 14.dp, bottom = 2.dp))
+                    Text(longDate(i.date).uppercase(), style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(start = 18.dp, top = 14.dp, bottom = 2.dp))
                 }
             }
-            item(key = i.id) {
-                ListCard(vm, shown, idx)
-            }
+            item(key = i.id) { ArticleRow(i, i.id in vm.readIds, vm.isDone(i)) { onArticle(ids, ids.indexOf(i.id)) } }
+        }
+        if (oneLiners.isNotEmpty()) {
+            item { Text("ONE-LINERS", style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(start = 18.dp, top = 16.dp, bottom = 4.dp)) }
+            items(oneLiners, key = { "o-" + it.id }) { OneLinerRow(it) }
         }
         item { Spacer(Modifier.height(24.dp)) }
     }
@@ -681,10 +682,10 @@ private fun UnitScreen(vm: AppViewModel, code: String, onBack: () -> Unit) {
 // ---------------------------------------------------------------------------
 
 @Composable
-private fun SavedScreen(vm: AppViewModel, onArticle: (List<String>, Int) -> Unit) {
+private fun SavedScreen(vm: AppViewModel, onArticle: (List<String>, Int) -> Unit, onBack: () -> Unit) {
     val ids = vm.saved.map { it.id }
     LazyColumn(Modifier.fillMaxSize()) {
-        item { Header("Saved", "${vm.saved.size} stories kept for revision") }
+        item { Header("Saved", "${vm.saved.size} stories kept for revision", onBack = onBack) }
         if (vm.saved.isEmpty()) item { Empty("Tap the bookmark on any story to keep it here. Saved stories stay even after the day is removed from the phone.") }
         items(vm.saved, key = { it.id }) { i -> ArticleRow(i, true, vm.isDone(i)) { onArticle(ids, ids.indexOf(i.id)) } }
     }

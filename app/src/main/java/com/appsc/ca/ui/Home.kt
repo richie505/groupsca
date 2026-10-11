@@ -21,6 +21,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Search
@@ -133,6 +134,7 @@ fun HomeScreen(
     onDigest: (Period) -> Unit,
     onSearch: () -> Unit,
     onSettings: () -> Unit,
+    onSaved: () -> Unit,
 ) {
     val lists = dayLists(vm, vm.days.firstOrNull()?.date)
     PullToRefreshBox(isRefreshing = vm.refreshing, onRefresh = vm::refresh, modifier = Modifier.fillMaxSize()) {
@@ -140,6 +142,7 @@ fun HomeScreen(
             item {
                 TitleBar("Current Affairs", "APPSC Group-I · Group-II · exam news only") {
                     IconButton(onClick = onSearch) { Icon(Icons.Filled.Search, "Search") }
+                    IconButton(onClick = onSaved) { Icon(Icons.Filled.Bookmark, "Saved") }
                     IconButton(onClick = vm::refresh) { Icon(Icons.Filled.Refresh, "Refresh") }
                     IconButton(onClick = onSettings) { Icon(Icons.Filled.Settings, "Settings") }
                 }
