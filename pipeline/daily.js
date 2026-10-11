@@ -35,6 +35,7 @@ const T = require('./lib/topics');
 const X = require('./lib/extras');
 const Th = require('./lib/threads');
 const Dg = require('./lib/digests');
+const E = require('./lib/exam');
 
 // When the collection runs (IST), set from ops/publish-times.md: after the
 // morning papers' uploads (closes yesterday), after PIB's and the daytime
@@ -148,16 +149,40 @@ function setNewsDay(i) {
   i.date = F.newsDay({ date: i.pubDate, time: i.time }) || i.pubDate;
 }
 
+/**
+ * A WordPress API source: one page of up to 100 posts, then the next pages while full. Each post
+ * takes its category's source id and name; posts in no listed category are left out.
+ */
+async function wpRows(src, first, load, date) {
+  const all = F.parseWpPosts(first);
+  let page = 2;
+  let last = all.length;
+  while (last >= 100 && page <= 5) {
+    const more = F.parseWpPosts(await load(`${src.url}&after=${addDays(date, -1)}T00:00:00&page=${page}`, src).catch(() => '[]'));
+    all.push(...more);
+    last = more.length;
+    page++;
+  }
+  const rows = [];
+  for (const r of all) {
+    const cat = (r.categories || []).map((c) => src.categories[c]).find(Boolean);
+    if (cat) rows.push({ ...r, sourceIdOverride: cat[0], sourceNameOverride: cat[1] });
+  }
+  return { src, rows, error: rows.length ? null : 'no items parsed' };
+}
+
 async function fetchAll(load, date) {
   const results = await Promise.all(
     SOURCES.map(async (src) => {
       try {
         // One retry: a slow site (AffairsCloud timed out once on 3 Oct 2026)
         // should not cost the day.
-        const body = await load(src.url, src).catch(async () => {
+        const url = src.kind === 'wp-api' ? `${src.url}&after=${addDays(date, -1)}T00:00:00` : src.url;
+        const body = await load(url, src).catch(async () => {
           await new Promise((r) => setTimeout(r, 3000));
-          return load(src.url, src);
+          return load(url, src);
         });
+        if (src.kind === 'wp-api') return wpRows(src, body, load, date);
         const rows =
           src.kind === 'pib-index' ? F.parsePibIndex(body)
           : src.kind === 'sitemap' ? F.parseSitemap(body, { pathIncludes: src.pathIncludes })
@@ -172,10 +197,10 @@ async function fetchAll(load, date) {
   );
   const status = results.map(({ src, rows, error }) => ({ id: src.id, name: src.name, found: rows.length, error }));
   const items = results.flatMap(({ src, rows }) =>
-    rows.map((r) => ({
+    rows.map(({ sourceIdOverride, sourceNameOverride, categories, ...r }) => ({
       ...r,
-      sourceId: src.id,
-      sourceName: src.name,
+      sourceId: sourceIdOverride || src.id,
+      sourceName: sourceNameOverride || src.name,
       primary: !!src.primary,
       apSource: !!src.ap,
       opinion: !!src.opinion,
@@ -213,16 +238,17 @@ function backfillNotes(out, notes, blocks = St.loadBlocks(path.join(out, 'wrong-
     const file = path.join(dir, f);
     const text = fs.readFileSync(file, 'utf8');
     const day = JSON.parse(text);
+    // only what the exam needs: politics, protests, crime, markets and routine events out
+    day.items = day.items.filter(E.isExam);
     for (const it of day.items) {
       // re-linked when the rules change, or when one of its notes was reported wrong
       const reported = it.brief && (it.brief.sections || []).some((sec) => St.blocked(blocks, sec.where, it));
-      if (!it.brief || it.brief.v !== St.BRIEF_VERSION || reported) it.brief = St.briefOf(notes, it, blocks);
-      if (it.notes && it.notes.length) continue;
-      const linked = St.staticFor(notes, it);
-      if (linked.length) {
-        it.notes = linked;
+      if (!it.brief || it.brief.v !== St.BRIEF_VERSION || reported) {
+        it.brief = St.briefOf(notes, it, blocks);
         n++;
       }
+      // the static notes are the brief's (Rocket Sheets); the older single-note links are gone
+      delete it.notes;
     }
     // one card per topic: reports of the same story grouped under the best one
     T.groupTopics(day.items);
@@ -366,7 +392,8 @@ async function run(args) {
   const load = loader(args.fixtures);
   const vocab = S.loadVocab();
 
-  const { items: fetched, status } = await fetchAll(load, date);
+  // a backfill hands in the day's articles itself (pipeline/tools/backfill.js)
+  const { items: fetched, status } = args.prefetched || (await fetchAll(load, date));
   // From here on `date` is the NEWS day; `pubDate` + `time` are when it was published.
   for (const i of fetched) setNewsDay(i);
   let items = fetched.filter((i) => window.has(i.date));
@@ -435,13 +462,13 @@ async function run(args) {
 
   // 4-5. score and keep
   const scored = items.map((article) => ({ article, result: S.score(article, vocab) }));
-  const kept = select(scored).map(toItem);
+  // only what the exam needs (pipeline/lib/exam.js)
+  const kept = select(scored).map(toItem).filter(E.isExam);
 
   // 6. static notes from the Prep app's books and the Rocket Sheets
-  const notes = args.notes !== undefined ? args.notes : St.loadNotes(St.defaultDirs());
+  // static notes: the Rocket Sheets' key facts (the reader's revision notes)
+  const notes = args.notes !== undefined ? args.notes : St.loadNotes({ rocketDir: St.defaultDirs().rocketDir });
   for (const it of kept) {
-    const linked = St.staticFor(notes, it);
-    if (linked.length) it.notes = linked;
     // the article layout: current matter, then the static notes by topic
     if (notes && notes.size) it.brief = St.briefOf(notes, it, St.loadBlocks(path.join(args.out, 'wrong-notes.json')));
   }

@@ -240,21 +240,39 @@ test('static notes: exact links from the headline, a unit/book note for every st
   assert.match(te[0].text, /Polavaram/);
 });
 
-test('offline run: every kept story carries a Prep note', async () => {
+test('offline run: every kept story carries its static brief', async () => {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
   const r = await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: true, notes: NOTES });
-  const missing = r.kept.filter((i) => !(i.notes || []).some((n) => n.src === 'Prep notes'));
-  assert.deepEqual(missing.map((i) => i.title), []);
+  assert.ok(r.kept.length > 0);
+  assert.ok(r.kept.every((i) => i.brief && Array.isArray(i.brief.sections)));
+  assert.ok(r.kept.every((i) => !i.notes), 'the old single-note links are gone');
 });
 
-test('stories published before notes existed are given notes on the next run', async () => {
+test('stories published before notes existed are given their brief on the next run', async () => {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'feed-'));
   await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: false, notes: { size: 0 } });
   const before = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
-  assert.ok(before.items.every((i) => !i.notes));
+  assert.ok(before.items.every((i) => !i.brief));
   await run({ date: '2026-10-02', fixtures: FIX, out, dryRun: false, notes: NOTES });
   const after = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-02.json'), 'utf8'));
-  assert.ok(after.items.every((i) => (i.notes || []).length > 0));
+  assert.ok(after.items.every((i) => i.brief && i.brief.v === St.BRIEF_VERSION));
+});
+
+test('the exam filter: politics, protests, crime, markets and routine events out', () => {
+  const E = require('../lib/exam');
+  const it = (title, extra = {}) => ({ title, summary: '', score: 60, angles: ['Scheme / launch'], why: { syllabus: 20 }, ...extra });
+  assert.equal(E.notExam(it('YSRCP, Left parties flay govt over BC reservation')), 'politics');
+  assert.equal(E.notExam(it('Farmers stage protest opposing land acquisition')), 'agitation');
+  assert.equal(E.notExam(it('SIT questions former Minister in liquor scam case')), 'crime');
+  assert.equal(E.notExam(it('Sensex opens 78 points higher')), 'markets');
+  assert.equal(E.notExam(it('Dasara festivities at Srisailam to commence')), 'routine');
+  assert.equal(E.notExam(it('Major Spice Crops of India', { digest: true })), '');
+  assert.ok(E.isGkPost(it('Major Spice Crops of India', { digest: true })), 'a GK capsule, kept as a one-liner');
+  assert.equal(E.notExam(it('Youth told to follow Gandhiji’s ideals')), 'statement');
+  assert.equal(E.notExam(it('World Bank raises India FY27 growth forecast to 7.1%')), '');
+  assert.equal(E.notExam(it('GST Council likely to allow police to use NATGRID data')), '');
+  assert.equal(E.notExam(it('AP files SLP in Supreme Court on BC quota in local bodies')), '');
+  assert.equal(E.notExam(it('Raksha Mantri launches indigenous Fleet Support Ship Surya', { official: true })), '');
 });
 
 test('brief: current matter then static notes by topic, the subsections about the whole story', () => {
@@ -414,4 +432,18 @@ test('weekly and monthly digests: each topic once, with its stories in the perio
   assert.equal(dg.topics[0].sections[0].topic, 'Reservation');
   assert.equal(dg.oneLiners[0].line, 'X won gold.');
   assert.equal(dg.quiz.length, 1);
+});
+
+test('AIR News through its WordPress API: English posts only, with their category', () => {
+  const json = JSON.stringify([
+    { date: '2026-09-21T22:30:22', link: 'https://newsonair.gov.in/hi/results/', title: { rendered: 'राजस्थान में 301' }, excerpt: { rendered: '<p>x</p>' }, categories: [41706] },
+    { date: '2026-09-21T09:05:00', link: 'https://newsonair.gov.in/isro-launches-pslv-c62/', title: { rendered: 'ISRO launches PSLV&#8211;C62' }, excerpt: { rendered: '<p>The launch was from Sriharikota.</p>' }, categories: [12] },
+  ]);
+  const rows = F.parseWpPosts(json);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].headline, 'ISRO launches PSLV–C62');
+  assert.equal(rows[0].date, '2026-09-21');
+  assert.equal(rows[0].time, '09:05');
+  assert.equal(rows[0].summary, 'The launch was from Sriharikota.');
+  assert.deepEqual(rows[0].categories, [12]);
 });

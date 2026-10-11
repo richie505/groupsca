@@ -1,5 +1,15 @@
 # APPSC Daily CA (Android)
 
+> **Exam news only, Rocket notes, from 21 Sep 2026.** Every story passes the exam filter (`pipeline/lib/exam.js`):
+> party politics, protests and rallies, crime and court cases about people, markets, festivals and weather bulletins,
+> leaders' statements and small local events are left out; GKToday's GK capsules are kept as one-liners. Static
+> notes come only from the **Rocket Sheets'** key facts (`briefFacts` in `pipeline/lib/statics.js`: a sheet is
+> chosen by its facts that share two of the story's subject words). AIR News is read through its WordPress API
+> (every English post, not the RSS feeds' latest 10). Days before the feed began are collected by
+> **Actions → Backfill past days** (`pipeline/tools/backfill.js`: The Hindu and BusinessLine archive sitemaps,
+> AIR's API and PIB releases by number). The app has five tabs (Today · Digest · Quiz · Saved · Settings);
+> filters fold away; Settings sets new topics a day (10/15/25), larger text, Telugu headlines and read-aloud speed.
+
 Daily current affairs for APPSC **Group-I and Group-II**, with **Andhra Pradesh as a full lane of its own** —
 fetched from the internet twice a day and sorted by the **combined syllabus** and the **APPSC blueprint**.
 **No AI and no API keys**: everything is decided by fixed rules you can read in `pipeline/`.

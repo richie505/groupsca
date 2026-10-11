@@ -15,6 +15,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.filled.Quiz
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
@@ -77,10 +79,10 @@ import com.appsc.ca.data.shortDate
 
 private enum class Tab(val label: String, val icon: ImageVector) {
     TODAY("Today", Icons.Filled.Today),
-    SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
-    DAYS("Digest", Icons.Filled.DateRange),
-    SYLLABUS("Syllabus", Icons.AutoMirrored.Filled.MenuBook),
+    DIGEST("Digest", Icons.Filled.DateRange),
+    QUIZ("Quiz", Icons.Filled.Quiz),
     SAVED("Saved", Icons.Filled.Bookmark),
+    SETTINGS("Settings", Icons.Filled.Settings),
 }
 
 private sealed interface Route {
@@ -99,6 +101,11 @@ fun App(vm: AppViewModel) {
     BackHandler(enabled = stack.isNotEmpty()) { stack.removeAt(stack.lastIndex) }
     val back: () -> Unit = { if (stack.isNotEmpty()) stack.removeAt(stack.lastIndex) }
 
+    // Settings → Larger text
+    val d = androidx.compose.ui.platform.LocalDensity.current
+    androidx.compose.runtime.CompositionLocalProvider(
+        androidx.compose.ui.platform.LocalDensity provides androidx.compose.ui.unit.Density(d.density, d.fontScale * if (vm.largeText) 1.18f else 1f),
+    ) {
     Scaffold(
         bottomBar = {
             Column {
@@ -127,14 +134,15 @@ fun App(vm: AppViewModel) {
                 is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back)
                 is Route.DigestRoute -> DigestScreen(vm, Period(r.kind, java.time.LocalDate.parse(r.start)), onBack = back)
                 null -> when (tab) {
-                    Tab.TODAY -> DayFeed(vm, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
-                    Tab.DAYS -> DaysScreen(vm, onDigest = { p -> stack.add(Route.DigestRoute(p.kind, p.start.toString())) }) { stack.add(Route.DayRoute(it)) }
-                    Tab.SYLLABUS -> SyllabusScreen(vm) { stack.add(Route.UnitRoute(it)) }
-                    Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
+                    Tab.TODAY -> DayFeed(vm, fixedDate = null)
+                    Tab.DIGEST -> DaysScreen(vm, onDigest = { p -> stack.add(Route.DigestRoute(p.kind, p.start.toString())) }) { stack.add(Route.DayRoute(it)) }
+                    Tab.QUIZ -> PracticeScreen(vm)
                     Tab.SAVED -> SavedScreen(vm)
+                    Tab.SETTINGS -> SettingsScreen(vm, onBack = null)
                 }
             }
         }
+    }
     }
 }
 
@@ -186,9 +194,15 @@ private fun Empty(text: String) {
 }
 
 /** New today: the feed's new topics, without stories the reader put in an earlier topic, plus those taken out of one. */
-private fun newTopicsOf(vm: AppViewModel, filtered: List<Item>, hasTop: Boolean): List<Item> =
-    if (!hasTop) filtered
-    else filtered.filter { (it.top && !vm.isUpdate(it)) || (it.update && !vm.isUpdate(it) && !it.oneLiner) }
+private fun newTopicsOf(vm: AppViewModel, filtered: List<Item>, hasTop: Boolean): List<Item> {
+    if (!hasTop) return filtered
+    val marked = filtered.filter { (it.top && !vm.isUpdate(it)) || (it.update && !vm.isUpdate(it) && !it.oneLiner) }
+    // as many as the reader chose in Settings: the best by score, topped up from the day's other new topics
+    val n = vm.perDay
+    if (marked.size >= n) return marked.sortedByDescending { it.score }.take(n)
+    val more = filtered.filter { it !in marked && !vm.isUpdate(it) && !it.oneLiner && !it.digest }.sortedByDescending { it.score }
+    return marked + more.take(n - marked.size)
+}
 
 /** A card in a list that read-aloud can start from and highlight. */
 @Composable
@@ -241,11 +255,12 @@ private fun DayFeed(
     var lane by rememberSaveable { mutableStateOf(Lane.ALL) }
     var subject by rememberSaveable { mutableStateOf<String?>(null) }
     var view by rememberSaveable { mutableStateOf(DayView.TOP) }
+    var filtersOpen by rememberSaveable { mutableStateOf(false) }
 
     val date = fixedDate ?: picked ?: vm.days.firstOrNull()?.date
     val day = vm.days.find { it.date == date }
     val summary = vm.index?.days?.find { it.date == date }
-    val dayItems = day?.items.orEmpty()
+    val dayItems = vm.shown(day?.items.orEmpty())
     val base = Filter(exam = vm.exam)
     val filtered = Filter(lane, vm.exam, subject).apply(dayItems)
     // Top 25 needs a feed that marks it; an older day file shows everything
@@ -265,7 +280,7 @@ private fun DayFeed(
 
     // rows before the stories, in the order they are added below
     val headRows = 1 + (if (date != null) 1 else 0) + (if (vm.message != null) 1 else 0) +
-        (if (fixedDate == null && vm.days.size > 1) 1 else 0) + 3 + (if (day != null && hasTop) 1 else 0) +
+        (if (fixedDate == null && vm.days.size > 1) 1 else 0) + 2 + (if (filtersOpen) 2 else 0) + (if (day != null && hasTop) 1 else 0) +
         (if (day == null || shown.isEmpty()) 1 else 0)
     val listState = androidx.compose.foundation.lazy.rememberLazyListState()
     FollowReading(listState) { id -> shown.indexOfFirst { it.id == id }.let { if (it < 0) -1 else headRows + it } }
@@ -290,10 +305,7 @@ private fun DayFeed(
                     }) {
                         Icon(if (pb.active) Icons.Filled.Stop else Icons.AutoMirrored.Filled.VolumeUp, if (pb.active) "Stop" else "Listen to this list")
                     }
-                    if (onSettings != null) {
-                        IconButton(onClick = vm::refresh) { Icon(Icons.Filled.Refresh, "Refresh") }
-                        IconButton(onClick = onSettings) { Icon(Icons.Filled.Settings, "Settings") }
-                    }
+                    IconButton(onClick = vm::refresh) { Icon(Icons.Filled.Refresh, "Refresh") }
                 }
             }
             if (date != null) {
@@ -316,7 +328,8 @@ private fun DayFeed(
             }
             item {
                 ChipRow {
-                    for (v in DayView.entries) {
+                    // the quiz and revision have their own tab
+                    for (v in DayView.entries.filter { it != DayView.QUIZ && it != DayView.REVISE }) {
                         val n = when (v) {
                             DayView.TOP -> newTopics.size
                             DayView.UPDATES -> updateCount
@@ -346,7 +359,25 @@ private fun DayFeed(
                     )
                 }
             }
+            // filters, folded away until needed
             item {
+                ChipRow {
+                    FilterChip(
+                        selected = filtersOpen,
+                        onClick = { filtersOpen = !filtersOpen },
+                        label = {
+                            Text(
+                                "Filter: " + listOfNotNull(
+                                    lane.label,
+                                    vm.exam.label,
+                                    subject?.let { "${bookNumber(it)}. $it" } ?: "All books",
+                                ).joinToString(" · ") + if (filtersOpen) "  ▲" else "  ▼",
+                            )
+                        },
+                    )
+                }
+            }
+            if (filtersOpen) item {
                 ChipRow {
                     for (l in Lane.entries) {
                         val n = base.copy(lane = l).apply(dayItems).size
@@ -354,7 +385,7 @@ private fun DayFeed(
                     }
                 }
             }
-            item {
+            if (filtersOpen) item {
                 ChipRow {
                     for (e in Exam.entries) {
                         FilterChip(selected = vm.exam == e, onClick = { vm.chooseExam(e) }, label = { Text(e.label) })
@@ -644,10 +675,65 @@ private fun SavedScreen(vm: AppViewModel) {
 // Settings
 // ---------------------------------------------------------------------------
 
+/** Quiz tab: what is due for revision first, then any day's quiz. */
 @Composable
-private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
-    Column(Modifier.fillMaxSize()) {
+private fun PracticeScreen(vm: AppViewModel) {
+    var picked by rememberSaveable { mutableStateOf<String?>(null) }
+    val days = vm.days.filter { it.quiz.isNotEmpty() }
+    val day = days.find { it.date == picked } ?: days.firstOrNull()
+    val due = vm.dueCards
+    LazyColumn(Modifier.fillMaxSize()) {
+        item { Header("Quiz & revise", "Questions from each day's own figures and years; wrong answers come back after 1, 3 and 7 days") }
+        item {
+            Text("Revise today (${due.size})", style = MaterialTheme.typography.titleMedium, color = C.Accent, modifier = Modifier.padding(start = 16.dp, top = 8.dp))
+        }
+        if (due.isEmpty()) {
+            item { Empty(if (vm.revise.isEmpty()) "Nothing to revise yet." else "Nothing due today. ${vm.revise.size} questions are waiting for later days.") }
+        }
+        items(due, key = { "r-" + it.q.id }) { c -> ReviseCardView(c) { ok -> vm.reviseAnswer(c, ok) } }
+        if (day != null) {
+            item {
+                Text("Day's quiz", style = MaterialTheme.typography.titleMedium, color = C.Accent, modifier = Modifier.padding(start = 16.dp, top = 16.dp))
+            }
+            item {
+                ChipRow {
+                    for (d in days.take(14)) {
+                        val done = d.quiz.count { it.id in vm.answers }
+                        FilterChip(selected = d.date == day.date, onClick = { picked = d.date }, label = { Text("${shortDate(d.date)} ($done/${d.quiz.size})") })
+                    }
+                }
+            }
+            itemsIndexed(day.quiz, key = { _, q -> "q-" + q.id }) { n, q -> QuizCard(n + 1, q, vm.answers[q.id]) { vm.answer(q, it) } }
+        } else item { Empty("No quiz yet: pull down on Today to download.") }
+        item { Spacer(Modifier.height(24.dp)) }
+    }
+}
+
+@Composable
+private fun SettingsScreen(vm: AppViewModel, onBack: (() -> Unit)?) {
+    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
         Header("Settings", onBack = onBack)
+        Text("New topics a day", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp, bottom = 6.dp))
+        ChipRow {
+            for (n in listOf(10, 15, 25)) FilterChip(selected = vm.perDay == n, onClick = { vm.choosePerDay(n) }, label = { Text("$n") })
+        }
+        Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Text("Larger text", style = MaterialTheme.typography.titleMedium)
+            }
+            Switch(checked = vm.largeText, onCheckedChange = vm::chooseLargeText)
+        }
+        Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Text("Telugu headlines (Eenadu)", style = MaterialTheme.typography.titleMedium)
+                Text("Headlines only; read aloud skips them", style = MaterialTheme.typography.labelMedium, color = C.Muted)
+            }
+            Switch(checked = vm.telugu, onCheckedChange = vm::chooseTelugu)
+        }
+        Text("Read-aloud speed", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp, bottom = 6.dp))
+        ChipRow {
+            for (r in listOf(0.75f, 1f, 1.25f, 1.5f, 2f)) FilterChip(selected = vm.speechRate == r, onClick = { vm.chooseRate(r) }, label = { Text("${r}×") })
+        }
         Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f)) {
                 Text("Notify me of new updates", style = MaterialTheme.typography.titleMedium)
@@ -664,7 +750,9 @@ private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
             Text("Feed last updated ${it.replace('T', ' ').take(16)} UTC", style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(horizontal = 16.dp))
         }
         Text(
-            "Where the stories come from: PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, Times of India, " +
+            "Only exam news: party politics, protests, crime, markets, festivals and leaders' statements are left out. " +
+                "Static notes come from your Rocket Sheets' key facts. " +
+                "Where the stories come from: PIB (Delhi, Vijayawada, Hyderabad), AIR News, The Hindu, Times of India, " +
                 "Hindustan Times, NDTV, Mint, Business Standard, BusinessLine, Mongabay India, The Hans India, Eenadu, " +
                 "GKToday and AffairsCloud, collected every morning and evening. Each story is " +
                 "filed under one of the 6 books of your Combined Notes. A news day runs from 6:00 AM to 5:59 AM the next " +
@@ -673,8 +761,8 @@ private fun SettingsScreen(vm: AppViewModel, onBack: () -> Unit) {
                 "6:30 PM and 11:30 PM. No AI is used. Each story is " +
                 "scored by fixed rules out of 100: combined G1 + G2 syllabus units (30), APPSC blueprint keyword angles (20), " +
                 "Andhra Pradesh (20), an official act such as an order, Bill, judgment or appointment (15) and use in both " +
-                "exams (15). Stories scoring 40 or more are kept; Andhra Pradesh stories from 35 (30 for Eenadu headlines) when they name a syllabus unit, a blueprint angle or an official act. Crime, films, weather and " +
-                "match reports are left out. Key facts are the article's own sentences.",
+                "exams (15). Stories scoring 40 or more are kept; Andhra Pradesh stories from 35 (30 for Eenadu headlines) when they name a syllabus unit, a blueprint angle or an official act. " +
+                "Key facts are the article's own sentences.",
             style = MaterialTheme.typography.bodyMedium,
             color = C.Body,
             modifier = Modifier.padding(16.dp),

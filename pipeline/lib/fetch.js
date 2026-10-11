@@ -240,6 +240,35 @@ function pageMeta(html) {
   };
 }
 
+/**
+ * Posts from a WordPress REST API (`/wp-json/wp/v2/posts`): English ones only (no /hi/ pages,
+ * no Devanagari titles), with their category ids. WordPress `date` is the site's local time (IST).
+ */
+function parseWpPosts(json) {
+  let list;
+  try {
+    list = JSON.parse(json);
+  } catch {
+    return [];
+  }
+  if (!Array.isArray(list)) return [];
+  const strip = (h) => decode(String(h || '').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
+  return list
+    .map((p) => {
+      const headline = strip(p.title && p.title.rendered);
+      const [date, clock] = String(p.date || '').split('T');
+      return {
+        headline,
+        url: p.link,
+        date,
+        time: (clock || '').slice(0, 5),
+        summary: strip(p.excerpt && p.excerpt.rendered).slice(0, 700),
+        categories: p.categories || [],
+      };
+    })
+    .filter((r) => r.headline && r.url && r.date && !/\/hi\//.test(r.url) && !/[\u0900-\u097F]/.test(r.headline));
+}
+
 /** The child sitemaps of a sitemap index, in the order listed. */
 function parseSitemapIndex(xml) {
   return [...String(xml).matchAll(/<sitemap>[\s\S]*?<loc>([\s\S]*?)<\/loc>[\s\S]*?<\/sitemap>/gi)].map((m) => decode(m[1]));
@@ -364,5 +393,5 @@ function dedupe(items) {
 
 module.exports = {
   UA, decode, toIso, toIstStamp, newsDay, currentNewsDay, pibPosted, NEWS_DAY_STARTS, fetchText, parseRss, parsePibIndex, parseSitemap, parseSitemapIndex, slugTitle, pageMeta, extractText, releaseBody,
-  signature, overlap, dedupe,
+  signature, overlap, dedupe, parseWpPosts,
 };

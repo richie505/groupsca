@@ -1,0 +1,63 @@
+name: Backfill past days
+
+# Run by hand to collect news days the live feeds no longer list (pipeline/tools/backfill.js):
+# The Hindu and BusinessLine archive sitemaps, AIR News' WordPress API and PIB releases by
+# number, through the same scoring, exam filter and static notes as the daily run.
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: 'First news day (YYYY-MM-DD)'
+        required: true
+        default: '2026-09-21'
+      to:
+        description: 'Last news day (YYYY-MM-DD)'
+        required: true
+        default: '2026-09-30'
+      prid:
+        description: 'A PIB release number just after the last day (e.g. the first of the next day)'
+        required: false
+        default: '2317443'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-feed
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: richie505/groupsrocket
+          path: ext/groupsrocket
+          sparse-checkout: android/app/src/main/assets
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test the pipeline
+        run: npm test
+      - name: Collect the days
+        env:
+          FROM: ${{ github.event.inputs.from }}
+          TO: ${{ github.event.inputs.to }}
+          PRID: ${{ github.event.inputs.prid }}
+        run: node pipeline/tools/backfill.js --from "$FROM" --to "$TO" --prid "$PRID"
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Backfill ${{ github.event.inputs.from }} to ${{ github.event.inputs.to }}"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((i * 5))
+          done
+          exit 1

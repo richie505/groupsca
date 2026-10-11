@@ -15,6 +15,8 @@ const ONE_LINE_TITLE =
   /\b(appointed|appoints|takes charge|assumes charge|sworn in|elected (?:as )?(?:president|chair)|award(?:s|ed)?|wins?|won|gold|silver|bronze|medal|champion(?:ship)?|trophy|jayanti|diwas|day\b|week\b|anniversary|birth anniversary|death anniversary|passes away|dies)\b/i;
 
 function isOneLiner(it) {
+  // GK capsules from the CA sites: one line of background each
+  if (require('./exam').isGkPost(it)) return true;
   if (it.digest) return false;
   if (it.subject === 'Current Affairs') return true;
   // a short news fact with no static notes behind it
@@ -40,7 +42,7 @@ function markDay(items) {
     delete it.oneLiner;
     delete it.line;
   }
-  const leads = items.filter((i) => !i.topicOf && !i.digest);
+  const leads = items.filter((i) => !i.topicOf && (!i.digest || isOneLiner(i)));
   for (const it of leads) {
     if (isOneLiner(it)) {
       it.oneLiner = true;

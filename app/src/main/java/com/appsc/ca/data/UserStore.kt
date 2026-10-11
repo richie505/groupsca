@@ -69,6 +69,20 @@ class UserStore(context: Context) {
 
     fun setHiddenNotes(s: Set<String>) = prefs.edit().putStringSet(KEY_HIDDEN, HashSet(s)).apply()
 
+    /** How many new topics a day to show in full (10, 15 or 25). */
+    var perDay: Int
+        get() = prefs.getInt(KEY_PER_DAY, 15)
+        set(v) = prefs.edit().putInt(KEY_PER_DAY, v).apply()
+
+    var largeText: Boolean
+        get() = prefs.getBoolean(KEY_LARGE, false)
+        set(v) = prefs.edit().putBoolean(KEY_LARGE, v).apply()
+
+    /** Eenadu's Telugu headlines in the lists. */
+    var telugu: Boolean
+        get() = prefs.getBoolean(KEY_TELUGU, true)
+        set(v) = prefs.edit().putBoolean(KEY_TELUGU, v).apply()
+
     var speechRate: Float
         get() = prefs.getFloat(KEY_RATE, 1f)
         set(v) = prefs.edit().putFloat(KEY_RATE, v).apply()
@@ -79,6 +93,9 @@ class UserStore(context: Context) {
         const val KEY_HIDDEN = "hidden_notes"
         const val KEY_DONE = "done_threads"
         const val KEY_LINKS = "topic_links"
+        const val KEY_PER_DAY = "per_day"
+        const val KEY_LARGE = "large_text"
+        const val KEY_TELUGU = "telugu"
         const val KEY_READ = "read"
         const val KEY_NOTIFY = "notify"
         const val KEY_EXAM = "exam"

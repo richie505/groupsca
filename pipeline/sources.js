@@ -60,27 +60,17 @@ const SOURCES = [
     url: 'https://www.pib.gov.in/allrelease.aspx?reg=5&lang=1',
     primary: true,
   },
+  // AIR News through its WordPress API: every English post of the last day and a
+  // half in the categories below (the RSS feeds list only the latest 10). Posts are
+  // kept under their category's source id, so "AIR News — National" etc. stay.
   {
-    id: 'air-national',
-    name: 'AIR News — National',
-    kind: 'rss',
-    url: 'https://www.newsonair.gov.in/category/national/feed/',
+    id: 'air',
+    name: 'AIR News',
+    kind: 'wp-api',
+    url: 'https://newsonair.gov.in/wp-json/wp/v2/posts?per_page=100&_fields=date,link,title,excerpt,categories',
+    categories: { 41706: ['air-national', 'AIR News — National'], 33: ['air-international', 'AIR News — International'], 39: ['air-business', 'AIR News — Business'], 12: ['air-national', 'AIR News — Science'], 43: ['air-national', 'AIR News — Health'], 11: ['air-national', 'AIR News — Sports'], 37: ['air-national', 'AIR News — Regional'] },
     primary: true,
     note: 'All India Radio (Akashvani). Public broadcaster; short, factual items.',
-  },
-  {
-    id: 'air-international',
-    name: 'AIR News — International',
-    kind: 'rss',
-    url: 'https://www.newsonair.gov.in/category/international/feed/',
-    primary: true,
-  },
-  {
-    id: 'air-business',
-    name: 'AIR News — Business',
-    kind: 'rss',
-    url: 'https://www.newsonair.gov.in/category/business/feed/',
-    primary: true,
   },
 
   // ---- National news ------------------------------------------------------

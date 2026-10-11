@@ -44,6 +44,30 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         private set
     var speechRate by mutableStateOf(1f)
         private set
+    var perDay by mutableStateOf(15)
+        private set
+    var largeText by mutableStateOf(false)
+        private set
+    var telugu by mutableStateOf(true)
+        private set
+
+    fun choosePerDay(n: Int) {
+        perDay = n
+        user.perDay = n
+    }
+
+    fun chooseLargeText(on: Boolean) {
+        largeText = on
+        user.largeText = on
+    }
+
+    fun chooseTelugu(on: Boolean) {
+        telugu = on
+        user.telugu = on
+    }
+
+    /** A list as the reader set it up: Telugu headlines left out when turned off. */
+    fun shown(items: List<Item>): List<Item> = if (telugu) items else items.filter { it.lang != "te" }
     var answers by mutableStateOf<Map<String, Boolean>>(emptyMap())
         private set
     var revise by mutableStateOf<List<ReviseCard>>(emptyList())
@@ -160,6 +184,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 withContext(Dispatchers.Main) {
                     days = d; index = i; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn; topicLinks = tl
                     exam = user.exam; notify = user.notify; speechRate = user.speechRate
+                    perDay = user.perDay; largeText = user.largeText; telugu = user.telugu
                 }
             }
             refresh()

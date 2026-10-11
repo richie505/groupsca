@@ -806,6 +806,134 @@ function briefFor(index, item0, blocks = []) {
   return { sections, gaps };
 }
 
+const FACT_SKIP = new Set('capacity high low level levels record month months week first second third key major'.split(' '));
+const STATE_WORDS = new Set(
+  ('andhra telangana odisha kerala tamil nadu karnataka maharashtra gujarat rajasthan punjab haryana bihar bengal assam ' +
+    'uttar madhya himachal uttarakhand jharkhand chhattisgarh goa delhi arunachal sikkim manipur meghalaya mizoram ' +
+    'nagaland tripura kashmir ladakh puducherry west east north south central coast coastal').split(' ')
+);
+
+/**
+ * Static notes from fact sheets (the Rocket Sheets): each sheet is one topic with many key facts, so a
+ * sheet is chosen by its FACTS, not by its whole text. A fact counts when it shares two of the story's
+ * informative words (or one rare headline word that the sheet's title also has); a sheet's score is its
+ * best three facts, its title words counted extra, in the story's own book first. Up to 4 sheets, each
+ * with its matching facts (at most 5), no fact twice and none repeating the current matter.
+ * Same shape as briefFor: { sections: [{ topic, src, where, bullets }], gaps }.
+ */
+function briefFacts(index, item0, blocks = []) {
+  if (!index || !index.size) return { sections: [], gaps: [] };
+  const telugu = /[ఀ-౿]/.test(item0.title);
+  const terms = telugu ? glossTerms(item0.title) : [];
+  const item = telugu ? { ...item0, title: terms.join('. ') || item0.title } : item0;
+  const N = index.size;
+  const df = (w) => (index.postings.get(w) || []).length;
+  const idf = (w) => Math.log(N / (1 + df(w)));
+  const want = new Map();
+  const add = (text0, wt) => {
+    const text = String(text0).replace(INSTITUTION_NAME, ' ');
+    for (const w of tokens(text)) {
+      if (NEWS_WORDS.has(w) || w.length < 3) continue;
+      want.set(w, Math.max(want.get(w) || 0, wt * (WEAK_WORDS.has(w) ? 0.3 : 1)));
+    }
+  };
+  add(`${item.summary || ''} ${(item.facts || []).map((f) => f.text).join(' ')}`, 1);
+  add(item.title, 2);
+  const raw = `${item.title} ${item.summary || ''}`;
+  for (const [re, full] of SHORT_FORMS) {
+    if (!re.test(raw)) continue;
+    const wt = re.test(item.title) ? 2 : 1;
+    for (const w of tokens(full)) want.set(w, Math.max(want.get(w) || 0, wt));
+  }
+  const informative = (w) => df(w) > 0 && df(w) <= N / 60;
+  const rare = (w) => df(w) > 0 && df(w) <= N / 1500;
+  const headWords = new Set([...want].filter(([, wt]) => wt >= 2).map(([w]) => w));
+  const books = new Set();
+  for (const sub of [item.subject, ...(item.subjects || [])]) if (BOOK_NO[sub]) books.add(BOOK_NO[sub]);
+
+  // facts that share the story's words, grouped by sheet
+  const bySheet = new Map();
+  const seenEntry = new Set();
+  for (const [w] of want) {
+    if (!informative(w)) continue;
+    for (const id of index.postings.get(w) || []) {
+      if (seenEntry.has(id)) continue;
+      seenEntry.add(id);
+      const e = index.entries[id];
+      const ws = new Set(tokens(e.text));
+      // words every kind of story has (court, high, award) or only say where (Tamil Nadu) do not make a match
+      const hits = [...want.keys()].filter((x) => ws.has(x) && informative(x) && !WEAK_WORDS.has(x) && !FACT_SKIP.has(x));
+      if (hits.length && hits.every((x) => STATE_WORDS.has(x))) continue;
+      const sec = index.secs[e.sec];
+      const headToks = new Set(tokens(sec.head || sec.title));
+      const strong = hits.length >= 2 || hits.some((x) => rare(x) && headWords.has(x) && headToks.has(x));
+      if (!strong) continue;
+      let sc = 0;
+      for (const x of hits) sc += want.get(x) * idf(x);
+      if (!bySheet.has(e.sec)) bySheet.set(e.sec, []);
+      bySheet.get(e.sec).push({ e, sc });
+    }
+  }
+  const scored = [];
+  for (const [sid, facts] of bySheet) {
+    const sec = index.secs[sid];
+    if (blocked(blocks, sec.where, item)) continue;
+    if (SENSES.some(([re, need]) => re.test(sec.head || sec.title) && !want.has(need))) continue;
+    facts.sort((a, b) => b.sc - a.sc);
+    let score = facts.slice(0, 3).reduce((t, f) => t + f.sc, 0);
+    // the sheet's title names the story's subject
+    const headToks = new Set(tokens(sec.head || sec.title));
+    for (const w of headWords) if (headToks.has(w) && informative(w)) score += 2 * idf(w);
+    const inBook = books.has(sec.book);
+    if (!inBook && facts.length < 2) continue;
+    score *= inBook ? 1 : 0.6;
+    if (!item.ap && /\b(?:Andhra Pradesh|AP)\b/.test(sec.head || '')) score *= 0.6;
+    scored.push({ sec, score, facts });
+  }
+  scored.sort((a, b) => b.score - a.score);
+
+  const sections = [];
+  const seen = [];
+  const bag = (t) => new Set(tokens(t));
+  const near = (a, b) => {
+    let n = 0;
+    for (const w of a) if (b.has(w)) n++;
+    return n / Math.min(a.size, b.size || 1) >= 0.7;
+  };
+  for (const t of [item.summary || '', ...(item.facts || []).map((f) => f.text)]) {
+    for (const sent of String(t).split(/(?<=[.!?])\s+/)) if (tokens(sent).length >= 5) seen.push(bag(sent));
+  }
+  const fresh = (text) => {
+    const b = bag(text);
+    if (b.size < 3) return true;
+    if (seen.some((x) => near(b, x))) return false;
+    seen.push(b);
+    return true;
+  };
+  const top = scored.length ? scored[0].score : 0;
+  for (const c of scored) {
+    if (sections.length >= 3) break;
+    // a sheet close to the best one; the best itself needs real weight
+    if (c.score < Math.max(12, 0.5 * top)) break;
+    const order = new Map(c.sec.entries.map((id, i) => [id, i]));
+    const chosen = c.facts
+      .filter((f) => fresh(f.e.text))
+      .slice(0, MAX_BULLETS)
+      .sort((a, b) => order.get(a.e.id) - order.get(b.e.id))
+      .map((f) => clip(f.e.text));
+    if (!chosen.length) continue;
+    sections.push({
+      topic: String(c.sec.head || c.sec.title),
+      src: c.sec.src === 'prep' ? 'Prep notes' : 'Rocket Sheets',
+      where: c.sec.where,
+      bullets: chosen,
+    });
+  }
+  return { sections, gaps: [] };
+}
+
+module.exports.briefFacts = briefFacts;
+
 // ---------------------------------------------------------------------------
 // "Wrong note" reports from the app (GitHub issues)
 // ---------------------------------------------------------------------------
@@ -857,11 +985,12 @@ module.exports.loadBlocks = loadBlocks;
 module.exports.blocked = blocked;
 
 // Bumped when briefFor changes, so stories on file are re-linked.
-const BRIEF_VERSION = 4;
+const BRIEF_VERSION = 6;
 
 /** briefFor as stored on a story: { v, sections, gaps }. */
 function briefOf(index, item, blocks = []) {
-  const { sections, gaps } = briefFor(index, item, blocks);
+  const sheetsOnly = index && index.secs && index.secs.length && index.secs.every((x) => x.src === 'rocket');
+  const { sections, gaps } = (sheetsOnly ? briefFacts : briefFor)(index, item, blocks);
   return { v: BRIEF_VERSION, sections, gaps };
 }
 
