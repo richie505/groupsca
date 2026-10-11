@@ -7,7 +7,7 @@
 > chosen by its facts that share two of the story's subject words). AIR News is read through its WordPress API
 > (every English post, not the RSS feeds' latest 10). Days before the feed began are collected by
 > **Actions → Backfill past days** (`pipeline/tools/backfill.js`: The Hindu and BusinessLine archive sitemaps,
-> AIR's API and PIB releases by number). The app has five tabs (Today · Digest · Quiz · Saved · Settings);
+> AIR's API and PIB releases by number). The app has five tabs (Today · Subjects · Digest · Quiz · Saved; Settings is the gear on Today);
 > filters fold away; Settings sets new topics a day (10/15/25), larger text, Telugu headlines and read-aloud speed.
 
 Daily current affairs for APPSC **Group-I and Group-II**, with **Andhra Pradesh as a full lane of its own** —

@@ -79,10 +79,10 @@ import com.appsc.ca.data.shortDate
 
 private enum class Tab(val label: String, val icon: ImageVector) {
     TODAY("Today", Icons.Filled.Today),
+    SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
     DIGEST("Digest", Icons.Filled.DateRange),
     QUIZ("Quiz", Icons.Filled.Quiz),
     SAVED("Saved", Icons.Filled.Bookmark),
-    SETTINGS("Settings", Icons.Filled.Settings),
 }
 
 private sealed interface Route {
@@ -134,11 +134,11 @@ fun App(vm: AppViewModel) {
                 is Route.SubjectRoute -> SubjectScreen(vm, r.book, onBack = back)
                 is Route.DigestRoute -> DigestScreen(vm, Period(r.kind, java.time.LocalDate.parse(r.start)), onBack = back)
                 null -> when (tab) {
-                    Tab.TODAY -> DayFeed(vm, fixedDate = null)
+                    Tab.TODAY -> DayFeed(vm, fixedDate = null, onSettings = { stack.add(Route.SettingsRoute) })
+                    Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
                     Tab.DIGEST -> DaysScreen(vm, onDigest = { p -> stack.add(Route.DigestRoute(p.kind, p.start.toString())) }) { stack.add(Route.DayRoute(it)) }
                     Tab.QUIZ -> PracticeScreen(vm)
                     Tab.SAVED -> SavedScreen(vm)
-                    Tab.SETTINGS -> SettingsScreen(vm, onBack = null)
                 }
             }
         }
@@ -306,6 +306,7 @@ private fun DayFeed(
                         Icon(if (pb.active) Icons.Filled.Stop else Icons.AutoMirrored.Filled.VolumeUp, if (pb.active) "Stop" else "Listen to this list")
                     }
                     IconButton(onClick = vm::refresh) { Icon(Icons.Filled.Refresh, "Refresh") }
+                    if (onSettings != null) IconButton(onClick = onSettings) { Icon(Icons.Filled.Settings, "Settings") }
                 }
             }
             if (date != null) {
@@ -449,7 +450,7 @@ private fun DayFeed(
 
 @Composable
 private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
-    val all = Filter(exam = vm.exam).apply(vm.allItems)
+    val all = Filter(exam = vm.exam).apply(vm.shown(vm.allItems))
     val latest = vm.days.firstOrNull()?.date
     LazyColumn(Modifier.fillMaxSize()) {
         item { Header("Current affairs by subject", "The 6 books of your Combined Notes · last ${vm.days.size} days") }
@@ -482,7 +483,7 @@ private fun SubjectsScreen(vm: AppViewModel, onOpen: (String) -> Unit) {
 @Composable
 private fun SubjectScreen(vm: AppViewModel, book: String, onBack: () -> Unit) {
     var lane by rememberSaveable { mutableStateOf(Lane.ALL) }
-    val inBook = Filter(exam = vm.exam).apply(vm.allItems).filter { it.book == book }
+    val inBook = Filter(exam = vm.exam).apply(vm.shown(vm.allItems)).filter { it.book == book }
     val shown = Filter(lane, vm.exam).apply(inBook).sortedWith(compareByDescending<Item> { it.date }.thenByDescending { it.score })
     // story id -> its row (2 head rows, then a date heading before each new day)
     val rows = remember(shown) {
