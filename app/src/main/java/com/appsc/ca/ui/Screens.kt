@@ -82,7 +82,7 @@ import com.appsc.ca.data.shortDate
 
 private enum class Tab(val label: String, val icon: ImageVector) {
     HOME("Home", Icons.Filled.Home),
-    TRENDING("Trending", Icons.AutoMirrored.Filled.TrendingUp),
+    BRIEFING("Briefing", Icons.Filled.Today),
     NEWS("News", Icons.Filled.Newspaper),
     SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
     PRACTICE("Practice", Icons.Filled.Quiz),
@@ -97,6 +97,7 @@ private sealed interface Route {
     data class ArticleRoute(val ids: List<String>, val index: Int) : Route
     data object SearchRoute : Route
     data object SavedRoute : Route
+    data object TrendingRoute : Route
 }
 
 @Composable
@@ -106,6 +107,7 @@ fun App(vm: AppViewModel) {
 
     BackHandler(enabled = stack.isNotEmpty()) { stack.removeAt(stack.lastIndex) }
     val back: () -> Unit = { if (stack.isNotEmpty()) stack.removeAt(stack.lastIndex) }
+    androidx.compose.runtime.LaunchedEffect(vm.openBriefing) { if (vm.openBriefing != null) { stack.clear(); tab = Tab.BRIEFING } }
     val openArticle: (List<String>, Int) -> Unit = { ids, i -> stack.add(Route.ArticleRoute(ids, i)) }
     val openDigest: (Period) -> Unit = { p -> stack.add(Route.DigestRoute(p.kind, p.start.toString())) }
 
@@ -144,6 +146,7 @@ fun App(vm: AppViewModel) {
                 is Route.ArticleRoute -> ArticleScreen(vm, r.ids, r.index, onBack = back)
                 Route.SearchRoute -> SearchScreen(vm, onArticle = openArticle, onBack = back)
                 Route.SavedRoute -> SavedScreen(vm, onArticle = openArticle, onBack = back)
+                Route.TrendingRoute -> TrendingScreen(vm, onArticle = openArticle, onBack = back)
                 null -> when (tab) {
                     Tab.HOME -> HomeScreen(
                         vm,
@@ -154,8 +157,10 @@ fun App(vm: AppViewModel) {
                         onSearch = { stack.add(Route.SearchRoute) },
                         onSettings = { stack.add(Route.SettingsRoute) },
                         onSaved = { stack.add(Route.SavedRoute) },
+                        onBriefing = { tab = Tab.BRIEFING },
+                        onTrending = { stack.add(Route.TrendingRoute) },
                     )
-                    Tab.TRENDING -> TrendingScreen(vm, onArticle = openArticle)
+                    Tab.BRIEFING -> BriefingScreen(vm)
                     Tab.NEWS -> NewsScreen(vm, onArticle = openArticle, onDigest = openDigest)
                     Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
                     Tab.PRACTICE -> PracticeScreen(vm)
@@ -749,6 +754,20 @@ private fun SettingsScreen(vm: AppViewModel, onBack: (() -> Unit)?) {
                 Text("Headlines only; read aloud skips them", style = MaterialTheme.typography.labelMedium, color = C.Muted)
             }
             Switch(checked = vm.telugu, onCheckedChange = vm::chooseTelugu)
+        }
+        Text("Daily briefing notification", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp, bottom = 6.dp))
+        ChipRow {
+            for (h in listOf(20, 21, 22)) FilterChip(selected = vm.briefHour == h, onClick = { vm.chooseBriefHour(h) }, label = { Text("${h - 12}:00 PM") })
+        }
+        for ((label, on, set) in listOf(
+            Triple("Show Mains angles", vm.showMains, vm::chooseShowMains),
+            Triple("Show AP links", vm.showApLink, vm::chooseShowApLink),
+            Triple("Show quizzes", vm.showQuiz, vm::chooseShowQuiz),
+        )) {
+            Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+                Text(label, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                Switch(checked = on, onCheckedChange = set)
+            }
         }
         Text("Read-aloud speed", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp, bottom = 6.dp))
         ChipRow {

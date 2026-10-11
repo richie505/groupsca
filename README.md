@@ -1,5 +1,29 @@
 # APPSC Daily CA (Android)
 
+## The APPSC Daily Briefing (AI, 9 PM IST)
+
+Every evening at 8:50 PM IST (retries 8:55, 9:05, 9:15) the workflow **APPSC daily briefing (AI)**
+(`.github/workflows/briefing.yml`) researches the day's **International, National and Andhra Pradesh** current affairs
+with an OpenAI model and live web search (`pipeline/ai/`: Andhra Pradesh, National and International research stages,
+then an editorial stage for the subject coverage audit, 5-10 MCQs and 2-3 Group 1 Mains questions). Each item carries
+category, subjects, Group 1 / Group 2 mapping, status (ANNOUNCED … FINAL_RESULT), facts, Prelims takeaway, Mains angle,
+AP link (or "No direct AP-specific link established."), static link and clickable sources. The validator
+(`pipeline/ai/validate.js`) drops items without a source URL, duplicates and repeats of an earlier day's topic with no new
+development, unmarks ⭐ FIRST claims without a primary source (PIB, ap.gov.in, RBI, ISRO, courts, UN…), drops
+aptitude-style MCQs, and holds back (NEEDS_REVIEW, not shown, not notified) a briefing with an empty section, fewer than
+3 Andhra Pradesh items, fewer than 5 MCQs or no coverage audit. Briefings are saved to `feed/briefings/<date>.json`;
+the app's **Briefing** tab shows them and notifies "📰 Today's APPSC Current Affairs is ready" from the hour set in
+Settings (default 9 PM).
+
+**The OpenAI key is never in the app.** It is the repository secret `OPENAI_API_KEY`, used only by the workflow on
+GitHub's servers. Setup, once:
+1. GitHub → this repository → **Settings → Secrets and variables → Actions → New repository secret**:
+   name `OPENAI_API_KEY`, value your key.
+2. (Optional) the **Variables** tab → `AI_MODEL` (default `gpt-6-luna`), to change the model without code.
+3. **Actions → APPSC daily briefing (AI) → Run workflow**: a date, or `from`/`to` for a range (e.g. 2026-09-01 to
+   today), `force` to regenerate. Admin = this button; a bad item can be removed by editing its JSON file.
+
+
 > **Exam news only, Rocket notes, from 21 Sep 2026.** Every story passes the exam filter (`pipeline/lib/exam.js`):
 > party politics, protests and rallies, crime and court cases about people, markets, festivals and weather bulletins,
 > leaders' statements and small local events are left out; GKToday's GK capsules are kept as one-liners. Static

@@ -46,6 +46,33 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         private set
     var trending by mutableStateOf<com.appsc.ca.data.Trending?>(null)
         private set
+    var briefings by mutableStateOf<List<com.appsc.ca.data.Briefing>>(emptyList())
+        private set
+    var showMains by mutableStateOf(true)
+        private set
+    var showApLink by mutableStateOf(true)
+        private set
+    var showQuiz by mutableStateOf(true)
+        private set
+    var briefHour by mutableStateOf(21)
+        private set
+    var briefMarks by mutableStateOf<Map<String, String>>(emptyMap())
+        private set
+
+    /** A briefing date to open (from the 9 PM notification), handled once by the app. */
+    var openBriefing by mutableStateOf<String?>(null)
+
+    fun chooseShowMains(on: Boolean) { showMains = on; user.showMains = on }
+    fun chooseShowApLink(on: Boolean) { showApLink = on; user.showApLink = on }
+    fun chooseShowQuiz(on: Boolean) { showQuiz = on; user.showQuiz = on }
+    fun chooseBriefHour(h: Int) { briefHour = h; user.briefHour = h }
+
+    /** Bookmarks a briefing item under a category, or removes it when [category] is null. */
+    fun markBrief(date: String, item: com.appsc.ca.data.BriefItem, category: String?) {
+        val key = "$date|${item.headline}"
+        briefMarks = if (category == null) briefMarks - key else briefMarks + (key to category)
+        user.setBriefMarks(briefMarks)
+    }
 
     /** A story by id, from the days on the phone or the saved ones. */
     fun itemById(id: String): Item? = allItems.firstOrNull { it.id == id } ?: saved.firstOrNull { it.id == id }
@@ -191,6 +218,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val d = feed.cachedDays()
                 val i = feed.cachedIndex()
                 val tr = feed.cachedTrending()
+                val br = feed.cachedBriefings()
+                val marks = user.briefMarks()
                 val s = user.saved()
                 val r = user.readIds()
                 val a = user.answers()
@@ -199,7 +228,9 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val dn = user.doneThreads()
                 val tl = user.topicLinks()
                 withContext(Dispatchers.Main) {
-                    days = d; index = i; trending = tr; saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn; topicLinks = tl
+                    days = d; index = i; trending = tr; briefings = br; briefMarks = marks
+                    showMains = user.showMains; showApLink = user.showApLink; showQuiz = user.showQuiz; briefHour = user.briefHour
+                    saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn; topicLinks = tl
                     exam = user.exam; notify = user.notify; speechRate = user.speechRate
                     perDay = user.perDay; largeText = user.largeText; telugu = user.telugu
                 }
@@ -219,6 +250,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 days = d
                 index = feed.cachedIndex()
                 trending = withContext(Dispatchers.IO) { feed.cachedTrending() }
+                briefings = withContext(Dispatchers.IO) { feed.cachedBriefings() }
                 pruneRead(d)
             } catch (e: Exception) {
                 message = if (days.isEmpty()) {

@@ -465,3 +465,116 @@ test('trending: Google trending searches kept only when they are exam material',
   assert.ok(repo && repo.subject === 'Economy');
   assert.deepEqual(repo.related.map((r) => r.id), ['s']);
 });
+
+// ---------------------------------------------------------------------------
+// The AI briefing (pipeline/ai), with a fake OpenAI: no key, no network
+// ---------------------------------------------------------------------------
+
+const AIV = require('../ai/validate');
+const AIO = require('../ai/openai');
+const AIB = require('../ai/briefing');
+
+const aiItem = (headline, extra = {}) => ({
+  canonicalTopic: headline.toLowerCase().replace(/\W+/g, '-'), isUpdate: false, headline, category: 'Schemes / Missions / Campaigns',
+  subjects: ['Indian Economy'], group1: ['Prelims'], group2: ['Prelims'], importance: 1, date: '2026-10-11', facts: ['fact one'],
+  summary: 's', staticLink: 'x', prelimsTakeaway: 'p', mainsAngle: 'm', apLink: '', status: 'APPROVED', verifiedFirst: false,
+  sources: [{ title: 't', publisher: 'PIB', url: 'https://pib.gov.in/PressReleasePage.aspx?PRID=1', publishedDate: '2026-10-11', isPrimary: false }],
+  ...extra,
+});
+const mcq = (q, answer = 'A') => ({ question: q, options: ['a', 'b', 'c', 'd'], answer, explanation: 'e', item: 1 });
+
+test('AI briefing validator: sources, duplicates, repeats, FIRST rule, AP link, MCQs', () => {
+  const b = {
+    sections: {
+      international: [aiItem('UN climate summit adopts new fund'), aiItem('No source story', { sources: [] })],
+      national: [
+        aiItem('Cabinet approves new seeds mission'),
+        aiItem('Cabinet approves the new seeds mission today'), // duplicate
+        aiItem('India builds largest solar park', { verifiedFirst: true, sources: [{ title: 't', publisher: 'Blog', url: 'https://someblog.com/x', publishedDate: '', isPrimary: true }] }),
+        aiItem('Old story again', { canonicalTopic: 'old-story' }),
+        aiItem('Bad status story', { status: 'DONE' }),
+      ],
+      andhraPradesh: [aiItem('AP approves port'), aiItem('AP drought relief'), aiItem('Amaravati works resume')],
+    },
+    coverageAudit: [{ subject: 'Polity', covered: false, items: [], note: 'No significant verified current-affairs item today.' }],
+    mcqs: [mcq('Which ministry runs the seeds mission?'), mcq('q2'), mcq('q3'), mcq('q4'), mcq('If a train covers 60 km at a speed of x, calculate'), mcq('q6', 'E'), mcq('q7')],
+    mainsQuestions: [{ question: 'Discuss', paper: 'P', subject: 's', dimensions: ['a'] }],
+  };
+  const v = AIV.validate(b, ['old-story']);
+  assert.equal(v.status, 'published', v.problems.join('; '));
+  assert.equal(b.sections.international.length, 1, 'no source URL -> dropped');
+  assert.equal(b.sections.international[0].apLink, AIV.NO_AP_LINK);
+  const heads = b.sections.national.map((i) => i.headline);
+  assert.ok(!heads.includes('Cabinet approves the new seeds mission today'), 'duplicate dropped');
+  assert.ok(!heads.includes('Old story again'), 'repeat with no new development dropped');
+  assert.equal(b.sections.national.find((i) => /largest/.test(i.headline)).verifiedFirst, false, 'FIRST needs a primary source');
+  assert.equal(b.sections.national.find((i) => /Bad status/.test(i.headline)).status, 'ONGOING');
+  assert.equal(b.mcqs.length, 5, 'aptitude and bad keys out');
+  assert.ok(b.sections.national[0].sources[0].isPrimary, 'pib.gov.in is primary');
+});
+
+test('AI briefing validator: a thin Andhra Pradesh section or few MCQs is NEEDS_REVIEW', () => {
+  const b = { sections: { international: [aiItem('a1')], national: [aiItem('n1')], andhraPradesh: [aiItem('ap1')] }, coverageAudit: [], mcqs: [mcq('q')], mainsQuestions: [] };
+  const v = AIV.validate(b);
+  assert.equal(v.status, 'needs_review');
+  assert.ok(v.problems.some((p) => /Andhra Pradesh/.test(p)));
+  assert.ok(v.problems.some((p) => /MCQs/.test(p)));
+  assert.ok(v.problems.some((p) => /coverage audit/.test(p)));
+});
+
+test('OpenAI Responses API: JSON and URL citations read from the output', () => {
+  const json = {
+    model: 'gpt-x',
+    output: [
+      { type: 'web_search_call', action: { query: 'AP cabinet decisions 11 October 2026' } },
+      { type: 'message', content: [{ type: 'output_text', text: '```json\n{"items": []}\n```', annotations: [{ type: 'url_citation', url: 'https://ap.gov.in/x', title: 'AP' }] }] },
+    ],
+  };
+  const r = AIO.readResponse(json);
+  assert.deepEqual(AIO.parseJson(r.text), { items: [] });
+  assert.equal(r.citations[0].url, 'https://ap.gov.in/x');
+  assert.equal(r.searches.length, 1);
+  assert.deepEqual(AIO.parseJson('Here it is: {"a": 1} done'), { a: 1 });
+});
+
+test('OpenAI call: the key stays server side; a refused structured format falls back to plain JSON', async () => {
+  const keep = process.env.OPENAI_API_KEY;
+  delete process.env.OPENAI_API_KEY;
+  await assert.rejects(AIO.respond({ instructions: 'i', input: 'x', schema: {}, name: 'n' }), /OPENAI_API_KEY/);
+  process.env.OPENAI_API_KEY = 'test-key';
+  const calls = [];
+  const fake = async (url, opts) => {
+    const body = JSON.parse(opts.body);
+    calls.push(body);
+    if (body.text) return { ok: false, status: 400, json: async () => ({ error: { message: 'text.format json_schema not supported with tools' } }) };
+    return { ok: true, json: async () => ({ output: [{ type: 'message', content: [{ type: 'output_text', text: '{"items":[1]}', annotations: [] }] }] }) };
+  };
+  const r = await AIO.respond({ instructions: 'i', input: 'x', schema: {}, name: 'n' }, fake);
+  assert.deepEqual(r.data, { items: [1] });
+  assert.equal(calls.length, 2);
+  assert.equal(calls[0].tools[0].type, 'web_search');
+  if (keep) process.env.OPENAI_API_KEY = keep;
+  else delete process.env.OPENAI_API_KEY;
+});
+
+test('a whole briefing day with a fake model: stages, validation, saved file and index', async () => {
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'brief-'));
+  const respond = async ({ name }) => {
+    if (name === 'appsc_editorial') {
+      return { data: { coverageAudit: [{ subject: 'Polity', covered: true, items: [1], note: '' }], mcqs: [mcq('q1'), mcq('q2'), mcq('q3'), mcq('q4'), mcq('q5')], mainsQuestions: [] }, citations: [], searches: [], model: 'fake' };
+    }
+    const heads = {
+      appsc_international: ['UN adopts ocean treaty', 'WHO declares measles elimination', 'G20 finance meeting ends'],
+      appsc_national: ['Cabinet approves pulses mission', 'ISRO launches navigation satellite', 'Supreme Court rules on tribunals'],
+      appsc_andhraPradesh: ['Polavaram spillway works resume', 'Amaravati capital loans released', 'Krishnapatnam port expansion approved'],
+    }[name];
+    return { data: { items: heads.map((h) => aiItem(h)) }, citations: [{ url: 'https://pib.gov.in/a', title: 'PIB' }], searches: ['q'], model: 'fake' };
+  };
+  const b = await AIB.generate('2026-10-11', { out, respond, log: () => {} });
+  assert.equal(b.status, 'published');
+  assert.equal(b.sections.andhraPradesh[0].section, 'ANDHRA PRADESH');
+  const idx = JSON.parse(fs.readFileSync(path.join(out, 'briefings', 'index.json'), 'utf8'));
+  assert.equal(idx.briefings[0].date, '2026-10-11');
+  assert.equal(idx.briefings[0].andhraPradesh, 3);
+  assert.equal(b.citations.length, 1);
+});

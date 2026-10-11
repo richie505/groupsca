@@ -26,6 +26,34 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
 
     fun cachedTrending(): Trending? = read(trendingFile)
 
+    private val briefDir = File(root, "briefings")
+
+    /** The AI briefings on the phone (published ones), newest first. */
+    fun cachedBriefings(): List<Briefing> =
+        (briefDir.listFiles { f -> f.name.matches(Regex("\\d{4}-\\d{2}-\\d{2}\\.json")) } ?: emptyArray())
+            .mapNotNull { read<Briefing>(it) }
+            .filter { it.status == "published" }
+            .sortedByDescending { it.date }
+
+    /** Downloads new or changed published briefings (the last [KEEP_DAYS]); true if today's (IST) is among them. */
+    fun refreshBriefings(): Boolean {
+        val text = get("briefings/index.json")
+        val index = FeedJson.decodeFromString<BriefingIndex>(text)
+        briefDir.mkdirs()
+        val old = read<BriefingIndex>(File(briefDir, "index.json"))?.briefings?.associate { it.date to it.generatedAt }.orEmpty()
+        val keep = index.briefings.filter { it.status == "published" }.take(KEEP_DAYS)
+        for (b in keep) {
+            val f = File(briefDir, "${b.date}.json")
+            if (f.exists() && old[b.date] == b.generatedAt) continue
+            val body = get("briefings/${b.date}.json")
+            FeedJson.decodeFromString<Briefing>(body)
+            writeAtomically(f, body)
+        }
+        writeAtomically(File(briefDir, "index.json"), text)
+        val today = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata")).toString()
+        return keep.any { it.date == today }
+    }
+
     fun cachedIndex(): FeedIndex? = read(indexFile)
 
     fun cachedDays(): List<Day> =
@@ -57,7 +85,8 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
             }
         }
         writeAtomically(indexFile, indexText)
-        // Trending is extra: a failure there never fails the refresh
+        // the AI briefing and Trending are extras: a failure there never fails the refresh
+        runCatching { refreshBriefings() }
         runCatching {
             val t = get("trending.json")
             FeedJson.decodeFromString<Trending>(t)

@@ -83,6 +83,35 @@ class UserStore(context: Context) {
         get() = prefs.getBoolean(KEY_TELUGU, true)
         set(v) = prefs.edit().putBoolean(KEY_TELUGU, v).apply()
 
+    /** The hour (IST) of the daily briefing notification: 20, 21 or 22. */
+    var briefHour: Int
+        get() = prefs.getInt(KEY_BRIEF_HOUR, 21)
+        set(v) = prefs.edit().putInt(KEY_BRIEF_HOUR, v).apply()
+
+    var showMains: Boolean
+        get() = prefs.getBoolean(KEY_SHOW_MAINS, true)
+        set(v) = prefs.edit().putBoolean(KEY_SHOW_MAINS, v).apply()
+
+    var showApLink: Boolean
+        get() = prefs.getBoolean(KEY_SHOW_AP, true)
+        set(v) = prefs.edit().putBoolean(KEY_SHOW_AP, v).apply()
+
+    var showQuiz: Boolean
+        get() = prefs.getBoolean(KEY_SHOW_QUIZ, true)
+        set(v) = prefs.edit().putBoolean(KEY_SHOW_QUIZ, v).apply()
+
+    /** The last briefing date the notification was sent for. */
+    var briefNotified: String
+        get() = prefs.getString(KEY_BRIEF_NOTIFIED, "") ?: ""
+        set(v) = prefs.edit().putString(KEY_BRIEF_NOTIFIED, v).apply()
+
+    /** Bookmarked briefing items: "date|headline" -> category (Revise Today, Important, AP, Prelims, Mains). */
+    fun briefMarks(): Map<String, String> =
+        prefs.getStringSet(KEY_BRIEF_MARKS, emptySet()).orEmpty().associate { it.substringBeforeLast('\t') to it.substringAfterLast('\t') }
+
+    fun setBriefMarks(m: Map<String, String>) =
+        prefs.edit().putStringSet(KEY_BRIEF_MARKS, m.mapTo(HashSet()) { (k, v) -> "$k\t$v" }).apply()
+
     var speechRate: Float
         get() = prefs.getFloat(KEY_RATE, 1f)
         set(v) = prefs.edit().putFloat(KEY_RATE, v).apply()
@@ -96,6 +125,12 @@ class UserStore(context: Context) {
         const val KEY_PER_DAY = "per_day"
         const val KEY_LARGE = "large_text"
         const val KEY_TELUGU = "telugu"
+        const val KEY_BRIEF_HOUR = "brief_hour"
+        const val KEY_SHOW_MAINS = "show_mains"
+        const val KEY_SHOW_AP = "show_ap"
+        const val KEY_SHOW_QUIZ = "show_quiz"
+        const val KEY_BRIEF_NOTIFIED = "brief_notified"
+        const val KEY_BRIEF_MARKS = "brief_marks"
         const val KEY_READ = "read"
         const val KEY_NOTIFY = "notify"
         const val KEY_EXAM = "exam"

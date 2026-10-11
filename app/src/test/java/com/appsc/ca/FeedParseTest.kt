@@ -137,6 +137,27 @@ class FeedParseTest {
     }
 
     @Test
+    fun readsAnAiBriefing() {
+        val b = FeedJson.decodeFromString<com.appsc.ca.data.Briefing>(
+            """{"date":"2026-10-11","status":"published","model":"m","sections":{
+                "international":[],"national":[{"headline":"Cabinet approves pulses mission","section":"NATIONAL","subjects":["Indian Economy"],
+                  "importance":1,"status":"APPROVED","verifiedFirst":false,"apLink":"No direct AP-specific link established.",
+                  "sources":[{"title":"PIB","publisher":"PIB","url":"https://pib.gov.in/x","publishedDate":"2026-10-11","isPrimary":true}],"extra":1}],
+                "andhraPradesh":[{"headline":"Polavaram works resume","section":"ANDHRA PRADESH","status":"UNDER_CONSTRUCTION"}]},
+              "coverageAudit":[{"subject":"Polity","covered":false,"items":[],"note":"No significant verified current-affairs item today."}],
+              "mcqs":[{"question":"q","options":["a","b","c","d"],"answer":"C","explanation":"e","item":1}],
+              "mainsQuestions":[{"question":"Discuss","paper":"Group 1 Mains Paper IV","subject":"Economy","dimensions":["a","b"]}]}""".trimIndent(),
+        )
+        assertEquals(2, b.allItems.size)
+        assertEquals("APPROVED", b.sections.national[0].status)
+        assertTrue(b.sections.national[0].sources[0].isPrimary)
+        assertEquals("C", b.mcqs[0].answer)
+        // the Economy filter finds the item by its subject
+        val economy = com.appsc.ca.data.BRIEF_FILTERS.first { it.first == "Economy" }.second
+        assertTrue(b.sections.national[0].subjects.any { it in economy })
+    }
+
+    @Test
     fun weeksAndMonthsForTheDigest() {
         val weeks = com.appsc.ca.ui.periodsOf(listOf("2026-10-04", "2026-10-03", "2026-09-30", "2026-09-27"), "week")
         assertEquals(listOf("2026-09-28", "2026-09-21"), weeks.map { it.start.toString() })

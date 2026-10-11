@@ -1,0 +1,74 @@
+name: APPSC daily briefing (AI)
+
+# The AI briefing: International, National and Andhra Pradesh current affairs researched with live web
+# search by the OpenAI model in AI_MODEL (pipeline/ai), validated, and saved to feed/briefings/.
+# The OpenAI key is the OPENAI_API_KEY secret: it is used here, on GitHub's servers, and never in the app.
+on:
+  schedule:
+    - cron: '20 15 * * *'   # 20:50 IST: generate
+    - cron: '25 15 * * *'   # 20:55 IST: retry 1 (skipped when already published)
+    - cron: '35 15 * * *'   # 21:05 IST: retry 2
+    - cron: '45 15 * * *'   # 21:15 IST: retry 3
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'One day (YYYY-MM-DD). Empty = today (IST)'
+        required: false
+      from:
+        description: 'Or a range: first day (YYYY-MM-DD)'
+        required: false
+      to:
+        description: 'Last day of the range (YYYY-MM-DD)'
+        required: false
+      force:
+        description: 'Regenerate days already published'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-feed
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test the pipeline
+        run: npm test
+      - name: Generate
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'gpt-6-luna' }}
+          DATE: ${{ github.event.inputs.date }}
+          FROM: ${{ github.event.inputs.from }}
+          TO: ${{ github.event.inputs.to }}
+          FORCE: ${{ github.event.inputs.force }}
+        run: |
+          args=""
+          [ -n "$DATE" ] && args="$args --date $DATE"
+          [ -n "$FROM" ] && args="$args --from $FROM"
+          [ -n "$TO" ] && args="$args --to $TO"
+          [ "$FORCE" = "true" ] && args="$args --force"
+          node pipeline/tools/briefing.js $args
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed/briefings || true
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "APPSC briefing $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((i * 5))
+          done
+          exit 1

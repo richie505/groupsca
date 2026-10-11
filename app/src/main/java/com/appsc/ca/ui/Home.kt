@@ -135,6 +135,8 @@ fun HomeScreen(
     onSearch: () -> Unit,
     onSettings: () -> Unit,
     onSaved: () -> Unit,
+    onBriefing: () -> Unit,
+    onTrending: () -> Unit,
 ) {
     val lists = dayLists(vm, vm.days.firstOrNull()?.date)
     PullToRefreshBox(isRefreshing = vm.refreshing, onRefresh = vm::refresh, modifier = Modifier.fillMaxSize()) {
@@ -153,6 +155,24 @@ fun HomeScreen(
                 return@LazyColumn
             }
             val ids = lists.newTopics.map { it.id }
+            // the evening AI briefing (International · National · Andhra Pradesh)
+            vm.briefings.firstOrNull()?.let { b ->
+                item {
+                    Column(
+                        Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp).clip(RoundedCornerShape(16.dp))
+                            .background(C.Ink).clickable(onClick = onBriefing).padding(18.dp),
+                    ) {
+                        Text("APPSC Daily Current Affairs", style = MaterialTheme.typography.titleLarge, color = androidx.compose.ui.graphics.Color.White, fontWeight = FontWeight.Bold)
+                        Text(longDate(b.date), style = MaterialTheme.typography.labelMedium, color = androidx.compose.ui.graphics.Color(0xFFC9D3E6))
+                        Text(
+                            "🌍 International ${b.sections.international.size}   🇮🇳 National ${b.sections.national.size}   📍 Andhra Pradesh ${b.sections.andhraPradesh.size}\n" +
+                                "🔥 High priority ${b.allItems.count { it.importance <= 1 }}   ⭐ FIRST ${b.allItems.count { it.verifiedFirst }}   ❓ MCQs ${b.mcqs.size}",
+                            style = MaterialTheme.typography.bodyMedium, color = androidx.compose.ui.graphics.Color.White, modifier = Modifier.padding(top = 10.dp),
+                        )
+                        Text("Read Today's Briefing →", style = MaterialTheme.typography.titleSmall, color = androidx.compose.ui.graphics.Color(0xFF9FE0B9), modifier = Modifier.padding(top = 10.dp))
+                    }
+                }
+            }
             item { Heading("Highlights", "View all", onNews) }
             item {
                 LazyRow(contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -177,6 +197,7 @@ fun HomeScreen(
                     onPractice,
                 )
             }
+            item { InfoCard("Trending", "What India is searching for that matters for your exam, and the week's most covered topics.", "Open Trending →", onTrending) }
             val week = periodsOf(vm.days.map { it.date }, "week", vm.index?.digests.orEmpty()).firstOrNull()
             if (week != null) item { InfoCard("Weekly focus", week.title + ": every topic of the week once, by subject, with its notes and quiz.", "Open the digest →") { onDigest(week) } }
             if (lists.updates.isNotEmpty()) {
@@ -317,11 +338,11 @@ private fun Pill(text: String, on: Boolean, onClick: () -> Unit) {
 
 /** Trending: exam topics among Google's trending searches in India, and the week's most covered topics. */
 @Composable
-fun TrendingScreen(vm: AppViewModel, onArticle: (List<String>, Int) -> Unit) {
+fun TrendingScreen(vm: AppViewModel, onArticle: (List<String>, Int) -> Unit, onBack: (() -> Unit)? = null) {
     val t = vm.trending
     val context = LocalContext.current
     LazyColumn(Modifier.fillMaxSize()) {
-        item { TitleBar("Trending", "What India is searching for, kept only when it matters for your exam") }
+        item { TitleBar("Trending", "What India is searching for, kept only when it matters for your exam", onBack = onBack) }
         if (t == null) {
             item { Text("Pull down on Home to download.", color = C.Muted, modifier = Modifier.padding(24.dp)) }
             return@LazyColumn

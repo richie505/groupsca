@@ -15,6 +15,7 @@ import com.appsc.ca.platform.ReadAloud
 import com.appsc.ca.ui.App
 import com.appsc.ca.ui.AppViewModel
 import com.appsc.ca.ui.CaTheme
+import com.appsc.ca.work.BriefingWorker
 import com.appsc.ca.work.RefreshWorker
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
@@ -24,6 +25,11 @@ import kotlin.concurrent.thread
 
 class MainActivity : ComponentActivity() {
     private val vm: AppViewModel by viewModels()
+
+    override fun onNewIntent(intent: android.content.Intent) {
+        super.onNewIntent(intent)
+        intent.getStringExtra(BriefingWorker.EXTRA_BRIEFING)?.let { vm.openBriefing = it }
+    }
 
     override fun onDestroy() {
         // closing the app ends read-aloud (as in the APPSC Prep app)
@@ -36,6 +42,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         RefreshWorker.schedule(this)
+        BriefingWorker.schedule(this)
+        intent?.getStringExtra(BriefingWorker.EXTRA_BRIEFING)?.let { vm.openBriefing = it }
         ReadAloud.init(this)
         // the short forms the notes define, so read-aloud says them in full (assets/abbr.json, from the Prep app)
         if (SpeechText.fromNotes.isEmpty()) {

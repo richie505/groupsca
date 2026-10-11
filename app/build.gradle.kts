@@ -17,8 +17,8 @@ android {
         applicationId = "com.appsc.ca"
         minSdk = 26
         targetSdk = 35
-        versionCode = 19
-        versionName = "4.1"
+        versionCode = 20
+        versionName = "5.0"
         buildConfigField("String", "FEED_URL", "\"$feedUrl\"")
     }
 
