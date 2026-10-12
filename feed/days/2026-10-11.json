@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-11",
- "updated": "2026-10-11T21:07:27.010Z",
+ "updated": "2026-10-12T06:40:02.209Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 564,
+   "found": 570,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 38,
+   "found": 34,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 44,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 8,
+   "found": 7,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 114,
+   "found": 149,
    "error": null
   },
   {
@@ -205,7 +205,7 @@
    "id": "affairscloud",
    "name": "AffairsCloud",
    "found": 0,
-   "error": "HTTP 522"
+   "error": "fetch failed"
   }
  ],
  "items": [
@@ -532,6 +532,66 @@
    "topicOf": "622c95ad2666"
   },
   {
+   "id": "68447f6fc6b7",
+   "date": "2026-10-11",
+   "pubDate": "2026-10-12",
+   "time": "03:15",
+   "title": "AP Government reshuffles Zilla Parishad CEOs, deputy CEOs",
+   "summary": "Officers posted to newly reconstituted ZPPs in 28 districts to strengthen rural administration",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/ap-government-reshuffles-zilla-parishad-ceos-deputy-ceos-1131463",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Administration"
+   ],
+   "score": 70,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "68447f6fc6b7",
+   "top": true
+  },
+  {
    "id": "1de115720a23",
    "date": "2026-10-11",
    "pubDate": "2026-10-12",
@@ -786,6 +846,85 @@
    "topicOf": "6506d6625a64"
   },
   {
+   "id": "b5abb72cf3bd",
+   "date": "2026-10-11",
+   "pubDate": "2026-10-12",
+   "time": "03:56",
+   "title": "Horticulture hub in the making",
+   "summary": "Rs 1 L crore plan to transform Rayalaseema into Global Horticulture Hub, says Agriculture Minister",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Rs 1 L crore plan to transform Rayalaseema into Global Horticulture Hub, says Agriculture Minister"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/horticulture-hub-in-the-making-1131501",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "related": [
+    {
+     "id": "a01cccc4892b",
+     "title": "Global horticulture hub week-long celebrations to be held",
+     "source": "The Hans India — Andhra Pradesh",
+     "url": "https://www.thehansindia.com/andhra-pradesh/global-horticulture-hub-week-long-celebrations-to-be-held-1131423"
+    }
+   ],
+   "thread": "2bbca69c5878",
+   "update": true,
+   "threadTitle": "Naidu, Sitharaman to lay foundation for ₹1 lakh crore Rayalaseema Horticulture Hub at Madanapalle on October 2",
+   "threadStart": "2026-09-23",
+   "line": "Horticulture hub in the making"
+  },
+  {
    "id": "229f8f9bf2d5",
    "date": "2026-10-11",
    "pubDate": "2026-10-11",
@@ -942,6 +1081,106 @@
     "gaps": []
    },
    "thread": "29c8e83929fb",
+   "top": true
+  },
+  {
+   "id": "7b347ba3d615",
+   "date": "2026-10-11",
+   "pubDate": "2026-10-12",
+   "time": "03:51",
+   "title": "Wow! Drought-prone region to blossom into global fruit bowl!",
+   "summary": "Rs 1 L cr Integrated Horticulture Development Plan 201 horticulture clusters coming up across 10 districts 9.6 lakh farmers expected to benefit",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Rs 1 L cr Integrated Horticulture Development Plan 201 horticulture clusters coming up across 10 districts 9.6 lakh farmers expected to benefit"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/wow-drought-prone-region-to-blossom-into-global-fruit-bowl-1131498",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Drought Types, Indicators and Management",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Disaster Management › #8 · Drought Types, Indicators and Management",
+      "bullets": [
+       "The Drought Prone Areas Programme was taken up as a holistic drought-management programme.",
+       "Approximately 68% of India’s geographical area is drought-prone.",
+       "Chronically drought-prone areas receive less than 750 mm of rainfall."
+      ]
+     },
+     {
+      "topic": "AP Irrigation and Renewable Projects",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #16 · AP Irrigation and Renewable Projects",
+      "bullets": [
+       "Galeru Nagari Sujala Sravanthi carries floodwater to drought-prone areas.",
+       "Chintalapudi LIS supplies Godavari water to upland and drought-prone areas."
+      ]
+     },
+     {
+      "topic": "Landslides: Hazards, Regions and Mitigation",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Disaster Management › #18 · Landslides: Hazards, Regions and Mitigation",
+      "bullets": [
+       "The Western Ghats and Konkan region include Kerala as a landslide-prone area."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "7b347ba3d615",
    "top": true
   },
   {
@@ -1494,9 +1733,7 @@
     "sections": [],
     "gaps": []
    },
-   "thread": "a01cccc4892b",
-   "oneLiner": true,
-   "line": "Special mandal officers and extension assistants will oversee the rollout, ensuring daily progress reports"
+   "topicOf": "b5abb72cf3bd"
   },
   {
    "id": "1d0d87c54bd1",
@@ -1954,6 +2191,66 @@
    "top": true
   },
   {
+   "id": "47fe81b78e72",
+   "date": "2026-10-11",
+   "pubDate": "2026-10-12",
+   "time": "03:54",
+   "title": "Getting down to the nitty-gritty of horticulture devpt roadmap",
+   "summary": "Discover the 3-year phased implementation plan for Rayalaseema's ₹1 lakh crore Integrated Horticulture Development Plan, spanning 6 investment packages across 201 clusters.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Discover the 3-year phased implementation plan for Rayalaseema's ₹1 lakh crore Integrated Horticulture Development Plan, spanning 6 investment packages across 201 clusters."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/getting-down-to-the-nitty-gritty-of-horticulture-devpt-roadmap-1131500",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "47fe81b78e72",
+   "top": true
+  },
+  {
    "id": "7ce874e266aa",
    "date": "2026-10-11",
    "pubDate": "2026-10-11",
@@ -2142,8 +2439,7 @@
     ],
     "gaps": []
    },
-   "thread": "28544e1b6d59",
-   "top": true
+   "thread": "28544e1b6d59"
   },
   {
    "id": "aa47793d7958",
@@ -2242,8 +2538,7 @@
     ],
     "gaps": []
    },
-   "thread": "aa47793d7958",
-   "top": true
+   "thread": "aa47793d7958"
   },
   {
    "id": "85036eae65e0",
@@ -2311,8 +2606,7 @@
     ],
     "gaps": []
    },
-   "thread": "85036eae65e0",
-   "top": true
+   "thread": "85036eae65e0"
   },
   {
    "id": "53908f7ce4f0",
@@ -2828,6 +3122,95 @@
     "gaps": []
    },
    "thread": "1e905f01f3c1"
+  },
+  {
+   "id": "70d6c80c3dd3",
+   "date": "2026-10-11",
+   "pubDate": "2026-10-11",
+   "time": "19:17",
+   "title": "Couple rejects $131,000 offer for data center power line on their property",
+   "summary": "Jerry Zelenka has turned down an offer from American Transmission Company for a power line on his property. The proposal involves clearing trees and demolishing several buildings near his home, prompting Zelenka's concerns. He feels the compensation does not reflect the value of his property or the destruction planned. Zelenka fears the use of eminent domain if an agreement is not reached.",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "Zelenka fears the use of eminent domain if an agreement is not reached."
+    }
+   ],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/technology/tech-news/wisconsin-couple-rejects-131000-offer-for-proposed-data-centre-power-line-that-threatens-their-trees-six-buildings-and-puts-130-foot-tower-near-their-driveway/articleshow/134871623.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agreement"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Force, Energy, Friction and Machines",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Physics › #14 · Force, Energy, Friction and Machines",
+      "bullets": [
+       "Friction enables power transmission in belts and pulleys.",
+       "Belt drives use friction for power transmission."
+      ]
+     },
+     {
+      "topic": "Landmark Judgements on Social Issues",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #47 · Landmark Judgements on Social Issues",
+      "bullets": [
+       "In Re: Destruction of Public and Private Properties held that leaders of agitations resulting in property destruction are subject to vicarious civil liability."
+      ]
+     },
+     {
+      "topic": "Semiconductors, Transistors and Superconductors",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Physics › #15 · Semiconductors, Transistors and Superconductors",
+      "bullets": [
+       "Aluminium is used for power transmission."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "70d6c80c3dd3"
   },
   {
    "id": "1ce2ab2bfeea",
@@ -3565,6 +3948,84 @@
    "thread": "0ce6b474f152"
   },
   {
+   "id": "d73eb90011b5",
+   "date": "2026-10-11",
+   "pubDate": "2026-10-12",
+   "time": "03:31",
+   "title": "Kerala State Biodiversity Board submits policy document to mitigate threats due to invasive species",
+   "summary": "Document suggests laying emphasise on prevention and monitoring of the spread of invasive alien species and generating public awareness and capacity-building to handle the menace",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/kerala-state-biodiversity-board-submits-policy-document-to-address-threats-by-invasive-species/article71571968.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Biodiversity"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Ecology, Biodiversity and Conservation Concepts",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #25 · Ecology, Biodiversity and Conservation Concepts",
+      "bullets": [
+       "An alien species is introduced outside its natural range.",
+       "An invasive alien species is an alien species that adversely affects native ecosystems or species."
+      ]
+     },
+     {
+      "topic": "Environmental Organisations and Conservation Bodies",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #23 · Environmental Organisations and Conservation Bodies",
+      "bullets": [
+       "The National Board for Wildlife provides the policy framework for wildlife conservation.",
+       "The Animal Welfare Board of India was established under the Prevention of Cruelty to Animals Act, 1960.",
+       "The Centre for Biodiversity Policy and Law is located within the NBA in Chennai.",
+       "The Centre for Biodiversity Policy and Law is a collaboration between India and Norway."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "d73eb90011b5"
+  },
+  {
    "id": "29892cc10f09",
    "date": "2026-10-11",
    "pubDate": "2026-10-11",
@@ -3966,6 +4427,58 @@
     "gaps": []
    },
    "thread": "717f5eb848ef"
+  },
+  {
+   "id": "9b4a65436600",
+   "date": "2026-10-11",
+   "pubDate": "2026-10-12",
+   "time": "04:45",
+   "title": "మున్సిపల్‌ ఎన్నికల రిజర్వేషన్లపై విస్తృత కసరత్తు!",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/extensive-exercise-on-municipal-election-reservations/1799/126184899",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Reservation"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "9b4a65436600"
   },
   {
    "id": "1cb1e7d325a2",
@@ -5409,6 +5922,20 @@
  ],
  "quiz": [
   {
+   "id": "68447f6fc6b7:ep088a",
+   "item": "68447f6fc6b7",
+   "title": "AP Government reshuffles Zilla Parishad CEOs, deputy CEOs",
+   "q": "Officers posted to newly reconstituted ZPPs in ____ to strengthen rural administration",
+   "options": [
+    "56 districts",
+    "35 districts",
+    "17 districts",
+    "28 districts"
+   ],
+   "answer": 3,
+   "kind": "figure"
+  },
+  {
    "id": "1de115720a23:9swa7j",
    "item": "1de115720a23",
    "title": "Elect coalition candidates in local body elections: Gottipati Ravi Kumar",
@@ -5434,6 +5961,20 @@
     "42 years"
    ],
    "answer": 1,
+   "kind": "figure"
+  },
+  {
+   "id": "7b347ba3d615:1argiv3",
+   "item": "7b347ba3d615",
+   "title": "Wow! Drought-prone region to blossom into global fruit bowl!",
+   "q": "Rs 1 L cr Integrated Horticulture Development Plan 201 horticulture clusters coming up across ____ 9.6 lakh farmers expected to benefit",
+   "options": [
+    "15 districts",
+    "20 districts",
+    "10 districts",
+    "13 districts"
+   ],
+   "answer": 2,
    "kind": "figure"
   },
   {
@@ -5521,34 +6062,6 @@
    "kind": "figure"
   },
   {
-   "id": "28544e1b6d59:kgsv97",
-   "item": "28544e1b6d59",
-   "title": "Sixth POCSO Act case against ‘Gem Granite’ Veeramani",
-   "q": "The Protection of Children from Sexual Offences Act came into force on November 14, ____.",
-   "options": [
-    "2013",
-    "2014",
-    "2012",
-    "2015"
-   ],
-   "answer": 2,
-   "kind": "year"
-  },
-  {
-   "id": "aa47793d7958:1mmyv5p",
-   "item": "aa47793d7958",
-   "title": "The federal dilemma of delimitation",
-   "q": "The Rajya Sabha can only make recommendations on a Money Bill, and its consideration is limited to ____.",
-   "options": [
-    "18 days",
-    "8 days",
-    "14 days",
-    "7 days"
-   ],
-   "answer": 2,
-   "kind": "figure"
-  },
-  {
    "id": "622c95ad2666:1s3mrxs",
    "item": "622c95ad2666",
    "title": "Clarify SC, ST reservations in local bodies: Sailajanath",
@@ -5577,6 +6090,34 @@
    "kind": "figure"
   },
   {
+   "id": "28544e1b6d59:kgsv97",
+   "item": "28544e1b6d59",
+   "title": "Sixth POCSO Act case against ‘Gem Granite’ Veeramani",
+   "q": "The Protection of Children from Sexual Offences Act came into force on November 14, ____.",
+   "options": [
+    "2013",
+    "2014",
+    "2012",
+    "2015"
+   ],
+   "answer": 2,
+   "kind": "year"
+  },
+  {
+   "id": "aa47793d7958:1mmyv5p",
+   "item": "aa47793d7958",
+   "title": "The federal dilemma of delimitation",
+   "q": "The Rajya Sabha can only make recommendations on a Money Bill, and its consideration is limited to ____.",
+   "options": [
+    "18 days",
+    "8 days",
+    "14 days",
+    "7 days"
+   ],
+   "answer": 2,
+   "kind": "figure"
+  },
+  {
    "id": "677dfe46fe32:1rd7tp",
    "item": "677dfe46fe32",
    "title": "Texas judge overturns reservoir permit that could flood over 16,000 farm acres",
@@ -5586,34 +6127,6 @@
     "12,000 acres",
     "16,000 acres",
     "24,000 acres"
-   ],
-   "answer": 2,
-   "kind": "figure"
-  },
-  {
-   "id": "209a73484b13:7quai8",
-   "item": "209a73484b13",
-   "title": "Five healthcare centres in Mavelikara constituency set for major upgrade",
-   "q": "The first Finance Commission was constituted under a Presidential order in ____.",
-   "options": [
-    "1951",
-    "1949",
-    "1950",
-    "1952"
-   ],
-   "answer": 0,
-   "kind": "year"
-  },
-  {
-   "id": "da0e579878e5:qstwge",
-   "item": "da0e579878e5",
-   "title": "Less-than-2-lane NH stretches shrink to 8% as high-speed corridors surge",
-   "q": "A Low Pressure Area has a wind speed of less than ____/h.",
-   "options": [
-    "16 km",
-    "23 km",
-    "31 km",
-    "47 km"
    ],
    "answer": 2,
    "kind": "figure"
