@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-13",
- "updated": "2026-10-13T15:12:30.743Z",
+ "updated": "2026-10-13T19:37:04.136Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 687,
+   "found": 693,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 34,
+   "found": 29,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 45,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 7,
    "error": null
   },
   {
@@ -138,8 +138,8 @@
   {
    "id": "mongabay-india",
    "name": "Mongabay India",
-   "found": 20,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "hindu-editorial",
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 147,
+   "found": 94,
    "error": null
   },
   {
@@ -408,6 +408,12 @@
      "title": "Karnataka to explore legal options to challenge High Court verdict striking down reservation enhancement",
      "source": "The Hindu — National",
      "url": "https://www.thehindu.com/news/cities/bangalore/karnataka-to-explore-legal-options-to-challenge-high-court-verdict-striking-down-reservation-enhancement/article71578334.ece"
+    },
+    {
+     "id": "6ebee4434341",
+     "title": "ఏపీలో డీఎస్సీ నోటిఫికేషన్‌ విడుదల",
+     "source": "Eenadu — Andhra Pradesh",
+     "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/dsc-notification-released-in-ap/1701/126185916"
     }
    ],
    "thread": "73b71885f97a",
@@ -1018,6 +1024,12 @@
      "title": "Union Environment Minister and CM (NCT Delhi) review Air Pollution Mitigation measures at Anand Vihar Hotspot and visit DPCC’s AI-enabled ICCC facility at Shastri Park",
      "source": "PIB",
      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322719&reg=3&lang=1"
+    },
+    {
+     "id": "387a7dc555c8",
+     "title": "The sound and the fiery: on green crackers, pollution control",
+     "source": "The Hindu — Editorial",
+     "url": "https://www.thehindu.com/opinion/editorial/the-sound-and-the-fiery-on-green-crackers-pollution-control/article71579360.ece"
     }
    ],
    "thread": "1926f3cb6fcd",
@@ -1340,6 +1352,229 @@
     "gaps": []
    },
    "thread": "06ed44c0a738",
+   "top": true
+  },
+  {
+   "id": "05cb30d34d5e",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "20:43",
+   "title": "Union Agriculture Minister Shri Shivraj Singh Chouhan and Environment Minister Shri Bhupender Yadav conduct joint review of stubble management",
+   "summary": "The meeting was co-chaired by Union Minister for Agriculture and Farmers’ Welfare, and Rural Development Shri Shivraj Singh Chouhan, and Union Minister for Environment, Forest and Climate Change, Shri Bhupender Yadav. During the meeting, both Union Ministers made it clear that very little time remained between the completion of crop harvesting and the sowing of rabi crops.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "He further stated that the objective was not merely to prevent stubble fires but to develop a robust system in which farmers would have no need to burn crop residue in the first place."
+    },
+    {
+     "angle": "Figures",
+     "text": "Haryana recorded a reduction of 53.3 per cent, while Uttar Pradesh registered a decline of approximately 32 per cent."
+    },
+    {
+     "angle": "Figures",
+     "text": "Ensure 100 per cent utilisation of machines; prevent older machines from remaining out of operation Union Minister Shri Shivraj Chouhan placed particular emphasis on ensuring that crop residue management machinery remained operational and was put to effective use."
+    },
+    {
+     "angle": "Figures",
+     "text": "He stated that the Central Government had so far provided states with more than 3.54 lakh crop residue management machines, including 26,109 new machines during the current financial year, 2026–27."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Agriculture & Farmers Welfare",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322991&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "Remains",
+    "Agriculture",
+    "States",
+    "Health"
+   ],
+   "score": 66,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Disaster Management Institutions and Responsibilities",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Disaster Management › #17 · Disaster Management Institutions and Responsibilities",
+      "bullets": [
+       "Disaster management was shifted from the Department of Agriculture to the Ministry of Home Affairs.",
+       "The State Crisis Management Committee is chaired by the Chief Secretary.",
+       "The National Disaster Response Force has operational control through the National Disaster Management Authority.",
+       "The Ministry of Agriculture and Farmers Welfare is the nodal ministry for drought.",
+       "The Ministry of Environment, Forest and Climate Change is the nodal ministry for forest fire."
+      ]
+     },
+     {
+      "topic": "Drought Types, Indicators and Management",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Disaster Management › #8 · Drought Types, Indicators and Management",
+      "bullets": [
+       "The Disaster Management Act, 2005 provided national-level disaster-management legislation.",
+       "The Manual for Drought Management was revised in 2016 by the Ministry of Agriculture.",
+       "PMFBY provides crop insurance in drought management."
+      ]
+     },
+     {
+      "topic": "FRBM Act, Deficits and Debt Management",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #21 · FRBM Act, Deficits and Debt Management",
+      "bullets": [
+       "Deficit reduction is an objective of the FRBM Act.",
+       "Debt management is an objective of the FRBM Act."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "31b510bf7bc7",
+   "update": true,
+   "threadTitle": "Agriculture Minister Shivraj Singh Chouhan Launches PM Gram Sadak Yojana-4 in Madhya Pradesh",
+   "threadStart": "2026-09-27",
+   "line": "Union Agriculture Minister Shri Shivraj Singh Chouhan and Environment Minister Shri Bhupender Yadav conduct joint review of stubble management"
+  },
+  {
+   "id": "bb370d7c5917",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "23:33",
+   "title": "Andhra Pradesh better prepared for cyclones 12 years after Hudhud, say officials",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-better-prepared-for-cyclones-12-years-after-hudhud-say-officials/article71579445.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Andhra Pradesh Geographical Firsts",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #1 · Andhra Pradesh Geographical Firsts",
+      "bullets": [
+       "Andhra Pradesh was the first state in India formed on linguistic grounds.",
+       "Sri Venkateswara was the first bioreserve in Andhra Pradesh.",
+       "The Dolphin Conservation Society in Visakhapatnam established the first ex-situ biodiversity park of Andhra Pradesh.",
+       "Andhra Pradesh was identified as the location of the first gold mine in India.",
+       "Anantapur was the first place in Andhra Pradesh for iron production."
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh Rivers and River Features",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #3 · Andhra Pradesh Rivers and River Features",
+      "bullets": [
+       "The Penna enters Andhra Pradesh in Anantapur district.",
+       "The Vamsadhara enters Andhra Pradesh at Pathapatnam in Srikakulam district.",
+       "The Sileru originates in Andhra Pradesh."
+      ]
+     },
+     {
+      "topic": "Andhra Pradesh Hills and Mountain Ranges",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #8 · Andhra Pradesh Hills and Mountain Ranges",
+      "bullets": [
+       "The Eastern Ghats are the major hill system of Andhra Pradesh.",
+       "The Eastern Ranges are located in North Andhra Pradesh.",
+       "The Kadapa Ranges are located in South Andhra Pradesh.",
+       "The maximum height of the Eastern Ghats in Andhra Pradesh is at Chintapalli.",
+       "The Simhachalam Hills are north of Andhra Pradesh's geographical extent."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "bb370d7c5917",
    "top": true
   },
   {
@@ -1679,6 +1914,14 @@
     ],
     "gaps": []
    },
+   "related": [
+    {
+     "id": "21cde5de79b5",
+     "title": "Former Supreme Court judge calls for constitutional safeguards to ensure ECI’s independence",
+     "source": "The Hindu — National",
+     "url": "https://www.thehindu.com/news/national/kerala/former-supreme-court-judge-calls-for-constitutional-safeguards-to-ensure-ecis-independence/article71580390.ece"
+    }
+   ],
    "thread": "37014c299862",
    "top": true
   },
@@ -2637,6 +2880,232 @@
    "topicOf": "b44a34d6a784"
   },
   {
+   "id": "5be229ef8572",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "22:04",
+   "title": "Union Minister Jyotiraditya Scindia Inaugurates North East Bankers’ Conclave 3.0 in Mizoram, Calls for Greater Credit Flow to Region",
+   "summary": "Scindia today inaugurated the North East Bankers’ Conclave 3.0 at Mizoram University in Aizawl. The conclave focused on expanding banking access, strengthening financial inclusion and accelerating economic growth across the Northeast.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Highlighting the need to convert financial inclusion into economic inclusion, Union Minister Jyotiraditya Scindia said only ₹47 is extended as credit for every ₹100 deposited in banks across the Northeast."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "Reviewing progress since the first North East Bankers’ Conclave, shri Scindia said approximately 73% progress had been achieved over five years against the banking targets set at the inaugural conclave."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "₹40,000 Crore Investments Grounded in Northeast Union Minister Scindia said approximately ₹40,000 crore in investments have been grounded across the eight northeastern states following the Rising North East Investors Summit in May 2025."
+    },
+    {
+     "angle": "Figures",
+     "text": "He also cited the Bairabi railway line in Mizoram, which has carried approximately 15 lakh passengers through 1,100 trips."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Development of North-East Region",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2323021&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    },
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    }
+   ],
+   "topics": [
+    "Railways and multimodal transport"
+   ],
+   "angles": [
+    "University",
+    "Union Minister",
+    "States"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 15,
+    "ap": 0,
+    "importance": 13,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Financial Inclusion and Stability Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #58 · Financial Inclusion and Stability Institutions",
+      "bullets": [
+       "Financial inclusion expands banking infrastructure in underserved and rural areas.",
+       "Financial inclusion provides access to credit for weaker sections.",
+       "Financial inclusion promotes access to insurance for financial security.",
+       "Financial inclusion provides access to formal financial services.",
+       "Financial inclusion provides access to a bank account."
+      ]
+     },
+     {
+      "topic": "NABARD and Rural Credit Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #16 · NABARD and Rural Credit Institutions",
+      "bullets": [
+       "Regional Rural Banks provide direct rural banking and credit.",
+       "Regional Rural Banks are associated with rural and semi-urban banking."
+      ]
+     },
+     {
+      "topic": "Inclusive Growth and Governance",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #70 · Inclusive Growth and Governance",
+      "bullets": [
+       "Infrastructure development expands access and economic opportunities.",
+       "Inclusive growth requires access to credit.",
+       "Access to credit enables productive activity.",
+       "SHGs enable financial and economic participation."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "5be229ef8572",
+   "top": true
+  },
+  {
+   "id": "5daad82bb829",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "23:33",
+   "title": "Vijay Meets Chandrababu Naidu, Discusses Krishna River Water Sharing",
+   "summary": "In his first visit to the neighbouring state since taking over as Chief Minister, Vijay's programme included a visit to the temple and discussions with Naidu.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "In his first visit to the neighbouring state since taking over as Chief Minister, Vijay's programme included a visit to the temple and discussions with Naidu."
+    }
+   ],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/vijay-meets-chandrababu-naidu-discusses-krishna-river-water-sharing-12181214#publisher=newsstand",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "AP Irrigation and Renewable Projects",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #16 · AP Irrigation and Renewable Projects",
+      "bullets": [
+       "Nagarjuna Sagar is on the Krishna River.",
+       "Polavaram National Project diverts 80 TMC of Godavari water to the Krishna River.",
+       "Prakasam Barrage regulates Krishna water into the Krishna Delta canal system.",
+       "Pattiseema LIS transfers water to the Krishna River above Prakasam Barrage.",
+       "Handri-Neeva Sujala Sravanthi uses the Krishna River and Srisailam backwaters."
+      ]
+     },
+     {
+      "topic": "Indian Irrigation Projects and Rivers",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Geography › #31 · Indian Irrigation Projects and Rivers",
+      "bullets": [
+       "Srisailam Project is constructed across the Krishna River."
+      ]
+     },
+     {
+      "topic": "AP Geography: Largest Features and Rivers",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #24 · AP Geography: Largest Features and Rivers",
+      "bullets": [
+       "Tungabhadra is a tributary of the Krishna River."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "5daad82bb829"
+  },
+  {
    "id": "65923d00c35b",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -2797,8 +3266,7 @@
      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322953&reg=3&lang=1"
     }
    ],
-   "thread": "a1f991d066a7",
-   "top": true
+   "thread": "a1f991d066a7"
   },
   {
    "id": "be511d227225",
@@ -2912,8 +3380,7 @@
     ],
     "gaps": []
    },
-   "thread": "be511d227225",
-   "top": true
+   "thread": "be511d227225"
   },
   {
    "id": "c58ac821f250",
@@ -3262,6 +3729,109 @@
    "thread": "02b35ff90f4c"
   },
   {
+   "id": "6fac1cea44de",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "21:52",
+   "title": "Supreme Court Registry clears, numbers Rahul Gandhi’s plea against SIR-CEC within 24 hours",
+   "summary": "The petition has sought a complete disclosure of records and decisions of Election Commission on Special Intensive Revision and an independent probe into allegations of unilateral exercise of power by Chief Election Commissioner Gyanesh Kumar",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The petition has sought a complete disclosure of records and decisions of Election Commission on Special Intensive Revision and an independent probe into allegations of unilateral exercise of power by Chief Election Commissioner Gyanesh Kumar"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/rahul-gandhis-plea-not-listed-for-hearing-on-october-13-faces-routine-clerical-hurdles/article71577862.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Election Commission",
+    "Supreme court"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Colonial Commissions and Committees",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian History › #124 · Colonial Commissions and Committees",
+      "bullets": [
+       "The Campbell Commission was associated with the era of Sir John Lawrence.",
+       "The Strachey Commission was chaired by Sir Richard Strachey.",
+       "The Simon Commission was chaired by Sir John Simon."
+      ]
+     },
+     {
+      "topic": "Ordinance-Making Power and Limitations",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #74 · Ordinance-Making Power and Limitations",
+      "bullets": [
+       "An ordinance can introduce tax provisions within legislative power.",
+       "Krishna Kumar Singh (2017) concerns the ordinance-making power."
+      ]
+     },
+     {
+      "topic": "Election Commission: Powers, Roles and Reforms",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #25 · Election Commission: Powers, Roles and Reforms",
+      "bullets": [
+       "The Election Commission of India is a permanent body.",
+       "The Election Commission of India operates under Part XV of the Constitution.",
+       "Articles 324 to 329 relate to the Election Commission of India.",
+       "The Election Commission of India was established on 25 January 1950.",
+       "Constituency delimitation is executed by an independent Delimitation Commission."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "6fac1cea44de"
+  },
+  {
    "id": "1af7a864c37b",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -3385,6 +3955,100 @@
     "gaps": []
    },
    "thread": "1af7a864c37b"
+  },
+  {
+   "id": "b23a7de5f1a9",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "21:09",
+   "title": "NTPC eyes green hydrogen exports, targets Asian and European markets",
+   "summary": "CMD Gurdeep Singh added that green hydrogen could become a viable business but the priority is for it move from a pilot to commercial scale.",
+   "facts": [],
+   "source": "The Hindu — Economy",
+   "sourceId": "hindu-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Business"
+   ],
+   "url": "https://www.thehindu.com/business/Industry/ntpc-eyes-green-hydrogen-exports-targets-asian-and-european-markets/article71580094.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Export",
+    "Exports",
+    "Hydrogen"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Hydrogen Production, Properties and Applications",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Chemistry › #10 · Hydrogen Production, Properties and Applications",
+      "bullets": [
+       "Green hydrogen is produced by electrolysis of water using renewable electricity.",
+       "Green hydrogen can use solar, wind, or hydroelectricity as its renewable electricity source.",
+       "Green hydrogen has zero carbon dioxide emissions.",
+       "Green hydrogen is described as the cleanest hydrogen type.",
+       "Green hydrogen is a focus of India’s Mission."
+      ]
+     },
+     {
+      "topic": "Financial Markets and Mutual Funds",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #11 · Financial Markets and Mutual Funds",
+      "bullets": [
+       "The Forward Markets Commission was the regulator of commodity futures markets.",
+       "The Forward Markets Commission merged with SEBI in 2015."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "b23a7de5f1a9"
   },
   {
    "id": "2bd3f565d027",
@@ -3726,6 +4390,102 @@
    "threadTitle": "GVMC Mayor post reserved for women as Visakhapatnam prepares for first direct mayoral election in 26 years",
    "threadStart": "2026-10-12",
    "line": "Women’s quota for GVMC Mayor post sets off lobbying; senior leaders push spouses and daughters"
+  },
+  {
+   "id": "a729e3b8fbdf",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "20:05",
+   "title": "Can Old Monk be sold as rum? FSSAI, manufacturer lock horns in Bombay high court",
+   "summary": "Old Monk’s maker says Maharashtra has reportedly lost around Rs 350 crore in excise revenue since FSSAI restricted sales of rum from its Khopoli unit, and that its own losses top Rs 500 crore. FSSAI says the spirit can’t be sold simply as “rum” if it uses added flavouring, and wants a “rum-like” label. The Bombay high court, which refused interim relief, will hear the matter again on October 23.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Old Monk’s maker says Maharashtra has reportedly lost around Rs 350 crore in excise revenue since FSSAI restricted sales of rum from its Khopoli unit, and that its own losses top Rs 500 crore."
+    }
+   ],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/city/mumbai/old-monk-sales-curbs-cost-maharashtra-rs-350-crore-in-excise-revenue-maker-tells-bombay-high-court/articleshow/134920388.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Measuring Instruments and SI Standards",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Physics › #6 · Measuring Instruments and SI Standards",
+      "bullets": [
+       "The Celsius scale uses °C as its unit."
+      ]
+     },
+     {
+      "topic": "NOTA, EVMs and Electoral Reforms",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #66 · NOTA, EVMs and Electoral Reforms",
+      "bullets": [
+       "Under old Rule 49-O, an abstaining voter refused to vote before the Presiding Officer."
+      ]
+     },
+     {
+      "topic": "High Courts: Articles, Powers and Jurisdiction",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #70 · High Courts: Articles, Powers and Jurisdiction",
+      "bullets": [
+       "The Bombay High Court has jurisdiction over Maharashtra."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "a729e3b8fbdf"
   },
   {
    "id": "97cfa3770bb7",
@@ -4086,6 +4846,128 @@
    "line": "After The Hindu report, Collector orders GMR to repair roads damaged in Bhogapuram airport construction"
   },
   {
+   "id": "a6f6770c72f3",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "23:47",
+   "title": "Andhra University invites applications for self-support law courses",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National",
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-university-invites-applications-for-self-support-law-courses/article71580688.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U4",
+     "exam": "G2",
+     "label": "Origin and Growth of the Andhra Movement - Andhra Mahasabhas, Prominent Leaders, Formation of Andhra State 1953, Role of Press, Library Movement, Folk and Tribal Culture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University",
+    "Applications"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 10,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "a6f6770c72f3"
+  },
+  {
+   "id": "47af8759ca4a",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "23:54",
+   "title": "Government Datasets To Be Shifted To Indigenous Cloud Infra Ahead Of Data Protection Act Rollout",
+   "summary": "The focus is on strengthening domestic control over the storage and processing of government information.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/government-datasets-to-be-shifted-to-indigenous-cloud-infra-ahead-of-data-protection-act-rollout-12181267#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Indigenous"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Marriage, Women and Child Protection Acts",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #48 · Marriage, Women and Child Protection Acts",
+      "bullets": [
+       "The Protection of Women from Domestic Violence Act was enacted in 2005."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "47af8759ca4a"
+  },
+  {
    "id": "79ced1805501",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -4252,6 +5134,88 @@
     "gaps": []
    },
    "topicOf": "97cfa3770bb7"
+  },
+  {
+   "id": "bc640debaeec",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "21:05",
+   "title": "India exports 18-coach LHB train to Bangladesh with CCTVs and baby care rooms",
+   "summary": "Bangladesh Railway placed a fresh order through RITES in 2024 for the manufacture and supply of 200 broad-gauge passenger coaches. The order covers seven different variants and further deepens the association between the two organisations. The coaches have been customised to suit Bangladesh Railway's operational requirements while providing passengers with greater comfort.",
+   "facts": [],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/business/india-business/indian-railways-exports-first-18-coach-lhb-train-for-bangladesh-as-part-of-200-coach-order-specially-designed-coaches-feature-cctvs-baby-care-and-prayer-rooms-and-other-passenger-friendly-amenities/articleshow/134920133.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Export",
+    "Exports"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "#52-2 · Foreign Trade and Balance of Payments",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #52-2 · Foreign Trade and Balance of Payments",
+      "bullets": [
+       "A trade surplus occurs when exports are greater than imports."
+      ]
+     },
+     {
+      "topic": "Indian Rivers and River Systems",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Geography › #1 · Indian Rivers and River Systems",
+      "bullets": [
+       "Ganga flows through Farakka in West Bengal before entering Bangladesh.",
+       "Brahmaputra flows through Tibet, Arunachal Pradesh, Assam, and Bangladesh."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "bc640debaeec"
   },
   {
    "id": "4c9130a35f85",
@@ -4608,6 +5572,86 @@
     "gaps": []
    },
    "thread": "cd81041bbab5"
+  },
+  {
+   "id": "6ebee4434341",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "22:34",
+   "title": "ఏపీలో డీఎస్సీ నోటిఫికేషన్‌ విడుదల",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/dsc-notification-released-in-ap/1701/126185916",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Notification"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 5
+   },
+   "lang": "te",
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Constitutional Articles and Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #2 · Constitutional Articles and Institutions",
+      "bullets": [
+       "Article 46 concerns the promotion of the educational interests of Scheduled Castes and Scheduled Tribes.",
+       "Articles 330 to 334 concern reservation of seats for Scheduled Castes, Scheduled Tribes and Anglo-Indians.",
+       "Article 338 concerns the National Commission for Scheduled Castes."
+      ]
+     },
+     {
+      "topic": "Constitutional Acts and Governance Reforms",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #22 · Constitutional Acts and Governance Reforms",
+      "bullets": [
+       "The Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act was enacted in 1989."
+      ]
+     },
+     {
+      "topic": "Constitutional Amendments, Methods and Key Provisions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #23 · Constitutional Amendments, Methods and Key Provisions",
+      "bullets": [
+       "The 89th Amendment bifurcated the National Commission for Scheduled Castes and Scheduled Tribes.",
+       "The 83rd Amendment exempted Arunachal Pradesh from reservations for Scheduled Castes in Panchayats."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "b884a5ef5407"
   },
   {
    "id": "f58ef89355ad",
@@ -5093,6 +6137,169 @@
    "thread": "e89f6e3cfebc"
   },
   {
+   "id": "709db38cd827",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-14",
+   "time": "00:20",
+   "title": "Odisha Cabinet approves free textbooks for 28.7 lakh students, ₹500-crore urban drainage scheme",
+   "summary": "Odisha Cabinet approves free textbooks for 28.7 lakh students, ₹500-crore urban drainage scheme",
+   "facts": [
+    {
+     "angle": "Cabinet decision",
+     "text": "Odisha Cabinet approves free textbooks for 28.7 lakh students, ₹500-crore urban drainage scheme"
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/odisha-cabinet-approves-free-textbooks-for-28-7-lakh-students-rs-500-crore-urban-drainage-scheme-101791917427726.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Hydrological Disasters and Flood Management",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · General Geography › #11 · Hydrological Disasters and Flood Management",
+      "bullets": [
+       "An urban flood results from rainfall combined with inadequate urban drainage.",
+       "Poor storm-water drainage causes urban flooding.",
+       "Drainage planning reduces urban waterlogging."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "709db38cd827"
+  },
+  {
+   "id": "21cde5de79b5",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "23:55",
+   "title": "Former Supreme Court judge calls for constitutional safeguards to ensure ECI’s independence",
+   "summary": "Kurian Joseph says the ECI’s appointment and service conditions should be enshrined in the Constitution; K. Balakrishnan Nair, former Kerala High Court judge, says the removal of voters during the special intensive revision violated the principles of natural justice; writer K.R. Meera expresses faith in youth-led protests to restore democracy and brotherhood",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/former-supreme-court-judge-calls-for-constitutional-safeguards-to-ensure-ecis-independence/article71580390.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review",
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Constitution",
+    "Supreme court",
+    "High Court"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Indian Society: Firsts and Welfare Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #1 · Indian Society: Firsts and Welfare Institutions",
+      "bullets": [
+       "Directive Principles, particularly Articles 39 and 42, provided the first constitutional recognition of family welfare.",
+       "Articles 15(4) and 16(4) were the first Constitutional safeguards for Scheduled Castes and Scheduled Tribes.",
+       "Jayaprakash Narayan led the first major post-Independence youth movement."
+      ]
+     },
+     {
+      "topic": "CAG Constitutional Powers and Audit Role",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #80 · CAG Constitutional Powers and Audit Role",
+      "bullets": [
+       "The Comptroller and Auditor General’s (Duties, Powers and Conditions of Service) Act was enacted in 1971.",
+       "Parliament determines the salary and service conditions of the Comptroller and Auditor General by law.",
+       "The salary and service conditions of the Comptroller and Auditor General are governed by Article 148(3) and the Second Schedule.",
+       "The salary and service conditions of the Comptroller and Auditor General cannot be varied to the disadvantage of the Comptroller and Auditor General after appointment.",
+       "Article 148 covers the appointment, oath, tenure, removal, post-retirement ban, salary and charged expenses of the Comptroller and Auditor General."
+      ]
+     },
+     {
+      "topic": "Constitutional and Statutory Bodies",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #65 · Constitutional and Statutory Bodies",
+      "bullets": [
+       "A constitutional body is an authority or institution directly established within the text of the Constitution of India.",
+       "Removal of members of the Union Public Service Commission and State Public Service Commissions is carried out under Article 317.",
+       "Removal of members of the Union Public Service Commission and State Public Service Commissions involves a Supreme Court inquiry.",
+       "The Union and State Public Service Commissions are constitutional bodies under Article 315."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "37014c299862"
+  },
+  {
    "id": "4d851ee6a941",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -5346,6 +6553,89 @@
    "thread": "2c465d10cfc5"
   },
   {
+   "id": "da96af6ee147",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "21:02",
+   "title": "Pesticides makers’ body CropLife issues advisory as Rabi sowing begins",
+   "summary": "The industry body has mentioned about judicious use of crop protection products to save on input costs without compromising yields, CropLife said in a statement",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/pesticides-makers-body-croplife-issues-advisory-as-rabi-sowing-begins/article71580106.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Industry"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Indian Crops by Agricultural Season",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Geography › #24 · Indian Crops by Agricultural Season",
+      "bullets": [
+       "French bean is a Rabi crop.",
+       "Lentil is a Rabi pulse crop."
+      ]
+     },
+     {
+      "topic": "Planning Commission and NITI Aayog",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Economy › #23 · Planning Commission and NITI Aayog",
+      "bullets": [
+       "The Planning Commission served as an advisory body."
+      ]
+     },
+     {
+      "topic": "Fundamental Rights: Articles, Rights and Restrictions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #16 · Fundamental Rights: Articles, Rights and Restrictions",
+      "bullets": [
+       "The maximum period of preventive detention without an advisory board is three months."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "da96af6ee147"
+  },
+  {
    "id": "0c4d4fb5bf9d",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -5435,6 +6725,97 @@
     ],
     "gaps": []
    }
+  },
+  {
+   "id": "387a7dc555c8",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-13",
+   "time": "22:57",
+   "title": "The sound and the fiery: on green crackers, pollution control",
+   "summary": "Green crackers do little to curb air and noise pollution",
+   "facts": [],
+   "source": "The Hindu — Editorial",
+   "sourceId": "hindu-editorial",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/opinion/editorial/the-sound-and-the-fiery-on-green-crackers-pollution-control/article71579360.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Pollution"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Air Pollution Sources and Control",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #11 · Air Pollution Sources and Control",
+      "bullets": [
+       "Forest fires are major sources of air pollution.",
+       "Volcanic eruptions are natural sources of air pollution.",
+       "Fuel combustion is a major anthropogenic source of air pollution.",
+       "A green muffler is associated with noise pollution control.",
+       "WAYU is used for air pollution control."
+      ]
+     },
+     {
+      "topic": "Air Quality, Pollution Control and NCAP",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #20 · Air Quality, Pollution Control and NCAP",
+      "bullets": [
+       "The Air (Prevention and Control of Pollution) Act was enacted in 1981.",
+       "The National Clean Air Programme adopts a comprehensive approach to tackling air pollution."
+      ]
+     },
+     {
+      "topic": "CPCB and Water Pollution Control",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #21 · CPCB and Water Pollution Control",
+      "bullets": [
+       "The Central Pollution Control Board (CPCB) is a statutory organization.",
+       "The CPCB was constituted under the Water (Prevention and Control of Pollution) Act, 1974.",
+       "The CPCB is the national-level pollution-control board.",
+       "The State Pollution Control Boards (SPCBs) operate at the state level.",
+       "The SPCBs implement pollution-control functions at the state level."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "1926f3cb6fcd"
   },
   {
    "id": "abdae3ba147d",
@@ -6563,309 +7944,6 @@
    "thread": "88988d1d10da"
   },
   {
-   "id": "9ecfe892dc82",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "time": "18:44",
-   "title": "Under the chairmanship of Union Home Minister Shri Amit Shah, India hosts first meeting of BIMSTEC Home Ministers in New Delhi",
-   "summary": "The meeting reaffirmed the shared commitment of BIMSTEC member countries to strengthening regional security, trust, and cooperation in the Bay of Bengal region. In his address, Union Home Minister and Minister of Cooperation, Shri Amit Shah said that it is a matter of immense pride and privilege for India to host the first BIMSTEC Home Ministers' Meeting.",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "In his address, Union Home Minister and Minister of Cooperation, Shri Amit Shah said that it is a matter of immense pride and privilege for India to host the first BIMSTEC Home Ministers' Meeting."
-    },
-    {
-     "angle": "Summit / exercise",
-     "text": "Shri Amit Shah said, Prime Minister Shri Narendra Modi stated during the 6th BIMSTEC Summit in Bangkok on April 4, 2025, \"For us, BIMSTEC is not just a regional organization."
-    },
-    {
-     "angle": "Figures",
-     "text": "Union Home Minister stated that our shared resolve should be to ensure that terrorist networks are not allowed to find safe havens, recruit members, provide training, raise funds, or carry out activities against neighboring countries from any part of the region."
-    },
-    {
-     "angle": "Summit / exercise",
-     "text": "He recalled that, during the 6 th BIMSTEC Summit, Prime Minister Shri Narendra Modi had proposed the establishment of a “BIMSTEC Disaster Management Centre” in India."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Home Affairs",
-   "alsoIn": [
-    "GKToday"
-   ],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322937&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Geography",
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    },
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G1-B6",
-     "exam": "G1",
-     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Convention"
-   ],
-   "score": 41,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 7,
-    "reuse": 5
-   },
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Disaster Management Institutions and Responsibilities",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Disaster Management › #17 · Disaster Management Institutions and Responsibilities",
-      "bullets": [
-       "The Ministry of Home Affairs (MHA) is the nodal ministry for disaster management.",
-       "Disaster management was shifted from the Department of Agriculture to the Ministry of Home Affairs.",
-       "The Ministry of Home Affairs is responsible for overall coordination of disaster management at the national level.",
-       "The Ministry of Home Affairs provides support to the State Governments for disaster management.",
-       "The Disaster Management Division of the Ministry of Home Affairs is the division concerned with disaster management."
-      ]
-     },
-     {
-      "topic": "Disaster Management Institutions and Centres",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Disaster Management › #23 · Disaster Management Institutions and Centres",
-      "bullets": [
-       "The National Institute of Disaster Management is located in New Delhi.",
-       "The Asian Disaster Preparedness Centre is located in Bangkok.",
-       "The National Disaster Response Force headquarters is located in New Delhi.",
-       "The SAARC Disaster Management Centre was earlier located in New Delhi, India.",
-       "The SAARC Disaster Management Centre promotes regional cooperation among SAARC countries."
-      ]
-     },
-     {
-      "topic": "Disaster Management Institutions and Frameworks",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Disaster Management › #1 · Disaster Management Institutions and Frameworks",
-      "bullets": [
-       "The Disaster Management Act was enacted and received Presidential assent on December 23, 2005.",
-       "The Prime Minister of India is the ex-officio Chairperson of the National Disaster Management Authority (NDMA).",
-       "The Chief Minister of a State is the Chairperson of the State Disaster Management Authority (SDMA).",
-       "The District Collector or District Magistrate is the Chairperson of the District Disaster Management Authority (DDMA).",
-       "Uttarakhand was the first state in India to establish a dedicated Ministry of Disaster Management."
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "thread": "9ecfe892dc82"
-  },
-  {
-   "id": "b7a884bc7548",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "time": "18:04",
-   "title": "10th National Convention of Agrivision–2026 held in New Delhi",
-   "summary": "Indian Agriculture Must Move Beyond a Production-Centric Approach Towards Agri-Food Value Chains: Dr. M. Jat 13 OCT 2026 6:04PM by PIB Delhi The 10 th National Convention of Agrivision–2026 is being held on October 13 th –14 th at the ICAR–NASC Complex, Pusa, New Delhi, under the aegis of Agrivision, the ICAR Agricultural Education Division.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "Around 450 students from agriculture and allied sciences, representing 25 states, are participating alongside eminent speakers, scientists, senior officials of the Indian Council of Agricultural Research (ICAR), agricultural entrepreneurs and farmers."
-    },
-    {
-     "angle": "Figures",
-     "text": "The convention aims to create a meaningful interface between students, eminent scientists, senior officials, entrepreneurs and farmers, enabling the exchange of ideas and experiences across the agricultural value chain."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Agriculture & Farmers Welfare",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322911&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Section",
-    "Agriculture",
-    "Community",
-    "States",
-    "Convention"
-   ],
-   "score": 40,
-   "band": "medium",
-   "why": {
-    "syllabus": 12,
-    "angles": 20,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 5
-   },
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Gross Value Added and Sectoral Structure",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Economy › #26 · Gross Value Added and Sectoral Structure",
-      "bullets": [
-       "Agriculture and allied activities include agriculture."
-      ]
-     },
-     {
-      "topic": "Disaster Management Institutions and Responsibilities",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Disaster Management › #17 · Disaster Management Institutions and Responsibilities",
-      "bullets": [
-       "The Ministry of Agriculture and Farmers Welfare is the nodal ministry for drought."
-      ]
-     },
-     {
-      "topic": "Exchange Rate and Currency Valuation",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Economy › #47 · Exchange Rate and Currency Valuation",
-      "bullets": [
-       "An exchange rate is the price or value of one currency expressed in terms of another currency.",
-       "Devaluation is an official reduction in currency value under a fixed exchange-rate system.",
-       "A flexible or floating exchange rate is one in which the market determines the currency value.",
-       "Inflation can affect the exchange value."
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "thread": "b7a884bc7548"
-  },
-  {
-   "id": "17c3ee9b6161",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "time": "12:20",
-   "title": "Supreme Court stays defamation proceedings against Rahul Gandhi over ‘commander-in-thief’ remark against PM Modi",
-   "summary": "The Supreme Court stayed further trial-court proceedings in a Maharashtra defamation case against Rahul Gandhi over remarks about Prime Minister Narendra Modi. It issued notices to the state government and complainant MH Shrishrimal, seeking responses within four weeks.",
-   "facts": [
-    {
-     "angle": "Judgment",
-     "text": "The Supreme Court stayed further trial-court proceedings in a Maharashtra defamation case against Rahul Gandhi over remarks about Prime Minister Narendra Modi."
-    }
-   ],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/india/supreme-court-stays-defamation-proceedings-against-rahul-gandhi-over-commander-in-thief-remark-against-pm-modi-11791873098794.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "History & Culture"
-   ],
-   "units": [
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [
-    "Supreme Court and judicial review"
-   ],
-   "angles": [
-    "Supreme court"
-   ],
-   "score": 40,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 6,
-    "reuse": 5
-   },
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Fundamental Rights, Writs and Landmark Cases",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Polity › #15 · Fundamental Rights, Writs and Landmark Cases",
-      "bullets": [
-       "The Maneka Gandhi Case was decided in 1978."
-      ]
-     },
-     {
-      "topic": "Gandhi: Movements, Associates and Ashrams",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian History › #100 · Gandhi: Movements, Associates and Ashrams",
-      "bullets": [
-       "Gandhi stayed at Kingsley Hall in London during the Round Table Conference."
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "thread": "17c3ee9b6161"
-  },
-  {
    "id": "0a745135455f",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -6915,180 +7993,30 @@
    "line": "ఫీజు నియంత్రణ, పర్యవేక్షణ కమిటీ సభ్యుల నియామకం"
   },
   {
-   "id": "fc324e729032",
+   "id": "53dfad702d8d",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
-   "title": "Kutch Copper Plans 115 MW Renewable Energy Integration",
-   "summary": "Kutch Copper Ltd, a subsidiary of Adani Enterprises Ltd, plans to integrate 115 megawatts (MW) of renewable energy into its copper refinery operations at Mundra in Gujara",
+   "time": "21:14",
+   "title": "Foundation stone laid for eco-tourism project at Dallapalli in ASR district",
+   "summary": "",
    "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.gktoday.in/kutch-copper-plans-115-mw-renewable-energy-integration/",
-   "bucket": "national",
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/foundation-stone-laid-for-eco-tourism-project-at-dallapalli-in-asr-district/article71579568.ece",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    },
-    {
-     "code": "G1-F21",
-     "exam": "G1",
-     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 39,
-   "band": "low",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true,
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Renewable Energy Sources and Biofuels",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Environment › #35 · Renewable Energy Sources and Biofuels",
-      "bullets": [
-       "Solar energy is renewable energy.",
-       "Coal is non-renewable energy.",
-       "Wind energy is renewable energy.",
-       "Biomass is renewable energy.",
-       "Hydroelectric energy is renewable energy."
-      ]
-     },
-     {
-      "topic": "Hydrogen Production, Properties and Applications",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Chemistry › #10 · Hydrogen Production, Properties and Applications",
-      "bullets": [
-       "Hydrogen is used for grid balancing by storing excess renewable energy.",
-       "Hydrogen enables the storage of renewable energy."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "5699a13f4ed9",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "title": "NISM Launches Cybersecurity Courses for GIFT IFSC",
-   "summary": "The National Institute of Securities Markets (NISM) has launched two certification courses on cybersecurity and cyber resilience for the GIFT International Financial Serv",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/nism-launches-cybersecurity-courses-for-gift-ifsc/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-F19",
-     "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 39,
-   "band": "low",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true,
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Disaster Risk Reduction Days and Institutions",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Disaster Management › #22 · Disaster Risk Reduction Days and Institutions",
-      "bullets": [
-       "The International Day for Disaster Risk Reduction promotes a global culture of disaster risk reduction and resilience."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "701f67db8808",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "title": "Paradip Port Sets Single-Day Coal Loading Record",
-   "summary": "The Mechanised Coal Handling Plant (MCHP) of the Paradip Port Authority (PPA) loaded 1,40,022 metric tonnes of coal on 10 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/paradip-port-sets-single-day-coal-loading-record/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
     "G2"
    ],
    "subject": "Geography",
    "subjects": [
-    "Geography",
-    "Science, Tech & Environment"
+    "Geography"
    ],
    "units": [
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    },
-    {
-     "code": "G1-D4",
-     "exam": "G1",
-     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
-    },
     {
      "code": "G2-S2",
      "exam": "G2",
@@ -7097,171 +8025,30 @@
    ],
    "topics": [],
    "angles": [],
-   "score": 39,
+   "score": 37,
    "band": "low",
    "why": {
-    "syllabus": 24,
+    "syllabus": 12,
     "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true,
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Andhra Pradesh Ports and Maritime Expansion",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · AP Geography › #26 · Andhra Pradesh Ports and Maritime Expansion",
-      "bullets": [
-       "Visakhapatnam Port is administered by the Visakhapatnam Port Authority."
-      ]
-     },
-     {
-      "topic": "Indian Ports and LNG Terminals",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Geography › #38 · Indian Ports and LNG Terminals",
-      "bullets": [
-       "Paradip Port is located in Odisha."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "f9990aec7e63",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "title": "Samsung Affiliates Plan $9.15 Billion Semiconductor Investment",
-   "summary": "Samsung affiliates plan to invest a combined 12.26 trillion won (9.15 billion) in semiconductor operations in Vietnam and South Korea.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "Samsung affiliates plan to invest a combined 12.26 trillion won (9.15 billion) in semiconductor operations in Vietnam and South Korea."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/samsung-affiliates-plan-9-15-billion-semiconductor-investment/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-F19",
-     "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 39,
-   "band": "low",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true,
-   "brief": {
-    "v": 6,
-    "sections": [],
-    "gaps": []
-   }
-  },
-  {
-   "id": "42fbbf0806f1",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "title": "Supreme Court Questions Wider Medicine Margin Caps",
-   "summary": "On 12 October 2026, the Supreme Court of India questioned why trade margin caps on anti-cancer medicines could not be extended to other drugs.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/supreme-court-questions-wider-medicine-margin-caps/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [
-    "Supreme Court and judicial review"
-   ],
-   "angles": [
-    "trade",
-    "Supreme court"
-   ],
-   "score": 39,
-   "band": "low",
-   "why": {
-    "syllabus": 24,
-    "angles": 10,
-    "ap": 0,
+    "ap": 20,
     "importance": 0,
     "reuse": 5
    },
-   "digest": true,
    "brief": {
     "v": 6,
     "sections": [
      {
-      "topic": "mRNA, Gene Regulation and Personalised Medicine",
+      "topic": "Andhra Pradesh Waterfalls and Locations",
       "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Biology › #44 · mRNA, Gene Regulation and Personalised Medicine",
+      "where": "Rocket Sheets · AP Geography › #21 · Andhra Pradesh Waterfalls and Locations",
       "bullets": [
-       "Personalised or precision medicine adapts treatment using individual biological or genetic information.",
-       "The goal of personalised medicine is more individually tailored prevention, diagnosis, and treatment."
-      ]
-     },
-     {
-      "topic": "Rajya Sabha Composition and Special Powers",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Polity › #13 · Rajya Sabha Composition and Special Powers",
-      "bullets": [
-       "The Chairman of the Rajya Sabha decides questions concerning anti-defection."
+       "Rampa Waterfalls are a forest and eco-tourism destination."
       ]
      }
     ],
     "gaps": []
-   }
+   },
+   "thread": "53dfad702d8d"
   },
   {
    "id": "41dc963dd35c",
@@ -7393,224 +8180,6 @@
     "gaps": []
    },
    "thread": "a7497067b20e"
-  },
-  {
-   "id": "bb981dd5f488",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "title": "Assam Launches Nameri Wild Classroom Initiative",
-   "summary": "The Assam Forest Department launched the Nameri Wild Classroom initiative on 10–12 October 2026 at Nameri Tiger Reserve. The residential programme is open to students fro",
-   "facts": [
-    {
-     "angle": "GI tag / designation",
-     "text": "The Assam Forest Department launched the Nameri Wild Classroom initiative on 10–12 October 2026 at Nameri Tiger Reserve."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/assam-launches-nameri-wild-classroom-initiative/",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    }
-   ],
-   "topics": [
-    "Wildlife and forest governance"
-   ],
-   "angles": [
-    "Tiger Reserve"
-   ],
-   "score": 28,
-   "band": "low",
-   "why": {
-    "syllabus": 14,
-    "angles": 5,
-    "ap": 0,
-    "importance": 4,
-    "reuse": 5
-   },
-   "digest": true,
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Tiger Reserves and Their States",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Environment › #12 · Tiger Reserves and Their States",
-      "bullets": [
-       "Corbett Tiger Reserve is located in Uttarakhand.",
-       "Sariska Tiger Reserve is located in Rajasthan.",
-       "Bandhavgarh Tiger Reserve is located in Madhya Pradesh.",
-       "Pench Tiger Reserve is located in Maharashtra.",
-       "Manas Tiger Reserve is located in Assam."
-      ]
-     },
-     {
-      "topic": "Tiger Reserves and Landscapes",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Geography › #27 · Tiger Reserves and Landscapes",
-      "bullets": [
-       "Periyar Tiger Reserve is located in Kerala.",
-       "Similipal Tiger Reserve is located in Odisha.",
-       "Valmiki Tiger Reserve is located in Bihar.",
-       "Nagarjunsagar–Srisailam Tiger Reserve is associated with the Nallamala Hills.",
-       "Tadoba Tiger Reserve is associated with the Deccan and central Indian forest landscape."
-      ]
-     }
-    ],
-    "gaps": []
-   }
-  },
-  {
-   "id": "e8048aeae465",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "title": "Bangladesh and China Sign Mongla Port Expansion Loan",
-   "summary": "On 10 October 2026, Bangladesh signed a concessional loan agreement worth $335.78 million with China&#8217;s Export-Import Bank to expand and modernise Mongla Port.",
-   "facts": [
-    {
-     "angle": "Agreement / MoU",
-     "text": "On 10 October 2026, Bangladesh signed a concessional loan agreement worth $335.78 million with China&#8217;s Export-Import Bank to expand and modernise Mongla Port."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/bangladesh-and-china-sign-mongla-port-expansion-loan/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Agreement",
-    "Import",
-    "Export"
-   ],
-   "score": 23,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 15,
-    "ap": 0,
-    "importance": 4,
-    "reuse": 0
-   },
-   "digest": true,
-   "brief": {
-    "v": 6,
-    "sections": [],
-    "gaps": []
-   }
-  },
-  {
-   "id": "9f461a99a6d6",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "title": "Indian Coast Guard Team Summits Mount Mukut",
-   "summary": "A 17-member Indian Coast Guard (ICG) mountaineering team summited Mount Mukut, at an elevation of 7,045 metres, on 7 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/indian-coast-guard-team-summits-mount-mukut/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-B6",
-     "exam": "G1",
-     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Summit"
-   ],
-   "score": 22,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true,
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Indian Mountain Ranges and Hills",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Geography › #14 · Indian Mountain Ranges and Hills",
-      "bullets": [
-       "The elevation of Guru Shikhar is 1,722 metres.",
-       "The elevation of Anaimudi is 2,695 metres."
-      ]
-     },
-     {
-      "topic": "Indian Hills and Ranges of India",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Geography › #28 · Indian Hills and Ranges of India",
-      "bullets": [
-       "Doddabetta has an elevation of 2,637 metres."
-      ]
-     },
-     {
-      "topic": "Indian Geography: National Firsts",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Geography › #4 · Indian Geography: National Firsts",
-      "bullets": [
-       "Bachendri Pal summited Mount Everest in 1984."
-      ]
-     }
-    ],
-    "gaps": []
-   }
   }
  ],
  "quiz": [
@@ -7741,6 +8310,20 @@
    "kind": "year"
   },
   {
+   "id": "5be229ef8572:6wvuw2",
+   "item": "5be229ef8572",
+   "title": "Union Minister Jyotiraditya Scindia Inaugurates North East Bankers’ Conclave 3.0 in Mizoram, Calls for Greater Credit Flow to Region",
+   "q": "Highlighting the need to convert financial inclusion into economic inclusion, Union Minister Jyotiraditya Scindia said only ____ is extended as credit for every ₹100 deposited in banks across the Northeast.",
+   "options": [
+    "₹59",
+    "₹28",
+    "₹47",
+    "₹24"
+   ],
+   "answer": 2,
+   "kind": "figure"
+  },
+  {
    "id": "b884a5ef5407:gft6ui",
    "item": "b884a5ef5407",
    "title": "Karnataka High Court strikes down 2022 law increasing SC/ST reservations",
@@ -7753,6 +8336,20 @@
    ],
    "answer": 3,
    "kind": "year"
+  },
+  {
+   "id": "05cb30d34d5e:1f5etm1",
+   "item": "05cb30d34d5e",
+   "title": "Union Agriculture Minister Shri Shivraj Singh Chouhan and Environment Minister Shri Bhupender Yadav conduct joint review of stubble management",
+   "q": "Haryana recorded a reduction of ____, while Uttar Pradesh registered a decline of approximately 32 per cent.",
+   "options": [
+    "50.3 per cent",
+    "55.3 per cent",
+    "58.3 per cent",
+    "53.3 per cent"
+   ],
+   "answer": 3,
+   "kind": "figure"
   },
   {
    "id": "8e995d8bfe64:6p4ob6",
@@ -7769,60 +8366,32 @@
    "kind": "figure"
   },
   {
-   "id": "2bd3f565d027:1chwwb3",
-   "item": "2bd3f565d027",
-   "title": "Proposed steel policy seeks AI-supported framework for early detection of sub-standard steel imports",
-   "q": "Target G of the Sendai Framework is to substantially increase the availability of multi-hazard early warning systems by ____.",
-   "options": [
-    "2029",
-    "2030",
-    "2031",
-    "2032"
-   ],
-   "answer": 1,
-   "kind": "year"
-  },
-  {
-   "id": "97cfa3770bb7:m7nx1i",
-   "item": "97cfa3770bb7",
-   "title": "Election Commission launches nationwide campaign to ensure no eligible voter is left out",
+   "id": "6fac1cea44de:m7nx1i",
+   "item": "6fac1cea44de",
+   "title": "Supreme Court Registry clears, numbers Rahul Gandhi’s plea against SIR-CEC within 24 hours",
    "q": "The Election Commission of India was established on 25 January ____.",
    "options": [
-    "1950",
-    "1948",
     "1949",
-    "1951"
-   ],
-   "answer": 0,
-   "kind": "year"
-  },
-  {
-   "id": "bf359a3a6cf5:1rpk3p3",
-   "item": "bf359a3a6cf5",
-   "title": "Meet IPS Officer Navjot Simi: She Studied Dentistry, Cracked UPSC, Now In Bihar CID",
-   "q": "She cleared the Union Public Service Commission Civil Services Examination in her second attempt in ____, securing All India Rank 735 and qualifying for the Indian Police Service.",
-   "options": [
-    "2016",
-    "2018",
-    "2019",
-    "2017"
+    "1951",
+    "1952",
+    "1950"
    ],
    "answer": 3,
    "kind": "year"
   },
   {
-   "id": "79ced1805501:78cxcr",
-   "item": "79ced1805501",
-   "title": "Vantrock unveils ₹4,200-crore warehousing and industrial parks plan",
-   "q": "Vantrock Real Assets plans ____ sq. ft. development across key markets, with construction of the first phase starting in 2027",
+   "id": "b23a7de5f1a9:13mqth3",
+   "item": "b23a7de5f1a9",
+   "title": "NTPC eyes green hydrogen exports, targets Asian and European markets",
+   "q": "The Forward Markets Commission merged with SEBI in ____.",
    "options": [
-    "23.0 million",
-    "11.5 million",
-    "14.4 million",
-    "6.9 million"
+    "2017",
+    "2015",
+    "2018",
+    "2012"
    ],
    "answer": 1,
-   "kind": "figure"
+   "kind": "year"
   }
  ]
 }
