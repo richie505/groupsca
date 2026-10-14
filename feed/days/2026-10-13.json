@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-13",
- "updated": "2026-10-13T22:00:40.047Z",
+ "updated": "2026-10-14T05:32:25.005Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 693,
+   "found": 697,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 29,
+   "found": 33,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 45,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 7,
+   "found": 8,
    "error": null
   },
   {
@@ -138,8 +138,8 @@
   {
    "id": "mongabay-india",
    "name": "Mongabay India",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 20,
+   "error": null
   },
   {
    "id": "hindu-editorial",
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 45,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 94,
+   "found": 138,
    "error": null
   },
   {
@@ -403,6 +403,12 @@
     "gaps": []
    },
    "related": [
+    {
+     "id": "b974172154ac",
+     "title": "SC/ST voices condemn Karnataka Hight Court verdict striking down enhanced reservation",
+     "source": "The Hindu — National",
+     "url": "https://www.thehindu.com/news/cities/bangalore/scst-voices-condemn-karnataka-hight-court-verdict-striking-down-enhanced-reservation/article71580352.ece"
+    },
     {
      "id": "7fc6c4fd8a98",
      "title": "Karnataka to explore legal options to challenge High Court verdict striking down reservation enhancement",
@@ -670,6 +676,114 @@
    },
    "thread": "01071d212013",
    "top": true
+  },
+  {
+   "id": "b974172154ac",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-14",
+   "time": "04:10",
+   "title": "SC/ST voices condemn Karnataka Hight Court verdict striking down enhanced reservation",
+   "summary": "Various individuals and organisations representing Scheduled Castes and Scheduled Tribes communities in the State expressed deep disappointment with the Karnataka High Court verdict that struck down the enhanced reservation",
+   "facts": [
+    {
+     "angle": "Judgment",
+     "text": "Various individuals and organisations representing Scheduled Castes and Scheduled Tribes communities in the State expressed deep disappointment with the Karnataka High Court verdict that struck down the enhanced reservation"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/bangalore/scst-voices-condemn-karnataka-hight-court-verdict-striking-down-enhanced-reservation/article71580352.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Reservation and social justice",
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Caste",
+    "High Court",
+    "Tribes",
+    "Scheduled Tribe",
+    "Scheduled Caste",
+    "SC"
+   ],
+   "score": 71,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 20,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Women’s Political Representation and Reservation",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #76 · Women’s Political Representation and Reservation",
+      "bullets": [
+       "Women's reservation in the House of the People covers seats reserved for Scheduled Castes and Scheduled Tribes.",
+       "Women's reservation in the Legislative Assembly of the National Capital Territory of Delhi covers Scheduled Caste-reserved seats.",
+       "The one-third reservation under Article 243D(3) includes women belonging to Scheduled Castes and Scheduled Tribes."
+      ]
+     },
+     {
+      "topic": "Constitutional Rights and Landmark Judgements",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #45 · Constitutional Rights and Landmark Judgements",
+      "bullets": [
+       "State of Punjab v. Davinder Singh concerns Scheduled Castes and Scheduled Tribes.",
+       "Articles 15(4) and 16(4) provide the constitutional basis for sub-classifying Scheduled Castes and Scheduled Tribes.",
+       "Sub-classification of Scheduled Castes and Scheduled Tribes must use empirical data.",
+       "M. Nagaraj v. Union of India upheld reservation in promotions for Scheduled Castes and Scheduled Tribes.",
+       "Jarnail Singh v. Lachhmi Narain Gupta removed the requirement to prove backwardness for Scheduled Castes and Scheduled Tribes in promotions."
+      ]
+     },
+     {
+      "topic": "Constitutional Articles and Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #2 · Constitutional Articles and Institutions",
+      "bullets": [
+       "Article 46 concerns the promotion of the educational interests of Scheduled Castes and Scheduled Tribes.",
+       "Articles 330 to 334 concern reservation of seats for Scheduled Castes, Scheduled Tribes and Anglo-Indians.",
+       "Article 338 concerns the National Commission for Scheduled Castes."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "topicOf": "b884a5ef5407"
   },
   {
    "id": "8f7417c01922",
@@ -5654,6 +5768,78 @@
    "topicOf": "b884a5ef5407"
   },
   {
+   "id": "40ef8e37b2f3",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-14",
+   "time": "05:31",
+   "title": "ఐటీ చట్టంలోని సెక్షన్‌ 147(ఏ) రాజ్యాంగ విరుద్ధం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126186356",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Act"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 5
+   },
+   "lang": "te",
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "World Industrial Regions and Centres",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · World Geography › #16 · World Industrial Regions and Centres",
+      "bullets": [
+       "Silicon Valley has information-technology industries.",
+       "Tokyo is a famous centre of electronics or information-technology industries.",
+       "Information technology is a sunrise industry."
+      ]
+     },
+     {
+      "topic": "AP Space, Atmospheric and Defence Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #18 · AP Space, Atmospheric and Defence Institutions",
+      "bullets": [
+       "IIITDM Kurnool stands for Indian Institute of Information Technology, Design & Manufacturing Kurnool.",
+       "IIIT Sri City stands for Indian Institute of Information Technology Sri City."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "40ef8e37b2f3"
+  },
+  {
    "id": "f58ef89355ad",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -7770,6 +7956,58 @@
    "thread": "1d0f3db31b20"
   },
   {
+   "id": "6f102f948107",
+   "date": "2026-10-13",
+   "pubDate": "2026-10-14",
+   "time": "04:40",
+   "title": "పదవిపై ఆశలు.. రిజర్వేషన్‌ ప్రకటన వెలువడగానే యువనేత ప్రేమ వివాహం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/youth-leader-love-marriage-right-after-the-reservation-announcement/1799/126186218",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Reservation"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te",
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "6f102f948107"
+  },
+  {
    "id": "74e46cc8b857",
    "date": "2026-10-13",
    "pubDate": "2026-10-13",
@@ -7857,91 +8095,6 @@
     "gaps": []
    },
    "topicOf": "b44a34d6a784"
-  },
-  {
-   "id": "88988d1d10da",
-   "date": "2026-10-13",
-   "pubDate": "2026-10-13",
-   "time": "20:09",
-   "title": "Nelakondapalli Buddhist site to be developed as major heritage, tourism hub; ₹4.26 crore earmarked",
-   "summary": "",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "Nelakondapalli Buddhist site to be developed as major heritage, tourism hub; ₹4.26 crore earmarked"
-    }
-   ],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "The Hindu — Telangana"
-   ],
-   "url": "https://www.thehindu.com/news/national/telangana/nelakondapalli-buddhist-site-to-be-developed-as-major-heritage-tourism-hub-426-crore-earmarked/article71579764.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "History & Culture",
-   "subjects": [
-    "History & Culture",
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-A1",
-     "exam": "G1",
-     "label": "Indus Valley Civilization, Vedic Age, Mahajanapadas, Jainism & Buddhism, Magadha, Mauryas, Foreign Invasions, Kushanas, Satavahanas, Sangam Age, Sungas, Gupta Empire"
-    },
-    {
-     "code": "G2-S1",
-     "exam": "G2",
-     "label": "Screening S1. Indian History"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G2-M1A-U1",
-     "exam": "G2",
-     "label": "Pre-Historic Cultures, Satavahanas, Ikshvakus, Vishnukundins, Eastern Chalukyas of Vengi, Andhra Cholas - Society, Religion, Telugu Language, Art and Architecture"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 41,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 2,
-    "reuse": 15
-   },
-   "brief": {
-    "v": 6,
-    "sections": [
-     {
-      "topic": "Indian Railways and Heritage Railways",
-      "src": "Rocket Sheets",
-      "where": "Rocket Sheets · Indian Geography › #52 · Indian Railways and Heritage Railways",
-      "bullets": [
-       "The Darjeeling Himalayan Railway is a UNESCO World Heritage railway.",
-       "The Nilgiri Mountain Railway is a UNESCO World Heritage railway.",
-       "The Kalka–Shimla Railway is a UNESCO World Heritage railway."
-      ]
-     }
-    ],
-    "gaps": []
-   },
-   "thread": "88988d1d10da"
   },
   {
    "id": "0a745135455f",
