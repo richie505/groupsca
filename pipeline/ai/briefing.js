@@ -89,6 +89,42 @@ async function editorial(date, sections, respond) {
   return r.data;
 }
 
+const KEYS = ['international', 'national', 'andhraPradesh'];
+
+/** One web-search pass over a saved day: adds the PYQ-heavy items it missed and the exam fields its items lack. */
+async function topup(date, { out, respond = AI.respond, log = console.log } = {}) {
+  const b = read(out, date);
+  if (!b) return false;
+  const items = KEYS.flatMap((k) => b.sections[k]);
+  const r = await respond({ instructions: P.systemPrompt(date), input: P.topupTask(date, items), schema: P.TOPUP_SCHEMA, name: 'appsc_topup', search: true });
+  let added = 0;
+  let filled = 0;
+  for (const a of r.data.additions || []) {
+    const it = items[a.item - 1];
+    const facts = (a.facts || []).map((f) => String(f).trim()).filter((f) => f && !(it && it.facts.includes(f)));
+    const sources = (a.sources || []).filter((x) => /^https?:\/\//.test(x.url || ''));
+    if (!it || !facts.length || !sources.length) continue;
+    it.facts.push(...facts);
+    for (const x of sources) if (!it.sources.some((y) => y.url === x.url)) it.sources.push(x);
+    filled++;
+  }
+  for (const n of r.data.newItems || []) {
+    if (!KEYS.includes(n.section) || !n.item) continue;
+    b.sections[n.section].push({ ...n.item, section: P.SECTIONS[n.section].label, topup: true });
+    added++;
+  }
+  // the validator drops new items without a source and any that duplicate an existing story
+  const before = KEYS.reduce((s, k) => s + b.sections[k].length, 0);
+  V.validate(b, []);
+  const kept = added - (before - KEYS.reduce((s, k) => s + b.sections[k].length, 0));
+  b.citations = [...new Map([...(b.citations || []), ...r.citations].map((c) => [c.url, c])).values()];
+  b.sourceCount = new Set(KEYS.flatMap((k) => b.sections[k].flatMap((i) => i.sources.map((x) => x.url)))).size;
+  b.toppedUp = new Date().toISOString();
+  fs.writeFileSync(file(out, date), JSON.stringify(b, null, 1) + '\n');
+  log(`${date}: top-up · ${kept} new items · ${filled} items given missing fields · ${r.searches.length} searches`);
+  return true;
+}
+
 /** Redoes a saved day's MCQs, Mains questions, audit and notes with the current prompts (no new research). */
 async function refresh(date, { out, respond = AI.respond, log = console.log } = {}) {
   const b = read(out, date);
@@ -136,4 +172,4 @@ function writeIndex(out) {
   return list;
 }
 
-module.exports = { generate, addNotes, refresh, editorial, writeIndex, recentTopics, read };
+module.exports = { generate, addNotes, refresh, editorial, topup, writeIndex, recentTopics, read };

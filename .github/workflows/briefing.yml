@@ -24,6 +24,14 @@ on:
         description: 'Regenerate days already published'
         type: boolean
         default: false
+      topup:
+        description: 'With refresh: one web search per day for missed appointments, awards, sports and exam fields'
+        type: boolean
+        default: false
+      news_notes:
+        description: 'Rocket-form notes for the News feed New-today stories of the date range'
+        type: boolean
+        default: false
       refresh:
         description: 'Redo MCQs, Mains questions and notes of saved days (no new research)'
         type: boolean
@@ -61,6 +69,8 @@ jobs:
           FORCE: ${{ github.event.inputs.force }}
           NOTES: ${{ github.event.inputs.notes }}
           REFRESH: ${{ github.event.inputs.refresh }}
+          TOPUP: ${{ github.event.inputs.topup }}
+          NEWS_NOTES: ${{ github.event.inputs.news_notes }}
         run: |
           args=""
           [ -n "$DATE" ] && args="$args --date $DATE"
@@ -69,13 +79,15 @@ jobs:
           [ "$FORCE" = "true" ] && args="$args --force"
           [ "$NOTES" = "true" ] && args="$args --notes"
           [ "$REFRESH" = "true" ] && args="$args --refresh"
+          [ "$TOPUP" = "true" ] && args="$args --topup"
+          [ "$NEWS_NOTES" = "true" ] && args="$args --news-notes"
           node pipeline/tools/briefing.js $args
       - name: Publish
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add feed/briefings || true
+          git add feed/briefings feed/days || true
           if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
           git commit -m "APPSC briefing $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
           for i in 1 2 3 4; do

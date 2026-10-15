@@ -119,31 +119,42 @@ function cleanNotes(item, raw) {
 }
 
 /** Adds notes + blueprint to every item of every section, a section per call. Returns the number of items noted. */
+/** Notes for a list of items in one call: [{ notes, blueprint } | null] in the same order. */
+async function noteItems(date, items, respond, name) {
+  const r = await respond({ instructions: 'You are an APPSC Group 1 and Group 2 notes editor. Return valid JSON only.', input: notesTask(date, items), schema: NOTES_SCHEMA, name, search: false });
+  const out = items.map(() => null);
+  for (const n of r.data.notes || []) {
+    const it = items[n.item - 1];
+    if (!it) continue;
+    const md = cleanNotes(it, n.notes);
+    if (md) out[n.item - 1] = { notes: md, blueprint: [...new Set((n.blueprint || []).map(String).filter((x) => BLUEPRINT.includes(x)))].slice(0, 3) };
+  }
+  return out;
+}
+
+/** Adds notes + blueprint to every item of every section, a section per call. Returns the number of items noted. */
 async function addNotes(b, respond, log = () => {}) {
   let done = 0;
   for (const key of ['andhraPradesh', 'national', 'international']) {
     const items = b.sections[key] || [];
     if (!items.length) continue;
-    let r;
+    let res;
     try {
-      r = await respond({ instructions: 'You are an APPSC Group 1 and Group 2 notes editor. Return valid JSON only.', input: notesTask(b.date, items), schema: NOTES_SCHEMA, name: `appsc_notes_${key}`, search: false });
+      res = await noteItems(b.date, items, respond, `appsc_notes_${key}`);
     } catch (e) {
       log(`${b.date}: notes for ${key} failed: ${e.message}`);
       continue;
     }
-    for (const n of r.data.notes || []) {
-      const it = items[n.item - 1];
-      if (!it) continue;
-      const md = cleanNotes(it, n.notes);
-      if (!md) continue;
-      it.notes = md;
-      it.blueprint = [...new Set((n.blueprint || []).map(String).filter((x) => BLUEPRINT.includes(x)))].slice(0, 4);
+    res.forEach((n, i) => {
+      if (!n) return;
+      items[i].notes = n.notes;
+      items[i].blueprint = n.blueprint;
       done++;
-    }
+    });
     log(`${b.date}: notes ${key}: ${items.filter((i) => i.notes).length}/${items.length}`);
   }
   b.notesVersion = 1;
   return done;
 }
 
-module.exports = { BLUEPRINT, FORMAT, notesTask, NOTES_SCHEMA, missingFigures, cleanNotes, addNotes };
+module.exports = { BLUEPRINT, FORMAT, notesTask, NOTES_SCHEMA, missingFigures, cleanNotes, noteItems, addNotes };

@@ -187,7 +187,15 @@ fun ArticleScreen(vm: AppViewModel, ids: List<String>, start: Int, onBack: () ->
                 if (item.summary.isNotBlank()) {
                     Text(highlighted(item.summary, item), style = MaterialTheme.typography.bodyLarge, color = C.Body)
                 }
-                if (item.newFacts.isNotEmpty()) {
+                val rocket = item.rocket
+                if (rocket != null && rocket.notes.isNotBlank()) {
+                    if (rocket.blueprint.isNotEmpty()) {
+                        Text(rocket.blueprint.joinToString("  ·  ") { "🎯 $it" }, style = MaterialTheme.typography.labelMedium, color = C.High,
+                            modifier = Modifier.padding(top = 8.dp))
+                    }
+                    SectionTitle("Notes")
+                    NotesView(rocket.notes)
+                } else if (item.newFacts.isNotEmpty()) {
                     SectionTitle("In the news")
                     for (f in item.newFacts) Bullet(f.text, label = f.angle)
                 }

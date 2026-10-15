@@ -128,6 +128,12 @@ data class QuizQ(
 )
 
 @Serializable
+data class RocketNotes(
+    val notes: String = "",
+    val blueprint: List<String> = emptyList(),
+)
+
+@Serializable
 data class Item(
     val id: String,
     val date: String,
@@ -188,6 +194,8 @@ data class Item(
     /** Appointments, awards, sports, days...: read as [line]. */
     val oneLiner: Boolean = false,
     val line: String = "",
+    /** Rocket-form notes and blueprint angles (New-today stories; written server side). */
+    val rocket: RocketNotes? = null,
 ) {
     /** Key facts that say something the context line does not already say. */
     val newFacts: List<Fact> get() = facts.filter { f -> summary.isBlank() || !summary.contains(f.text.take(60)) }

@@ -168,6 +168,18 @@ const ITEM = {
     apLink: str, status: { type: 'string', enum: STATUSES }, verifiedFirst: { type: 'boolean' }, sources: { type: 'array', items: SOURCE },
   },
 };
+/** One web-search pass over a saved day: the PYQ-heavy items it missed, and the exam fields its items lack. */
+function topupTask(date, items) {
+  const list = items.map((i, n) => `${n + 1}. [${i.section}] ${i.headline} | facts: ${(i.facts || []).join(' / ')}`).join('\n');
+  return `Here are the APPSC current-affairs items already collected for ${date} (IST):
+${list}
+
+Search the live web for ${date} and do two things:
+1. newItems: developments of ${date} (or late on the previous day) that are NOT in the list above, of these kinds only: appointments and oaths to constitutional, statutory or top posts (Indian, Andhra Pradesh and international bodies); national and international awards and prizes (and AP awardees); sports results of national or international events (winners, medals, records); important days observed on ${date} with that year's theme; Andhra Pradesh state decisions, schemes, projects or MoUs. Up to 6 items, each with its section ("international", "national" or "andhraPradesh") and the full item fields. None if nothing verified is missing.
+2. additions: for listed items, the exam fields APPSC asks that their facts lack, found in sources: an appointee's predecessor, appointing authority and tenure; an award's conferring body; a report's or index's publisher, edition, India's rank and previous rank; a defence exercise's edition, type and venue; a summit's edition, host and theme; a day's theme. Give each as short fact lines with the source. Only verified facts; nothing for an item that lacks nothing.
+Return {"newItems": [{"section", "item"}], "additions": [{"item": <number>, "facts": [...], "sources": [...]}]}`;
+}
+
 const SECTION_SCHEMA = { type: 'object', additionalProperties: false, required: ['items'], properties: { items: { type: 'array', items: ITEM } } };
 const EDITORIAL_SCHEMA = {
   type: 'object',
@@ -183,4 +195,16 @@ const EDITORIAL_SCHEMA = {
   },
 };
 
-module.exports = { STATUSES, SUBJECTS, CATEGORIES, PRIMARY_DOMAINS, SECTIONS, systemPrompt, sectionTask, editorialTask, SECTION_SCHEMA, EDITORIAL_SCHEMA };
+const TOPUP_SCHEMA = {
+  type: 'object',
+  additionalProperties: false,
+  required: ['newItems', 'additions'],
+  properties: {
+    newItems: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['section', 'item'],
+      properties: { section: { type: 'string', enum: ['international', 'national', 'andhraPradesh'] }, item: ITEM } } },
+    additions: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['item', 'facts', 'sources'],
+      properties: { item: { type: 'integer' }, facts: strs, sources: { type: 'array', items: SOURCE } } } },
+  },
+};
+
+module.exports = { STATUSES, SUBJECTS, CATEGORIES, PRIMARY_DOMAINS, SECTIONS, systemPrompt, sectionTask, editorialTask, SECTION_SCHEMA, EDITORIAL_SCHEMA, topupTask, TOPUP_SCHEMA };

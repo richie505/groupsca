@@ -19,7 +19,7 @@ const MARKETS =
   /\b(Sensex|Nifty|stock markets?|stocks? (?:rise|fall|gain|slip|surge)|share price|shares of|IPO|bourses|brokerage|rupee (?:closes|opens|falls|rises|ends)|gold (?:price|rate)s?|silver price|crude (?:price|futures)|may hike|may cut|analysts?|economists? (?:poll|say)|poll of economists|target price|Q[1-4] (?:results|profit|earnings)|net profit|quarterly results)\b/i;
 // Local and routine events, weather bulletins, lifestyle.
 const ROUTINE =
-  /\b(festival|dasara|dussehra|navaratri|brahmotsavam|utsavam|celebrations? begin|devotees|darshan|weather (?:update|forecast)|heavy rain(?:fall)? (?:alert|forecast)|rain alert|IMD (?:forecasts?|predicts|issues)|traffic|power cut|water supply cut|felicitat\w*|fetes?|condol\w*|pays tribute|birthday|wedding|film|movie|actor|actress|box office|OTT|cricket score|wins toss|horoscope|rashi)\b/i;
+  /\b(festival|dasara|dussehra|navaratri|brahmotsavam|utsavam|celebrations? begin|devotees|darshan|weather (?:update|forecast)|heavy rain(?:fall)? (?:alert|forecast)|rain alert|IMD (?:forecasts?|predicts|issues)|traffic|power cut|water supply cut|felicitat\w*|fetes?|condol\w*|pays tribute|birthday|wedding|film|movie|actor|actress|box office|OTT|cricket score|wins toss|horoscope|rashi|stock limits?|(?:pension )?adalat|grievance (?:camp|redressal day)|review meeting|reviews? (?:the )?preparedness|rain(?:fall)? forecast|rain likely|weather alert)\b/i;
 // Opinion, explainers about people, interviews.
 const OPINION = /^(?:How|Why|What|When|Opinion|Editorial|Interview|Letters?)\b|\|\s*(?:Opinion|Interview)|\bsays\b.*\b(?:MLA|MP|MLC|leader|spokesperson)\b/i;
 

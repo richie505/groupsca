@@ -35,6 +35,9 @@ function lineOf(it) {
 const NOT_TOP =
   /\b(protests?|protested|stage[sd]? (?:a )?(?:protest|dharna)|dharna|attacks?|slams?|flays?|alleges?|criticis\w*|blames?|urges?|demands?|warns?|SIT|police|arrest\w*|murder\w*|killed|accident|hearing|gimmick|conspiracy|kutra|కుట్ర)\b/i;
 
+const PYQ_TOP =
+  /\b(scheme|yojana|mission|abhiyan|summit|conference|UN|United Nations|WHO|UNESCO|IMF|World Bank|BRICS|G20|SCO|ASEAN|index|ranking|ranks?|report|survey|MoU|agreement|treaty|pact|launch\w*|inaugurat\w*|GI tag|tiger reserve|Ramsar|national park|first)\b/i;
+
 /** Marks `top`, `oneLiner` and `line` on the day's items. */
 function markDay(items) {
   for (const it of items) {
@@ -52,8 +55,9 @@ function markDay(items) {
       it.line = it.title;
     }
   }
-  // politics and incidents (protests, attacks, cases) are news, rarely exam topics
-  const rankScore = (i) => i.score - (NOT_TOP.test(i.title) ? 20 : 0) - (i.lang === 'te' ? 5 : 0);
+  // politics and incidents (protests, attacks, cases) are news, rarely exam topics; the kinds of story the
+  // APPSC current-affairs PYQs ask most (schemes, organisations and summits, indices, agreements, AP) go first
+  const rankScore = (i) => i.score - (NOT_TOP.test(i.title) ? 20 : 0) - (i.lang === 'te' ? 5 : 0) + (PYQ_TOP.test(i.title) ? 8 : 0);
   const order = (a, b) => rankScore(b) - rankScore(a) || a.title.localeCompare(b.title);
   const pool = leads.filter((i) => !i.oneLiner && !i.update && rankScore(i) >= 45).sort(order);
   const ap = pool.filter((i) => i.ap).slice(0, TOP_AP_MIN);

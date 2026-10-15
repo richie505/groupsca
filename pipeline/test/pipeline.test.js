@@ -587,6 +587,45 @@ test('a whole briefing day with a fake model: stages, validation, saved file and
   const again = AIB.read(out, '2026-10-11');
   assert.equal(again.mcqs.length, 5);
   assert.ok(again.refreshedAt);
+
+  // the web top-up: a missed appointment added, a missing field filled, a duplicate refused
+  const topRespond = async () => ({
+    data: {
+      newItems: [
+        { section: 'national', item: aiItem('Justice X sworn in as Chief Justice of India') },
+        { section: 'national', item: aiItem('Cabinet approves pulses mission') },
+      ],
+      additions: [{ item: 1, facts: ['Edition: 3rd'], sources: [{ title: 't', publisher: 'UN', url: 'https://un.org/x', publishedDate: '', isPrimary: true }] }],
+    },
+    citations: [], searches: ['q'], model: 'fake',
+  });
+  assert.ok(await AIB.topup('2026-10-11', { out, respond: topRespond, log: () => {} }));
+  const t = AIB.read(out, '2026-10-11');
+  assert.ok(t.sections.national.some((i) => /Chief Justice/.test(i.headline) && i.topup));
+  assert.equal(t.sections.national.filter((i) => /pulses/.test(i.headline)).length, 1, 'duplicate refused');
+  assert.ok(t.sections.international[0].facts.includes('Edition: 3rd'));
+  assert.ok(t.toppedUp);
+});
+
+test('News feed: Rocket-form notes for the New-today stories only', async () => {
+  const NN = require('../ai/newsnotes');
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'nn-'));
+  fs.mkdirSync(path.join(out, 'days'));
+  const day = { date: '2026-10-16', items: [
+    { id: 'a', title: 'RBI keeps repo at 5.5%', top: true, facts: [{ text: 'Repo 5.5%' }], summary: '' },
+    { id: 'b', title: 'Minor story', facts: [], summary: '' },
+  ] };
+  fs.writeFileSync(path.join(out, 'days', '2026-10-16.json'), JSON.stringify(day));
+  const respond = async ({ input }) => {
+    assert.match(input, /RBI keeps repo/);
+    assert.doesNotMatch(input, /Minor story/);
+    return { data: { notes: [{ item: 1, blueprint: ['Bank / RBI / NBFC'], notes: '# 1. Policy\n- **Repo rate:** **5.5%**\n> Exam angle: repo' }] }, citations: [], searches: [], model: 'fake' };
+  };
+  assert.equal(await NN.noteNewsDay(out, '2026-10-16', { respond }), 1);
+  const saved = JSON.parse(fs.readFileSync(path.join(out, 'days', '2026-10-16.json'), 'utf8'));
+  assert.match(saved.items[0].rocket.notes, /Repo rate/);
+  assert.equal(saved.items[1].rocket, undefined);
+  assert.equal(await NN.noteNewsDay(out, '2026-10-16', { respond }), 0, 'already noted');
 });
 
 test('Rocket-style notes: every figure of the facts stays on the page; malformed notes are refused', () => {
