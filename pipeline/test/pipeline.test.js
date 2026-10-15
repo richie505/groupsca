@@ -700,6 +700,6 @@ test('CA notes upload: each item filed under its own date, page as source, no li
   assert.equal(AIB.read(out, '2026-09-03').sections.national[0].paper, 'Vision Sep 2026 · p.4');
   assert.equal(AIB.read(out, '2026-09-03').sections.national[0].upload, 'notes');
   assert.equal(AIB.read(out, '2026-09-20').sections.andhraPradesh.length, 1);
-  assert.equal(AIB.read(out, '2026-10-16').sections.international.length, 1, 'undated: the upload day');
+  assert.equal(AIB.read(out, '2026-09-01').sections.international.length, 1, 'undated: the first day of the month the notes cover');
   assert.equal(AIB.read(out, '2026-09-03').status, 'published');
 });

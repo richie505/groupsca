@@ -15,6 +15,20 @@ const arg = (name) => {
 };
 const out = arg('out') || path.join(__dirname, '..', '..', 'feed');
 
+/** A file name as a short source label: "PRAVEEN-SIR-s-CA-360-2026-SEP-ENGLISH-MAGAZINE-96385380-2026" -> "Praveen Sir CA 360 Sep 2026". */
+function cleanLabel(name) {
+  const seen = new Set();
+  const words = String(name).replace(/[_-]+/g, ' ').split(/\s+/).filter((w) => {
+    const k = w.toLowerCase();
+    if (!w || /^\d{5,}$/.test(w) || /^(s|english|magazine|pdf|final|compressed)$/i.test(w) || seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+  const year = words.find((w) => /^20\d\d$/.test(w));
+  const rest = words.filter((w) => w !== year).map((w) => (/^[A-Z]{3,}$/.test(w) ? w[0] + w.slice(1).toLowerCase() : w));
+  return [...rest, year].filter(Boolean).join(' ').replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\b/i, (m) => m[0].toUpperCase() + m.slice(1, 3).toLowerCase()).trim() || 'CA notes';
+}
+
 async function main() {
   const dir = arg('dir');
   const jobs = dir
@@ -23,7 +37,7 @@ async function main() {
       const bits = f.replace(/\.pdf$/i, '').split('__');
       const kind = bits[1] === 'notes' ? 'notes' : NP.paperOf(bits[1] || f) || NP.paperOf(f);
       // notes keep the name they were uploaded with ("Vision Sep 2026") as their source label
-      const label = kind === 'notes' ? (bits.slice(3).join(' ').replace(/[_-]+/g, ' ').trim() || 'CA notes') : '';
+      const label = kind === 'notes' ? cleanLabel(bits.slice(3).join(' ')) : '';
       return { file: path.join(dir, f), name: f, date, paper: kind, label };
     })
     : [{ file: arg('file'), name: path.basename(arg('file')), date: arg('date') || todayIst(), paper: arg('paper') || NP.paperOf(arg('file')) }];

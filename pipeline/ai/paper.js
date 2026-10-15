@@ -42,8 +42,8 @@ For each item give its section ("international", "national" or "andhraPradesh"),
 item fields. "date" = the date of the development as the notes give it (YYYY-MM-DD; the first of the month when only the
 month is given), or "" if no date is given. For "sources" give one entry: title = the item's heading, publisher =
 "${paper.label || paper.name}", url = "", publishedDate = "", isPrimary = false. Add nothing that the notes do not say.
-"paperDate" = "".
-Return {"paperDate": "", "items": [{"section", "page", "item"}]} — an empty list if these pages have no current affairs.`;
+"paperDate" = the month the notes cover as YYYY-MM-01 when the pages say it (e.g. a "September 2026" magazine: "2026-09-01"), else "".
+Return {"paperDate": "...", "items": [{"section", "page", "item"}]} — an empty list if these pages have no current affairs.`;
 }
 
 function paperTask(date, paper, from, to) {
@@ -125,6 +125,26 @@ async function readPart(date, paper, part, respond) {
   }));
 }
 
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+
+/** The month a notes PDF covers (YYYY-MM-01): as the notes say, else from its name ("CA 360 SEP 2026"), else the upload's. */
+function notesMonth(said, label, uploaded) {
+  if (/^\d{4}-\d{2}-01$/.test(said || '')) return said;
+  const l = String(label).toLowerCase();
+  const m = MONTHS.findIndex((x) => new RegExp(`\\b${x}`).test(l));
+  const y = (l.match(/\b(20\d\d)\b/) || [])[1];
+  if (m >= 0 && y) return `${y}-${String(m + 1).padStart(2, '0')}-01`;
+  return `${uploaded.slice(0, 7)}-01`;
+}
+
+/** An item's day: its own date when it falls in or just before the notes' month, else the month's first day. */
+function notesDate(d, month, uploaded) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(d || '')) return month;
+  const earliest = new Date(`${month}T00:00:00Z`);
+  earliest.setUTCDate(earliest.getUTCDate() - 31);
+  return d >= earliest.toISOString().slice(0, 10) && d <= uploaded ? d : month;
+}
+
 /** One per story: the same topic slug or close headlines (a story on page 1 and again on page 11). */
 function sameStory(a, b) {
   if (a.canonicalTopic && a.canonicalTopic === b.canonicalTopic) return true;
@@ -163,10 +183,12 @@ async function readPaper(date, pdf, key, { out, respond = AI.respond, log = cons
   } finally {
     fs.rmSync(tmp, { recursive: true, force: true });
   }
-  // a newspaper is one day (its printed date); notes cover many days: each item goes to its own date
+  // a newspaper is one day (its printed date); notes cover many days: each item goes to its own date, and an item
+  // the notes give no date for goes to the first day of the month they cover
+  const month = paper.notes ? notesMonth(readPart.paperDate, paper.label, date) : '';
   const byDate = new Map();
   for (const f of found) {
-    const d = paper.notes ? (/^\d{4}-\d{2}-\d{2}$/.test(f.item.date || '') && f.item.date <= date ? f.item.date : date) : editionDate(date, readPart.paperDate);
+    const d = paper.notes ? notesDate(f.item.date, month, date) : editionDate(date, readPart.paperDate);
     if (!byDate.has(d)) byDate.set(d, []);
     byDate.get(d).push(f);
   }
@@ -218,4 +240,4 @@ async function mergeDay(date, found, paper, { out, respond, log }) {
   return added;
 }
 
-module.exports = { mergeDay, notesTask, sameStory, editionDate, PAPERS, paperOf, paperTask, PAPER_SCHEMA, splitPdf, readPaper };
+module.exports = { notesMonth, notesDate, mergeDay, notesTask, sameStory, editionDate, PAPERS, paperOf, paperTask, PAPER_SCHEMA, splitPdf, readPaper };
