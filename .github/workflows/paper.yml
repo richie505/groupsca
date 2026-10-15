@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
-      GH_TOKEN: ${{ secrets.PAPERS_TOKEN || secrets.FOR_PAPERS }}
+      GH_TOKEN: ${{ secrets.PAPERS_TOKEN || secrets.PAPER_TOKEN1 || secrets.FOR_PAPERS }}
       INBOX: richie505/groupsca-papers
     steps:
       - uses: actions/checkout@v4
