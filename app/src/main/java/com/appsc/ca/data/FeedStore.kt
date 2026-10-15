@@ -41,7 +41,7 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
         val index = FeedJson.decodeFromString<BriefingIndex>(text)
         briefDir.mkdirs()
         val old = read<BriefingIndex>(File(briefDir, "index.json"))?.briefings?.associate { it.date to it.generatedAt }.orEmpty()
-        val keep = index.briefings.filter { it.status == "published" }.take(KEEP_DAYS)
+        val keep = index.briefings.filter { it.status == "published" }.take(KEEP_UPLOAD_DAYS)
         for (b in keep) {
             val f = File(briefDir, "${b.date}.json")
             if (f.exists() && old[b.date] == b.generatedAt) continue
@@ -144,5 +144,7 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
 
     companion object {
         const val KEEP_DAYS = 60
+        /** Days read from uploaded papers and notes: a monthly notes PDF fills a month at once, so far more are kept. */
+        const val KEEP_UPLOAD_DAYS = 400
     }
 }
