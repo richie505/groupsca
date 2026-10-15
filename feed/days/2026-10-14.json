@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-14",
- "updated": "2026-10-14T21:01:19.644Z",
+ "updated": "2026-10-15T05:21:36.557Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 758,
+   "found": 763,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 36,
+   "found": 41,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 45,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 40,
+   "found": 59,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 110,
+   "found": 121,
    "error": null
   },
   {
@@ -209,6 +209,92 @@
   }
  ],
  "items": [
+  {
+   "id": "bf52b1acab4d",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "04:38",
+   "title": "International experts inspect Polavaram works",
+   "summary": "An international expert team visited the Polavaram Irrigation Project to inspect ongoing ECRF dam construction, reviewing Gap-1 and Gap-2 progress alongside PPA and CWC officials.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/international-experts-inspect-polavaram-works-1132542",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [
+    "Polavaram Irrigation Project"
+   ],
+   "angles": [
+    "Construction",
+    "Irrigation",
+    "Irrigation Project"
+   ],
+   "score": 80,
+   "band": "critical",
+   "why": {
+    "syllabus": 30,
+    "angles": 15,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "AP Irrigation and Renewable Projects",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #16 · AP Irrigation and Renewable Projects",
+      "bullets": [
+       "Polavaram Irrigation Project is on the Godavari River.",
+       "Polavaram Irrigation Project is located in the Polavaram region.",
+       "Seven Khammam mandals were transferred to Andhra Pradesh to facilitate the Polavaram Irrigation Project.",
+       "Polavaram National Project is an earth-cum-rockfill dam.",
+       "Polavaram National Project provides irrigation to more than 7.2 lakh acres."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "bf52b1acab4d",
+   "top": true
+  },
   {
    "id": "60f545a64e5b",
    "date": "2026-10-14",
@@ -706,6 +792,93 @@
    "top": true
   },
   {
+   "id": "e44de6480563",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "05:53",
+   "title": "Reservations for 27 ZPTC seats, 27 MPP posts in Eluru",
+   "summary": "Eluru District Collector K Vetriselvi announced reservations for 27 ZPTC seats and 27 MPP posts under GO 154 ahead of Andhra Pradesh local body polls.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/eluru/reservations-for-27-zptc-seats-27-mpp-posts-in-eluru-1132593",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "Post"
+   ],
+   "score": 70,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "State Legislative Assembly and Council",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #60 · State Legislative Assembly and Council",
+      "bullets": [
+       "The Uttar Pradesh Legislative Assembly has 403 seats.",
+       "Andhra Pradesh has a Legislative Council."
+      ]
+     },
+     {
+      "topic": "Polity Extremes, Tenures and Representation",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #39 · Polity Extremes, Tenures and Representation",
+      "bullets": [
+       "Uttar Pradesh has 80 Lok Sabha seats."
+      ]
+     },
+     {
+      "topic": "Article 371 Special State Provisions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #48 · Article 371 Special State Provisions",
+      "bullets": [
+       "Article 371-D applies to Andhra Pradesh.",
+       "Article 371-H gives the Governor special responsibility with respect to law and order in Arunachal Pradesh."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "e44de6480563",
+   "top": true
+  },
+  {
    "id": "ac5d3c7cf89a",
    "date": "2026-10-14",
    "pubDate": "2026-10-14",
@@ -1042,6 +1215,70 @@
     "gaps": []
    },
    "thread": "2979e94e6519",
+   "top": true
+  },
+  {
+   "id": "4cf522acd2f2",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "05:03",
+   "title": "Sri City to host Regional Investment Summit on October 26",
+   "summary": "District Collector directs officials to complete all arrangements for the Summit Officials asked to ensure adequate facilities for investors, industrialists and other delegates",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "District Collector directs officials to complete all arrangements for the Summit Officials asked to ensure adequate facilities for investors, industrialists and other delegates"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/sri-city-to-host-regional-investment-summit-on-october-26-1132564",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Summit"
+   ],
+   "score": 68,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "4cf522acd2f2",
    "top": true
   },
   {
@@ -1502,6 +1739,117 @@
    "line": "Union Agriculture and Farmers’ Welfare and Rural Development Minister Shri Shivraj Singh Chouhan participates in the 10th National Convention of Agrivision in Delhi"
   },
   {
+   "id": "9d15211fff16",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "04:43",
+   "title": "Vijayawada Rural emerges state’s largest mandal in MPTC segments",
+   "summary": "Vijayawada Rural Mandal Parishad, AP’s largest mandal with 1.46 lakh voters across 40 MPTC segments, finalises election reservations for BC, SC, ST, and women candidates.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Vijayawada Rural Mandal Parishad, AP’s largest mandal with 1.46 lakh voters across 40 MPTC segments, finalises election reservations for BC, SC, ST, and women candidates."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/vijayawada-rural-emerges-states-largest-mandal-in-mptc-segments-1132546",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies",
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "SC",
+    "ST"
+   ],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Commissions for Socially Disadvantaged Groups",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #42 · Commissions for Socially Disadvantaged Groups",
+      "bullets": [
+       "The Kaka Kalelkar Commission recommended reservations for backward classes.",
+       "The B.P. Mandal Commission concerned Other Backward Classes (OBCs).",
+       "The B.P. Mandal Commission identified 3,743 backward castes.",
+       "The Rajiv Gauba Committee explored equitable administrative mechanisms for the most backward sub-castes among Scheduled Castes.",
+       "Madigas were cited as an example of the most backward Scheduled Caste sub-castes considered by the Rajiv Gauba Committee."
+      ]
+     },
+     {
+      "topic": "Committees on Welfare, Rights and Development",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Society › #11 · Committees on Welfare, Rights and Development",
+      "bullets": [
+       "The purpose of the First Backward Classes Commission was to identify backward classes.",
+       "The Second Backward Classes Commission is also called the Mandal Commission."
+      ]
+     },
+     {
+      "topic": "Women’s Political Representation and Reservation",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #76 · Women’s Political Representation and Reservation",
+      "bullets": [
+       "The baseline women's reservation applies to directly elected seats in rural and urban local bodies.",
+       "Women's reservation in the House of the People covers seats reserved for Scheduled Castes and Scheduled Tribes.",
+       "Women's reservation in the Legislative Assembly of the National Capital Territory of Delhi covers Scheduled Caste-reserved seats.",
+       "Not less than one-third of the total seats reserved for Scheduled Castes and Scheduled Tribes under Article 243D(2) must be reserved for women belonging to Scheduled Castes and Scheduled Tribes.",
+       "The mandatory sub-quota for Scheduled Caste and Scheduled Tribe women within Scheduled Caste and Scheduled Tribe reserved seats is one-third."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "9d15211fff16",
+   "top": true
+  },
+  {
    "id": "342c62884c92",
    "date": "2026-10-14",
    "pubDate": "2026-10-15",
@@ -1760,8 +2108,7 @@
     ],
     "gaps": []
    },
-   "thread": "54718c1efa2c",
-   "top": true
+   "thread": "54718c1efa2c"
   },
   {
    "id": "0c5310b7d84d",
@@ -1822,8 +2169,7 @@
     "sections": [],
     "gaps": []
    },
-   "thread": "0c5310b7d84d",
-   "top": true
+   "thread": "0c5310b7d84d"
   },
   {
    "id": "13106b54aad0",
@@ -1943,8 +2289,7 @@
     ],
     "gaps": []
    },
-   "thread": "13106b54aad0",
-   "top": true
+   "thread": "13106b54aad0"
   },
   {
    "id": "bc6f2bb78e5d",
@@ -2046,8 +2391,90 @@
     ],
     "gaps": []
    },
-   "thread": "bc6f2bb78e5d",
-   "top": true
+   "thread": "bc6f2bb78e5d"
+  },
+  {
+   "id": "fc1284a7202d",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "04:53",
+   "title": "Women, farmers, fishermen to get empowered through SCDC",
+   "summary": "A Skill and Community Development Centre (SCDC) at Nakkapalli in Anakapalli district will benefit communities in the region The Andhra Pradesh State Skill Development Corporation signed a letter of intent (LoI) with ArcelorMittal Nippon Steel India",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "A Skill and Community Development Centre (SCDC) at Nakkapalli in Anakapalli district will benefit communities in the region The Andhra Pradesh State Skill Development Corporation signed a letter of intent (LoI) with ArcelorMittal Nippon Steel India"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/women-farmers-fishermen-to-get-empowered-through-scdc-1132558",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Women’s Political Representation and Reservation",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #76 · Women’s Political Representation and Reservation",
+      "bullets": [
+       "Women's political reservation was first constitutionally institutionalized through the 73rd and 74th Constitutional Amendment Acts, 1992.",
+       "Madhya Pradesh followed Bihar in granting increased reservation for women in Panchayats."
+      ]
+     },
+     {
+      "topic": "Indian Rivers and River Systems",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Geography › #1 · Indian Rivers and River Systems",
+      "bullets": [
+       "Brahmaputra flows through Tibet, Arunachal Pradesh, Assam, and Bangladesh.",
+       "Godavari flows from Nashik through Maharashtra, Telangana, and Andhra Pradesh.",
+       "Hagari, or Vedavathi, flows from the Western Ghats through Karnataka and Andhra Pradesh to Tungabhadra."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "fc1284a7202d"
   },
   {
    "id": "7860cb4126fa",
@@ -3528,6 +3955,64 @@
    "topicOf": "60f545a64e5b"
   },
   {
+   "id": "06098999842b",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "05:41",
+   "title": "Supreme Court refuses stay on AP villages merger orders",
+   "summary": "Apex court declines interim stay on Gos merging villages with municipalities, but issued notices on petitions challenging the move",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/supreme-court-refuses-stay-on-ap-villages-merger-orders-1132587",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "0f21efe2f7af",
+   "update": true,
+   "threadTitle": "Supreme Court refuses to stay proceedings against Nicobar project",
+   "threadStart": "2026-10-05",
+   "line": "Supreme Court refuses stay on AP villages merger orders"
+  },
+  {
    "id": "b0361f5e9482",
    "date": "2026-10-14",
    "pubDate": "2026-10-14",
@@ -4293,6 +4778,66 @@
     "gaps": []
    },
    "thread": "cce6afaee43e"
+  },
+  {
+   "id": "04ead3feb214",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "05:28",
+   "title": "RCE bags award at education summit",
+   "summary": "Ramachandra College of Engineering, Eluru received a prestigious national award for innovative teaching methodologies at the 36th Elets World Education Summit in New Delhi.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Ramachandra College of Engineering, Eluru received a prestigious national award for innovative teaching methodologies at the 36th Elets World Education Summit in New Delhi."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/eluru/rce-bags-award-at-education-summit-1132579",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Award",
+    "Summit"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 10,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [],
+    "gaps": []
+   },
+   "thread": "04ead3feb214",
+   "oneLiner": true,
+   "line": "Ramachandra College of Engineering, Eluru received a prestigious national award for innovative teaching methodologies at the 36th Elets World Education Summit in New Delhi."
   },
   {
    "id": "7a71f0fe1bc1",
@@ -6214,6 +6759,79 @@
    "thread": "9235c0ee1c6a"
   },
   {
+   "id": "c194e7b1fd12",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "05:35",
+   "title": "New township to accommodate 26,000 Tirumala pilgrims",
+   "summary": "TTD is developing an Integrated Pilgrim Township at an estimated cost of Rs 2,750 crore The 20-acre project is coming up near Alipiri, close to the Sri Venkateswara Zoological Park",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "TTD is developing an Integrated Pilgrim Township at an estimated cost of Rs 2,750 crore The 20-acre project is coming up near Alipiri, close to the Sri Venkateswara Zoological Park"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/new-township-to-accommodate-26000-tirumala-pilgrims-1132583",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [
+    "Tirumala Tirupati Devasthanams (TTD)"
+   ],
+   "angles": [],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "AP Irrigation and Renewable Projects",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #16 · AP Irrigation and Renewable Projects",
+      "bullets": [
+       "ReNew Power Integrated Project is located in Ananthapuram.",
+       "ReNew Power Integrated Project involves an investment of ₹22,000 crore.",
+       "ReNew Power Integrated Project includes 1.8 GWp of solar power."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "c81542376d81",
+   "update": true,
+   "threadTitle": "Andhra Pradesh Chief Minister launches AI-powered Venkatadri app for Tirumala pilgrims",
+   "threadStart": "2026-10-12",
+   "line": "New township to accommodate 26,000 Tirumala pilgrims"
+  },
+  {
    "id": "b41fdcbe695c",
    "date": "2026-10-14",
    "pubDate": "2026-10-15",
@@ -6269,6 +6887,89 @@
     "gaps": []
    },
    "thread": "b41fdcbe695c"
+  },
+  {
+   "id": "5ca861167885",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "05:25",
+   "title": "AP Lokayukta orders swift action on Kurnool sewage crisis",
+   "summary": "Following an investigative report published in The Hans India on October 10, AP Lokayukta Justice T Mallikarjuna Rao took suo motu cognisance of untreated sewage dumping into a canal connecting the Tungabhadra River in Kurnool The KMC Commissioner was directed to inspect the Masamaseed pumping station area, stop illegal dumping, enforce authorized disposal, and prosecute violators",
+   "facts": [
+    {
+     "angle": "Report / committee",
+     "text": "Following an investigative report published in The Hans India on October 10, AP Lokayukta Justice T Mallikarjuna Rao took suo motu cognisance of untreated sewage dumping into a canal connecting the Tungabhadra River in Kurnool The KMC Commissioner was directed to inspect the Masamaseed pumping st…"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kurnool/ap-lokayukta-orders-swift-action-on-kurnool-sewage-crisis-1132578",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Canal"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Andhra Pradesh Rivers and River Features",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #3 · Andhra Pradesh Rivers and River Features",
+      "bullets": [
+       "The Krishna joins the Tungabhadra at Sangam in Kurnool district."
+      ]
+     },
+     {
+      "topic": "AP Geography: Largest Features and Rivers",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #24 · AP Geography: Largest Features and Rivers",
+      "bullets": [
+       "Tungabhadra is a tributary of the Krishna River."
+      ]
+     },
+     {
+      "topic": "CPCB and Water Pollution Control",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Environment › #21 · CPCB and Water Pollution Control",
+      "bullets": [
+       "The CPCB and SPCBs can take action against violators."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "5ca861167885"
   },
   {
    "id": "92f9823aac6a",
@@ -7303,6 +8004,152 @@
    "thread": "e2927a280de4"
   },
   {
+   "id": "dece5e65de90",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "05:11",
+   "title": "Dalhousie University signs MoUs with IIT, IISER Tirupati",
+   "summary": "IIT Tirupati and IISER Tirupati signed MoUs with Dalhousie University, Canada, during the Team Canada trade mission to launch joint PhD programs in key research sectors.",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "IIT Tirupati and IISER Tirupati signed MoUs with Dalhousie University, Canada, during the Team Canada trade mission to launch joint PhD programs in key research sectors."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/dalhousie-university-signs-mous-with-iit-iiser-tirupati-1132569",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "trade",
+    "University",
+    "IIT"
+   ],
+   "score": 39,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 15,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "AP Space, Atmospheric and Defence Institutions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · AP Geography › #18 · AP Space, Atmospheric and Defence Institutions",
+      "bullets": [
+       "IIT Tirupati stands for Indian Institute of Technology Tirupati.",
+       "IIT Tirupati is located at Tirupati."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "dece5e65de90"
+  },
+  {
+   "id": "23b209209d86",
+   "date": "2026-10-14",
+   "pubDate": "2026-10-15",
+   "time": "04:48",
+   "title": "Sri City-based NS Instruments inaugurates boys hostel rooms",
+   "summary": "NS Instruments India inaugurated newly constructed rooms at BC College Boys’ Hostel in Satyavedu under its ₹50 lakh CSR program to boost student infrastructure.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "NS Instruments India inaugurated newly constructed rooms at BC College Boys’ Hostel in Satyavedu under its ₹50 lakh CSR program to boost student infrastructure."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/sri-city-based-ns-instruments-inaugurates-boys-hostel-rooms-1132553",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 39,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 5
+   },
+   "brief": {
+    "v": 6,
+    "sections": [
+     {
+      "topic": "Electricity, Machines and Electromagnetic Induction",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Physics › #16 · Electricity, Machines and Electromagnetic Induction",
+      "bullets": [
+       "Galvanometers are measuring instruments based on the magnetic effect of current."
+      ]
+     },
+     {
+      "topic": "Constitutional Amendments, Methods and Key Provisions",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #23 · Constitutional Amendments, Methods and Key Provisions",
+      "bullets": [
+       "The 93rd Amendment provided 27% reservation for Other Backward Classes in educational institutions.",
+       "The 105th Amendment restored the power of State Governments and Union Territories to identify and notify their own Socially and Educationally Backward Classes.",
+       "The 93rd Amendment enabled reservation for Other Backward Classes in higher-education admissions."
+      ]
+     },
+     {
+      "topic": "Constitutional and Statutory Bodies",
+      "src": "Rocket Sheets",
+      "where": "Rocket Sheets · Indian Polity › #65 · Constitutional and Statutory Bodies",
+      "bullets": [
+       "The National Commission for Backward Classes is governed by Article 338-B.",
+       "The President appoints the National Commission for Backward Classes.",
+       "The National Commission for Backward Classes received full constitutional status through the 102nd Constitutional Amendment Act, 2018.",
+       "The National Commission for Backward Classes is not merely a statutory body under the 1993 Act."
+      ]
+     }
+    ],
+    "gaps": []
+   },
+   "thread": "23b209209d86"
+  },
+  {
    "id": "4e6257889246",
    "date": "2026-10-14",
    "pubDate": "2026-10-14",
@@ -7458,6 +8305,20 @@
  ],
  "quiz": [
   {
+   "id": "bf52b1acab4d:179nq91",
+   "item": "bf52b1acab4d",
+   "title": "International experts inspect Polavaram works",
+   "q": "Polavaram National Project provides irrigation to more than ____ acres.",
+   "options": [
+    "10.8 lakh",
+    "14.4 lakh",
+    "7.2 lakh",
+    "9.0 lakh"
+   ],
+   "answer": 2,
+   "kind": "figure"
+  },
+  {
    "id": "b11e4ac914d1:nhrzlo",
    "item": "b11e4ac914d1",
    "title": "BHAVYA: Creating Investment-Ready Manufacturing Ecosystems",
@@ -7514,6 +8375,20 @@
    "kind": "figure"
   },
   {
+   "id": "9d15211fff16:iv9m1o",
+   "item": "9d15211fff16",
+   "title": "Vijayawada Rural emerges state’s largest mandal in MPTC segments",
+   "q": "Vijayawada Rural Mandal Parishad, AP’s largest mandal with ____ voters across 40 MPTC segments, finalises election reservations for BC, SC, ST, and women candidates.",
+   "options": [
+    "2.19 lakh",
+    "2.92 lakh",
+    "1.46 lakh",
+    "1.82 lakh"
+   ],
+   "answer": 2,
+   "kind": "figure"
+  },
+  {
    "id": "f0b2a4c9ae9b:skjue5",
    "item": "f0b2a4c9ae9b",
    "title": "India to roll out data centre policy as concerns grow over power use",
@@ -7526,20 +8401,6 @@
    ],
    "answer": 3,
    "kind": "year"
-  },
-  {
-   "id": "54718c1efa2c:1w5cbyt",
-   "item": "54718c1efa2c",
-   "title": "India’s coir exports surged 305% to ₹6,614 crore in last financial year",
-   "q": "The exports of coir and coir products have registered an increase of 305%, from ____ rupees in 2014-15 to 6,614.40 crore rupees in the last financial year.",
-   "options": [
-    "978.20 crore",
-    "1,630.33 crore",
-    "815.16 crore",
-    "1,222.75 crore"
-   ],
-   "answer": 1,
-   "kind": "figure"
   },
   {
    "id": "60f545a64e5b:1i8psyy",
@@ -7568,6 +8429,34 @@
    ],
    "answer": 1,
    "kind": "figure"
+  },
+  {
+   "id": "54718c1efa2c:1w5cbyt",
+   "item": "54718c1efa2c",
+   "title": "India’s coir exports surged 305% to ₹6,614 crore in last financial year",
+   "q": "The exports of coir and coir products have registered an increase of 305%, from ____ rupees in 2014-15 to 6,614.40 crore rupees in the last financial year.",
+   "options": [
+    "978.20 crore",
+    "1,630.33 crore",
+    "815.16 crore",
+    "1,222.75 crore"
+   ],
+   "answer": 1,
+   "kind": "figure"
+  },
+  {
+   "id": "fc1284a7202d:zuzq1w",
+   "item": "fc1284a7202d",
+   "title": "Women, farmers, fishermen to get empowered through SCDC",
+   "q": "Women's political reservation was first constitutionally institutionalized through the 73rd and 74th Constitutional Amendment Acts, ____.",
+   "options": [
+    "1992",
+    "1995",
+    "1989",
+    "1990"
+   ],
+   "answer": 0,
+   "kind": "year"
   },
   {
    "id": "9d62666998f8:x69dks",
@@ -7624,48 +8513,6 @@
    ],
    "answer": 0,
    "kind": "figure"
-  },
-  {
-   "id": "3aec520410a8:iojtte",
-   "item": "3aec520410a8",
-   "title": "MCL commits ₹22.64 Crore for Five CSR projects in Sundargarh District",
-   "q": "14 OCT 2026 7:42PM by PIB Delhi Mahanadi Coalfields Limited, under its CSR initiative has signed MoUs with the District Administration of Sundargarh on tuesday for five developmental projects worth ____.",
-   "options": [
-    "₹13.58 crore",
-    "₹11.32 crore",
-    "₹16.98 crore",
-    "₹22.64 crore"
-   ],
-   "answer": 3,
-   "kind": "figure"
-  },
-  {
-   "id": "8a99abaa8d41:uvhyr4",
-   "item": "8a99abaa8d41",
-   "title": "MoS Dr Sukanta Majumdar Calls for Faster Banking Expansion and Improved Credit Access in Northeast at Bankers’ Conclave 3.0",
-   "q": "Of the 9,479 identified villages, ____, or around 73 per cent, are now connected to a bank branch or India Post Payments Bank.",
-   "options": [
-    "13,810 villages",
-    "6,905 villages",
-    "8,631 villages",
-    "4,143 villages"
-   ],
-   "answer": 1,
-   "kind": "figure"
-  },
-  {
-   "id": "b0361f5e9482:1b4kafr",
-   "item": "b0361f5e9482",
-   "title": "What does RBI's new Consolidated Account Statement measure benefit you? Explained",
-   "q": "The Comptroller and Auditor General does not prepare or compile Union accounts after the ____ reform.",
-   "options": [
-    "1976",
-    "1977",
-    "1978",
-    "1979"
-   ],
-   "answer": 0,
-   "kind": "year"
   }
  ]
 }
