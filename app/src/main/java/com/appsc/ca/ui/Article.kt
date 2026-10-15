@@ -55,6 +55,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.material.icons.outlined.Headphones
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -143,6 +144,13 @@ fun ArticleScreen(vm: AppViewModel, ids: List<String>, start: Int, onBack: () ->
         vm.markRead(item.id)
     }
     val pb by ReadAloud.playback
+    // when reading moves on to the next story, the page follows it
+    LaunchedEffect(pb.pageId) {
+        val k = list.indexOfFirst { it.id == pb.pageId }
+        if (pb.active && k >= 0 && k != at) at = k
+    }
+    val listening = pb.active && pb.pageId == item.id
+    val rid = item.id
     val saved = vm.isSaved(item.id)
     var sources by rememberSaveable(item.id) { mutableStateOf(false) }
     var wrong by remember { mutableStateOf<StaticSection?>(null) }
@@ -154,8 +162,15 @@ fun ArticleScreen(vm: AppViewModel, ids: List<String>, start: Int, onBack: () ->
                 IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, "Back") }
                 Text(item.title, style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
                 if (Listening.canRead(item)) {
-                    IconButton(onClick = { if (pb.active) ReadAloud.stop() else Listening.play(list.map(vm::visible), at, vm.speechRate) }) {
-                        Icon(if (pb.active) Icons.Filled.Stop else Icons.AutoMirrored.Filled.VolumeUp, "Listen")
+                    // the Rocket app's headphones: read this story line by line (then on), pause, carry on
+                    IconButton(onClick = {
+                        when {
+                            listening && pb.playing -> ReadAloud.pause()
+                            listening -> ReadAloud.resume()
+                            else -> Listening.play(list.map(vm::visible), at, vm.speechRate)
+                        }
+                    }) {
+                        Icon(Icons.Outlined.Headphones, "Listen", tint = if (listening) C.Accent else C.Ink)
                     }
                 }
                 IconButton(onClick = { vm.toggleSave(raw) }) {
@@ -173,7 +188,9 @@ fun ArticleScreen(vm: AppViewModel, ids: List<String>, start: Int, onBack: () ->
                     if (vm.isUpdate(item)) Text("Update", style = MaterialTheme.typography.labelMedium, color = C.Medium,
                         modifier = Modifier.clip(RoundedCornerShape(6.dp)).background(C.MediumSoft).padding(horizontal = 8.dp, vertical = 3.dp))
                 }
-                Text(item.title, style = MaterialTheme.typography.headlineSmall.copy(fontSize = 22.sp, lineHeight = 29.sp), color = C.Ink, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 10.dp))
+                ReadLine(rid, "title") {
+                    Text(item.title, style = MaterialTheme.typography.headlineSmall, color = Color.Black, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 10.dp))
+                }
                 HorizontalDivider(color = C.Line, modifier = Modifier.padding(vertical = 10.dp))
                 Row {
                     Text(
@@ -184,7 +201,7 @@ fun ArticleScreen(vm: AppViewModel, ids: List<String>, start: Int, onBack: () ->
                 }
                 HorizontalDivider(color = C.Line, modifier = Modifier.padding(vertical = 10.dp))
 
-                if (item.summary.isNotBlank()) {
+                if (item.summary.isNotBlank()) ReadLine(rid, "summary") {
                     Text(highlighted(item.summary, item), style = MaterialTheme.typography.bodyLarge, color = C.Body)
                 }
                 val rocket = item.rocket
@@ -194,15 +211,15 @@ fun ArticleScreen(vm: AppViewModel, ids: List<String>, start: Int, onBack: () ->
                             modifier = Modifier.padding(top = 8.dp))
                     }
                     SectionTitle("Notes")
-                    NotesView(rocket.notes)
+                    NotesView(rocket.notes, rid)
                 } else if (item.newFacts.isNotEmpty()) {
                     SectionTitle("In the news")
-                    for (f in item.newFacts) Bullet(f.text, label = f.angle)
+                    item.newFacts.forEachIndexed { i, f -> ReadLine(rid, "fact:$i") { Bullet(f.text, label = f.angle) } }
                 }
                 if (item.brief.sections.isNotEmpty()) {
-                    for (sec in item.brief.sections) {
-                        SectionTitle("About ${sec.topic.substringAfter(" · ")}")
-                        for (b in sec.bullets) Bullet(b)
+                    item.brief.sections.forEachIndexed { s, sec ->
+                        ReadLine(rid, "brief:$s") { SectionTitle("About ${sec.topic.substringAfter(" · ")}") }
+                        sec.bullets.forEachIndexed { i, b -> ReadLine(rid, "brief:$s:$i") { Bullet(b) } }
                         Row(Modifier.padding(top = 4.dp), verticalAlignment = Alignment.CenterVertically) {
                             Text("Rocket Sheets · " + sec.where.substringAfter(" · ").substringBefore(" › #"), style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.weight(1f))
                             Text("Wrong note?", style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.clickable { wrong = sec }.padding(4.dp))

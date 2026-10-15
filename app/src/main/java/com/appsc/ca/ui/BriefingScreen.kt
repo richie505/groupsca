@@ -50,6 +50,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.material.icons.outlined.Headphones
+import androidx.compose.foundation.lazy.itemsIndexed
 import com.appsc.ca.data.PaperUpload
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -114,7 +116,14 @@ fun BriefingScreen(vm: AppViewModel, onSettings: () -> Unit = {}) {
     val wanted = BRIEF_FILTERS.firstOrNull { it.first == filter }?.second
     val shown = sections[section].second.filter { wanted == null || it.subjects.any { s -> s in wanted } }
         .sortedBy { it.importance }
-    LazyColumn(Modifier.fillMaxSize()) {
+    val listState = androidx.compose.foundation.lazy.rememberLazyListState()
+    val pbNow by com.appsc.ca.platform.ReadAloud.playback
+    // the card being read stays in view (5 header rows above the cards)
+    LaunchedEffect(pbNow.pageId) {
+        val k = shown.indexOfFirst { Listening.briefId(b.date, it) == pbNow.pageId }
+        if (pbNow.active && k >= 0) listState.animateScrollToItem(k + 5)
+    }
+    LazyColumn(Modifier.fillMaxSize(), state = listState) {
         item {
             Row(Modifier.fillMaxWidth().padding(start = 18.dp, end = 6.dp, top = 12.dp), verticalAlignment = Alignment.CenterVertically) {
                 Column(Modifier.weight(1f)) {
@@ -129,6 +138,7 @@ fun BriefingScreen(vm: AppViewModel, onSettings: () -> Unit = {}) {
         item {
             Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal = 16.dp, vertical = 10.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 Quick("📚 Coverage audit") { page = BPage.AUDIT }
+                Quick("🎧 Listen") { Listening.playBrief(b.date, shown, 0, vm.speechRate) }
                 if (vm.showQuiz) Quick("❓ MCQs (${b.mcqs.size})") { page = BPage.MCQ }
                 if (vm.showMains) Quick("📝 Mains (${b.mainsQuestions.size})") { page = BPage.MAINS }
             }
@@ -151,7 +161,7 @@ fun BriefingScreen(vm: AppViewModel, onSettings: () -> Unit = {}) {
             }
         }
         if (shown.isEmpty()) item { Text("No significant verified current-affairs item today.", color = C.Muted, modifier = Modifier.padding(18.dp)) }
-        items(shown, key = { it.section + it.headline }) { BriefCard(vm, b.date, it) }
+        itemsIndexed(shown, key = { _, it -> it.section + it.headline }) { n, it -> BriefCard(vm, b.date, it) { Listening.playBrief(b.date, shown, n, vm.speechRate) } }
         item {
             Text(
                 (if (b.papers.isNotEmpty()) "Newspaper: ${b.papers.joinToString(", ")} · " else "") + "Researched and checked on the server by ${b.model.ifBlank { "AI" }} with live web search · ${b.sourceCount} sources. " +
@@ -213,14 +223,19 @@ private fun statusColors(s: String): Pair<Color, Color> = when (s) {
 /** One briefing item: headline, chips, paper mapping, status, text, Prelims, Mains, AP link, sources. */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
+fun BriefCard(vm: AppViewModel, date: String, it: BriefItem, onListen: (() -> Unit)? = null) {
     val context = LocalContext.current
     var open by rememberSaveable(it.headline) { mutableStateOf(false) }
+    val rid = Listening.briefId(date, it)
+    val pb by com.appsc.ca.platform.ReadAloud.playback
+    val reading = pb.active && pb.pageId == rid
+    // the card being read opens, so its lines can be followed
+    LaunchedEffect(reading) { if (reading) open = true }
     var marking by remember { mutableStateOf(false) }
     val mark = vm.briefMarks["$date|${it.headline}"]
     Column(
         Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp).clip(RoundedCornerShape(14.dp))
-            .border(1.dp, if (it.importance <= 1) Color(0xFFF5C2A0) else C.Line, RoundedCornerShape(14.dp))
+            .border(if (reading) 2.dp else 1.dp, if (reading) C.Accent else if (it.importance <= 1) Color(0xFFF5C2A0) else C.Line, RoundedCornerShape(14.dp))
             .clickable { open = !open }.padding(14.dp),
     ) {
         FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
@@ -231,8 +246,10 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
             if (it.paper.isNotBlank()) Chip("📰 ${it.paper}", C.Ap, C.ApSoft)
             if (it.status.isNotBlank()) statusColors(it.status).let { (f, bg) -> Chip(it.status.replace('_', ' '), f, bg) }
         }
-        Text((if (it.importance <= 1) "🔥 " else "") + it.headline, style = MaterialTheme.typography.titleMedium.copy(fontSize = 17.sp, lineHeight = 23.sp),
-            color = C.Ink, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 8.dp))
+        ReadLine(rid, "title") {
+            Text((if (it.importance <= 1) "🔥 " else "") + it.headline, style = MaterialTheme.typography.titleMedium.copy(fontSize = 17.sp, lineHeight = 23.sp),
+                color = C.Ink, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 8.dp))
+        }
         if (it.subjects.isNotEmpty()) {
             FlowRow(Modifier.padding(top = 6.dp), horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 for (s in it.subjects) Chip(s, C.Accent, C.AccentSoft)
@@ -243,7 +260,9 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
             it.group2.takeIf { g -> g.isNotEmpty() }?.let { g -> "Group 2: " + g.joinToString(", ") },
         ).joinToString(" · ")
         if (map.isNotBlank()) Text(map, style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(top = 4.dp))
-        if (it.summary.isNotBlank()) Text(it.summary, style = MaterialTheme.typography.bodyMedium, color = C.Body, maxLines = if (open) Int.MAX_VALUE else 3, modifier = Modifier.padding(top = 8.dp))
+        if (it.summary.isNotBlank()) ReadLine(rid, "summary") {
+            Text(it.summary, style = MaterialTheme.typography.bodyMedium, color = C.Body, maxLines = if (open) Int.MAX_VALUE else 3, modifier = Modifier.padding(top = 8.dp))
+        }
         if (it.blueprint.isNotEmpty()) {
             FlowRow(Modifier.padding(top = 6.dp), horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 for (b in it.blueprint) Chip("🎯 $b", C.High, C.HighSoft)
@@ -251,11 +270,11 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
         }
         if (open) {
             if (it.notes.isNotBlank()) {
-                NotesView(it.notes)
+                NotesView(it.notes, rid)
             } else {
                 if (it.facts.isNotEmpty()) {
                     Label("Important facts")
-                    for (f in it.facts) Bullet(f)
+                    it.facts.forEachIndexed { i, f -> ReadLine(rid, "fact:$i") { Bullet(f) } }
                 }
                 if (it.prelimsTakeaway.isNotBlank()) Block("🎯 Prelims facts", it.prelimsTakeaway)
             }
@@ -279,6 +298,14 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
                     Spacer(Modifier.width(4.dp))
                     Text(mark ?: "Bookmark")
                 }
+                IconButton(onClick = {
+                    when {
+                        reading && pb.playing -> com.appsc.ca.platform.ReadAloud.pause()
+                        reading -> com.appsc.ca.platform.ReadAloud.resume()
+                        onListen != null -> onListen()
+                        else -> Listening.playBrief(date, listOf(it), 0, vm.speechRate)
+                    }
+                }) { Icon(Icons.Outlined.Headphones, "Listen", tint = if (reading) C.Accent else C.Ink) }
                 IconButton(onClick = { copyText(context, briefText(date, it)) }) { Icon(Icons.Filled.ContentCopy, "Copy") }
                 IconButton(onClick = { shareText(context, briefText(date, it)) }) { Icon(Icons.Filled.Share, "Share") }
             }

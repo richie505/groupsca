@@ -53,6 +53,13 @@ class MainActivity : ComponentActivity() {
                     SpeechText.fromNotes = Json.parseToJsonElement(text).jsonObject
                         .mapValues { (_, v) -> v.jsonArray.map { it.jsonPrimitive.content } }
                 }
+                // the Rocket app's checked list of 4,800 short forms, each with the words that tell its meaning
+                runCatching {
+                    val text = assets.open("acronyms.json").bufferedReader().use { it.readText() }
+                    SpeechText.checked = Json.parseToJsonElement(text).jsonObject.mapValues { (_, v) ->
+                        v.jsonArray.map { s -> s.jsonArray[0].jsonPrimitive.content to s.jsonArray[1].jsonArray.map { it.jsonPrimitive.content } }
+                    }
+                }
             }
         }
         setContent {

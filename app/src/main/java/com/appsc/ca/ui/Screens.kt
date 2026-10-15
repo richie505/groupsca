@@ -25,6 +25,11 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.Today
+import androidx.compose.material.icons.outlined.Newspaper
+import androidx.compose.material.icons.outlined.Quiz
+import androidx.compose.material.icons.automirrored.outlined.MenuBook
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.LibraryBooks
 import androidx.compose.material.icons.automirrored.filled.MenuBook
@@ -64,6 +69,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.graphics.Color
 import com.appsc.ca.BuildConfig
 import com.appsc.ca.data.BOOKS
 import com.appsc.ca.platform.ReadAloud
@@ -82,11 +89,11 @@ import com.appsc.ca.data.longDate
 import com.appsc.ca.data.shortDate
 
 private enum class Tab(val label: String, val icon: ImageVector) {
-    HOME("Home", Icons.Filled.Home),
-    BRIEFING("Briefing", Icons.Filled.Today),
-    NEWS("News", Icons.Filled.Newspaper),
-    SUBJECTS("Subjects", Icons.AutoMirrored.Filled.LibraryBooks),
-    PRACTICE("Practice", Icons.Filled.Quiz),
+    HOME("Home", Icons.Outlined.Home),
+    BRIEFING("Briefing", Icons.Outlined.Today),
+    NEWS("News", Icons.Outlined.Newspaper),
+    SUBJECTS("Subjects", Icons.AutoMirrored.Outlined.MenuBook),
+    PRACTICE("Practice", Icons.Outlined.Quiz),
 }
 
 private sealed interface Route {
@@ -123,13 +130,22 @@ fun App(vm: AppViewModel) {
             // read-aloud's controls, on every screen while a session runs
             PlayerBar(rate = vm.speechRate, onRate = vm::chooseRate)
             if (stack.isEmpty()) {
-                NavigationBar {
+                // the Rocket Prep app's bottom bar: white, flat, outlined icons, indigo when selected
+                HorizontalDivider(color = C.Line)
+                NavigationBar(containerColor = Color.White, tonalElevation = 0.dp, modifier = Modifier.height(68.dp)) {
                     for (t in Tab.entries) {
                         NavigationBarItem(
                             selected = tab == t,
                             onClick = { tab = t },
                             icon = { Icon(t.icon, null) },
-                            label = { Text(t.label) },
+                            label = { Text(t.label, style = androidx.compose.ui.text.TextStyle(fontSize = 12.sp), modifier = Modifier.padding(top = 2.dp)) },
+                            colors = androidx.compose.material3.NavigationBarItemDefaults.colors(
+                                selectedIconColor = C.Accent,
+                                selectedTextColor = C.Accent,
+                                indicatorColor = C.AccentSoft,
+                                unselectedIconColor = C.Muted,
+                                unselectedTextColor = C.Muted,
+                            ),
                         )
                     }
                 }

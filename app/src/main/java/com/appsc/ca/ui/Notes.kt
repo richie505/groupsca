@@ -83,25 +83,32 @@ fun noteText(text: String, base: Color = C.Body, strong: Color = C.Ink): Annotat
 }
 
 @Composable
-fun NotesView(md: String) {
+fun NotesView(md: String, readId: String? = null) {
     val blocks = remember(md) { parseNotes(md) }
-    val body = TextStyle(fontSize = 15.sp, lineHeight = 23.sp, color = C.Body)
+    val body = TextStyle(fontSize = 16.sp, lineHeight = 25.sp, color = C.Body)
     Column(Modifier.fillMaxWidth().padding(top = 4.dp)) {
-        for (b in blocks) when (b) {
+        blocks.forEachIndexed { i, b -> ReadLine(readId, "note:$i") { NoteBlockView(b, body) } }
+    }
+}
+
+@Composable
+private fun NoteBlockView(b: NoteBlock, body: TextStyle) {
+    Column {
+        when (b) {
             is NoteTable -> NoteTableView(b)
             is NoteLine -> when (b.kind) {
-                'h' -> Text(remember(b) { noteText(b.text, C.Ink, C.Ink) }, style = body.copy(fontSize = 16.sp, fontWeight = FontWeight.Bold),
-                    modifier = Modifier.padding(top = 12.dp, bottom = 2.dp))
+                'h' -> Text(remember(b) { noteText(b.text, C.Ink, C.Ink) }, style = body.copy(fontSize = 17.sp, fontWeight = FontWeight.Bold),
+                    modifier = Modifier.padding(top = 14.dp, bottom = 2.dp))
                 'b', 's' -> {
                     val sub = b.kind == 's'
-                    Row(Modifier.padding(start = if (sub) 20.dp else 2.dp, top = 2.dp, bottom = 2.dp)) {
-                        Text(if (sub) "–" else "•", style = body.copy(color = if (sub) C.Muted else C.Ink, fontWeight = FontWeight.Bold), modifier = Modifier.width(12.dp))
+                    Row(Modifier.padding(start = if (sub) 22.dp else 4.dp, top = 3.dp, bottom = 3.dp)) {
+                        Text(if (sub) "–" else "•", style = body.copy(color = if (sub) C.Muted else C.Ink, fontWeight = FontWeight.Bold), modifier = Modifier.width(14.dp))
                         Spacer(Modifier.width(6.dp))
-                        Text(remember(b) { noteText(b.text) }, style = if (sub) body.copy(fontSize = 14.sp) else body)
+                        Text(remember(b) { noteText(b.text) }, style = if (sub) body.copy(fontSize = 15.sp) else body)
                     }
                 }
                 't' -> Callout(b.text.replace("⚠", "").trim().removePrefix("**Trap:**").removePrefix("**Traps:**").trim(), C.CriticalSoft, C.Critical, "⚠ Trap")
-                'x' -> Callout(b.text.removePrefix("Exam angle:").trim(), C.MediumSoft, C.Medium, "Exam angle")
+                'x' -> Callout(b.text.removePrefix("Exam angle:").trim(), C.ExamBg, C.ExamInk, "Exam angle")
                 else -> Text(remember(b) { noteText(b.text) }, style = body, modifier = Modifier.padding(vertical = 3.dp))
             }
         }

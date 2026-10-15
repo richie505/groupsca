@@ -15,8 +15,18 @@ object C {
     val Body = Color(0xFF1F2937)
     val Muted = Color(0xFF5A6B88)
     val Faint = Color(0xFF8A96AD)
-    val Accent = Color(0xFF0F5132)
-    val AccentSoft = Color(0xFFE3F1E9)
+    // the Rocket Prep app's palette
+    val Navy = Color(0xFF0F2557)
+    val Accent = Color(0xFF3949AB)
+    val AccentSoft = Color(0xFFE8EAF6)
+    val Blue = Color(0xFF1D4ED8)
+    val Green = Color(0xFF15803D)
+    val GreenSoft = Color(0xFFE7F6EC)
+    val ExamBg = Color(0xFFFFF4E8)
+    val ExamInk = Color(0xFF9A3412)
+    val SeeBg = Color(0xFFF3EEFF)
+    val SeeInk = Color(0xFF6D28D9)
+    val FabSoft = Color(0xFFA9C1F0)
     val Line = Color(0xFFE5E8EF)
     val Chip = Color(0xFFF1F3F6)
     val Surface = Color(0xFFF7F8FA)
@@ -37,10 +47,10 @@ private val colors = lightColorScheme(
     primary = C.Accent,
     onPrimary = Color.White,
     primaryContainer = C.AccentSoft,
-    onPrimaryContainer = C.Accent,
-    secondary = C.Accent,
+    onPrimaryContainer = C.Navy,
+    secondary = C.Navy,
     secondaryContainer = C.AccentSoft,
-    onSecondaryContainer = C.Accent,
+    onSecondaryContainer = C.Navy,
     background = Color.White,
     onBackground = C.Ink,
     surface = Color.White,
@@ -55,11 +65,11 @@ private val colors = lightColorScheme(
 )
 
 private val type = Typography(
-    headlineSmall = TextStyle(fontSize = 22.sp, lineHeight = 28.sp, fontWeight = FontWeight.Bold),
-    titleLarge = TextStyle(fontSize = 20.sp, lineHeight = 26.sp, fontWeight = FontWeight.SemiBold),
+    headlineSmall = TextStyle(fontSize = 24.sp, lineHeight = 31.sp, fontWeight = FontWeight.Bold, color = Color.Black),
+    titleLarge = TextStyle(fontSize = 20.sp, lineHeight = 26.sp, fontWeight = FontWeight.Medium),
     titleMedium = TextStyle(fontSize = 16.sp, lineHeight = 22.sp, fontWeight = FontWeight.SemiBold),
-    bodyLarge = TextStyle(fontSize = 16.sp, lineHeight = 24.sp),
-    bodyMedium = TextStyle(fontSize = 14.sp, lineHeight = 21.sp),
+    bodyLarge = TextStyle(fontSize = 16.sp, lineHeight = 25.sp),
+    bodyMedium = TextStyle(fontSize = 14.sp, lineHeight = 20.sp),
     labelMedium = TextStyle(fontSize = 12.sp, lineHeight = 16.sp, fontWeight = FontWeight.Medium),
 )
 
