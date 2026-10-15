@@ -24,6 +24,10 @@ on:
         description: 'Regenerate days already published'
         type: boolean
         default: false
+      notes:
+        description: 'Only add the Rocket-style notes to saved briefings (no new research)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -51,12 +55,14 @@ jobs:
           FROM: ${{ github.event.inputs.from }}
           TO: ${{ github.event.inputs.to }}
           FORCE: ${{ github.event.inputs.force }}
+          NOTES: ${{ github.event.inputs.notes }}
         run: |
           args=""
           [ -n "$DATE" ] && args="$args --date $DATE"
           [ -n "$FROM" ] && args="$args --from $FROM"
           [ -n "$TO" ] && args="$args --to $TO"
           [ "$FORCE" = "true" ] && args="$args --force"
+          [ "$NOTES" = "true" ] && args="$args --notes"
           node pipeline/tools/briefing.js $args
       - name: Publish
         if: always()

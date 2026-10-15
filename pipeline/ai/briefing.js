@@ -8,6 +8,7 @@ const path = require('path');
 const P = require('./prompt');
 const AI = require('./openai');
 const V = require('./validate');
+const N = require('./notes');
 
 const dir = (out) => path.join(out, 'briefings');
 const file = (out, date) => path.join(dir(out), `${date}.json`);
@@ -69,6 +70,8 @@ async function generate(date, { out, respond = AI.respond, log = console.log } =
   b.status = v.status;
   b.problems = v.problems;
   b.fixes = v.fixes;
+  log(`${date}: Rocket-style notes…`);
+  await N.addNotes(b, respond, log);
   b.durationMs = Date.now() - t0;
   b.sourceCount = new Set(['international', 'national', 'andhraPradesh'].flatMap((k) => b.sections[k].flatMap((i) => i.sources.map((s) => s.url)))).size;
   fs.mkdirSync(dir(out), { recursive: true });
@@ -80,6 +83,15 @@ async function generate(date, { out, respond = AI.respond, log = console.log } =
 }
 
 /** feed/briefings/index.json: every briefing, newest first, with its status and counts. */
+/** Writes notes (Rocket form + blueprint angles) into a saved briefing. Returns false when skipped. */
+async function addNotes(date, { out, respond = AI.respond, log = console.log, force = false } = {}) {
+  const b = read(out, date);
+  if (!b || (b.notesVersion && !force)) return false;
+  await N.addNotes(b, respond, log);
+  fs.writeFileSync(file(out, date), JSON.stringify(b, null, 1) + '\n');
+  return true;
+}
+
 function writeIndex(out) {
   const d = dir(out);
   if (!fs.existsSync(d)) return [];
@@ -100,4 +112,4 @@ function writeIndex(out) {
   return list;
 }
 
-module.exports = { generate, writeIndex, recentTopics, read };
+module.exports = { generate, addNotes, writeIndex, recentTopics, read };

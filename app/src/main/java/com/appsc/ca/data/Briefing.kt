@@ -70,6 +70,10 @@ data class BriefItem(
     val status: String = "",
     val verifiedFirst: Boolean = false,
     val sources: List<BriefSource> = emptyList(),
+    /** Rocket-form notes (markdown subset, see ui/Notes.kt) */
+    val notes: String = "",
+    /** APPSC Current Affairs blueprint angles this item answers */
+    val blueprint: List<String> = emptyList(),
 )
 
 @Serializable

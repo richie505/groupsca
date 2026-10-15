@@ -191,4 +191,18 @@ class FeedParseTest {
         val groups = groupByUnit(day.items)
         assertEquals(groups.sortedBy { it.exam }.map { it.exam }, groups.map { it.exam })
     }
+
+    @Test
+    fun rocketNotesParse() {
+        val md = "# 1. What happened\n- **Edition:** **Second** [GK]\n  - sub point\n| Basis | Old | New |\n|---|---|---|\n| Rate | 5 | 6 |\n- ⚠ **Trap:** not the first\n> Exam angle: defence exercises"
+        val b = com.appsc.ca.ui.parseNotes(md)
+        assertEquals(listOf('h', 'b', 's'), b.take(3).map { (it as com.appsc.ca.ui.NoteLine).kind })
+        val t = b[3] as com.appsc.ca.ui.NoteTable
+        assertEquals(listOf("Basis", "Old", "New"), t.head)
+        assertEquals(1, t.rows.size)
+        assertEquals('t', (b[4] as com.appsc.ca.ui.NoteLine).kind)
+        assertEquals('x', (b[5] as com.appsc.ca.ui.NoteLine).kind)
+        val brief = FeedJson.decodeFromString<com.appsc.ca.data.BriefItem>("""{"headline":"h","notes":"# 1. x","blueprint":["Appointed"]}""")
+        assertEquals(listOf("Appointed"), brief.blueprint)
+    }
 }

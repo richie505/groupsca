@@ -239,12 +239,21 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
         ).joinToString(" · ")
         if (map.isNotBlank()) Text(map, style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(top = 4.dp))
         if (it.summary.isNotBlank()) Text(it.summary, style = MaterialTheme.typography.bodyMedium, color = C.Body, maxLines = if (open) Int.MAX_VALUE else 3, modifier = Modifier.padding(top = 8.dp))
-        if (open) {
-            if (it.facts.isNotEmpty()) {
-                Label("Important facts")
-                for (f in it.facts) Bullet(f)
+        if (it.blueprint.isNotEmpty()) {
+            FlowRow(Modifier.padding(top = 6.dp), horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                for (b in it.blueprint) Chip("🎯 $b", C.High, C.HighSoft)
             }
-            if (it.prelimsTakeaway.isNotBlank()) Block("🎯 Prelims facts", it.prelimsTakeaway)
+        }
+        if (open) {
+            if (it.notes.isNotBlank()) {
+                NotesView(it.notes)
+            } else {
+                if (it.facts.isNotEmpty()) {
+                    Label("Important facts")
+                    for (f in it.facts) Bullet(f)
+                }
+                if (it.prelimsTakeaway.isNotBlank()) Block("🎯 Prelims facts", it.prelimsTakeaway)
+            }
             if (vm.showMains && it.mainsAngle.isNotBlank()) Block("📝 Mains angle", it.mainsAngle)
             if (vm.showApLink && it.apLink.isNotBlank()) Block("📍 AP link", it.apLink)
             if (it.staticLink.isNotBlank()) Block("📚 Static link", it.staticLink)
@@ -269,7 +278,7 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
                 IconButton(onClick = { shareText(context, briefText(date, it)) }) { Icon(Icons.Filled.Share, "Share") }
             }
         } else if (it.sources.isNotEmpty()) {
-            Text("Tap for Prelims facts, Mains angle, AP link and ${it.sources.size} sources", style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(top = 6.dp))
+            Text(if (it.notes.isNotBlank()) "Tap for notes, traps, exam angle and ${it.sources.size} sources" else "Tap for Prelims facts, Mains angle, AP link and ${it.sources.size} sources", style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(top = 6.dp))
         }
     }
     if (marking) {
@@ -304,7 +313,7 @@ private fun Block(title: String, text: String) {
 private fun briefText(date: String, it: BriefItem) = buildString {
     append(it.headline).append(" (").append(date).append(")\n")
     if (it.summary.isNotBlank()) append(it.summary).append('\n')
-    for (f in it.facts) append("• ").append(f).append('\n')
+    if (it.notes.isNotBlank()) append(it.notes.replace("**", "")).append('\n') else for (f in it.facts) append("• ").append(f).append('\n')
     if (it.prelimsTakeaway.isNotBlank()) append("Prelims: ").append(it.prelimsTakeaway).append('\n')
     if (it.mainsAngle.isNotBlank()) append("Mains: ").append(it.mainsAngle).append('\n')
     if (it.apLink.isNotBlank()) append("AP link: ").append(it.apLink).append('\n')

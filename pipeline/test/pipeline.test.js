@@ -563,6 +563,9 @@ test('a whole briefing day with a fake model: stages, validation, saved file and
     if (name === 'appsc_editorial') {
       return { data: { coverageAudit: [{ subject: 'Polity', covered: true, items: [1], note: '' }], mcqs: [mcq('q1'), mcq('q2'), mcq('q3'), mcq('q4'), mcq('q5')], mainsQuestions: [] }, citations: [], searches: [], model: 'fake' };
     }
+    if (name.startsWith('appsc_notes_')) {
+      return { data: { notes: [1, 2, 3].map((n) => ({ item: n, blueprint: ['Scheme / Yojana', 'Made up'], notes: '# 1. Key facts\n- **What:** fact **one**\n> Exam angle: scheme objective' })) }, citations: [], searches: [], model: 'fake' };
+    }
     const heads = {
       appsc_international: ['UN adopts ocean treaty', 'WHO declares measles elimination', 'G20 finance meeting ends'],
       appsc_national: ['Cabinet approves pulses mission', 'ISRO launches navigation satellite', 'Supreme Court rules on tribunals'],
@@ -577,4 +580,17 @@ test('a whole briefing day with a fake model: stages, validation, saved file and
   assert.equal(idx.briefings[0].date, '2026-10-11');
   assert.equal(idx.briefings[0].andhraPradesh, 3);
   assert.equal(b.citations.length, 1);
+  assert.match(b.sections.national[0].notes, /^# 1\. Key facts/);
+  assert.deepEqual(b.sections.national[0].blueprint, ['Scheme / Yojana'], 'only blueprint angles from the list');
+  assert.equal(b.notesVersion, 1);
+});
+
+test('Rocket-style notes: every figure of the facts stays on the page; malformed notes are refused', () => {
+  const N = require('../ai/notes');
+  const it = aiItem('Tarang Shakti', { facts: ['Second edition from 26 September to 12 October 2026.', 'Seven air forces and 32 observer nations.'] });
+  const md = N.cleanNotes(it, '```markdown\n# 1. What happened\n- **Edition:** **Second**, **26 September – 12 October 2026**\n- ⚠ **Trap:** second edition, not first\n> Exam angle: defence exercises\n```');
+  assert.match(md, /^# 1\. What happened/);
+  assert.match(md, /# 2\. Also note\n- Seven air forces and 32 observer nations\.\n> Exam angle/, 'missing figures appended before the exam angle');
+  assert.equal(N.cleanNotes(it, 'just a paragraph'), '');
+  assert.deepEqual(N.missingFigures(it, md), []);
 });
