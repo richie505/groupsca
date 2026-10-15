@@ -1,14 +1,13 @@
-name: APPSC daily briefing (AI)
+name: News notes (AI)
 
-# The AI briefing: International, National and Andhra Pradesh current affairs researched with live web
-# search by the OpenAI model in AI_MODEL (pipeline/ai), validated, and saved to feed/briefings/.
+# Rocket-form notes for the News feed (and, by hand only, the old AI web-research briefing: --generate).
+# The model is AI_MODEL (pipeline/ai).
 # The OpenAI key is the OPENAI_API_KEY secret: it is used here, on GitHub's servers, and never in the app.
 on:
   schedule:
-    - cron: '20 15 * * *'   # 20:50 IST: generate
-    - cron: '25 15 * * *'   # 20:55 IST: retry 1 (skipped when already published)
-    - cron: '35 15 * * *'   # 21:05 IST: retry 2
-    - cron: '45 15 * * *'   # 21:15 IST: retry 3
+    # 20:50 IST: Rocket-form notes for the News feed's New-today stories. The AI web-research briefing is off
+    # (the day's study items come from the uploaded newspapers and CA notes, paper.yml).
+    - cron: '20 15 * * *'
   workflow_dispatch:
     inputs:
       date:

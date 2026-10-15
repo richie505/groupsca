@@ -16,6 +16,8 @@ const N = require('./notes');
 const PAPERS = {
   hindu: { name: 'The Hindu', url: 'https://epaper.thehindu.com/' },
   eenadu: { name: 'Eenadu', url: 'https://epaper.eenadu.net/' },
+  // current-affairs study notes (a coaching PDF, monthly compilation...): restructured item by item, each filed under its own date
+  notes: { name: 'CA notes', url: '', notes: true },
 };
 const KEYS = ['international', 'national', 'andhraPradesh'];
 const PAGES_PER_PART = 6;
@@ -29,7 +31,23 @@ function paperOf(name) {
   return '';
 }
 
+function notesTask(date, paper, from, to) {
+  return `These are pages ${from}-${to} of current-affairs study notes ("${paper.label || paper.name}"), uploaded on ${date}.
+
+Restructure every current-affairs development on these pages into items for APPSC Group 1 and Group 2: international,
+national and Andhra Pradesh. The notes are already selected for the exam, so keep every current-affairs item; leave out only
+pages without current affairs (cover, contents, advertisements, practice questions, pure static theory).
+Write every item in your own words (never copy the notes' sentences); keep all names, numbers, dates and places exact.
+For each item give its section ("international", "national" or "andhraPradesh"), the page number it is on, and the full
+item fields. "date" = the date of the development as the notes give it (YYYY-MM-DD; the first of the month when only the
+month is given), or "" if no date is given. For "sources" give one entry: title = the item's heading, publisher =
+"${paper.label || paper.name}", url = "", publishedDate = "", isPrimary = false. Add nothing that the notes do not say.
+"paperDate" = "".
+Return {"paperDate": "", "items": [{"section", "page", "item"}]} — an empty list if these pages have no current affairs.`;
+}
+
 function paperTask(date, paper, from, to) {
+  if (paper.notes) return notesTask(date, paper, from, to);
   return `These are pages ${from}-${to} of ${paper.name} (${date}).${paper.name === 'Eenadu' ? ' The paper is in Telugu: write everything in English.' : ''}
 
 Pick out the APPSC Group 1 and Group 2 current-affairs developments on these pages, as the system prompt defines them:
@@ -103,7 +121,7 @@ async function readPart(date, paper, part, respond) {
   readPart.paperDate = readPart.paperDate || (/^\d{4}-\d{2}-\d{2}$/.test(r.data.paperDate || '') ? r.data.paperDate : '');
   return (r.data.items || []).filter((x) => KEYS.includes(x.section) && x.item).map((x) => ({
     section: x.section,
-    item: { ...x.item, section: P.SECTIONS[x.section].label, paper: `${paper.name} · p.${x.page || part.from}` },
+    item: { ...x.item, section: P.SECTIONS[x.section].label, paper: `${paper.label || paper.name} · p.${x.page || part.from}`, ...(paper.notes ? { upload: 'notes' } : {}) },
   }));
 }
 
@@ -125,10 +143,10 @@ function editionDate(uploaded, printed) {
  * stories already there dropped, Rocket-form notes, MCQs redone. A day with no briefing yet gets one holding
  * the paper's items (`paperOnly`); the evening research keeps them. Returns the number of items added.
  */
-async function readPaper(date, pdf, key, { out, respond = AI.respond, log = console.log, split = splitPdf } = {}) {
-  const paper = PAPERS[key];
-  if (!paper) throw new Error(`unknown paper "${key}" (${Object.keys(PAPERS).join(', ')})`);
-  const B = require('./briefing');
+async function readPaper(date, pdf, key, { out, respond = AI.respond, log = console.log, split = splitPdf, label = '' } = {}) {
+  const base = PAPERS[key];
+  if (!base) throw new Error(`unknown paper "${key}" (${Object.keys(PAPERS).join(', ')})`);
+  const paper = { ...base, label: label || base.name };
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'paper-'));
   const found = [];
   readPart.paperDate = '';
@@ -136,16 +154,31 @@ async function readPaper(date, pdf, key, { out, respond = AI.respond, log = cons
     for (const part of split(pdf, tmp)) {
       try {
         const got = await readPart(date, paper, part, respond);
-        log(`${date}: ${paper.name} pages ${part.from}-${part.to}: ${got.length} items`);
+        log(`${date}: ${paper.label} pages ${part.from}-${part.to}: ${got.length} items`);
         found.push(...got);
       } catch (e) {
-        log(`${date}: ${paper.name} pages ${part.from}-${part.to} FAILED: ${e.message}`);
+        log(`${date}: ${paper.label} pages ${part.from}-${part.to} FAILED: ${e.message}`);
       }
     }
   } finally {
     fs.rmSync(tmp, { recursive: true, force: true });
   }
-  date = editionDate(date, readPart.paperDate);
+  // a newspaper is one day (its printed date); notes cover many days: each item goes to its own date
+  const byDate = new Map();
+  for (const f of found) {
+    const d = paper.notes ? (/^\d{4}-\d{2}-\d{2}$/.test(f.item.date || '') && f.item.date <= date ? f.item.date : date) : editionDate(date, readPart.paperDate);
+    if (!byDate.has(d)) byDate.set(d, []);
+    byDate.get(d).push(f);
+  }
+  let added = 0;
+  for (const [d, items] of [...byDate.entries()].sort()) added += await mergeDay(d, items, paper, { out, respond, log });
+  log(`${paper.label}: ${added} new items over ${byDate.size} day(s) (${found.length - added} already covered)`);
+  return added;
+}
+
+/** Puts a paper's items into a day's file: one per story, Rocket-form notes, MCQs for the day redone. */
+async function mergeDay(date, found, paper, { out, respond, log }) {
+  const B = require('./briefing');
   const b = B.read(out, date) || {
     version: 1, date, title: `APPSC Group 1 & Group 2 Daily Current Affairs — ${date}`, model: '', generatedAt: new Date().toISOString(),
     sections: { international: [], national: [], andhraPradesh: [] }, coverageAudit: [], mcqs: [], mainsQuestions: [], citations: [], paperOnly: true,
@@ -162,10 +195,9 @@ async function readPaper(date, pdf, key, { out, respond = AI.respond, log = cons
       Object.assign(same, { ...f.item, section: same.section });
     }
   }
-  // drops the paper's items that repeat a story already in (the web briefing's, or the other paper's)
   V.validate(b, []);
   const added = KEYS.reduce((s, k) => s + b.sections[k].length, 0) - before;
-  b.papers = [...new Set([...(b.papers || []), paper.name])];
+  b.papers = [...new Set([...(b.papers || []), paper.notes ? 'CA notes' : paper.name])];
   if (added) {
     const fresh = { date, sections: Object.fromEntries(KEYS.map((k) => [k, b.sections[k].filter((i) => i.paper && !i.notes)])) };
     await N.addNotes(fresh, respond, log);
@@ -175,16 +207,15 @@ async function readPaper(date, pdf, key, { out, respond = AI.respond, log = cons
     b.mainsQuestions = ed.mainsQuestions || [];
   }
   const v = V.validate(b, []);
-  // a morning paper-only day is shown as soon as it has items; the evening research completes it
-  b.status = b.paperOnly ? (added || before ? 'published' : 'needs_review') : v.status;
+  b.status = added || before ? 'published' : 'needs_review';
   b.problems = v.problems;
   b.generatedAt = new Date().toISOString();
-  b.sourceCount = new Set(KEYS.flatMap((k) => b.sections[k].flatMap((i) => i.sources.map((x) => x.url)))).size;
+  b.sourceCount = new Set(KEYS.flatMap((k) => b.sections[k].flatMap((i) => i.sources.map((x) => x.url).filter(Boolean)))).size;
   fs.mkdirSync(path.join(out, 'briefings'), { recursive: true });
   fs.writeFileSync(path.join(out, 'briefings', `${date}.json`), JSON.stringify(b, null, 1) + '\n');
   B.writeIndex(out);
-  log(`${date}: ${paper.name}: ${added} new items (${found.length - added} already covered)`);
+  log(`${date}: ${paper.label}: ${added} new items`);
   return added;
 }
 
-module.exports = { sameStory, editionDate, PAPERS, paperOf, paperTask, PAPER_SCHEMA, splitPdf, readPaper };
+module.exports = { mergeDay, notesTask, sameStory, editionDate, PAPERS, paperOf, paperTask, PAPER_SCHEMA, splitPdf, readPaper };

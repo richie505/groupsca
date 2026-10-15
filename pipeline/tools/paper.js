@@ -20,7 +20,11 @@ async function main() {
   const jobs = dir
     ? fs.readdirSync(dir).filter((f) => /\.pdf$/i.test(f)).sort().map((f) => {
       const date = (f.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || todayIst();
-      return { file: path.join(dir, f), name: f, date, paper: NP.paperOf(f.split('__')[1] || f) || NP.paperOf(f) };
+      const bits = f.replace(/\.pdf$/i, '').split('__');
+      const kind = bits[1] === 'notes' ? 'notes' : NP.paperOf(bits[1] || f) || NP.paperOf(f);
+      // notes keep the name they were uploaded with ("Vision Sep 2026") as their source label
+      const label = kind === 'notes' ? (bits.slice(3).join(' ').replace(/[_-]+/g, ' ').trim() || 'CA notes') : '';
+      return { file: path.join(dir, f), name: f, date, paper: kind, label };
     })
     : [{ file: arg('file'), name: path.basename(arg('file')), date: arg('date') || todayIst(), paper: arg('paper') || NP.paperOf(arg('file')) }];
   const done = [];
@@ -32,7 +36,7 @@ async function main() {
       continue;
     }
     try {
-      await NP.readPaper(j.date, j.file, j.paper, { out });
+      await NP.readPaper(j.date, j.file, j.paper, { out, label: j.label });
       done.push(j.name);
     } catch (e) {
       failed++;

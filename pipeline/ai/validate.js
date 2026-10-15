@@ -44,8 +44,9 @@ function validate(b, recent = []) {
         fixes.push(`${key}: dropped an item with no headline`);
         return false;
       }
-      it.sources = (it.sources || []).filter((s) => s && /^https?:\/\//.test(s.url || ''));
-      if (!it.sources.length) {
+      // an item from an uploaded paper or notes names its page instead of a link
+      it.sources = (it.sources || []).filter((s) => s && (/^https?:\/\//.test(s.url || '') || (it.paper && s.publisher)));
+      if (!it.sources.length && !it.paper) {
         fixes.push(`${key}: dropped "${it.headline}" (no source URL)`);
         return false;
       }

@@ -155,21 +155,21 @@ fun HomeScreen(
                 return@LazyColumn
             }
             val ids = lists.newTopics.map { it.id }
-            // the evening AI briefing (International · National · Andhra Pradesh)
+            // the latest day read from the uploaded newspapers and CA notes
             vm.briefings.firstOrNull()?.let { b ->
                 item {
                     Column(
                         Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp).clip(RoundedCornerShape(16.dp))
                             .background(C.Ink).clickable(onClick = onBriefing).padding(18.dp),
                     ) {
-                        Text("APPSC Daily Current Affairs", style = MaterialTheme.typography.titleLarge, color = androidx.compose.ui.graphics.Color.White, fontWeight = FontWeight.Bold)
+                        Text("From your newspapers & notes", style = MaterialTheme.typography.titleLarge, color = androidx.compose.ui.graphics.Color.White, fontWeight = FontWeight.Bold)
                         Text(longDate(b.date), style = MaterialTheme.typography.labelMedium, color = androidx.compose.ui.graphics.Color(0xFFC9D3E6))
                         Text(
                             "🌍 International ${b.sections.international.size}   🇮🇳 National ${b.sections.national.size}   📍 Andhra Pradesh ${b.sections.andhraPradesh.size}\n" +
-                                "🔥 High priority ${b.allItems.count { it.importance <= 1 }}   ⭐ FIRST ${b.allItems.count { it.verifiedFirst }}   ❓ MCQs ${b.mcqs.size}",
+                                "📰 ${b.papers.joinToString(", ").ifBlank { "Uploads" }}   ❓ MCQs ${b.mcqs.size}",
                             style = MaterialTheme.typography.bodyMedium, color = androidx.compose.ui.graphics.Color.White, modifier = Modifier.padding(top = 10.dp),
                         )
-                        Text("Read Today's Briefing →", style = MaterialTheme.typography.titleSmall, color = androidx.compose.ui.graphics.Color(0xFF9FE0B9), modifier = Modifier.padding(top = 10.dp))
+                        Text("Read →", style = MaterialTheme.typography.titleSmall, color = androidx.compose.ui.graphics.Color(0xFF9FE0B9), modifier = Modifier.padding(top = 10.dp))
                     }
                 }
             }

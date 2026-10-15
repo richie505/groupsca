@@ -59,7 +59,9 @@ async function main() {
     if (failed) process.exit(1);
     return;
   }
-  for (let d = from; d <= to; d = addDays(d, 1)) {
+  // The AI web-research briefing is switched off: the day's items come from the uploaded papers and notes.
+  // `--generate` still runs it by hand.
+  for (let d = from; process.argv.includes('--generate') && d <= to; d = addDays(d, 1)) {
     const have = B.read(out, d);
     if (have && have.status === 'published' && !have.paperOnly && !force) {
       console.log(`${d}: already published, skipped`);

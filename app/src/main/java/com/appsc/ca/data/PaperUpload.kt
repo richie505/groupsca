@@ -21,7 +21,9 @@ object PaperUpload {
     const val FEED_REPO = "richie505/groupsca"
     private const val API = "https://api.github.com"
 
-    enum class Paper(val key: String, val label: String) { HINDU("hindu", "The Hindu"), EENADU("eenadu", "Eenadu") }
+    enum class Paper(val key: String, val label: String, val newspaper: Boolean = true) {
+        HINDU("hindu", "The Hindu"), EENADU("eenadu", "Eenadu"), NOTES("notes", "CA notes", newspaper = false)
+    }
 
     /** The paper from a file name, or null to ask. */
     fun guess(name: String): Paper? {
@@ -86,7 +88,10 @@ object PaperUpload {
     /** Uploads one PDF as "<date>__<paper>__<n>.pdf" and starts the reading. [progress] gets 0..1. */
     fun send(context: Context, uri: Uri, paper: Paper, date: String, n: Int, token: String, progress: (Float) -> Unit) {
         val id = inbox(token)
-        val name = "${date}__${paper.key}__$n.pdf"
+        // notes keep their own name as their source label ("Vision Sep 2026")
+        val own = displayName(context, uri).removeSuffix(".pdf").removeSuffix(".PDF")
+            .replace(Regex("[^A-Za-z0-9]+"), "-").trim('-').take(60)
+        val name = if (paper.newspaper) "${date}__${paper.key}__$n.pdf" else "${date}__notes__${n}__${own.ifBlank { "notes" }}.pdf"
         // the same name sent again replaces the first upload
         val (lc, lt) = call("GET", "$API/repos/$INBOX/releases/$id/assets?per_page=100", token)
         if (lc == 200) {

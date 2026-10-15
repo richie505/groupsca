@@ -88,10 +88,10 @@ fun BriefingScreen(vm: AppViewModel, onSettings: () -> Unit = {}) {
     val b = vm.briefings.firstOrNull { it.date == date } ?: vm.briefings.firstOrNull()
     if (b == null) {
         Column(Modifier.fillMaxSize().padding(24.dp)) {
-            Text("APPSC Daily Briefing", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+            Text("Your newspapers & CA notes", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
             Text(
-                "The daily International, National and Andhra Pradesh briefing appears here at about 9 PM IST, " +
-                    "once it has been researched and checked. Pull down on Home to download.",
+                "Upload The Hindu or Eenadu e-paper PDF, or your current-affairs notes PDF. Their exam items appear here " +
+                    "as notes with MCQs, International · National · Andhra Pradesh, within about 30 minutes. Pull down on Home to download.",
                 color = C.Muted,
                 modifier = Modifier.padding(top = 8.dp),
             )
@@ -127,7 +127,7 @@ fun BriefingScreen(vm: AppViewModel, onSettings: () -> Unit = {}) {
         item {
             Row(Modifier.fillMaxWidth().padding(start = 18.dp, end = 6.dp, top = 12.dp), verticalAlignment = Alignment.CenterVertically) {
                 Column(Modifier.weight(1f)) {
-                    Text("APPSC GROUP 1 & GROUP 2", style = MaterialTheme.typography.labelMedium, color = C.Accent, fontWeight = FontWeight.Bold)
+                    Text("FROM YOUR NEWSPAPERS & NOTES", style = MaterialTheme.typography.labelMedium, color = C.Accent, fontWeight = FontWeight.Bold)
                     Text("DAILY CURRENT AFFAIRS", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold, color = C.Ink)
                     Text(fmt(b.date), style = MaterialTheme.typography.titleMedium, color = C.Muted)
                 }
@@ -164,8 +164,8 @@ fun BriefingScreen(vm: AppViewModel, onSettings: () -> Unit = {}) {
         itemsIndexed(shown, key = { _, it -> it.section + it.headline }) { n, it -> BriefCard(vm, b.date, it) { Listening.playBrief(b.date, shown, n, vm.speechRate) } }
         item {
             Text(
-                (if (b.papers.isNotEmpty()) "Newspaper: ${b.papers.joinToString(", ")} · " else "") + "Researched and checked on the server by ${b.model.ifBlank { "AI" }} with live web search · ${b.sourceCount} sources. " +
-                    "Open the sources to confirm before relying on a figure.",
+                "Read from your uploads: ${b.papers.joinToString(", ")}. Each item names its paper or notes and page, rewritten " +
+                    "by AI on the server: check a figure against the page before relying on it.",
                 style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(18.dp),
             )
         }
@@ -243,7 +243,7 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem, onListen: (() -> Un
             if (it.category.isNotBlank()) Chip(it.category, C.Fact, C.FactSoft)
             if (it.verifiedFirst) Chip("⭐ FIRST", Color(0xFF9A6700), Color(0xFFFFF4C2))
             if (it.isUpdate) Chip("Update", C.Medium, C.MediumSoft)
-            if (it.paper.isNotBlank()) Chip("📰 ${it.paper}", C.Ap, C.ApSoft)
+            if (it.paper.isNotBlank()) Chip((if (it.upload == "notes") "📝 " else "📰 ") + it.paper, C.Ap, C.ApSoft)
             if (it.status.isNotBlank()) statusColors(it.status).let { (f, bg) -> Chip(it.status.replace('_', ' '), f, bg) }
         }
         ReadLine(rid, "title") {
@@ -477,18 +477,27 @@ fun PaperCard(vm: AppViewModel, onSettings: () -> Unit = {}) {
         asking = guessed.filter { it.second == null }.map { it.first }
         if (asking.isEmpty()) vm.sendPapers(known)
     }
+    val pickNotes = androidx.activity.compose.rememberLauncherForActivityResult(androidx.activity.result.contract.ActivityResultContracts.OpenMultipleDocuments()) { uris ->
+        if (uris.isNotEmpty()) vm.sendPapers(uris.map { it to PaperUpload.Paper.NOTES })
+    }
     Column(
         Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp).clip(RoundedCornerShape(14.dp))
             .background(C.Surface).border(1.dp, C.Line, RoundedCornerShape(14.dp)).padding(14.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f)) {
-                Text("📰 Today's newspaper", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = C.Ink)
-                Text("The Hindu or Eenadu e-paper PDF: its exam items join today's briefing", style = MaterialTheme.typography.labelMedium, color = C.Muted)
+                Text("📤 Upload", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = C.Ink)
+                Text("Today's newspaper (The Hindu, Eenadu) or your CA notes PDF: restructured into exam notes, each item under its own date",
+                    style = MaterialTheme.typography.labelMedium, color = C.Muted)
             }
-            TextButton(enabled = !vm.paperBusy, onClick = {
-                if (vm.paperToken.isBlank()) noToken = true else pick.launch(arrayOf("application/pdf"))
-            }) { Text(if (vm.paperBusy) "Sending…" else "Add PDF") }
+        }
+        Row(Modifier.padding(top = 6.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Quick(if (vm.paperBusy) "Sending…" else "📰 Newspaper") {
+                if (!vm.paperBusy) { if (vm.paperToken.isBlank()) noToken = true else pick.launch(arrayOf("application/pdf")) }
+            }
+            Quick(if (vm.paperBusy) "Sending…" else "📝 CA notes") {
+                if (!vm.paperBusy) { if (vm.paperToken.isBlank()) noToken = true else pickNotes.launch(arrayOf("application/pdf")) }
+            }
         }
         if (vm.paperStatus.isNotBlank()) Text(vm.paperStatus, style = MaterialTheme.typography.bodyMedium, color = C.Body, modifier = Modifier.padding(top = 6.dp))
     }
@@ -499,7 +508,7 @@ fun PaperCard(vm: AppViewModel, onSettings: () -> Unit = {}) {
             text = { Text(PaperUpload.displayName(context, uri)) },
             confirmButton = {
                 Row {
-                    for (p in PaperUpload.Paper.values()) TextButton(onClick = {
+                    for (p in PaperUpload.Paper.values().filter { it.newspaper }) TextButton(onClick = {
                         known = known + (uri to p)
                         asking = asking.drop(1)
                         if (asking.isEmpty()) vm.sendPapers(known)

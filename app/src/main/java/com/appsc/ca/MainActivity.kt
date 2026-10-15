@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         RefreshWorker.schedule(this)
-        BriefingWorker.schedule(this)
+        BriefingWorker.cancel(this)
         intent?.getStringExtra(BriefingWorker.EXTRA_BRIEFING)?.let { vm.openBriefing = it }
         ReadAloud.init(this)
         // the short forms the notes define, so read-aloud says them in full (assets/abbr.json, from the Prep app)

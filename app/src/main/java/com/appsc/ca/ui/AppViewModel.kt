@@ -94,7 +94,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                     runCatching { com.appsc.ca.data.PaperUpload.startReading(token) }.isSuccess
                 }
                 paperStatus = if (started) {
-                    "✅ Sent. The paper's exam items appear in today's briefing in about 10–20 minutes: pull down on Home to refresh."
+                    "✅ Sent. Its exam items appear in Uploads in about 10–20 minutes (notes: longer for a big PDF): pull down on Home to refresh."
                 } else {
                     "✅ Uploaded. It is read automatically within the next 30 minutes (then 10–20 minutes to finish): pull down on Home to refresh."
                 }

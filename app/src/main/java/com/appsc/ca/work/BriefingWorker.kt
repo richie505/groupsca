@@ -52,6 +52,11 @@ class BriefingWorker(context: Context, params: WorkerParameters) : CoroutineWork
         private const val CHANNEL = "briefing"
         const val EXTRA_BRIEFING = "open_briefing"
 
+        /** The 9 PM AI briefing is gone (the day's items come from uploads): its periodic check is cancelled. */
+        fun cancel(context: Context) {
+            WorkManager.getInstance(context).cancelUniqueWork(WORK)
+        }
+
         fun schedule(context: Context) {
             val request = PeriodicWorkRequestBuilder<BriefingWorker>(30, TimeUnit.MINUTES)
                 .setConstraints(Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build())

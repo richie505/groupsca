@@ -50,6 +50,9 @@ class FeedStore(context: Context, private val baseUrl: String = BuildConfig.FEED
             writeAtomically(f, body)
         }
         writeAtomically(File(briefDir, "index.json"), text)
+        // days no longer listed (the old AI briefings) leave the phone too
+        val listed = keep.map { "${it.date}.json" }.toSet() + "index.json"
+        briefDir.listFiles()?.filter { it.name !in listed }?.forEach { it.delete() }
         val today = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata")).toString()
         return keep.any { it.date == today }
     }

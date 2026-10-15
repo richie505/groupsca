@@ -90,7 +90,7 @@ import com.appsc.ca.data.shortDate
 
 private enum class Tab(val label: String, val icon: ImageVector) {
     HOME("Home", Icons.Outlined.Home),
-    BRIEFING("Briefing", Icons.Outlined.Today),
+    BRIEFING("Uploads", Icons.Outlined.Today),
     NEWS("News", Icons.Outlined.Newspaper),
     SUBJECTS("Subjects", Icons.AutoMirrored.Outlined.MenuBook),
     PRACTICE("Practice", Icons.Outlined.Quiz),
@@ -808,10 +808,6 @@ private fun SettingsScreen(vm: AppViewModel, onBack: (() -> Unit)?) {
             }
             Switch(checked = vm.telugu, onCheckedChange = vm::chooseTelugu)
         }
-        Text("Daily briefing notification", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp, bottom = 6.dp))
-        ChipRow {
-            for (h in listOf(20, 21, 22)) FilterChip(selected = vm.briefHour == h, onClick = { vm.chooseBriefHour(h) }, label = { Text("${h - 12}:00 PM") })
-        }
         for ((label, on, set) in listOf(
             Triple("Show Mains angles", vm.showMains, vm::chooseShowMains),
             Triple("Show AP links", vm.showApLink, vm::chooseShowApLink),
@@ -822,9 +818,9 @@ private fun SettingsScreen(vm: AppViewModel, onBack: (() -> Unit)?) {
                 Switch(checked = on, onCheckedChange = set)
             }
         }
-        Text("Newspaper upload", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp))
+        Text("Newspaper and CA notes upload", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp))
         Text(
-            "To add The Hindu or Eenadu e-paper PDFs from the Briefing tab, paste your GitHub fine-grained token here " +
+            "To add The Hindu or Eenadu e-paper PDFs or your CA notes PDFs from the Uploads tab, paste your GitHub fine-grained token here " +
                 "(Contents: read and write on groupsca-papers; Actions: read and write on groupsca). It stays only on this phone.",
             style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
         )

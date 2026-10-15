@@ -76,6 +76,8 @@ data class BriefItem(
     val notes: String = "",
     /** "The Hindu · p.7" when the item comes from the uploaded newspaper */
     val paper: String = "",
+    /** "notes" when the item comes from uploaded CA notes */
+    val upload: String = "",
     /** APPSC Current Affairs blueprint angles this item answers */
     val blueprint: List<String> = emptyList(),
 )
