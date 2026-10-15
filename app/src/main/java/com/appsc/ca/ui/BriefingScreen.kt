@@ -50,6 +50,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import com.appsc.ca.data.PaperUpload
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -72,7 +73,7 @@ private val MARK_KINDS = listOf("Revise Today", "Important", "AP", "Prelims", "M
 /** The daily APPSC briefing (AI, from the server): sections, subject filters, items; audit, MCQs, Mains; archive. */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun BriefingScreen(vm: AppViewModel) {
+fun BriefingScreen(vm: AppViewModel, onSettings: () -> Unit = {}) {
     var date by rememberSaveable { mutableStateOf<String?>(null) }
     var section by rememberSaveable { mutableIntStateOf(0) }
     var filter by rememberSaveable { mutableStateOf<String?>(null) }
@@ -92,6 +93,8 @@ fun BriefingScreen(vm: AppViewModel) {
                 color = C.Muted,
                 modifier = Modifier.padding(top = 8.dp),
             )
+            Spacer(Modifier.height(12.dp))
+            PaperCard(vm, onSettings)
         }
         return
     }
@@ -130,6 +133,7 @@ fun BriefingScreen(vm: AppViewModel) {
                 if (vm.showMains) Quick("📝 Mains (${b.mainsQuestions.size})") { page = BPage.MAINS }
             }
         }
+        item { PaperCard(vm, onSettings) }
         item {
             Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
                 sections.forEachIndexed { n, (label, list) ->
@@ -150,7 +154,7 @@ fun BriefingScreen(vm: AppViewModel) {
         items(shown, key = { it.section + it.headline }) { BriefCard(vm, b.date, it) }
         item {
             Text(
-                "Researched and checked on the server by ${b.model.ifBlank { "AI" }} with live web search · ${b.sourceCount} sources. " +
+                (if (b.papers.isNotEmpty()) "Newspaper: ${b.papers.joinToString(", ")} · " else "") + "Researched and checked on the server by ${b.model.ifBlank { "AI" }} with live web search · ${b.sourceCount} sources. " +
                     "Open the sources to confirm before relying on a figure.",
                 style = MaterialTheme.typography.labelMedium, color = C.Faint, modifier = Modifier.padding(18.dp),
             )
@@ -224,6 +228,7 @@ fun BriefCard(vm: AppViewModel, date: String, it: BriefItem) {
             if (it.category.isNotBlank()) Chip(it.category, C.Fact, C.FactSoft)
             if (it.verifiedFirst) Chip("⭐ FIRST", Color(0xFF9A6700), Color(0xFFFFF4C2))
             if (it.isUpdate) Chip("Update", C.Medium, C.MediumSoft)
+            if (it.paper.isNotBlank()) Chip("📰 ${it.paper}", C.Ap, C.ApSoft)
             if (it.status.isNotBlank()) statusColors(it.status).let { (f, bg) -> Chip(it.status.replace('_', ' '), f, bg) }
         }
         Text((if (it.importance <= 1) "🔥 " else "") + it.headline, style = MaterialTheme.typography.titleMedium.copy(fontSize = 17.sp, lineHeight = 23.sp),
@@ -428,5 +433,62 @@ private fun MarksPage(vm: AppViewModel, onBack: () -> Unit) {
         }
         if (marked.isEmpty()) item { Text("Nothing bookmarked here yet.", color = C.Muted, modifier = Modifier.padding(18.dp)) }
         items(marked, key = { it.first + it.second.headline }) { (d, i, _) -> BriefCard(vm, d, i) }
+    }
+}
+
+/** "📰 Add today's newspaper": pick The Hindu / Eenadu PDFs and send them to the server for reading. */
+@Composable
+fun PaperCard(vm: AppViewModel, onSettings: () -> Unit = {}) {
+    val context = LocalContext.current
+    var asking by remember { mutableStateOf<List<android.net.Uri>>(emptyList()) }
+    var known by remember { mutableStateOf<List<Pair<android.net.Uri, PaperUpload.Paper>>>(emptyList()) }
+    var noToken by remember { mutableStateOf(false) }
+    val pick = androidx.activity.compose.rememberLauncherForActivityResult(androidx.activity.result.contract.ActivityResultContracts.OpenMultipleDocuments()) { uris ->
+        if (uris.isEmpty()) return@rememberLauncherForActivityResult
+        val guessed = uris.map { it to PaperUpload.guess(PaperUpload.displayName(context, it)) }
+        known = guessed.mapNotNull { (u, p) -> p?.let { u to it } }
+        asking = guessed.filter { it.second == null }.map { it.first }
+        if (asking.isEmpty()) vm.sendPapers(known)
+    }
+    Column(
+        Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp).clip(RoundedCornerShape(14.dp))
+            .background(C.Surface).border(1.dp, C.Line, RoundedCornerShape(14.dp)).padding(14.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Text("📰 Today's newspaper", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = C.Ink)
+                Text("The Hindu or Eenadu e-paper PDF: its exam items join today's briefing", style = MaterialTheme.typography.labelMedium, color = C.Muted)
+            }
+            TextButton(enabled = !vm.paperBusy, onClick = {
+                if (vm.paperToken.isBlank()) noToken = true else pick.launch(arrayOf("application/pdf"))
+            }) { Text(if (vm.paperBusy) "Sending…" else "Add PDF") }
+        }
+        if (vm.paperStatus.isNotBlank()) Text(vm.paperStatus, style = MaterialTheme.typography.bodyMedium, color = C.Body, modifier = Modifier.padding(top = 6.dp))
+    }
+    asking.firstOrNull()?.let { uri ->
+        AlertDialog(
+            onDismissRequest = { asking = emptyList() },
+            title = { Text("Which paper is this?") },
+            text = { Text(PaperUpload.displayName(context, uri)) },
+            confirmButton = {
+                Row {
+                    for (p in PaperUpload.Paper.values()) TextButton(onClick = {
+                        known = known + (uri to p)
+                        asking = asking.drop(1)
+                        if (asking.isEmpty()) vm.sendPapers(known)
+                    }) { Text(p.label) }
+                }
+            },
+            dismissButton = { TextButton(onClick = { asking = asking.drop(1); if (asking.isEmpty()) vm.sendPapers(known) }) { Text("Skip") } },
+        )
+    }
+    if (noToken) {
+        AlertDialog(
+            onDismissRequest = { noToken = false },
+            title = { Text("One-time setup") },
+            text = { Text("Paste your GitHub upload token in Settings → Newspaper upload first. It stays only on this phone.") },
+            confirmButton = { TextButton(onClick = { noToken = false; onSettings() }) { Text("Open Settings") } },
+            dismissButton = { TextButton(onClick = { noToken = false }) { Text("Later") } },
+        )
     }
 }

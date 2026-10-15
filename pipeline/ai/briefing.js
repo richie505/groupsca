@@ -50,6 +50,9 @@ async function generate(date, { out, respond = AI.respond, log = console.log } =
     model = r.model;
     log(`${date}: ${P.SECTIONS[key].label}: ${sections[key].length} items, ${r.searches.length} searches`);
   }
+  // the newspaper's items read earlier today stay (after the web's, so a story in both keeps its web sources)
+  const prev = read(out, date);
+  for (const key of ['andhraPradesh', 'national', 'international']) sections[key].push(...((prev && prev.sections[key]) || []).filter((i) => i.paper));
   log(`${date}: editorial stage (coverage audit, MCQs, Mains)…`);
   const ed = await editorial(date, sections, respond);
 
@@ -64,6 +67,7 @@ async function generate(date, { out, respond = AI.respond, log = console.log } =
     mcqs: ed.mcqs || [],
     mainsQuestions: ed.mainsQuestions || [],
     citations: [...new Map(citations.map((c) => [c.url, c])).values()],
+    ...(prev && prev.papers ? { papers: prev.papers } : {}),
   };
   const v = V.validate(b, recent);
   b.status = v.status;

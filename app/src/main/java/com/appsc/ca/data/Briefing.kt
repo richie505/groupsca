@@ -36,6 +36,8 @@ data class Briefing(
     val mcqs: List<Mcq> = emptyList(),
     val mainsQuestions: List<MainsQuestion> = emptyList(),
     val sourceCount: Int = 0,
+    /** Newspapers read into this day */
+    val papers: List<String> = emptyList(),
 ) {
     val allItems: List<BriefItem> get() = sections.international + sections.national + sections.andhraPradesh
 }
@@ -72,6 +74,8 @@ data class BriefItem(
     val sources: List<BriefSource> = emptyList(),
     /** Rocket-form notes (markdown subset, see ui/Notes.kt) */
     val notes: String = "",
+    /** "The Hindu · p.7" when the item comes from the uploaded newspaper */
+    val paper: String = "",
     /** APPSC Current Affairs blueprint angles this item answers */
     val blueprint: List<String> = emptyList(),
 )

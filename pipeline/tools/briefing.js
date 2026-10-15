@@ -61,7 +61,7 @@ async function main() {
   }
   for (let d = from; d <= to; d = addDays(d, 1)) {
     const have = B.read(out, d);
-    if (have && have.status === 'published' && !force) {
+    if (have && have.status === 'published' && !have.paperOnly && !force) {
       console.log(`${d}: already published, skipped`);
       continue;
     }

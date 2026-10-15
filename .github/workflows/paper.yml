@@ -1,0 +1,65 @@
+name: Newspaper (The Hindu, Eenadu)
+
+# Reads the newspaper PDFs uploaded from the app into that day's briefing. The PDFs wait in the private
+# richie505/groupsca-papers repository (release "inbox"); they are never committed here (this repository
+# is public): only the exam items, written in the model's own words, are. PAPERS_TOKEN reads that inbox.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 15 * * *'    # 20:30 IST, before the evening briefing: anything uploaded and not yet read
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-feed
+  cancel-in-progress: false
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ secrets.PAPERS_TOKEN }}
+      INBOX: richie505/groupsca-papers
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch the uploaded papers
+        id: fetch
+        run: |
+          mkdir -p inbox
+          gh release download inbox -R "$INBOX" -p '*.pdf' -D inbox || true
+          n=$(ls inbox/*.pdf 2>/dev/null | wc -l)
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "$n paper(s) waiting"
+      - name: PDF tools
+        if: steps.fetch.outputs.count != '0'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq qpdf ghostscript
+      - name: Read the papers
+        if: steps.fetch.outputs.count != '0'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'gpt-6-luna' }}
+        run: node pipeline/tools/paper.js --dir inbox
+      - name: Clear the read papers from the inbox
+        if: always() && steps.fetch.outputs.count != '0'
+        run: |
+          [ -f inbox/done.txt ] || exit 0
+          while read -r f; do [ -n "$f" ] && gh release delete-asset inbox "$f" -R "$INBOX" -y || true; done < inbox/done.txt
+      - name: Publish
+        if: always() && steps.fetch.outputs.count != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed/briefings || true
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Newspaper $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((i * 5))
+          done
+          exit 1

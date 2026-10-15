@@ -83,6 +83,11 @@ class UserStore(context: Context) {
         get() = prefs.getBoolean(KEY_TELUGU, true)
         set(v) = prefs.edit().putBoolean(KEY_TELUGU, v).apply()
 
+    /** The user's GitHub token for sending newspaper PDFs (data/PaperUpload.kt); only on this phone. */
+    var paperToken: String
+        get() = prefs.getString("paper_token", "") ?: ""
+        set(v) = prefs.edit().putString("paper_token", v.trim()).apply()
+
     /** The hour (IST) of the daily briefing notification: 20, 21 or 22. */
     var briefHour: Int
         get() = prefs.getInt(KEY_BRIEF_HOUR, 21)

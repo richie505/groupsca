@@ -55,6 +55,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var showQuiz by mutableStateOf(true)
         private set
     var briefHour by mutableStateOf(21)
+    var paperToken by mutableStateOf("")
+    /** What the newspaper upload is doing, for the Briefing screen ("" when idle). */
+    var paperStatus by mutableStateOf("")
+    var paperBusy by mutableStateOf(false)
         private set
     var briefMarks by mutableStateOf<Map<String, String>>(emptyMap())
         private set
@@ -66,6 +70,34 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun chooseShowApLink(on: Boolean) { showApLink = on; user.showApLink = on }
     fun chooseShowQuiz(on: Boolean) { showQuiz = on; user.showQuiz = on }
     fun chooseBriefHour(h: Int) { briefHour = h; user.briefHour = h }
+    fun choosePaperToken(t: String) { paperToken = t.trim(); user.paperToken = t }
+
+    /** Sends today's newspaper PDFs to the server for reading (data/PaperUpload.kt). */
+    fun sendPapers(files: List<Pair<android.net.Uri, com.appsc.ca.data.PaperUpload.Paper>>) {
+        if (files.isEmpty() || paperBusy) return
+        val app = getApplication<Application>()
+        val token = paperToken
+        val date = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata")).toString()
+        paperBusy = true
+        viewModelScope.launch {
+            try {
+                kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+                    files.forEachIndexed { i, (uri, paper) ->
+                        com.appsc.ca.data.PaperUpload.send(app, uri, paper, date, i + 1, token) { f ->
+                            paperStatus = "Uploading ${paper.label} (${i + 1}/${files.size})… ${(f * 100).toInt()}%"
+                        }
+                    }
+                    paperStatus = "Starting the reading…"
+                    com.appsc.ca.data.PaperUpload.startReading(token)
+                }
+                paperStatus = "✅ Sent. The paper's exam items appear in today's briefing in about 10–20 minutes: pull down on Home to refresh."
+            } catch (e: Exception) {
+                paperStatus = "❌ ${e.message ?: "Upload failed"}"
+            } finally {
+                paperBusy = false
+            }
+        }
+    }
 
     /** Bookmarks a briefing item under a category, or removes it when [category] is null. */
     fun markBrief(date: String, item: com.appsc.ca.data.BriefItem, category: String?) {
@@ -229,7 +261,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 val tl = user.topicLinks()
                 withContext(Dispatchers.Main) {
                     days = d; index = i; trending = tr; briefings = br; briefMarks = marks
-                    showMains = user.showMains; showApLink = user.showApLink; showQuiz = user.showQuiz; briefHour = user.briefHour
+                    showMains = user.showMains; showApLink = user.showApLink; showQuiz = user.showQuiz; briefHour = user.briefHour; paperToken = user.paperToken
                     saved = s; readIds = r; answers = a; revise = rv; hiddenNotes = h; doneThreads = dn; topicLinks = tl
                     exam = user.exam; notify = user.notify; speechRate = user.speechRate
                     perDay = user.perDay; largeText = user.largeText; telugu = user.telugu

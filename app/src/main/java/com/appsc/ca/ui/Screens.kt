@@ -161,7 +161,7 @@ fun App(vm: AppViewModel) {
                         onBriefing = { tab = Tab.BRIEFING },
                         onTrending = { stack.add(Route.TrendingRoute) },
                     )
-                    Tab.BRIEFING -> BriefingScreen(vm)
+                    Tab.BRIEFING -> BriefingScreen(vm) { stack.add(Route.SettingsRoute) }
                     Tab.NEWS -> NewsScreen(vm, onArticle = openArticle, onDigest = openDigest)
                     Tab.SUBJECTS -> SubjectsScreen(vm) { stack.add(Route.SubjectRoute(it)) }
                     Tab.PRACTICE -> PracticeScreen(vm)
@@ -806,6 +806,21 @@ private fun SettingsScreen(vm: AppViewModel, onBack: (() -> Unit)?) {
                 Switch(checked = on, onCheckedChange = set)
             }
         }
+        Text("Newspaper upload", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp))
+        Text(
+            "To add The Hindu or Eenadu e-paper PDFs from the Briefing tab, paste your GitHub fine-grained token here " +
+                "(Contents: read and write on groupsca-papers; Actions: read and write on groupsca). It stays only on this phone.",
+            style = MaterialTheme.typography.labelMedium, color = C.Muted, modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+        )
+        var tokenText by remember { mutableStateOf(vm.paperToken) }
+        androidx.compose.material3.OutlinedTextField(
+            value = tokenText,
+            onValueChange = { tokenText = it; vm.choosePaperToken(it) },
+            label = { Text("GitHub token (github_pat_…)") },
+            singleLine = true,
+            visualTransformation = androidx.compose.ui.text.input.PasswordVisualTransformation(),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
+        )
         Text("Read-aloud speed", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 16.dp, top = 8.dp, bottom = 6.dp))
         ChipRow {
             for (r in listOf(0.75f, 1f, 1.25f, 1.5f, 2f)) FilterChip(selected = vm.speechRate == r, onClick = { vm.chooseRate(r) }, label = { Text("${r}×") })

@@ -637,3 +637,43 @@ test('Rocket-style notes: every figure of the facts stays on the page; malformed
   assert.equal(N.cleanNotes(it, 'just a paragraph'), '');
   assert.deepEqual(N.missingFigures(it, md), []);
 });
+
+test('newspaper: items join the day marked with paper and page; duplicates and politics stay out', async () => {
+  const NP = require('../ai/paper');
+  assert.equal(NP.paperOf('2026-10-16__eenadu__AP.pdf'), 'eenadu');
+  assert.equal(NP.paperOf('TheHindu_Hyd.pdf'), 'hindu');
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'paper-'));
+  const split = () => [{ file: __filename, from: 1, to: 6 }];
+  const respond = async ({ name, input }) => {
+    if (name === 'appsc_paper') {
+      assert.equal(input[0].content[0].type, 'input_file');
+      const src = [{ title: 'h', publisher: 'The Hindu', url: 'https://epaper.thehindu.com/', publishedDate: '2026-10-16', isPrimary: false }];
+      return { data: { items: [
+        { section: 'andhraPradesh', page: 3, item: aiItem('AP Cabinet approves new port policy', { sources: src }) },
+        { section: 'national', page: 1, item: aiItem('ISRO launches navigation satellite', { sources: src }) },
+        { section: 'national', page: 2, item: aiItem('ISRO launches the navigation satellite', { sources: src }) },
+      ] }, citations: [], searches: [], model: 'fake' };
+    }
+    if (name === 'appsc_editorial') return { data: { coverageAudit: [{ subject: 'Polity', covered: true, items: [1], note: '' }], mcqs: [mcq('q1')], mainsQuestions: [] }, citations: [], searches: [], model: 'fake' };
+    return { data: { notes: [] }, citations: [], searches: [], model: 'fake' };
+  };
+  const added = await NP.readPaper('2026-10-16', 'x.pdf', 'hindu', { out, respond, log: () => {}, split });
+  assert.equal(added, 2, 'the repeat of the ISRO story dropped');
+  const b = AIB.read(out, '2026-10-16');
+  assert.equal(b.status, 'published', 'a morning paper-only day is shown');
+  assert.ok(b.paperOnly);
+  assert.equal(b.sections.andhraPradesh[0].paper, 'The Hindu · p.3');
+  assert.deepEqual(b.papers, ['The Hindu']);
+  // the evening research keeps the paper's items, after its own
+  const evening = async ({ name }) => {
+    if (name === 'appsc_editorial') return { data: { coverageAudit: [{ subject: 'Polity', covered: true, items: [1], note: '' }], mcqs: [mcq('q1'), mcq('q2'), mcq('q3'), mcq('q4'), mcq('q5')], mainsQuestions: [] }, citations: [], searches: [], model: 'fake' };
+    if (name.startsWith('appsc_notes_')) return { data: { notes: [] }, citations: [], searches: [], model: 'fake' };
+    const heads = { appsc_international: ['UN adopts ocean treaty'], appsc_national: ['ISRO launches navigation satellite'], appsc_andhraPradesh: ['Polavaram works resume', 'Amaravati loans released', 'Kurnool solar park approved'] }[name];
+    return { data: { items: heads.map((h) => aiItem(h)) }, citations: [], searches: [], model: 'fake' };
+  };
+  const e = await AIB.generate('2026-10-16', { out, respond: evening, log: () => {} });
+  assert.ok(e.sections.andhraPradesh.some((i) => i.paper === 'The Hindu · p.3'), 'paper item kept');
+  assert.equal(e.sections.national.filter((i) => /ISRO/.test(i.headline)).length, 1, 'web and paper story once');
+  assert.ok(!e.sections.national.find((i) => /ISRO/.test(i.headline)).paper, 'the web version kept');
+  assert.ok(!e.paperOnly);
+});
