@@ -583,6 +583,10 @@ test('a whole briefing day with a fake model: stages, validation, saved file and
   assert.match(b.sections.national[0].notes, /^# 1\. Key facts/);
   assert.deepEqual(b.sections.national[0].blueprint, ['Scheme / Yojana'], 'only blueprint angles from the list');
   assert.equal(b.notesVersion, 1);
+  assert.ok(await AIB.refresh('2026-10-11', { out, respond, log: () => {} }));
+  const again = AIB.read(out, '2026-10-11');
+  assert.equal(again.mcqs.length, 5);
+  assert.ok(again.refreshedAt);
 });
 
 test('Rocket-style notes: every figure of the facts stays on the page; malformed notes are refused', () => {

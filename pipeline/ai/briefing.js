@@ -50,9 +50,8 @@ async function generate(date, { out, respond = AI.respond, log = console.log } =
     model = r.model;
     log(`${date}: ${P.SECTIONS[key].label}: ${sections[key].length} items, ${r.searches.length} searches`);
   }
-  const all = [...sections.international, ...sections.national, ...sections.andhraPradesh];
   log(`${date}: editorial stage (coverage audit, MCQs, Mains)…`);
-  const ed = await respond({ instructions, input: P.editorialTask(date, all), schema: P.EDITORIAL_SCHEMA, name: 'appsc_editorial', search: false });
+  const ed = await editorial(date, sections, respond);
 
   const b = {
     version: 1,
@@ -61,9 +60,9 @@ async function generate(date, { out, respond = AI.respond, log = console.log } =
     model,
     generatedAt: new Date().toISOString(),
     sections,
-    coverageAudit: ed.data.coverageAudit || [],
-    mcqs: ed.data.mcqs || [],
-    mainsQuestions: ed.data.mainsQuestions || [],
+    coverageAudit: ed.coverageAudit || [],
+    mcqs: ed.mcqs || [],
+    mainsQuestions: ed.mainsQuestions || [],
     citations: [...new Map(citations.map((c) => [c.url, c])).values()],
   };
   const v = V.validate(b, recent);
@@ -83,6 +82,31 @@ async function generate(date, { out, respond = AI.respond, log = console.log } =
 }
 
 /** feed/briefings/index.json: every briefing, newest first, with its status and counts. */
+/** The editorial stage over a day's items: coverage audit, MCQs, Mains questions (no web search). */
+async function editorial(date, sections, respond) {
+  const all = [...sections.international, ...sections.national, ...sections.andhraPradesh];
+  const r = await respond({ instructions: P.systemPrompt(date), input: P.editorialTask(date, all), schema: P.EDITORIAL_SCHEMA, name: 'appsc_editorial', search: false });
+  return r.data;
+}
+
+/** Redoes a saved day's MCQs, Mains questions, audit and notes with the current prompts (no new research). */
+async function refresh(date, { out, respond = AI.respond, log = console.log } = {}) {
+  const b = read(out, date);
+  if (!b) return false;
+  const ed = await editorial(date, b.sections, respond);
+  b.coverageAudit = ed.coverageAudit || [];
+  b.mcqs = ed.mcqs || [];
+  b.mainsQuestions = ed.mainsQuestions || [];
+  const v = V.validate(b, []);
+  b.status = v.status;
+  b.problems = v.problems;
+  await N.addNotes(b, respond, log);
+  b.refreshedAt = new Date().toISOString();
+  fs.writeFileSync(file(out, date), JSON.stringify(b, null, 1) + '\n');
+  log(`${date}: refreshed · ${b.status} · ${b.mcqs.length} MCQs`);
+  return true;
+}
+
 /** Writes notes (Rocket form + blueprint angles) into a saved briefing. Returns false when skipped. */
 async function addNotes(date, { out, respond = AI.respond, log = console.log, force = false } = {}) {
   const b = read(out, date);
@@ -112,4 +136,4 @@ function writeIndex(out) {
   return list;
 }
 
-module.exports = { generate, addNotes, writeIndex, recentTopics, read };
+module.exports = { generate, addNotes, refresh, editorial, writeIndex, recentTopics, read };

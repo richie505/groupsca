@@ -24,6 +24,10 @@ on:
         description: 'Regenerate days already published'
         type: boolean
         default: false
+      refresh:
+        description: 'Redo MCQs, Mains questions and notes of saved days (no new research)'
+        type: boolean
+        default: false
       notes:
         description: 'Only add the Rocket-style notes to saved briefings (no new research)'
         type: boolean
@@ -56,6 +60,7 @@ jobs:
           TO: ${{ github.event.inputs.to }}
           FORCE: ${{ github.event.inputs.force }}
           NOTES: ${{ github.event.inputs.notes }}
+          REFRESH: ${{ github.event.inputs.refresh }}
         run: |
           args=""
           [ -n "$DATE" ] && args="$args --date $DATE"
@@ -63,6 +68,7 @@ jobs:
           [ -n "$TO" ] && args="$args --to $TO"
           [ "$FORCE" = "true" ] && args="$args --force"
           [ "$NOTES" = "true" ] && args="$args --notes"
+          [ "$REFRESH" = "true" ] && args="$args --refresh"
           node pipeline/tools/briefing.js $args
       - name: Publish
         if: always()

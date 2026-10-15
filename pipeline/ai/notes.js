@@ -37,7 +37,19 @@ RULES:
 - Add a "⚠ **Trap:**" line only when there is a real exam confusion; at most 2.
 - Background: you MAY add 1-3 well-established static facts (an organisation's headquarters or founding year, a constitutional article, the previous edition) that are certainly true; end each such line with " [GK]". Never add new current events, figures or claims.
 - Status words exactly as the item states them: an MoU stays an MoU, proposed jobs stay proposed.
-- End with exactly one "> Exam angle:" line.`;
+- End with exactly one "> Exam angle:" line.
+
+ANSWER FIELDS APPSC ASKS (from the APPSC current-affairs PYQs; include each that applies, as a bold Label line):
+- International organisation / summit: **Headquarters**, **Head / Chair**, **Members**, **Founded** (static ones may be [GK]); summit: **Edition**, **Host city**, **Theme**, **Next host**.
+- Report / index / ranking: **Released by** (organisation), **Edition**, **India's rank** (and previous rank if in the facts), **Top country**, **AP's rank** if given.
+- Appointment / oath: **Post**, **Appointed by** (President, Governor, Collegium...), **Constitutional / legal basis** (Article [GK]), **Predecessor** if in the facts, **Tenure**.
+- Award / prize: **Award**, **Field**, **Conferred by**, **Winner(s)**, **Edition / year**, **First given** [GK] when certain.
+- Defence exercise: **Type** (bilateral / multilateral; Army / Navy / Air Force), **Countries**, **Edition**, **Venue**.
+- Scheme / mission: **Ministry**, **Launched**, **Objective**, **Beneficiaries**, **Funding / amount**.
+- Important day: **Date**, **Theme** of the year, **Observed by / declared by**, **First observed** [GK] when certain.
+- Sports: **Event**, **Edition**, **Host / venue**, **Winner**, **Runner-up**, **India's medals**.
+- Places / species / protected area: **State / district**, **Status**, **River / range** nearby.
+Never guess a field: when a field is not in the facts and is not a certain static fact, leave it out.`;
 
 function notesTask(date, items) {
   const list = items.map((it, n) => `${n + 1}. ${it.headline}
@@ -51,7 +63,7 @@ function notesTask(date, items) {
 
 ${FORMAT}
 
-BLUEPRINT ANGLES (APPSC Current Affairs blueprint analysis — recurring question angles). For each item list the 1-4 angles it answers, using these names exactly: ${BLUEPRINT.join('; ')}.
+BLUEPRINT ANGLES (APPSC Current Affairs blueprint analysis — recurring question angles). For each item list the 1-3 MOST SPECIFIC angles it answers (the angle a PYQ would use; 'Date and year' or 'Places in news' only when the date or place itself is the point), using these names exactly: ${BLUEPRINT.join('; ')}.
 
 ITEMS:
 ${list}

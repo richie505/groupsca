@@ -59,6 +59,18 @@ const SECTIONS = {
   },
 };
 
+// What the APPSC current-affairs PYQs actually ask (2,945 APPSC CA questions, 2017-2025): appointments
+// 6%, awards 8%, sports 5%, schemes 18%, organisations and summits 17%, reports and indices 11%,
+// agreements 13%, economy data 14%, AP-specific 21%; formats 84% direct recall, 8% multi-statement,
+// 5% negative ("NOT correct"), 1% match the following, 1% assertion-reason.
+const PYQ_WEIGHT = `APPSC PYQ WEIGHT (what the commission actually asks in current affairs): appointments to constitutional,
+statutory and top posts (CJI and judges, Governors, Election Commissioners, heads of RBI, ISRO, DRDO, UN bodies, AP posts),
+awards and prizes (national and international, AP awardees), sports results, schemes and their objectives,
+international organisations and summits (host, theme, headquarters), reports and indices (publisher, India's and AP's rank),
+agreements and MoUs, AP state developments. Prefer these. Leave out routine administrative notices (stock limits,
+adalats, grievance camps, review meetings), foreign diplomacy with no India angle, and repeated monthly data unless a
+figure is new and exam-worthy. At most 2 defence items per section.`;
+
 const FACT_RULES = `FACT EXTRACTION (put these in "facts", each a short exam-ready line):
 - Awards: award, field, winner, awarding body, edition/year, first woman/Indian/Telugu only if verified, AP connection.
 - Sports: event, edition, host, winner, runner-up, India's medals, records, next host, AP athlete if any.
@@ -105,6 +117,8 @@ DATE RULE: Prioritise developments occurring on ${date}. Include important late-
 GROUP 2 MAPPING: Mains Paper I = AP History & Culture, Indian Constitution, Governance. Paper II = Indian Economy, AP Economy, Science & Technology.
 Group 1 Mains: Paper I Essay; Paper II History, Culture & Geography; Paper III Polity, Governance, Ethics; Paper IV Economy & Development; Paper V Science, Technology & Environment.
 
+${PYQ_WEIGHT}
+
 ${FACT_RULES}
 
 OUTPUT: Return valid JSON only, exactly in the requested schema. No text outside the JSON.`;
@@ -129,7 +143,7 @@ ${brief}
 
 Using ONLY these items (no new facts, no web search needed):
 1. coverageAudit: one entry per subject in this list: ${SUBJECTS.join('; ')}. Each: {"subject", "covered": true/false, "items": [item numbers], "note"}; when not covered, note = "No significant verified current-affairs item today."
-2. mcqs: 5 to 10 APPSC-style multiple-choice questions (statements, match the following, "which of the following" are welcome) from these items' facts. Each: {"question", "options": [4 strings], "answer": "A"|"B"|"C"|"D", "explanation" (one or two lines), "item": item number}. No mathematics, aptitude, reasoning or Data Interpretation.
+2. mcqs: 8 to 10 APPSC-style multiple-choice questions from these items' facts, in the APPSC paper's own mix: mostly direct one-fact questions (who was appointed, which organisation released the index, where is the headquarters, which state ranked first, theme of the day), plus 1 or 2 "Consider the following statements: 1. ... 2. ... Which of the above is/are correct?" questions (options like "1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"), 1 "Which of the following is NOT correct" question, and 1 "Match List I with List II" question when the facts allow. At least 2 questions on Andhra Pradesh items. Each: {"question", "options": [4 strings], "answer": "A"|"B"|"C"|"D", "explanation" (one or two lines), "item": item number}. No mathematics, aptitude, reasoning or Data Interpretation.
 3. mainsQuestions: 2 or 3 APPSC Group 1 Mains questions. Each: {"question", "paper" (e.g. "Group 1 Mains Paper IV"), "subject", "dimensions": [3-6 short answer dimensions]}. Do not write model answers.
 Return {"coverageAudit": [...], "mcqs": [...], "mainsQuestions": [...]}`;
 }

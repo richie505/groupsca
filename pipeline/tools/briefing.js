@@ -5,6 +5,7 @@
 //   node pipeline/tools/briefing.js --date 2026-10-11    one day
 //   node pipeline/tools/briefing.js --from 2026-09-01 --to 2026-10-10   a range (published days skipped)
 //   add --force to regenerate published days
+//   --refresh (with --date or --from/--to): redo MCQs, Mains questions and notes of saved days, 4 days at a time
 //   --notes (with --date or --from/--to): only add the Rocket-style notes to saved briefings, 4 days at a time
 const path = require('path');
 const B = require('../ai/briefing');
@@ -21,13 +22,14 @@ async function main() {
   const from = arg('from') || arg('date') || todayIst();
   const to = arg('to') || arg('date') || from;
   let failed = 0;
-  if (process.argv.includes('--notes')) {
+  const refresh = process.argv.includes('--refresh');
+  if (refresh || process.argv.includes('--notes')) {
     const days = [];
     for (let d = from; d <= to; d = addDays(d, 1)) days.push(d);
     const work = async () => {
       for (let d = days.shift(); d; d = days.shift()) {
         try {
-          if (!(await B.addNotes(d, { out, force }))) console.log(`${d}: no briefing or notes already there, skipped`);
+          if (!(await (refresh ? B.refresh(d, { out }) : B.addNotes(d, { out, force })))) console.log(`${d}: no briefing or notes already there, skipped`);
         } catch (e) {
           failed++;
           console.error(`${d}: notes FAILED ${e.message}`);
