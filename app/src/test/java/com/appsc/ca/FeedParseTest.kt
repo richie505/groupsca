@@ -90,11 +90,14 @@ class FeedParseTest {
         val item = day.items.first { it.brief.sections.isNotEmpty() }
         assertEquals("Biogas And Biomass", item.brief.sections[0].topic)
         assertEquals(listOf("School of Agriculture"), item.brief.gaps)
-        val parts = com.appsc.ca.ui.Listening.pageOf(item).parts
-        val at = parts.indexOf("Static notes.")
+        val r = com.appsc.ca.ui.Listening.readable(item)
+        // line by line: the headline first, then each static-notes topic and its bullets, each a line on screen
+        assertEquals("title", r.keys.first())
+        val at = r.keys.indexOf("brief:0")
         assertTrue(at > 0)
-        assertTrue(parts[at + 1].startsWith("1. "))
-        assertTrue(parts.none { it.startsWith("From your notes: ") })
+        assertTrue(r.parts[at].startsWith("1. "))
+        assertEquals("brief:0:0", r.keys[at + 1])
+        assertEquals(r.parts.size, r.keys.size)
     }
 
     @Test
