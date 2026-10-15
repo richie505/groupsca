@@ -6,7 +6,9 @@ name: Newspaper (The Hindu, Eenadu)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 15 * * *'    # 20:30 IST, before the evening briefing: anything uploaded and not yet read
+    # every 30 minutes, 06:30 to 21:00 IST: anything uploaded and not yet read (a run with an empty inbox
+    # ends in seconds). The app also starts it at once when its token may start jobs here.
+    - cron: '*/30 1-15 * * *'
 
 permissions:
   contents: write
@@ -31,6 +33,7 @@ jobs:
         id: fetch
         run: |
           mkdir -p inbox
+          if [ -z "$GH_TOKEN" ]; then echo "::error::Add the PAPERS_TOKEN secret (Settings → Secrets and variables → Actions) so the inbox can be read"; exit 1; fi
           gh release download inbox -R "$INBOX" -p '*.pdf' -D inbox || true
           n=$(ls inbox/*.pdf 2>/dev/null | wc -l)
           echo "count=$n" >> "$GITHUB_OUTPUT"

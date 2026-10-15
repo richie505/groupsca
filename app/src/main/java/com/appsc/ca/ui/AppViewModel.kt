@@ -88,9 +88,16 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                         }
                     }
                     paperStatus = "Starting the reading…"
-                    com.appsc.ca.data.PaperUpload.startReading(token)
                 }
-                paperStatus = "✅ Sent. The paper's exam items appear in today's briefing in about 10–20 minutes: pull down on Home to refresh."
+                // the upload is what matters: if the token may not start the job, the half-hourly check reads it
+                val started = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+                    runCatching { com.appsc.ca.data.PaperUpload.startReading(token) }.isSuccess
+                }
+                paperStatus = if (started) {
+                    "✅ Sent. The paper's exam items appear in today's briefing in about 10–20 minutes: pull down on Home to refresh."
+                } else {
+                    "✅ Uploaded. It is read automatically within the next 30 minutes (then 10–20 minutes to finish): pull down on Home to refresh."
+                }
             } catch (e: Exception) {
                 paperStatus = "❌ ${e.message ?: "Upload failed"}"
             } finally {
