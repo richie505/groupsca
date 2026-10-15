@@ -15,9 +15,7 @@ const N = require('./notes');
 
 const PAPERS = {
   hindu: { name: 'The Hindu', url: 'https://epaper.thehindu.com/' },
-  // Telugu e-papers often carry their text in their own font encodings, not readable Unicode: the pages are
-  // read as clear pictures instead, two at a time
-  eenadu: { name: 'Eenadu', url: 'https://epaper.eenadu.net/', images: true },
+  eenadu: { name: 'Eenadu', url: 'https://epaper.eenadu.net/' },
 };
 const KEYS = ['international', 'national', 'andhraPradesh'];
 const PAGES_PER_PART = 6;
@@ -32,7 +30,7 @@ function paperOf(name) {
 }
 
 function paperTask(date, paper, from, to) {
-  return `These are pages ${from}-${to} of ${paper.name} (${date}).${paper.name === 'Eenadu' ? ' The paper is in Telugu (the pages are pictures): read every article on them, including the Andhra Pradesh state and district pages, and write everything in English.' : ''}
+  return `These are pages ${from}-${to} of ${paper.name} (${date}).${paper.name === 'Eenadu' ? ' The paper is in Telugu: write everything in English.' : ''}
 
 Pick out the APPSC Group 1 and Group 2 current-affairs developments on these pages, as the system prompt defines them:
 international, national and Andhra Pradesh (state and district) developments that the exam asks about — appointments, awards,
@@ -91,25 +89,16 @@ function splitPdf(file, dir) {
   return parts;
 }
 
-/** The pages as high-resolution pictures (ghostscript), PAGES_PER_IMAGE_PART to a part. */
-const PAGES_PER_IMAGE_PART = 2;
-function pageImages(file, dir) {
-  execFileSync('gs', ['-sDEVICE=jpeg', '-r130', '-dJPEGQ=80', '-dNOPAUSE', '-dBATCH', '-dQUIET', `-sOutputFile=${path.join(dir, 'p-%03d.jpg')}`, file]);
-  const pages = fs.readdirSync(dir).filter((f) => /^p-\d{3}\.jpg$/.test(f)).sort().map((f) => path.join(dir, f));
-  const parts = [];
-  for (let i = 0; i < pages.length; i += PAGES_PER_IMAGE_PART) {
-    const images = pages.slice(i, i + PAGES_PER_IMAGE_PART);
-    parts.push({ images, from: i + 1, to: i + images.length });
-  }
-  return parts;
-}
-
 /** Reads one part: returns [{ section, item }] with the page on the item. */
 async function readPart(date, paper, part, respond) {
-  const pages = part.images
-    ? part.images.map((f) => ({ type: 'input_image', image_url: `data:image/jpeg;base64,${fs.readFileSync(f).toString('base64')}`, detail: 'high' }))
-    : [{ type: 'input_file', filename: path.basename(part.file), file_data: `data:application/pdf;base64,${fs.readFileSync(part.file).toString('base64')}` }];
-  const input = [{ role: 'user', content: [...pages, { type: 'input_text', text: paperTask(date, paper, part.from, part.to) }] }];
+  const data = fs.readFileSync(part.file).toString('base64');
+  const input = [{
+    role: 'user',
+    content: [
+      { type: 'input_file', filename: path.basename(part.file), file_data: `data:application/pdf;base64,${data}` },
+      { type: 'input_text', text: paperTask(date, paper, part.from, part.to) },
+    ],
+  }];
   const r = await respond({ instructions: P.systemPrompt(date), input, schema: PAPER_SCHEMA, name: 'appsc_paper', search: false });
   readPart.paperDate = readPart.paperDate || (/^\d{4}-\d{2}-\d{2}$/.test(r.data.paperDate || '') ? r.data.paperDate : '');
   return (r.data.items || []).filter((x) => KEYS.includes(x.section) && x.item).map((x) => ({
@@ -136,7 +125,7 @@ function editionDate(uploaded, printed) {
  * stories already there dropped, Rocket-form notes, MCQs redone. A day with no briefing yet gets one holding
  * the paper's items (`paperOnly`); the evening research keeps them. Returns the number of items added.
  */
-async function readPaper(date, pdf, key, { out, respond = AI.respond, log = console.log, split } = {}) {
+async function readPaper(date, pdf, key, { out, respond = AI.respond, log = console.log, split = splitPdf } = {}) {
   const paper = PAPERS[key];
   if (!paper) throw new Error(`unknown paper "${key}" (${Object.keys(PAPERS).join(', ')})`);
   const B = require('./briefing');
@@ -144,8 +133,7 @@ async function readPaper(date, pdf, key, { out, respond = AI.respond, log = cons
   const found = [];
   readPart.paperDate = '';
   try {
-    const parts = split ? split(pdf, tmp) : PAPERS[key].images ? pageImages(pdf, tmp) : splitPdf(pdf, tmp);
-    for (const part of parts) {
+    for (const part of split(pdf, tmp)) {
       try {
         const got = await readPart(date, paper, part, respond);
         log(`${date}: ${paper.name} pages ${part.from}-${part.to}: ${got.length} items`);
