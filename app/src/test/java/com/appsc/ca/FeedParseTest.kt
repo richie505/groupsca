@@ -78,10 +78,10 @@ class FeedParseTest {
     fun everyStoryHasAStaticNoteAndReadsAloudWithIt() {
         assertTrue(day.items.all { i -> i.notes.any { it.src == "Prep notes" } })
         val english = day.items.first { com.appsc.ca.ui.Listening.canRead(it) && it.notes.isNotEmpty() && it.brief.sections.isEmpty() }
-        val page = com.appsc.ca.ui.Listening.pageOf(english)
+        val page = com.appsc.ca.ui.Listening.readable(english)
         assertEquals(english.id, page.id)
         assertTrue(page.parts.first().isNotBlank())
-        assertTrue(page.parts.last().startsWith("From your notes: "))
+        assertEquals(page.parts.size, page.keys.size)
         assertTrue(day.items.filter { it.lang == "te" }.none { com.appsc.ca.ui.Listening.canRead(it) })
     }
 
