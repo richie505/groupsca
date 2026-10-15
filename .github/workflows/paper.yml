@@ -6,9 +6,9 @@ name: Newspaper (The Hindu, Eenadu)
 on:
   workflow_dispatch:
   schedule:
-    # every 30 minutes, 06:30 to 21:00 IST: anything uploaded and not yet read (a run with an empty inbox
-    # ends in seconds). The app also starts it at once when its token may start jobs here.
-    - cron: '*/30 1-15 * * *'
+    # every 30 minutes, day and night: anything uploaded and not yet read (a run with an empty inbox ends
+    # in seconds). The app also starts it at once when its token may start jobs here.
+    - cron: '*/30 * * * *'
 
 permissions:
   contents: write
