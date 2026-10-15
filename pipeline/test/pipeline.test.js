@@ -677,3 +677,29 @@ test('newspaper: items join the day marked with paper and page; duplicates and p
   assert.ok(!e.sections.national.find((i) => /ISRO/.test(i.headline)).paper, 'the web version kept');
   assert.ok(!e.paperOnly);
 });
+
+test('CA notes upload: each item filed under its own date, page as source, no link needed', async () => {
+  const NP = require('../ai/paper');
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'notes-'));
+  const split = () => [{ file: __filename, from: 1, to: 6 }];
+  const respond = async ({ name, input }) => {
+    if (name === 'appsc_paper') {
+      assert.match(input[0].content[1].text, /study notes \("Vision Sep 2026"\)/);
+      const src = [{ title: 'h', publisher: 'Vision Sep 2026', url: '', publishedDate: '', isPrimary: false }];
+      return { data: { paperDate: '', items: [
+        { section: 'national', page: 4, item: aiItem('PM launches seeds mission', { date: '2026-09-03', sources: src }) },
+        { section: 'andhraPradesh', page: 9, item: aiItem('AP signs port MoU', { date: '2026-09-20', sources: src }) },
+        { section: 'international', page: 12, item: aiItem('Undated summit item', { date: '', sources: src }) },
+      ] }, citations: [], searches: [], model: 'fake' };
+    }
+    if (name === 'appsc_editorial') return { data: { coverageAudit: [], mcqs: [mcq('q1')], mainsQuestions: [] }, citations: [], searches: [], model: 'fake' };
+    return { data: { notes: [] }, citations: [], searches: [], model: 'fake' };
+  };
+  const added = await NP.readPaper('2026-10-16', 'x.pdf', 'notes', { out, respond, log: () => {}, split, label: 'Vision Sep 2026' });
+  assert.equal(added, 3);
+  assert.equal(AIB.read(out, '2026-09-03').sections.national[0].paper, 'Vision Sep 2026 · p.4');
+  assert.equal(AIB.read(out, '2026-09-03').sections.national[0].upload, 'notes');
+  assert.equal(AIB.read(out, '2026-09-20').sections.andhraPradesh.length, 1);
+  assert.equal(AIB.read(out, '2026-10-16').sections.international.length, 1, 'undated: the upload day');
+  assert.equal(AIB.read(out, '2026-09-03').status, 'published');
+});
