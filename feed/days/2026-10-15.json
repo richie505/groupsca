@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-15",
- "updated": "2026-10-15T20:56:54.248Z",
+ "updated": "2026-10-16T05:21:13.284Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 824,
+   "found": 826,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 31,
+   "found": 36,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 45,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 11,
    "error": null
   },
   {
@@ -343,6 +343,72 @@
    }
   },
   {
+   "id": "4386271e90c2",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "03:56",
+   "title": "SRM AP hosts national summit on Post-Quantum Cryptography",
+   "summary": "CV Sridhar, MD of AP SQM, outlined the vision of Amaravati Quantum Valley at an SRM AP workshop focusing on post-quantum cryptography and cybersecurity readiness.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/srm-ap-hosts-national-summit-on-post-quantum-cryptography-1132862",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region"
+   ],
+   "angles": [
+    "Post",
+    "Summit"
+   ],
+   "score": 75,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
    "id": "5c07cc95a94e",
    "date": "2026-10-15",
    "pubDate": "2026-10-15",
@@ -460,6 +526,91 @@
     "ap": 20,
     "importance": 0,
     "reuse": 15
+   }
+  },
+  {
+   "id": "7638388a833b",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-15",
+   "time": "19:10",
+   "title": "SHILP SAMAGAM MELA 2026-Mysuru",
+   "summary": "The Mela will conclude on October 19 Monday. A Senior Official in the National Scheduled Castes Finance and Development Corporation (NSFDC) said the Mela provides a marketing platform for artisans and beneficiaries from Scheduled Castes (SCs), Other Backward Classes (OBCs) and Safai Karamcharis, enabling them to showcase their traditional handicrafts, handloom products and other goods to a wider audience.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "He highlighted the role of the National Development Corporations in extending concessional financial assistance, with loans ranging from ₹1.5 Lakh To ₹35 Lakh under various schemes, subject to applicable eligibility criteria and scheme provisions."
+    },
+    {
+     "angle": "Figures",
+     "text": "Emphasizing the Government’s commitment to social welfare, the Minister stated that ₹1.98 Lakh Crore had been allocated for social welfare schemes in the Union Budget, out of a total budget of ₹ 57 Lakh Crore."
+    },
+    {
+     "angle": "Figures",
+     "text": "Shri Athawale also referred to the constitutional provisions for reservation for Scheduled Castes and Scheduled Tribes, the provision of 27 per cent reservation for Other Backward Classes following the recommendations of the Mandal Commission, and the subsequent introduction of 10 per cent reserv…"
+    },
+    {
+     "angle": "Figures",
+     "text": "Highlighting the reach of flagship welfare initiatives, Shri Athawale referred to the Pradhan Mantri Awas Yojana, under which around four crore beneficiaries have received benefits across the country, including approximately 10 lakh beneficiaries in Karnataka."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Social Justice & Empowerment",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2324066&reg=3&lang=1",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "Reservation and social justice",
+    "NAMASTE and sanitation workers"
+   ],
+   "angles": [
+    "Features",
+    "Union Minister",
+    "States",
+    "Social Justice"
+   ],
+   "score": 74,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 12,
+    "importance": 11,
+    "reuse": 5
    }
   },
   {
@@ -1024,6 +1175,63 @@
    }
   },
   {
+   "id": "2a5444eb250b",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "05:29",
+   "title": "76 returnable plots allotted to Amaravati farmers",
+   "summary": "APCRDA allotted 76 residential and commercial returnable plots to Penumaka farmers in Rayapudi through an e-lottery system for Amaravati capital land Pooling.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/76-returnable-plots-allotted-to-amaravati-farmers-1132906",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region",
+    "AP Capital Region Development Authority (APCRDA)"
+   ],
+   "angles": [],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "a54a3cfad735",
    "date": "2026-10-15",
    "pubDate": "2026-10-16",
@@ -1133,6 +1341,57 @@
    "why": {
     "syllabus": 30,
     "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "9a12ea7b8008",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "05:59",
+   "title": "‘Low’ to form over Bay by Tuesday, may bring north-east monsoon to South Peninsula",
+   "summary": "Isolated heavy rainfall likely over Kerala and Mahe, and Tamil Nadu, Puducherry and Karaikal on Saturday; scattered rain for Coastal AP, Coastal Karnataka, Rayalaseema and TN for six more days",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/imd-update-heavy-rain-for-kerala-mahe-tn-puducherry-for-2-days/article71562761.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
     "ap": 20,
     "importance": 0,
     "reuse": 15
@@ -2425,6 +2684,174 @@
    }
   },
   {
+   "id": "23d8723614c6",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "05:54",
+   "title": "GST Council recommends rationalisation of e-way Bill to ensure smooth movement of goods",
+   "summary": "Supply by e commerce platform to an unregistered person by any delivery mechanism to attract flat 5% rate",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/gst-council-recommends-rationalisation-of-e-way-bill-to-ensure-smooth-movement-of-goods/article71560591.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Bill",
+    "GST"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 10,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1618bed82b87",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "04:37",
+   "title": "Horticultural scientists visit Munibandapalli farmers",
+   "summary": "Sri Krishnadevaraya College of Horticulture organized a \"Scientists at the Farmers' Doorstep\" extension drive in Munibandapalli to aid local growers.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Sri Krishnadevaraya College of Horticulture organized a \"Scientists at the Farmers' Doorstep\" extension drive in Munibandapalli to aid local growers."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/anantapur/horticultural-scientists-visit-munibandapalli-farmers-1132882",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "History & Culture",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-A3",
+     "exam": "G1",
+     "label": "Delhi Sultanate, Vijayanagara Empire, Mughal Empire, Bhakti Movement and Sufism - Administration, Economy, Society, Religion, Literature, Arts and Architecture"
+    },
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "f8e56d393f09",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "04:40",
+   "title": "Six-lane highway expansion",
+   "summary": "District Collector A Shyam Prasad announced a 77-km, six-lane access-controlled highway on NH-44 in Sri Sathya Sai district to boost Bengaluru-Hyderabad connectivity.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/anantapur/six-lane-highway-expansion-1132884",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "10586c6ca2ce",
    "date": "2026-10-15",
    "pubDate": "2026-10-15",
@@ -3092,6 +3519,60 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "84f5c9abdce3",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "03:02",
+   "title": "Experts’ poll: RBI may hike rates by 0.25% in October policy amid inflationary pressures",
+   "summary": "The last repo rate hike was in February 2023, when the RBI raised the rate by 0.25% to 6.50%",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/experts-poll-rbi-may-hike-rates-by-025-in-october-policy-amid-inflationary-pressures/article71543381.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "RBI and monetary policy"
+   ],
+   "angles": [
+    "RBI",
+    "Repo"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
   },
   {
    "id": "f52d3bd38ce9",
@@ -4297,6 +4778,64 @@
    "digest": true
   },
   {
+   "id": "052454d90b6c",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "05:25",
+   "title": "All set for conducting local body polls: Collector",
+   "summary": "Guntur Collector CM Saikanth Varma announced local body election schedules for GMC, Tenali Municipality, MPTCs, ZPTCs, and Gram Panchayats.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/guntur/all-set-for-conducting-local-body-polls-collector-1132904",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Schedules"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "222a01a51f57",
    "date": "2026-10-15",
    "pubDate": "2026-10-15",
@@ -5302,126 +5841,6 @@
    }
   },
   {
-   "id": "9ddcf3f89ad8",
-   "date": "2026-10-15",
-   "pubDate": "2026-10-15",
-   "title": "NITI Aayog Links Data Centre Approvals to Power and Water",
-   "summary": "NITI Aayog and Deloitte India released the &#8220;Data Centre Evaluation Framework to Help States Plan for Sustainable Growth&#8221; on 14 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/niti-aayog-links-data-centre-approvals-to-power-and-water/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-C1",
-     "exam": "G1",
-     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
-    },
-    {
-     "code": "G1-F19",
-     "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
-    },
-    {
-     "code": "G2-M2A-U1",
-     "exam": "G2",
-     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
-    },
-    {
-     "code": "G2-M2A-U5",
-     "exam": "G2",
-     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "NITI Aayog",
-    "States"
-   ],
-   "score": 49,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
-  },
-  {
-   "id": "8499d93c7ac0",
-   "date": "2026-10-15",
-   "pubDate": "2026-10-15",
-   "time": "23:35",
-   "title": "Odisha Governor directs filling of teaching posts amid 70% vacancy in public universities",
-   "summary": "The recruitment process for vacant teaching posts should be initiated by the first week of November and complete it by the end of the month, said Hari Babu Kambhampati",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "The recruitment process for vacant teaching posts should be initiated by the first week of November and complete it by the end of the month, said Hari Babu Kambhampati"
-    }
-   ],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/odisha/odisha-governor-directs-filling-of-teaching-posts-amid-70-vacancy-in-public-universities/article71541172.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Governor",
-    "Post"
-   ],
-   "score": 49,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
    "id": "391a46f06f4b",
    "date": "2026-10-15",
    "pubDate": "2026-10-15",
@@ -5581,6 +6000,58 @@
    }
   },
   {
+   "id": "2cc45d55c1a5",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "03:53",
+   "title": "Proper e-waste management essential: Expert",
+   "summary": "St Ann’s College Chirala hosted World E-Waste Day awareness session where experts urged 3R principles—Reduce, Reuse, Recycle—for safe e-waste disposal and health protection.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "St Ann’s College Chirala hosted World E-Waste Day awareness session where experts urged 3R principles—Reduce, Reuse, Recycle—for safe e-waste disposal and health protection."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/proper-e-waste-management-essential-expert-1132860",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Waste Management",
+    "Health"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "e9bdc8d63301",
    "date": "2026-10-15",
    "pubDate": "2026-10-15",
@@ -5624,6 +6095,103 @@
    "band": "medium",
    "why": {
     "syllabus": 14,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "86744f8ece93",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "04:20",
+   "title": "Ahobilam temple photographer bags ‘Best Image of the Year’ award",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Award",
+     "text": "Ahobilam temple photographer bags ‘Best Image of the Year’ award"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ahobilam-temple-photographer-bags-best-image-of-the-year-award/article71543248.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Award"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "67ca22dea006",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "05:43",
+   "title": "Free ayurvedic camp held at Andhra University",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/free-ayurvedic-camp-held-at-andhra-university/article71543666.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U4",
+     "exam": "G2",
+     "label": "Origin and Growth of the Andhra Movement - Andhra Mahasabhas, Prominent Leaders, Formation of Andhra State 1953, Role of Press, Library Movement, Folk and Tribal Culture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
     "angles": 5,
     "ap": 20,
     "importance": 0,
@@ -5885,6 +6453,142 @@
     "ap": 20,
     "importance": 3,
     "reuse": 0
+   }
+  },
+  {
+   "id": "e11b5b82e601",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "05:10",
+   "title": "VMC all set to receive nominations from today",
+   "summary": "Housing PD Rajani Kumari appointed RO for Mayor’s post 44 returning officers appointed for 86 corporator divisions",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "Housing PD Rajani Kumari appointed RO for Mayor’s post 44 returning officers appointed for 86 corporator divisions"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/vmc-all-set-to-receive-nominations-from-today-1132898",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Post",
+    "Appointed"
+   ],
+   "score": 36,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 10,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
+   }
+  },
+  {
+   "id": "b9b328cc9e00",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "02:38",
+   "title": "Founded by French nuns in 1852, Visakhapatnam’s Fort Catholic Girls’ School turns 175",
+   "summary": "As the school in Visakhapatnam celebrates this remarkable milestone, it looks back on its long journey shaped by a rich history, generations of students who passed through its classrooms, the bonds forged by its alumnae, and the values that continue to define the institution; the closing ceremony of the jubilee year will be held in January 2027",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/founded-by-french-nuns-in-1852-visakhapatnams-fort-catholic-girls-school-turns-175/article71536824.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "founded",
+    "Fort",
+    "Bonds"
+   ],
+   "score": 35,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 15,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   }
+  },
+  {
+   "id": "ae6f2c41d161",
+   "date": "2026-10-15",
+   "pubDate": "2026-10-16",
+   "time": "04:20",
+   "title": "Tirupati dist gears up for peaceful local body polls",
+   "summary": "District administration and police step up preparations for free and fair local body elections",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/tirupati-dist-gears-up-for-peaceful-local-body-polls-1132872",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Administration"
+   ],
+   "score": 35,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
    }
   }
  ]
