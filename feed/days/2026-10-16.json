@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-16",
- "updated": "2026-10-16T20:19:34.975Z",
+ "updated": "2026-10-17T05:15:53.789Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 873,
+   "found": 875,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 37,
+   "found": 38,
    "error": null
   },
   {
@@ -48,13 +48,13 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 20,
+   "found": 19,
    "error": null
   },
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 44,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 7,
+   "found": 8,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 33,
    "error": null
   },
   {
@@ -209,6 +209,134 @@
   }
  ],
  "items": [
+  {
+   "id": "e7f28d63e59a",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "04:11",
+   "title": "Ministers pitch Andhra Pradesh as global manufacturing hub at CII regional summit in Vizag",
+   "summary": "Andhra Pradesh eyeing rapid industrial growth as investments cross ₹8.67 lakh crore over the past two years, say officials; FDI surged to $608 million in 2025–26 from $92 million in 2023–24",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Andhra Pradesh eyeing rapid industrial growth as investments cross ₹8.67 lakh crore over the past two years, say officials; FDI surged to $608 million in 2025–26 from $92 million in 2023–24"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/ministers-pitch-andhra-pradesh-as-global-manufacturing-hub-at-cii-regional-summit-in-vizag/article71555626.ece",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [
+    "Years",
+    "FDI",
+    "Summit"
+   ],
+   "score": 86,
+   "band": "critical",
+   "why": {
+    "syllabus": 30,
+    "angles": 15,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "08fddcaa6404",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "05:55",
+   "title": "AP govt gets Rs 42,948-cr investments at CII’s Amaravati regional meet",
+   "summary": "Organised by the Andhra Pradesh government in partnership with the Confederation of Indian Industry (CII) at SRM University-AP here, the conference covered the capital region districts of NTR, Krishna, Guntur, Palnadu, Bapatla, Prakasam and Markapuram.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Organised by the Andhra Pradesh government in partnership with the Confederation of Indian Industry (CII) at SRM University-AP here, the conference covered the capital region districts of NTR, Krishna, Guntur, Palnadu, Bapatla, Prakasam and Markapuram."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/ap-govt-gets-rs-42948-cr-investments-at-ciis-amaravati-regional-meet-1133129",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region"
+   ],
+   "angles": [
+    "University",
+    "Industry"
+   ],
+   "score": 75,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
   {
    "id": "7a2ba02f1672",
    "date": "2026-10-16",
@@ -640,6 +768,58 @@
    }
   },
   {
+   "id": "094a3dc1d69c",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "05:50",
+   "title": "NTRUHS invites Andhra Governor to its Ruby Jubilee celebrations on October 26",
+   "summary": "Chandrasekhar and other officials brief S. Abdul Nazeer on the university’s 40-year journey; the Governor agrees to attend",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ntruhs-invites-andhra-governor-to-its-ruby-jubilee-celebrations-on-october-26/article71556690.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University",
+    "Governor"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "559d3a56bf29",
    "date": "2026-10-16",
    "pubDate": "2026-10-16",
@@ -852,6 +1032,234 @@
     "ap": 0,
     "importance": 15,
     "reuse": 5
+   }
+  },
+  {
+   "id": "0a8fe6b2b8e3",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "02:43",
+   "title": "2K Run, awareness activities mark Wildlife Week celebrations",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/2k-run-awareness-activities-mark-wildlife-week-celebrations/article71556090.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ddf47cb6b0e4",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "02:34",
+   "title": "Finolex Cables Limited sees huge opportunity in emerging data centre hub in Vizag",
+   "summary": "Dedicated teams are working on tapping the burgeoning global demand for subsea cables required by the data centres and the opportunities in the capital region of Amaravati",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/finolex-cables-limited-sees-huge-opportunity-in-emerging-data-centre-hub-in-vizag/article71555208.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region",
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "f87a94b5db67",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "00:06",
+   "title": "Private teachers can be roped in for Census as Centre amends rules",
+   "summary": "The amended rules also permit clerical staff and other suitable persons appointed by state and Union territory administrations to conduct enumeration duties.",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "The amended rules also permit clerical staff and other suitable persons appointed by state and Union territory administrations to conduct enumeration duties."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/private-teachers-can-be-roped-in-for-census-as-centre-amends-rules-101792175798502.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-D3",
+     "exam": "G1",
+     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Administration",
+    "PERSONS",
+    "Census",
+    "Appointed"
+   ],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "95fa982aff69",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "02:48",
+   "title": "A.P.-Transco JMD urges people to use solar power to reduce burden on electricity bill",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-transco-jmd-participates-in-cpdcls-seva-sethu-abhiyan-camp/article71555610.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Bill"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -1820,6 +2228,61 @@
    }
   },
   {
+   "id": "e2cd7a6e0385",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "01:40",
+   "title": "Naidu to meet Modi in Delhi, seek approval for Visakhapatnam Metro Rail and Beach Corridor",
+   "summary": "The Chief Minister will also seek special assistance for drought relief and Central support for next year’s Godavari Pushkarams",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/naidu-to-meet-modi-in-delhi-seek-approval-for-visakhapatnam-metro-rail-and-beach-corridor/article71554906.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M2A-U4",
+     "exam": "G2",
+     "label": "Structure of the Andhra Pradesh Economy and Public Finance - GSDP and Sectoral Contribution, Per Capita Income, State Revenue, Expenditure, Debt, Central Assistance, External Assistance, Recent AP Budget"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "a9ab04676f6f",
    "date": "2026-10-16",
    "pubDate": "2026-10-16",
@@ -2130,6 +2593,59 @@
     "angles": 10,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "4b071790985a",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "03:00",
+   "title": "Failure to finalise US trade deal may hurt India, but new FTAs can cushion tariff blow: RBI chief",
+   "summary": "The diversification of India’s export markets and products as another buffer against a potential tariff shock.",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/Economy/failure-to-finalise-us-trade-deal-may-hurt-india-but-new-ftas-can-cushion-tariff-blow-rbi-chief/article71556248.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Export",
+    "RBI"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 4,
     "reuse": 15
    }
   },
@@ -2917,6 +3433,69 @@
    "digest": true
   },
   {
+   "id": "43db1f8dbe2a",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "05:21",
+   "title": "Andhra Pradesh Cabinet clears path for foreign university campuses in State",
+   "summary": "The Cabinet approves 12 agendas including establishment of Horticulture Information and Management System, upgrade of Repalle CHC to 100-bed hospital and guidelines for Thalliki Vandanam scheme",
+   "facts": [
+    {
+     "angle": "Cabinet decision",
+     "text": "The Cabinet approves 12 agendas including establishment of Horticulture Information and Management System, upgrade of Repalle CHC to 100-bed hospital and guidelines for Thalliki Vandanam scheme"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-cabinet-clears-path-for-foreign-university-campuses-in-state/article71555259.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 5,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 5
+   }
+  },
+  {
    "id": "52c957908f7a",
    "date": "2026-10-16",
    "pubDate": "2026-10-16",
@@ -2959,6 +3538,61 @@
     "Ambassador",
     "Members",
     "Hydrogen"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e2be9f1f19f9",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "05:09",
+   "title": "Serum Institute’s HPV vaccine Cervavac receives WHO prequalification",
+   "summary": "Inclusion on the WHO list allows Cervavac to be procured by U.N. agencies. The vaccine targets four HPV types and is indicated for girls and boys aged 9 through 26 years",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Science & Technology"
+   ],
+   "url": "https://www.thehindu.com/sci-tech/health/serum-institutes-hpv-vaccine-cervavac-receives-who-prequalification/article71554508.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "Vaccine",
+    "WHO"
    ],
    "score": 54,
    "band": "medium",
@@ -4106,6 +4740,64 @@
    }
   },
   {
+   "id": "8c8115196129",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "05:36",
+   "title": "Malaria infections worrying public health experts in Keralam",
+   "summary": "The surge, driven by abundant mosquitoes and a steady influx of travellers, has prompted calls for stronger surveillance, migrant screening, and the planned distribution of insecticide-treated bed nets.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The surge, driven by abundant mosquitoes and a steady influx of travellers, has prompted calls for stronger surveillance, migrant screening, and the planned distribution of insecticide-treated bed nets."
+    }
+   ],
+   "source": "The Hindu — Science & Technology",
+   "sourceId": "hindu-scitech",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/malaria-infections-worrying-public-health-experts-in-keralam/article71552716.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Traveller",
+    "Health"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "d065e8ae5cee",
    "date": "2026-10-16",
    "pubDate": "2026-10-16",
@@ -4163,6 +4855,70 @@
    "angles": [
     "Climate Change",
     "Satellite"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "84efa30dedde",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "02:07",
+   "title": "MDR a small fee, will not have major impact on UPI volumes: RBI Governor Malhotra",
+   "summary": "“As of now, we do not see any drop in volumes. And I don’t personally think that a small fee will have a major impact on the volumes,” RBI Governor Sanjay Malhotra said",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/Economy/rbi-governor-sanjay-malhotra-press-conference-rbi-repo-rate-october-7-2026/article71555386.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "RBI"
    ],
    "score": 49,
    "band": "medium",
@@ -4343,6 +5099,110 @@
    }
   },
   {
+   "id": "e9aae35413d0",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "01:19",
+   "title": "Rupee falls 22 paise to 96.57 against U.S. dollar post RBI rate increase",
+   "summary": "At the interbank foreign exchange market, the rupee opened at 96.37, then lost ground and fell to 96.57, down 22 paise from its previous close",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/markets/rupee-against-dollar-opening-rbi-monetary-policy-decision/article71554511.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Post",
+    "RBI"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "2186a2543058",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-16",
+   "time": "16:54",
+   "title": "Rupee rises 7 paise to close at 94.92 against U.S. dollar on RBI intervention",
+   "summary": "Elevated crude oil prices and foreign fund outflows capped the rupee's gains, according to forex traders",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/markets/rupee-rises-7-paise-to-close-at-9492-against-us-dollar-on-rbi-intervention/article71592196.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Trader",
+    "RBI"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "ef21a67da5ef",
    "date": "2026-10-16",
    "pubDate": "2026-10-16",
@@ -4458,438 +5318,51 @@
    }
   },
   {
-   "id": "8bf619e85985",
+   "id": "5c9a5f55d592",
    "date": "2026-10-16",
-   "pubDate": "2026-10-16",
-   "time": "18:28",
-   "title": "Two-day National Conference on e-Governance Reforms begins in Dharamshala",
-   "summary": "The inaugural session featured a welcome address by Smt. Nivedita Shukla Verma, Secretary, DARPG, Government of India, followed by addresses by Shri Kamlesh Kumar Pant, Chief Secretary, Government of Himachal Pradesh, and Shri Sukhvinder Singh Sukhu, the Chief Minister of Himachal Pradesh. Shri Puneet Yadav, Additional Secretary, DARPG, delivered the vote of thanks.",
-   "facts": [
-    {
-     "angle": "Summit / exercise",
-     "text": "He applauded Union Minister of State (PP) Dr Jitendra Singh and DARPG for organising the conference in Himachal Pradesh."
-    },
-    {
-     "angle": "Summit / exercise",
-     "text": "She emphasized that closing the distance between a successful pilot and a national practice was the objective of the National Conference."
-    },
-    {
-     "angle": "Summit / exercise",
-     "text": "Expressing gratitude to the Chief Minister of Himachal Pradesh and the state administration for their support and hospitality in hosting the conference, the Secretary noted the visionary leadership and continuous guidance provided by Union Minister of State (PP) Dr. Jitendra Singh in driving DARP…"
-    },
-    {
-     "angle": "Summit / exercise",
-     "text": "Day Two of the conference, scheduled for 17 October 2026, will feature sessions on cybersecurity, best e-governance practices, replication, data analytics, and State-, district- and grassroots-level initiatives, followed by the valedictory session."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Personnel, Public Grievances & Pensions",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2324475&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Polity, Society & IR",
-    "Economy",
-    "History & Culture"
-   ],
-   "units": [
-    {
-     "code": "G1-F19",
-     "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
-    },
-    {
-     "code": "G1-C5",
-     "exam": "G1",
-     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
-    },
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [
-    "e-Governance"
-   ],
-   "score": 49,
-   "band": "medium",
-   "why": {
-    "syllabus": 26,
-    "angles": 5,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "b50499ffdc09",
-   "date": "2026-10-16",
-   "pubDate": "2026-10-16",
-   "time": "06:14",
-   "title": "US move against IT firms signals protectionist shift, raises concerns for India's exports: GTRI",
-   "summary": "GTRI said India should prepare for possible restrictions extending beyond green card sponsorship to H-1B hiring, skilled worker mobility and outsourcing",
+   "pubDate": "2026-10-17",
+   "time": "00:46",
+   "title": "Fresh push for A.P’s Kotipalli-Narsapur railway line project",
+   "summary": "Harish Balayogi assured coordination with NDA partners to complete the railway line project during talks in New Delhi on Tuesday.",
    "facts": [],
-   "source": "BusinessLine — Economy",
-   "sourceId": "bl-economy",
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
    "official": false,
    "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindubusinessline.com/economy/us-move-against-it-firms-signals-protectionist-shift-raises-concerns-for-indias-exports-gtri/article71563635.ece",
-   "bucket": "national",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam",
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/fresh-push-for-aps-kotipalli-narsapur-railway-line-project/article71551574.ece",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
-    "G1",
-    "G2"
+    "G1"
    ],
-   "subject": "Economy",
+   "subject": "Geography",
    "subjects": [
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Export",
-    "Exports"
-   ],
-   "score": 49,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "b1e38dd7b545",
-   "date": "2026-10-16",
-   "pubDate": "2026-10-16",
-   "time": "18:14",
-   "title": "World Bank Group mobilises $36 billion in India in four years, $9.6 billion for MSMEs",
-   "summary": "The increase reflects growing investor interest in development-linked investments, with guarantees from the IFC and the MIGA helping reduce investment risks and attract private funding",
-   "facts": [],
-   "source": "BusinessLine — Economy",
-   "sourceId": "bl-economy",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindubusinessline.com/economy/world-bank-group-mobilises-36-billion-in-india-in-four-years-96-billion-for-msmes/article71587085.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-B6",
-     "exam": "G1",
-     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
-    },
-    {
-     "code": "G2-M2A-U4",
-     "exam": "G2",
-     "label": "Structure of the Andhra Pradesh Economy and Public Finance - GSDP and Sectoral Contribution, Per Capita Income, State Revenue, Expenditure, Debt, Central Assistance, External Assistance, Recent AP Budget"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Years",
-    "IFC"
-   ],
-   "score": 49,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "5bf3498be5e8",
-   "date": "2026-10-16",
-   "pubDate": "2026-10-16",
-   "time": "14:33",
-   "title": "Ayush Innovation Sees Eightfold Rise in Patent Filings",
-   "summary": "Published by the Office of the Controller General of Patents, Designs & Trademarks (CGPDTM), Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce and Industry, Government of India, the report provides an overview of the evolution of Ayush-related inventions and intellectual property activity in India over the period.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "The Ministry will continue to support evidence generation, research collaboration and innovation across the Ayush ecosystem.” The report highlights a sharp increase in patenting activity, with annual filings rising from 63 applications in FY 2014–15 to 590 applications in FY 2025–26, representing…"
-    },
-    {
-     "angle": "Figures",
-     "text": "Between FY 2020–21 and FY 2025–26, 2,854 applications, or 70 per cent of total filings, were recorded, compared with 1,223 applications during FY 2014–15 to FY 2019–20."
-    },
-    {
-     "angle": "Award",
-     "text": "Similarly, 657 patents, accounting for 92.4 per cent of all grants, were awarded during the post-COVID period."
-    },
-    {
-     "angle": "Figures",
-     "text": "Natural persons accounted for 2,113 applications, or 51.9 per cent of total filings, and 398 grants, while educational institutions contributed 995 applications and 88 grants."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "AYUSH",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2324293&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-F18",
-     "exam": "G1",
-     "label": "Science and Technology - Nature and Scope, Relevance to Daily Life, National S&T Policy"
-    },
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Grant",
-    "Applications"
-   ],
-   "score": 48,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 10,
-    "ap": 0,
-    "importance": 5,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "a96080eae69c",
-   "date": "2026-10-16",
-   "pubDate": "2026-10-16",
-   "time": "22:58",
-   "title": "Finance ministry appoints Subhas Chandra Lal Das as part-time chairperson FSIB",
-   "summary": "Former IAS officer to lead the bureau for three years, along side six members tasked with matters concerning public sector banks, financial institutions and insurers.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "Former IAS officer to lead the bureau for three years, along side six members tasked with matters concerning public sector banks, financial institutions and insurers."
-    }
-   ],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/india/finance-ministry-appoints-subhas-chandra-lal-das-as-part-time-chairperson-fsib-11792169806287.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Years",
-    "Members",
-    "Banks"
-   ],
-   "score": 48,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 15,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "636751793e19",
-   "date": "2026-10-16",
-   "pubDate": "2026-10-16",
-   "time": "07:24",
-   "title": "Gujarat to release water from Kadana Dam to protect Kharif crops amid rainfall deficit",
-   "summary": "Gujarat’s rainfall deficit widens in early October with just 0.3 mm of rain between October 1 and 10, against the seasonal average of 11 mm, a shortfall of approximately 97%",
-   "facts": [],
-   "source": "BusinessLine — Economy",
-   "sourceId": "bl-economy",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindubusinessline.com/economy/agri-business/gujarat-to-release-water-from-kadana-dam-to-protect-kharif-crops-amid-rainfall-deficit/article71567218.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
     "Geography"
    ],
    "units": [
     {
-     "code": "G1-C3",
+     "code": "G1-D4",
      "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
     }
    ],
-   "topics": [],
-   "angles": [
-    "Rainfall"
+   "topics": [
+    "Railways and multimodal transport"
    ],
+   "angles": [],
    "score": 48,
    "band": "medium",
    "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 4,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "839c09ca67cf",
-   "date": "2026-10-16",
-   "pubDate": "2026-10-16",
-   "time": "07:13",
-   "title": "India can cut steel emissions before new coal plants lock them in",
-   "summary": "India’s green steel journey is still nascent but recent developments and policies have indicated that this hard-to-abate sunrise industry is rising up to the net-zero challenge. However, balancing growing demand with climate goals remains a formidable challenge for now, with a lot riding on the availability of green hydrogen",
-   "facts": [],
-   "source": "The Hindu — Science & Technology",
-   "sourceId": "hindu-scitech",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "The Hindu — Energy & Environment"
-   ],
-   "url": "https://www.thehindu.com/sci-tech/science/india-can-cut-steel-emissions-before-new-coal-plants-lock-them-in/article71437954.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    },
-    {
-     "code": "G1-F21",
-     "exam": "G1",
-     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Remains",
-    "Industry",
-    "Hydrogen"
-   ],
-   "score": 48,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 15,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 5
    }
   },
   {
@@ -4992,6 +5465,105 @@
     "ap": 20,
     "importance": 0,
     "reuse": 5
+   }
+  },
+  {
+   "id": "a8940e600349",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "05:23",
+   "title": "Officials seize 170 kg of adulterated ghee from Ongole dairy",
+   "summary": "They claim the dairy supplied hotels, hostels and biryani outlets and sold about 3,000 kg a month; samples have been sent to a forensic laboratory in Chennai",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam",
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/170-kg-of-ghee-allegedly-made-with-palm-oil-and-vanaspati-seized-at-ongole-dairy/article71554305.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Laboratory"
+   ],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "1f7fd6cb96a0",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "03:37",
+   "title": "Rayalaseema landscape: Preserving the past, securing the future",
+   "summary": "Rayalaseema region’s rich geological past is reflected in its basement rocks, which formed more than 2.5 billion years ago during the Precambrian era. Today, however, this ancient foundation faces severe pressure from quarrying, road construction, and unregulated tourism.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Rayalaseema region’s rich geological past is reflected in its basement rocks, which formed more than 2.5 billion years ago during the Precambrian era."
+    },
+    {
+     "angle": "GI tag / designation",
+     "text": "Fearing irreversible damage, geologists believe that securing UNESCO Global Geopark status for several of these geological wonders can help preserve them."
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/rayalaseema-landscape-preserving-the-past-securing-the-future/article71592574.ece",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Years",
+    "Construction",
+    "UNESCO"
+   ],
+   "score": 43,
+   "band": "medium",
+   "why": {
+    "syllabus": 4,
+    "angles": 15,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 0
    }
   },
   {
@@ -5132,6 +5704,54 @@
    }
   },
   {
+   "id": "6a286a1d956a",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "04:11",
+   "title": "Race for GVMC polls intensifies in Visakhapatnam, administration fine-tunes logistics",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/race-for-gvmc-polls-intensifies-in-visakhapatnam-administration-fine-tunes-logistics/article71555685.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Administration"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "7eb29477caab",
    "date": "2026-10-16",
    "pubDate": "2026-10-16",
@@ -5255,6 +5875,52 @@
      "code": "G1-C2",
      "exam": "G1",
      "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "cb03a3292471",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "03:36",
+   "title": "Visakha Government Degree College for Women holds workshop on quantum communication",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/visakha-government-degree-college-for-women-holds-workshop-on-quantum-communication/article71556886.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
     }
    ],
    "topics": [],
@@ -5406,6 +6072,49 @@
     "reuse": 0
    },
    "digest": true
+  },
+  {
+   "id": "26d438e55b11",
+   "date": "2026-10-16",
+   "pubDate": "2026-10-17",
+   "time": "03:02",
+   "title": "VeeCycle Works signs MoU with A.P. government for ₹150 crore recycling project in Visakhapatnam",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "VeeCycle Works signs MoU with A.P. government for ₹150 crore recycling project in Visakhapatnam"
+    }
+   ],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/veecycle-works-signs-mou-with-ap-government-for-150-crore-recycling-project-in-visakhapatnam/article71556219.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 30,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 0,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
+   }
   }
  ]
 }
