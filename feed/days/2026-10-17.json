@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-17",
- "updated": "2026-10-17T19:54:27.076Z",
+ "updated": "2026-10-18T05:20:38.305Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 903,
+   "found": 904,
    "error": null
   },
   {
@@ -24,8 +24,8 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 47,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "hindu-national",
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 47,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 9,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 55,
+   "found": 51,
    "error": null
   },
   {
@@ -959,6 +959,60 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://newsonair.gov.in/heavy-rainfall-likely-over-andhra-pradesh-coastal-karnataka-kerala-and-mahe/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 67,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "979b2cca7a24",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "01:11",
+   "title": "Northeast Monsoon may trigger wet spell in Andhra Pradesh till October 19",
+   "summary": "Light to moderate showers and isolated heavy rainfall are likely across the three regions of Andhra Pradesh from October 16 to 19, say weather experts",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam",
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/northeast-monsoon-may-trigger-wet-spell-in-andhra-pradesh-till-october-19/article71583805.ece",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -1843,6 +1897,55 @@
    }
   },
   {
+   "id": "a8cd21cc326c",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "02:45",
+   "title": "Rail Jan Samvaad seeks better passenger amenities at Machilipatnam",
+   "summary": "Vijayawada Railway Division organizes a Rail Jan Samvaad at Machilipatnam station to conclude Swachhata Pakhwada, engaging passengers on safety and amenities.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/rail-jan-samvaad-seeks-better-passenger-amenities-at-machilipatnam-1133383",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A4",
+     "exam": "G1",
+     "label": "European Trading Companies in India - Struggle for Supremacy (Bengal, Bombay, Madras, Mysore, Andhra, Nizam); Governors-General and Viceroys"
+    },
+    {
+     "code": "G2-M1A-U3",
+     "exam": "G2",
+     "label": "Advent of Europeans, Andhra under the Company, 1857 and its Impact on Andhra, Socio-Cultural Awakening, Justice Party / Self-Respect Movement, Nationalist Movement in Andhra 1885-1947"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "a17f7951e82c",
    "date": "2026-10-17",
    "pubDate": "2026-10-17",
@@ -2084,6 +2187,57 @@
     "ap": 0,
     "importance": 3,
     "reuse": 15
+   }
+  },
+  {
+   "id": "e2e028d3892f",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "01:54",
+   "title": "No consensus yet on seat-sharing between NDA partners in local body elections",
+   "summary": "Negotiations hit a roadblock over Mayor posts with parties remaining firm on their respective positions on the number of seats and posts to be contested; decision likely in two days",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam",
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/no-consensus-yet-on-seat-sharing-between-nda-partners-in-local-body-elections/article71584652.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Post"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 5
    }
   },
   {
@@ -2479,6 +2633,65 @@
    }
   },
   {
+   "id": "b61f48fd783d",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "00:33",
+   "title": "Deferred 100% US tariffs offer only temporary relief to India as Russian oil imports fall",
+   "summary": "Refiners began reducing their exposure while the bill was still moving through Congress, before Trump signed the Russia and Iran Sanctions act into a law.",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "Refiners began reducing their exposure while the bill was still moving through Congress, before Trump signed the Russia and Iran Sanctions act into a law."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/deferred-100-us-tariffs-offer-only-temporary-relief-to-india-as-russian-oil-imports-fall-101792263783066.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Import",
+    "Bill",
+    "Imports"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "c3f50ea47cee",
    "date": "2026-10-17",
    "pubDate": "2026-10-17",
@@ -2635,6 +2848,56 @@
    ],
    "angles": [
     "Years"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "374dfa3aeb84",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "01:55",
+   "title": "Women’s quota for GVMC Mayor post sets off lobbying; senior leaders push spouses and daughters",
+   "summary": "The TDP cites its hold on Visakhapatnam’s core constituencies to claim the post; the BJP, the Jana Sena and the YSRCP have aspirants too",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/womens-quota-for-gvmc-mayor-post-sets-off-lobbying-senior-leaders-push-spouses-and-daughters/article71579297.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Post"
    ],
    "score": 54,
    "band": "medium",
@@ -3219,6 +3482,65 @@
    }
   },
   {
+   "id": "206f4800830c",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "02:42",
+   "title": "Authorities gear up for heavy rush of nominations on final day",
+   "summary": "Candidates to file papers for mayor, chairperson and ward member posts across urban local bodies Vijayawada records 261 nominations over two days; Machilipatnam receives 142",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/authorities-gear-up-for-heavy-rush-of-nominations-on-final-day-1133381",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    },
+    {
+     "code": "G1-A4",
+     "exam": "G1",
+     "label": "European Trading Companies in India - Struggle for Supremacy (Bengal, Bombay, Madras, Mysore, Andhra, Nizam); Governors-General and Viceroys"
+    },
+    {
+     "code": "G2-M1A-U3",
+     "exam": "G2",
+     "label": "Advent of Europeans, Andhra under the Company, 1857 and its Impact on Andhra, Socio-Cultural Awakening, Justice Party / Self-Respect Movement, Nationalist Movement in Andhra 1885-1947"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Post"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "61f158f2b685",
    "date": "2026-10-17",
    "pubDate": "2026-10-17",
@@ -3551,6 +3873,58 @@
     "angles": 5,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "f311cbf280ab",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "00:03",
+   "title": "DR Congo Ebola vaccine trial to begin within weeks: WHO",
+   "summary": "Ervebo, a vaccine approved for use against the more common Zaire strain of Ebola, will go through a full-scale human trial in the DRC to see if it offers any cross-protection against Bundibugyo",
+   "facts": [],
+   "source": "The Hindu — Science & Technology",
+   "sourceId": "hindu-scitech",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/sci-tech/health/dr-congo-ebola-vaccine-trial-to-begin-within-weeks-who/article71583980.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Vaccine",
+    "WHO"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -4667,6 +5041,112 @@
    }
   },
   {
+   "id": "62169177a30a",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "03:41",
+   "title": "Land shortage cripples Agriculture Ministry’s weather network rollout",
+   "summary": "Project is a year behind deadline, with over 96% of planned rain gauges and weather stations yet to be installed; private partners say IMD is retrospectively insisting that sensors be installed on the ground, not on rooftops",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Science & Technology",
+    "The Hindu — Energy & Environment"
+   ],
+   "url": "https://www.thehindu.com/sci-tech/energy-and-environment/land-shortage-cripples-agriculture-ministry-weather-network/article71588890.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "18aa70376644",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-18",
+   "time": "03:08",
+   "title": "Protecting water bodies is a shared responsibility",
+   "summary": "State Information Commissioner PS Naidu urges collective action to prevent water pollution during a reservoir cleanup drive at Meghadrigedda in Visakhapatnam.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/protecting-water-bodies-is-a-shared-responsibility-1133395",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Reservoir",
+    "Pollution"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "209a73484b13",
    "date": "2026-10-17",
    "pubDate": "2026-10-17",
@@ -5057,6 +5537,64 @@
    "topics": [],
    "angles": [
     "RBI"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ddfbfd678cee",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-17",
+   "time": "09:19",
+   "title": "Beyond monsoon forecasts: How AI can transform climate risk management for farmers",
+   "summary": "A platform can give farmers the know-how to protect the land, produce and community that sustain their income with human-assistance for decisions",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/beyond-monsoon-forecasts-how-ai-can-transform-climate-risk-management-for-farmers/article71593067.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community"
    ],
    "score": 44,
    "band": "medium",
@@ -5537,21 +6075,26 @@
    }
   },
   {
-   "id": "25a0c6c22b88",
+   "id": "d9dacd4fff69",
    "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "time": "10:06",
-   "title": "Kerala Textile & Garments Association warns UPI charges could fuel inflation, drive merchants back to cash",
-   "summary": "KTGA State president Pattabhiraman T.S. said UPI had evolved into essential public digital infrastructure and had generated significant benefits for governments, banks, payment platforms and the wider economy",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
+   "pubDate": "2026-10-18",
+   "time": "02:42",
+   "title": "Income Tax tribunal orders ₹13,000-crore tax relief to Maruti Suzuki",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Income Tax tribunal orders ₹13,000-crore tax relief to Maruti Suzuki"
+    }
+   ],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/kerala/kerala-textile-garments-association-warns-upi-charges-could-fuel-inflation-drive-merchants-back-to-cash/article71564637.ece",
-   "bucket": "dynamic",
-   "scope": "dynamic",
+   "url": "https://www.thehindu.com/business/income-tax-tribunal-orders-13000-crore-tax-relief-to-maruti-suzuki/article71589498.ece",
+   "bucket": "national",
+   "scope": "national",
    "ap": false,
    "exams": [
     "G1",
@@ -5560,13 +6103,13 @@
    "subject": "Economy",
    "subjects": [
     "Economy",
-    "Science, Tech & Environment"
+    "Polity, Society & IR"
    ],
    "units": [
     {
-     "code": "G1-F19",
+     "code": "G1-B4",
      "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
     },
     {
      "code": "G1-C4",
@@ -5581,58 +6124,7 @@
    ],
    "topics": [],
    "angles": [
-    "Banks"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "4f3929b27ec0",
-   "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "time": "20:50",
-   "title": "Keralam pollution control board asks Kochi Corporation to stop vehicle washing, waste dumping near Kadambrayar at Brahmapuram",
-   "summary": "Inspections conducted by Kerala State Pollution Control Board have revealed that vehicles used for collection and transportation of food waste are being washed at Kochi Corporation’s dumping site in Brahmapuram",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/kerala/keralam-pollution-control-board-asks-kochi-corporation-to-stop-vehicle-washing-waste-dumping-near-kadambrayar-at-brahmapuram/article71578110.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    },
-    {
-     "code": "G2-M2B-U4",
-     "exam": "G2",
-     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Pollution"
+    "Tribunal"
    ],
    "score": 44,
    "band": "medium",
@@ -5696,168 +6188,6 @@
     "importance": 0,
     "reuse": 5
    }
-  },
-  {
-   "id": "0e2f4813024c",
-   "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "time": "12:22",
-   "title": "Magnitude 7.6 earthquake shakes Panama, USGS reports",
-   "summary": "Visibly shaken residents of Panama City gathered outside as they waited for news of the quake’s impact on Friday (October 9, 2026)",
-   "facts": [],
-   "source": "The Hindu — International",
-   "sourceId": "hindu-international",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/international/panama-earthquake-toll-injuries-damage-update-october-10-2026/article71565816.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Reports"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "ce35a5d4b01e",
-   "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "time": "09:44",
-   "title": "Maharashtra Drought: IAS, IPS Officers to Donate One Day's Salary To Aid Farmers",
-   "summary": "Maharashtra's Relief and Rehabilitation Department officially declared 305 talukas as drought-affected on 14 October 2026.",
-   "facts": [],
-   "source": "NDTV — India",
-   "sourceId": "ndtv-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.ndtv.com/india-news/maharashtra-drought-ias-ips-officers-to-donate-one-days-salary-to-aid-farmers-12197836#publisher=newsstand",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "rehabilitation"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "66eb351e55cf",
-   "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "title": "National Institutions for Biodiversity Research in India",
-   "summary": "National institutions support biodiversity research through species surveys, taxonomic work, conservation planning and policy advice.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/national-institutions-for-biodiversity-research-in-india/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    },
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Biodiversity"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
   },
   {
    "id": "aa6d0831224c",
@@ -6028,6 +6358,51 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-university-extends-deadline-for-special-drive-examination/article71560638.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U4",
+     "exam": "G2",
+     "label": "Origin and Growth of the Andhra Movement - Andhra Mahasabhas, Prominent Leaders, Formation of Andhra State 1953, Role of Press, Library Movement, Folk and Tribal Culture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "6eb4beaa46b3",
+   "date": "2026-10-17",
+   "pubDate": "2026-10-17",
+   "time": "23:20",
+   "title": "Andhra University students attend Heartfulness session on stress management and well-being",
+   "summary": "Students learn ways to cope with stress, fear and negative thoughts",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/andhra-university-students-attend-heartfulness-session-on-stress-management-and-well-being/article71580528.ece",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -6594,137 +6969,6 @@
     "angles": 10,
     "ap": 20,
     "importance": 2,
-    "reuse": 0
-   }
-  },
-  {
-   "id": "fcc95997f8f6",
-   "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "time": "13:20",
-   "title": "AP SEC orders report on Punganuru incident, orders tighter security",
-   "summary": "Andhra Pradesh Chief Electoral Officer Anil Chandra Punetha has ordered tighter security after clashes during local body election nominations in Rayachoti and Punganur. He said action would follow once reports on the incidents had been received.",
-   "facts": [],
-   "source": "The Hans India — Andhra Pradesh",
-   "sourceId": "hans-ap",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehansindia.com/news/cities/chittoor/ap-sec-orders-report-on-punganuru-incident-orders-tighter-security-1133231",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M1B-U9",
-     "exam": "G2",
-     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
-    }
-   ],
-   "topics": [
-    "AP Panchayati Raj and local bodies"
-   ],
-   "angles": [
-    "Reports"
-   ],
-   "score": 35,
-   "band": "low",
-   "why": {
-    "syllabus": 8,
-    "angles": 5,
-    "ap": 20,
-    "importance": 0,
-    "reuse": 2
-   }
-  },
-  {
-   "id": "bf1ab0647c5f",
-   "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "time": "10:13",
-   "title": "NTA appeals to NCTE to protect service benefits of teachers appointed before TET",
-   "summary": "",
-   "facts": [
-    {
-     "angle": "Appointed",
-     "text": "NTA appeals to NCTE to protect service benefits of teachers appointed before TET"
-    }
-   ],
-   "source": "The Hindu — Andhra Pradesh",
-   "sourceId": "hindu-ap",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/andhra-pradesh/nta-appeals-to-ncte-to-protect-service-benefits-of-teachers-appointed-before-tet/article71564721.ece",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Appointed"
-   ],
-   "score": 31,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 20,
-    "importance": 6,
-    "reuse": 0
-   }
-  },
-  {
-   "id": "a7497067b20e",
-   "date": "2026-10-17",
-   "pubDate": "2026-10-17",
-   "time": "23:02",
-   "title": "WALTA Act will be strengthened to protect valuable trees, says MLC Nagababu",
-   "summary": "",
-   "facts": [],
-   "source": "The Hindu — Andhra Pradesh",
-   "sourceId": "hindu-ap",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/andhra-pradesh/walta-act-will-be-strengthened-to-protect-valuable-trees-says-mlc-nagababu/article71580141.ece",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 30,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 20,
-    "importance": 6,
     "reuse": 0
    }
   }
