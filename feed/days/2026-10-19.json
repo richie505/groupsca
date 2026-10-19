@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-19",
- "updated": "2026-10-19T14:50:17.500Z",
+ "updated": "2026-10-19T18:58:52.172Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 958,
+   "found": 968,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 29,
+   "found": 37,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 45,
    "error": null
   },
   {
@@ -102,8 +102,8 @@
   {
    "id": "mint-news",
    "name": "Mint — News",
-   "found": 35,
-   "error": null
+   "found": 0,
+   "error": "no items parsed"
   },
   {
    "id": "mint-economy",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 8,
    "error": null
   },
   {
@@ -355,6 +355,66 @@
     "angles": 20,
     "ap": 0,
     "importance": 9,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a31d98dda969",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "21:59",
+   "title": "India-New Zealand FTA: No tariff on Indian exports from Oct 20; Textile, pharma, leather exports to gain market access",
+   "summary": "The India-New Zealand FTA takes effect on 20 October, eliminating tariffs on all Indian exports to New Zealand. The move is expected to boost sectors including textiles, leather, pharmaceuticals and agriculture, improve exporters’ competitiveness and deepen bilateral trade ties.",
+   "facts": [],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/indianew-zealand-fta-no-tariff-on-indian-exports-from-oct-20-textile-pharma-leather-exports-to-gain-market-access-11792426906148.html",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Export",
+    "Exports",
+    "Agriculture"
+   ],
+   "score": 67,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 8,
     "reuse": 15
    }
   },
@@ -868,6 +928,66 @@
    }
   },
   {
+   "id": "20033114f0dd",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "20:19",
+   "title": "India probes Pernod Ricard, Diageo over Scotch whisky imports under UK trade pact",
+   "summary": "Indian tax authorities are examining whether Pernod Ricard and Diageo wrongly classified bulk Scotch whisky imports for lower tariffs. The investigation follows reduced import duties under the recent India-UK trade pact that came into effect on July 15. Tax inspectors visited Pernod Ricard’s headquarters and searched Diageo’s offices regarding these classifications.",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "The investigation follows reduced import duties under the recent India-UK trade pact that came into effect on July 15."
+    }
+   ],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/business/india-business/india-probes-pernod-ricard-diageo-over-scotch-whisky-imports-under-uk-trade-pact/articleshow/135050775.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Import",
+    "Pact",
+    "Imports",
+    "headquarters"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "70eeef9c5d0f",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -919,6 +1039,123 @@
     "angles": 20,
     "ap": 0,
     "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "c4eb76284b2f",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "21:38",
+   "title": "Indian Railways warns passengers against playing audio on speaker mode, with fines up to ₹1,000",
+   "summary": "Indian Railways has issued an advisory cautioning passengers against playing music, videos, or other audio on mobile phones in speaker mode on trains and railway premises. A passenger found causing a nuisance by doing so can be removed from railway premises and will be fined up to one thousand rupees.",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/indian-railways-warns-passengers-against-playing-audio-on-speaker-mode-with-fines-up-to-%e2%82%b91000/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Railways and multimodal transport"
+   ],
+   "angles": [
+    "Railways",
+    "Speaker"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d12d2858c494",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "20:58",
+   "title": "Agriculture Minister Shivraj Singh Chouhan launches upgraded Agri Welfare Portal for farmers",
+   "summary": "Agriculture and Farmers Welfare Minister Shivraj Singh Chouhan today launched the upgraded Agri Welfare Portal for farmers. The portal aims to provide farmers across the country with direct, easy access to government schemes, financial assistance and reliable agricultural information on their mobile phones, eliminating procedural hurdles and the role of intermediaries.",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "Agriculture and Farmers Welfare Minister Shivraj Singh Chouhan today launched the upgraded Agri Welfare Portal for farmers."
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://newsonair.gov.in/agriculture-minister-shivraj-singh-chouhan-launches-upgraded-agri-welfare-portal-for-farmers/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture",
+    "Schemes",
+    "financial assistance"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -1128,6 +1365,64 @@
     "ap": 0,
     "importance": 11,
     "reuse": 5
+   }
+  },
+  {
+   "id": "f27ed7cf108d",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "22:06",
+   "title": "Election Commission says SIR aims to ensure no eligible Indian citizen is excluded from electoral rolls",
+   "summary": "The Election Commission has shared FAQs on electoral process saying that Special Intensive Revision (SIR) seeks to ensure that no eligible Indian citizen is excluded from the electoral roll. It added that the aim of the exercise is to identify and remove any invalid entries like those relating to deceased persons, duplicate registrations, permanently shifted […]",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "It added that the aim of the exercise is to identify and remove any invalid entries like those relating to deceased persons, duplicate registrations, permanently shifted […]"
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/election-commission-says-sir-aims-to-ensure-no-eligible-indian-citizen-is-excluded-from-electoral-rolls/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Election Commission",
+    "PERSONS"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
    }
   },
   {
@@ -1861,6 +2156,113 @@
    }
   },
   {
+   "id": "ec0955b962d7",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "22:05",
+   "title": "Social Justice Minister Dr Virendra Kumar reviews implementation of key central welfare schemes",
+   "summary": "Union Minister of Social Justice and Empowerment Dr Virendra Kumar today chaired a high-level meeting focused on strengthening the implementation of key Central Government schemes. The meeting also focused on enhancing inter-departmental coordination and ensuring that the benefits of welfare programmes reach all eligible beneficiaries. During the meeting held in New Delhi, Dr Kumar […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/social-justice-minister-dr-virendra-kumar-reviews-implementation-of-key-central-welfare-schemes/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "Union Minister",
+    "Schemes",
+    "Social Justice"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "d85862194091",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "22:19",
+   "title": "Amitabh Kant on how India’s semiconductor future is taking shape: 6 states with 12 projects, ₹1.64 lakh cr investments",
+   "summary": "Gujarat emerges as the largest semiconductor hub, with six approved projects, including Tata-PSMC’s ₹91,526 crore fabrication plant.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Gujarat emerges as the largest semiconductor hub, with six approved projects, including Tata-PSMC’s ₹91,526 crore fabrication plant."
+    }
+   ],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/amitabh-kant-on-how-india-s-semiconductor-future-is-taking-shape-6-states-with-12-projects-1-64-lakh-cr-investments-11792420787138.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "States"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
    "id": "5dde995f72b8",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -1921,6 +2323,65 @@
    "why": {
     "syllabus": 24,
     "angles": 0,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "58d6ab9f7b1d",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "21:11",
+   "title": "India’s agrivoltaic capacity is expected to be more than 5-gigawatts in next 3-4 years: MNRE Secretary",
+   "summary": "“It is difficult to estimate but it should be upwards of 5-gigawatts in the next 3-4 years. It depends on state’s enthusiasm, ability to quickly notify a feed-in tariff,” said Union Ministry of New and Renewable Energy Secretary Santosh Sarangi",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "“It is difficult to estimate but it should be upwards of 5-gigawatts in the next 3-4 years."
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Economy",
+    "The Hindu — Business"
+   ],
+   "url": "https://www.thehindu.com/business/Industry/indias-agrivoltaic-capacity-is-expected-to-be-more-than-5-gigawatts-in-next-3-4-years-5-gigawatts/article71602893.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years"
+   ],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 5,
     "ap": 0,
     "importance": 7,
     "reuse": 15
@@ -2207,6 +2668,58 @@
    }
   },
   {
+   "id": "645b7fb4faec",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "18:12",
+   "title": "Residents fight California AI data centre; judge demands environmental review",
+   "summary": "A judge in California has ordered an extensive environmental review for an AI data center proposed in Imperial County. Concerns among local residents center on water resource impacts, emissions, and community disturbances. Developer Sebastian Rucci claims the project will generate jobs and tax income while enhancing AI infrastructure.",
+   "facts": [],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/technology/tech-news/a-california-developer-proposed-a-nearly-1-million-square-foot-ai-data-centre-beside-homes-promising-1600-construction-jobs-residents-fought-back-and-a-judge-has-now-required-a-full-environmental-review/articleshow/135049227.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "b9c890faea3d",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -2272,6 +2785,111 @@
    }
   },
   {
+   "id": "a0a94b1307c4",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "20:55",
+   "title": "DRI foils major ganja trafficking attempt; seizes 591 kg cannabis smuggled from Nepal",
+   "summary": "The operation exposed an elaborate concealment method involving specially fabricated cavities in a truck suspected to be transporting the contraband from Nepal. Acting on specific intelligence that a truck carrying ganja from Nepal would enter Uttar Pradesh through Sonauli, DRI officers at Gorakhpur launched a coordinated surveillance operation with teams at Lucknow, Patna and Varanasi.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "This major seizure demonstrates DRI’s resolve to disrupt narcotics supply chains through intelligence-led enforcement and the detection of sophisticated concealment techniques employed by traffickers."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Finance",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2325281&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 0,
+    "ap": 0,
+    "importance": 9,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e5eca111958a",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "20:36",
+   "title": "Parliamentary Affairs Minister Kiren Rijiju says no constitutional deadline exists for proroguing Parliament after adjournment sine die",
+   "summary": "Parliamentary Affairs Minister Kiren Rijiju has clarified that there is no constitutional requirement prescribing a specific period within which a House must be prorogued following its adjournment sine die. Mr Rijiju said this in response to Congress President and Leader of the Opposition in Rajya Sabha Mallikarjun Kharge’s letter to Prime Minister Narendra Modi.",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/parliamentary-affairs-minister-kiren-rijiju-says-no-constitutional-deadline-exists-for-proroguing-parliament-after-adjournment-sine-die/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "31384b3c70a5",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -2331,6 +2949,56 @@
     "ap": 0,
     "importance": 3,
     "reuse": 5
+   }
+  },
+  {
+   "id": "29df223d4e6c",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "21:56",
+   "title": "India and Saudi Arabia review progress of proposed electricity interconnection initiative",
+   "summary": "Secretary, Ministry of Power, Pankaj Agarwal today held a virtual bilateral meeting with the Assistant Minister of Energy for Electricity Affairs of Saudi Arabia, Nasser Al-Qahtani. During the meeting they reviewed the progress of the proposed India-Saudi Arabia electrical interconnection initiative and explored ways to strengthen cooperation in the power sector.",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/india-and-saudi-arabia-review-progress-of-proposed-electricity-interconnection-initiative/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 40,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 0,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
    }
   },
   {
@@ -3008,396 +3676,6 @@
    "band": "low",
    "why": {
     "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "52d20816fd0c",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "North Korea Tests AI-Enabled Zam-2.0 Torpedo",
-   "summary": "North Korea conducted an underwater test of the Zam-2.0, a new high-speed precision-guided torpedo system, on 15 October 2026. The country’s state news agency, KCNA, anno",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/north-korea-tests-ai-enabled-zam-2-0-torpedo/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "20101fa64d6b",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Tamil Nadu CM Inaugurates Periyar Arivulagam in Coimbatore",
-   "summary": "Tamil Nadu Chief Minister C Joseph Vijay inaugurated Periyar Arivulagam, a library and science centre, in Gandhipuram, Coimbatore, on 16 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/tamil-nadu-cm-inaugurates-periyar-arivulagam-in-coimbatore/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "History & Culture",
-   "subjects": [
-    "History & Culture"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "32963a0391a9",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Army Conducts Akhand Prahar-II Exercise in Jaisalmer",
-   "summary": "The Indian Army conducted Akhand Prahar-II in Jaisalmer, Rajasthan, on or around 18 October 2026. The exercise involved the Army’s Black Mace Brigade and Battle Axe Divis",
-   "facts": [
-    {
-     "angle": "Summit / exercise",
-     "text": "The exercise involved the Army’s Black Mace Brigade and Battle Axe Divis"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/army-conducts-akhand-prahar-ii-exercise-in-jaisalmer/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "ffaf28eba840",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "CISF to Introduce Sector-Based Commands from November 1",
-   "summary": "The Central Industrial Security Force (CISF) will introduce an organisational restructuring on 1 November 2026. Approved by the Ministry of Home Affairs (MHA), the change",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/cisf-to-introduce-sector-based-commands-from-november-1/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "bb9daed7a6ce",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Delhi Inaugurates 200-Tonne-Per-Day Biogas Plant",
-   "summary": "Delhi Chief Minister Rekha Gupta inaugurated a biogas plant with a capacity of 200 tonnes per day (TPD) at Goyla Dairy on 19 October 2026 under the Seva Sankalp Abhiyan.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "Delhi Chief Minister Rekha Gupta inaugurated a biogas plant with a capacity of 200 tonnes per day (TPD) at Goyla Dairy on 19 October 2026 under the Seva Sankalp Abhiyan."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/delhi-inaugurates-200-tonne-per-day-biogas-plant/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "bfcc45b83ab5",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "INS Sudarshini Visits Oman During Lokayan-2026",
-   "summary": "INS Sudarshini, a three-masted sail training ship of the Indian Navy, completed a port call at Salalah, Oman, during its ten-month Lokayan-2026 transoceanic deployment.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/ins-sudarshini-visits-oman-during-lokayan-2026/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "c54468a64bb6",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Raji Doshi Wins 3M Young Scientist Challenge for Ocean Solution",
-   "summary": "On October 14, 2026, 13-year-old Raji Doshi from Farmington, Connecticut, was named America’s Top Young Scientist and won the 2026 3M Young Scientist Challenge.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/raji-doshi-wins-3m-young-scientist-challenge-for-ocean-solution/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "cf88bded52a3",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Rare Spot-bellied Eagle-Owl Photographed in Kozhikode",
-   "summary": "A Spot-bellied Eagle-Owl (&#8220;Bubo nipalensis&#8221; or &#8220;Ketupa nipalensis&#8221;) was photographed in Janakikkad forest, Kozhikode district, on 16 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/rare-spot-bellied-eagle-owl-photographed-in-kozhikode/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "366aae48cc4f",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Sangeet Natak Akademi Selects 2024 Yuva Puraskar Artists",
-   "summary": "The Sangeet Natak Akademi General Council selected 106 young artists for the Ustad Bismillah Khan Yuva Puraskar for 2024 and 2025 at a meeting held in New Delhi from 22 t",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/sangeet-natak-akademi-selects-2024-yuva-puraskar-artists/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "d7745f2ef0af",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Veteran Tamil music composer Deva dies at 75",
-   "summary": "Tamil music composer Deva, whose full name was Devanesan Chokkalingam, died in Chennai on 17 October 2026, aged 75. He was admitted to a private hospital that morning aft",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/veteran-tamil-music-composer-deva-dies-at-75/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
     "angles": 0,
     "ap": 0,
     "importance": 0,
