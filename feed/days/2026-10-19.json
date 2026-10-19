@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-19",
- "updated": "2026-10-19T18:58:52.172Z",
+ "updated": "2026-10-19T21:53:40.961Z",
  "sources": [
   {
    "id": "pib",
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 46,
    "error": null
   },
   {
@@ -102,8 +102,8 @@
   {
    "id": "mint-news",
    "name": "Mint — News",
-   "found": 0,
-   "error": "no items parsed"
+   "found": 35,
+   "error": null
   },
   {
    "id": "mint-economy",
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 51,
+   "found": 23,
    "error": null
   },
   {
@@ -2491,6 +2491,58 @@
    }
   },
   {
+   "id": "a88c1297bd78",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "23:28",
+   "title": "FSSAI warns nutraceutical firms over labelling violations, threatens action for non-compliance",
+   "summary": "FSSAI warns against violation of mandatory labelling norms for nutraceuticals, health supplements",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/india/fssai-warns-nutraceutical-firms-over-labelling-violations-threatens-action-for-noncompliance-11792431408220.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Health"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "3237c760bcea",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -2656,6 +2708,59 @@
    "topics": [],
    "angles": [
     "Agriculture"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "704c60161bb0",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "20:35",
+   "title": "Nepal bans India-made Priyagold biscuits after FSSAI flags food safety violations",
+   "summary": "Issuing a notice on Monday, the Food Technology and Quality Control Department of Nepal imposed restrictions on import, sales, and distribution of Priya Gold biscuits manufactured by India's Surya Food and Agro Ltd, describing the product as sub-standard.",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/world/nepal-bans-india-made-priyagold-biscuits-after-fssai-flags-food-safety-violations-11792419544899.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Import"
    ],
    "score": 44,
    "band": "medium",
@@ -3595,88 +3700,6 @@
    "why": {
     "syllabus": 0,
     "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "ff81ab469dab",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Trade Margin Rationalisation Covers 137 Anti-Cancer Drugs",
-   "summary": "On 17 October 2026, the National Pharmaceutical Pricing Authority (NPPA) announced Trade Margin Rationalisation (TMR) for 137 non-scheduled anti-cancer drugs.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/trade-margin-rationalisation-covers-137-anti-cancer-drugs/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "trade"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "eb1aebbdca19",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Japan to Launch MMX Mission to Sample Phobos",
-   "summary": "Japan Aerospace Exploration Agency (JAXA) is scheduled to launch the Martian Moons eXploration (MMX) mission on 20 October 2026, Japan Standard Time.",
-   "facts": [
-    {
-     "angle": "Scheme / launch",
-     "text": "Japan Aerospace Exploration Agency (JAXA) is scheduled to launch the Martian Moons eXploration (MMX) mission on 20 October 2026, Japan Standard Time."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/japan-to-launch-mmx-mission-to-sample-phobos/",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
     "ap": 0,
     "importance": 0,
     "reuse": 0
