@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-20",
- "updated": "2026-10-20T05:37:41.092Z",
+ "updated": "2026-10-20T12:50:13.211Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 972,
+   "found": 976,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 40,
+   "found": 35,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 46,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 8,
+   "found": 9,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 27,
+   "found": 31,
    "error": null
   },
   {
@@ -265,6 +265,210 @@
     "angles": 20,
     "ap": 0,
     "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "3d64184ee079",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "15:59",
+   "title": "India-UK trade deal: Indian exports rise 8%, imports fall 17% in first 2 months",
+   "summary": "The CETA provides zero-duty access for nearly 99% of India’s exports, covering almost 100% of trade value",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/indiauk-trade-deal-indian-exports-rise-8-imports-fall-17-in-first-2-months-101792492179433.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Import",
+    "Export",
+    "Exports",
+    "Imports"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "89fbbf8edba1",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "13:16",
+   "title": "25th SCO Council of Heads of Government Meeting: Raksha Mantri calls for unified action to dismantle the entire ecosystem of terrorism",
+   "summary": "He was addressing the 25th Meeting of the Council of Heads of Government (CHG) of SCO in Dushanbe, Tajikistan, on October 20, 2026. “Terrorism results in the loss of innocent lives and disrupts investment & commerce. It radicalises societies and deprives youth of the opportunities they rightfully deserve.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Shri Rajnath Singh recalled the deliberations at the SCO Summit in Bishkek in August-September 2026, when Prime Minister Shri Narendra Modi underlined the need for concrete steps by the Organisation on issues related to security, connectivity, and opportunity."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "Shri Rajnath Singh welcomed the decisions taken at the SCO Summit in Bishkek to establish the Universal Centre in Tashkent and the Anti-Drug Centre in Dushanbe as permanent bodies of the Organisation."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "He also acknowledged the organisation of the first-ever SCO Asian Economic Dialogue."
+    },
+    {
+     "angle": "Figures",
+     "text": "“Our success should be measured by the opportunities we create for youth, new markets we open for our entrepreneurs, technologies we make available to our farmers and small-scale business owners, and the connections we foster among societies,” said Shri Rajnath Singh."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Defence",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2325428&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "States"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 11,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "581114d50419",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "14:15",
+   "title": "India’s Nuclear Programme Dedicated to Peaceful Purposes, Says Union Minister Dr. Jitendra Singh; Nuclear Energy to Power AI-Driven Future",
+   "summary": "In an exclusive conversation on the sidelines of ‘Bloomberg Economy Forum 2026’, the Minister said nuclear energy would play an increasingly important role in meeting India’s future energy requirements, including the growing demand for reliable electricity to support Artificial Intelligence (AI) and data centres.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "With the country targeting 100 GW of nuclear power capacity by 2047 and Net Zero emissions by 2070, nuclear energy is expected to complement other sources of power by providing a continuous and reliable supply of clean electricity."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Department of Atomic Energy",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2325436&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Union Minister",
+    "Artificial Intelligence"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -477,6 +681,62 @@
    "digest": true
   },
   {
+   "id": "6ec490f0cf6c",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "18:12",
+   "title": "Industries in Gujarat start curtailing power use despite State’s 79.5 GW installed capacity",
+   "summary": "Gujarat recorded an all-time high peak electricity demand of 29,822 MW on October 16, up 36.6 per cent% from 21,822 MW a year earlier",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Gujarat recorded an all-time high peak electricity demand of 29,822 MW on October 16, up 36.6 per cent% from 21,822 MW a year earlier"
+    }
+   ],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/industries-in-gujarat-start-curtailing-power-use-despite-states-795-gw-installed-capacity/article71604323.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Industries"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
    "id": "ab985e3f520a",
    "date": "2026-10-20",
    "pubDate": "2026-10-20",
@@ -522,6 +782,172 @@
     "angles": 0,
     "ap": 0,
     "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ae3fe0532f5c",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "07:07",
+   "title": "'Nashe ka highway': Cops found lying intoxicated, service INSAS rifle left unattended",
+   "summary": "In Ambikapur, two policemen were suspended after being found intoxicated near a bus stand. The personnel were assigned to escort a prisoner and had returned to the area. Local residents discovered the officers in an apparently inebriated state, with a service rifle unattended nearby. Following the incident, local police secured the rifle and reported the matter to their superiors.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Following the incident, local police secured the rifle and reported the matter to their superiors."
+    }
+   ],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/city/raipur/nashe-ka-highway-cops-found-lying-intoxicated-service-insas-rifle-left-unattended-both-suspended/articleshow/135059376.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Discovered"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "cbf83b0cdbb1",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "16:52",
+   "title": "Failed 4 Times, But Never Quit: Meet Maharashtra Farmer's Son Who Cracked UPSC",
+   "summary": "UPSC Success Story: Coming from a financially disadvantaged farming family, Bhikan Rojekar achieved success on his fifth attempt through perseverance and sustained hard work.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/education/failed-4-times-but-never-quit-meet-maharashtra-farmers-son-who-cracked-upsc-12210692#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Family"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "3d1a804c65cf",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "11:02",
+   "title": "FSSAI asks food operators to maintain cold chain for perishables",
+   "summary": "Food businesses told to maintain prescribed temperatures across supply chain; states asked to act against violations",
+   "facts": [],
+   "source": "The Hindu — Science & Technology",
+   "sourceId": "hindu-scitech",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/fssai-asks-food-operators-to-maintain-cold-chain-for-perishables/article71600265.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "States"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -577,6 +1003,270 @@
    }
   },
   {
+   "id": "a3768a767847",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "13:46",
+   "title": "Defence Minister Rajnath Singh calls for unified action to dismantle ecosystem of terrorism at SCO meet",
+   "summary": "Defence Minister Rajnath Singh today called for unified action to dismantle the entire ecosystem of terrorism. Addressing the 25th Meeting of the Council of Heads of Government of SCO in Dushanbe, Tajikistan, Mr Singh stressed that there can be no justification for terrorism, no double standards in addressing it, and no place for those who […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/defence-minister-rajnath-singh-calls-for-practical-cooperation-among-sco-members-to-deliver-tangible-benefits-to-people/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e7590b6079b6",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "15:03",
+   "title": "Nepal Finance Minister To Talk About Bilateral Opportunities At NDTV World Summit",
+   "summary": "The NDTV World Summit 2026 will be held in New Delhi on October 22 and 23. The summit will bring together political leaders, economists, policymakers and other global voices to discuss important issues facing India and the world.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The NDTV World Summit 2026 will be held in New Delhi on October 22 and 23."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The summit will bring together political leaders, economists, policymakers and other global voices to discuss important issues facing India and the world."
+    }
+   ],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/world-news/nepal-finance-minister-swarnim-wagle-to-talk-about-bilateral-opportunities-at-ndtv-world-summit-12205250#publisher=newsstand",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Economist",
+    "Economists",
+    "Finance Minister",
+    "Summit"
+   ],
+   "score": 41,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 20,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "f5b770fff0ab",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "India Reaffirms Commitment to Inclusive Global Trade Rules at UNGA",
+   "summary": "On 20 October 2026, Rajya Sabha MP Naveen K Jain delivered India’s national statement at the 81st session of the United Nations General Assembly (UNGA), reaffirming suppo",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-reaffirms-commitment-to-inclusive-global-trade-rules-at-unga/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade"
+   ],
+   "score": 28,
+   "band": "low",
+   "why": {
+    "syllabus": 18,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
+   "id": "83502a55fabb",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "AstraZeneca and Oracle Launch AI Clinical Trials in Abu Dhabi",
+   "summary": "On 20 October 2026, AstraZeneca and Oracle announced a global collaboration using artificial intelligence (AI) and real-world data to support clinical research.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/astrazeneca-and-oracle-launch-ai-clinical-trials-in-abu-dhabi/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Artificial Intelligence"
+   ],
+   "score": 22,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
+   "id": "06c552e30783",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "India to Host First SCO Civilisational Dialogue Forum",
+   "summary": "India will host the first Shanghai Cooperation Organisation (SCO) Civilisational Dialogue Forum by the end of 2026. Union Defence Minister Rajnath Singh announced the pla",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "India will host the first Shanghai Cooperation Organisation (SCO) Civilisational Dialogue Forum by the end of 2026."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-to-host-first-sco-civilisational-dialogue-forum/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 17,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
    "id": "19541aefa912",
    "date": "2026-10-20",
    "pubDate": "2026-10-20",
@@ -616,6 +1306,88 @@
     "ap": 0,
     "importance": 0,
     "reuse": 5
+   },
+   "digest": true
+  },
+  {
+   "id": "d3be783629d5",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "Nearly 100 Years Later, Tiger Spotted in Maharashtra’s Beed District",
+   "summary": "A four-year-old male tiger weighing more than 200 kg was captured by a camera trap on 20 August 2026 in the Brahmgaon forest range of Ashti tehsil, Beed district, Maharas",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/nearly-100-years-later-tiger-spotted-in-maharashtras-beed-district/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Years"
+   ],
+   "score": 9,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "a927f6b28fe0",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "How Did Himachal Pradesh Increase Cheer Pheasant Survival?",
+   "summary": "Himachal Pradesh’s Cheer pheasant conservation programme recorded a rise in the survival rate of released birds from 11.11% in 2019–20 to 100% in 2024–25.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/how-did-himachal-pradesh-increase-cheer-pheasant-survival/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 8,
+   "band": "low",
+   "why": {
+    "syllabus": 6,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 2
    },
    "digest": true
   },
@@ -701,6 +1473,45 @@
     "angles": 0,
     "ap": 0,
     "importance": 2,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "56f5c284a8d8",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "Astronomers Identify Green White Dwarf 280 Light-Years Away",
+   "summary": "Astronomers have identified WD J1330+6435, a white dwarf that appears chartreuse green to human eyes. It is about 280 light-years from Earth in the constellation Draco.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/astronomers-identify-green-white-dwarf-280-light-years-away/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Years"
+   ],
+   "score": 5,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
     "reuse": 0
    },
    "digest": true
@@ -825,6 +1636,44 @@
    "digest": true
   },
   {
+   "id": "20e082b029d8",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "Beijing May Become a Super-Aged Society by 2035",
+   "summary": "Beijing is projected to become a super-aged society by 2035, when approximately one-third of its residents are expected to be aged 60 or older.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/beijing-may-become-a-super-aged-society-by-2035/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 0,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
    "id": "ffaf28eba840",
    "date": "2026-10-20",
    "pubDate": "2026-10-20",
@@ -906,6 +1755,49 @@
    "digest": true
   },
   {
+   "id": "7683c09088d7",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "European Bee-eater Makes First Recorded Appearance in Chennai",
+   "summary": "A juvenile European bee-eater (Merops apiaster) was recorded for the first time in Chennai, Tamil Nadu, on 11 October 2026. Birders spotted it near the Broken Bridge, clo",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "A juvenile European bee-eater (Merops apiaster) was recorded for the first time in Chennai, Tamil Nadu, on 11 October 2026."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/european-bee-eater-makes-first-recorded-appearance-in-chennai/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 0,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
    "id": "d190fae23bb9",
    "date": "2026-10-20",
    "pubDate": "2026-10-20",
@@ -918,6 +1810,87 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://www.gktoday.in/india-begins-red-list-assessment-of-1211-bird-species/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 0,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "00070a76cf11",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "India-Australia Exercise AUSTRAHIND 2026 Begins in Keralam",
+   "summary": "The fifth edition of the India-Australia joint military exercise AUSTRAHIND 2026 began on 19 October 2026 at the Foreign Training Node in Thiruvananthapuram, Keralam.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The fifth edition of the India-Australia joint military exercise AUSTRAHIND 2026 began on 19 October 2026 at the Foreign Training Node in Thiruvananthapuram, Keralam."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-australia-exercise-austrahind-2026-begins-in-keralam/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 0,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "d15f07b18cbd",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "title": "US Orders DeepSeek Removal from Civilian Government IT Systems",
+   "summary": "On 19 October 2026, the US Department of Homeland Security (DHS) made public an order directing federal civilian agencies to remove DeepSeek products and third-party serv",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/us-orders-deepseek-removal-from-civilian-government-it-systems/",
    "bucket": "national",
    "scope": "national",
    "ap": false,
