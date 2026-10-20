@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-19",
- "updated": "2026-10-19T21:53:40.961Z",
+ "updated": "2026-10-20T05:37:41.092Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 968,
+   "found": 972,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 37,
+   "found": 40,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 47,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 23,
+   "found": 27,
    "error": null
   },
   {
@@ -209,6 +209,75 @@
   }
  ],
  "items": [
+  {
+   "id": "b08d07127e9d",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-20",
+   "time": "00:31",
+   "title": "India-New Zealand free trade agreement takes effect, eliminating tariffs on Indian exports",
+   "summary": "New Zealand has pledged $20 billion in investment over 15 years, while both countries aim to double bilateral trade to NZ$7 billion by 2030.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "New Zealand has pledged $20 billion in investment over 15 years, while both countries aim to double bilateral trade to NZ$7 billion by 2030."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/india-new-zealand-free-trade-agreement-takes-effect-eliminating-tariffs-on-indian-exports-101792436494413.html",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [
+    "India-EU relations and the FTA"
+   ],
+   "angles": [
+    "trade",
+    "Agreement",
+    "Export",
+    "Years",
+    "Exports"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 20,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
   {
    "id": "9a782a92d78c",
    "date": "2026-10-19",
@@ -1285,6 +1354,55 @@
    }
   },
   {
+   "id": "1b679bfc469e",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-20",
+   "time": "04:31",
+   "title": "29 nominations filed for Vizag Mayor post",
+   "summary": "A total of 29 nominations were filed for the post of Mayor, of which eight were rejected in accordance with the election rules. The remaining 21 nominations were found valid, he stated.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/29-nominations-filed-for-vizag-mayor-post-1134057",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies",
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [
+    "Post"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "6cf663e31a2e",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -2329,6 +2447,82 @@
    }
   },
   {
+   "id": "bc6f18df4433",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-20",
+   "time": "01:45",
+   "title": "Texas family sells 650-acre pecan ranch for $10M+ to become state park",
+   "summary": "Texas Parks and Wildlife Foundation has acquired a 650-acre ranch on Lake Palestine for over $10 million. This land will become a new state park, enhancing public access to natural resources. Initially owned by the Pollard family since 1940, the property has significant natural features and wildlife habitats.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Texas Parks and Wildlife Foundation has acquired a 650-acre ranch on Lake Palestine for over $10 million."
+    },
+    {
+     "angle": "Figures",
+     "text": "The state parks department plans to develop guided tours, campsites, and trails after the 2027 purchase completion."
+    }
+   ],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/world/us/in-1940-a-texas-family-acquired-the-ranch-where-generations-grew-pecan-trees-and-spent-holidays-86-years-later-they-sold-its-650-lakefront-acres-for-more-than-10-million-so-the-land-can-become-a-state-park/articleshow/135055798.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Features",
+    "Lake",
+    "Family"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "58d6ab9f7b1d",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -2773,6 +2967,62 @@
    }
   },
   {
+   "id": "0f2b1207a197",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-19",
+   "time": "23:53",
+   "title": "Onion prices rise 10% as delayed kharif arrivals tighten supplies",
+   "summary": "Traders expect prices to climb another ₹8-10 per kg before larger arrivals after Diwali ease pressure. Festive demand may keep prices elevated in the short term",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Traders expect prices to climb another ₹8-10 per kg before larger arrivals after Diwali ease pressure."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/onion-prices-rise-10-as-delayed-kharif-arrivals-tighten-supplies-101792434205778.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Trader"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "645b7fb4faec",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -2946,6 +3196,58 @@
    }
   },
   {
+   "id": "f409b10499cc",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-20",
+   "time": "04:22",
+   "title": "Kalibari exudes a festive charm with ‘Dhaak’",
+   "summary": "The four-day-long celebrations at Waltair Kalibari highlighted the tradition followed by Bengali community during Dussehra. Earlier, Divisional Railway Manager of South Coast Railway Lalit Bohra inaugurated the puja celebrations at the Kalibari.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/kalibari-exudes-a-festive-charm-with-dhaak-1134053",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "e5eca111958a",
    "date": "2026-10-19",
    "pubDate": "2026-10-19",
@@ -3104,6 +3406,154 @@
     "ap": 0,
     "importance": 7,
     "reuse": 15
+   }
+  },
+  {
+   "id": "799afab85081",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-20",
+   "time": "04:29",
+   "title": "AUAANA celebrates 100 years of academic excellence in New Jersey",
+   "summary": "Alumni representing different generations and professional backgrounds shared their journeys from university education to professional success and reflected on the role Andhra University played in shaping their careers.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Alumni representing different generations and professional backgrounds shared their journeys from university education to professional success and reflected on the role Andhra University played in shaping their careers."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/auaana-celebrates-100-years-of-academic-excellence-in-new-jersey-1134056",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U4",
+     "exam": "G2",
+     "label": "Origin and Growth of the Andhra Movement - Andhra Mahasabhas, Prominent Leaders, Formation of Andhra State 1953, Role of Press, Library Movement, Folk and Tribal Culture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University",
+    "Years"
+   ],
+   "score": 38,
+   "band": "low",
+   "why": {
+    "syllabus": 6,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
+   }
+  },
+  {
+   "id": "3cae7c3ac1d8",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-20",
+   "time": "03:49",
+   "title": "Elections to 28 ZPTC, 419 MPTC seats in Palnadu",
+   "summary": "12.42 lakh voters expected to exercise their franchise",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "12.42 lakh voters expected to exercise their franchise"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/elections-to-28-zptc-419-mptc-seats-in-palnadu-1134045",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "2f7a49c3bb35",
+   "date": "2026-10-19",
+   "pubDate": "2026-10-20",
+   "time": "03:24",
+   "title": "Alliance victory essential for development: Minister Durgesh",
+   "summary": "He said development and welfare were being implemented simultaneously in the State and stressed that electing alliance candidates to local bodies would help ensure that government welfare schemes and development benefits reached people more effectively at the grassroots level.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/rajahmundry/alliance-victory-essential-for-development-minister-durgesh-1134035",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Schemes"
+   ],
+   "score": 35,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 2
    }
   },
   {
@@ -3573,132 +4023,6 @@
    "band": "low",
    "why": {
     "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "a927f6b28fe0",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "How Did Himachal Pradesh Increase Cheer Pheasant Survival?",
-   "summary": "Himachal Pradesh’s Cheer pheasant conservation programme recorded a rise in the survival rate of released birds from 11.11% in 2019–20 to 100% in 2024–25.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/how-did-himachal-pradesh-increase-cheer-pheasant-survival/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 8,
-   "band": "low",
-   "why": {
-    "syllabus": 6,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 2
-   },
-   "digest": true
-  },
-  {
-   "id": "01d6b84b5396",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Iranian Lawmakers Approve Mehrdad Akhlaghi as Defence Minister",
-   "summary": "Iran’s Islamic Consultative Assembly approved Mehrdad Akhlaghi as Minister of Defense and Armed Forces Logistics on 18 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/iranian-lawmakers-approve-mehrdad-akhlaghi-as-defence-minister/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-D4",
-     "exam": "G1",
-     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 8,
-   "band": "low",
-   "why": {
-    "syllabus": 6,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 2
-   },
-   "digest": true
-  },
-  {
-   "id": "56f5c284a8d8",
-   "date": "2026-10-19",
-   "pubDate": "2026-10-19",
-   "title": "Astronomers Identify Green White Dwarf 280 Light-Years Away",
-   "summary": "Astronomers have identified WD J1330+6435, a white dwarf that appears chartreuse green to human eyes. It is about 280 light-years from Earth in the constellation Draco.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/astronomers-identify-green-white-dwarf-280-light-years-away/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Years"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
     "angles": 5,
     "ap": 0,
     "importance": 0,
