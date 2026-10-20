@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-20",
- "updated": "2026-10-20T17:46:33.405Z",
+ "updated": "2026-10-20T21:03:47.323Z",
  "sources": [
   {
    "id": "pib",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 8,
+   "found": 5,
    "error": null
   },
   {
@@ -168,8 +168,8 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 31,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "sakshi",
@@ -401,6 +401,65 @@
     "angles": 5,
     "ap": 0,
     "importance": 11,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1268e6b424b4",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "22:47",
+   "title": "Delhi Air Quality Set To Deteriorate To 'Poor' Category From Wednesday",
+   "summary": "The national capital's Air Quality Index (AQI) stood at 179 today, keeping it in the \"moderate\" category.",
+   "facts": [
+    {
+     "angle": "Index / rank",
+     "text": "The national capital's Air Quality Index (AQI) stood at 179 today, keeping it in the \"moderate\" category."
+    }
+   ],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/delhi-air-quality-set-to-deteriorate-to-poor-category-from-wednesday-12212248#publisher=newsstand",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "Index",
+    "Air Quality"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -741,6 +800,66 @@
     "angles": 10,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "4e3e7111827b",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-20",
+   "time": "23:45",
+   "title": "Delhi AQI to slip into 'poor' category from Wednesday, pollution levels to rise",
+   "summary": "The city's air quality index (AQI) was recorded at 179 on Tuesday, placing it in the moderate category.",
+   "facts": [
+    {
+     "angle": "Index / rank",
+     "text": "The city's air quality index (AQI) was recorded at 179 on Tuesday, placing it in the moderate category."
+    }
+   ],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/india/delhi-aqi-to-slip-into-poor-category-from-wednesday-pollution-levels-to-rise-11792518955864.html",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "Index",
+    "Pollution",
+    "Air Quality"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -1334,6 +1453,65 @@
    "topics": [],
    "angles": [
     "Health"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1a2080c96f77",
+   "date": "2026-10-20",
+   "pubDate": "2026-10-21",
+   "time": "00:13",
+   "title": "On paddy field conservation in Keralam",
+   "summary": "Neglecting paddy fields as a socio-ecological system that regulates local biodiversity, the hydrological cycle, and microclimate constitutes a grave failure, amid rising food insecurity and floods",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Science & Technology"
+   ],
+   "url": "https://www.thehindu.com/opinion/op-ed/on-paddy-field-conservation-in-keralam/article71605301.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Biodiversity"
    ],
    "score": 44,
    "band": "medium",
