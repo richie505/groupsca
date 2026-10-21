@@ -1,18 +1,18 @@
 {
  "version": 1,
  "date": "2026-10-21",
- "updated": "2026-10-21T13:03:40.810Z",
+ "updated": "2026-10-21T17:53:49.350Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 1034,
+   "found": 1075,
    "error": null
   },
   {
    "id": "pib-vijayawada",
    "name": "PIB Vijayawada",
-   "found": 4,
+   "found": 6,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 31,
+   "found": 41,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 47,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 10,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 105,
+   "found": 108,
    "error": null
   },
   {
@@ -342,6 +342,69 @@
    }
   },
   {
+   "id": "68965123ba45",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "23:09",
+   "title": "ULB polls in Andhra Pradesh: SEC orders strict implementation of Supreme Court’s directions",
+   "summary": "Poll process in all Municipal Corporations and Municipalities will continue as per schedule, except 19 civic bodies which reported large-scale complaints of intimidation and physical attacks, says Punetha",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National",
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ulb-polls-in-andhra-pradesh-sec-orders-strict-implementation-of-supreme-courts-directions/article71608105.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies",
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 73,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "a41d537801a2",
    "date": "2026-10-21",
    "pubDate": "2026-10-21",
@@ -425,6 +488,159 @@
     "ap": 12,
     "importance": 3,
     "reuse": 5
+   }
+  },
+  {
+   "id": "c1cc6d15f2f0",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "19:23",
+   "title": "CAQM invokes Stage-I of GRAP in Delhi-NCR with immediate effect amid sharp rise in AQI",
+   "summary": "21 OCT 2026 7:23PM by PIB Delhi Delhi recorded a daily average Air Quality Index (AQI) of 244 (‘Poor’ category) at 2 PM today, as per the daily AQI Bulletin provided by the Central Pollution Control Board (CPCB). Further, daily average AQI rose to 245 (‘Poor’ category) at 4PM.",
+   "facts": [
+    {
+     "angle": "Index / rank",
+     "text": "21 OCT 2026 7:23PM by PIB Delhi Delhi recorded a daily average Air Quality Index (AQI) of 244 (‘Poor’ category) at 2 PM today, as per the daily AQI Bulletin provided by the Central Pollution Control Board (CPCB)."
+    },
+    {
+     "angle": "Index / rank",
+     "text": "While comprehensively reviewing the air quality scenario in the region as well as forecast for weather/ meteorological conditions by IMD/ IITM and air quality index of Delhi, the Sub-Committee decided to invoke all 25 action points as per Stage-I of the extant GRAP with immediate effect, in the e…"
+    },
+    {
+     "angle": "Figures",
+     "text": "Strictly enforce orders of Hon’ble Courts / Tribunal regarding firecrackers."
+    },
+    {
+     "angle": "Figures",
+     "text": "Permitted only for the prescribed emergency services. * Only for operating elevators / Escalators / travelators."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Environment, Forest and Climate Change",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326133&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health",
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Index",
+    "Pollution",
+    "Air Quality",
+    "CPCB"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "5167e1b64165",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "18:33",
+   "title": "Future Rate Hikes to Depend on Growth and Inflation Trends, Says RBI Governor Sanjay Malhotra",
+   "summary": "Reserve Bank of India (RBI) Governor Sanjay Malhotra has said the duration and extent of the interest rate hike cycle will depend on actual economic growth and inflation trends. The RBI released the minutes of the Monetary Policy Committee (MPC) meeting held from 5 to 7 October, during which all six members voted to […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/future-rate-hikes-to-depend-on-growth-and-inflation-trends-says-rbi-governor-sanjay-malhotra/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "RBI and monetary policy"
+   ],
+   "angles": [
+    "Governor",
+    "Members",
+    "RBI",
+    "Economic growth"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
    }
   },
   {
@@ -569,6 +785,61 @@
    }
   },
   {
+   "id": "ebc6b7c6c778",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "20:06",
+   "title": "RBI MPC minutes reveal 2 members opposed shift from neutral stance to calibrated tightening in October meeting",
+   "summary": "The RBI raised its repo rate by 25 basis points to 5.50%, with all six monetary policy committee members supporting the hike. Four backed a shift to calibrated tightening, while two of them preferred a neutral stance.",
+   "facts": [],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/rbi-mpc-minutes-reveal-two-members-opposed-the-shift-from-neutral-stance-to-calibrated-tightening-in-octobers-meeting-11792587955238.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "RBI and monetary policy"
+   ],
+   "angles": [
+    "Members",
+    "RBI",
+    "Repo"
+   ],
+   "score": 60,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 15,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
    "id": "a03c28ca6170",
    "date": "2026-10-21",
    "pubDate": "2026-10-21",
@@ -630,6 +901,82 @@
     "angles": 15,
     "ap": 0,
     "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1788878c915a",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "19:01",
+   "title": "Hon’ble President of India Smt. Droupadi Murmu presents 65th National Exhibition of Art and 3rd Print Biennale India awards to artists, celebrating India’s rich artistic heritage and contemporary creativity",
+   "summary": "Shri Gajendra Singh Shekhawat, Union Minister of Culture and Tourism and Shri Vivek Aggarwal, Secretary, Ministry of Culture, were present on the occasion, along with senior officials, artists and members of the cultural fraternity.",
+   "facts": [
+    {
+     "angle": "Award",
+     "text": "The award ceremony recognised the outstanding contributions of artists to India’s rich cultural heritage and contemporary visual arts, with awards presented to selected artists as part of the 65th National Exhibition of Art and the 3rd Print Biennale India 2026."
+    },
+    {
+     "angle": "Award",
+     "text": "The award ceremony reaffirmed the importance of preserving India’s diverse artistic traditions while encouraging contemporary creativity, wider recognition for artists and the integration of art into the country’s cultural and creative economy."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Culture",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326116&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR",
+    "Geography",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Contemporary",
+    "Award",
+    "Union Minister"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -758,6 +1105,284 @@
    }
   },
   {
+   "id": "f314071639e8",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "19:56",
+   "title": "“Solar panels above, thriving crops below”: Union Minister Shri Shivraj Singh Chouhan inaugurates the 7th AgriVoltaics World Conference at Bharat Mandapam",
+   "summary": "Addressing the inaugural session of the three-day 7th AgriVoltaics World Conference as the keynote speaker at Bharat Mandapam in New Delhi on Wednesday, Shri Chouhan said that integrating agriculture with solar energy was opening up a new pathway towards global welfare and greater economic prosperity for farmers.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Addressing the inaugural session of the three-day 7th AgriVoltaics World Conference as the keynote speaker at Bharat Mandapam in New Delhi on Wednesday, Shri Chouhan said that integrating agriculture with solar energy was opening up a new pathway towards global welfare and greater economic prospe…"
+    },
+    {
+     "angle": "Figures",
+     "text": "He stressed that the AgriVoltaics policy must be designed to work effectively on the fields of the country’s 85 per cent small and marginal farmers, ensuring that the benefits of this technology reached those who needed them most."
+    },
+    {
+     "angle": "Figures",
+     "text": "Indian agriculture continues to maintain a robust growth rate of 4.5 per cent, which is a significant achievement in itself."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "Exports of agricultural products have reached a new record of US$52.55 billion, while sowing for the 2026–27 rabi season has recently commenced, with particular emphasis on pulses and oilseeds."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Agriculture & Farmers Welfare",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326152&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Union Minister",
+    "Agriculture"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "154b947ac452",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "19:53",
+   "title": "CAQM holds meeting with Delhi Government agencies to review Dust Pollution issues and strengthen Air Pollution Mitigation",
+   "summary": "The Commission emphasized that all concerned agencies must strictly comply with its Statutory Directions issued from time to time and ensure their strict implementation. MCD was specifically directed to strengthen dust mitigation measures on roads and open areas under its jurisdiction. The review was held in continuation of the Commission’s ongoing assessment of dust mitigation measures in Delhi.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Further, it has come to the notice that many agencies and departments involved in construction across Delhi are not ensuring dust mitigation measures like installation of wind barriers, dust screens, etc. and most importantly for digging work which leads to accumulation of dust."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Environment, Forest and Climate Change",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326148&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "Pollution",
+    "Air Quality"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "77d6136073a3",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "18:43",
+   "title": "CAQM Invokes Stage-I GRAP Across NCR as Delhi AQI Enters Poor Category",
+   "summary": "The Commission for Air Quality Management in the National Capital Region and Adjoining Areas (CAQM) Sub-Committee on the Graded Response Action Plan (GRAP) today invoked all actions under Stage-I of GRAP with immediate effect across the entire NCR. The decision came after Delhi’s Air Quality Index was recorded 244 at 2 pm today, placing it […]",
+   "facts": [
+    {
+     "angle": "Index / rank",
+     "text": "The decision came after Delhi’s Air Quality Index was recorded 244 at 2 pm today, placing it […]"
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/caqm-invokes-stage-i-grap-across-ncr-as-delhi-aqi-enters-poor-category/",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health",
+    "Amaravati Capital Region"
+   ],
+   "angles": [
+    "Index",
+    "Air Quality"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "82a328f90f70",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "19:30",
+   "title": "Finance Ministry Launches Nationwide Financial Inclusion Campaign at Panchayat, ULB Levels",
+   "summary": "The Union Finance Ministry today launched a nationwide Financial Inclusion Campaign, along with other key initiatives, at the Gram Panchayat and Urban Local Body levels. The campaign will run till 31st of December this year, covering two lakh 70 thousand Gram Panchayats and Urban Local Bodies. The Department of Financial Services said that […]",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "The Union Finance Ministry today launched a nationwide Financial Inclusion Campaign, along with other key initiatives, at the Gram Panchayat and Urban Local Body levels."
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/finance-ministry-launches-nationwide-financial-inclusion-campaign-at-panchayat-ulb-levels/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Services",
+    "Financial Inclusion"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "aa697c5d0700",
    "date": "2026-10-21",
    "pubDate": "2026-10-21",
@@ -802,6 +1427,248 @@
     "Language",
     "Community",
     "Indigenous"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "70c6b44b53ac",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "21:15",
+   "title": "Inflation risks overshadow 7.8% growth as MPC raises repo rate; majority favours calibrated tightening",
+   "summary": "Supply shocks and strong demand push MPC towards pre-emptive rate action",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/inflation-risks-overshadow-78-growth-as-mpc-raises-repo-rate-majority-favours-calibrated-tightening/article71608313.ece",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "RBI and monetary policy"
+   ],
+   "angles": [
+    "Repo"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "2fc9eb6a45bb",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "20:47",
+   "title": "Kadapa all set to elect its first woman Mayor",
+   "summary": "Suvarna is pitted against the YSRCP’s Bandi Deepthi as civic issues take centre stage in the upcoming election",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/kadapa-all-set-to-elect-its-first-woman-mayor/article71607575.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Post"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "cc367ef3d8b0",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "18:56",
+   "title": "Ministry of Agriculture & Farmers Welfare to Launch ‘Khet Bachao Abhiyan – Rabi 2026’ tomorrow; Campaign to Continue Till 30 November",
+   "summary": "Shri Shivraj Singh Chouhan, Union Minister of Agriculture & Farmers Welfare, will launch the campaign from Karnal, Haryana. The campaign aims to create awareness among farmers about the balanced and judicious use of fertilizers and other agricultural inputs based on soil testing.",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "Shri Shivraj Singh Chouhan, Union Minister of Agriculture & Farmers Welfare, will launch the campaign from Karnal, Haryana."
+    },
+    {
+     "angle": "Figures",
+     "text": "Special emphasis will be placed on creating awareness about the appropriate use of fertilizers, including green ammonia, and biological products; water conservation; crop diversification and intercropping with suitable crops and varieties; efficient utilization of rice fallows; natural farming; a…"
+    },
+    {
+     "angle": "Figures",
+     "text": "State Agriculture Departments, Krishi Vigyan Kendras (KVKs), ICAR institutes, State Agricultural Universities and Agricultural Technology Management Agencies (ATMA) will collaborate to ensure the active participation of agricultural scientists, ATMA functionaries, Farmer Producer Organizations (F…"
+    },
+    {
+     "angle": "Figures",
+     "text": "Publicity through local-language materials, radio, Doordarshan, social media and other IEC activities will further strengthen outreach and ensure wider dissemination of information among farmers."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Agriculture & Farmers Welfare",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326112&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Geography",
+    "History & Culture",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    }
+   ],
+   "topics": [
+    "AP agriculture and natural farming"
+   ],
+   "angles": [
+    "Agriculture",
+    "Health"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "41b9f06a4562",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "21:09",
+   "title": "RBI MPC flags widening inflationary pressures; two members oppose hawkish stance",
+   "summary": "RBI governor warns of rate hikes as inflation spreads beyond food and fuel",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/rbi-mpc-flags-widening-inflationary-pressures-two-members-oppose-hawkish-stance/article71608365.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "Members",
+    "RBI"
    ],
    "score": 54,
    "band": "medium",
@@ -1119,6 +1986,127 @@
     "ap": 0,
     "importance": 7,
     "reuse": 5
+   }
+  },
+  {
+   "id": "6b299680174c",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "22:06",
+   "title": "Agriculture Minister Shivraj Singh Chouhan to Launch Nationwide ‘Khet Bachao Abhiyan–Rabi 2026’ Tomorrow",
+   "summary": "Ministry of Agriculture and Farmers Welfare will launch the nationwide ‘Khet Bachao Abhiyan- Rabi 2026’ from tomorrow to till 30th Novemver. Mr Shivraj Singh Chouhan will launch the campaign from Karnal, Haryana. The Ministry of Agriculture and Farmer Welfare said the iniatiative is aimed at promoting sustainable agriculture, improve soil health and encourage the judicious […]",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "Mr Shivraj Singh Chouhan will launch the campaign from Karnal, Haryana."
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/agriculture-minister-shivraj-singh-chouhan-to-launch-nationwide-khet-bachao-abhiyan-rabi-2026-tomorrow/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture",
+    "Health"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "0590812f7002",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "21:33",
+   "title": "ESTIC 2026 to Focus on Scientific Advancement Towards Viksit Bharat 2047, Says ISRO Chairman V Narayanan",
+   "summary": "ISRO Chairman Dr V Narayanan has said that the Emerging Science, Technology, and Innovation Conclave (ESTIC) 2026 conclave to be held in New Delhi will deliberate on integrating efforts for Scientific advancement that can catapult India into Viksit Bharat by 2047. Addressing media persons in Bengaluru today, he informed that ISRO will showcase emerging technologies […]",
+   "facts": [
+    {
+     "angle": "Space / defence",
+     "text": "ISRO Chairman Dr V Narayanan has said that the Emerging Science, Technology, and Innovation Conclave (ESTIC) 2026 conclave to be held in New Delhi will deliberate on integrating efforts for Scientific advancement that can catapult India into Viksit Bharat by 2047."
+    },
+    {
+     "angle": "Space / defence",
+     "text": "Addressing media persons in Bengaluru today, he informed that ISRO will showcase emerging technologies […]"
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/estic-2026-to-focus-on-scientific-advancement-towards-viksit-bharat-2047-says-isro-chairman-v-narayanan/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "PERSONS",
+    "ISRO"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
    }
   },
   {
@@ -1781,6 +2769,308 @@
    }
   },
   {
+   "id": "990dba8d6a8e",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "22:27",
+   "title": "New Zealand FTA kicks in: Can zero tariffs boost India's exports? Which sectors stand to gain? Expert weighs in",
+   "summary": "India-New Zealand FTA could benefit exporters of engineering goods, automotive components, pharmaceuticals, textiles and processed foods. Protiviti India MD Saurav Kumar says zero-duty access could improve competitiveness, but sustained export growth will depend on pricing, quality, and logistics.",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/world/new-zealand-fta-kicks-in-can-zero-tariffs-boost-indias-exports-which-sectors-stand-to-gain-expert-weighs-in-11792598834944.html",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Export",
+    "Exports"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "42e6d0499c1a",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "20:03",
+   "title": "Not every friction in finance is inefficiency, says RBI DG Swaminathan",
+   "summary": "RBI Deputy Governor Swaminathan J says checks and balances help reduce fraud and errors, while financial institutions must maintain strong controls as technology reshapes processes",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "RBI Deputy Governor Swaminathan J says checks and balances help reduce fraud and errors, while financial institutions must maintain strong controls as technology reshapes processes"
+    }
+   ],
+   "source": "Business Standard",
+   "sourceId": "bs-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.business-standard.com/industry/banking/not-every-friction-in-finance-is-inefficiency-says-rbi-dg-swaminathan-126102101269_1.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "RBI"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "fbba2a300eee",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "20:50",
+   "title": "Prehistoric rock formations found at Mrugavani National Park",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "GI tag / designation",
+     "text": "Prehistoric rock formations found at Mrugavani National Park"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Telangana"
+   ],
+   "url": "https://www.thehindu.com/news/national/telangana/prehistoric-rock-formations-found-at-mrugavani-national-park/article71607874.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-A1",
+     "exam": "G1",
+     "label": "Indus Valley Civilization, Vedic Age, Mahajanapadas, Jainism & Buddhism, Magadha, Mauryas, Foreign Invasions, Kushanas, Satavahanas, Sangam Age, Sungas, Gupta Empire"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-M1A-U1",
+     "exam": "G2",
+     "label": "Pre-Historic Cultures, Satavahanas, Ikshvakus, Vishnukundins, Eastern Chalukyas of Vengi, Andhra Cholas - Society, Religion, Telugu Language, Art and Architecture"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Found at",
+    "National Park"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "9b5459853759",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "20:04",
+   "title": "Rate cuts off table as RBI MPC flags inflation risks, two dissent on stance",
+   "summary": "RBI MPC minutes show members concerned about broadening inflation, with two dissenting on the shift to calibrated tightening despite unanimous support for a 25-basis-point rate hike",
+   "facts": [],
+   "source": "Business Standard",
+   "sourceId": "bs-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.business-standard.com/industry/banking/rate-cuts-off-table-as-rbi-mpc-flags-inflation-risks-two-dissent-on-stance-126102101194_1.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Members",
+    "RBI"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "335eb8e8edae",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "20:14",
+   "title": "RBI MPC Minutes: Governor Sanjay Malhotra ties future hikes to growth-inflation outlook — here is what he said",
+   "summary": "MPC meeting minutes: The differing views of policymakers highlighted the challenge facing the RBI as it attempts to contain inflation without unnecessarily restricting economic activity.",
+   "facts": [],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/rbi-mpc-minutes-governor-sanjay-malhotra-ties-future-hikes-to-growth-inflation-outlook-here-is-what-he-said-11792587321532.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "RBI"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "fe2f23ddb8f2",
    "date": "2026-10-21",
    "pubDate": "2026-10-21",
@@ -1911,6 +3201,113 @@
     "ap": 0,
     "importance": 9,
     "reuse": 5
+   }
+  },
+  {
+   "id": "aedc792a74ae",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "21:39",
+   "title": "Campaigning Ends for 11 Uttar Pradesh Legislative Council Seats; Polling on October 23",
+   "summary": "Campaigning has ended this evening for the legislative council elections across teachers and graduate constituencies in Uttar Pradesh. Polling for eleven seats will take place on October 23rd, with the counting of votes and final results scheduled for October 27th. Administrative preparations are in their final stages across the state.",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/campaigning-ends-for-11-uttar-pradesh-legislative-council-seats-polling-on-october-23/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Legislative council"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "8c93697665c4",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "21:54",
+   "title": "CLAT 2027 Reservation Rules Changed For MNLU Mumbai; Apply By October 31",
+   "summary": "MNLU Mumbai revises CLAT 2027 reservation rules, introducing 1 percent seats each for transgender candidates and orphans in UG and PG law courses.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "MNLU Mumbai revises CLAT 2027 reservation rules, introducing 1 percent seats each for transgender candidates and orphans in UG and PG law courses."
+    }
+   ],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/education/clat-2027-reservation-rules-changed-for-mnlu-mumbai-apply-by-october-31-12216562#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "Reservation and social justice"
+   ],
+   "angles": [],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
    }
   },
   {
@@ -2175,6 +3572,63 @@
    }
   },
   {
+   "id": "0aec5c541ce3",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "21:10",
+   "title": "33rd EDITION OF SINGAPORE-INDIA MARITIME BILATERAL EXERCISE (SIMBEX-2026) COMMENCES AT VISAKHAPATNAM",
+   "summary": "21 OCT 2026 9:10PM by PIB Delhi The 33rd edition of the Singapore-India Maritime Bilateral Exercise (SIMBEX-2026) is being held at Visakhapatnam from 21 to 26 Oct 2026 . Republic of Singapore Navy (RSN) ship RSS Supreme arrived at Visakhapatnam on 21 Oct 2026 to participate in the exercise. The opening ceremony of SIMBEX-2026 was held on 21 Oct 2026 onboard INS Nilgiri and INS Kamorta.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Since its inception in 1994 as Exercise Lion King, SIMBEX has evolved into a significant bilateral maritime engagement between the Indian Navy and the RSN."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "Over the years, the exercise has expanded in scope and complexity, strengthening professional ties, mutual understanding and operational interoperability between the two Navies."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The exercise will be conducted in two phases."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Defence",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326348&reg=3&lang=1",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 7,
+    "reuse": 5
+   }
+  },
+  {
    "id": "94f27a5bb47f",
    "date": "2026-10-21",
    "pubDate": "2026-10-21",
@@ -2267,6 +3721,62 @@
    "topics": [],
    "angles": [
     "Lake"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "8f79ea06b078",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "22:59",
+   "title": "Ladakh administration dissolves hill council in Kargil, announces panchayat elections on November 21",
+   "summary": "The administration of Ladakh has notified 100 elected constituencies for the eight districts of the region; nominations will close on November 2 while the Model Code of Conduct has come into force with immediate effect",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/ladakh/ladakh-administration-dissolves-hill-council-in-kargil-announces-panchayat-elections-on-november-21/article71608564.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Administration"
    ],
    "score": 44,
    "band": "medium",
@@ -2912,6 +4422,128 @@
    }
   },
   {
+   "id": "292cb40237e4",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "19:49",
+   "title": "National Institute for Micro, Small and Medium Enterprises (ni-msme) strengthens MSMEs through Capacity Building, Entrepreneurship Development and Digital Empowerment",
+   "summary": "Through special training programmes, research, consultancy, capacity building and institutional partnerships, the Institute contributes to building a competitive, skilled and innovation-oriented MSME ecosystem. The institute accredited with “UTKRISHT / उत्कृष्ट” 3-Star Rating by the Capacity Building Commission (CBC).",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Over the decades, it has evolved to address the changing needs of entrepreneurs, policymakers, government institutions and industry stakeholders, with a focus on capacity building, sustainable enterprise development and enhanced competitiveness."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "In March 2026, the Institute organised a national conference on Digital Marketing, AI Automation and e-Commerce, followed by a national conference on Digital Enabled Factories with Industry 5.0, focusing on artificial intelligence, the Industrial Internet of Things (IIoT) and cloud technologies."
+    },
+    {
+     "angle": "Figures",
+     "text": "By leveraging Instagram, WhatsApp Business and Google Business Profile, the company secured a landmark ₹16 lakh order through Google, while its annual turnover surged to ₹2.8 crore."
+    },
+    {
+     "angle": "Figures",
+     "text": "10-fold growth in monthly turnover, from ₹20,000 to ₹2 lakh."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Micro,Small & Medium Enterprises",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326147&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 40,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 11,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "ffd12ff6782e",
+   "date": "2026-10-21",
+   "pubDate": "2026-10-21",
+   "time": "20:02",
+   "title": "Rain evokes mixed feelings among farmers in Chittoor, Annamayya districts",
+   "summary": "The rains that lashed Chittoor district been beneficial for mango orchards and rabi groundnut sowing, while farmers who kept harvested paddy in open threshing yards have been urged to cover the produce immediately, as even a small night rain can damage grain quality",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/rain-evokes-mixed-feelings-among-farmers-in-chittoor-annamayya-districts/article71607448.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "8f51f66608dd",
    "date": "2026-10-21",
    "pubDate": "2026-10-21",
@@ -2946,902 +4578,6 @@
    "why": {
     "syllabus": 4,
     "angles": 15,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "5ab79b2fd69c",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "India Ranks Third in Ipsos Healthcare Quality Perception Index",
-   "summary": "As of October 2026, India ranks third in the Ipsos Quality of Care Perception Index, behind Malaysia and Singapore. The Ipsos Health Service Report 2026 records that 68%",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/india-ranks-third-in-ipsos-healthcare-quality-perception-index/",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Index",
-    "Rank",
-    "Health"
-   ],
-   "score": 19,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 15,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "1c093f4609d5",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Half of India’s Coal-Fired Power Plants Face Low Stocks",
-   "summary": "As of 19 October 2026, 96 of India’s 191 coal-fired power plants had critically low coal stocks, defined as less than three days of fuel supply.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/half-of-indias-coal-fired-power-plants-face-low-stocks/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 17,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true
-  },
-  {
-   "id": "7f10b8b14d78",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Important Emerging and Re-emerging Infectious Diseases in Africa",
-   "summary": "Emerging and re-emerging infectious diseases (ERIDs) pose continuing health and development challenges across Africa. Their spread is shaped by interactions among people,",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-emerging-and-re-emerging-infectious-diseases-in-africa/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Health",
-    "Diseases"
-   ],
-   "score": 14,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "851b0563fa17",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Important Health Indicators and Their Measurement",
-   "summary": "Health indicators are measurable variables used to describe the health of individuals and populations. They help track trends, compare places and periods, assess services",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-health-indicators-and-their-measurement/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Services",
-    "Health"
-   ],
-   "score": 14,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "67e3e3808d4e",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Ladakh’s First Medical College to Begin Operations in 2027",
-   "summary": "The Union Ministry of Health and Family Welfare approved the operationalisation of Ladakh’s first Government Medical College in Leh on 19 October 2026.",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "The Union Ministry of Health and Family Welfare approved the operationalisation of Ladakh’s first Government Medical College in Leh on 19 October 2026."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/ladakhs-first-medical-college-to-begin-operations-in-2027/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Family",
-    "Health"
-   ],
-   "score": 14,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "415e4090e1df",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Rights and Inclusion of Persons with Disabilities in India",
-   "summary": "Persons with disabilities (PwDs) have equal rights to dignity, participation and access to public services. India’s framework combines constitutional principles, legislat",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/rights-and-inclusion-of-persons-with-disabilities-in-india/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "PERSONS",
-    "Services"
-   ],
-   "score": 14,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "0108f602c359",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Boeing 737-10 Receives FAA Certification",
-   "summary": "The US Federal Aviation Administration (FAA) signed certification documents for the Boeing 737-10 on 20 October 2026. The aircraft is the largest model in the 737 MAX fam",
-   "facts": [
-    {
-     "angle": "Agreement / MoU",
-     "text": "The US Federal Aviation Administration (FAA) signed certification documents for the Boeing 737-10 on 20 October 2026."
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "The aircraft is the largest model in the 737 MAX fam"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/boeing-737-10-receives-faa-certification/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Administration"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "15363dc123fb",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "eMudhra Revokes Eight Weak Intermediate CA Certificates",
-   "summary": "On October 17, 2026, security researcher Wayne discovered that private keys belonging to eight eMudhra intermediate Certificate Authorities (CAs) were weak. eMudhra said",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/emudhra-revokes-eight-weak-intermediate-ca-certificates/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Discovered"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "65eb60f03efe",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Global Disease Surveillance and Outbreak Response Mechanisms",
-   "summary": "Disease surveillance provides the evidence needed to identify health threats early, while international rules and response networks help countries assess and contain risk",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/global-disease-surveillance-and-outbreak-response-mechanisms/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Health"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "72ca1b365aa4",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Government Schemes for Sports and Para-Athletes in India",
-   "summary": "India’s sports schemes combine grassroots participation, talent identification, elite preparation and financial support for athletes.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/government-schemes-for-sports-and-para-athletes-in-india/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Schemes"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "6aab42bc07c2",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Lingampalli Himaja’s RUDHRA Reaches James Dyson Award Global Top 20",
-   "summary": "As of 17 October 2026, 20-year-old Indian engineering student Lingampalli Himaja has reached the global top 20 of the James Dyson Award 2026 with RUDHRA, a voice-enabled",
-   "facts": [
-    {
-     "angle": "Award",
-     "text": "As of 17 October 2026, 20-year-old Indian engineering student Lingampalli Himaja has reached the global top 20 of the James Dyson Award 2026 with RUDHRA, a voice-enabled"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/lingampalli-himajas-rudhra-reaches-james-dyson-award-global-top-20/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Award"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "05aa231d3ebd",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Strategic Sectors in India’s International Economic Partnerships",
-   "summary": "India’s international economic partnerships support trade growth, technology cooperation and more resilient supply chains. Collaboration in strategic sectors also advance",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/strategic-sectors-in-indias-international-economic-partnerships/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "trade"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "994f474204de",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "US Launches Fraud Whistleblower Incentive Programme",
-   "summary": "US President Donald Trump and Vice President JD Vance announced the 25 million Fraud Whistleblower Incentive Program (WHIP) on 20 October 2026.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "US President Donald Trump and Vice President JD Vance announced the 25 million Fraud Whistleblower Incentive Program (WHIP) on 20 October 2026."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/us-launches-fraud-whistleblower-incentive-programme/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Vice President"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "d52d9184fb48",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Ayush Verma Wins Shot Put Gold at Asian Para Games 2026",
-   "summary": "India’s Ayush Verma won the men’s shot put F53 gold medal at the Aichi-Nagoya 2026 Asian Para Games on 21 October 2026. He recorded a best throw of 8.16 metres.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/ayush-verma-wins-shot-put-gold-at-asian-para-games-2026/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "26a2d8985b26",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "ByteDance, Alibaba and Tencent Order Nvidia Chips Worth Over $35 Billion",
-   "summary": "On 20 October 2026, Chinese technology companies ByteDance, Alibaba and Tencent had collectively ordered more than 3 million RTX PRO 5500 graphics cards from Nvidia, with",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "On 20 October 2026, Chinese technology companies ByteDance, Alibaba and Tencent had collectively ordered more than 3 million RTX PRO 5500 graphics cards from Nvidia, with"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/bytedance-alibaba-and-tencent-order-nvidia-chips-worth-over-35-billion/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "dfe4c4c66cd7",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Kasthuri Rajamani Wins Powerlifting Silver at Asian Para Games",
-   "summary": "India’s Kasthuri Rajamani won silver in the women’s 67kg powerlifting event at the Asian Para Games on 21 October 2026. The Games are being held in Aichi-Nagoya, Japan.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/kasthuri-rajamani-wins-powerlifting-silver-at-asian-para-games/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "276448e54b4f",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Medical Education in India: Courses, Admissions and Clinical Training",
-   "summary": "Medical education in India combines regulated academic programmes, competitive entrance examinations and supervised clinical experience.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/medical-education-in-india-courses-admissions-and-clinical-training/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "34427806c315",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "NATO Expands Black Sea Surveillance Deployments",
-   "summary": "On October 20–21, 2026, NATO announced additional maritime patrol aircraft, surveillance drones and radar tracking systems for the Black Sea region.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/nato-expands-black-sea-surveillance-deployments/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "ba04e911a190",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Types and Uses of Unmanned Aerial Systems",
-   "summary": "Unmanned Aerial Systems (UAS) are aircraft operated without a pilot on board. They combine an aerial vehicle with control and communication systems, and may be remotely p",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/types-and-uses-of-unmanned-aerial-systems/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "e3d85b2fbea7",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Ashok Kumar Malik Wins Silver at Asian Para Games",
-   "summary": "India’s Ashok Kumar Malik won silver in the men’s 65kg Para powerlifting event at the 2026 Asian Para Games in Nagoya, Japan, on 20 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/ashok-kumar-malik-wins-silver-at-asian-para-games/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "ff9d4c7349e3",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "DCGI Approves Zytorvi for Advanced Esophageal Cancer",
-   "summary": "On 21 October 2026, the Drugs Controller General of India (DCGI) approved Zytorvi (toripalimab) with cisplatin and paclitaxel as first-line treatment for adults with unre",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "On 21 October 2026, the Drugs Controller General of India (DCGI) approved Zytorvi (toripalimab) with cisplatin and paclitaxel as first-line treatment for adults with unre"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/dcgi-approves-zytorvi-for-advanced-esophageal-cancer/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "75d36ce113e2",
-   "date": "2026-10-21",
-   "pubDate": "2026-10-21",
-   "title": "Himanshu Nandal and Niranjan Mukundan Win Asian Para Games Bronze",
-   "summary": "Indian para-swimmers Himanshu Nandal and Niranjan Mukundan won bronze medals in their respective events at the Asian Para Games in Nagoya, Japan, on 20 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/himanshu-nandal-and-niranjan-mukundan-win-asian-para-games-bronze/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
     "ap": 0,
     "importance": 0,
     "reuse": 0
