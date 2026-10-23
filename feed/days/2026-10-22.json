@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-22",
- "updated": "2026-10-22T21:01:37.201Z",
+ "updated": "2026-10-23T05:39:54.072Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 1154,
+   "found": 1156,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 35,
+   "found": 47,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 43,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 3,
+   "found": 9,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 70,
+   "found": 110,
    "error": null
   },
   {
@@ -1281,6 +1281,73 @@
     "Export",
     "Pact",
     "Exports"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e3b78bd8b013",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-23",
+   "time": "04:44",
+   "title": "SEBI cautions investors against fraudulent stock-tip WhatsApp groups",
+   "summary": "“To make these calls look credible, certain members, acting in concert with the operators, post false claims of profit and praise the 'expert'. This practice, known as astroturfing, creates a false impression of genuine support and induces unsuspecting investors to act on the call,” says SEBI",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "“To make these calls look credible, certain members, acting in concert with the operators, post false claims of profit and praise the 'expert'."
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Business"
+   ],
+   "url": "https://www.thehindu.com/business/sebi-cautions-investors-against-fraudulent-stock-tip-whatsapp-groups/article71613503.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Known as",
+    "Members",
+    "Post",
+    "SEBI"
    ],
    "score": 59,
    "band": "medium",
@@ -2972,6 +3039,105 @@
    }
   },
   {
+   "id": "15d4d1a2964c",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-23",
+   "time": "03:25",
+   "title": "CM Naidu for faster execution of 714 investment MoUs",
+   "summary": "519 of 714 agreements see action initiated, officials tell 22nd SIPB meeting Vizag to get world-class convention centre for hosting investment summits",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/cm-naidu-for-faster-execution-of-714-investment-mous-1134800",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agreement",
+    "Convention",
+    "Summit"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 15,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "eae7cdb1bad4",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-22",
+   "time": "22:36",
+   "title": "Governor of Uttarakhand meets the Prime Minister",
+   "summary": "22 OCT 2026 10:36PM by PIB Delhi The Governor of Uttarakhand, Dr. Dhal Singh Bisen, met Prime Minister Shri Narendra Modi earlier today.",
+   "facts": [],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Prime Minister's Office",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2327040&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "Post"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "c6e5b326ac17",
    "date": "2026-10-22",
    "pubDate": "2026-10-22",
@@ -3049,6 +3215,52 @@
     "importance": 3,
     "reuse": 5
    }
+  },
+  {
+   "id": "e401d2c20ae7",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-23",
+   "time": "04:52",
+   "title": "సాగునీటి ప్రాజెక్టుల బిల్లులకు రూ.1,362 కోట్ల విడుదల",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126191932",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Bill"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 10,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "c4708789d22b",
@@ -3407,6 +3619,60 @@
     "angles": 5,
     "ap": 0,
     "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "bcd3173c0d06",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-23",
+   "time": "00:48",
+   "title": "Supreme Court calls for setting human trafficking apart from voluntary sex work",
+   "summary": "The National Judicial Academy has been asked to frame guidelines for magistrates, while the Centre must submit a fresh compliance report before the next hearing",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/supreme-court-calls-for-setting-human-trafficking-apart-from-voluntary-sex-work-101792696712707.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -4031,6 +4297,62 @@
    }
   },
   {
+   "id": "0fe281d41212",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-23",
+   "time": "02:54",
+   "title": "Collisions Fall After Wildlife Overpass: I-25 crossings cut crashes by up to 91%; Colorado plans six more",
+   "summary": "A network of wildlife crossings in Colorado has reduced collisions along Interstate 25 by approximately 85 percent. This system includes fencing, underpasses, and an overpass which opened in December 2025. Recent studies show a significant decline in wildlife-related crashes since the introduction of these measures. Various species, including elk and pronghorn, have begun using these crossings effectively.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "A network of wildlife crossings in Colorado has reduced collisions along Interstate 25 by approximately 85 percent."
+    }
+   ],
+   "source": "Times of India — Science",
+   "sourceId": "toi-science",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/science/wildlife/colorado-built-a-wildlife-overpass-across-a-busy-highway-a-new-report-says-animal-vehicle-collisions-fell-by-91-as-elk-bears-and-frogs-began-using-the-crossing/articleshow/135093165.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
    "id": "593582e041d5",
    "date": "2026-10-22",
    "pubDate": "2026-10-22",
@@ -4476,22 +4798,68 @@
    }
   },
   {
-   "id": "af0ce0e54d72",
+   "id": "bde99447f9ad",
    "date": "2026-10-22",
    "pubDate": "2026-10-23",
-   "time": "00:41",
-   "title": "IIT-Madras announces research projects on AI, seeks to study feasibility of small data centres",
-   "summary": "",
+   "time": "02:57",
+   "title": "Heavy rains bring relief to Nellore farmers",
+   "summary": "Thunderstorms and heavy rainfall hit Nellore district, bringing relief from heat and boosting local farming operations.",
    "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/tamil-nadu/iit-madras-announces-research-projects-on-ai-seeks-to-study-feasibility-of-small-data-centres/article71612148.ece",
-   "bucket": "national",
+   "url": "https://www.thehansindia.com/news/cities/nellore/heavy-rains-bring-relief-to-nellore-farmers-1134792",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "f844fdf71ccc",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-23",
+   "time": "04:31",
+   "title": "SCoR organises ‘Jan Samvad’ campaign across stations to enhance passenger engagement",
+   "summary": "South Coast Railway holds a mass 'Jan Samvad' campaign across 350+ stations, engaging 17,500+ passengers to collect feedback and improve railway services.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/scor-organises-jan-samvad-campaign-across-stations-to-enhance-passenger-engagement-1134830",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
    "exams": [
     "G1",
     "G2"
@@ -4499,13 +4867,13 @@
    "subject": "Economy",
    "subjects": [
     "Economy",
-    "Science, Tech & Environment"
+    "Geography"
    ],
    "units": [
     {
-     "code": "G1-F19",
+     "code": "G1-D4",
      "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
     },
     {
      "code": "G2-M2A-U5",
@@ -4515,182 +4883,16 @@
    ],
    "topics": [],
    "angles": [
-    "IIT"
+    "Services"
    ],
-   "score": 44,
+   "score": 42,
    "band": "medium",
    "why": {
-    "syllabus": 24,
+    "syllabus": 12,
     "angles": 5,
-    "ap": 0,
+    "ap": 20,
     "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "384ca47cead0",
-   "date": "2026-10-22",
-   "pubDate": "2026-10-22",
-   "title": "India Launches Khet Bachao Abhiyan for Rabi 2026",
-   "summary": "The Ministry of Agriculture &amp; Farmers Welfare will launch the nationwide Khet Bachao Abhiyan-Rabi 2026 on October 22, 2026. Union Agriculture and Farmers Welfare Mini",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/india-launches-khet-bachao-abhiyan-for-rabi-2026/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Agriculture"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
-  },
-  {
-   "id": "c85970de11da",
-   "date": "2026-10-22",
-   "pubDate": "2026-10-22",
-   "time": "14:56",
-   "title": "India's interest rate gap with G7 in focus as RBI weighs inflation risks: Report",
-   "summary": "The report highlighted the importance of maintaining a certain difference between Indian and G7 interest rates to attract foreign debt capital, particularly as the US Federal Reserve is expected to continue its rate-hiking cycle",
-   "facts": [],
-   "source": "BusinessLine — Economy",
-   "sourceId": "bl-economy",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindubusinessline.com/economy/indias-interest-rate-gap-with-g7-in-focus-as-rbi-weighs-inflation-risks-report/article71610776.ece",
-   "bucket": "international",
-   "scope": "international",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "RBI"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "ce32baad1352",
-   "date": "2026-10-22",
-   "pubDate": "2026-10-22",
-   "time": "15:50",
-   "title": "Karnataka’s Deputy Chief Minister writes to PM, HM, Agriculture Minister seeking urgent release of drought relief",
-   "summary": "He has appealed to opposition parties to set aside political differences and cooperate on an issue concerning the interests of Karnataka, and join the all-party delegation to meet the Prime Minister to seek release of drought relief funds",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/karnataka/karnatakas-deputy-chief-minister-writes-to-pm-hm-agriculture-minister-seeking-urgent-release-of-drought-relief/article71610707.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Geography",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Agriculture"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
+    "reuse": 5
    }
   },
   {
@@ -4890,6 +5092,51 @@
     "ap": 20,
     "importance": 0,
     "reuse": 5
+   }
+  },
+  {
+   "id": "69a6c574bfcd",
+   "date": "2026-10-22",
+   "pubDate": "2026-10-23",
+   "time": "04:40",
+   "title": "NDA committed to transforming Buchireddypalem: Kovur MLA",
+   "summary": "Kovur MLA Vemireddy Prashanthi Reddy campaigns in Buchireddypalem, highlighting Rs 45 crore allocated for infrastructure, road works, new office construction, and Kisan SEZ job creation under the NDA government.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Kovur MLA Vemireddy Prashanthi Reddy campaigns in Buchireddypalem, highlighting Rs 45 crore allocated for infrastructure, road works, new office construction, and Kisan SEZ job creation under the NDA government."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/nellore/nda-committed-to-transforming-buchireddypalem-kovur-mla-1134834",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Construction",
+    "SEZ"
+   ],
+   "score": 36,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 0
    }
   }
  ]
