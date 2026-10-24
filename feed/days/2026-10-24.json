@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-24",
- "updated": "2026-10-24T16:26:35.678Z",
+ "updated": "2026-10-24T20:01:07.697Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 1254,
+   "found": 1255,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 37,
+   "found": 36,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 155,
+   "found": 100,
    "error": null
   },
   {
@@ -702,6 +702,70 @@
     "angles": 20,
     "ap": 0,
     "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "2daf34b47e9c",
+   "date": "2026-10-24",
+   "pubDate": "2026-10-24",
+   "time": "23:46",
+   "title": "Centre backs A.P.’s semiconductor push, approves rail links for nine ports",
+   "summary": "Ashwini Vaishnaw assures support for chip-sector research, skilling and AI; agrees to a Vande Bharat sleeper train between Visakhapatnam and Bengaluru via Tirupati as Chandrababu Naidu seeks approval for key railway projects",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/centre-backs-aps-semiconductor-push-approves-rail-links-for-nine-ports/article71621247.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [
+    "Railways and multimodal transport"
+   ],
+   "angles": [],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -1337,6 +1401,86 @@
    }
   },
   {
+   "id": "c89db1070b17",
+   "date": "2026-10-24",
+   "pubDate": "2026-10-24",
+   "time": "22:38",
+   "title": "Agricultural Biological Resources generate around ₹1.04 Crore in ABS Benefits for Biodiversity Initiatives across India",
+   "summary": "24 OCT 2026 10:38PM by PIB Delhi The National Biodiversity Authority (NBA) has disbursed around Rs. 1.04 crore of Access and Benefit-Sharing (ABS) amount among 27 State Biodiversity Boards (SBBs), two Union Territory Biodiversity Councils (UTBCs). This demonstrates how benefits arising from the utilisation of agricultural biological resources can be channelled towards biodiversity conservation and sustainable use.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "24 OCT 2026 10:38PM by PIB Delhi The National Biodiversity Authority (NBA) has disbursed around Rs. 1.04 crore of Access and Benefit-Sharing (ABS) amount among 27 State Biodiversity Boards (SBBs), two Union Territory Biodiversity Councils (UTBCs)."
+    },
+    {
+     "angle": "Figures",
+     "text": "The disbursal of around Rs. 1.04 crore covers allocations to SBBs and UTBCs."
+    },
+    {
+     "angle": "Figures",
+     "text": "10,35,790.00 10,05,218.00 9,81,132.00 7,95,968.00 7,91,609.00 7,34,400.00 5,76,934.00 5,20,524.00 4,99,655.00 4,87,874.00 29,34,084.00 1,03,63,188.00 The agriculture sector, which has generated approximately Rs. 87 crore ($9.16 mn) in ABS contributions, is emerging as an important contributor to …"
+    },
+    {
+     "angle": "Figures",
+     "text": "Till date, the NBA has released over Rs. 204 crore ($21.48 mn) in ABS benefits, supporting biodiversity conservation and benefit sharing across the country."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Environment, Forest and Climate Change",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328118&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Biodiversity"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 11,
+    "reuse": 15
+   }
+  },
+  {
    "id": "d7103244f890",
    "date": "2026-10-24",
    "pubDate": "2026-10-24",
@@ -1387,6 +1531,59 @@
     "angles": 10,
     "ap": 0,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "449a1ad30b44",
+   "date": "2026-10-24",
+   "pubDate": "2026-10-25",
+   "time": "00:14",
+   "title": "Repolling At 3 Booths In Agra Tomorrow For Legislative Council Polls",
+   "summary": "The voting that took place at these specific polling stations on October 23 has been declared void under Section 58A(2)(a) of the Representation of the People Act, 1951, a press release issued by the Chief Electoral Officer's office said.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/repolling-at-3-booths-in-agra-tomorrow-for-legislative-council-polls-12231370#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Section",
+    "Legislative council"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 6,
     "reuse": 15
    }
   },
@@ -2318,6 +2515,60 @@
    }
   },
   {
+   "id": "5a2f70618e65",
+   "date": "2026-10-24",
+   "pubDate": "2026-10-24",
+   "time": "22:39",
+   "title": "Iran Speaker to skip BRICS meet, as Iran seeks bilateral air route for ‘humanitarian aid’ from India",
+   "summary": "Iran Air not allowed to fly medicines directly from India to Tehran, due to fear of U.S. sanctions; India says medicines can be taken through a third country; Tehran says humanitarian aid is exempted from sanctions",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — International"
+   ],
+   "url": "https://www.thehindu.com/news/national/irans-ghalibaf-will-not-attend-brics-parliamentary-forum-in-delhi-embassy/article71619999.ece",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Speaker"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
    "id": "0e7283d138f4",
    "date": "2026-10-24",
    "pubDate": "2026-10-24",
@@ -2457,6 +2708,68 @@
     "ap": 0,
     "importance": 5,
     "reuse": 5
+   }
+  },
+  {
+   "id": "2d8b8fcf6566",
+   "date": "2026-10-24",
+   "pubDate": "2026-10-24",
+   "time": "23:58",
+   "title": "SEBI Orders Avadhut Sathe Academy To Refund Rs 546 Crore To Participants",
+   "summary": "The academy has been fined Rs 6 crore, Sathe has been fined Rs 4 crore, while Gouri Avadhut Sathe has been penalised Rs 1.5 crore.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The academy has been fined Rs 6 crore, Sathe has been fined Rs 4 crore, while Gouri Avadhut Sathe has been penalised Rs 1.5 crore."
+    }
+   ],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/market-regulator-orders-avadhut-sathe-trading-academy-to-refund-rs-546-crore-12231336#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "SEBI"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
    }
   },
   {
@@ -2761,6 +3074,65 @@
    "topics": [],
    "angles": [
     "Speaker"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ea5935837058",
+   "date": "2026-10-24",
+   "pubDate": "2026-10-24",
+   "time": "22:00",
+   "title": "ISRO will not be privatised, says chairperson Narayanan",
+   "summary": "Contributions from private companies should not be misinterpreted as privatisation of the space agency, says the chairperson",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Science & Technology"
+   ],
+   "url": "https://www.thehindu.com/news/cities/chennai/isro-will-not-be-privatised-says-chairperson-narayanan/article71620020.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "ISRO"
    ],
    "score": 44,
    "band": "medium",
@@ -4098,207 +4470,6 @@
    "topics": [],
    "angles": [
     "Diseases"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "00173f1940d5",
-   "date": "2026-10-24",
-   "pubDate": "2026-10-24",
-   "title": "Important International Frameworks for Ocean Governance",
-   "summary": "International Frameworks for Ocean Governance Ocean governance is shaped by international agreements and institutions that regulate maritime activities, protect marine ec",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/important-international-frameworks-for-ocean-governance/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Agreement"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "02d97520621d",
-   "date": "2026-10-24",
-   "pubDate": "2026-10-24",
-   "title": "Japan’s Kikai Caldera Slowly Refills with Magma",
-   "summary": "On 23 October 2026, researchers from Kobe University described evidence that magma is gradually accumulating beneath Japan’s Kikai Caldera.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/japans-kikai-caldera-slowly-refills-with-magma/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "University"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "c28166a147f9",
-   "date": "2026-10-24",
-   "pubDate": "2026-10-24",
-   "title": "Keralam Plans Statewide Child Vulnerability Mapping",
-   "summary": "Keralam’s Women and Child Development Department plans statewide mapping to identify children living in conditions that put their health, education or safety at risk.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/keralam-plans-statewide-child-vulnerability-mapping/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Health"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "4620768baa44",
-   "date": "2026-10-24",
-   "pubDate": "2026-10-24",
-   "title": "Nepal Becomes First Beneficiary of Loss and Damage Fund",
-   "summary": "On 22 October 2026, the board of the UN’s Fund for Responding to Loss and Damage (FRLD) agreed to set aside 20 million for Nepal’s recovery from floods in August 2026.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "On 22 October 2026, the board of the UN’s Fund for Responding to Loss and Damage (FRLD) agreed to set aside 20 million for Nepal’s recovery from floods in August 2026."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/nepal-becomes-first-beneficiary-of-loss-and-damage-fund/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "UN"
-   ],
-   "score": 9,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "64b5b6bb76da",
-   "date": "2026-10-24",
-   "pubDate": "2026-10-24",
-   "title": "Punjab Launches SANGAT Mental Health Clubs in 40 Colleges",
-   "summary": "On 22 October 2026, the Punjab government launched SANGAT Mental Health Clubs in 40 colleges across the state. The programme aims to support youth wellbeing, promote earl",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/punjab-launches-sangat-mental-health-clubs-in-40-colleges/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Health"
    ],
    "score": 9,
    "band": "low",
