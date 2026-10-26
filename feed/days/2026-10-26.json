@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-26",
- "updated": "2026-10-26T05:42:21.534Z",
+ "updated": "2026-10-26T14:27:34.970Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 1275,
+   "found": 1327,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 32,
+   "found": 31,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 46,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 5,
+   "found": 10,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 50,
+   "found": 48,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 134,
+   "found": 135,
    "error": null
   },
   {
@@ -274,6 +274,260 @@
    }
   },
   {
+   "id": "a8d04722bb31",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:30",
+   "title": "A.P. High Court lawyer seeks subsidised ‘Medical Air Corridor’ for patients with rare diseases",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/ap-high-court-lawyer-seeks-subsidised-medical-air-corridor-for-patients-with-rare-diseases/article71627323.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court",
+    "Diseases"
+   ],
+   "score": 75,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a3af77e97537",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "17:05",
+   "title": "Odisha’s contempt petition in Supreme Court over Kotia panchayat election | Explained",
+   "summary": "The Odisha government filed a contempt of court petition against the Andhra Pradesh government in the Supreme Court challenging the notification for the forthcoming election in Kotia",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/odishas-contempt-petition-in-supreme-court-over-kotia-panchayat-election-explained/article71626140.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 70,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a12818e29caa",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:40",
+   "title": "Railway Minister and Chief Minister of West Bengal Flag Off Jaipur (Khatipura) – Tatanagar – Santragachi Express Train",
+   "summary": "New Rail Service to Strengthen Connectivity Between Rajasthan, Uttar Pradesh, Bihar, Jharkhand and West Bengal Improved Rail Services to Boost Employment, Education and Trade 26 OCT 2026 6:40PM by PIB Delhi Union Minister for Railways, Shri Ashwini Vaishnaw, and the Chief Minister of West Bengal, Shri Suvendu Adhikari flagged off the Jaipur (Khatipura)–Tatanagar–Santragachi Express train today.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Highlighting the development of Railways in Jharkhand, Shri Vaishnaw said that the railway budget allocation for the state has increased from ₹450 crore to ₹7,500 crore, which is approximately 16 times the earlier allocation."
+    },
+    {
+     "angle": "Figures",
+     "text": "He added the projects worth approximately ₹75,000 crore are underway in the state."
+    },
+    {
+     "angle": "Figures",
+     "text": "Referring to the increase in railway budget allocation for West Bengal, Shri Adhikari said that the annual average allocation during 2009-2014 was ₹4,380 crore, which has increased to ₹14,205 crore for 2026-27."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Railways",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328643&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies",
+    "Railways and multimodal transport"
+   ],
+   "angles": [
+    "trade",
+    "Railways",
+    "Union Minister",
+    "Services"
+   ],
+   "score": 70,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 0,
+    "importance": 9,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "c29c757bd876",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:52",
+   "title": "Cyclone Arnab threat: Naidu orders evacuations, puts Andhra Pradesh on high alert",
+   "summary": "With heavy to extremely heavy rain forecast in 13 districts on October 28 and 29, the government steps up disaster preparedness, shifts 4,711 pregnant women to health facilities and deploys 15 NDRF and SDRF teams; R&B department readies emergency teams to ensure road safety and swift restoration of traffic",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-threat-naidu-orders-evacuations-puts-andhra-pradesh-on-high-alert/article71627074.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Emergency",
+    "Health"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "5ef3e8d507f4",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -313,6 +567,61 @@
    "topics": [],
    "angles": [
     "Emergency"
+   ],
+   "score": 67,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "131a4188ef88",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:43",
+   "title": "Cyclone Arnab: APEPDCL opens 41 control rooms, keeps 4,056 workers ready to restore power",
+   "summary": "People in Kakinada, East Godavari and Konaseema, the districts likely to bear the brunt, can report power problems on helpline 1912",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National",
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/cyclone-arnab-apepdcl-opens-41-control-rooms-keeps-4056-workers-ready-to-restore-power/article71625634.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Helpline"
    ],
    "score": 67,
    "band": "high",
@@ -376,6 +685,121 @@
    }
   },
   {
+   "id": "90b6b598276d",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:38",
+   "title": "Andhra Pradesh officials say Odisha blocking census collection in Kotia villages",
+   "summary": "Tribal Welfare Minister Gummadi Sandhya Rani has asked Chief Minister N. Chandrababu Naidu to protect the people of the disputed Kotia villages, where Odisha officials have reportedly stopped Andhra Pradesh staff from collecting census data",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-officials-say-odisha-blocking-census-collection-in-kotia-villages/article71032129.ece",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-D3",
+     "exam": "G1",
+     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Census"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "b6d066225fcb",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:08",
+   "title": "Satellite image shows Cyclone Arnab moving towards Andhra as storm intensifies over Bay of Bengal ahead of October 28 landfall",
+   "summary": "The latest satellite assessment places Cyclone Arnab over the east-central and adjoining west-central Bay of Bengal.",
+   "facts": [
+    {
+     "angle": "Space / defence",
+     "text": "The latest satellite assessment places Cyclone Arnab over the east-central and adjoining west-central Bay of Bengal."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/satellite-images-show-cyclone-arnab-moving-towards-east-coast-as-storm-intensifies-over-bay-of-bengal-october-28-landfall-andhra-pradesh-odisha-101793006330446.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Satellite"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "aea3203bb41e",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -432,6 +856,368 @@
    }
   },
   {
+   "id": "c856aa060f82",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:30",
+   "title": "Government allows E100 ethanol fuel in vehicles designed for flexible fuel",
+   "summary": "The government has allowed the use of E100 ethanol fuel in vehicles specifically designed to run on flexible fuel under amendments to the Central Motor Vehicles Rules, 1989. The Ministry of Road Transport and Highways issued a gazette notification in this regard. The amended Central Motor Vehicles Rules recognise E100 fuel for flex-fuel […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/government-allows-e100-ethanol-fuel-in-vehicles-designed-for-flexible-fuel/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Amendments",
+    "Highways",
+    "Amendment"
+   ],
+   "score": 63,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 9,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "9886af8a134d",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:24",
+   "title": "LOK SABHA SPEAKER INAUGURATES 12TH BRICS PARLIAMENTARY FORUM 2026; CALLS FOR EMPOWERING PARLIAMENTS TO ADVANCE PEOPLE-CENTRIC DEVELOPMENT",
+   "summary": "Emphasizing the transformative potential of parliamentary engagement, he underscored the need to harness the collective wisdom of nations to address shared challenges, deepen mutual understanding and bring meaningful, positive change to the lives of citizens.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Describing the unanimous adoption of the Joint Statement at the BRICS Summit of Heads of State and Government held in New Delhi under the chairmanship of Prime Minister Shri Narendra Modi as a significant milestone, Shri Birla expressed his appreciation to the member countries."
+    },
+    {
+     "angle": "Figures",
+     "text": "Observing that the world was passing through a period of profound uncertainty, Shri Birla highlighted the mounting challenges posed by regional conflicts, wars, economic instability, trade tensions, terrorism and climate change."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Lok Sabha Secretariat",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328441&reg=3&lang=1",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Resolution",
+    "Speaker",
+    "Summit"
+   ],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "975f245a07a1",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "14:54",
+   "title": "Medical Research Must Address Humanity’s Healthcare Challenges: Vice-President at Dr. NTR University’s Ruby Jubilee",
+   "summary": "“Dr. NTR, a Legend of India, Was a Leader Who Thought Beyond Regional Boundaries”: Vice-President Technology Must Serve Humanity; Compassion Remains at the Heart of Healthcare: Vice-President Doctors Must Lead Society’s Fight Against Drug Abuse: Vice-President 26 OCT 2026 2:54PM by PIB Delhi The Vice-President of India, Shri C.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "MBBS seats have increased by 172 per cent, from around 51,000 to over 1.4 lakh, while postgraduate seats have risen by 177 per cent, from around 31,000 to over 86,000."
+    },
+    {
+     "angle": "Award",
+     "text": "He expressed hope that researchers from Dr. NTR University of Health Sciences would achieve global recognition, including the Nobel Prize, through their contributions to medical science."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Vice President's Secretariat",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328428&reg=3&lang=1",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University",
+    "Remains",
+    "Health"
+   ],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 12,
+    "importance": 5,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "04d4c79ba801",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "16:22",
+   "title": "Cyclone Arnab latest updates: Andhra Pradesh landfall likely on October 28; Odisha shuts schools in 6 districts",
+   "summary": "Cyclone Arnab is expected to intensify into a severe cyclonic storm before making landfall along the Andhra Pradesh coast on October 28. Odisha has deployed eight ministers to oversee preparedness, shut educational institutions in six vulnerable districts.",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/india/cyclone-arnab-latest-updates-andhra-pradesh-landfall-likely-on-october-28-odisha-shuts-schools-in-6-districts-11793010922226.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d004bac3fc73",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "17:50",
+   "title": "Cyclone Arnab threatens Andhra’s municipal polls; SEC hopes to hold them on schedule",
+   "summary": "State Election Commissioner Anil Chandra Punetha expects normalcy within two days of the storm crossing the coast",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-threatens-andhras-municipal-polls-sec-hopes-to-hold-them-on-schedule/article71625736.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "7db47272aacb",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:54",
+   "title": "Cyclone Arnab to make landfall on October 28 in Andhra Pradesh, evacuation of 5.7 lakh people to start soon",
+   "summary": "The Andhra Pradesh government has identified around 5.7 lakh people living in vulnerable areas who may need to be evacuated ahead of cyclone Arnab's landfall.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The Andhra Pradesh government has identified around 5.7 lakh people living in vulnerable areas who may need to be evacuated ahead of cyclone Arnab's landfall."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-landfall-on-october-28-in-andhra-pradesh-cyclonic-storm-tracker-bay-of-bengal-imd-updates-101793007202400.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "31f483bd558a",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -479,6 +1265,516 @@
     "angles": 0,
     "ap": 20,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "6f7cf5adba05",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:26",
+   "title": "Cyclone Arnab: SCoR in Visakhapatnam steps up passenger safety, 24x7 support",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/cyclone-arnab-scor-in-visakhapatnam-steps-up-passenger-safety-24x7-support/article71627061.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "3b517ee98989",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:40",
+   "title": "Journeys of Lakhpati Didis building Crore-Rupee Enterprises at National SARAS Mela 2026",
+   "summary": "Behind every stall at Punnami Ghat is a woman who has believed in her skills, her craft, and herself to live the lakhpati didi dream. Over the days of the Mela, some women from SHGs share what it has felt like to turn a family craft or a first idea into an enterprise. The responsibility of taking charge, the cities that welcomed their work, and the confidence that grew with every step.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Some of their annual turnover runs from ₹60 lakh to ₹1 crore."
+    },
+    {
+     "angle": "Figures",
+     "text": "A Lakhpati Didi is a woman from an SHG household with a sustainable annual household income of at least ₹1 lakh, the milestone at the centre of the Hon’ble Prime Minister Shri Narendra Modi’s vision of six crore Lakhpati Didis by 2029."
+    },
+    {
+     "angle": "Figures",
+     "text": "Today the enterprise reports annual turnover of over ₹1 crore and paying GST of approximately 10 lacs per month and providing employment to 100 + members She is supplying her products through Lepakshi emporium showroom to many other cities."
+    },
+    {
+     "angle": "Figures",
+     "text": "Her business reports annual turnover of ₹60 lakh."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Rural Development",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328458&reg=3&lang=1",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    }
+   ],
+   "topics": [
+    "Railways and multimodal transport"
+   ],
+   "angles": [
+    "NABARD"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 5,
+    "ap": 20,
+    "importance": 9,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "814048ae640b",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:52",
+   "title": "Kakinada coast braces for cyclone Arnab; 89,000 people being evacuated",
+   "summary": "All educational institutes and schools have been declared a two-day holiday in the Godavari region; in Dr. B.R. Ambedkar Konaseema district, the residents of 67 villages are being shifted to relief camps, while 88 pregnant women have been shifted to nearby government hospitals",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/kakinada-coast-braces-for-cyclone-arnab-89000-people-being-evacuated/article71627293.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "History & Culture",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "2dc415b827ac",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:38",
+   "title": "Ministry of Road Transport and Highways (MoRTH) updates rules to facilitate E85/E100 flex fuel vehicles",
+   "summary": "26 OCT 2026 6:38PM by PIB Delhi The Ministry of Road Transport and Highways has notified amendments to the Central Motor Vehicles Rules, 1989, to support the adoption of flex fuel vehicles capable of using E85 and other high ethanol fuels. The amendments update the emission certification provisions by expressly including E100 alongside E85.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "E85 is a petrol and ethanol blend containing up to 85 per cent ethanol by volume."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Road Transport & Highways",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328642&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Amendments",
+    "Highways",
+    "Amendment"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "77780d682dc7",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "Odisha Prepares 60 ODRAF Teams Ahead of Cyclone Arnab",
+   "summary": "Odisha is preparing for Cyclone Arnab, which is forecast to make landfall along the Andhra Pradesh–Odisha coast around 28 October 2026 and intensify into a very severe cy",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/odisha-prepares-60-odraf-teams-ahead-of-cyclone-arnab/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
+   "id": "f5d67c0ae15e",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:05",
+   "title": "Centre committed to reducing fiscal deficit, national debt to be capped at 50% of GDP by 2030: FM Sitharaman",
+   "summary": "Finance Minister Nirmala Sitharaman said the Centre remains committed to reducing the fiscal deficit and aims to cap national debt at 50% of GDP by 2030. She also highlighted measures to control inflation and protect consumers from price shocks.",
+   "facts": [],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/centre-committed-to-reducing-fiscal-deficit-national-debt-to-be-capped-at-50-of-gdp-by-2030-fm-sitharaman-11793017196193.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Remains",
+    "GDP",
+    "Finance Minister"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e58d208c9498",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "16:26",
+   "title": "TRAI Assesses Mobile Network Quality Across Vijayanagara District, Karnataka LSA",
+   "summary": "26 OCT 2026 4:26PM by PIB Delhi The Telecom Regulatory Authority of India (TRAI) has released findings of Independent Drive Test (IDT) conducted across Vijayanagara District, Karnataka LSA , during the month of August 2026 , for information of general telecom consumers.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "26 OCT 2026 4:26PM by PIB Delhi The Telecom Regulatory Authority of India (TRAI) has released findings of Independent Drive Test (IDT) conducted across Vijayanagara District, Karnataka LSA , during the month of August 2026 , for information of general telecom consumers."
+    },
+    {
+     "angle": "Appointed",
+     "text": "TRAI, through its appointed agency, conducted drive tests across City drive – 439.8 KMs , Hotspot locations - 13 , Walk Test – 7.6 KMs and Highway drive of – 74 KMs in Vijayanagara District during 11 th August 2026 to 14 th August 2026 in Karnataka LSA ."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Communications",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328495&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G1-A3",
+     "exam": "G1",
+     "label": "Delhi Sultanate, Vijayanagara Empire, Mughal Empire, Bhakti Movement and Sufism - Administration, Economy, Society, Religion, Literature, Arts and Architecture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Findings",
+    "Services"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 9,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "c86d058f78cd",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "16:13",
+   "title": "TRAI releases Recommendations on ‘Authorisation Framework for Application-based Linear Television Distribution (ALTD) Services’",
+   "summary": "26 OCT 2026 4:13PM by PIB Delhi The Telecom Regulatory Authority of India (TRAI) has today released Recommendations on ‘Authorisation Framework for Application-based Linear Television Distribution (ALTD) Services’.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "TRAI has examined such services and observed that several applications aggregate and distribute scheduled linear TV channels to consumers, either as pre-installed applications on TV sets and other devices; or as downloadable mobile/smart TV applications; or as web-based applications accessible th…"
+    },
+    {
+     "angle": "Figures",
+     "text": "Accordingly, the Authority on 6 th April 2026, had issued a Consultation Paper titled ‘Formulation of a Regulatory Framework for Application-based Linear Television Distribution (ALTD) Services (Including Free Ad-Supported Streaming Television (FAST) Services)’ and solicited comments from stakeho…"
+    },
+    {
+     "angle": "Figures",
+     "text": "Based on the comments and counter-comments received from stakeholders, inputs gathered during the OHD, and its own analysis, the Authority has finalised its Recommendations on the ‘Authorisation Framework for Application-based Linear Television Distribution (ALTD) Services’."
+    },
+    {
+     "angle": "Figures",
+     "text": "A light-touch authorisation framework has been recommended, with a national service area, an initial validity of 20 years renewable for successive periods of 10 years, an application processing fees of ₹10,000 and a one-time entry fee of ₹1 lakh, with no authorisation fee, bank guarantee or secur…"
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Communications",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328480&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Section",
+    "Services"
+   ],
+   "score": 58,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 0,
+    "importance": 15,
     "reuse": 15
    }
   },
@@ -541,6 +1837,954 @@
    }
   },
   {
+   "id": "2e6910e2d900",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:07",
+   "title": "National Overseas Scholarship: Yukti’s (Name Changed) Journey from Barriers to Global Opportunities",
+   "summary": "26 OCT 2026 3:07PM by PIB Delhi For many aspiring students, access to quality higher education is a stepping stone towards a brighter future. However, for students from disadvantaged backgrounds, social discrimination and financial constraints can create significant barriers to academic and professional advancement.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "By providing financial assistance for tuition and maintenance, the scheme helps deserving students overcome economic barriers, broaden their horizons and build pathways towards professional growth."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Social Justice & Empowerment",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328432&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Caste",
+    "Community",
+    "Scheduled Caste",
+    "SC"
+   ],
+   "score": 56,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 20,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ce7a7487afd8",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:47",
+   "title": "CAG notes building rule violations in audit of local bodies in Keralam",
+   "summary": "CAG detects 10 unauthorised constructions in four urban local bodies and 193 unauthorised additions/alterations in selected urban bodies, which indicates deficiencies in monitoring mechanism",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/cag-notes-building-rule-violations-in-audit-of-local-bodies-in-keralam/article71627527.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Construction",
+    "CAG"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "aa7e1d3ccf3e",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "11:26",
+   "title": "Delhi’s min temp drops to season’s lowest 16.2°C; air quality slips to 178",
+   "summary": "The national capital’s Air Quality Index (AQI) stood at 178 at 10 am on Monday. The 24-hour average AQI stood at 153 at 4 pm on Sunday.",
+   "facts": [
+    {
+     "angle": "Index / rank",
+     "text": "The national capital’s Air Quality Index (AQI) stood at 178 at 10 am on Monday."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/delhis-min-temp-drops-to-season-s-lowest-16-2-c-air-quality-slips-to-178-101792994202120.html",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "Index",
+    "Air Quality"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1cd318fa3fb9",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:10",
+   "title": "Cabinet Secretary chairs a meeting of National Crisis Management Committee (NCMC) to review preparedness for the impending cyclone in Bay of Bengal",
+   "summary": "26 OCT 2026 3:10PM by PIB Delhi Cabinet Secretary, Dr. T. Somanathan today chaired a meeting of the National Crisis Management Committee (NCMC) to review preparedness for the impending cyclone in the Bay of Bengal. It is forecast to move west-northwestwards till 27 th October and then northwestwards towards Andhra Pradesh coast.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The Union Home Secretary informed the Committee that the Ministry of Home Affairs, NDMA and IMD are continuously monitoring the situation and coordinating with the Ministries/Departments, State Governments and other agencies."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Cabinet Secretariat",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328434&reg=3&lang=1",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "History & Culture",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G1-A4",
+     "exam": "G1",
+     "label": "European Trading Companies in India - Struggle for Supremacy (Bengal, Bombay, Madras, Mysore, Andhra, Nizam); Governors-General and Viceroys"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 12,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "54fcde3e1b2b",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:15",
+   "title": "FM Nirmala Sitharaman says RBI aims to prevent sudden fluctuations in rupee value",
+   "summary": "Union Finance Minister Nirmala Sitharaman today said the Reserve Bank of India (RBI) was taking measures to prevent sudden fluctuations in the value of the rupee, while clarifying that the central bank does not determine the currency’s value. Speaking to reporters in Tiruchirappalli, Tamil Nadu, Sitharaman said the RBI’s efforts were aimed at preventing abrupt […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/fm-nirmala-sitharaman-says-rbi-aims-to-prevent-sudden-fluctuations-in-rupee-value/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "RBI and monetary policy"
+   ],
+   "angles": [
+    "RBI",
+    "Finance Minister"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "7f9fd62ae1b1",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:04",
+   "title": "IIT Delhi Launches Certificate Course In Artificial Intelligence, Machine Learning: Here's How To Apply",
+   "summary": "IIT Delhi noted that through the course, applicants will master machine learning tools, algorithms, and their industrial applications.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/education/iit-delhi-launches-certificate-programme-in-artificial-intelligence-machine-learning-heres-how-to-apply-12237031#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "IIT",
+    "Artificial Intelligence",
+    "Applications"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "8d3b6ae56d45",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:23",
+   "title": "India-Mexico trade deal: Talks to begin this week amid fresh 50% tariffs on Indian exports",
+   "summary": "India’s merchandise exports to Mexico stood at $5.73 billion in 2025-26, with automobiles accounting for the largest share at $1.92 billion.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "India’s merchandise exports to Mexico stood at $5.73 billion in 2025-26, with automobiles accounting for the largest share at $1.92 billion."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/indiamexico-trade-deal-talks-to-begin-this-week-amid-fresh-50-tariffs-on-indian-exports-101793017996644.html",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Export",
+    "Exports"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "c806a2c23959",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "12:26",
+   "title": "Prime Minister shares an article by former England cricket captain Mr. Kevin Pietersen highlighting Indias progress across sports, technology and wildlife conservation",
+   "summary": "26 OCT 2026 12:26PM by PIB Delhi The Prime Minister Shri Narendra Modi has shared an article written by former England cricket captain, Mr. Kevin Pietersen. In the article, Mr. Kevin Pietersen reflects on India's growing sporting strength, the rise of women's cricket and the country's progress in infrastructure and technology.",
+   "facts": [],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Prime Minister's Office",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328352&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Cricket"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1d00d2d952bb",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "16:28",
+   "title": "School Education Secretary calls for integrating vocational training into mainstream education at CBSE National Summit",
+   "summary": "Secretary in the Department of School Education and Literacy, T K Anil Kumar, today said that the National Education Policy 2020 calls for integrating vocational training into mainstream education. Mr Kumar said that the policy also seeks to remove the artificial divide between academic and vocational training. He said this while addressing the Central Board […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/school-education-secretary-calls-for-integrating-vocational-training-into-mainstream-education-at-cbse-national-summit/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [
+    "CBSE and national school policy"
+   ],
+   "angles": [
+    "Summit"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 5,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "769291311c46",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "13:45",
+   "title": "Parliaments can play important role in finding peaceful solutions to global challenges, says LS Speaker at BRICS",
+   "summary": "Lok Sabha Speaker Om Birla has said that parliaments can play an important role in strengthening mutual understanding and trust, reducing international tensions and finding peaceful solutions to global challenges. Addressing the inaugural session of the 12th BRICS Parliamentary Forum in New Delhi, Mr Birla highlighted challenges such as regional conflicts, wars, economic instability, […]",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Addressing the inaugural session of the 12th BRICS Parliamentary Forum in New Delhi, Mr Birla highlighted challenges such as regional conflicts, wars, economic instability, […]"
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/12th-brics-parliamentary-forum-to-begin-in-new-delhi-tomorrow-2/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Conflict",
+    "Speaker"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "b94b2b424ff1",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "12:15",
+   "title": "Prime Minister shares an article by Member, NITI Aayog and Former Cabinet Secretary Shri Rajiv Gauba highlighting how PM Modis 25 years in public office have reshaped infrastructure planning and delivery",
+   "summary": "26 OCT 2026 12:15PM by PIB Delhi The Prime Minister Shri Narendra Modi has shared an article written by Member, NITI Aayog and Former Cabinet Secretary, Shri Rajiv Gauba. In the article, Shri Rajiv Gauba writes that the Prime Minister's 25 years in public office have reshaped how infrastructure is planned and delivered.",
+   "facts": [],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Prime Minister's Office",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328343&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C1",
+     "exam": "G1",
+     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "NITI Aayog"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "b77aa839fe60",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "13:46",
+   "title": "TDB-DST signs agreement with Manastu Space for ₹116 crore RDI support to advance indigenous green propulsion technology",
+   "summary": "The project, with a total project cost of ₹277.63 crore, focuses on developing a scalable, integrated green propulsion system for satellites and launch vehicles across the 5 mN to 300 N thrust class. The programme aims to advance the technology from Technology Readiness Level (TRL)-6 to TRL-9, supporting further development, validation and deployment of the propulsion system.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The project, with a total project cost of ₹277.63 crore, focuses on developing a scalable, integrated green propulsion system for satellites and launch vehicles across the 5 mN to 300 N thrust class."
+    },
+    {
+     "angle": "Space / defence",
+     "text": "A key feature of the technology is its scalable architecture, serving propulsion requirements ranging from small satellite applications to higher-thrust systems."
+    },
+    {
+     "angle": "Space / defence",
+     "text": "The programme will build on this technology base through further engineering, system integration, testing and validation, advancing its performance, reliability and readiness for wider deployment across satellite and launch vehicle applications."
+    },
+    {
+     "angle": "Space / defence",
+     "text": "The project addresses an important requirement in the evolving space economy: propulsion systems that can support more efficient satellite operations while improving the safety and economics of space missions."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Science & Technology",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328399&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agreement",
+    "Satellite",
+    "Indigenous",
+    "Launch vehicle"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 20,
+    "ap": 0,
+    "importance": 9,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "ebc0d8359951",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:35",
+   "title": "Hon’ble Deputy Chairman, Rajya Sabha, Shri Harivansh Delivers Welcome Address at the Inaugural Session of 12th BRICS Parliamentary Forum in Central Hall, Parliament of India, New Delhi",
+   "summary": "Welcoming Hon'ble Speaker of Lok Sabha and Chairperson of the 12th BRICS Parliamentary Forum, Shri Om Birla, Hon'ble Presiding Officers, Heads of Delegations from BRICS Member and Partner Countries, Excellencies, and Distinguished Delegates, Shri Harivansh stated that it is an honour to have all dignitaries and delegates present in the Central Hall.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Welcoming Hon'ble Speaker of Lok Sabha and Chairperson of the 12th BRICS Parliamentary Forum, Shri Om Birla, Hon'ble Presiding Officers, Heads of Delegations from BRICS Member and Partner Countries, Excellencies, and Distinguished Delegates, Shri Harivansh stated that it is an honour to have all …"
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "He highlighted that this historic hall has remained a silent yet living witness to India’s evolution as one of the world’s largest, most vibrant, and successful democracies."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "Shri Harivansh recalled that during the 2026 BRICS Presidency, India, under the leadership of Prime Minister Narendra Modi, introduced a transformative vision of a “People-Centric” and \"Humanity First\" approach."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "Furthermore, India’s presidency of the 18th BRICS Summit culminated in the adoption of the New Delhi Declaration, which advanced global governance reforms and fostered a more balanced, multipolar world order."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Rajya Sabha Secretariat",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328640&reg=3&lang=1",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment",
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Speaker"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "34fa3486b7cd",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "Sitaram Raul Wins Wildlife Photography Award Category",
+   "summary": "Indian photographer and fine artist Sitaram Raul won the ‘Behaviour: Invertebrates’ category at the 2026 Wildlife Photographer of the Year competition.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/sitaram-raul-wins-wildlife-photography-award-category/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Award"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
+   "id": "2eac001b548e",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "14:08",
+   "title": "Supreme Court issues notice on plea against Chhattisgarh anti-conservation law",
+   "summary": "Chhattisgarh’s anti-conversion law was the latest in such legislation which rights groups say violates rights",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/supreme-court-issues-notice-on-plea-against-chhattisgarh-anti-conservation-law-101793003923614.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "b4e70b13d327",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "16:03",
+   "title": "India likely to extend duty-free cotton imports till December amid tight supplies",
+   "summary": "Firm domestic prices, weaker crop prospects and rising textile demand have strengthened calls for continued duty relief on imported cotton.",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/india-likely-to-extend-duty-free-cotton-imports-till-december-amid-tight-supplies/article71626425.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Import",
+    "Imports"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "bad8257a1b6d",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -592,6 +2836,701 @@
    "why": {
     "syllabus": 24,
     "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "dfa7be871128",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "15:48",
+   "title": "Centre committed to reducing fiscal deficit, as evidenced by annual budgets: Nirmala Sitharaman",
+   "summary": "Addressing concerns about the national debt, she said that since the post-Covid period, every nation has faced debt challenges",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/centre-committed-to-reducing-fiscal-deficit-as-evidenced-by-annual-budgets-nirmala-sitharaman/article71626456.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Post"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1cce043eef80",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:11",
+   "title": "Phase II reorganisation of Keralam’s State GST department under way",
+   "summary": "Satheesan says the reorganisation will incorporate process reforms recommended by the 57th GST Council",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/phase-ii-reorganisation-of-keralams-state-gst-department-under-way/article71627252.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "GST"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "23723c6ffd4b",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "14:16",
+   "title": "CBSE is organising the 4th National Summit on ‘Facilitating School-to-Work Transition’ in New Delhi",
+   "summary": "Anil Kumar, highlights the importance of linking school education with higher education, skilling and employment 26 OCT 2026 2:16PM by PIB Delhi The Central Board of Secondary Education (CBSE), in association with the Sahodaya School Complexes of Delhi/NCR, is organising the 4th National Summit on ‘Facilitating School-to-Work Transition’ on October 26–27, 2026 in New Delhi.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Anil Kumar, highlights the importance of linking school education with higher education, skilling and employment 26 OCT 2026 2:16PM by PIB Delhi The Central Board of Secondary Education (CBSE), in association with the Sahodaya School Complexes of Delhi/NCR, is organising the 4th National Summit o…"
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "Speaking at the Summit, Shri Anil Kumar, outlined four key priorities of the Summit, namely, technology, digital safety and skills; design, creativity and innovation; recognition of skills across education systems through the National Credit Framework; and career guidance with equitable pathways."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The two-day Summit aims to strengthen the integration of skill education with mainstream schooling and facilitate a smoother transition for students from schools to the world of work."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The Summit underscores the importance of breaking down barriers among different streams of education and equipping students with the competencies required to navigate an evolving employment landscape, as envisioned in the National Education Policy (NEP) 2020."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Education",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328416&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "CBSE and national school policy"
+   ],
+   "angles": [
+    "Summit"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 5,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "064ff5d55a08",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "13:20",
+   "title": "Cyclone ‘Arnab’ likely to intensify into very severe cyclonic storm by tomorrow",
+   "summary": "The India Meteorological Department (IMD) has said that the Deep Depression over the East central and adjoining Southeast Bay of Bengal has intensified into cyclonic storm “Arnab”. IMD informed that the cyclonic storm lay centered over East central and adjoining West central Bay of Bengal about 590 km northwest of Sri Vijaya Puram (Andaman Islands) […]",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "IMD informed that the cyclonic storm lay centered over East central and adjoining West central Bay of Bengal about 590 km northwest of Sri Vijaya Puram (Andaman Islands) […]"
+    }
+   ],
+   "source": "AIR News — Regional",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/low-pressure-system-over-bay-of-bengal-likely-to-cross-andhra-pradesh-and-yanam-coasts-between-bapatla-and-visakhapatnam/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Islands"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a72c2b95d6c4",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "12:13",
+   "title": "Prime Minister shares an article by Lok Sabha Speaker Shri Om Birla highlighting the role of the 12th BRICS Parliamentary Forum in strengthening parliamentary dialogue and cooperation",
+   "summary": "26 OCT 2026 12:13PM by PIB Delhi The Prime Minister Shri Narendra Modi has shared an article written by the Lok Sabha Speaker, Shri Om Birla. In the article, Shri Om Birla writes about the role of the 12th BRICS Parliamentary Forum in strengthening parliamentary dialogue and cooperation among member and partner countries.",
+   "facts": [],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Prime Minister's Office",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328342&reg=3&lang=1",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Speaker"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "75c5ebf8fe8d",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:51",
+   "title": "Rajasthan government declares 80 tehsils across 14 districts drought-affected",
+   "summary": "The Rajasthan government has declared 80 tehsils across 14 districts as drought-affected in view of deficient rainfall and damage to kharif crops. According to the notification, 69 tehsils have been classified as severely affected, while 11 have been categorised as moderately affected. The declaration will remain in force for the next six months.",
+   "facts": [],
+   "source": "AIR News — Regional",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/rajasthan-government-declares-80-tehsils-across-14-districts-drought-affected/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ecedf8492961",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:42",
+   "title": "MoRTH to Organise ‘Transport Mela’ under PARIVARTAN Scheme in Delhi-NCR on 28th October, 2026",
+   "summary": "Vehicle Original Equipment Manufacturers (OEMs) and their dealers, Registered Vehicle Scrapping Facilities (RVSFs), banks and Non-Banking Financial Companies (NBFCs), Oil Marketing Companies (OMCs), and City Gas Distribution (CGD) entities associated with the Scheme will participate in the Mela.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Vehicle Original Equipment Manufacturers (OEMs) and their dealers, Registered Vehicle Scrapping Facilities (RVSFs), banks and Non-Banking Financial Companies (NBFCs), Oil Marketing Companies (OMCs), and City Gas Distribution (CGD) entities associated with the Scheme will participate in the Mela."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Road Transport & Highways",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328646&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Banks",
+    "Highways"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d3881a025fbc",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "16:22",
+   "title": "Union Ministry of Health and Family Welfare Observes Vigilance Awareness Week 2026 with Integrity Pledge",
+   "summary": "Union Minister of Health and Family Welfare, Shri J. Nadda, administered the Integrity Pledge in the Presence of Union Minister of State for Health and Family Welfare and AYUSH Ministry (Independent) Shri Prataprao Jadhav and Union Minister of State for Health and Family Welfare, Smt. Anupriya Patel to senior officers of the Ministry.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "The Integrity Pledge reaffirmed the commitment of officers and officials to uphold the rule of law, maintain the highest standards of probity and transparency in the discharge of their duties."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "It called for sustained vigilance and adherence to the highest standards of honesty and integrity in all spheres of public life."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Health and Family Welfare",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328490&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B1",
+     "exam": "G1",
+     "label": "Indian Constitution - Evolution, Features, Preamble, Fundamental Rights, Fundamental Duties, DPSP, Amendments, Significant Provisions and Basic Structure"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U6",
+     "exam": "G2",
+     "label": "Nature of the Indian Constitution, Constitutional Development, Salient Features, Preamble, Fundamental Rights, DPSP and their Relationship, Fundamental Duties, Amendment, Basic Structure"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Administration",
+    "Union Minister",
+    "Family",
+    "Health"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 20,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "23075a2d9052",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:03",
+   "title": "Vice-President arrives at Tirumala on two-day visit",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/vice-president-arrives-at-tirumala-on-two-day-visit/article71626916.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [
+    "Tirumala Tirupati Devasthanams (TTD)"
+   ],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "a5a28f76e680",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:09",
+   "title": "'Rising runoff, flood risks': Fresh warning over China’s mega Brahmaputra dam",
+   "summary": "Chinese researchers highlight potential increases in runoff and flood risks for the Brahmaputra River this century. Their study uses tree-ring data to model future climate scenarios affecting runoff. The implications of the $168 billion mega dam project in Tibet raise concerns for downstream countries like India and Bangladesh.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The implications of the $168 billion mega dam project in Tibet raise concerns for downstream countries like India and Bangladesh."
+    }
+   ],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/world/china/rising-runoff-flood-risks-fresh-warning-over-chinas-mega-brahmaputra-dam/articleshow/135212072.cms",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Associated with"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "80e7ca6c9772",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:51",
+   "title": "Artificial intelligence giant Anthropic files papers to sell shares to the public for the first time",
+   "summary": "The filing sets up the San Francisco company for a Wall Street debut next month, potentially eclipsing the SpaceX initial public offering in June that raised a record $86 billion",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "The filing sets up the San Francisco company for a Wall Street debut next month, potentially eclipsing the SpaceX initial public offering in June that raised a record $86 billion"
+    }
+   ],
+   "source": "The Hindu — International",
+   "sourceId": "hindu-international",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/international/artificial-intelligence-giant-anthropic-files-papers-to-sell-shares-to-the-public-for-the-first-time/article71627679.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Artificial Intelligence"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "47090416540a",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:47",
+   "title": "At BRICS meet, Birla calls on parliaments to listen to youth",
+   "summary": "Lok Sabha Speaker says parliamentary diplomacy can help address present-day challenges; PM meets BRICS delegations",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/regional-conflicts-terrorism-do-not-stop-at-borders-affect-all-lok-sabha-speaker-at-brics-parliamentary-forum/article71626163.ece",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Speaker"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
     "ap": 0,
     "importance": 0,
     "reuse": 15
@@ -655,6 +3594,368 @@
    }
   },
   {
+   "id": "b9216fcafe3f",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "17:23",
+   "title": "China's $168 billion Brahmaputra dam faces fresh concerns as researchers warn of rising flood risks",
+   "summary": "Chinese researchers warn that rising runoff in Tibet’s Yarlung Tsangpo, which flows into India as the Brahmaputra, could heighten flood risks this century. The findings raise fresh concerns as China builds its $168 billion mega hydropower project.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The findings raise fresh concerns as China builds its $168 billion mega hydropower project."
+    }
+   ],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/world/chinas-168-billion-brahmaputra-dam-faces-fresh-concerns-as-researchers-warn-of-rising-flood-risks-11793014411104.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Findings"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "adc897f1be96",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:08",
+   "title": "Government allows Ethanol 100 in compliant vehicles",
+   "summary": "The Ministry of Road Transport and Highways (MoRTH) has changed certain vehicle classification thresholds, fuel specifications, and technical references used in emission-related tables and testing provisions",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/government-amends-motor-vehicle-rules-to-permit-pure-ethanol-flex-fuel-vehicles/article71626824.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Highways"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a70a1f72c9c7",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:07",
+   "title": "Government working to allow ethanol blending beyond E20 via flexi-fuel vehicles: Tarun Kapoor",
+   "summary": "Tarun Kapoor said ethanol production capacity in the country has surpassed requirements for blending, and the industry will need to explore additional uses for ethanol to utilise this surplus capacity fully",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/government-working-to-allow-ethanol-blending-beyond-e20-via-flexi-fuel-vehicles-tarun-kapoor/article71447856.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Industry"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a13da6940c0f",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "16:24",
+   "title": "Gujarat declares four districts drought-hit, announces crop-loss aid for farmers",
+   "summary": "Lower rainfall in four districts has prompted the State to roll out measures to protect farm incomes, livestock and rural livelihoods",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/gujarat-declares-4-districts-drought-hit-announces-farm-relief/article71626275.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "6a9fee8a0e80",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "11:33",
+   "title": "Immersive Technologies",
+   "summary": "Over the last decade, India has built a strong digital ecosystem that has transformed everyday interactions with technology. Platforms such as UPI, Aadhaar, DigiLocker, UMANG and BHASHINI have expanded access to services and information. As digital platforms become more widespread, the next opportunity is to make these interactions more interactive, visual and experiential .",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "They can also create more engaging experiences across culture, gaming, entertainment, retail and other sectors ."
+    },
+    {
+     "angle": "Figures",
+     "text": "The market generated USD 1,259.5 million in revenue in 2023 and is projected to reach USD 7,818.7 million by 2030 , growing at a CAGR of 29.8 per cent ."
+    },
+    {
+     "angle": "Figures",
+     "text": "The event will be organised under the theme “Creative Minds, Catalyzing Science, Empowering Technologies.” Organised by the Council of Scientific & Industrial Research (CSIR), ESTIC-2026 will bring together ministries, researchers, innovators, industry leaders, deep-tech start-ups and global expe…"
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "PIB Backgrounder",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328338&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "History & Culture",
+    "Geography",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services",
+    "Artificial Intelligence"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "4e12d40a2cfc",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "India Targets Fourfold Port Capacity by 2047",
+   "summary": "Union Commerce and Industry Minister Piyush Goyal announced on 25 October 2026 in Rotterdam that India aims to quadruple its port capacity by 2047.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-targets-fourfold-port-capacity-by-2047/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Industry"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
    "id": "c7e8b28618a4",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -694,6 +3995,64 @@
    "topics": [],
    "angles": [
     "Services"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e9a4c10d0b5e",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "17:06",
+   "title": "SBI inaugrates centre of excellence for cybersecurity",
+   "summary": "The inauguration of CyRIS by SBI marks a significant step in advancing cybersecurity measures and threat intelligence in finance. Centered around THINK, INNOVATE, and DEFEND, it promotes a cooperative approach among banks, fintechs, and regulators to strengthen resilience.",
+   "facts": [],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/india/sbi-inaugrates-centre-of-excellence-for-cybersecurity/articleshow/135210809.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Banks"
    ],
    "score": 44,
    "band": "medium",
@@ -757,6 +4116,61 @@
    }
   },
   {
+   "id": "0479e99f5b53",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "Supreme Court Says 14 States Agree to Raise Judicial Officers’ Retirement Age",
+   "summary": "On 26 October 2026, the Supreme Court of India said that 14 states had agreed to raise the retirement age of District Judicial Officers from 60 to 62 years.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "On 26 October 2026, the Supreme Court of India said that 14 states had agreed to raise the retirement age of District Judicial Officers from 60 to 62 years."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/supreme-court-says-14-states-agree-to-raise-judicial-officers-retirement-age/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Years",
+    "Supreme court",
+    "States"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
    "id": "43a1dc0dac1a",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -810,6 +4224,194 @@
     "ap": 0,
     "importance": 0,
     "reuse": 15
+   }
+  },
+  {
+   "id": "902abe4a61a5",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:06",
+   "title": "Akashvani to organise 67th Sardar Vallabhbhai Patel Lecture tomorrow",
+   "summary": "Akashvani will organise the 67th edition of Sardar Vallabhbhai Patel Lecture series tomorrow. Union Minister for Agriculture and Farmers Welfare, Shivraj Singh Chouhan, will deliver the lecture. The Ministry of Information and Broadcasting informed that the recording of the Lecture will broadcast on the Sardar Patel Jayanti on 31st of this month on the entire […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/akashvani-to-organise-67th-sardar-vallabhbhai-patel-lecture-tomorrow/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Union Minister",
+    "Agriculture"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "1600fb1dcc98",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "19:27",
+   "title": "Cabinet Secretary T V Somanathan reviews preparedness for Cyclone Arnab in Bay of Bengal",
+   "summary": "Somanathan today chaired a meeting of the National Crisis Management Committee to review preparedness for the impending cyclone in the Bay of Bengal. During the meeting, it was informed that adequate shelters and evacuation arrangements have been made, and necessary NDRF and SDRF teams have been kept on standby.",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/cabinet-secretary-t-v-somanathan-reviews-preparedness-for-cyclone-arnab-in-bay-of-bengal/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e2afe4d8b769",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "18:57",
+   "title": "PM to inaugurate Emerging Science, Technology and Innovation Conclave 2026 on 27 October",
+   "summary": "He will also address the gathering on the occasion. Scheduled from 27 to 29 October, the three-day Conclave will bring together leading scientists, researchers, academicians, policymakers, industry leaders, startups and international experts to deliberate on emerging technologies and India's science, technology and innovation priorities.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Scheduled from 27 to 29 October, the three-day Conclave will bring together leading scientists, researchers, academicians, policymakers, industry leaders, startups and international experts to deliberate on emerging technologies and India's science, technology and innovation priorities."
+    },
+    {
+     "angle": "Figures",
+     "text": "It will include around 150 deep-tech startup stalls, which will highlight technological developments and their potential applications across sectors."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Prime Minister's Office",
+   "alsoIn": [
+    "The Hindu — Science & Technology"
+   ],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328654&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Industry",
+    "Artificial Intelligence"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
    }
   },
   {
@@ -908,6 +4510,172 @@
    }
   },
   {
+   "id": "5fccdddddcfb",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "time": "14:42",
+   "title": "GeM Promotes ‘The AABHAR Collection’ to Showcase India’s Cultural Heritage and Support Local Artisans",
+   "summary": "AABHAR Collection Features 294 Product Listings from 10 State and Central Handloom and Handicraft Emporiums 26 OCT 2026 2:42PM by PIB Delhi The Government e-Marketplace (GeM) is promoting ‘The AABHAR Collection’, a dedicated digital storefront showcasing curated gift items and hampers that reflect India’s rich cultural heritage.",
+   "facts": [
+    {
+     "angle": "GI tag / designation",
+     "text": "The collection features products associated with the One District, One Product (ODOP) initiative and Geographical Indication (GI) tags, providing government buyers with convenient access to distinctive regional products while supporting artisans, weavers, rural entrepreneurs and women-led enterpr…"
+    },
+    {
+     "angle": "Figures",
+     "text": "Government buyers can explore the collection at https://gem.gov.in/Aabhar and contribute to promoting India’s cultural heritage and local enterprises through the procurement of #VocalForLocal gift hampers."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Commerce & Industry",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2328424&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Associated with",
+    "Features"
+   ],
+   "score": 40,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "34847d6e60ae",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "Artist and Former Rajya Sabha MP Jogen Chowdhury Dies at 87",
+   "summary": "Indian painter and former Rajya Sabha member Jogen Chowdhury died in a private hospital in Kolkata on 25 October 2026, aged 87. He was born on 15 February 1939 in Faridpu",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/artist-and-former-rajya-sabha-mp-jogen-chowdhury-dies-at-87/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 39,
+   "band": "low",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
+   "id": "257de9a630e2",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "UPSC Prelims 2027 CGS Test-13",
+   "summary": "",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/upsc-prelims-2027-cgs-test-13/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 39,
+   "band": "low",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
    "id": "7039c56e550f",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -954,6 +4722,171 @@
    }
   },
   {
+   "id": "65f60e2ad9a5",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "COP31 to Address the Global Climate Finance Gap",
+   "summary": "COP31, the 31st Conference of the Parties to the United Nations Framework Convention on Climate Change (UNFCCC), will take place in Antalya, T&uuml;rkiye, from 9 to 20 Novembe",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "COP31, the 31st Conference of the Parties to the United Nations Framework Convention on Climate Change (UNFCCC), will take place in Antalya, T&uuml;rkiye, from 9 to 20 Novembe"
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/cop31-to-address-the-global-climate-finance-gap/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Climate Change",
+    "Convention"
+   ],
+   "score": 33,
+   "band": "low",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
+   "id": "a497c4805db7",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "NIFTEM-K Hosts India’s First AI-Food Technology Hackathon",
+   "summary": "The National Institute of Food Technology Entrepreneurship and Management, Kundli (NIFTEM-K), hosted “Hack the Fork”, described as India’s first Artificial Intelligence (",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The National Institute of Food Technology Entrepreneurship and Management, Kundli (NIFTEM-K), hosted “Hack the Fork”, described as India’s first Artificial Intelligence ("
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/niftem-k-hosts-indias-first-ai-food-technology-hackathon/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "described as",
+    "Artificial Intelligence"
+   ],
+   "score": 27,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
+   "id": "680e4d697922",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "Chef Damu, Padma Shri Awardee, Dies at 72",
+   "summary": "Damodharan, popularly known as Chef Damu, died in Chennai on 25 October 2026 at the age of 72. He received the Padma Shri in 2025 for his contribution to culinary arts",
+   "facts": [
+    {
+     "angle": "Award",
+     "text": "He received the Padma Shri in 2025 for his contribution to culinary arts"
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/chef-damu-padma-shri-awardee-dies-at-72/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Known as"
+   ],
+   "score": 9,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
    "id": "ab97f88cc7a1",
    "date": "2026-10-26",
    "pubDate": "2026-10-26",
@@ -986,6 +4919,45 @@
    "topics": [],
    "angles": [
     "Championship"
+   ],
+   "score": 9,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "2cf91841e804",
+   "date": "2026-10-26",
+   "pubDate": "2026-10-26",
+   "title": "Indian Navy’s Indigenous AIP System Enters Setting-to-Work Phase-2",
+   "summary": "The Indian Navy’s indigenous Air Independent Propulsion (AIP) system reached a development milestone on 24 October 2026 with the inauguration of the Setting to Work Phase",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/indian-navys-indigenous-aip-system-enters-setting-to-work-phase-2/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Indigenous"
    ],
    "score": 9,
    "band": "low",
@@ -1036,120 +5008,6 @@
    "why": {
     "syllabus": 4,
     "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "3763b37bcbf5",
-   "date": "2026-10-26",
-   "pubDate": "2026-10-26",
-   "title": "Major Astronomical Observatories Studying Black Holes",
-   "summary": "Black holes are studied by observing their effects on nearby matter, light and spacetime rather than by seeing them directly. Ground- and space-based observatories use ra",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/major-astronomical-observatories-studying-black-holes/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 4,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "98bb0e641fe9",
-   "date": "2026-10-26",
-   "pubDate": "2026-10-26",
-   "title": "Chess Rules, Scoring Systems and Tournament Formats",
-   "summary": "Chess is played between two players on a standard 8-by-8 board, with each side seeking to checkmate the opposing king. Its rules govern how pieces move, when games are dr",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/chess-rules-scoring-systems-and-tournament-formats/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "38ed0e380e2e",
-   "date": "2026-10-26",
-   "pubDate": "2026-10-26",
-   "title": "What Is the Pentagon’s FORTRESS America Plan?",
-   "summary": "The Pentagon’s FORTRESS America initiative was formally launched by US Secretary of War Pete Hegseth on 30 September 2026. FORTRESS stands for Federal Operations for Resi",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/what-is-the-pentagons-fortress-america-plan/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
     "ap": 0,
     "importance": 0,
     "reuse": 0
