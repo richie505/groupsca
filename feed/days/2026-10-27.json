@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-27",
- "updated": "2026-10-27T18:33:13.528Z",
+ "updated": "2026-10-27T21:39:50.309Z",
  "sources": [
   {
    "id": "pib",
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 41,
+   "found": 44,
    "error": null
   },
   {
@@ -102,8 +102,8 @@
   {
    "id": "mint-news",
    "name": "Mint — News",
-   "found": 35,
-   "error": null
+   "found": 0,
+   "error": "no items parsed"
   },
   {
    "id": "mint-economy",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 10,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 43,
+   "found": 47,
    "error": null
   },
   {
@@ -1355,6 +1355,57 @@
    }
   },
   {
+   "id": "c920d5fcfb75",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "01:28",
+   "title": "Cyclone Arnab starts landfall process along Andhra Pradesh coast, triggers heavy rain and strong winds",
+   "summary": "Authorities remain on high alert as rescue and relief teams continue to take precautionary measures to minimise the impact of the severe cyclonic storm.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "rescue"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "ad7372132e69",
    "date": "2026-10-27",
    "pubDate": "2026-10-27",
@@ -1399,6 +1450,58 @@
    "topics": [],
    "angles": [
     "Rainfall"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "02b0ab9f6d80",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "00:16",
+   "title": "Cyclone Arnab: Flights Suspended At 3 Andhra Airports, Airlines Cancel Services",
+   "summary": "Cyclone Arnab: Airlines have been advised to follow operational guidelines for adverse weather conditions, keep passengers informed about delays and cancellations, and comply with applicable rebooking and refund norms.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/cyclone-arnab-flights-suspended-at-3-andhra-airports-airlines-cancel-services-12245434#publisher=newsstand",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services"
    ],
    "score": 64,
    "band": "high",
@@ -1963,6 +2066,60 @@
     "syllabus": 30,
     "angles": 15,
     "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d061b62457d5",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "02:07",
+   "title": "1,932 APSPDCL personnel to handle cyclone Arnab power outages",
+   "summary": "Each 12-member team is equipped with experienced technical staff and senior officers, including Superintending Engineers, Executive Engineers, Deputy Executive Engineers, and Assistant Executive Engineers.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Each 12-member team is equipped with experienced technical staff and senior officers, including Superintending Engineers, Executive Engineers, Deputy Executive Engineers, and Assistant Executive Engineers."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/1932-apspdcl-personnel-to-handle-cyclone-arnab-power-outages-1136508",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
     "importance": 0,
     "reuse": 15
    }
@@ -2685,6 +2842,55 @@
    }
   },
   {
+   "id": "547dde0f04e5",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "01:56",
+   "title": "Home Minister inspects cyclone preparedness in coastal villages",
+   "summary": "Home Minister Vangalapudi Anitha appeals to the public to strictly follow official advisories and warnings",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/home-minister-inspects-cyclone-preparedness-in-coastal-villages-1136502",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "eb9d81e2c3e6",
    "date": "2026-10-27",
    "pubDate": "2026-10-27",
@@ -2817,6 +3023,55 @@
      "code": "G2-S2",
      "exam": "G2",
      "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "469d1fa2209b",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "01:51",
+   "title": "PNB organises MSME outreach programme",
+   "summary": "The presentation was followed by an interactive question-and-answer session, during which participants sought clarifications on various banking products and credit facilities.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/pnb-organises-msme-outreach-programme-1136500",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
     }
    ],
    "topics": [],
@@ -3632,6 +3887,70 @@
     "ap": 0,
     "importance": 5,
     "reuse": 5
+   }
+  },
+  {
+   "id": "fee3beaa882a",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "00:43",
+   "title": "India could have achieved over 8% GDP growth without external shocks: RBI Deputy Governor",
+   "summary": "Poonam Gupta highlighted domestic investment, foreign capital and economic resilience as key factors shaping India’s growth prospects amid global uncertainty.",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/india-could-have-achieved-over-8-gdp-growth-without-external-shocks-rbi-deputy-governor/article71633214.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor",
+    "GDP",
+    "RBI"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -6262,6 +6581,62 @@
    }
   },
   {
+   "id": "23e51878f8ce",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "00:40",
+   "title": "T.N. govt. revises housing loan limits for urban cooperative banks and credit societies",
+   "summary": "The maximum individual loan limit for UCCSs has been raised to ₹60 lakh for societies with deposits below ₹100 crore and ₹1 crore for those with deposits exceeding ₹100 crore",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The maximum individual loan limit for UCCSs has been raised to ₹60 lakh for societies with deposits below ₹100 crore and ₹1 crore for those with deposits exceeding ₹100 crore"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-revises-housing-loan-limits-for-urban-cooperative-banks-and-credit-societies/article71632544.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Banks"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
    "id": "b114f93ec195",
    "date": "2026-10-27",
    "pubDate": "2026-10-27",
@@ -6481,111 +6856,51 @@
    "lang": "te"
   },
   {
-   "id": "74691daa9170",
+   "id": "85ecee7d2b04",
    "date": "2026-10-27",
-   "pubDate": "2026-10-27",
-   "time": "18:15",
-   "title": "Assam approves 12% reservation for former Agniveers",
-   "summary": "Annual recruitment drive to begin in 2027, says hief Minister Himanta Biswa Sarma",
+   "pubDate": "2026-10-28",
+   "time": "01:03",
+   "title": "Flight operations suspended at Bhogapuram airport",
+   "summary": "Following heavy rains accompanied by gales across coastal Andhra Pradesh, airlines, including IndiGo and Air India, were suspended as aviation authorities placed safety restrictions.",
    "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/assam/assam-approves-12-reservation-for-former-agniveers/article71631389.ece",
-   "bucket": "national",
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/flight-operations-suspended-at-bhogapuram-airport-1136486",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
     "G1",
     "G2"
    ],
-   "subject": "Polity, Society & IR",
+   "subject": "Economy",
    "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B5",
-     "exam": "G1",
-     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
-    },
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [],
-   "score": 45,
-   "band": "medium",
-   "why": {
-    "syllabus": 30,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "ee2c83b79303",
-   "date": "2026-10-27",
-   "pubDate": "2026-10-27",
-   "time": "19:03",
-   "title": "19-month-old cheetah dies of gunshot injuries in MP's Kuno National Park; pellets extracted from body",
-   "summary": "The cub was first rescued from the Pahargarh range in Morena and brought to Kuno National Park, where it died during treatment.",
-   "facts": [
-    {
-     "angle": "GI tag / designation",
-     "text": "The cub was first rescued from the Pahargarh range in Morena and brought to Kuno National Park, where it died during treatment."
-    }
-   ],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/19monthold-cheetah-cub-dies-of-gunshot-injuries-in-mps-kuno-national-park-pellets-extracted-from-body-101793102923618.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
+    "Economy",
     "Geography",
     "Science, Tech & Environment"
    ],
    "units": [
     {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-M2B-U3",
+     "code": "G2-M2A-U5",
      "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
     }
    ],
-   "topics": [],
-   "angles": [
-    "National Park"
+   "topics": [
+    "AP ports and airports"
    ],
-   "score": 44,
+   "angles": [],
+   "score": 45,
    "band": "medium",
    "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
     "importance": 0,
-    "reuse": 15
+    "reuse": 5
    }
   },
   {
@@ -6800,6 +7115,57 @@
    }
   },
   {
+   "id": "901aff074c45",
+   "date": "2026-10-27",
+   "pubDate": "2026-10-28",
+   "time": "01:46",
+   "title": "Postal ballot facility for poll staff",
+   "summary": "As per the directions of the State Election Commission, arrangements have been made at the Indoor Stadium of the PB Siddhartha Arts and Science College in Mogalrajpuram on October 29 and 30.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/postal-ballot-facility-for-poll-staff-1136499",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Election Commission"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "c76ac816a254",
    "date": "2026-10-27",
    "pubDate": "2026-10-27",
@@ -6895,51 +7261,6 @@
     "reuse": 5
    },
    "lang": "te"
-  },
-  {
-   "id": "c32dc23ab553",
-   "date": "2026-10-27",
-   "pubDate": "2026-10-27",
-   "time": "23:33",
-   "title": "A.P. teachers’ body demands implementation of Old Pension Scheme",
-   "summary": "The federation leaders allege that the Central and State governments are systematically undermining public education while favouring private institutions",
-   "facts": [],
-   "source": "The Hindu — Andhra Pradesh",
-   "sourceId": "hindu-ap",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "The Hindu — National"
-   ],
-   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-teachers-body-demands-implementation-of-old-pension-scheme/article71632448.ece",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 37,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 0,
-    "ap": 20,
-    "importance": 0,
-    "reuse": 5
-   }
   }
  ]
 }
