@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-10-30",
- "updated": "2026-10-30T18:24:46.666Z",
+ "updated": "2026-10-30T21:50:26.436Z",
  "sources": [
   {
    "id": "pib",
@@ -48,7 +48,7 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 19,
+   "found": 20,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 9,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 165,
+   "found": 105,
    "error": null
   },
   {
@@ -854,6 +854,60 @@
    }
   },
   {
+   "id": "a6f653107ba5",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "00:50",
+   "title": "Andhra Pradesh to spend ₹3,000 crore on irrigation drain modernisation in Godavari region",
+   "summary": "Modernisation of irrigation drains will offer a permanent solution to crop inundation problems, says Chief Minister, adding that 4.68 TMC of rainwater has been diverted to reservoirs during Cyclone Arnab",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-to-spend-3000-crore-on-irrigation-drain-modernisation-in-godavari-region/article71645042.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Irrigation",
+    "Reservoir"
+   ],
+   "score": 66,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 10
+   }
+  },
+  {
    "id": "82665abd52e2",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -967,6 +1021,113 @@
     "angles": 0,
     "ap": 20,
     "importance": 5,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "35e0a29a061e",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "01:32",
+   "title": "Cyclone causes Rs 4.52 cr damage to APCPDCL infra",
+   "summary": "The cyclone also damaged 15.3 km of 33 KV lines, 57.05 km of 11 KV lines and 82.07 km of LT lines.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The cyclone also damaged 15.3 km of 33 KV lines, 57.05 km of 11 KV lines and 82.07 km of LT lines."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/cyclone-causes-rs-452-cr-damage-to-apcpdcl-infra-1137619",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Lines"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ac67d4c292ab",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "01:04",
+   "title": "Mana Mitra resolves over 95% cyclone complaints",
+   "summary": "Residents used the platform to seek emergency assistance for waterlogging, fallen trees, power outages, and shortages of food and medicines, among other urgent requirements.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/mana-mitra-resolves-over-95-cyclone-complaints-1137608",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Emergency"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -1972,6 +2133,66 @@
    }
   },
   {
+   "id": "350e6470b4b1",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "01:12",
+   "title": "Purandeswari inspects cyclone-hit crops",
+   "summary": "During her visit, she interacts with farmers and enquires about the extent of crop damage caused by the cyclone and heavy rains",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/purandeswari-inspects-cyclone-hit-crops-1137609",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "1e9b1cfe6569",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -2361,6 +2582,67 @@
    }
   },
   {
+   "id": "0541f160676b",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "02:08",
+   "title": "GSLV places next-generation navigation satellite NVS-03 into orbit",
+   "summary": "The NVS-03, with a mission life of 12 years, is expected to restore the functioning of the NavIC constellation; satellite carries an indigenous atomic clock, along with procured atomic clocks",
+   "facts": [
+    {
+     "angle": "Space / defence",
+     "text": "The NVS-03, with a mission life of 12 years, is expected to restore the functioning of the NavIC constellation; satellite carries an indigenous atomic clock, along with procured atomic clocks"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Times of India — India",
+    "The Hindu — Science & Technology"
+   ],
+   "url": "https://www.thehindu.com/sci-tech/science/nvs-03-satellite-launch-successful-isro/article71646807.ece",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "Satellite",
+    "Indigenous"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "2ecd8113448b",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -2525,6 +2807,67 @@
     "angles": 20,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "df70621edfe3",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "00:05",
+   "title": "Orders issued on Vigilance probe into KIIFB-financed land acquisition in Kannur",
+   "summary": "Move follows Cabinet nod for VACB probe based on panel report. Procedural lapses alleged in land acquisitions for Kannur industrial zones, where 4,896 acres were bought for ₹12,240 crore amid questions of due diligence, compliance with LARR Act.",
+   "facts": [
+    {
+     "angle": "Cabinet decision",
+     "text": "Move follows Cabinet nod for VACB probe based on panel report."
+    },
+    {
+     "angle": "Figures",
+     "text": "Procedural lapses alleged in land acquisitions for Kannur industrial zones, where 4,896 acres were bought for ₹12,240 crore amid questions of due diligence, compliance with LARR Act."
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Thiruvananthapuram/orders-issued-on-vigilance-probe-into-kiifb-financed-land-acquisition-in-kannur/article71646348.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Acquisition"
+   ],
+   "score": 56,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 12,
     "reuse": 15
    }
   },
@@ -2863,6 +3206,64 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "59030b726b26",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "00:07",
+   "title": "ISRO Launches Next-Gen Satellite To Strengthen Indigenous GPS System",
+   "summary": "NVS-03 is the third satellite of the second-generation NVS series, intended to augment the Navigation with Indian Constellation (NavIC) system.",
+   "facts": [
+    {
+     "angle": "Space / defence",
+     "text": "NVS-03 is the third satellite of the second-generation NVS series, intended to augment the Navigation with Indian Constellation (NavIC) system."
+    }
+   ],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/isro-launches-next-gen-satellite-to-strengthen-indias-indigenous-gps-system-12261237#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "ISRO",
+    "Satellite",
+    "Indigenous"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
   },
   {
    "id": "17bb7d5a1cad",
@@ -3920,6 +4321,62 @@
    }
   },
   {
+   "id": "f6b121fadb81",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "02:00",
+   "title": "Election Commission’s appeals against 16.10 lakh cleared voters raise legal questions",
+   "summary": "The officials who filed appeals against the inclusion of the 16.10 lakh voters may not have had the authority to do so under the Representation of the People Act; according to the Act, the CEO/DEO/ERO/AERO are the authorities with respect to electoral rolls",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The officials who filed appeals against the inclusion of the 16.10 lakh voters may not have had the authority to do so under the Representation of the People Act; according to the Act, the CEO/DEO/ERO/AERO are the authorities with respect to electoral rolls"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/west-bengal/authority-of-officials-who-appealed-against-inclusion-of-names-in-bengal-sir-under-lens/article71645404.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Election Commission"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
    "id": "60dae94dbf3f",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -4705,6 +5162,70 @@
    }
   },
   {
+   "id": "b0b3a606a3b0",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "01:02",
+   "title": "CM writes to PM seeking revision of sugar MSP, order on ethanol production",
+   "summary": "The farmers are awaiting an assurance from the Centre even as the cane crushing season has been delayed amidst prospects of cane yield getting reduced this year due to drought: CM",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/karnataka/cm-writes-to-pm-seeking-revision-of-sugar-msp-order-on-ethanol-production/article71646415.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "MSP"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
    "id": "8c4a0f10d047",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -5265,151 +5786,6 @@
    }
   },
   {
-   "id": "76def39aae46",
-   "date": "2026-10-30",
-   "pubDate": "2026-10-30",
-   "time": "10:39",
-   "title": "India's Extreme Poverty Drops From 27.1% To 2.6% In 12 Years: World Bank",
-   "summary": "The report said the proportion of people living below the lower-middle-income poverty line of USD 4.20 per day, measured at 2021 purchasing power parity (PPP), also fell from 57.7 per cent to 16.1 per cent during the period.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "The report said the proportion of people living below the lower-middle-income poverty line of USD 4.20 per day, measured at 2021 purchasing power parity (PPP), also fell from 57.7 per cent to 16.1 per cent during the period."
-    }
-   ],
-   "source": "NDTV — India",
-   "sourceId": "ndtv-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.ndtv.com/india-news/indias-extreme-poverty-drops-from-27-1-percent-to-2-6-percent-in-12-years-world-bank-12257248#publisher=newsstand",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B6",
-     "exam": "G1",
-     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
-    },
-    {
-     "code": "G1-C1",
-     "exam": "G1",
-     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
-    },
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G2-M2A-U4",
-     "exam": "G2",
-     "label": "Structure of the Andhra Pradesh Economy and Public Finance - GSDP and Sectoral Contribution, Per Capita Income, State Revenue, Expenditure, Debt, Central Assistance, External Assistance, Recent AP Budget"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Years"
-   ],
-   "score": 46,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 2,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "327080abfdaf",
-   "date": "2026-10-30",
-   "pubDate": "2026-10-30",
-   "time": "19:51",
-   "title": "46 ‘Viksit Bharat Yuva Samvad: Know Your Vote’ Programmes Held Across 21 States/UTs to Promote Electoral Awareness Among Youth",
-   "summary": "The nationwide campaign, being conducted from 26 October to 5 November 2026, aims to reach 500 universities, colleges and institutions across the country. The initiative seeks to promote electoral awareness among young people, particularly first-time voters, and encourage their informed participation in the democratic process.",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "The initiative seeks to promote electoral awareness among young people, particularly first-time voters, and encourage their informed participation in the democratic process."
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "Lacrosse athlete Ms. Abhilove Kour interacted with students in Poonch, while participants in Doda actively raised questions and shared their perspectives on the importance of first-time voters and responsible citizenship."
-    },
-    {
-     "angle": "Summit / exercise",
-     "text": "In Uttar Pradesh, Lakhimpur Kheri hosted a Nasha Mukt awareness session and a lecture on Viksit Bharat Young Leaders Dialogue (VBYLD), while activities in Shrawasti included youth mobilisation for a drug-free India and a Neighbourhood Youth Parliament."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Youth Affairs and Sports",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2330618&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-B2",
-     "exam": "G1",
-     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    },
-    {
-     "code": "G1-B5",
-     "exam": "G1",
-     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
-    },
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [
-    "States"
-   ],
-   "score": 45,
-   "band": "medium",
-   "why": {
-    "syllabus": 26,
-    "angles": 5,
-    "ap": 0,
-    "importance": 9,
-    "reuse": 5
-   }
-  },
-  {
    "id": "77be9999ef7c",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -5464,175 +5840,6 @@
    }
   },
   {
-   "id": "3dfd9cd5c8a4",
-   "date": "2026-10-30",
-   "pubDate": "2026-10-30",
-   "time": "08:56",
-   "title": "Bhutan Glacial Lake Burst triggers flood alert in Bengal, Assam: All you need to know",
-   "summary": "On Thursday evening, a sudden glacial lake outburst flood occurred at Shintaphu Lake, situated at the source of the Mo Chhu River in Bhutan's high-altitude Gasa district.",
-   "facts": [],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/world/bhutan-glacial-lake-burst-triggers-flood-alert-in-bengal-assam-all-you-need-to-know-11793327535546.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Lake"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "adcf0e6fadd1",
-   "date": "2026-10-30",
-   "pubDate": "2026-10-30",
-   "time": "21:15",
-   "title": "Census 2027: door-to-door enumeration to start on January 25",
-   "summary": "Reference date for population census will be 00:00 hours of March 1, 2027; census will not be held in Manipur, Goa, Uttar Pradesh, Punjab and Uttarakhand, Ladakh, Himachal Pradesh and J&K",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "Mint — News"
-   ],
-   "url": "https://www.thehindu.com/news/national/population-census-dates-mha-notification/article71645802.ece",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G1-D3",
-     "exam": "G1",
-     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Census"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "70fede16f91e",
-   "date": "2026-10-30",
-   "pubDate": "2026-10-30",
-   "time": "21:15",
-   "title": "Census 2027: Population enumeration from Jan 25-Feb 28 2027; poll-bound, snow-bound areas excluded",
-   "summary": "",
-   "facts": [],
-   "source": "Times of India — India",
-   "sourceId": "toi-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "Times of India — Top stories"
-   ],
-   "url": "https://timesofindia.indiatimes.com/india/census-2027-population-enumeration-from-jan-25-feb-28-2027-poll-bound-snow-bound-areas-excluded/articleshow/135368183.cms",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G1-D3",
-     "exam": "G1",
-     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Census"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
    "id": "1987de942e1d",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -5677,6 +5884,102 @@
     "reuse": 5
    },
    "lang": "te"
+  },
+  {
+   "id": "89d41fee9a6a",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "00:58",
+   "title": "Rs 2,234-cr funds credited to farmers’ accounts",
+   "summary": "State releases its share of the second instalment under Annadata Sukhibhava–PM Kisan for 2026-27",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/rs-2234-cr-funds-credited-to-farmers-accounts-1137604",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 43,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "b1cb28a4a78e",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-30",
+   "time": "23:51",
+   "title": "Isro's navigation satellite NVS-03 lifts off from Andhra Pradesh's Sriharikota",
+   "summary": "The satellite, which was abroad a GSLV-F18 rocket, had lift off at 11:51pm IST on Friday from the second launch pad of the space centre in Sriharikota.",
+   "facts": [
+    {
+     "angle": "Space / defence",
+     "text": "The satellite, which was abroad a GSLV-F18 rocket, had lift off at 11:51pm IST on Friday from the second launch pad of the space centre in Sriharikota."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/isros-navigation-satellite-nvs-03-lifts-off-from-andhra-pradeshs-sriharikota-navic-launch-101793378533888.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [
+    "ISRO and the space programme"
+   ],
+   "angles": [
+    "Satellite",
+    "Rocket"
+   ],
+   "score": 38,
+   "band": "low",
+   "why": {
+    "syllabus": 8,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 0
+   }
   },
   {
    "id": "fb449c861154",
