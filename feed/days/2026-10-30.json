@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-10-30",
- "updated": "2026-10-30T21:50:26.436Z",
+ "updated": "2026-10-31T06:33:13.943Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 1578,
+   "found": 1586,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 41,
+   "found": 35,
    "error": null
   },
   {
@@ -48,13 +48,13 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 20,
+   "found": 19,
    "error": null
   },
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 48,
+   "found": 46,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 51,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 105,
+   "found": 145,
    "error": null
   },
   {
@@ -1081,6 +1081,57 @@
    }
   },
   {
+   "id": "9060377b85c0",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "01:44",
+   "title": "Heavy rainfall expected on Nov 2, 3",
+   "summary": "People are also advised not to take shelter under trees or near hoardings during heavy rainfall.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/guntur/heavy-rainfall-expected-on-nov-2-3-1137624",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "ac67d4c292ab",
    "date": "2026-10-30",
    "pubDate": "2026-10-31",
@@ -1761,6 +1812,55 @@
      "code": "G1-D1",
      "exam": "G1",
      "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d21a3a491a59",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-30",
+   "time": "12:40",
+   "title": "Cyclone Arnab leaves parts of Visakhapatnam in darkness",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/cyclone-arnab-leaves-parts-of-visakhapatnam-in-darkness/article71632773.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
     }
    ],
    "topics": [],
@@ -2929,6 +3029,65 @@
     "ap": 20,
     "importance": 6,
     "reuse": 5
+   }
+  },
+  {
+   "id": "384367b1c000",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "00:20",
+   "title": "‘Consider notices on voter deletions when alerted’: Supreme Court tells Election Commission",
+   "summary": "The court posted the matter after four weeks to enable a response from the poll panel.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/supreme-court-election-commission-of-india-ec-sir-special-intensive-revision-gyanesh-kumar-101793386213663.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Election Commission",
+    "Supreme court"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -5162,6 +5321,58 @@
    }
   },
   {
+   "id": "f2542a967a2f",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-30",
+   "time": "22:03",
+   "title": "RBI Central Board reviews economic conditions, evaluates risks to growth and inflation outlook",
+   "summary": "The Central Board also reviewed the Deposit Insurance and Credit Guarantee Corporation’s activities and the functioning of select RBI departments",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/rbis-central-board-of-directors-take-stock-of-prevailing-economic-conditions-evaluate-potential-risks-to-outlook/article71646309.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Economic Conditions",
+    "RBI"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "b0b3a606a3b0",
    "date": "2026-10-30",
    "pubDate": "2026-10-31",
@@ -5647,145 +5858,6 @@
    }
   },
   {
-   "id": "43e252e8d9a3",
-   "date": "2026-10-30",
-   "pubDate": "2026-10-30",
-   "time": "10:56",
-   "title": "Uttarakhand officials on high alert following orange alert for heavy rainfall in 5 districts",
-   "summary": "The Uttarakhand Disaster Management Department has directed officials concerned to remain on high alert following an orange alert for heavy rainfall in five districts of the state. The Meteorological Department has forecast heavy rainfall at isolated places in Nainital, Champawat, Pithoragarh, Bageshwar and Chamoli districts today. A yellow alert has also been issued for the […]",
-   "facts": [],
-   "source": "AIR News — Regional",
-   "sourceId": "air-national",
-   "official": true,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://newsonair.gov.in/uttarakhand-officials-on-high-alert-following-orange-alert-for-heavy-rainfall-in-5-districts/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Rainfall"
-   ],
-   "score": 47,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "f8b2d7928e9c",
-   "date": "2026-10-30",
-   "pubDate": "2026-10-30",
-   "time": "15:02",
-   "title": "Vice-President calls for holistic rural development to realise Viksit Bharat 2047; graces Golden Jubilee Celebrations and 39th Convocation of Gandhigram Rural Institute",
-   "summary": "“India’s journey towards Viksit Bharat 2047 must begin with empowered villages”: Vice-President Gandhian ideals of self-reliance and social service remain vital for building a developed India: Vice-President 30 OCT 2026 3:02PM by PIB Delhi The Vice-President of India, Shri C.",
-   "facts": [
-    {
-     "angle": "Award",
-     "text": "He conferred gold medals on meritorious students and extended his congratulations and best wishes to all the graduating students."
-    },
-    {
-     "angle": "Award",
-     "text": "Radhakrishnan graced the Golden Jubilee Celebrations and 39th Convocation of Gandhigram Rural Institute (Deemed to be University), Dindigul, Tamil Nadu, today, and conferred gold medals on meritorious students."
-    },
-    {
-     "angle": "Figures",
-     "text": "He noted that, approximately 25 crore people moved out of multidimensional poverty between 2014 and 2023."
-    },
-    {
-     "angle": "Figures",
-     "text": "He referred to the PM-KISAN scheme, under which eligible farmer families receive financial assistance of ₹6,000 annually in three instalments directly into their bank accounts."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Vice President's Secretariat",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2330383&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Science, Tech & Environment",
-    "History & Culture",
-    "Polity, Society & IR",
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-A6",
-     "exam": "G1",
-     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
-    },
-    {
-     "code": "G2-S1",
-     "exam": "G2",
-     "label": "Screening S1. Indian History"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "University"
-   ],
-   "score": 47,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 15
-   }
-  },
-  {
    "id": "77be9999ef7c",
    "date": "2026-10-30",
    "pubDate": "2026-10-30",
@@ -5932,6 +6004,52 @@
     "importance": 0,
     "reuse": 5
    }
+  },
+  {
+   "id": "f395fba6a56c",
+   "date": "2026-10-30",
+   "pubDate": "2026-10-31",
+   "time": "05:19",
+   "title": "గూడూరు-దుగరాజపట్నం మధ్య కొత్త రైల్వే లైన్‌",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126197677",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rail"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "b1cb28a4a78e",
