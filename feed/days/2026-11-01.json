@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-01",
- "updated": "2026-11-01T14:25:18.652Z",
+ "updated": "2026-11-01T18:15:29.093Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 29,
+   "found": 32,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 42,
+   "found": 39,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 47,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 9,
+   "found": 3,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 57,
+   "found": 56,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 160,
+   "found": 162,
    "error": null
   },
   {
@@ -657,6 +657,93 @@
    }
   },
   {
+   "id": "1fdecbd0869d",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "18:09",
+   "title": "Union Minister Nitin Gadkari Performs Bhoomipujan of Multi-Modal Logistics Park at Sindi Railway",
+   "summary": "The project is being developed by National Highways Logistics Management Limited (NHLML), a special purpose vehicle of the National Highways Authority of India (NHAI), through AMARA TRANZ Solution.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The bhoomipujan ceremony of the project was held at Sindi Railway today in the presence of Guardian Minister Dr. Pankaj Bhoyar, MLA Sameer Kunawar, District Collector Vanmathi C, former MP Ramdas Tadas and Sindi Railway Municipal Council President Rani Kalode, among others."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "He added that the first rake carrying Maruti cars had already commenced operations from the project."
+    },
+    {
+     "angle": "Figures",
+     "text": "The project is being jointly developed by National Highways Logistics Management Limited and Jawaharlal Nehru Port Authority across 150 acres of land near Sindi Railway railway station."
+    },
+    {
+     "angle": "Figures",
+     "text": "This is expected to reduce transportation costs per container from ₹1.5 lakh to ₹1 lakh, benefiting farmers in the Vidarbha region."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Road Transport & Highways",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2331235&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy",
+    "History & Culture",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [
+    "National Highways and land use"
+   ],
+   "angles": [
+    "Export",
+    "Union Minister",
+    "Exports",
+    "Highways",
+    "Developed by"
+   ],
+   "score": 66,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 15
+   }
+  },
+  {
    "id": "69fb4824ee99",
    "date": "2026-11-01",
    "pubDate": "2026-11-01",
@@ -813,6 +900,58 @@
     "angles": 5,
     "ap": 20,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "87c7d574dcdc",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:24",
+   "title": "Cyclone Murasu: Orange alert in six Telangana districts, yellow alert in five on November 2",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National",
+    "The Hindu — Telangana"
+   ],
+   "url": "https://www.thehindu.com/news/national/telangana/cyclone-murasu-orange-alert-in-six-telangana-districts-yellow-alert-in-five-on-november-2/article71652716.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 62,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -1061,6 +1200,57 @@
    }
   },
   {
+   "id": "32ef1903f7b4",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:22",
+   "title": "Central teams assess ‘Cyclone Arnab’ damage on Kakinada, Narsapuram coast",
+   "summary": "Cyclone Arnab washed away 90-km coastal roads before damaging 579 boats and above 1,000 fishing nets, paralyzing life on the Kakinada coast; Another Central team assesed damage to fishing boats, aquaponds on the Narsapuram coast.",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/central-teams-assess-cyclone-arnab-damage-on-kakinada-narsapuram-coast/article71653134.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "0b6839c7e158",
    "date": "2026-11-01",
    "pubDate": "2026-11-01",
@@ -1074,6 +1264,57 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://www.hindustantimes.com/india-news/cm-naidu-directs-officials-to-gear-up-as-fresh-cyclone-threat-looms-over-andhra-101793535357043.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "bae6770a82a3",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "23:40",
+   "title": "Collector declares November 2 holiday for schools, colleges over Cyclone Murasu",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/collector-declares-november-2-holiday-for-schools-colleges-over-cyclone-murasu/article71654088.ece",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -1259,6 +1500,108 @@
    }
   },
   {
+   "id": "50f03d08d4da",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:47",
+   "title": "Cyclone-hit Godavari region records steady high voter turnout",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-hit-godavari-region-records-steady-high-voter-turnout/article71653649.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "af2ecc4f3401",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:44",
+   "title": "Days after Cyclone Arnab, Andhra Pradesh braces for Cyclonic Storm Murasu landfall",
+   "summary": "Cyclonic Storm Murasu likely to turn into severe cyclonic storm by Monday morning; red alert issued in five A.P. districts; heavy rain also forecast for parts of Tamil Nadu and Odisha",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/days-after-cyclone-arnab-andhra-pradesh-braces-for-cyclonic-storm-murasu-landfall/article71653421.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "78fff83767b7",
    "date": "2026-11-01",
    "pubDate": "2026-11-01",
@@ -1272,6 +1615,57 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://www.thehindubusinessline.com/economy/agri-business/imd-update-andhra-pradesh-coast-now-faces-a-second-severe-cyclone/article71652107.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d3acd27e0b0c",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:21",
+   "title": "Public urged to stay alert as cyclone Murasu set to hit Nellore, Prakasam districts",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Vijayawada"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/public-urged-to-stay-alert-as-cyclone-murasu-set-to-hit-nellore-prakasam-districts/article71653582.ece",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -1526,6 +1920,65 @@
     "angles": 10,
     "ap": 0,
     "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "62fb5a62e50d",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:40",
+   "title": "Wardha logistics park will boost international trade and jobs: Nitin Gadkari",
+   "summary": "Union Minister for Road Transport and Highways Nitin Gadkari has said that the upcoming Multimodal Logistics Park at Sindi Railway in Wardha district will open new avenues for international trade and employment in Vidarbha. The facility will enable local agricultural and industrial products to reach overseas markets more efficiently through the Jawaharlal Nehru Port. […]",
+   "facts": [],
+   "source": "AIR News — Regional",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/wardha-logistics-park-will-boost-international-trade-and-jobs-nitin-gadkari/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Union Minister",
+    "Highways"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -1967,6 +2420,81 @@
    }
   },
   {
+   "id": "a22738f3d671",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "22:14",
+   "title": "‘Khadi Diwali Fest-2026’ organized at Connaught Place, Delhi, with the objective of taking Prime Minister Shri Narendra Modi’s call of ‘ Har Ghar Swadeshi, Ghar Ghar Swadehi’ to Gen-Z",
+   "summary": "The event featured a special interaction with media representatives and a ‘Diwali Milan’ (Diwali get together). KVIC Chairman Shri Manoj Goel joined the event as the chief guest.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Held under the theme ‘Khadi-wali Diwali,’ the event aims to encourage citizens to adopt Khadi and Swadeshi products during Diwali and other festivals, provide greater recognition to the creations of Indian artisans and rural entrepreneurs, and, in particular, connect the youth with the Swadeshi m…"
+    },
+    {
+     "angle": "Figures",
+     "text": "In the financial year 2025-26, the turnover of the Khadi and Village Industries sector exceeded Rs 1.87 lakh crore, while the sector has provided employment to over 2.04 crore people."
+    },
+    {
+     "angle": "Figures",
+     "text": "He expressed confidence that, in the near future, the sector will achieve a turnover target of Rs 2.51 lakh crore."
+    },
+    {
+     "angle": "Figures",
+     "text": "The ‘Khadi Diwali Fest-2026,’ which commenced on October 31, offers a special discount of 20 percent on Khadi products and 10 percent on Village Industry products."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Micro,Small & Medium Enterprises",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2331368&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-A5",
+     "exam": "G1",
+     "label": "Indian War of Independence 1857; Religious and Social Reform Movements of the 19th Century; India's Freedom Movement; Revolutionaries in India and Abroad"
+    },
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Industries"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
    "id": "9a7230544aa5",
    "date": "2026-11-01",
    "pubDate": "2026-11-01",
@@ -2295,6 +2823,59 @@
    }
   },
   {
+   "id": "0d1c1cef77fc",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:31",
+   "title": "Kishan Reddy urges real estate sector to pass GST benefits to homebuyers",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Telangana"
+   ],
+   "url": "https://www.thehindu.com/news/national/telangana/kishan-reddy-urges-real-estate-sector-to-pass-gst-benefits-to-homebuyers/article71653642.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "GST"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
    "id": "e1346c2d257f",
    "date": "2026-11-01",
    "pubDate": "2026-11-01",
@@ -2475,6 +3056,110 @@
     "ap": 20,
     "importance": 0,
     "reuse": 5
+   }
+  },
+  {
+   "id": "bd6a5abc713b",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:39",
+   "title": "Collector directs officials to expedite Warangal super-speciality hospital works",
+   "summary": "The hospital project has missed several deadlines, including the proposed launch of outpatient services on October 20",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Telangana"
+   ],
+   "url": "https://www.thehindu.com/news/national/telangana/collector-directs-officials-to-expedite-warangal-super-speciality-hospital-works/article71653368.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A2",
+     "exam": "G1",
+     "label": "Kanauj and their Contributions; South Indian Dynasties - Badami Chalukyas, Eastern Chalukyas, Rashtrakutas, Kalyani Chalukyas, Cholas, Hoysalas, Yadavas, Kakatiyas, Reddis"
+    },
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "573144d8df11",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "time": "21:53",
+   "title": "Odisha short of equipment, may use explosives to rescue landslide victims",
+   "summary": "With no road access, officials are looking for cranes and earthmovers; they are also seeking the assistance of engineers with expertise in controlled blasting to break up boulders",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/odisha/odisha-short-of-equipment-may-use-explosives-to-rescue-landslide-victims/article71653468.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "rescue"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -3313,6 +3998,49 @@
    "digest": true
   },
   {
+   "id": "2fc2632ead83",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-01",
+   "title": "Global Snow Leopard and Ecosystem Protection Programme",
+   "summary": "GSLEP is a cooperative framework for conserving snow leopards and the high-mountain ecosystems they inhabit. It brings together the 12 range countries, local communities",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/global-snow-leopard-and-ecosystem-protection-programme/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 17,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
    "id": "8c0e84319ebd",
    "date": "2026-11-01",
    "pubDate": "2026-11-01",
@@ -4031,44 +4759,6 @@
    "url": "https://www.gktoday.in/uttarakhand-targets-5000-hectares-of-apple-orchards-by-2030-31/",
    "bucket": "dynamic",
    "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [],
-   "score": 0,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "76d6d7c35093",
-   "date": "2026-11-01",
-   "pubDate": "2026-11-01",
-   "title": "West Bengal discusses plans for a magic school and museum at Kolkata’s Nandan complex",
-   "summary": "West Bengal has begun preparations for a proposed magic school and museum under the state’s Information and Culture Department. The project’s special advisory committee h",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/west-bengal-discusses-plans-for-a-magic-school-and-museum-at-kolkatas-nandan-complex/",
-   "bucket": "national",
-   "scope": "national",
    "ap": false,
    "exams": [
     "G1",
