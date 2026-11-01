@@ -1,13 +1,13 @@
 {
  "version": 1,
  "date": "2026-10-31",
- "updated": "2026-10-31T20:50:46.182Z",
+ "updated": "2026-11-01T07:04:25.335Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 0,
-   "error": "no items parsed"
+   "found": 5,
+   "error": null
   },
   {
    "id": "pib-vijayawada",
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 48,
+   "found": 40,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 46,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 50,
+   "found": 60,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 108,
+   "found": 149,
    "error": null
   },
   {
@@ -276,6 +276,66 @@
    }
   },
   {
+   "id": "82a1e5886265",
+   "date": "2026-10-31",
+   "pubDate": "2026-10-31",
+   "time": "15:59",
+   "title": "ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite",
+   "summary": "ISRO successfully launched the NVS-03 navigation satellite from the Satish Dhawan Space Centre in Sriharikota on October 30, 2026, restoring NavIC to a four-satellite, standalone operational status and advancing India’s push for an indigenous, more precise space-time network",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "ISRO successfully launched the NVS-03 navigation satellite from the Satish Dhawan Space Centre in Sriharikota on October 30, 2026, restoring NavIC to a four-satellite, standalone operational status and advancing India’s push for an indigenous, more precise space-time network"
+    }
+   ],
+   "source": "The Hindu — Science & Technology",
+   "sourceId": "hindu-scitech",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/sci-tech/science/isro-nvs-03-launch-navic-constellation-5-things-to-know-about-india-next-generation-satellite/article71648294.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [
+    "ISRO and the space programme"
+   ],
+   "angles": [
+    "ISRO",
+    "Satellite",
+    "Indigenous"
+   ],
+   "score": 76,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 15,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "981c9c3f5bf0",
    "date": "2026-10-31",
    "pubDate": "2026-10-31",
@@ -334,6 +394,63 @@
     "angles": 10,
     "ap": 20,
     "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "bb2391ed255f",
+   "date": "2026-10-31",
+   "pubDate": "2026-11-01",
+   "time": "02:27",
+   "title": "Madras High Court Advocates Association challenges 1965 Union Cabinet decision to continue English as common language for Supreme Court and all High Courts",
+   "summary": "Says, the 1965 decision came to its notice only in 2025 pursuant to details obtained by a lawyer under the Right to Information Act, 2005",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-advocates-association-challenges-1965-union-cabinet-decision-to-continue-english-as-common-language-for-supreme-court-and-all-high-courts/article71648537.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure",
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Language",
+    "High courts",
+    "Supreme court",
+    "High Court"
+   ],
+   "score": 71,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 20,
+    "ap": 0,
+    "importance": 6,
     "reuse": 15
    }
   },
@@ -639,6 +756,68 @@
    "topics": [],
    "angles": [
     "Post"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1bf92dcddf33",
+   "date": "2026-10-31",
+   "pubDate": "2026-11-01",
+   "time": "04:54",
+   "title": "e-KYC must for crop insurance claims on cyclone-hit crops",
+   "summary": "AP Agriculture Department Director Dr. Manazir Jeelani Samoon makes e-KYC verification mandatory for e-Crop booking to claim Cyclone Arnab crop insurance.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/e-kyc-must-for-crop-insurance-claims-on-cyclone-hit-crops-1138016",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture"
    ],
    "score": 64,
    "band": "high",
@@ -1393,6 +1572,55 @@
    }
   },
   {
+   "id": "276688666e0b",
+   "date": "2026-10-31",
+   "pubDate": "2026-11-01",
+   "time": "05:45",
+   "title": "OTP waived for LPG cylinder delivery in cyclone-hit districts",
+   "summary": "",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/otp-waived-for-lpg-cylinder-delivery-in-cyclone-hit-districts-1138037",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "951efbd0ffdc",
    "date": "2026-10-31",
    "pubDate": "2026-10-31",
@@ -1661,6 +1889,55 @@
     "ap": 0,
     "importance": 5,
     "reuse": 15
+   }
+  },
+  {
+   "id": "1cfcf40eacb5",
+   "date": "2026-10-31",
+   "pubDate": "2026-11-01",
+   "time": "05:38",
+   "title": "15 candidates in fray for Vizag mayor post",
+   "summary": "573 contestants for wards race for GVMC",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/15-candidates-in-fray-for-vizag-mayor-post-1138035",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies",
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [
+    "Post"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
    }
   },
   {
@@ -1983,6 +2260,59 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "bb71def52605",
+   "date": "2026-10-31",
+   "pubDate": "2026-11-01",
+   "time": "05:52",
+   "title": "India must build oil reserves, reduce energy imports amid global trade shocks: C Rangarajan",
+   "summary": "Geopolitical tensions and disruptions to international trade have underscored the need for stronger domestic capabilities and greater economic resilience",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/india-must-build-oil-reserves-reduce-energy-imports-amid-global-trade-shocks-c-rangarajan/article71651648.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Import",
+    "Imports"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
   },
   {
    "id": "4733a7dfa67c",
@@ -3318,6 +3648,64 @@
    }
   },
   {
+   "id": "bffbd2bb7850",
+   "date": "2026-10-31",
+   "pubDate": "2026-10-31",
+   "time": "08:19",
+   "title": "Why is ISRO’s NVS-03 satellite launch crucial? | Explained",
+   "summary": "The mission could help restore the functioning of India’s regional satellite navigation system NavIC; its development began following the 1999 Kargil War, when the U.S reportedly clamped down on GPS data access",
+   "facts": [
+    {
+     "angle": "Space / defence",
+     "text": "The mission could help restore the functioning of India’s regional satellite navigation system NavIC; its development began following the 1999 Kargil War, when the U.S reportedly clamped down on GPS data access"
+    }
+   ],
+   "source": "The Hindu — Science & Technology",
+   "sourceId": "hindu-scitech",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/sci-tech/science/why-is-isros-nvs-03-satellite-launch-crucial-explained/article71643798.ece",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F20",
+     "exam": "G1",
+     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "ISRO",
+    "Satellite"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "68f6c87f05b3",
    "date": "2026-10-31",
    "pubDate": "2026-11-01",
@@ -3836,6 +4224,52 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "f1debccd28a0",
+   "date": "2026-10-31",
+   "pubDate": "2026-11-01",
+   "time": "05:54",
+   "title": "Deepavali Asthanam at Tirumala Srivari temple scheduled for Nov 8",
+   "summary": "",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/deepavali-asthanam-at-tirumala-srivari-temple-scheduled-for-nov-8-1138042",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [
+    "Tirumala Tirupati Devasthanams (TTD)"
+   ],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
   },
   {
    "id": "3361506d7e5f",
@@ -4501,162 +4935,6 @@
    }
   },
   {
-   "id": "84981e7c08ba",
-   "date": "2026-10-31",
-   "pubDate": "2026-10-31",
-   "title": "Supreme Court collegium approves recommendations for 12 Madhya Pradesh High Court judges",
-   "summary": "The Supreme Court collegium approved recommendations for 12 appointments to the Madhya Pradesh High Court in two meetings during the week ending 30 October 2026.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/supreme-court-collegium-approves-recommendations-for-12-madhya-pradesh-high-court-judges/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [
-    "Supreme Court and judicial review",
-    "High Courts and judicial infrastructure"
-   ],
-   "angles": [
-    "Collegium",
-    "Supreme court",
-    "High Court"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 15,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true
-  },
-  {
-   "id": "b046675e713c",
-   "date": "2026-10-31",
-   "pubDate": "2026-10-31",
-   "time": "19:36",
-   "title": "Technozion ’26 concludes at NIT Warangal with robotics, drone racing events",
-   "summary": "",
-   "facts": [],
-   "source": "The Hindu — Telangana",
-   "sourceId": "hindu-telangana",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/telangana/technozion-26-concludes-at-nit-warangal-with-robotics-drone-racing-events/article71649636.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "History & Culture",
-   "subjects": [
-    "History & Culture"
-   ],
-   "units": [
-    {
-     "code": "G1-A2",
-     "exam": "G1",
-     "label": "Kanauj and their Contributions; South Indian Dynasties - Badami Chalukyas, Eastern Chalukyas, Rashtrakutas, Kalyani Chalukyas, Cholas, Hoysalas, Yadavas, Kakatiyas, Reddis"
-    },
-    {
-     "code": "G2-M1A-U2",
-     "exam": "G2",
-     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Robotics"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "a73891284e97",
-   "date": "2026-10-31",
-   "pubDate": "2026-10-31",
-   "time": "19:19",
-   "title": "Towards recognising women farmers",
-   "summary": "Maharashtra’s passage of the Women Farmers’ Empowerment Bill, granting women independent recognition as farmers irrespective of land ownership, brings into focus the structural bias against the female agricultural workforce, highlights the need for a database of women farmers and using it to ensure access to welfare schemes",
-   "facts": [],
-   "source": "The Hindu — Economy",
-   "sourceId": "hindu-economy",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "The Hindu — Business"
-   ],
-   "url": "https://www.thehindu.com/business/Economy/towards-recognising-women-farmers/article71497026.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Bill",
-    "Schemes"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 10,
-    "ap": 0,
-    "importance": 6,
-    "reuse": 10
-   }
-  },
-  {
    "id": "2eda410e5059",
    "date": "2026-10-31",
    "pubDate": "2026-10-31",
@@ -4792,6 +5070,46 @@
     "ap": 20,
     "importance": 0,
     "reuse": 5
+   }
+  },
+  {
+   "id": "44e552035d75",
+   "date": "2026-10-31",
+   "pubDate": "2026-11-01",
+   "time": "05:52",
+   "title": "TTD staff to receive AI training for smarter devotee services",
+   "summary": "Steps are being taken to grant timely promotions to all eligible TTD employees",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/ttd-staff-to-receive-ai-training-for-smarter-devotee-services-1138041",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Grant",
+    "Services"
+   ],
+   "score": 38,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 0
    }
   },
   {
