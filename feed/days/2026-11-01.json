@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-01",
- "updated": "2026-11-01T21:31:48.114Z",
+ "updated": "2026-11-02T07:05:11.470Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 32,
+   "found": 41,
    "error": null
   },
   {
@@ -24,8 +24,8 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 39,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "hindu-national",
@@ -48,13 +48,13 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 19,
+   "found": 20,
    "error": null
   },
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 48,
+   "found": 43,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 3,
+   "found": 11,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 56,
+   "found": 60,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 104,
+   "found": 144,
    "error": null
   },
   {
@@ -904,6 +904,57 @@
    }
   },
   {
+   "id": "13ae5603ea45",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-02",
+   "time": "05:30",
+   "title": "Governor, others cast votes in Vijayawada",
+   "summary": "The three major mayoral candidates exercised their franchise at their respective polling stations",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/governor-others-cast-votes-in-vijayawada-1138388",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "3d0c18f58e4b",
    "date": "2026-11-01",
    "pubDate": "2026-11-02",
@@ -1185,6 +1236,55 @@
     "angles": 15,
     "ap": 0,
     "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "cae904fbead4",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-02",
+   "time": "03:00",
+   "title": "Another cyclone Murasu threat looms over AP",
+   "summary": "CM reviews preparedness, puts officials on alert",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/another-cyclone-murasu-threat-looms-over-ap-1138339",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -1721,6 +1821,55 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://www.hindustantimes.com/india-news/cyclone-murasu-live-updates-bay-of-bengal-severe-cyclonic-storm-andhra-pradesh-cyclone-tracker-heavy-rain-imd-alert-101793505745254.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d718eeea28af",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-02",
+   "time": "03:00",
+   "title": "Cyclone to cross Andhra coast tomorrow between Nellore & Narsapuram",
+   "summary": "The system is likely to cross the coast between Nellore and Narsapuram during Monday midnight and the early hours of Tuesday.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/cyclone-to-cross-andhra-coast-tomorrow-between-nellore-narsapuram-1138338",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -3519,6 +3668,64 @@
    }
   },
   {
+   "id": "c54869c57159",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-02",
+   "time": "05:15",
+   "title": "Tirupati administration ready for tomorrow’s vote counting",
+   "summary": "Polling held at 559 stations across the district from 7 am to 5 pm on Sunday 100 per cent webcasting arranged at all 304 polling stations under Tirupati Municipal Corporation",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Polling held at 559 stations across the district from 7 am to 5 pm on Sunday 100 per cent webcasting arranged at all 304 polling stations under Tirupati Municipal Corporation"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/tirupati-administration-ready-for-tomorrows-vote-counting-1138387",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Administration"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 14,
+    "angles": 5,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 5
+   }
+  },
+  {
    "id": "4f17c13b07aa",
    "date": "2026-11-01",
    "pubDate": "2026-11-01",
@@ -3616,6 +3823,57 @@
    "topics": [],
    "angles": [
     "Services"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "2b9f630a47c3",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-02",
+   "time": "05:41",
+   "title": "India's festive demand is uneven as inflation, price hikes weigh on shoppers",
+   "summary": "While consumer demand remains resilient across consumer categories, demand shows signs of stress in pockets due to inflation from the West Asia war.&nbsp;",
+   "facts": [],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/as-diwali-approaches-festive-demand-shows-mixed-signals-11793523400433.html",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Remains"
    ],
    "score": 44,
    "band": "medium",
@@ -4356,6 +4614,52 @@
     "importance": 3,
     "reuse": 15
    }
+  },
+  {
+   "id": "af409471901d",
+   "date": "2026-11-01",
+   "pubDate": "2026-11-02",
+   "time": "05:21",
+   "title": "జీఎస్‌టీ ఆదాయంలో...ఏపీలో 24% వృద్ధి నమోదు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126199074",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U4",
+     "exam": "G2",
+     "label": "Structure of the Andhra Pradesh Economy and Public Finance - GSDP and Sectoral Contribution, Per Capita Income, State Revenue, Expenditure, Debt, Central Assistance, External Assistance, Recent AP Budget"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "GST"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "0f1903a08331",
@@ -5438,45 +5742,6 @@
    "topics": [],
    "angles": [
     "Construction"
-   ],
-   "score": 5,
-   "band": "low",
-   "why": {
-    "syllabus": 0,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "2010bf525b20",
-   "date": "2026-11-01",
-   "pubDate": "2026-11-01",
-   "title": "Odisha student Soumyashree Thanapati wins National Science Seminar 2026",
-   "summary": "Soumyashree Thanapati of Odisha won the National Science Seminar 2026 at the National Science Centre in Delhi. She competed against 34 participants from Indian states and",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/odisha-student-soumyashree-thanapati-wins-national-science-seminar-2026/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Current Affairs",
-   "subjects": [
-    "Current Affairs"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "States"
    ],
    "score": 5,
    "band": "low",
