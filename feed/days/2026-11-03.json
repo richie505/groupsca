@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-03",
- "updated": "2026-11-03T15:24:15.326Z",
+ "updated": "2026-11-03T19:57:55.651Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 135,
+   "found": 139,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 37,
+   "found": 35,
    "error": null
   },
   {
@@ -48,13 +48,13 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 19,
+   "found": 20,
    "error": null
   },
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 42,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 9,
+   "found": 5,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 164,
+   "found": 115,
    "error": null
   },
   {
@@ -209,6 +209,62 @@
   }
  ],
  "items": [
+  {
+   "id": "ba9a274856dd",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "22:39",
+   "title": "EDB urge investors to explore space sector opportunities at CII summit in Vizag",
+   "summary": "Andhra Pradesh’s space ecosystem is anchored by Sriharikota, the EDB says in a social media post",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/edb-urge-investors-to-explore-space-sector-opportunities-at-cii-summit-in-vizag/article71662113.ece",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Visakhapatnam Economic Region",
+    "ISRO and the space programme"
+   ],
+   "angles": [
+    "Post",
+    "Summit"
+   ],
+   "score": 75,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
   {
    "id": "3266268df4a3",
    "date": "2026-11-03",
@@ -476,6 +532,89 @@
     "angles": 10,
     "ap": 20,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "0515ab9e5548",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "20:00",
+   "title": "BRE Summit and Expo 2026 Brings Global Investors and Industry Leaders Together",
+   "summary": "The plenary brought together senior government and industry voices to map the international renewable energy implementation architecture for the decades ahead.",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "Odisha witnessed the signing of 18 Memorandum of Understanding (MoUs), representing a total proposed investment of approximately ₹1.17 lakh crore, in the presence of Chief Minister Mohan Charan Majhi and Deputy Chief Minister Kanak Vardhan Singh Deo."
+    },
+    {
+     "angle": "Agreement / MoU",
+     "text": "In a separate development, Bondada Engineering Ltd., part of the Bondada Group, signed an MoU with the Goa Investment Promotion and Facilitation Board (Goa-IPB), committing a proposed investment of approximately ₹3,000 crore towards renewable energy projects in Goa."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "BRE Summit & Expo 2026 has brought together representatives from over 130 countries, including more than 40 Ministers, senior policymakers, investors, financial institutions and industry leaders."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "The day also featured the first leg of Watts Next: Innovators’ Ideas for India’s Energy Security, Agenda 2047 , a by-invite ideas forum curated in partnership with BloombergNEF."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of New and Renewable Energy",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332293&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Union Minister",
+    "Industry",
+    "States",
+    "Summit"
+   ],
+   "score": 68,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 9,
     "reuse": 15
    }
   },
@@ -793,6 +932,123 @@
    "why": {
     "syllabus": 30,
     "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "5ec124272ad3",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "23:19",
+   "title": "Poland plunges into crisis over fight for control of constitutional tribunal",
+   "summary": "Ruling bloc led by PM Tusk and Opposition-backed President Nawrocki are at loggerheads over appointments made to the tribunal by each side. Judges to tribunal are appointed by lower house of parliament. Many, including those in ruling camp, call for ‘constitutional reset’ with amendments",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "Judges to tribunal are appointed by lower house of parliament."
+    }
+   ],
+   "source": "The Hindu — International",
+   "sourceId": "hindu-international",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/international/poland-plunges-into-crisis-over-fight-for-control-of-constitutional-tribunal/article71659570.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Amendments",
+    "Tribunal",
+    "Appointed",
+    "Amendment"
+   ],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "41df07db4764",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "22:45",
+   "title": "Cyclone Murasu brings 100 mm rain to Vijayawada; roads inundated",
+   "summary": "City receives continuous rain after a prolonged dry spell; red alert remains in force until November 4 morning, schools and colleges to remain closed",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-murasu-brings-100-mm-rain-to-vijayawada-roads-inundated/article71662100.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Remains"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
     "ap": 20,
     "importance": 0,
     "reuse": 15
@@ -3361,6 +3617,55 @@
    }
   },
   {
+   "id": "d5a6c7da8dd2",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "22:51",
+   "title": "Mukka Sravani inches closer to Vizag Mayor’s throne",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/mukka-sravani-inches-closer-to-vizag-mayors-throne/article71661721.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies",
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [
+    "Throne"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "04416369aebf",
    "date": "2026-11-03",
    "pubDate": "2026-11-03",
@@ -3465,6 +3770,89 @@
     "angles": 10,
     "ap": 0,
     "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ec8103a4fe59",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "21:57",
+   "title": "CSIR-NIScPR Successfully Concludes the International Conference on CDTK-2026, marking 25 years of the Indian Journal of Traditional Knowledge (IJTK)",
+   "summary": "The session opened with a commemorative video documenting the inception, advancements, and key milestones of the IJTK over its 25 years journey. Following the visual presentation, Dr Geetha Vani Rayasam , Director, CSIR-NIScPR, officially released the IJTK 25 th anniversary issue.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Dignitaries releasing IJTK-25 th anniversary issue The first keynote address of the session (online) was delivered by Dr Ina Vandebroek , Professor of Ethnobotany, University of the West Indies, Mona."
+    },
+    {
+     "angle": "Figures",
+     "text": "Padaria , ICAR-IARI, stressed community ownership and participatory frameworks benefiting Traditional Knowledge holders."
+    },
+    {
+     "angle": "Figures",
+     "text": "Binoy , Associate Professor, National Institute of Advanced Studies, Bengaluru addressed on contextual and participatory models of science communication, emphasising engagement with traditional knowledge holders."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The two days of conference conducted 40 oral and 60 poster presentations from participants across the country and abroad."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Science & Technology",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332312&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy",
+    "History & Culture",
+    "Polity, Society & IR",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-F18",
+     "exam": "G1",
+     "label": "Science and Technology - Nature and Scope, Relevance to Daily Life, National S&T Policy"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Journal",
+    "Years"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -3620,6 +4008,80 @@
     "angles": 10,
     "ap": 0,
     "importance": 13,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "1de458c098a9",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "22:02",
+   "title": "IndiaAI Mission Released Indigenous Foundation Models EKA-1 by Soket and Dhīr 2B & Dhīr 5B by ZenteiQ Under the IndiaAI Innovation Centre Pillar",
+   "summary": "The release was unveiled today at a press event in New Delhi, in the presence of Shri S. Krishnan, Secretary, Ministry of Electronics and Information Technology (MeitY), Government of India, and senior officials of MeitY and IndiaAI, alongside the leadership teams of Soket and ZenteiQ.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Through platforms such as AIKosh, these models can be made accessible to researchers, students, innovators and the wider public, encouraging further experimentation and innovation."
+    },
+    {
+     "angle": "Figures",
+     "text": "EKA-1 by Soket: Open, Sparse Hybrid Language Model Across All 22 Scheduled Indian Languages Soket Labs Technology and Research Private Limited has developed EKA-1 , a powerful Foundation Model featuring 26.3 billion parameters and trained on approximately 7.5 trillion tokens."
+    },
+    {
+     "angle": "Cabinet decision",
+     "text": "Guided by the vision of “Making AI in India and Making AI Work for India”, the Union Cabinet approved the IndiaAI Mission on March 7, 2024."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Electronics & IT",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332315&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Language",
+    "Features",
+    "Developed by",
+    "Indigenous"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 20,
+    "ap": 0,
+    "importance": 9,
     "reuse": 5
    }
   },
@@ -4240,6 +4702,64 @@
    }
   },
   {
+   "id": "8188df5d4713",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "20:33",
+   "title": "Vantara brings the world's wildlife community to Jamnagar for EARAZA Annual Conference 2026",
+   "summary": "Held at Vantara in Jamnagar, the four-day conference gathered representatives from 98 institutions across 30 countries and 29 Indian zoological institutions.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Held at Vantara in Jamnagar, the four-day conference gathered representatives from 98 institutions across 30 countries and 29 Indian zoological institutions."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/vantara-brings-the-worlds-wildlife-community-to-jamnagar-for-earaza-annual-conference-2026-101793714533175.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Community"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "dcb9b4a20f23",
    "date": "2026-11-03",
    "pubDate": "2026-11-03",
@@ -4675,6 +5195,72 @@
    }
   },
   {
+   "id": "dbbfff6558f6",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "23:21",
+   "title": "One move, two gains: NHAI to desilt Bihar rivers and build roads with excavated material",
+   "summary": "Bihar's government has signed an agreement with the road transport ministry for river desilting to reduce flooding. The excavated silt and sand will be utilized in highway construction projects across the state. This initiative aims to improve water flow in rivers while providing construction materials at no cost.",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "Bihar's government has signed an agreement with the road transport ministry for river desilting to reduce flooding."
+    }
+   ],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/india/one-move-two-gains-nhai-to-desilt-bihar-rivers-and-build-roads-with-excavated-material/articleshow/135509375.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agreement",
+    "Construction",
+    "Agriculture",
+    "Rivers"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 20,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 5
+   }
+  },
+  {
    "id": "b6b0d66cda98",
    "date": "2026-11-03",
    "pubDate": "2026-11-03",
@@ -4743,6 +5329,66 @@
     "angles": 5,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "3a53dd4fa817",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "22:40",
+   "title": "4-layer motor cover for new private cars, 2-wheelers from Dec. 15: IRDAI",
+   "summary": "Regulator’s directive follows Supreme Court order mandating a policy structure covering third-party liability, legal liability to occupants, personal accident and own damage",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/4-layer-motor-cover-for-new-private-cars-2-wheelers-from-dec-15-irdai/article71662346.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -5636,166 +6282,48 @@
    }
   },
   {
-   "id": "9ba515a49b89",
+   "id": "8eaeb5a4bf50",
    "date": "2026-11-03",
    "pubDate": "2026-11-03",
-   "time": "11:02",
-   "title": "UPSC CDS I Final Result 2026 Out, Lohitaksh Mahajan Tops; Direct Link Here",
-   "summary": "UPSC CDS I Final Result 2026 Out: The Combined Defence Services Examination (I) was conducted on April 12, 2026, in three shifts. The English paper was held in the first shift, General Knowledge in the second shift, and Elementary Mathematics in the third shift.",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "The English paper was held in the first shift, General Knowledge in the second shift, and Elementary Mathematics in the third shift."
-    }
-   ],
-   "source": "NDTV — India",
-   "sourceId": "ndtv-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.ndtv.com/education/upsc-cds-i-final-result-2026-out-243-candidates-qualify-lohitaksh-mahajan-heres-direct-link-to-check-12274642#publisher=newsstand",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U8",
-     "exam": "G2",
-     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Services"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "dcce90568312",
-   "date": "2026-11-03",
-   "pubDate": "2026-11-03",
-   "title": "Himachal Pradesh Sets Lab Tests for Una Maize Procurement",
-   "summary": "On 3 November 2026, the Himachal Pradesh Agriculture Department said it would procure naturally farmed maize in Una district only after laboratory tests confirm that it m",
+   "time": "23:50",
+   "title": "తుపాను నేపథ్యంలో విజయవాడ డివిజన్‌లో పలు రైళ్లు రద్దు",
+   "summary": "",
    "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.gktoday.in/himachal-pradesh-sets-lab-tests-for-una-maize-procurement/",
-   "bucket": "national",
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/cyclone-murasu-impact-indian-railways-cancels-several-trains/1701/126200072",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
-    "G1",
     "G2"
    ],
-   "subject": "Economy",
+   "subject": "Geography",
    "subjects": [
-    "Economy"
+    "Geography"
    ],
    "units": [
     {
-     "code": "G2-M2A-U3",
+     "code": "G2-S2",
      "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Agriculture",
-    "Laboratory"
-   ],
-   "score": 43,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
-  },
-  {
-   "id": "5d02a65598cb",
-   "date": "2026-11-03",
-   "pubDate": "2026-11-03",
-   "time": "16:32",
-   "title": "Aditya-L1 detects uneven expansion of solar eruptions",
-   "summary": "India’s first space-based solar observatory, Aditya-L1, has provided new insights into how powerful solar eruptions expand through space. The Science and Technology Ministry said Aditya-L1 is providing continuous observations of the Sun through its seven scientific payloads. One of these, the Visible Emission Line Coronagraph, or VELC, has helped scientists detect […]",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "India’s first space-based solar observatory, Aditya-L1, has provided new insights into how powerful solar eruptions expand through space."
-    }
-   ],
-   "source": "AIR News — National",
-   "sourceId": "air-national",
-   "official": true,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://newsonair.gov.in/aditya-l1-detects-uneven-expansion-of-solar-eruptions/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-F20",
-     "exam": "G1",
-     "label": "Technology in Space and Defence - Indian Space Programme, ISRO, Satellite Programmes, IRNSS, IRS, Defence and Academic Satellites, DRDO"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+     "label": "Screening S2. Geography"
     }
    ],
    "topics": [],
    "angles": [],
-   "score": 42,
+   "score": 43,
    "band": "medium",
    "why": {
-    "syllabus": 24,
+    "syllabus": 12,
     "angles": 0,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 15
-   }
+    "ap": 20,
+    "importance": 6,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "3355f0c2d344",
@@ -5839,246 +6367,6 @@
     "angles": 5,
     "ap": 20,
     "importance": 0,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "bb55f76f14cc",
-   "date": "2026-11-03",
-   "pubDate": "2026-11-03",
-   "time": "19:56",
-   "title": "Centre focuses on creating opportunities for weaker sections through welfare-orientated interventions, says Ramdas Athawale",
-   "summary": "Union Minister of State for Social Justice and Empowerment Ramdas Athawale said that economic growth and social empowerment must be in tandem to ensure betterment of every section of society. Addressing a press conference in Chandigarh, today, he reiterated that inclusive development, equal opportunities and welfare-orientated policies remain essential to build a stronger […]",
-   "facts": [
-    {
-     "angle": "Summit / exercise",
-     "text": "Addressing a press conference in Chandigarh, today, he reiterated that inclusive development, equal opportunities and welfare-orientated policies remain essential to build a stronger […]"
-    }
-   ],
-   "source": "AIR News — Regional",
-   "sourceId": "air-national",
-   "official": true,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://newsonair.gov.in/centre-focuses-on-creating-opportunities-for-weaker-sections-through-welfare-orientated-interventions-says-ramdas-athawale/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    },
-    {
-     "code": "G2-M2A-U1",
-     "exam": "G2",
-     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [
-    "Union Minister",
-    "Section",
-    "Economic growth",
-    "Social Justice"
-   ],
-   "score": 42,
-   "band": "medium",
-   "why": {
-    "syllabus": 14,
-    "angles": 20,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "24cef760af75",
-   "date": "2026-11-03",
-   "pubDate": "2026-11-03",
-   "time": "17:49",
-   "title": "Ministry of MSME observes Vigilance Awareness Week 2026 on the Theme of “Probity for Prosperity”",
-   "summary": "Nukkad Natak Organised to promote Integrity and Preventive Vigilance during Vigilance Awareness Week 2026 03 NOV 2026 5:49PM by PIB Delhi The Ministry of Micro, Small and Medium Enterprises (MSME) observed Vigilance Awareness Week 2026 from 26th October to 1st November 2026, in accordance with the guidelines issued by the Central Vigilance Commission (CVC).",
-   "facts": [],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Micro,Small & Medium Enterprises",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332151&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 42,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "35494de83e38",
-   "date": "2026-11-03",
-   "pubDate": "2026-11-03",
-   "time": "09:40",
-   "title": "Denied boarding amid Dubai floods: Emirates, Yatra ordered to pay Rs 1.88 lakh",
-   "summary": "The Chandigarh consumer commission has reaffirmed its earlier decision, holding Emirates Airlines and Yatra Online responsible for the boarding denial faced by Raghav Jain and his wife. Their travel to Italy was hindered by unexpected floods in Dubai, and they were forced to buy new tickets at a premium price. Moreover, they incurred extra expenses due to hotel cancellations.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "The commission ordered the companies to compensate them with Rs 1."
-    }
-   ],
-   "source": "Times of India — Top stories",
-   "sourceId": "toi-top",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://timesofindia.indiatimes.com/legal/news/emirates-airlines-loses-appeal-against-rs-1-88-lakh-payout-to-chandigarh-man-after-dubai-floods-disrupt-flight-to-italy-commission-says-passengers-were-not-informed-in-time-or-offered-alternative-flights/articleshow/135481359.cms",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 41,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 2,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "8ea1f4a9432a",
-   "date": "2026-11-03",
-   "pubDate": "2026-11-03",
-   "time": "13:30",
-   "title": "SUVIKALP- Mine Repurposing Tool; Transforming Closed and Abandoned Mines into Productive Assets",
-   "summary": "03 NOV 2026 1:30PM by PIB Delhi Mine closure is an integral part of the mining lifecycle. However, the responsibility towards a mining region does not end with the completion of mining operations. Ensuring productive utilisation of post-mining land, environmental restoration and sustainable socio-economic development requires a structured approach to mine repurposing.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "This approach facilitates objective comparison of alternatives against multiple parameters, providing stakeholders with transparent, consistent and evidence-based recommendations."
-    },
-    {
-     "angle": "Figures",
-     "text": "This enables mine owners, project proponents and government agencies to make informed decisions based on site-specific conditions rather than relying exclusively on subjective assessments."
-    },
-    {
-     "angle": "Figures",
-     "text": "Project Development: Convert recommendations into site-specific feasibility studies, concept notes and DPRs."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Coal",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2331966&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    },
-    {
-     "code": "G1-C1",
-     "exam": "G1",
-     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
-    },
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Post",
-    "Economic development",
-    "mines"
-   ],
-   "score": 41,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 15,
-    "ap": 0,
-    "importance": 3,
     "reuse": 5
    }
   },
