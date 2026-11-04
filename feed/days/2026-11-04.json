@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-04",
- "updated": "2026-11-04T15:38:35.228Z",
+ "updated": "2026-11-04T20:16:03.207Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 195,
+   "found": 197,
    "error": null
   },
   {
@@ -24,8 +24,8 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 0,
-   "error": "timed out"
+   "found": 47,
+   "error": null
   },
   {
    "id": "hindu-national",
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 41,
+   "found": 47,
    "error": null
   },
   {
@@ -102,8 +102,8 @@
   {
    "id": "mint-news",
    "name": "Mint — News",
-   "found": 35,
-   "error": null
+   "found": 0,
+   "error": "no items parsed"
   },
   {
    "id": "mint-economy",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 9,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 170,
+   "found": 121,
    "error": null
   },
   {
@@ -293,6 +293,70 @@
     "angles": 20,
     "ap": 12,
     "importance": 9,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "7e4659bbacca",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "23:06",
+   "title": "Cess levied as increment to sales tax remains within State’s scope, says Supreme Court",
+   "summary": "But the Constitution Bench notes that sales tax regime has changed with VAT and GST over the years",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/cess-levied-as-increment-to-sales-tax-remains-within-states-scope-says-supreme-court/article71667034.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Cess",
+    "Years",
+    "Remains",
+    "Constitution",
+    "Supreme court",
+    "GST"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 20,
+    "ap": 0,
+    "importance": 4,
     "reuse": 15
    }
   },
@@ -435,6 +499,127 @@
     "angles": 15,
     "ap": 0,
     "importance": 15,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "bdc2c5f276b9",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "13:09",
+   "title": "Andhra Pradesh govt intensifies rescue, relief operations in view of heavy rain & flood caused by Cyclone Murasu",
+   "summary": "Andhra Pradesh State Government has sought Central assistance for farmers affected by cyclones Arnab and Murasu. Chandrababu Naidu has taken up the issue with Union Home Minister Amit Shah, seeking support. According to the State’s preliminary report, Cyclone Arnab caused losses estimated at 4,563 crore rupees. It severely affected 781 villages across […]",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "According to the State’s preliminary report, Cyclone Arnab caused losses estimated at 4,563 crore rupees."
+    }
+   ],
+   "source": "AIR News — Regional",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/andhra-pradesh-govt-intensifies-rescue-relief-operations-in-view-of-heavy-rain-flood-caused-by-cyclone-murasu/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "rescue"
+   ],
+   "score": 67,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "011864e20c17",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-05",
+   "time": "00:55",
+   "title": "Helping hand: On Cyclones Arnab and Murasu",
+   "summary": "States need help to rebuild public infrastructure after damage in cyclones",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Editorial",
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/opinion/editorial/helping-hand-on-cyclones-arnab-and-murasu/article71666118.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "States"
+   ],
+   "score": 67,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -917,6 +1102,67 @@
     "angles": 5,
     "ap": 20,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "4316341f3a8e",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "19:45",
+   "title": "Technical Consultative Committee to focus on critical policy and operational matters: RBI",
+   "summary": "The Reserve Bank of India (RBI) has announced setting up a Technical Consultative Committee for Financial Markets which will focus on critical policy and operational matters across money markets and government securities. The eight member Committee will be chaired by the Deputy Governor in charge of the Financial Markets Regulation Department, Mr Rohit Jain. […]",
+   "facts": [
+    {
+     "angle": "Report / committee",
+     "text": "The eight member Committee will be chaired by the Deputy Governor in charge of the Financial Markets Regulation Department, Mr Rohit Jain. […]"
+    }
+   ],
+   "source": "AIR News — Business",
+   "sourceId": "air-business",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/technical-consultative-committee-to-focus-on-critical-policy-and-operational-matters-rbi/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "RBI and monetary policy"
+   ],
+   "angles": [
+    "Governor",
+    "RBI",
+    "Money"
+   ],
+   "score": 63,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 15,
+    "ap": 0,
+    "importance": 7,
     "reuse": 15
    }
   },
@@ -2216,6 +2462,72 @@
    }
   },
   {
+   "id": "8d7de76b4b62",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-05",
+   "time": "00:03",
+   "title": "Need for a unified urbanisation plan",
+   "summary": "The Union Budget, Economic Survey and Finance Commission recognise that India is urbanising across a rural-urban continuum. Yet Census 2027 will use the 2011 definitions, deepening the undercount of urban India; a National Urbanisation Policy can recognise this gap and build the institutional and fiscal mechanisms to bridge it",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/need-for-a-unified-urbanisation-plan/article71652673.ece",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D3",
+     "exam": "G1",
+     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    }
+   ],
+   "topics": [
+    "Finance Commission and fiscal federalism"
+   ],
+   "angles": [
+    "Finance Commission",
+    "Census"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
+  {
    "id": "56d389980320",
    "date": "2026-11-04",
    "pubDate": "2026-11-04",
@@ -2559,6 +2871,73 @@
    }
   },
   {
+   "id": "76124d9f9927",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "19:57",
+   "title": "SC seeks responses on law giving blanket, lifelong immunity to CEC, Election Commissioners",
+   "summary": "The Supreme Court has sought responses from the Centre and the Election Commission of India on a petition challenging the constitutional validity of a provision granting blanket legal immunity to the Chief Election Commissioner and other Election Commissioners for acts performed in their official capacity. A bench comprising Chief Justice of India Surya […]",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/sc-seeks-responses-on-law-giving-blanket-lifelong-immunity-to-cec-election-commissioners/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B1",
+     "exam": "G1",
+     "label": "Indian Constitution - Evolution, Features, Preamble, Fundamental Rights, Fundamental Duties, DPSP, Amendments, Significant Provisions and Basic Structure"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U6",
+     "exam": "G2",
+     "label": "Nature of the Indian Constitution, Constitutional Development, Salient Features, Preamble, Fundamental Rights, DPSP and their Relationship, Fundamental Duties, Amendment, Basic Structure"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Acts",
+    "Election Commission",
+    "Chief Justice",
+    "Supreme court",
+    "SC"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
    "id": "2e7c16ed79ff",
    "date": "2026-11-04",
    "pubDate": "2026-11-04",
@@ -2763,6 +3142,61 @@
     "angles": 10,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "97030a3ff591",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "23:40",
+   "title": "24 hours after High Court rap, BMC fails to restore Dia Mirza’s video on pollution-free Diwali",
+   "summary": "Civil rights activist Sumaira Abdulali, who has been working for the cause of noise pollution, demanded that the BMC should give an explanation about why it had pulled down a video which was recorded as per the directives of the Bombay High Court",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/mumbai/24-hours-after-high-court-rap-bmc-fails-to-restore-dia-mirzas-video-on-pollution-free-diwali/article71666597.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court",
+    "Pollution"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -3055,6 +3489,126 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "13a03e3d6e22",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "20:16",
+   "title": "Supreme Court Stays Order On Board, Not Community Of Priests Managing Tamil Nadu Temple",
+   "summary": "The Supreme Court has stayed a Madras High Court order on the Lord Nataraja temple in Tamil Nadu's Chidambaram.",
+   "facts": [
+    {
+     "angle": "Judgment",
+     "text": "The Supreme Court has stayed a Madras High Court order on the Lord Nataraja temple in Tamil Nadu's Chidambaram."
+    }
+   ],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/lord-nataraja-temple-chidambaram-supreme-court-stays-order-on-board-not-community-of-priests-managing-tamil-nadu-temple-12283664#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review",
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Supreme court",
+    "High Court",
+    "Community"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "3f7c1d3b27f3",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "19:59",
+   "title": "29+ US communities curb new AI data centres; Texas elects pro-pause governor",
+   "summary": "Communities in the US have recently voted on measures to limit the development of new data centres. These measures reflect a growing concern about the impact of data centres on power and water use, and noise. In Texas, the election of Gina Hinojosa as governor may lead to further restrictions on data centre construction.",
+   "facts": [],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/technology/tech-news/at-least-29-us-communities-vote-to-ban-or-restrict-new-ai-data-centres-with-ohio-approving-10-local-measures-and-texas-electing-a-governor-who-supports-a-construction-pause-challenging-the-industrys-rapid-expansion/articleshow/135542353.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Construction",
+    "Governor"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
   },
   {
    "id": "ec7551f18642",
@@ -3806,6 +4360,68 @@
    }
   },
   {
+   "id": "ac965ba8fb68",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "13:28",
+   "title": "Cyclone Arnab: Odisha steps up restoration work, NDRF, ODRAF & police involved in search operations",
+   "summary": "Restoration of essential services is being expedited in cyclone- and flood-affected districts of southern Odisha following Cyclone Arnab and subsequent floods. The state government has stepped up efforts to restore road connectivity, electricity, drinking water and other essential infrastructure in Ganjam, Gajapati and Kandhamal. Meanwhile, search operations continue for ten people missing after a massive […]",
+   "facts": [],
+   "source": "AIR News — Regional",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/cyclone-arnab-odisha-steps-up-restoration-work-ndrf-odraf-police-involved-in-search-operations/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
    "id": "1cc2eddc6493",
    "date": "2026-11-04",
    "pubDate": "2026-11-04",
@@ -3929,6 +4545,60 @@
     "angles": 5,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "9fddfd7d68ad",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "15:23",
+   "title": "Cabinet approves 92 Gigawatt-hour energy storage scheme to strengthen India’s clean energy programme",
+   "summary": "The Union Cabinet has approved a 92 Gigawatt-hour energy storage scheme to further strengthen India’s clean energy programme. Briefing media this afternoon in New Delhi, Information and Broadcasting Minister Ashwini Vashnaw said the scheme will comprise 30 gigawatt-hours of battery storage, 60 Gigawatt-hour of pumped storage and two Gigawatt-hour for emerging energy storage technologies. […]",
+   "facts": [
+    {
+     "angle": "Cabinet decision",
+     "text": "The Union Cabinet has approved a 92 Gigawatt-hour energy storage scheme to further strengthen India’s clean energy programme."
+    }
+   ],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/cabinet-approves-92-gigawatt-hour-energy-storage-scheme-to-strengthen-indias-clean-energy-programme/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 0,
+    "ap": 0,
+    "importance": 13,
     "reuse": 15
    }
   },
@@ -4441,6 +5111,64 @@
    "digest": true
   },
   {
+   "id": "d81572d88249",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "21:28",
+   "title": "Delhi NCR Faces Severe Winter Smog Amid Strong El Nino Impact",
+   "summary": "To address the escalating public health risk, CAQM's GRAP Stage II mandate enforces strict measures across the region.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/delhi-ncr-faces-severe-winter-smog-amid-strong-el-nino-impact-12284041#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Health"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "c5d428e8852b",
    "date": "2026-11-04",
    "pubDate": "2026-11-04",
@@ -4493,178 +5221,19 @@
    }
   },
   {
-   "id": "a856bfb9efa0",
+   "id": "19f0d2395ba5",
    "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "07:16",
-   "title": "Rare white stork spotted at Okhla bird sanctuary since Nov 1",
-   "summary": "Last spotted in NCR in March 2019 near Jewar, the species only has four records in the region in nearly three decades, birders say",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "GKToday"
-   ],
-   "url": "https://www.hindustantimes.com/india-news/rare-white-stork-spotted-at-okhla-bird-sanctuary-since-nov-1-101793756817823.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Bird sanctuary"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "49e4666581a4",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "14:41",
-   "title": "RBI constitutes Technical Consultative Committee for Financial Markets",
-   "summary": "RBI sets up expert panel to advise on market structure, liquidity, and infrastructure amid evolving financial markets and policy shifts",
-   "facts": [],
-   "source": "The Hindu — Business",
-   "sourceId": "hindu-business",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/business/markets/rbi-constitutes-technical-consultative-committee-for-financial-markets/article71664423.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "RBI"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "52b2b8fab507",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "15:57",
-   "title": "Services sector activity hits 4-month high in October as business conditions improve cautiously",
-   "summary": "Survey participants identified new business growth as the main driver behind the rise in output, the survey said",
-   "facts": [],
-   "source": "The Hindu — Economy",
-   "sourceId": "hindu-economy",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [
-    "The Hindu — Business"
-   ],
-   "url": "https://www.thehindu.com/business/Economy/services-sector-activity-hits-4-month-high-in-october-as-business-conditions-improve-cautiously/article71665069.ece",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D4",
-     "exam": "G1",
-     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Services"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "17256912326a",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "20:25",
-   "title": "Supreme Court stays Madras HC order on Chidambaram temple",
-   "summary": "Questions whether High Courts have parens patriae jurisdiction only over public temples and not places of worship of other faiths",
+   "pubDate": "2026-11-05",
+   "time": "00:17",
+   "title": "Governor presents Unit Citations to Air Force Station, Avadi, 27 Special Composite Group of National Security Guard",
+   "summary": "",
    "facts": [],
    "source": "The Hindu — National",
    "sourceId": "hindu-national",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/tamil-nadu/sc-stays-madras-hc-order-on-chidambaram-temple/article71665395.ece",
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/governor-presents-unit-citations-to-air-force-station-avadi-27-special-composite-group-of-national-security-guard/article71664675.ece",
    "bucket": "national",
    "scope": "national",
    "ap": false,
@@ -4674,321 +5243,24 @@
    ],
    "subject": "Polity, Society & IR",
    "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [
-    "Supreme Court and judicial review",
-    "High Courts and judicial infrastructure"
-   ],
-   "angles": [
-    "High courts",
-    "Supreme court",
-    "High Court"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 15,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "968f3ef752e2",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "22:27",
-   "title": "The world’s largest bovine",
-   "summary": "Species File: Exploring India’s biodiversity, one species at a time. Decades after disappearing from Bandhavgarh Tiger Reserve in Madhya Pradesh, the gaur or Indian bison made a comeback following conservation efforts, according to media reports. In 2011-12, a herd of 40 gaur were reintroduced from Kanha Tiger Reserve, and today, Bandhavgarh’s gaur population stands at […]",
-   "facts": [
-    {
-     "angle": "GI tag / designation",
-     "text": "Decades after disappearing from Bandhavgarh Tiger Reserve in Madhya Pradesh, the gaur or Indian bison made a comeback following conservation efforts, according to media reports."
-    },
-    {
-     "angle": "GI tag / designation",
-     "text": "In 2011-12, a herd of 40 gaur were reintroduced from Kanha Tiger Reserve, and today, Bandhavgarh’s gaur population stands at […]"
-    }
-   ],
-   "source": "Mongabay India",
-   "sourceId": "mongabay-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://india.mongabay.com/short-article/2026/11/the-worlds-largest-bovine/",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    }
-   ],
-   "topics": [
-    "Wildlife and forest governance"
-   ],
-   "angles": [
-    "Tiger Reserve",
-    "Biodiversity",
-    "Reports"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 20,
-    "angles": 15,
-    "ap": 0,
-    "importance": 4,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "a730f494d066",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "19:50",
-   "title": "U.S. Midterm election Democrats win five governor races as Hinojosa, Bottoms, Haaland make history",
-   "summary": "Hinojosa becomes Texas’s first Latina governor, Bottoms the first Black woman elected governor in the US, and Haaland the first Native American woman to lead a state",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "Hinojosa becomes Texas’s first Latina governor, Bottoms the first Black woman elected governor in the US, and Haaland the first Native American woman to lead a state"
-    }
-   ],
-   "source": "The Hindu — International",
-   "sourceId": "hindu-international",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/international/democrats-make-history-in-governor-races-hinojosa-bottoms-haaland-win/article71665814.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Governor"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "dd1ad7a34361",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "08:25",
-   "title": "US elections: K Bottoms makes history as first Black woman governor, flips Georgia seat",
-   "summary": "Keisha Lance Bottoms has been elected governor of Georgia after defeating Rick Jackson in the recent election. Her victory signifies a historic moment as she becomes the first Black woman to hold this position. Bottoms focused her campaign on economic issues, pledging to expand Medicaid and raise the minimum wage.",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "Her victory signifies a historic moment as she becomes the first Black woman to hold this position."
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "Jackson's significant campaign spending did not prevent his defeat despite his attacks on Bottoms' record."
-    }
-   ],
-   "source": "Times of India — Top stories",
-   "sourceId": "toi-top",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://timesofindia.indiatimes.com/world/us/us-mid-term-elections/news/us-midterm-results-democrat-keisha-lance-bottoms-makes-history-as-first-black-woman-governor-flips-georgia-seat/articleshow/135519340.cms",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Governor"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "0e38fdc8e1b2",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "09:58",
-   "title": "US poll results: Democrat Amy Acton defeats Ramaswamy, flips Ohio governor's office",
-   "summary": "Dr. Amy Acton has been elected as Ohio's first female governor after defeating Vivek Ramaswamy. This historic victory marks the first Democratic win in the state's governorship in two decades. Acton campaigned on healthcare and affordability while highlighting her challenging childhood. Ramaswamy faced significant backlash for a controversial ad featuring Acton's estranged mother.",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "Dr. Amy Acton has been elected as Ohio's first female governor after defeating Vivek Ramaswamy."
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "This historic victory marks the first Democratic win in the state's governorship in two decades."
-    }
-   ],
-   "source": "Times of India — Top stories",
-   "sourceId": "toi-top",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://timesofindia.indiatimes.com/world/us/us-mid-term-elections/news/us-election-results-amy-acton-defeats-donald-trump-backed-vivek-ramaswamy-to-become-ohios-first-woman-governor/articleshow/135522936.cms",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Governor"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "d605aebb529c",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "title": "Uttarakhand to observe Disaster Management Day on November 28 with programmes from November 25 to 28",
-   "summary": "Uttarakhand will observe Disaster Management Day every year on November 28, commemorating the successful rescue of 41 workers from the Silkyara tunnel on November 28, 202",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/uttarakhand-to-observe-disaster-management-day-on-november-28-with-programmes-from-november-25-to-28/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
+    "Polity, Society & IR",
     "Science, Tech & Environment"
    ],
    "units": [
     {
-     "code": "G1-F22",
+     "code": "G1-B3",
      "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
     },
     {
-     "code": "G2-S2",
+     "code": "G2-M1B-U7",
      "exam": "G2",
-     "label": "Screening S2. Geography"
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
     }
    ],
    "topics": [],
    "angles": [
-    "rescue"
+    "Governor"
    ],
    "score": 44,
    "band": "medium",
@@ -4997,137 +5269,6 @@
     "angles": 5,
     "ap": 0,
     "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
-  },
-  {
-   "id": "cd8157b7b4d1",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "15:29",
-   "title": "Cabinet Approves Capex Support Scheme to Promote Critical Mineral Processing with an Outlay of Rs.2,814 Crore for Lithium and Nickel processing",
-   "summary": "04 NOV 2026 3:29PM by PIB Delhi The Union Cabinet, chaired by the Prime Minister Shri Narendra Modi, has approved the ‘Capex Support Scheme to Promote Critical Mineral Processing’ with a financial outlay of Rs.2,814 crore over a period of five years. Processing of critical minerals remains geographically concentrated in a few global locations.",
-   "facts": [
-    {
-     "angle": "Cabinet decision",
-     "text": "04 NOV 2026 3:29PM by PIB Delhi The Union Cabinet, chaired by the Prime Minister Shri Narendra Modi, has approved the ‘Capex Support Scheme to Promote Critical Mineral Processing’ with a financial outlay of Rs.2,814 crore over a period of five years."
-    },
-    {
-     "angle": "Figures",
-     "text": "The proposed scheme envisages a total financial outlay of Rs.2,814 crore."
-    },
-    {
-     "angle": "Figures",
-     "text": "The maximum capital support will be capped at Rs.500 crore per lithium beneficiary and Rs.900 crore per nickel beneficiary, respectively."
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "In the first stage, applications shall be assessed for technical qualification, and only technically qualified applicants shall be eligible to participate in the second stage of financial bidding."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Cabinet",
-   "alsoIn": [
-    "PIB Hyderabad",
-    "BusinessLine — Economy"
-   ],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332476&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Years",
-    "Remains"
-   ],
-   "score": 42,
-   "band": "medium",
-   "why": {
-    "syllabus": 12,
-    "angles": 10,
-    "ap": 0,
-    "importance": 15,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "5672ceb601ce",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-04",
-   "time": "12:07",
-   "title": "CSIR and DAKSHIN-RIS join hands to advance Science, Technology and Innovation for the Global South",
-   "summary": "DAKSHIN envisions fostering knowledge sharing and mutual learning among countries of the Global South by promoting the development of sustainable, affordable and locally relevant solutions.",
-   "facts": [],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Science & Technology",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332389&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Science, Tech & Environment",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-F18",
-     "exam": "G1",
-     "label": "Science and Technology - Nature and Scope, Relevance to Daily Life, National S&T Policy"
-    },
-    {
-     "code": "G1-C1",
-     "exam": "G1",
-     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
-    },
-    {
-     "code": "G2-M2B-U5",
-     "exam": "G2",
-     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
-    },
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 42,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 3,
     "reuse": 15
    }
   },
