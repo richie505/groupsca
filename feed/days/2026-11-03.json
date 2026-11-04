@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-03",
- "updated": "2026-11-04T07:09:52.108Z",
+ "updated": "2026-11-04T15:38:35.228Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 146,
+   "found": 195,
    "error": null
   },
   {
@@ -18,14 +18,14 @@
   {
    "id": "pib-hyderabad",
    "name": "PIB Hyderabad",
-   "found": 70,
+   "found": 177,
    "error": null
   },
   {
    "id": "air",
    "name": "AIR News",
-   "found": 27,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "hindu-national",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 11,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 161,
+   "found": 170,
    "error": null
   },
   {
@@ -3981,6 +3981,64 @@
    }
   },
   {
+   "id": "ae15fb6bb824",
+   "date": "2026-11-03",
+   "pubDate": "2026-11-03",
+   "time": "17:08",
+   "title": "Keralam CM Satheesan questions CAG audit methods",
+   "summary": "The estimated loss of Rs ₹1.76 lakh crore in the 2G spectrum allocation was not an actual realised loss but a hypothetical, presumptive projection,” he said",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The estimated loss of Rs ₹1.76 lakh crore in the 2G spectrum allocation was not an actual realised loss but a hypothetical, presumptive projection,” he said"
+    }
+   ],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/keralam-cm-satheesan-questions-cag-audit-methods/article71660443.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "CAG",
+    "Allocation"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
    "id": "d7a006b05893",
    "date": "2026-11-03",
    "pubDate": "2026-11-03",
@@ -6729,63 +6787,6 @@
     "importance": 0,
     "reuse": 15
    }
-  },
-  {
-   "id": "512dbfb4fda4",
-   "date": "2026-11-03",
-   "pubDate": "2026-11-03",
-   "title": "SEBI Opens Depository Receipt Route for REITs and InvITs",
-   "summary": "On 2 November 2026, the Securities and Exchange Board of India (SEBI) permitted Real Estate Investment Trusts (REITs) and Infrastructure Investment Trusts (InvITs) to rai",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/sebi-opens-depository-receipt-route-for-reits-and-invits/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B4",
-     "exam": "G1",
-     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
-    },
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "SEBI"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
   },
   {
    "id": "8eaeb5a4bf50",
