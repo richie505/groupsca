@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-11-04",
- "updated": "2026-11-04T20:16:03.207Z",
+ "updated": "2026-11-04T23:01:35.500Z",
  "sources": [
   {
    "id": "pib",
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 46,
    "error": null
   },
   {
@@ -102,8 +102,8 @@
   {
    "id": "mint-news",
    "name": "Mint — News",
-   "found": 0,
-   "error": "no items parsed"
+   "found": 35,
+   "error": null
   },
   {
    "id": "mint-economy",
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 48,
    "error": null
   },
   {
@@ -1031,6 +1031,68 @@
    "topics": [],
    "angles": [
     "Rainfall"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "400774a08183",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-05",
+   "time": "03:51",
+   "title": "PM calls Naidu, discusses cyclone damage",
+   "summary": "Central team to submit its report within 15 days Naidu seeks comprehensive central assistance for losses to agriculture, roads, and power infrastructure Urges Centre to extend drought relief to 412 mandals in 21 districts Seeks 200 workdays under VB-G RAM G and farm loan rescheduling",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/pm-calls-naidu-discusses-cyclone-damage-1139264",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture"
    ],
    "score": 64,
    "band": "high",
@@ -4898,6 +4960,70 @@
    }
   },
   {
+   "id": "5672ceb601ce",
+   "date": "2026-11-04",
+   "pubDate": "2026-11-04",
+   "time": "12:07",
+   "title": "CSIR and DAKSHIN-RIS join hands to advance Science, Technology and Innovation for the Global South",
+   "summary": "DAKSHIN envisions fostering knowledge sharing and mutual learning among countries of the Global South by promoting the development of sustainable, affordable and locally relevant solutions.",
+   "facts": [],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Science & Technology",
+   "alsoIn": [
+    "PIB Hyderabad",
+    "AIR News — National"
+   ],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2332389&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-F18",
+     "exam": "G1",
+     "label": "Science and Technology - Nature and Scope, Relevance to Daily Life, National S&T Policy"
+    },
+    {
+     "code": "G1-C1",
+     "exam": "G1",
+     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
    "id": "b25db88cc9e2",
    "date": "2026-11-04",
    "pubDate": "2026-11-04",
@@ -5209,58 +5335,6 @@
    "topics": [],
    "angles": [
     "Health"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "19f0d2395ba5",
-   "date": "2026-11-04",
-   "pubDate": "2026-11-05",
-   "time": "00:17",
-   "title": "Governor presents Unit Citations to Air Force Station, Avadi, 27 Special Composite Group of National Security Guard",
-   "summary": "",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/tamil-nadu/governor-presents-unit-citations-to-air-force-station-avadi-27-special-composite-group-of-national-security-guard/article71664675.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Governor"
    ],
    "score": 44,
    "band": "medium",
