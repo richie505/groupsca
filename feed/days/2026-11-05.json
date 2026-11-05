@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-05",
- "updated": "2026-11-05T15:41:12.781Z",
+ "updated": "2026-11-05T20:28:51.279Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 252,
+   "found": 256,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 45,
+   "found": 48,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 9,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 178,
+   "found": 115,
    "error": null
   },
   {
@@ -204,11 +204,72 @@
   {
    "id": "affairscloud",
    "name": "AffairsCloud",
-   "found": 15,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   }
  ],
  "items": [
+  {
+   "id": "aee65288ac2e",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-06",
+   "time": "00:10",
+   "title": "​SCoR administration, union discuss staff issues post- bifurcation",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/scor-administration-union-discuss-staff-issues-post-bifurcation/article71670339.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-M1A-U5",
+     "exam": "G2",
+     "label": "Formation of Andhra Pradesh - Visalandhra Mahasabha, SRC Recommendations, Gentlemen's Agreement, Social and Cultural Events 1956-2014"
+    }
+   ],
+   "topics": [
+    "AP Reorganisation Act, 2014"
+   ],
+   "angles": [
+    "Administration",
+    "Post"
+   ],
+   "score": 75,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
   {
    "id": "a05574e0844a",
    "date": "2026-11-05",
@@ -977,6 +1038,89 @@
     "angles": 10,
     "ap": 0,
     "importance": 9,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "b82bce47bcc5",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "21:29",
+   "title": "Day 1 of 4th Conference of Mining Ministers Witnesses Major Initiatives, Key Deliberations and Renewed Push for Centre–State Coordination",
+   "summary": "05 NOV 2026 9:29PM by PIB Delhi The first day of the two-day 4th Conference of Mining Ministers, organised by the Ministry of Mines in Goa, witnessed the participation of Chief Minister of Goa, Dr. Pramod Sawant; Union Minister of Coal and Mines, Shri G.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "05 NOV 2026 9:29PM by PIB Delhi The first day of the two-day 4th Conference of Mining Ministers, organised by the Ministry of Mines in Goa, witnessed the participation of Chief Minister of Goa, Dr. Pramod Sawant; Union Minister of Coal and Mines, Shri G."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "Addressing the conference, Minister of State for Coal and Mines, Shri Satish Chandra Dubey, highlighted the importance of effective coordination between the Centre and States, strengthening exploration activities and addressing challenges in the mining sector."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "The first day concluded with constructive deliberations and a renewed emphasis on strengthening Centre–State coordination, addressing the concerns of States and advancing the development of India’s mining and coal sectors."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "The conference will continue on 6 November 2026 with further discussions on key priorities and the way forward."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Mines",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2333352&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Union Minister",
+    "States",
+    "mines"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -2521,6 +2665,120 @@
    }
   },
   {
+   "id": "5c7791732d75",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "22:38",
+   "title": "Former Supreme Court Justice Rajesh Bindal appointed NCLAT chairperson",
+   "summary": "Bindal retired from the Supreme Court on April 15 this year after serving at the top court for over three years.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Bindal retired from the Supreme Court on April 15 this year after serving at the top court for over three years."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/former-supreme-court-justice-rajesh-bindal-appointed-nclat-chairperson-101793897964121.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Years",
+    "Supreme court",
+    "Appointed"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "57a1b8f4a6f5",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "21:38",
+   "title": "Merchants were never assured of zero MDR on UPI indefinitely: Govt to Supreme Court",
+   "summary": "The Centre said person-to-merchant (P2M) transactions of up to ₹2,000 would be exempt from Merchant Discount Rate (MDR).",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The Centre said person-to-merchant (P2M) transactions of up to ₹2,000 would be exempt from Merchant Discount Rate (MDR)."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/merchants-were-never-assured-of-zero-mdr-on-upi-indefinitely-govt-to-supreme-court-centre-discount-101793893720261.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "88b118b717e5",
    "date": "2026-11-05",
    "pubDate": "2026-11-05",
@@ -2735,6 +2993,64 @@
    "angles": [
     "Import",
     "Imports"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d985110416af",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "21:10",
+   "title": "Renewable energy industry seeks measures to boost domestic manufacturing",
+   "summary": "India is exploring ways to boost local production of renewable energy components and reduce import dependence, following industry calls to extend its approved-manufacturer framework.&nbsp;",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/renewable-energy-industry-seeks-wider-almm-framework-to-boost-domestic-manufacturing-11793885718993.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Import",
+    "Industry"
    ],
    "score": 49,
    "band": "medium",
@@ -3170,6 +3486,57 @@
    }
   },
   {
+   "id": "7fb099be53c5",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-06",
+   "time": "00:10",
+   "title": "CII Summit: GVMC chief reviews venue preparations",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "CII Summit: GVMC chief reviews venue preparations"
+    }
+   ],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/cii-summit-gvmc-chief-reviews-venue-preparations/article71670417.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Summit"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   }
+  },
+  {
    "id": "ca67ccd89327",
    "date": "2026-11-05",
    "pubDate": "2026-11-05",
@@ -3330,6 +3697,54 @@
     "reuse": 5
    },
    "lang": "te"
+  },
+  {
+   "id": "675bd4641466",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-06",
+   "time": "00:19",
+   "title": "APPCB steps up State-wide measures to curb air, noise pollution",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National",
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/appcb-steps-up-state-wide-measures-to-curb-air-noise-pollution/article71666457.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Pollution"
+   ],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 5
+   }
   },
   {
    "id": "abf55b2d6755",
@@ -3588,6 +4003,62 @@
    }
   },
   {
+   "id": "6d38ba5ca6ab",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "23:21",
+   "title": "Polling peaceful in 44 naxal-hit areas along the tri-State borders",
+   "summary": "The Polavaram district witnessed 63 % polling; Polavaram project displaced families thronged to cast their vote; Polling was held in 43 government buildings instead of designated polling stations due to rain in West Godavari; Polling will held in one ZPTC and 18 MPTCs in East Godavari on Friday.",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/polling-peaceful-in-44-naxal-hit-areas-along-the-tri-state-borders/article71670460.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [
+    "Polavaram Irrigation Project"
+   ],
+   "angles": [
+    "Borders"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 14,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "812d48d8dc07",
    "date": "2026-11-05",
    "pubDate": "2026-11-05",
@@ -3747,6 +4218,131 @@
    }
   },
   {
+   "id": "a7d8ffe8f360",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "21:32",
+   "title": "Union Secretary Shri Sudhansh Pant Visits Shilp Samagam Mela 2026 at Dilli Haat, INA",
+   "summary": "He was accompanied by Chairman cum Managing Director National Scheduled Castes Finance and Development Corporation (NSFDC) Shri Prabhat Tyagi, DGM NSFDC Rajnish Bankar, and other officers of the Ministry.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Shri Pant said the Shilp Samagam Mela has emerged as an important platform for connecting traditional artisans and entrepreneurs with consumers, creating market linkages and strengthening livelihood opportunities."
+    },
+    {
+     "angle": "Figures",
+     "text": "Through these fairs, more than 1,000 artisans from Scheduled Castes, Other Backward Classes and Safai Karamchari communities have benefited from opportunities to exhibit and market their products."
+    },
+    {
+     "angle": "Figures",
+     "text": "As per the consolidated sales figures of the four participating corporations, namely NSFDC, NBCFDC, NSKFDC and NDFDC, total sales of ₹29,86,110 were recorded between November 1 and November 4, 2026, the Official said."
+    },
+    {
+     "angle": "Figures",
+     "text": "With an additional sale of approximately ₹5 lakh thereafter, the cumulative sales have reached approximately ₹ 34.86 lakh as of now , demonstrating the positive market response to the products showcased at the Mela, he added."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Social Justice & Empowerment",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2333357&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    }
+   ],
+   "topics": [
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "Caste",
+    "INA",
+    "Social Justice",
+    "Scheduled Caste"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 14,
+    "angles": 20,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "d98628b7ab61",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "23:24",
+   "title": "UPSC Declares Civil Services (Main) Examination 2026 Results",
+   "summary": "The civil services examination is conducted annually in three stages -- preliminary, main and interview -- to select candidates for the Indian Administrative Service (IAS), Indian Foreign Service (IFS) and Indian Police Service (IPS) and other services.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/education/upsc-main-2026-results-upsc-results-upsc-declares-civil-services-main-examination-2026-results-12289719#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "17f04e8eb1da",
    "date": "2026-11-05",
    "pubDate": "2026-11-05",
@@ -3846,6 +4442,125 @@
     "angles": 10,
     "ap": 0,
     "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "e3deae89301e",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-05",
+   "time": "22:17",
+   "title": "International Prosthetist and Orthotist Day 2026 Celebrated in New Delhi; Focus on Innovation, Accessibility and Global Opportunities",
+   "summary": "05 NOV 2026 10:17PM by PIB Delhi The Orthotics & Prosthetics Association of India (OPAI), celebrated International Prosthetist and Orthotist Day (IPOD) 2026 at the National Rail Museum, Chanakyapuri, New Delhi.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The event brought together senior government officials, policymakers, healthcare professionals, academicians, start-ups and established organizations to discuss the future of rehabilitation, assistive technology and disability inclusion."
+    },
+    {
+     "angle": "Scheme / launch",
+     "text": "The same company has distributed gripX myo hands to 10 beneficiaries under sponsorship programs.Instalimb also launched a 3D scanning Mobile App during the program."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Social Justice & Empowerment",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2333378&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "IIT",
+    "rehabilitation"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "2426aa29a282",
+   "date": "2026-11-05",
+   "pubDate": "2026-11-06",
+   "time": "00:13",
+   "title": "SCoR GM inspects railway infrastructure, safety in Visakhapatnam–Kantakapalli section",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/scor-gm-inspects-railway-infrastructure-safety-in-visakhapatnamkantakapalli-section/article71666297.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Section"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
     "reuse": 5
    }
   },
@@ -4051,83 +4766,29 @@
    }
   },
   {
-   "id": "d4409706d16e",
+   "id": "6a49b3d73038",
    "date": "2026-11-05",
    "pubDate": "2026-11-05",
-   "time": "07:25",
-   "title": "Govt proposes immediate suspension of manufacturing licence of substandard drugs",
-   "summary": "The Union Ministry of Health and Family Welfare has proposed amendments to the Drugs Rules, 1945, to provide for the immediate suspension of manufacturing licences for drugs declared Not of Standard Quality (NSQ) on specified critical quality parameters. The proposed amendments seek to enable prompt regulatory intervention upon the detection of substandard medicines, prevent […]",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "The Union Ministry of Health and Family Welfare has proposed amendments to the Drugs Rules, 1945, to provide for the immediate suspension of manufacturing licences for drugs declared Not of Standard Quality (NSQ) on specified critical quality parameters."
-    }
-   ],
-   "source": "AIR News — Health",
-   "sourceId": "air-national",
-   "official": true,
+   "time": "23:54",
+   "title": "Farmers cast their votes till 8 p.m in Kakinada, boats deployed for voters in Konaseema",
+   "summary": "Hit by cyclone Arnab and Murasu consecutively, farmers who attended their fields to save their crops returned to polling stations at the eleventh hour to cast their vote in Kakinada district; Boats were deployed for voters due to rains in Konaseema",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
    "ministry": "",
-   "alsoIn": [],
-   "url": "https://newsonair.gov.in/govt-proposes-immediate-suspension-of-manufacturing-licence-of-substandard-drugs/",
-   "bucket": "national",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-cast-their-votes-till-8-pm-in-kakinada-boats-deployed-for-voters-in-konaseema/article71670757.ece",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
     "G2"
    ],
    "subject": "Economy",
    "subjects": [
-    "Economy",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Amendments",
-    "Family",
-    "Health",
-    "Amendment"
-   ],
-   "score": 40,
-   "band": "medium",
-   "why": {
-    "syllabus": 12,
-    "angles": 20,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "cdce4dd0b9f7",
-   "date": "2026-11-05",
-   "pubDate": "2026-11-05",
-   "time": "13:48",
-   "title": "Indian delegation visits Italy to explore textile trade and investment opportunities",
-   "summary": "India and Italy have explored opportunities to strengthen bilateral cooperation in the textile sector, with a focus on trade, investment, technological exchange and sustainable manufacturing. An Indian delegation, led by Secretary of the Ministry of Textiles Neelam Shami Rao, visited Prato, a prominent textile manufacturing hub in Italy, yesterday.",
-   "facts": [],
-   "source": "AIR News — International",
-   "sourceId": "air-international",
-   "official": true,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://newsonair.gov.in/indian-delegation-visits-italy-to-explore-textile-trade-and-investment-opportunities/",
-   "bucket": "international",
-   "scope": "international",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
     "Economy",
     "Geography"
    ],
@@ -4136,289 +4797,64 @@
      "code": "G2-M2A-U3",
      "exam": "G2",
      "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G1-B6",
-     "exam": "G1",
-     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
-    },
-    {
-     "code": "G1-D4",
-     "exam": "G1",
-     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "trade",
-    "Post"
-   ],
-   "score": 40,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 10,
-    "ap": 0,
-    "importance": 7,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "4f191ed60e3e",
-   "date": "2026-11-05",
-   "pubDate": "2026-11-05",
-   "title": "West Bengal CM says 22 lakh people can work daily under 125-day scheme; 7,190 Panchayat hires planned",
-   "summary": "On 4 November 2026, West Bengal Chief Minister Shuvendu Adhikari said the state’s 125-day work programme would enable 22 lakh people to work each day.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "On 4 November 2026, West Bengal Chief Minister Shuvendu Adhikari said the state’s 125-day work programme would enable 22 lakh people to work each day."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/west-bengal-cm-says-22-lakh-people-can-work-daily-under-125-day-scheme-7190-panchayat-hires-planned/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U10",
-     "exam": "G2",
-     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
     }
    ],
    "topics": [],
    "angles": [],
-   "score": 39,
-   "band": "low",
-   "why": {
-    "syllabus": 24,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
-  },
-  {
-   "id": "c6b7957f362f",
-   "date": "2026-11-05",
-   "pubDate": "2026-11-05",
-   "title": "Antarctic Ozone Hole Ranks Seventh Largest on Record",
-   "summary": "The 2026 Antarctic ozone hole was the seventh largest in 48 years of monitoring by NASA and the National Oceanic and Atmospheric Administration (NOAA), the agencies said",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "The 2026 Antarctic ozone hole was the seventh largest in 48 years of monitoring by NASA and the National Oceanic and Atmospheric Administration (NOAA), the agencies said"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/antarctic-ozone-hole-ranks-seventh-largest-on-record/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U5",
-     "exam": "G2",
-     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Administration",
-    "Years",
-    "Rank",
-    "Ozone",
-    "NASA"
-   ],
    "score": 37,
    "band": "low",
    "why": {
     "syllabus": 12,
-    "angles": 20,
-    "ap": 0,
+    "angles": 0,
+    "ap": 20,
     "importance": 0,
     "reuse": 5
-   },
-   "digest": true
+   }
   },
   {
-   "id": "35c34c2e040f",
+   "id": "ea85fbf1404d",
    "date": "2026-11-05",
    "pubDate": "2026-11-05",
-   "title": "ICMR approves ₹2 crore grant for joint study of age-related gut-brain changes using AI",
-   "summary": "On 4 November 2026, the Indian Council of Medical Research (ICMR) approved a ₹2 crore grant for a joint study by Lucknow University, King George’s Medical University and",
+   "time": "23:01",
+   "title": "Tamil Nadu Minister visits Ongole to identify fishermen's bodies",
+   "summary": "TN Finance Minister N Marie Wilson inspected the bodies of missing fishermen at Ongole GGH after five washed ashore on Kothapatnam coast. CM Vijay announced ₹7 lakh compensation per family.",
    "facts": [
     {
      "angle": "Figures",
-     "text": "On 4 November 2026, the Indian Council of Medical Research (ICMR) approved a ₹2 crore grant for a joint study by Lucknow University, King George’s Medical University and"
+     "text": "CM Vijay announced ₹7 lakh compensation per family."
     }
    ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.gktoday.in/icmr-approves-%e2%82%b92-crore-grant-for-joint-study-of-age-related-gut-brain-changes-using-ai/",
-   "bucket": "national",
+   "url": "https://www.thehansindia.com/news/cities/ongole/tamil-nadu-minister-visits-ongole-to-identify-fishermens-bodies-1139624",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
-    "G1",
     "G2"
    ],
-   "subject": "Science, Tech & Environment",
+   "subject": "Geography",
    "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
+    "Geography"
    ],
-   "units": [
-    {
-     "code": "G1-F18",
-     "exam": "G1",
-     "label": "Science and Technology - Nature and Scope, Relevance to Daily Life, National S&T Policy"
-    }
-   ],
+   "units": [],
    "topics": [],
    "angles": [
-    "Grant",
-    "University"
+    "Finance Minister",
+    "Family"
    ],
-   "score": 33,
+   "score": 36,
    "band": "low",
    "why": {
-    "syllabus": 12,
+    "syllabus": 4,
     "angles": 10,
-    "ap": 0,
-    "importance": 6,
-    "reuse": 5
-   },
-   "digest": true
-  },
-  {
-   "id": "3a4525459648",
-   "date": "2026-11-05",
-   "pubDate": "2026-11-05",
-   "title": "JNCASR Develops Silicon Chip for Terahertz 6G Communication",
-   "summary": "On 4 November 2026, researchers at the Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR) developed a silicon chip that lets terahertz waves pass through e",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/jncasr-develops-silicon-chip-for-terahertz-6g-communication/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "History & Culture"
-   ],
-   "units": [
-    {
-     "code": "G2-S1",
-     "exam": "G2",
-     "label": "Screening S1. Indian History"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 28,
-   "band": "low",
-   "why": {
-    "syllabus": 18,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 10
-   },
-   "digest": true
-  },
-  {
-   "id": "3cb3faf4b6e1",
-   "date": "2026-11-05",
-   "pubDate": "2026-11-05",
-   "title": "Bhutan Sets Record with 108 Stupas in Nine Hours",
-   "summary": "Bhutan entered Guinness World Records on 3 November 2026 after 108 Buddhist stupas, also known as Jangchub Chortens, were constructed and consecrated in one day at Geleph",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/bhutan-sets-record-with-108-stupas-in-nine-hours/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "History & Culture",
-   "subjects": [
-    "History & Culture"
-   ],
-   "units": [
-    {
-     "code": "G1-A1",
-     "exam": "G1",
-     "label": "Indus Valley Civilization, Vedic Age, Mahajanapadas, Jainism & Buddhism, Magadha, Mauryas, Foreign Invasions, Kushanas, Satavahanas, Sangam Age, Sungas, Gupta Empire"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Stupa",
-    "Known as"
-   ],
-   "score": 27,
-   "band": "low",
-   "why": {
-    "syllabus": 12,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 5
-   },
-   "digest": true
+    "ap": 20,
+    "importance": 2,
+    "reuse": 0
+   }
   }
  ]
 }
