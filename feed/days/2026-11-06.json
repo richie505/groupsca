@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-06",
- "updated": "2026-11-06T15:15:03.107Z",
+ "updated": "2026-11-06T19:51:06.646Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 307,
+   "found": 309,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 20,
+   "found": 24,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 9,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 158,
+   "found": 100,
    "error": null
   },
   {
@@ -281,6 +281,67 @@
     "angles": 15,
     "ap": 20,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "adedd3281aee",
+   "date": "2026-11-06",
+   "pubDate": "2026-11-07",
+   "time": "00:09",
+   "title": "Officials told to make fool proof arrangements for CII Partnership Summit",
+   "summary": "CII Partnership Summit will be held on November 12 and 13 at the Andhra University Engineering College grounds in Visakhapatnam",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "CII Partnership Summit will be held on November 12 and 13 at the Andhra University Engineering College grounds in Visakhapatnam"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National",
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/officials-told-to-make-fool-proof-arrangements-for-cii-partnership-summit/article71675145.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G2-M1A-U4",
+     "exam": "G2",
+     "label": "Origin and Growth of the Andhra Movement - Andhra Mahasabhas, Prominent Leaders, Formation of Andhra State 1953, Role of Press, Library Movement, Folk and Tribal Culture"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University",
+    "Summit"
+   ],
+   "score": 70,
+   "band": "high",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 20,
+    "importance": 7,
     "reuse": 15
    }
   },
@@ -1532,6 +1593,75 @@
    }
   },
   {
+   "id": "16a4dfa85eb0",
+   "date": "2026-11-06",
+   "pubDate": "2026-11-07",
+   "time": "00:47",
+   "title": "T.N. govt. enhances compensation for various categories of human-wildlife conflict",
+   "summary": "The compensation for major injuries or partial disability resulting in 20% to 60% incapacitation for humans, duly certified by the District Medical Officer or a constituted medical board, has been increased from ₹59,100 to a maximum of ₹5 lakh",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The compensation for major injuries or partial disability resulting in 20% to 60% incapacitation for humans, duly certified by the District Medical Officer or a constituted medical board, has been increased from ₹59,100 to a maximum of ₹5 lakh"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-enhances-compensation-for-various-categories-of-human-wildlife-conflict/article71675570.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Conflict"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
    "id": "ae937895e911",
    "date": "2026-11-06",
    "pubDate": "2026-11-06",
@@ -2459,6 +2589,55 @@
    }
   },
   {
+   "id": "060ad19adc5b",
+   "date": "2026-11-06",
+   "pubDate": "2026-11-06",
+   "time": "23:19",
+   "title": "OBC creamy layer verdict not a blanket revision of service allocations, seniority: Supreme Court",
+   "summary": "March 11 judgment determined only rights of candidates who approached the court; it held they fell within non-creamy layer of OBC category",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/sc-clarifies-its-march-2026-verdict-on-obc-creamy-layer-policy-will-not-apply-retrospectively/article71673040.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court",
+    "Allocation"
+   ],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 5
+   }
+  },
+  {
    "id": "42a4aba8c1b4",
    "date": "2026-11-06",
    "pubDate": "2026-11-06",
@@ -2633,6 +2812,57 @@
    }
   },
   {
+   "id": "087b1cfceac5",
+   "date": "2026-11-06",
+   "pubDate": "2026-11-06",
+   "time": "21:43",
+   "title": "Delhi Air \"Silent Epidemic\": Ex-AIIMS Chief On Why People Are Falling Sick",
+   "summary": "Dr Guleria said there is growing evidence, from India and abroad, that living for long in polluted air raises the risk of lung cancer. He said poor air exposes the lungs to mutations, and both lab studies and clinical data suggest the risk rises among non-smokers as well.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/delhi-air-silent-epidemic-ex-aiims-chief-on-why-people-are-falling-sick-12294262#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "AIIMS"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "a558eb70f2a4",
    "date": "2026-11-06",
    "pubDate": "2026-11-06",
@@ -2687,6 +2917,58 @@
     "angles": 0,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "eb24565dd088",
+   "date": "2026-11-06",
+   "pubDate": "2026-11-07",
+   "time": "00:55",
+   "title": "Governor asks for status report on all public universities in Karnataka",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/karnataka/governor-asks-for-status-report-on-all-public-universities-in-karnataka/article71675530.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -4115,195 +4397,6 @@
     "ap": 0,
     "importance": 0,
     "reuse": 5
-   },
-   "digest": true
-  },
-  {
-   "id": "f6f5cb3e7ba4",
-   "date": "2026-11-06",
-   "pubDate": "2026-11-06",
-   "title": "Government Approves 12 Electronics Components Proposals Worth ₹7,503 Crore",
-   "summary": "On 6 November 2026, the government approved 12 applications worth ₹7,503 crore under the Electronics Components Manufacturing Scheme (ECMS).",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "On 6 November 2026, the government approved 12 applications worth ₹7,503 crore under the Electronics Components Manufacturing Scheme (ECMS)."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/government-approves-12-electronics-components-proposals-worth-%e2%82%b97503-crore/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Applications"
-   ],
-   "score": 15,
-   "band": "low",
-   "why": {
-    "syllabus": 6,
-    "angles": 5,
-    "ap": 0,
-    "importance": 2,
-    "reuse": 2
-   },
-   "digest": true
-  },
-  {
-   "id": "056ec101cd9d",
-   "date": "2026-11-06",
-   "pubDate": "2026-11-06",
-   "time": "07:00",
-   "title": "Current Affairs 6 November 2026",
-   "summary": "We are here for you to provide the important Recent and Latest Current Affairs November 6 2026, which have unique updates of Latest Current Affairs 2026 events from all newspapers such as The Hindu, The Economic Times, PIB, Times of India, PTI, Indian Express, Business Standard and all Government official websites.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "We are here for you to provide the important Recent and Latest Current Affairs November 6 2026, which have unique updates of Latest Current Affairs 2026 events from all newspapers such as The Hindu, The Economic Times, PIB, Times of India, PTI, Indian Express, Business Standard and all Government…"
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "Our Current Affairs November 2026 events will […] The post Current Affairs 6 November 2026 appeared first on AffairsCloud.com ."
-    }
-   ],
-   "source": "AffairsCloud",
-   "sourceId": "affairscloud",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://affairscloud.com/current-affairs-6-november-2026/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Newspaper",
-    "Post"
-   ],
-   "score": 14,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "a69f972c131e",
-   "date": "2026-11-06",
-   "pubDate": "2026-11-06",
-   "title": "IIT-BHU and Parul University researchers develop nanocomposite that removes up to 92.91% of Eriochrome Black T dye",
-   "summary": "Researchers from IIT (BHU) and Parul University developed a nanocomposite to remove persistent dyes from industrial wastewater. The study, published on 4 November 2026, r",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/iit-bhu-and-parul-university-researchers-develop-nanocomposite-that-removes-up-to-92-91-of-eriochrome-black-t-dye/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "University",
-    "IIT"
-   ],
-   "score": 14,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "2bc23b2e23dd",
-   "date": "2026-11-06",
-   "pubDate": "2026-11-06",
-   "title": "Pakistan’s External Debt Reached $135.1 Billion in 2025",
-   "summary": "The World Bank’s International Debt Report 2026, released on 5 November 2026, recorded Pakistan’s external debt at 135.1 billion at the end of 2025, nearly double the 68.",
-   "facts": [
-    {
-     "angle": "Report / committee",
-     "text": "The World Bank’s International Debt Report 2026, released on 5 November 2026, recorded Pakistan’s external debt at 135.1 billion at the end of 2025, nearly double the 68."
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/pakistans-external-debt-reached-135-1-billion-in-2025/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-B6",
-     "exam": "G1",
-     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 12,
-   "band": "low",
-   "why": {
-    "syllabus": 6,
-    "angles": 0,
-    "ap": 0,
-    "importance": 4,
-    "reuse": 2
    },
    "digest": true
   }
