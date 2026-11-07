@@ -1,18 +1,18 @@
 {
  "version": 1,
  "date": "2026-11-07",
- "updated": "2026-11-07T06:46:16.908Z",
+ "updated": "2026-11-07T14:15:57.310Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 313,
+   "found": 323,
    "error": null
   },
   {
    "id": "pib-vijayawada",
    "name": "PIB Vijayawada",
-   "found": 1,
+   "found": 2,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 31,
+   "found": 32,
    "error": null
   },
   {
@@ -48,13 +48,13 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 19,
+   "found": 20,
    "error": null
   },
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 45,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 38,
+   "found": 40,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 153,
+   "found": 159,
    "error": null
   },
   {
@@ -209,6 +209,67 @@
   }
  ],
  "items": [
+  {
+   "id": "7855dc5aa277",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "14:39",
+   "title": "Vizag Investment Summit to Navigate New World Order: Focus on Trade, Technology, food security and Green Energy",
+   "summary": "The two-day summit, themed ‘Navigating New World Order: Trade, Technology, Trust’, will bring together government representatives, industrial leaders, international organisations, investors and technology experts from across the world.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The two-day summit, themed ‘Navigating New World Order: Trade, Technology, Trust’, will bring together government representatives, industrial leaders, international organisations, investors and technology experts from across the world."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/vizag-investment-summit-to-navigate-new-world-order-focus-on-trade-technology-food-security-and-green-energy-1140125",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    }
+   ],
+   "topics": [
+    "Visakhapatnam Economic Region"
+   ],
+   "angles": [
+    "trade",
+    "Summit",
+    "International organisations"
+   ],
+   "score": 84,
+   "band": "critical",
+   "why": {
+    "syllabus": 30,
+    "angles": 15,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
   {
    "id": "883199ce639b",
    "date": "2026-11-07",
@@ -307,6 +368,57 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://www.thehansindia.com/andhra-pradesh/ap-cm-chandrababu-and-governor-to-attend-sai-baba-centenary-events-1140069",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Governor"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "3b2ae0f17bf7",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "13:17",
+   "title": "AP governor S Abdul Nazeer extends Diwali greetings to people",
+   "summary": "Abdul Nazeer has conveyed his Diwali greetings to the people of the state, expressing hope that the festival’s divine light would bring peace, prosperity and happiness to all.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/ap-governor-s-abdul-nazeer-extends-diwali-greetings-to-people-1140112",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -522,6 +634,60 @@
    }
   },
   {
+   "id": "34498e9c342c",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "15:21",
+   "title": "Indian Railways to quadruple 7 major corridors, add over 1,000 trains",
+   "summary": "Heavy freight movement, particularly coal transportation, and rising passenger volumes have put existing railway lines under pressure, prompting a major capacity expansion",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/logistics/indian-railways-to-quadruple-7-major-corridors-add-over-1000-trains/article71677900.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [
+    "Railways and multimodal transport"
+   ],
+   "angles": [
+    "Lines",
+    "Railways"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "545bd505d02d",
    "date": "2026-11-07",
    "pubDate": "2026-11-07",
@@ -576,6 +742,69 @@
     "angles": 15,
     "ap": 0,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ea1e955697d0",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "19:29",
+   "title": "UP retains top position in number of GST assesses, followed by Maharashtra",
+   "summary": "Haryana posted the highest growth rate at over 13.6%, the national average rose about 9.5%, signalling ongoing efforts to broaden tax registration through automated and AI-assisted processes",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Haryana posted the highest growth rate at over 13.6%, the national average rose about 9.5%, signalling ongoing efforts to broaden tax registration through automated and AI-assisted processes"
+    }
+   ],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/up-retains-top-position-in-number-of-gst-assesses-followed-by-maharashtra/article71678210.ece",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "GST",
+    "Growth Rate"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 4,
     "reuse": 15
    }
   },
@@ -750,6 +979,61 @@
     "importance": 0,
     "reuse": 15
    }
+  },
+  {
+   "id": "c39da7564b4c",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "Supreme Court Appoints Gavai to Review Tamil Nadu Forest Claims",
+   "summary": "On 6 November 2026, the Supreme Court appointed former Chief Justice of India Bhushan R. Gavai to head a committee scrutinising forest-rights orders in Tamil Nadu, partic",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "On 6 November 2026, the Supreme Court appointed former Chief Justice of India Bhushan R."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/supreme-court-appoints-gavai-to-review-tamil-nadu-forest-claims/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Chief Justice",
+    "Supreme court",
+    "Appointed"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 5
+   },
+   "digest": true
   },
   {
    "id": "5b4be12174fb",
@@ -1040,6 +1324,118 @@
    }
   },
   {
+   "id": "bec053b6e049",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "18:49",
+   "title": "Old Monk sales ban: Rum maker withdraws court plea, agrees to revise labels after FSSAI objections",
+   "summary": "Mohan Rocky Springwater Breweries, which makes Old Monk, has withdrawn its Bombay High Court petition challenging an FSSAI order restricting the sale and distribution of certain products. The company told the court it would revise the labels and submit them to the regulator for approval.",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/india/old-monk-sales-ban-rum-maker-withdraws-court-plea-agrees-to-revise-labels-after-fssai-objections-11794057118191.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "beb5e3268a5e",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "14:15",
+   "title": "Andhra Pradesh Urged to Celebrate a Cracker-Free Green Diwali",
+   "summary": "WWF-India EIACP campaign calls on citizens in 13 NCAP cities across the state to take the Green Diwali Pledge for cleaner air 07 NOV 2026 2:15PM by PIB Vijayawada WWF-India's EIACP Programme Centre, supported by the Ministry of Environment, Forest and Climate Change (MoEF&CC), Government of India, has appealed to the people of Andhra Pradesh to celebrate a cracker-free Green Diwali this year.",
+   "facts": [],
+   "source": "PIB Vijayawada",
+   "sourceId": "pib-vijayawada",
+   "official": true,
+   "ministry": "Ministry of Environment, Forest and Climate Change",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2333928&reg=3&lang=1",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Climate Change"
+   ],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 5
+   }
+  },
+  {
    "id": "8c772730e1d2",
    "date": "2026-11-07",
    "pubDate": "2026-11-07",
@@ -1087,6 +1483,55 @@
     "angles": 5,
     "ap": 0,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "34e10abc90de",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "15:54",
+   "title": "Petroleum Ministry rejects claims of excessive ethanol in petrol; says E20 meets BIS standards",
+   "summary": "The Ministry of Petroleum and Natural Gas has rejected the claims of Karnataka Government that fuel sold at certain retail outlets in the state contains excessive ethanol. The Ministry clarified that E20 petrol supplied by public sector oil marketing companies (OMCs) across the country, including Karnataka, conforms to the prescribed quality standards.",
+   "facts": [],
+   "source": "AIR News — National",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/three-public-sector-oil-marketing-companies-reaffirm-e20-petrol-compliance-with-bis-standards/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 0,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -1314,6 +1759,116 @@
    }
   },
   {
+   "id": "9548e743f1e7",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "time": "19:01",
+   "title": "BRICS Sustainable Lifestyle Week throws light on environmentally responsible lifestyle",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/brics-sustainable-lifestyle-week-concludes-at-kurnool-ggh/article71677992.ece",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "93505efcc8ad",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "GRAP Stage III Curbs Imposed Across Delhi-NCR",
+   "summary": "The Commission for Air Quality Management (CAQM) imposed Stage III of the Graded Response Action Plan (GRAP) across Delhi and the National Capital Region (NCR) on 6 Novem",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/grap-stage-iii-curbs-imposed-across-delhi-ncr/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region",
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "Air Quality"
+   ],
+   "score": 36,
+   "band": "low",
+   "why": {
+    "syllabus": 26,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
    "id": "a53847acb37b",
    "date": "2026-11-07",
    "pubDate": "2026-11-07",
@@ -1415,6 +1970,90 @@
    "digest": true
   },
   {
+   "id": "523b8fd1bd83",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "New Six-Foot Flowering Plant Found in Assam, Meghalaya",
+   "summary": "Researchers have described Disporum kamakhasiense, a new flowering plant found in forests of Assam and Meghalaya. The findings were published on 4 and 5 November 2026 in",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/new-six-foot-flowering-plant-found-in-assam-meghalaya/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Findings",
+    "Found in",
+    "Forests"
+   ],
+   "score": 19,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "3251217af7c2",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "India Plans World’s Highest Railway Station at Tanglang La",
+   "summary": "As of 4 November 2026, India plans to build a railway station at about 5,256 metres beneath Tanglang La pass on the proposed 489-km broad-gauge Bilaspur-Manali-Leh railwa",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-plans-worlds-highest-railway-station-at-tanglang-la/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 17,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   },
+   "digest": true
+  },
+  {
    "id": "f6f5cb3e7ba4",
    "date": "2026-11-07",
    "pubDate": "2026-11-07",
@@ -1465,6 +2104,51 @@
    "digest": true
   },
   {
+   "id": "97dbcc73c16e",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "France Honours Narayana Health Founder Devi Shetty",
+   "summary": "On 5 November 2026, France conferred the Knight of the National Order of Merit on Dr Devi Prasad Shetty, founder and chairman of Narayana Health.",
+   "facts": [
+    {
+     "angle": "Award",
+     "text": "On 5 November 2026, France conferred the Knight of the National Order of Merit on Dr Devi Prasad Shetty, founder and chairman of Narayana Health."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/france-honours-narayana-health-founder-devi-shetty/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Founder",
+    "Health"
+   ],
+   "score": 14,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
    "id": "a69f972c131e",
    "date": "2026-11-07",
    "pubDate": "2026-11-07",
@@ -1500,6 +2184,51 @@
     "angles": 10,
     "ap": 0,
     "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "fb5a084c708b",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "UNESCO Adds Three Indian Manuscripts to Asia-Pacific Register",
+   "summary": "On 5 November 2026, manuscripts of the Mahabharata, Rajatarangini and Arthashastra were inscribed on the UNESCO Memory of the World Asia-Pacific Regional Register.",
+   "facts": [
+    {
+     "angle": "GI tag / designation",
+     "text": "On 5 November 2026, manuscripts of the Mahabharata, Rajatarangini and Arthashastra were inscribed on the UNESCO Memory of the World Asia-Pacific Regional Register."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/unesco-adds-three-indian-manuscripts-to-asia-pacific-register/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Manuscripts",
+    "UNESCO"
+   ],
+   "score": 14,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 10,
+    "ap": 0,
+    "importance": 4,
     "reuse": 0
    },
    "digest": true
@@ -1728,6 +2457,93 @@
    "digest": true
   },
   {
+   "id": "eec3f8067aaf",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "Japan Launches ¥10 Billion Cyberattack Response Package",
+   "summary": "Japan launched a &yen;10 billion emergency package on Friday, 6 November 2026, to respond to cyberattacks and data breaches affecting businesses and government agencies.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Japan launched a &yen;10 billion emergency package on Friday, 6 November 2026, to respond to cyberattacks and data breaches affecting businesses and government agencies."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/japan-launches-%c2%a510-billion-cyberattack-response-package/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Emergency"
+   ],
+   "score": 9,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "4f477f21ae79",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "Pedro Alliana Sworn In as Paraguay President",
+   "summary": "Pedro Alliana was sworn in as Paraguay’s president on 6 November 2026, after the Senate removed Santiago Pe&ntilde;a. Alliana will serve the remainder of Pe&ntilde;a’s term, which ends",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "Pedro Alliana was sworn in as Paraguay’s president on 6 November 2026, after the Senate removed Santiago Pe&ntilde;a."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/pedro-alliana-sworn-in-as-paraguay-president/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 6,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
    "id": "779d36f06b40",
    "date": "2026-11-07",
    "pubDate": "2026-11-07",
@@ -1931,6 +2747,44 @@
    "digest": true
   },
   {
+   "id": "ea66e9086987",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "India and EU Conclude Horizon Europe Association Talks",
+   "summary": "India and the European Union concluded negotiations on India’s association with Horizon Europe on 7 November 2026. The EU’s flagship research and innovation programme has",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-and-eu-conclude-horizon-europe-association-talks/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 4,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 0,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
    "id": "c09a0c1bc5f5",
    "date": "2026-11-07",
    "pubDate": "2026-11-07",
@@ -1964,6 +2818,49 @@
     "angles": 0,
     "ap": 0,
     "importance": 0,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "9b9f5f692a71",
+   "date": "2026-11-07",
+   "pubDate": "2026-11-07",
+   "title": "Uttar Pradesh Raises Disaster Relief Compensation",
+   "summary": "On 6 November 2026, the Uttar Pradesh government revised disaster relief assistance, doubling compensation for a natural-calamity death from ₹4 lakh to ₹8 lakh.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "On 6 November 2026, the Uttar Pradesh government revised disaster relief assistance, doubling compensation for a natural-calamity death from ₹4 lakh to ₹8 lakh."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/uttar-pradesh-raises-disaster-relief-compensation/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Current Affairs",
+   "subjects": [
+    "Current Affairs"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [],
+   "score": 2,
+   "band": "low",
+   "why": {
+    "syllabus": 0,
+    "angles": 0,
+    "ap": 0,
+    "importance": 2,
     "reuse": 0
    },
    "digest": true
