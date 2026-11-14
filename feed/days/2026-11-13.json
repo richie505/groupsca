@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-13",
- "updated": "2026-11-13T23:04:43.251Z",
+ "updated": "2026-11-14T07:17:22.664Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 541,
+   "found": 549,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 42,
+   "found": 32,
    "error": null
   },
   {
@@ -48,13 +48,13 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 20,
+   "found": 19,
    "error": null
   },
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 47,
+   "found": 44,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 7,
+   "found": 8,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 52,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 126,
+   "found": 176,
    "error": null
   },
   {
@@ -1010,6 +1010,70 @@
    }
   },
   {
+   "id": "1e8d4e6fd8e6",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "04:54",
+   "title": "Second phase of census crucial: JC",
+   "summary": "NTR district joint collector S Ilakkiya inaugurates a two-day training programme for district and charge-level officials",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "NTR district joint collector S Ilakkiya inaugurates a two-day training programme for district and charge-level officials"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Hindustan Times — India"
+   ],
+   "url": "https://www.thehansindia.com/andhra-pradesh/second-phase-of-census-crucial-jc-1141915",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-D3",
+     "exam": "G1",
+     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Census"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "573cd128ac20",
    "date": "2026-11-13",
    "pubDate": "2026-11-13",
@@ -1467,6 +1531,112 @@
    }
   },
   {
+   "id": "0b1801803353",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "01:32",
+   "title": "Concern mounts over poor air quality in Kochi; Corpn. to set up monitoring stations",
+   "summary": "Experts flag vehicular emissions, open construction sites, and post-monsoon weather changes; PCB awaits govt. nod for repair and maintenance of two of its three monitoring stations, which have remained dysfunctional for over six months",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/concern-mounts-over-poor-air-quality-in-kochi-corpn-to-set-up-monitoring-stations/article71696854.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "Construction",
+    "Post",
+    "Air Quality"
+   ],
+   "score": 60,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "9729721abc3a",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:14",
+   "title": "Ambedkar Study Circle to get facelift",
+   "summary": "The development of Dr BR Ambedkar Bhavan-cum-Study Circle will provide a significant boost to the aspirations of poor students seeking higher education and preparing for competitive examinations.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/guntur/ambedkar-study-circle-to-get-facelift-1141931",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-A6",
+     "exam": "G1",
+     "label": "Mahatma Gandhi - Thoughts, Principles, Philosophy and Satyagrahas; Sardar Patel and Subhas Chandra Bose; Dr. B.R. Ambedkar; India after Independence and Reorganisation of States"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "3b391fceb716",
    "date": "2026-11-13",
    "pubDate": "2026-11-13",
@@ -1564,6 +1734,164 @@
     "ap": 20,
     "importance": 0,
     "reuse": 10
+   }
+  },
+  {
+   "id": "adc5ebf9be21",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:25",
+   "title": "Goods exports rise to record high in October",
+   "summary": "India’s merchandise exports surged 45% in October to a record $49.47 billion, while imports rose 16.51% to $89.35 billion.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "India’s merchandise exports surged 45% in October to a record $49.47 billion, while imports rose 16.51% to $89.35 billion."
+    }
+   ],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/goods-exports-rise-to-record-high-in-october-101794613104161.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Import",
+    "Export",
+    "Exports",
+    "Imports"
+   ],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "df2fe3279343",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:09",
+   "title": "Incentives for unanimously elected panchayats hiked",
+   "summary": "The Collector said the enhanced incentives would apply exclusively to the 2026 Gram Panchayat general elections.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/incentives-for-unanimously-elected-panchayats-hiked-1141929",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "556b8382d1e7",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:48",
+   "title": "Sunnipenta set for historic first gram panchayat polls",
+   "summary": "14,660 voters to elect their maiden sarpanch",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kurnool/sunnipenta-set-for-historic-first-gram-panchayat-polls-1141966",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -1931,6 +2259,66 @@
    }
   },
   {
+   "id": "40f653b39570",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "01:46",
+   "title": "Petition moved in Kerala High Court challenging clean chit to Chief Minister in Punarjani flood rehabilitation scheme",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/petition-moved-in-kerala-high-court-challenging-clean-chit-to-chief-minister-in-punarjani-flood-rehabilitation-scheme/article71699491.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court",
+    "rehabilitation"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "9b75c9e64644",
    "date": "2026-11-13",
    "pubDate": "2026-11-13",
@@ -2176,6 +2564,56 @@
     "importance": 0,
     "reuse": 15
    }
+  },
+  {
+   "id": "593bb35265af",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:32",
+   "title": "మీ బొమ్మలకు ఇచ్చిన ప్రాధాన్యం విద్యార్థుల భవిష్యత్తుకు ఇచ్చారా?",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126206913",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 10
+   },
+   "lang": "te"
   },
   {
    "id": "6a97f967b58b",
@@ -2522,6 +2960,57 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "5b88b851aa3f",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "04:45",
+   "title": "Turn investment commitments into tangible economic growth",
+   "summary": "Describing Chief Minister N Chandrababu Naidu's proactive invitation to industrialists to participate in next year's summit as a reflection of his confidence, Radhakrishnan said attracting investments worth Rs 22 lakh crore since June 2024 was a significant achievement for Andhra Pradesh.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "Describing Chief Minister N Chandrababu Naidu's proactive invitation to industrialists to participate in next year's summit as a reflection of his confidence, Radhakrishnan said attracting investments worth Rs 22 lakh crore since June 2024 was a significant achievement for Andhra Pradesh."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/turn-investment-commitments-into-tangible-economic-growth-1141906",
+   "bucket": "ap",
+   "scope": "international",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Economic growth",
+    "Summit"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 10,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 5
+   }
   },
   {
    "id": "2235073d6404",
@@ -3457,6 +3946,74 @@
    }
   },
   {
+   "id": "bd109f8e135b",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:30",
+   "title": "Indian solar manufacturers look to Germany as China proposes curbs on technology exports",
+   "summary": "The proposed curbs may hurt India’s ambitious plan to build a domestic solar manufacturing ecosystem, including the projected 100 gigawatts of capacity for wafers, ingots and polysilicon by the end of this decade",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The proposed curbs may hurt India’s ambitious plan to build a domestic solar manufacturing ecosystem, including the projected 100 gigawatts of capacity for wafers, ingots and polysilicon by the end of this decade"
+    }
+   ],
+   "source": "Mint — Economy",
+   "sourceId": "mint-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/economy/indian-solar-manufacturers-look-to-germany-as-china-proposes-curbs-on-technology-exports-11794566204043.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Export",
+    "Exports"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "c5e161f377d7",
    "date": "2026-11-13",
    "pubDate": "2026-11-13",
@@ -4076,6 +4633,53 @@
    }
   },
   {
+   "id": "e0047d5a1519",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:31",
+   "title": "CII Summit industrial exhibitions open to public on today",
+   "summary": "The initiative aims to familiarise people with the state’s industrial development initiatives",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/cii-summit-industrial-exhibitions-open-to-public-on-today-1141945",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Summit"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   }
+  },
+  {
    "id": "2ee0a073b1c0",
    "date": "2026-11-13",
    "pubDate": "2026-11-13",
@@ -4191,6 +4795,53 @@
     "importance": 3,
     "reuse": 5
    }
+  },
+  {
+   "id": "8f6fb7f83bb5",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:46",
+   "title": "అమరావతిలో స్పోర్ట్స్‌ ట్రైనింగ్‌ అకాడమీని ఏర్పాటు చేయాలి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126206756",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Established"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "ee6e473fa180",
@@ -5277,170 +5928,6 @@
    }
   },
   {
-   "id": "5e8b5605d3c5",
-   "date": "2026-11-13",
-   "pubDate": "2026-11-14",
-   "time": "00:35",
-   "title": "T.N. Governor meets Home Minister Amit Shah in New Delhi",
-   "summary": "",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-governor-meets-home-minister-amit-shah-in-new-delhi/article71698871.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Governor"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "dcb89e8b0de5",
-   "date": "2026-11-13",
-   "pubDate": "2026-11-13",
-   "time": "23:05",
-   "title": "Three years on, Teesta’s flood survivors live in limbo as the river creeps closer",
-   "summary": "“When the flood took everything from me, it took more than my home and livelihood, it took away the place I once had in society. The relationships and respect we once had are no longer the same. I am not a beggar, and I was never born into a […]",
-   "facts": [],
-   "source": "Mongabay India",
-   "sourceId": "mongabay-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://india.mongabay.com/2026/11/three-years-on-teestas-flood-survivors-live-in-limbo-as-the-river-creeps-closer/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Years"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "fa282115baaf",
-   "date": "2026-11-13",
-   "pubDate": "2026-11-13",
-   "time": "09:18",
-   "title": "Uneven monsoons and El Niño pose upside risks to food inflation in FY27: Nuvama",
-   "summary": "Headline CPI rises to 6.1% y-o-y in October; RBI may consider another rate hike if inflation pressures persist despite expected normalisation",
-   "facts": [],
-   "source": "BusinessLine — Economy",
-   "sourceId": "bl-economy",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindubusinessline.com/economy/uneven-monsoons-and-el-nino-pose-upside-risks-to-food-inflation-in-fy27-nuvama/article71696442.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    },
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "RBI"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
    "id": "d5c8229e4ba4",
    "date": "2026-11-13",
    "pubDate": "2026-11-13",
@@ -5485,89 +5972,6 @@
     "reuse": 5
    },
    "lang": "te"
-  },
-  {
-   "id": "37608ff53b84",
-   "date": "2026-11-13",
-   "pubDate": "2026-11-13",
-   "time": "13:18",
-   "title": "English rendering of PM’s address at the Golden Jubilee Celebrations of Prashanti Kutiram in Bengaluru",
-   "summary": "13 NOV 2026 1:18PM by PIB Delhi Hon’ble Governor of Karnataka, Sudha Yadav Ji, Sarkaryavah of the Rashtriya Swayamsevak Sangh and our guide, Shri Dattatreya Hosabale Ji, President of S-VYASA, H. Dayananda Swami Ji, Vice-Chancellor, Manjunath N. Manjunath Ji, Mayor of Miryang City, South Korea, other distinguished dignitaries present here, ladies and gentlemen!",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "Whenever we remember him, the first image that comes to mind is his simple personality."
-    },
-    {
-     "angle": "Figures",
-     "text": "These teachers, doctors and researchers are serving people across the country and the world through yoga."
-    },
-    {
-     "angle": "Figures",
-     "text": "Over the past 12 years, India has been presenting its culture, identity and knowledge systems to the world with complete confidence, and I say this with a sense of responsibility, with complete confidence."
-    },
-    {
-     "angle": "Days / observance",
-     "text": "One outcome of this is that, at India's initiative, the entire world now celebrates International Yoga Day."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Prime Minister's Office",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2335747&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Science, Tech & Environment",
-    "History & Culture",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    },
-    {
-     "code": "G1-B2",
-     "exam": "G1",
-     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
-    },
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U10",
-     "exam": "G2",
-     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
-    }
-   ],
-   "topics": [
-    "AP Panchayati Raj and local bodies"
-   ],
-   "angles": [
-    "Governor"
-   ],
-   "score": 43,
-   "band": "medium",
-   "why": {
-    "syllabus": 26,
-    "angles": 5,
-    "ap": 0,
-    "importance": 7,
-    "reuse": 5
-   }
   },
   {
    "id": "6921b99e0673",
@@ -5619,6 +6023,198 @@
     "ap": 20,
     "importance": 0,
     "reuse": 5
+   }
+  },
+  {
+   "id": "e1290c21d472",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:52",
+   "title": "Increase in incentive grants for unanimously elected GPs",
+   "summary": "These increased incentives will apply to the Gram Panchayat elections in Anantapur district, which will be held in three phases across 576 Gram Panchayats.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/anantapur/increase-in-incentive-grants-for-unanimously-elected-gps-1141971",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Grant"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "bf7b00cc6b6e",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "04:42",
+   "title": "P4 model will fuel inclusive growth in AP: CM Naidu",
+   "summary": "In a fireside chat, he urges top 10% of society to handhold the bottom 20%",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/p4-model-will-fuel-inclusive-growth-in-ap-cm-naidu-1141902",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C1",
+     "exam": "G1",
+     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Inclusive growth"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "7a76e2a030a0",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:34",
+   "title": "Tourism will be key industry of future: Minister Durgesh",
+   "summary": "Tourism Minister Kandula Durgesh says every rupee invested in the tourism sector will contribute to the state’s devel",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/tourism-will-be-key-industry-of-future-minister-durgesh-1141948",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Industry"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "f189daeca263",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:29",
+   "title": "CM Chandrababu Naidu’s initiative to boost investor confidence hailed",
+   "summary": "Describing the proposed measures as pioneering reforms, Bhaskara Rao said the escrow account mechanism would ensure the timely disbursement of industrial incentives, while the Investor Protection Act would provide greater assurance and confidence to investors",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/cm-chandrababu-naidus-initiative-to-boost-investor-confidence-hailed-1141943",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 40,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 2
    }
   },
   {
@@ -5915,6 +6511,49 @@
     "reuse": 2
    },
    "digest": true
+  },
+  {
+   "id": "44c3724fd00c",
+   "date": "2026-11-13",
+   "pubDate": "2026-11-14",
+   "time": "05:54",
+   "title": "Kurnool advocates seek medical insurance",
+   "summary": "Balaji assured she would examine the demands and forward a report, while thanking the Kurnool advocates for their support in the elections",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kurnool/kurnool-advocates-seek-medical-insurance-1141973",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
   },
   {
    "id": "9ea0241c1b1d",
