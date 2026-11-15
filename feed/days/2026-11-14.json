@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-14",
- "updated": "2026-11-14T21:51:13.730Z",
+ "updated": "2026-11-15T07:26:45.313Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 574,
+   "found": 585,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 35,
+   "found": 29,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 44,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 46,
+   "found": 59,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 127,
+   "found": 171,
    "error": null
   },
   {
@@ -335,6 +335,63 @@
     "angles": 10,
     "ap": 20,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "229735a7ce01",
+   "date": "2026-11-14",
+   "pubDate": "2026-11-15",
+   "time": "05:51",
+   "title": "Unanimous sarpanch election incentive raised to Rs 50 lakh",
+   "summary": "Maximum grant increased 2.5 times from Rs 20 lakh; smaller panchayats to get thrice the earlier incentive Complete unanimity among Sarpanch and all ward members mandatory to qualify for enhanced grants",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Maximum grant increased 2.5 times from Rs 20 lakh; smaller panchayats to get thrice the earlier incentive Complete unanimity among Sarpanch and all ward members mandatory to qualify for enhanced grants"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/unanimous-sarpanch-election-incentive-raised-to-rs-50-lakh-1142207",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Grant",
+    "Members"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 20,
+    "importance": 6,
     "reuse": 15
    }
   },
@@ -514,6 +571,64 @@
    }
   },
   {
+   "id": "d8a5307cbbf9",
+   "date": "2026-11-14",
+   "pubDate": "2026-11-14",
+   "time": "23:06",
+   "title": "Air quality remains ‘very poor’ in Delhi, light rain unlikely to help",
+   "summary": "Delhi's air quality continues to be classified as very poor, with an AQI of 367 recorded on Saturday. Some areas, such as IIT-Delhi and Delhi University, reported even higher AQI levels of 439. Biomass burning and emissions from vehicles significantly contribute to the pollution levels observed. Experts suggest that any expected light rain is unlikely to improve air quality effectively.",
+   "facts": [],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/city/delhi/air-quality-remains-very-poor-very-light-rain-unlikely-to-help/articleshow/135839784.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Air pollution and urban environmental health"
+   ],
+   "angles": [
+    "University",
+    "Remains",
+    "Pollution",
+    "Air Quality",
+    "IIT"
+   ],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "3d90bb1d6d76",
    "date": "2026-11-14",
    "pubDate": "2026-11-14",
@@ -643,6 +758,57 @@
     "angles": 10,
     "ap": 0,
     "importance": 10,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a54ebe108ba8",
+   "date": "2026-11-14",
+   "pubDate": "2026-11-15",
+   "time": "05:13",
+   "title": "Cyclone ‘Akvan’ likely to hit AP coast on Nov 18",
+   "summary": "System likely to intensify into a severe cyclonic storm by Wednesday, with winds reaching 120 kmph over the sea Heavy to extremely heavy rainfall forecast for Nov 18 and 19 Exact landfall location yet to be identified; IMD issues orange alert",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/cyclone-akvan-likely-to-hit-ap-coast-on-nov-18-1142184",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -1034,6 +1200,59 @@
     "angles": 20,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "98f9a88b0eb7",
+   "date": "2026-11-14",
+   "pubDate": "2026-11-15",
+   "time": "05:19",
+   "title": "AP sets up special panels to combat human trafficking",
+   "summary": "Following Supreme Court directives, the Andhra Pradesh government forms dedicated state and district-level panels to trace missing children, curb human trafficking, and strengthen child protection.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/ap-sets-up-special-panels-to-combat-human-trafficking-1142187",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court"
+   ],
+   "score": 60,
+   "band": "high",
+   "why": {
+    "syllabus": 20,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -2813,6 +3032,52 @@
    }
   },
   {
+   "id": "b1b4365309a2",
+   "date": "2026-11-14",
+   "pubDate": "2026-11-15",
+   "time": "04:34",
+   "title": "శ్రీవారిని దర్శించుకున్న హైకోర్టు న్యాయమూర్తులు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126207435",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te"
+  },
+  {
    "id": "fefce4e6e3e6",
    "date": "2026-11-14",
    "pubDate": "2026-11-14",
@@ -3442,6 +3707,57 @@
    }
   },
   {
+   "id": "68bdcd3dad68",
+   "date": "2026-11-14",
+   "pubDate": "2026-11-15",
+   "time": "03:22",
+   "title": "Villagers in 25 districts cast votes for panchayat elections’ final phase in Rajasthan",
+   "summary": "The final phase polls across 25 districts for Zila Parishad and Panchayat Samiti faced EVM glitches, boycotts, and a 72% turnout",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/rajasthan/rajasthan-panchayat-local-elections-2026-final-phase-voting/article71700929.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "EVM"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "0e6bfba7a3b8",
    "date": "2026-11-14",
    "pubDate": "2026-11-14",
@@ -3720,6 +4036,52 @@
    "topics": [],
    "angles": [
     "Investment"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te"
+  },
+  {
+   "id": "120752ba53d6",
+   "date": "2026-11-14",
+   "pubDate": "2026-11-15",
+   "time": "04:29",
+   "title": "మల్కన్‌గిరి-భద్రాచలం కొత్త రైల్వే లైన్‌కు ముంపు ముప్పు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/malkangiri-bhadrachalam-new-railway-line-faces-threat-of-submersion/1799/126207536",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rail"
    ],
    "score": 42,
    "band": "medium",
@@ -4664,94 +5026,6 @@
     "ap": 0,
     "importance": 4,
     "reuse": 2
-   },
-   "digest": true
-  },
-  {
-   "id": "84c3adcdf5b4",
-   "date": "2026-11-14",
-   "pubDate": "2026-11-14",
-   "title": "NORKA Santhwana disbursed ₹139.49 crore over five years",
-   "summary": "The NORKA Santhwana scheme disbursed ₹139.49 crore to 22,267 beneficiaries over the five financial years from 2021–22 to 2025–26, according to figures reported for the sc",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "The NORKA Santhwana scheme disbursed ₹139.49 crore to 22,267 beneficiaries over the five financial years from 2021–22 to 2025–26, according to figures reported for the sc"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/norka-santhwana-disbursed-%e2%82%b9139-49-crore-over-five-years/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Years"
-   ],
-   "score": 11,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 2,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "ee958b5995be",
-   "date": "2026-11-14",
-   "pubDate": "2026-11-14",
-   "title": "PM Modi Launches ₹15,600 Crore Projects in Karnataka",
-   "summary": "On 13 November 2026, Prime Minister Narendra Modi inaugurated projects, dedicated facilities to the nation, laid foundation stones and flagged off services worth over ₹15",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "On 13 November 2026, Prime Minister Narendra Modi inaugurated projects, dedicated facilities to the nation, laid foundation stones and flagged off services worth over ₹15"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/pm-modi-launches-%e2%82%b915600-crore-projects-in-karnataka/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Services"
-   ],
-   "score": 11,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 0,
-    "importance": 2,
-    "reuse": 0
    },
    "digest": true
   }
