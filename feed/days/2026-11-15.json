@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-15",
- "updated": "2026-11-15T07:26:45.313Z",
+ "updated": "2026-11-15T14:53:57.432Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 585,
+   "found": 607,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 29,
+   "found": 38,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 48,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 59,
+   "found": 58,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 171,
+   "found": 179,
    "error": null
   },
   {
@@ -209,6 +209,77 @@
   }
  ],
  "items": [
+  {
+   "id": "c0ec0ab31752",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "19:41",
+   "title": "Govt. gives renewed push for development of 25 sector-specific industrial parks in A.P.",
+   "summary": "The parks have been strategically planned across the State integrating them with Visakhapatnam-Chennai, Chennai-Bengaluru and Hyderabad-Bengaluru Industrial Corridors, catering to data centres, aerospace and defence, hardware manufacturing, solar and other sectors",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The parks have been strategically planned across the State integrating them with Visakhapatnam-Chennai, Chennai-Bengaluru and Hyderabad-Bengaluru Industrial Corridors, catering to data centres, aerospace and defence, hardware manufacturing, solar and other sectors"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/govt-gives-renewed-push-for-development-of-25-sector-specific-industrial-parks/article71704913.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    }
+   ],
+   "topics": [
+    "AP industrial parks and BHAVYA"
+   ],
+   "angles": [
+    "Industrial corridor"
+   ],
+   "score": 70,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
   {
    "id": "563cce25360d",
    "date": "2026-11-15",
@@ -387,6 +458,68 @@
    }
   },
   {
+   "id": "ec1ec8c64947",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:32",
+   "title": "Telangana Govt stares at financial burden to fund Rythu Bharosa or crop compensation",
+   "summary": "While the date of Rythu Bharosa Yasangi installment is usually announced before December end, the announcement this time will be based on how the government plans to compensate the farmers as it had asked them not to go for Rabi cultivation in view of the ongoing El Nino",
+   "facts": [],
+   "source": "The Hindu — Telangana",
+   "sourceId": "hindu-telangana",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/telangana/telangana-govt-stares-at-financial-burden-to-fund-rythu-bharosa-or-crop-compensation/article71674097.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [
+    "AP agriculture and natural farming"
+   ],
+   "angles": [],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "05369e42f3b1",
    "date": "2026-11-15",
    "pubDate": "2026-11-15",
@@ -493,6 +626,65 @@
    }
   },
   {
+   "id": "83c21a746f5b",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "19:56",
+   "title": "Speakers say archaeological evidence is key to restoration of ancient temples",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/speakers-say-archaeological-evidence-is-key-to-restoration-of-ancient-temples/article71704980.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-A1",
+     "exam": "G1",
+     "label": "Indus Valley Civilization, Vedic Age, Mahajanapadas, Jainism & Buddhism, Magadha, Mauryas, Foreign Invasions, Kushanas, Satavahanas, Sangam Age, Sungas, Gupta Empire"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Speaker"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "3d6d94dc3658",
    "date": "2026-11-15",
    "pubDate": "2026-11-15",
@@ -547,6 +739,410 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "c012539f20d8",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:30",
+   "title": "AP Seeks Long-Term Cyclone Solution as Murasu Damage Pegged at ₹2,484 Crore",
+   "summary": "Around this time of the year, the state faces the threat of several cyclones, some of which cause extensive damage depending on their intensity.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/ap-seeks-long-term-cyclone-solution-as-murasu-damage-pegged-at-2484-crore-1142443",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a40fb174d436",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "20:03",
+   "title": "Cyclone damage: Andhra Pradesh CM urges Central team to submit report in 10 days; State puts total loss at ₹2,484 crore",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Cyclone damage: Andhra Pradesh CM urges Central team to submit report in 10 days; State puts total loss at ₹2,484 crore"
+    }
+   ],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-damage-andhra-pradesh-cm-urges-central-team-to-submit-report-in-10-days-state-puts-total-loss-at-2484-crore/article71704921.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "e8a174537f31",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "16:16",
+   "title": "Parliament winter session likely in early December, govt eyes push for delimitation-linked women’s quota bill",
+   "summary": "The govt is keen to push through the Constitution amendment bill, which seeks to expand the Lok Sabha's strength from the existing 543 seats.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/winter-session-may-begin-in-december-first-week-government-eyes-push-for-delimitation-linked-womens-quota-bill-101794739002430.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Bill",
+    "Constitution",
+    "Amendment"
+   ],
+   "score": 60,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "c407d550a2ce",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:11",
+   "title": "AP Bracing for Another Cyclone",
+   "summary": "This will be the third cyclonic storm in the Bay of Bengal to cross the Andhra Pradesh coast in 20 days. It may be recalled that a severe cyclone had struck the AP coast near Narsapuram on October 27 and had left a trail of destruction in the north coastal part of the state.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/ap-bracing-for-another-cyclone-1142438",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "efdcb1caee7a",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "14:25",
+   "title": "Cyclone warning issued for AP coast",
+   "summary": "The system is currently centred about 840 kilometres from Chennai and 1,010 kilometres from Visakhapatnam.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/cyclone-warning-issued-for-ap-coast-1142376",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "4315e44554a9",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:30",
+   "title": "Uttarakhand: Rajaji Tiger Reserve at Haridwar opens for tourists till June",
+   "summary": "The gates of Rajaji Tiger Reserve at Haridwar in Uttarakhand, reopened for tourists today after the annual five-month closure, marking the beginning of the new tourism season. Visitors can now enjoy jungle safaris and spot a variety of wildlife and bird species, including elephants, deer and leopards, in their natural habitat.",
+   "facts": [
+    {
+     "angle": "GI tag / designation",
+     "text": "The gates of Rajaji Tiger Reserve at Haridwar in Uttarakhand, reopened for tourists today after the annual five-month closure, marking the beginning of the new tourism season."
+    }
+   ],
+   "source": "AIR News — Regional",
+   "sourceId": "air-national",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://newsonair.gov.in/uttarakhand-rajaji-tiger-reserve-at-haridwar-opens-for-tourists-till-june/",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Tiger Reserve"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "59c469b96a4b",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:33",
+   "title": "At the Climate Summit, India Makes the Case for a Sunday Bike Ride",
+   "summary": "At COP31 in Antalya, Fit India presented Sundays on Cycle, a weekly ride that has not missed a Sunday since December 2024, and invited every country to host one community ride in the next year. 15 NOV 2026 6:33PM by PIB Delhi Most of the talk at a United Nations climate summit is about energy, finance and technology.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "15 NOV 2026 6:33PM by PIB Delhi Most of the talk at a United Nations climate summit is about energy, finance and technology."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "“Infrastructure alone does not change how people live.” The hour-long session, “Sundays on Cycle: From a Weekly Ride to a Way of Life,” was held at the pavilion (D 610) on the summit’s Children, Youth, Education and Skills Day at COP31, the 31st Conference of the Parties to the United Nations Fra…"
+    },
+    {
+     "angle": "Days / observance",
+     "text": "Participation has reached close to 3.7 million at more than 30,000 locations across India, he said, and on World Bicycle Day this year, held with cycling’s world governing body, the Union Cycliste Internationale, organisers planned for 100,000 riders and about 400,000 turned up."
+    },
+    {
+     "angle": "Figures",
+     "text": "Jim Walker of the Walk21 Foundation, who joined a Sundays on Cycle ride in Delhi last month, pointed to Bogot&aacute;, Colombia, where a similar street opening began about 50 years ago and now draws about 1.6 million people every Sunday onto 125 kilometres of car-free streets."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Youth Affairs and Sports",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336597&reg=3&lang=1",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community",
+    "Summit"
+   ],
+   "score": 56,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
   },
   {
    "id": "aab590c87edd",
@@ -653,6 +1249,65 @@
     "angles": 15,
     "ap": 0,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "2cc5548c832d",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "19:55",
+   "title": "Minister Vanni Arasu faces flak for pursuing tiger in Mudumalai Tiger Reserve",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "GI tag / designation",
+     "text": "Minister Vanni Arasu faces flak for pursuing tiger in Mudumalai Tiger Reserve"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/minister-vanni-arasu-faces-flak-for-pursuing-tiger-in-mudumalai-tiger-reserve/article71704393.ece",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Tiger Reserve"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 4,
     "reuse": 15
    }
   },
@@ -793,6 +1448,72 @@
    }
   },
   {
+   "id": "4624c30a9b34",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "17:03",
+   "title": "A Philadelphia wetland damaged by old dikes and dredging is being reconnected to a creek",
+   "summary": "Restoration efforts have begun in the Henderson Marsh area at the John Heinz National Wildlife Refuge, focusing on the excavation of channels to facilitate better water flow. This initiative not only aims to boost wildlife habitats but also enhances flood resilience for nearby communities like Eastwick.",
+   "facts": [],
+   "source": "Times of India — Science",
+   "sourceId": "toi-science",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/science/nature/a-philadelphia-wetland-damaged-by-old-dikes-and-dredging-is-being-reconnected-to-a-creek-through-13000-feet-of-tidal-channels-the-project-aims-to-restore-150-acres-of-wildlife-habitat-and-help-nearby-flood-prone-homes/articleshow/135830459.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "History & Culture",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G1-A1",
+     "exam": "G1",
+     "label": "Indus Valley Civilization, Vedic Age, Mahajanapadas, Jainism & Buddhism, Magadha, Mauryas, Foreign Invasions, Kushanas, Satavahanas, Sangam Age, Sungas, Gupta Empire"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Excavation",
+    "Channel"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "d75662e7f277",
    "date": "2026-11-15",
    "pubDate": "2026-11-15",
@@ -842,6 +1563,209 @@
     "ap": 0,
     "importance": 0,
     "reuse": 15
+   }
+  },
+  {
+   "id": "b40d13a6b688",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "20:16",
+   "title": "National Zoological Park organises 21st Sunday Bird Walk to Promote Citizen Science and Biodiversity Documentation",
+   "summary": "15 NOV 2026 8:16PM by PIB Delhi The National Zoological Park (NZP), New Delhi, organised the 21 st edition of ‘Sunday Bird Walk @ NZP ’ on 15 November 2026, from 7:30 AM to 10:30 AM promoting public participation in biodiversity monitoring and wildlife conservation. The walk was conducted under the expert guidance of Shri Vineet Kumar, Bird Expert, with the support of dedicated volunteers.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The walk was conducted under the expert guidance of Shri Vineet Kumar, Bird Expert, with the support of dedicated volunteers."
+    },
+    {
+     "angle": "Figures",
+     "text": "A total of eight participants, comprising bird enthusiasts, nature lovers, students, wildlife photographers and citizens with an interest in biodiversity, took part in the programme."
+    },
+    {
+     "angle": "Firsts / records",
+     "text": "Prior registration is mandatory, and places are allotted on a first-come, first-served basis."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Environment, Forest and Climate Change",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336665&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Biodiversity"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 5,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "7b667e15c6e1",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "15:40",
+   "title": "NITI Aayog to hold workshops to document lessons from Modi’s 25 years in government",
+   "summary": "The workshops will be held over a year, till October next year, NITI Aayog said in a statement.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/niti-aayog-to-hold-workshops-to-document-lessons-from-narendra-modi-25-years-in-government-101794737083521.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C1",
+     "exam": "G1",
+     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
+    },
+    {
+     "code": "G2-M2A-U1",
+     "exam": "G2",
+     "label": "Structure of the Indian Economy, Economic Planning and Policy - National Income, Occupational Pattern, Growth vs Development, Planning Strategy, New Economic Reforms 1991, Decentralization of Financial Resources, NITI Aayog"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "NITI Aayog"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "bb32e87cdaf4",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "19:49",
+   "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah performs Bhoomi Pujan of NHEC Multi-State Cooperative Society, virtually inaugurates Western Regional Office of Central Registrar of Cooperative Societies and launches Bharat Taxi services in Pune, Maharashtra",
+   "summary": "On the occasion, he also virtually inaugurated the Western Regional Office of the Central Registrar of Cooperative Societies (CRCS) and launched Bharat Taxi services in Pune.",
+   "facts": [
+    {
+     "angle": "Award",
+     "text": "Pioneers of the cooperative movement, including Padma Shri Vitthalrao Patil and Vaikunthbhai Mehta, had endeavoured even before Independence to develop a system in which the maximum benefits arising from agriculture and trade would reach farmers."
+    },
+    {
+     "angle": "Figures",
+     "text": "Shri Amit Shah said that farmers, rural women, milk producers and those associated with the cooperative movement had long been demanding the establishment of a separate Ministry of Cooperation at the Centre."
+    },
+    {
+     "angle": "Figures",
+     "text": "The Central Government has undertaken several significant measures, including providing relief of approximately Rs. 15,000 crore to cooperative sugar mills and extending income tax relief of approximately Rs. 3,000 crore annually."
+    },
+    {
+     "angle": "Figures",
+     "text": "Shri Amit Shah extended his greetings to the people of the country, particularly mothers and sisters, on the occasion of Chhath Mahaparv."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Cooperation",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336647&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "History & Culture",
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Services",
+    "PACS"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 5,
+    "reuse": 5
    }
   },
   {
@@ -1041,6 +1965,182 @@
    }
   },
   {
+   "id": "9b9ea4b63a59",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:22",
+   "title": "Govt, private health insurance spending tops 20% of total health outlay",
+   "summary": "Government-funded health schemes and private insurance accounted for 21.2 per cent of India's total health expenditure in FY24, with both categories crossing 10 per cent for the first time",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Government-funded health schemes and private insurance accounted for 21.2 per cent of India's total health expenditure in FY24, with both categories crossing 10 per cent for the first time"
+    }
+   ],
+   "source": "Business Standard",
+   "sourceId": "bs-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.business-standard.com/finance/personal-finance/govt-private-health-insurance-spending-tops-20-of-total-health-outlay-126111500530_1.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Schemes",
+    "Health"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 10
+   }
+  },
+  {
+   "id": "db26f7cefeeb",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:18",
+   "title": "Central banks of India and Egypt working to promote bilateral trade in local currencies, says Piyush Goyal",
+   "summary": "India and Egypt today agreed to work towards finalising the Terms of Reference (ToR) for a proposed bilateral trade agreement to strengthen economic ties between the two countries. At the 7th India-Egypt Joint Trade Committee meeting in Cairo, Commerce and Industry Minister Piyush Goyal said, the two countries could enhance cooperation in several sectors, […]",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "India and Egypt today agreed to work towards finalising the Terms of Reference (ToR) for a proposed bilateral trade agreement to strengthen economic ties between the two countries."
+    },
+    {
+     "angle": "Figures",
+     "text": "At the 7th India-Egypt Joint Trade Committee meeting in Cairo, Commerce and Industry Minister Piyush Goyal said, the two countries could enhance cooperation in several sectors, […]"
+    }
+   ],
+   "source": "AIR News — Business",
+   "sourceId": "air-business",
+   "official": true,
+   "ministry": "",
+   "alsoIn": [
+    "AIR News — International"
+   ],
+   "url": "https://newsonair.gov.in/central-banks-of-india-and-egypt-working-to-promote-bilateral-trade-in-local-currencies-says-piyush-goyal/",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Agreement",
+    "Banks",
+    "Industry"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 20,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "8621e8699b5d",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:21",
+   "title": "Fertilizer demand set to recover in rabi, but water stress clouds outlook",
+   "summary": "Higher subsidies are expected to revive consumption after a weak kharif season, but depleted reservoirs in southern India and a slow start to sowing could constrain the recovery.",
+   "facts": [],
+   "source": "Mint — News",
+   "sourceId": "mint-news",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.livemint.com/news/fertilizer-demand-set-to-recover-in-rabi-but-water-stress-clouds-outlook-11794741964653.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Reservoir"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "c04c489560da",
    "date": "2026-11-15",
    "pubDate": "2026-11-15",
@@ -1081,6 +2181,222 @@
    "topics": [],
    "angles": [
     "Human Rights"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "f0da1bb751cf",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "14:41",
+   "title": "ICSI CSEET October 2026 Toppers: Bhakti Sanjay Shah Secured Rank 1",
+   "summary": "The ICSI CSEET October session result has been released today, November 15, 2026. Along with the result, the exam body has also released the toppers' list.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/education/icsi-cseet-october-2026-toppers-bhakti-sanjay-shah-secured-rank-1-12329528#publisher=newsstand",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A3",
+     "exam": "G1",
+     "label": "Delhi Sultanate, Vijayanagara Empire, Mughal Empire, Bhakti Movement and Sufism - Administration, Economy, Society, Religion, Literature, Arts and Architecture"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rank"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ffdb9201f913",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "19:50",
+   "title": "Land resurvey exercise: Andhra Pradesh revenue staff want reduction in workload",
+   "summary": "Employees say they are facing pressure from local body election duties, SIR of electoral rolls, cyclone-related work, census training, pattadar passbook distribution, festival duties and protocol assignments",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/land-resurvey-andhra-pradesh-revenue-staff-want-reduction-in-workload/article71704948.ece",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Census"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 14,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "a4b4ca0d9faf",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "15:48",
+   "title": "Parliament winter session likely in 1st week of December; delimitation bill to be in focus",
+   "summary": "",
+   "facts": [],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Times of India — Top stories"
+   ],
+   "url": "https://timesofindia.indiatimes.com/india/parliament-winter-session-likely-in-1st-week-of-december-delimitation-bill-likely-to-be-in-focus/articleshow/135852930.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Bill"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "173b82a170f1",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "19:46",
+   "title": "RBI may review microfinance borrowers' income threshold, if needed: Murmu",
+   "summary": "Shirish Chandra Murmu indicated that the RBI was not in favour of the proposal, saying such an exclusion would defeat the purpose of the limit, undermine its sanctity and understate household leverage",
+   "facts": [],
+   "source": "Business Standard",
+   "sourceId": "bs-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.business-standard.com/finance/news/rbi-to-review-3-lakh-income-threshold-for-microfinance-borrowers-murmu-126111500501_1.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "RBI"
    ],
    "score": 44,
    "band": "medium",
@@ -1149,6 +2465,155 @@
    }
   },
   {
+   "id": "52cc3439ed08",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "title": "India Misses 2025 Tuberculosis Elimination Target",
+   "summary": "India missed its target of eliminating tuberculosis (TB) by 2025, five years before the global Sustainable Development Goal deadline of 2030.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/india-misses-2025-tuberculosis-elimination-target/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G1-C1",
+     "exam": "G1",
+     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "WHO"
+   ],
+   "score": 43,
+   "band": "medium",
+   "why": {
+    "syllabus": 18,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
+   "id": "ce2f6c68a5b5",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "14:10",
+   "title": "Statewide vaccination drive to protect children aged 10 and 16 against tetanus and diphtheria",
+   "summary": "Children receive Pentavalent vaccines when very young as part of the immunisation programme, and the TD vaccine is administered to provide additional protection",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/statewide-vaccination-drive-to-protect-children-aged-10-and-16-against-tetanus-and-diphtheria/article71704354.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Vaccine"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "9f1791fd7823",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:30",
+   "title": "Two children drown in Pulleru canal in Krishna district",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/two-children-drown-in-pulleru-canal-in-krishna-district/article71704720.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Canal"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "50cad99d0fc9",
    "date": "2026-11-15",
    "pubDate": "2026-11-15",
@@ -1197,6 +2662,60 @@
     "ap": 20,
     "importance": 0,
     "reuse": 2
+   }
+  },
+  {
+   "id": "a5702ef1f32a",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "15:31",
+   "title": "Vice President to visit Odisha on November 16, 2026",
+   "summary": "15 NOV 2026 3:31PM by PIB Delhi The Vice-President of India, Shri C. Radhakrishnan, will visit Odisha on November 16, 2026. The Vice-President will grace the Orientation Programme for Members of the Odisha Legislative Assembly in Bhubaneswar. He will also inaugurate the Iconic Tower(Academic Building) of Sri Sri University in Cuttack during the visit.",
+   "facts": [],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Vice President's Secretariat",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336507&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "University",
+    "Vice President",
+    "Members",
+    "Legislative assembly"
+   ],
+   "score": 40,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 20,
+    "ap": 0,
+    "importance": 3,
+    "reuse": 5
    }
   },
   {
@@ -1279,6 +2798,50 @@
     "angles": 5,
     "ap": 0,
     "importance": 6,
+    "reuse": 0
+   },
+   "digest": true
+  },
+  {
+   "id": "84c3adcdf5b4",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "title": "NORKA Santhwana disbursed ₹139.49 crore over five years",
+   "summary": "The NORKA Santhwana scheme disbursed ₹139.49 crore to 22,267 beneficiaries over the five financial years from 2021–22 to 2025–26, according to figures reported for the sc",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The NORKA Santhwana scheme disbursed ₹139.49 crore to 22,267 beneficiaries over the five financial years from 2021–22 to 2025–26, according to figures reported for the sc"
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/norka-santhwana-disbursed-%e2%82%b9139-49-crore-over-five-years/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Years"
+   ],
+   "score": 11,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 0,
+    "importance": 2,
     "reuse": 0
    },
    "digest": true
