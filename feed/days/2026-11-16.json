@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-16",
- "updated": "2026-11-16T17:14:44.757Z",
+ "updated": "2026-11-16T22:44:15.342Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 668,
+   "found": 669,
    "error": null
   },
   {
@@ -36,14 +36,14 @@
   {
    "id": "ie-india",
    "name": "Indian Express — India",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "ie-explained",
    "name": "Indian Express — Explained",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "toi-india",
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 48,
+   "found": 47,
    "error": null
   },
   {
@@ -96,8 +96,8 @@
   {
    "id": "ie-economy",
    "name": "Indian Express — Economy",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "mint-news",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 10,
+   "found": 9,
    "error": null
   },
   {
@@ -168,26 +168,26 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 58,
+   "found": 11,
    "error": null
   },
   {
    "id": "sakshi",
    "name": "Sakshi",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 10,
+   "error": null
   },
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 160,
+   "found": 104,
    "error": null
   },
   {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "hindu-telangana",
@@ -204,8 +204,8 @@
   {
    "id": "affairscloud",
    "name": "AffairsCloud",
-   "found": 0,
-   "error": "timed out"
+   "found": 15,
+   "error": null
   }
  ],
  "items": [
@@ -874,6 +874,63 @@
    }
   },
   {
+   "id": "9facc26d08ad",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "03:56",
+   "title": "Surprise visit aims to ensure transparent filing for gram panchayat polls",
+   "summary": "Reviewing help desks, infrastructure, and security, the Joint Collector instructed Returning Officers to strictly follow State Election Commission guidelines and ensure candidates face no inconvenience.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kurnool/surprise-visit-aims-to-ensure-transparent-filing-for-gram-panchayat-polls-1142843",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Election Commission"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "a3bdf991848f",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -1018,6 +1075,56 @@
    }
   },
   {
+   "id": "912f1c59230b",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-16",
+   "time": "09:56",
+   "title": "Andhra Pradesh: Cyclone Murasu caused ₹2,484 crore in damage as another cyclonic system develops",
+   "summary": "A severe cyclonic system developing over the Bay of Bengal was expected to intensify into a very severe cyclone",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-cyclone-murasu-caused-rs-2-484-crore-in-damage-as-another-cyclonic-system-develops-101794803211352.html",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 61,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
    "id": "faa6e99fee6c",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -1157,6 +1264,62 @@
    }
   },
   {
+   "id": "82115b181766",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "00:11",
+   "title": "Madras High Court Orders Probe Into 20 Years Of Book Procurement For Tamil Nadu Libraries",
+   "summary": "The controversy over the procurement of books for the Periyar Arivulagam gained attention after Tamil writer Perumal Murugan flagged concerns over questionable titles linked to publishers Agal Vilakku and Phoenix.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/madras-high-court-orders-probe-into-20-years-of-book-procurement-for-tamil-nadu-libraries-amid-periyar-arivulagam-scam-12335774#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Years",
+    "Publisher",
+    "High Court"
+   ],
+   "score": 60,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "531c9ea62c3d",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -1231,6 +1394,58 @@
     "angles": 10,
     "ap": 0,
     "importance": 5,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d95c03577a61",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-16",
+   "time": "22:51",
+   "title": "3,478 pregnant women identified for shifting to hospitals amid cyclone alert",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/3478-pregnant-women-identified-for-shifting-to-hospitals-amid-cyclone-alert/article71708888.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -2329,6 +2544,67 @@
    }
   },
   {
+   "id": "e226cec87f72",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-16",
+   "time": "22:54",
+   "title": "India-Thailand trade grows 12.6% to $21.49 billion; UPI-PromptPay link discussed",
+   "summary": "The two countries also explored closer cooperation in trade agreements, investment, financial technology and several manufacturing and services sectors",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/india-thailand-trade-grows-126-to-2149-billion-upi-promptpay-link-discussed/article71709276.ece",
+   "bucket": "international",
+   "scope": "international",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Economy",
+    "Geography",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Agreement",
+    "Services"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "89a749bebb1b",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -2408,6 +2684,54 @@
     "ap": 0,
     "importance": 13,
     "reuse": 15
+   }
+  },
+  {
+   "id": "60b3f20c0dac",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "03:53",
+   "title": "Money power, coercion, and backroom deals undermine local body elections",
+   "summary": "Intellectuals point out a stark contradiction: while youth turning 18 are mandatorily enrolled as voters",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kurnool/money-power-coercion-and-backroom-deals-undermine-local-body-elections-1142842",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Money"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
    }
   },
   {
@@ -2709,6 +3033,64 @@
    "digest": true
   },
   {
+   "id": "003e1b0e5a6a",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-16",
+   "time": "23:18",
+   "title": "Indian central bank seeks review of Supreme Court’s Yes Bank AT-1 bonds order",
+   "summary": "The RBI filed a review petition in the Supreme Court against its judgment that set aside the write-off of ₹8,415 crore of Yes Bank’s additional tier-1 bonds",
+   "facts": [
+    {
+     "angle": "Judgment",
+     "text": "The RBI filed a review petition in the Supreme Court against its judgment that set aside the write-off of ₹8,415 crore of Yes Bank’s additional tier-1 bonds"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Business"
+   ],
+   "url": "https://www.thehindu.com/business/indian-central-bank-seeks-review-of-supreme-courts-yes-bank-at-1-bonds-order/article71709315.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court",
+    "RBI",
+    "Bonds"
+   ],
+   "score": 52,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 8,
+    "reuse": 5
+   }
+  },
+  {
    "id": "9175320e99df",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -2971,6 +3353,71 @@
     "angles": 10,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "334b4d33ab9c",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-16",
+   "time": "23:04",
+   "title": "CAG focuses on technology, reforms to strengthen public accountability",
+   "summary": "Reforms in the last couple of years, including breaking departmental silos; auditing themes, including ‘Ease of Living’ and ‘Ease of Doing Business’; and focusing on local bodies, were aligned with the nation’s development goals, says K.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Reforms in the last couple of years, including breaking departmental silos; auditing themes, including ‘Ease of Living’ and ‘Ease of Doing Business’; and focusing on local bodies, were aligned with the nation’s development goals, says K."
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/cag-focuses-on-technology-reforms-to-strengthen-public-accountability/article71708509.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Years",
+    "CAG"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -4274,6 +4721,60 @@
    }
   },
   {
+   "id": "362dccc60bb9",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "01:07",
+   "title": "A poverty line that falls short",
+   "summary": "Reliable poverty estimates are not just for academic purposes. India has made real progress, but without a credible benchmark, it is hard to say how much, or how much remains to be done",
+   "facts": [],
+   "source": "The Hindu — Economy",
+   "sourceId": "hindu-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Business"
+   ],
+   "url": "https://www.thehindu.com/opinion/op-ed/a-poverty-line-that-falls-short/article71707981.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C1",
+     "exam": "G1",
+     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
+    },
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Remains"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "4fb3f2fa9c66",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -4490,6 +4991,62 @@
    }
   },
   {
+   "id": "213e53064a18",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "01:49",
+   "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
+   "summary": "The RMC, Chennai, has forecast that mainly dry weather is likely to prevail over the rest of the State during this time",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-D2",
+     "exam": "G1",
+     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "cc180d9f285b",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -4559,356 +5116,6 @@
     "importance": 3,
     "reuse": 5
    }
-  },
-  {
-   "id": "cd8f942fdc4b",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "22:19",
-   "title": "Nvidia chip row: US tightens AI chip export rules to restrict access through overseas data centres",
-   "summary": "The latest US restrictions come against the backdrop of a major controversy involving allegations that advanced Nvidia-powered servers were smuggled into China in violation of American export controls.",
-   "facts": [],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/us-news/nvidia-chip-row-us-tightens-ai-chip-export-rules-to-restrict-access-through-overseas-data-centres-11794844767793.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-F19",
-     "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
-    },
-    {
-     "code": "G2-M2A-U5",
-     "exam": "G2",
-     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Export"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "3d377148e977",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "12:00",
-   "title": "PROVISIONAL WHOLESALE PRICE INDEX, OUTPUT PRODUCER PRICE INDEX, AND TRIAL INPUT PRODUCER PRICE INDEX FOR THE MONTH OF OCTOBER 2026, AND FINAL INDEX FOR THE MONTH OF AUGUST 2026",
-   "summary": "Provisional Wholesale Price Index (Base Year 2022-23) for the month of October 2026 16 NOV 2026 12:00PM by PIB Delhi Key highlights of WPI (Base Year 2022-23) for October 2026 All India Wholesale Price Index (WPI) inflation for October 2026 is 12.29 per cent on year-on-year (YoY) basis, compared to 11.39 per cent in September 2026.",
-   "facts": [
-    {
-     "angle": "Index / rank",
-     "text": "Provisional Wholesale Price Index (Base Year 2022-23) for the month of October 2026 16 NOV 2026 12:00PM by PIB Delhi Key highlights of WPI (Base Year 2022-23) for October 2026 All India Wholesale Price Index (WPI) inflation for October 2026 is 12.29 per cent on year-on-year (YoY) basis, compared …"
-    },
-    {
-     "angle": "Index / rank",
-     "text": "The index for All Commodities for October 2026 stands at 113.3, whereas it was 112.5 in September 2026."
-    },
-    {
-     "angle": "Figures",
-     "text": "YoY inflation rates for major groups, namely, Primary Articles, Fuel and Power, and Manufactured Products are 9.24 per cent, 32.84 per cent, and 9.54 per cent, respectively in October 2026, compared to 8.67 per cent, 25.85 per cent, and 9.76 per cent, respectively in September 2026."
-    },
-    {
-     "angle": "Index / rank",
-     "text": "The indices for Primary Articles, Fuel and Power, and Manufactured Products are 120.6, 115.7, and 110.2, respectively, in October 2026, whereas they were 120.3, 110.5, and 110.2, respectively, in September 2026."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Commerce & Industry",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336762&reg=3&lang=1",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    },
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Articles",
-    "Index"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 10,
-    "ap": 0,
-    "importance": 5,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "da4edd509f3e",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "title": "SEBI and IEPFA to Hold Eighth Niveshak Shivir in Delhi",
-   "summary": "The Securities and Exchange Board of India (SEBI) and the Investor Education and Protection Fund Authority (IEPFA) will jointly organise the eighth Niveshak Shivir in New",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/sebi-and-iepfa-to-hold-eighth-niveshak-shivir-in-delhi/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B4",
-     "exam": "G1",
-     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
-    },
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "SEBI"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
-  },
-  {
-   "id": "cc177a8a823e",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "10:59",
-   "title": "Six months on, Data Protection Board of India still without chairperson, members",
-   "summary": "“As of November 14, the appointments had not been finalised,” a ministry official told HT on the condition of anonymity.",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/six-months-on-digital-data-protection-board-of-india-still-without-chairperson-members-101794806826963.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-F19",
-     "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Members"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "5bbcb0e026b3",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "title": "Yellow vein mosaic disease found in okra crops in Viluppuram",
-   "summary": "Horticulture officials found yellow vein mosaic disease in okra fields in Veliyampakkam and Sithathur near Viluppuram.",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/yellow-vein-mosaic-disease-found-in-okra-crops-in-viluppuram/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G2-M2A-U5",
-     "exam": "G2",
-     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
-    },
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Found in"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
-  },
-  {
-   "id": "5a06d2a0049e",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "title": "Migratory birds arrive at wetlands around Agra",
-   "summary": "Migratory birds have arrived at wetlands around Agra for the winter season. Key sites include Sur Sarovar Bird Sanctuary, Jodhpur Jhal on the Agra–Mathura border, the Yam",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/migratory-birds-arrive-at-wetlands-around-agra/",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U3",
-     "exam": "G2",
-     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Bird sanctuary",
-    "Wetlands"
-   ],
-   "score": 43,
-   "band": "medium",
-   "why": {
-    "syllabus": 18,
-    "angles": 10,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   },
-   "digest": true
   },
   {
    "id": "69dd01dd54a2",

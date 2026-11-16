@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-15",
- "updated": "2026-11-16T07:33:13.735Z",
+ "updated": "2026-11-16T22:44:15.342Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 623,
+   "found": 669,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 29,
+   "found": 39,
    "error": null
   },
   {
@@ -36,14 +36,14 @@
   {
    "id": "ie-india",
    "name": "Indian Express — India",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "ie-explained",
    "name": "Indian Express — Explained",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "toi-india",
@@ -96,8 +96,8 @@
   {
    "id": "ie-economy",
    "name": "Indian Express — Economy",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "mint-news",
@@ -168,26 +168,26 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 58,
+   "found": 11,
    "error": null
   },
   {
    "id": "sakshi",
    "name": "Sakshi",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 10,
+   "error": null
   },
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 147,
+   "found": 104,
    "error": null
   },
   {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "hindu-telangana",
@@ -961,6 +961,55 @@
     "angles": 15,
     "ap": 0,
     "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "b33a427ed4b7",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:51",
+   "title": "Andhra Pradesh braces for third intense cyclone in a month",
+   "summary": "",
+   "facts": [],
+   "source": "Indian Express — India",
+   "sourceId": "ie-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://indianexpress.com/article/india/andhra-pradesh-braces-for-third-intense-cyclone-in-a-month-10964246/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -2043,6 +2092,66 @@
    }
   },
   {
+   "id": "a1d23667103e",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "18:37",
+   "title": "Indian Railways shifts over 2,200 trains to upgraded Passenger Reservation System",
+   "summary": "",
+   "facts": [],
+   "source": "Indian Express — India",
+   "sourceId": "ie-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://indianexpress.com/article/india/indian-railways-upgraded-passenger-reservation-system-2200-trains-10964225/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-B5",
+     "exam": "G1",
+     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [
+    "Railways and multimodal transport",
+    "Reservation and social justice"
+   ],
+   "angles": [
+    "Railways"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "d75662e7f277",
    "date": "2026-11-15",
    "pubDate": "2026-11-15",
@@ -2286,6 +2395,69 @@
    "angles": [
     "Years",
     "NITI Aayog"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "7b052e93933e",
+   "date": "2026-11-15",
+   "pubDate": "2026-11-15",
+   "time": "22:20",
+   "title": "On Birsa Munda Jayanti, MP CM Mohan Yadav inaugurates Rs 1,400-crore Narmada irrigation project",
+   "summary": "",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "On Birsa Munda Jayanti, MP CM Mohan Yadav inaugurates Rs 1,400-crore Narmada irrigation project"
+    }
+   ],
+   "source": "Indian Express — India",
+   "sourceId": "ie-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://indianexpress.com/article/india/narmada-irrigation-project-madhya-pradesh-1400-crore-10964392/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Irrigation",
+    "Irrigation Project"
    ],
    "score": 49,
    "band": "medium",
