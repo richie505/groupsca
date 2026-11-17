@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-11-16",
- "updated": "2026-11-16T22:44:15.342Z",
+ "updated": "2026-11-17T01:21:07.470Z",
  "sources": [
   {
    "id": "pib",
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 39,
+   "found": 41,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 11,
+   "found": 52,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 104,
+   "found": 142,
    "error": null
   },
   {
@@ -294,6 +294,61 @@
     "angles": 10,
     "ap": 20,
     "importance": 11,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "24a3ea565e12",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:04",
+   "title": "AP High Court sets aside 2022 and 2023 Vijaya Dairy director elections",
+   "summary": "Setback to chairman Dr Dasari Bala Vardhana Rao and four other directors Justice Harinath orders fresh elections to five director posts",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/ap-high-court-sets-aside-2022-and-2023-vijaya-dairy-director-elections-1142877",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Post",
+    "High Court"
+   ],
+   "score": 75,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -529,6 +584,91 @@
    }
   },
   {
+   "id": "5e0637572ab7",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "01:04",
+   "title": "Big Cat Conservation can be a Powerful Pathway for Climate Change Mitigation: Union Environment Minister at UNFCCC COP31, at Antalya (Türkiye)",
+   "summary": "The event was jointly organised by the Ministry of Environment, Forest and Climate Change (MoEFCC), Government of India, and the International Big Cat Alliance (IBCA), at the United Nations Climate Change Conference (COP31) in Antalya, T&uuml;rkiye.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The event was jointly organised by the Ministry of Environment, Forest and Climate Change (MoEFCC), Government of India, and the International Big Cat Alliance (IBCA), at the United Nations Climate Change Conference (COP31) in Antalya, T&uuml;rkiye."
+    },
+    {
+     "angle": "GI tag / designation",
+     "text": "The event brought together Ministers and country representatives from big cat range countries of Nepal, Venezuela, Cambodia, Sri Lanka, besides representatives of international conventions and organisations like the Ramsar Convention and UNCCD."
+    },
+    {
+     "angle": "Figures",
+     "text": "India's tiger population increased to 3,682 in 2022, accounting for more than 70% of the world's wild tigers."
+    },
+    {
+     "angle": "Figures",
+     "text": "He further highlighted that Project Tiger generates livelihood opportunities of approximately 6 million man-days annually, making tiger conservation an important driver of green employment and community livelihood security."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Environment, Forest and Climate Change",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2337247&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Geography",
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [
+    "Wildlife and forest governance"
+   ],
+   "angles": [
+    "Union Minister",
+    "Community",
+    "Climate Change"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 15,
+    "ap": 0,
+    "importance": 13,
+    "reuse": 15
+   }
+  },
+  {
    "id": "babf73492bab",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -610,6 +750,74 @@
     "angles": 15,
     "ap": 0,
     "importance": 13,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "1b84f20acd64",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-16",
+   "time": "23:06",
+   "title": "RBI files review petition in SC over YES Bank's ₹8,415 cr AT-1 bond case",
+   "summary": "The central bank has sought a review of the Supreme Court's October 15 ruling that upheld the Bombay High Court's decision to set aside YES Bank's ₹8,415 crore AT-1 bond write-off",
+   "facts": [
+    {
+     "angle": "Judgment",
+     "text": "The central bank has sought a review of the Supreme Court's October 15 ruling that upheld the Bombay High Court's decision to set aside YES Bank's ₹8,415 crore AT-1 bond write-off"
+    }
+   ],
+   "source": "Business Standard",
+   "sourceId": "bs-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.business-standard.com/industry/banking/rbi-files-review-petition-in-sc-over-yes-bank-s-8-415-cr-at-1-bond-case-126111601511_1.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review",
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Supreme court",
+    "High Court",
+    "RBI",
+    "SC"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 26,
+    "angles": 20,
+    "ap": 0,
+    "importance": 8,
     "reuse": 15
    }
   },
@@ -862,6 +1070,159 @@
    "topics": [],
    "angles": [
     "Election Commission"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "4f69112a1842",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "04:24",
+   "title": "APSPDCL on high alert as cyclone Akvan approaches AP",
+   "summary": "To review emergency preparedness, APSPDCL Chairman and Managing Director Shiva Shankar Lotheti chaired a high-level meeting with senior officials in Tirupati on Monday.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/apspdcl-on-high-alert-as-cyclone-akvan-approaches-ap-1142853",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Emergency"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "dc8dcc6d57da",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:31",
+   "title": "Collector alerts officials on Cyclone Akvan",
+   "summary": "Krishna District Collector DK Balaji directed officials to remain on high alert for Cyclone Akwan. Reviewing weather warnings from APSDMA and RTGS CEO Prakhar Jain, authorities prepared for heavy rainfall and strong winds ahead of the projected landfall between Nellore and Tuni.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/collector-alerts-officials-on-cyclone-akvan-1142894",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rainfall"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "efafb3f934d6",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:23",
+   "title": "Energy department put on high alert ahead of Cyclone Akvan",
+   "summary": "Minister Ravi Kumar orders APEPDCL to stock poles, transformers and gear at vulnerable spots Special teams on standby for restoration if lines snap or poles fall",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/energy-department-put-on-high-alert-ahead-of-cyclone-akvan-1142890",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Lines"
    ],
    "score": 64,
    "band": "high",
@@ -1534,6 +1895,121 @@
    }
   },
   {
+   "id": "b6aeaf94df8e",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:10",
+   "title": "APCPDCL steps up preparedness for cyclone",
+   "summary": "APCPDCL Chairman and Managing Director P Pullareddy directed field-level officials to take all precautionary measures to ensure uninterrupted power supply and enable the speedy restoration of electricity in the event of disruptions.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/apcpdcl-steps-up-preparedness-for-cyclone-1142882",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2B-U2",
+     "exam": "G2",
+     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "702104b979b7",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:16",
+   "title": "Cyclone Akvan Alert: Atchanna orders steps for safety of farmers and fishermen",
+   "summary": "Puts officials on high alert to shield crops and fishermen from heavy rains and strong winds Nearly all fishing boats safely ashore; coastal paddy and horticulture under special focus",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/cyclone-akvan-alert-atchanna-orders-steps-for-safety-of-farmers-and-fishermen-1142884",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "8f0ec264ba29",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -1617,6 +2093,66 @@
      "code": "G2-S2",
      "exam": "G2",
      "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "7c140624b85a",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "04:40",
+   "title": "Cyclone Akvan poses fresh threat to Andhra Pradesh",
+   "summary": "Landfall likely near Machilipatnam on Nov 19 Wind speed at landfall may be 120–130 kmph",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/cyclone-akvan-poses-fresh-threat-to-andhra-pradesh-1142863",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-A4",
+     "exam": "G1",
+     "label": "European Trading Companies in India - Struggle for Supremacy (Bengal, Bombay, Madras, Mysore, Andhra, Nizam); Governors-General and Viceroys"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M1A-U3",
+     "exam": "G2",
+     "label": "Advent of Europeans, Andhra under the Company, 1857 and its Impact on Andhra, Socio-Cultural Awakening, Justice Party / Self-Respect Movement, Nationalist Movement in Andhra 1885-1947"
     }
    ],
    "topics": [],
@@ -2363,6 +2899,70 @@
    }
   },
   {
+   "id": "4025d78b1a6b",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:03",
+   "title": "Illegal tobacco barns to face action",
+   "summary": "Tobacco Board Ongole Regional Manager GLK Prasad announced joint inspections with Agriculture and Panchayat Raj departments to curb excess FCV tobacco cultivation, unauthorized barns, and unregistered farming in Andhra Pradesh.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/ongole/illegal-tobacco-barns-to-face-action-1142876",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Agriculture"
+   ],
+   "score": 56,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "1f4f330e165d",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -2509,6 +3109,73 @@
     "Economy",
     "Polity, Society & IR",
     "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-D3",
+     "exam": "G1",
+     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Caste",
+    "Census",
+    "States"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "13e154a4a0d5",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "04:53",
+   "title": "Census Phase-II starts in 4 poll-bound states, postponed in Manipur",
+   "summary": "The second phase will run till November 30, followed by house-to-house enumeration from Dec 1. The exercise will collect data across 40 fields, including caste",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The exercise will collect data across 40 fields, including caste"
+    }
+   ],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Times of India — Top stories"
+   ],
+   "url": "https://timesofindia.indiatimes.com/india/census-phase-ii-starts-in-4-poll-bound-states-postponed-in-manipur/articleshow/135905253.cms",
+   "bucket": "dynamic",
+   "scope": "dynamic",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy",
+    "Polity, Society & IR"
    ],
    "units": [
     {
@@ -3825,6 +4492,82 @@
    }
   },
   {
+   "id": "b22f587760a9",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:48",
+   "title": "Madagascar seeks carbon-credit funding to protect 4m hectares, 55% of forests",
+   "summary": "Madagascar has launched the Ala Velona initiative to safeguard its precious forests and tackle climate change. This ambitious project aims to conserve 4 million hectares of woodland while also generating valuable carbon credits.",
+   "facts": [
+    {
+     "angle": "Scheme / launch",
+     "text": "Madagascar has launched the Ala Velona initiative to safeguard its precious forests and tackle climate change."
+    },
+    {
+     "angle": "Figures",
+     "text": "This ambitious project aims to conserve 4 million hectares of woodland while also generating valuable carbon credits."
+    }
+   ],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Times of India — Science"
+   ],
+   "url": "https://timesofindia.indiatimes.com/science/nature/madagascar-has-taken-a-step-towards-funding-the-protection-of-4-million-hectares-of-forests-across-13-regions-nearly-55-of-its-forest-cover-under-a-carbon-credit-programme-targeting-6-million-tonnes-of-annual-emissions-reductions-/articleshow/135856772.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Community",
+    "Forests",
+    "Climate Change",
+    "Biodiversity"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "544d055eada8",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -4362,6 +5105,60 @@
    }
   },
   {
+   "id": "4b7543dc2231",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "01:48",
+   "title": "Kerala High Court refers petition challenging clean chit to Chief Minister in Punarjani case to Chief Justice",
+   "summary": "High Court Registry directed to place the matter before the Chief Justice to decide whether the case would be considered by the court trying MP/MLA cases, Prevention of Corruption Act, or as a PIL",
+   "facts": [
+    {
+     "angle": "Judgment",
+     "text": "High Court Registry directed to place the matter before the Chief Justice to decide whether the case would be considered by the court trying MP/MLA cases, Prevention of Corruption Act, or as a PIL"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/kerala-high-court-refers-petition-challenging-clean-chit-to-chief-minister-in-punarjani-case-to-chief-justice/article71708756.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Chief Justice",
+    "High Court"
+   ],
+   "score": 47,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 10,
+    "ap": 0,
+    "importance": 12,
+    "reuse": 5
+   }
+  },
+  {
    "id": "d74412bace29",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -4721,6 +5518,103 @@
    }
   },
   {
+   "id": "abf23ba005f7",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:21",
+   "title": "విజయ డెయిరీకి హైకోర్టులో ఎదురుదెబ్బ",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/setback-for-vijaya-dairy-in-high-court/1799/126208774",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te"
+  },
+  {
+   "id": "4d98499c8b0f",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:29",
+   "title": "Renovated Venkateswara Museum to showcase Tirumala’s rich heritage",
+   "summary": "The museum now open to devotees with an entry fee of Rs 50 from 10 am to 5 pm daily 8,000 artefacts in 14 galleries cover the history, architecture, traditions and cultural heritage of the Tirumala temple",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The museum now open to devotees with an entry fee of Rs 50 from 10 am to 5 pm daily 8,000 artefacts in 14 galleries cover the history, architecture, traditions and cultural heritage of the Tirumala temple"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/renovated-venkateswara-museum-to-showcase-tirumalas-rich-heritage-1142893",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G2-M1A-U2",
+     "exam": "G2",
+     "label": "Major and Minor Dynasties of Andhradesa between the 11th and 16th Centuries A.D. - Socio-Religious and Economic Conditions, Growth of Telugu Language and Literature, Art and Architecture"
+    }
+   ],
+   "topics": [
+    "Tirumala Tirupati Devasthanams (TTD)"
+   ],
+   "angles": [],
+   "score": 45,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "362dccc60bb9",
    "date": "2026-11-16",
    "pubDate": "2026-11-17",
@@ -4832,292 +5726,6 @@
    }
   },
   {
-   "id": "6aa4c64ee384",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "22:28",
-   "title": "Census portal lists ‘ISKCON’, ‘Tantric’, ‘Gorak Nath’ among 287 ‘other’ religions; removes menu later",
-   "summary": "The drop-down menu under the ‘Others’ category in the question pertaining to the respondent’s religion had 287 options for those not choosing from among the six major religions in India. After The Hindu raised a query about the classification, the drop-down menu was removed from the portal.",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/census-portal-lists-iskcon-tantric-gorak-nath-among-287-other-religions-removes-menu-later/article71708303.ece",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G1-D3",
-     "exam": "G1",
-     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Census"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "ee2255532321",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "15:49",
-   "title": "Cyclone 'Akvan' likely to cause heavy rain in Kolkata, Howrah, other southern districts of West Bengal from November 19",
-   "summary": "Rainfall activity accompanied by thunderstorms and gusty winds is expected to increase across several parts of south Bengal, including Kolkata, Howrah, Hooghly.",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/bengal-weather-cyclone-akvan-tracker-heavy-rain-in-kolkata-howrah-west-east-midnapore-other-southern-districts-from-november-19-101794822668805.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G1-D1",
-     "exam": "G1",
-     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Rainfall"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "10c20657d31d",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "20:44",
-   "title": "Cyclone Akvan may bring rains to Telangana between November 19 and 21",
-   "summary": "The impact may be observed from Thursday (November 19, 2026). Four district were placed under orange alert, indicating heavy to very heavy rainfall, on Friday (November 20, 2026)",
-   "facts": [],
-   "source": "The Hindu — Telangana",
-   "sourceId": "hindu-telangana",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/telangana/cyclone-akvan-may-bring-rains-to-telangana-between-november-19-and-21/article71707448.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G1-D1",
-     "exam": "G1",
-     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Rainfall"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "213e53064a18",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-17",
-   "time": "01:49",
-   "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
-   "summary": "The RMC, Chennai, has forecast that mainly dry weather is likely to prevail over the rest of the State during this time",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G1-D1",
-     "exam": "G1",
-     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
-    },
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Rainfall"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "cc180d9f285b",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "16:06",
-   "title": "India Post Releases Commemorative Postage Stamp Honouring Pioneer of Biogas Technology Shri Ram Bux Singh",
-   "summary": "The stamp was jointly released by Shri Ramdas Athawale, Minister of State for Social Justice and Empowerment , and Col. Akhilesh Kumar Pandey, Chief Postmaster General, Delhi Circle , along with other senior dignitaries, at the Minister's residence in New Delhi.",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "He later served for 16 years as Officer-in-Charge of Asia's first Gobar Gas Research Station at Ajitmal, Uttar Pradesh, and contributed to renewable energy initiatives in more than 15 countries."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Communications",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2336918&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-F21",
-     "exam": "G1",
-     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
-    },
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    },
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [
-    "Post",
-    "Social Justice"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 26,
-    "angles": 10,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 5
-   }
-  },
-  {
    "id": "69dd01dd54a2",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -5152,6 +5760,57 @@
    "topics": [],
    "angles": [
     "Rainfall"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "b3a1346b44aa",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "04:55",
+   "title": "Fishermen urged to join efforts to protect marine life",
+   "summary": "Animal Warriors Conservation Society (AWCS) conducted awareness meetings for fishermen in Pinnivaripalem and Gundamala villages of Kothapatnam mandal to curb ghost nets, protect sea turtles, and safeguard marine biodiversity and fish stocks.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/fishermen-urged-to-join-efforts-to-protect-marine-life-1142871",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    },
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Biodiversity"
    ],
    "score": 42,
    "band": "medium",
@@ -5305,6 +5964,57 @@
     "angles": 5,
     "ap": 20,
     "importance": 6,
+    "reuse": 2
+   }
+  },
+  {
+   "id": "4e3c9d22f8ad",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-17",
+   "time": "05:09",
+   "title": "AP Government to spend Rs75 cr on medicines, medical supplies",
+   "summary": "The Andhra Pradesh Health Department has approved the Rs 75 crore procurement of 31 varieties of essential medicines and 3.5 crore digital haemoglobin strips, with Health Minister Y Satya Kumar Yadav ordering strict adherence to tender rules.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The Andhra Pradesh Health Department has approved the Rs 75 crore procurement of 31 varieties of essential medicines and 3.5 crore digital haemoglobin strips, with Health Minister Y Satya Kumar Yadav ordering strict adherence to tender rules."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/ap-government-to-spend-rs75-cr-on-medicines-medical-supplies-1142881",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Health"
+   ],
+   "score": 35,
+   "band": "low",
+   "why": {
+    "syllabus": 6,
+    "angles": 5,
+    "ap": 20,
+    "importance": 2,
     "reuse": 2
    }
   },
