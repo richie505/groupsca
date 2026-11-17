@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-16",
- "updated": "2026-11-17T08:45:27.947Z",
+ "updated": "2026-11-17T16:59:36.662Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 684,
+   "found": 716,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 42,
+   "found": 46,
    "error": null
   },
   {
@@ -36,14 +36,14 @@
   {
    "id": "ie-india",
    "name": "Indian Express — India",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "ie-explained",
    "name": "Indian Express — Explained",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "toi-india",
@@ -96,8 +96,8 @@
   {
    "id": "ie-economy",
    "name": "Indian Express — Economy",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "mint-news",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 10,
    "error": null
   },
   {
@@ -168,26 +168,26 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 55,
+   "found": 58,
    "error": null
   },
   {
    "id": "sakshi",
    "name": "Sakshi",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 144,
+   "found": 148,
    "error": null
   },
   {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "hindu-telangana",
@@ -4630,6 +4630,64 @@
    }
   },
   {
+   "id": "bb1ac03afd71",
+   "date": "2026-11-16",
+   "pubDate": "2026-11-16",
+   "time": "18:05",
+   "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
+   "summary": "“This court is of the opinion that everything that is wrong with the civic administration in towns, cities and villages situated along the banks of the river is reflected in the poor health of the river and in the 520 drains that discharge wastewater into the Yamuna,” said SC",
+   "facts": [],
+   "source": "The Hindu — Science & Technology",
+   "sourceId": "hindu-scitech",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — Energy & Environment"
+   ],
+   "url": "https://www.thehindu.com/news/cities/Delhi/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court/article71707841.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Administration",
+    "Supreme court",
+    "Banks",
+    "Pollution",
+    "Health",
+    "SC"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "afc8f11264a5",
    "date": "2026-11-16",
    "pubDate": "2026-11-16",
@@ -5657,63 +5715,6 @@
    "topics": [],
    "angles": [
     "Remains"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "4fb3f2fa9c66",
-   "date": "2026-11-16",
-   "pubDate": "2026-11-16",
-   "time": "19:54",
-   "title": "Census 2027: Self-enumeration for 2nd phase starts in poll-bound Punjab, Goa, UP, parts of Uttarakhand",
-   "summary": "Residents can update their details on the official website se.census.gov.in -- by November 30 for population enumeration, the government said.",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/selfenumeration-for-2nd-phase-of-census-starts-in-poll-bound-punjab-goa-uttar-pradesh-parts-of-uttarakhand-101794837943125.html",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G1-D3",
-     "exam": "G1",
-     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Census"
    ],
    "score": 44,
    "band": "medium",
