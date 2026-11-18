@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-18",
- "updated": "2026-11-18T16:38:49.015Z",
+ "updated": "2026-11-18T21:05:32.928Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 770,
+   "found": 771,
    "error": null
   },
   {
@@ -36,14 +36,14 @@
   {
    "id": "ie-india",
    "name": "Indian Express — India",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "ie-explained",
    "name": "Indian Express — Explained",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "toi-india",
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 46,
+   "found": 44,
    "error": null
   },
   {
@@ -96,8 +96,8 @@
   {
    "id": "ie-economy",
    "name": "Indian Express — Economy",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "mint-news",
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 11,
+   "found": 9,
    "error": null
   },
   {
@@ -174,20 +174,20 @@
   {
    "id": "sakshi",
    "name": "Sakshi",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 10,
+   "error": null
   },
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 153,
+   "found": 101,
    "error": null
   },
   {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
-   "found": 0,
-   "error": "HTTP 403"
+   "found": 200,
+   "error": null
   },
   {
    "id": "hindu-telangana",
@@ -948,6 +948,59 @@
    }
   },
   {
+   "id": "30aa18f55f3b",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "23:27",
+   "title": "GVMC gears up for Cyclone Akvan; 11 control rooms, 55 rehabilitation centres readied",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/gvmc-gears-up-for-cyclone-akvan-11-control-rooms-55-rehabilitation-centres-readied/article71716748.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "rehabilitation"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "33382c8d8b3a",
    "date": "2026-11-18",
    "pubDate": "2026-11-18",
@@ -1419,6 +1472,104 @@
    }
   },
   {
+   "id": "e1873695a925",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "10:35",
+   "title": "Cyclone Akvan landfall over Andhra pushed to Friday afternoon, red alert in 6 districts",
+   "summary": "",
+   "facts": [],
+   "source": "Indian Express — India",
+   "sourceId": "ie-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://indianexpress.com/article/india/yclone-akvan-red-alert-andhra-pradesh-november-20-landfall-10967821/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ddb8f0891c5b",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "14:29",
+   "title": "Cyclone Akvan LIVE Tracker: Where is the storm now? Latest location, map, path and Andhra landfall forecast",
+   "summary": "",
+   "facts": [],
+   "source": "Indian Express — India",
+   "sourceId": "ie-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://indianexpress.com/article/india/cyclone-akvan-live-map-tracker-location-path-landfall-andhra-pradesh-vizag-imd-10968118/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "9cbfcae728c1",
    "date": "2026-11-18",
    "pubDate": "2026-11-18",
@@ -1484,6 +1635,55 @@
    }
   },
   {
+   "id": "44763e7e5603",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "17:06",
+   "title": "Cyclone Akvan shifts track, puts North Andhra-South Odisha on alert",
+   "summary": "",
+   "facts": [],
+   "source": "Indian Express — India",
+   "sourceId": "ie-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://indianexpress.com/article/india/cyclone-akvan-odisha-landslide-evacuation-preparations-10968463/",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "b31e85a91472",
    "date": "2026-11-18",
    "pubDate": "2026-11-18",
@@ -1497,6 +1697,55 @@
    "ministry": "",
    "alsoIn": [],
    "url": "https://www.thehansindia.com/andhra-pradesh/cyclone-akvan-strengthens-gradually-ap-to-receive-heavy-rains-1143228",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "6cfc1973f604",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "23:22",
+   "title": "Cyclone Akvan: APEPDCL readies 703 teams, drones for power restoration",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Visakhapatnam",
+   "sourceId": "hindu-vizag",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/Visakhapatnam/cyclone-akvan-apepdcl-readies-703-teams-drones-for-power-restoration/article71716441.ece",
    "bucket": "ap",
    "scope": "national",
    "ap": true,
@@ -2161,6 +2410,91 @@
     "ap": 0,
     "importance": 7,
     "reuse": 15
+   }
+  },
+  {
+   "id": "1c3fc4b1fa18",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "23:15",
+   "title": "Union Minister Shri Nitin Gadkari highlights role of app-based platforms in employment generation and inclusive mobility",
+   "summary": "Calls upon States to adopt Motor Vehicle Aggregator Guidelines, 2025 to strengthen driver welfare and passenger services 18 NOV 2026 11:15PM by PIB Delhi Union Minister for Road Transport and Highways, Shri Nitin Gadkari, today addressed the gathering at ‘RIDE – MOVING INDIA FORWARD’ at Bharat Mandapam, New Delhi.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Organised in collaboration with Uber, Ola, Rapido, Bharat Taxi, Zomato, Swiggy and Porter, the programme brought together industry representatives, drivers, gig workers and beneficiaries to highlight the contribution of app-based platforms to employment generation, mobility services and livelihoo…"
+    },
+    {
+     "angle": "Figures",
+     "text": "Singh, outlined key provisions of the Motor Vehicle Aggregator Guidelines, 2025, revised following consultations with State Governments, aggregators and other stakeholders."
+    },
+    {
+     "angle": "Figures",
+     "text": "These include a minimum 80 per cent share of the applicable fare for drivers using their own vehicles, health insurance coverage of ₹5 lakh and term insurance of at least ₹10 lakh."
+    },
+    {
+     "angle": "Figures",
+     "text": "Other provisions include permitting drivers to work across multiple aggregator platforms, 40 hours of induction training and appointment of a 24x7 grievance officer through the aggregator's call centre to address complaints from drivers and passengers."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Ministry of Road Transport & Highways",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2338236&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G2-M2B-U3",
+     "exam": "G2",
+     "label": "Ecosystem and Biodiversity - Basic Concepts of Ecology, Components and Types of Ecosystems, Biodiversity and Hotspots, Loss and Conservation, CITES and Endangered Species, Biosphere Reserves, Indian Wildlife Conservation"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Union Minister",
+    "Services",
+    "Industry",
+    "States",
+    "Highways"
+   ],
+   "score": 56,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 20,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 5
    }
   },
   {
@@ -2924,6 +3258,63 @@
     "ap": 0,
     "importance": 11,
     "reuse": 5
+   }
+  },
+  {
+   "id": "2e29d9326dc1",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "22:53",
+   "title": "Bihar Legislative Council Secretariat rejects petitions seeking disqualification of two Independent MLCs",
+   "summary": "The Opposition has earlier demanded that both be disqualified under the anti-defection law as they “joined” the ruling Bharatiya Janata Party (BJP) after winning.",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/bihar/bihar-legislative-council-secretariat-rejects-petitions-seeking-disqualification-of-two-independent-mlcs/article71716156.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U9",
+     "exam": "G2",
+     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
+    },
+    {
+     "code": "G1-B2",
+     "exam": "G1",
+     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Legislative council",
+    "Anti-defection law"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -4298,6 +4689,57 @@
    }
   },
   {
+   "id": "6b5f5fb3c216",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-18",
+   "time": "23:39",
+   "title": "32.8 Lakh Of 33 Lakh SIR Notices Issued In Delhi Cleared By Election Commission",
+   "summary": "The list includes Chief Minister Rekha Gupta and External Affairs Minister S Jaishankar, former Delhi Chief Minister Arvind Kejriwal, MP Bansuri Swaraj, former Delhi BJP chief Virendra Kumar Sachdeva, senior BJP leader LK Advani, and former Deputy Chief Minister Manish Sisodia.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/32-8-lakh-of-33-lakh-sir-notices-issued-in-delhi-cleared-by-election-commission-12346165#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Election Commission"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "fa8cbc80d774",
    "date": "2026-11-18",
    "pubDate": "2026-11-18",
@@ -4730,201 +5172,6 @@
     "ap": 0,
     "importance": 0,
     "reuse": 5
-   }
-  },
-  {
-   "id": "ac5a35c847e9",
-   "date": "2026-11-18",
-   "pubDate": "2026-11-18",
-   "time": "16:43",
-   "title": "Public Sector Banks (PSBs) continue strong financial performance in first half of FY2026-27",
-   "summary": "It shows that PSBs are not only making profit but also meeting the requirements of credit supply need with improved underwriting capabilities, aided by technology and higher governance standards. PSBs’ aggregate net profit reached ₹1.10 lakh crore with 16.9% y-o-y growth and aggregate operating profit reached ₹1.81 lakh crore with 13.9% y-o-y growth.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "PSBs’ aggregate net profit reached ₹1.10 lakh crore with 16.9% y-o-y growth and aggregate operating profit reached ₹1.81 lakh crore with 13.9% y-o-y growth."
-    },
-    {
-     "angle": "Firsts / records",
-     "text": "Aggregate business of PSBs grew by 15.5% y-o-y to ₹301.6 lakh crore as on 30.9.2026, crossing the ₹300 lakh crore business mark for the first time."
-    },
-    {
-     "angle": "Figures",
-     "text": "While aggregate deposits grew by 13.1% y-o-y to reach ₹275 lakh crore , the aggregate advances grew at 18.8% y-o-y to reach ₹136.4 lakh crore ."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Finance",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2337946&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Polity, Society & IR",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    },
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Banks",
-    "Agriculture"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 10,
-    "ap": 0,
-    "importance": 5,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "87dede2f363e",
-   "date": "2026-11-18",
-   "pubDate": "2026-11-18",
-   "time": "18:15",
-   "title": "Strengthening Educational Opportunities for OBC Girls through Dedicated Hostel Infrastructure",
-   "summary": "Access to safe and affordable residential facilities plays a significant role in promoting higher education among young women, particularly those belonging to socially and economically disadvantaged communities and residing in distant and rural areas. Initiated during the financial year 2024–25, the hostel project envisages a dedicated residential facility with a planned capacity of 200 seats.",
-   "facts": [],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Social Justice & Empowerment",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2338065&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy",
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    },
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G1-B2",
-     "exam": "G1",
-     "label": "Functions and Responsibilities of the Union and States; Parliament and State Legislatures; Federal Structure, Devolution of Powers and Finances up to Local Levels"
-    },
-    {
-     "code": "G1-C1",
-     "exam": "G1",
-     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [
-    "Community",
-    "Social Justice"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 26,
-    "angles": 10,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "54db0d343582",
-   "date": "2026-11-18",
-   "pubDate": "2026-11-18",
-   "time": "19:57",
-   "title": "Tata Steel plans hydrogen facility at Kalinganagar to cut carbon emissions",
-   "summary": "Tata Steel has partnered with Utility Global to study a 10-tonne-per-day hydrogen facility using steel plant gases, aiming to reduce emissions without major infrastructure changes",
-   "facts": [],
-   "source": "Business Standard",
-   "sourceId": "bs-top",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.business-standard.com/companies/news/tata-steel-plans-hydrogen-facility-at-kalinganagar-to-cut-carbon-emissions-126111800997_1.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-F22",
-     "exam": "G1",
-     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
-    },
-    {
-     "code": "G2-M2B-U5",
-     "exam": "G2",
-     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Hydrogen"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
    }
   },
   {
