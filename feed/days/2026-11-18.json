@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-11-18",
- "updated": "2026-11-18T21:05:32.928Z",
+ "updated": "2026-11-18T23:44:56.373Z",
  "sources": [
   {
    "id": "pib",
@@ -36,14 +36,14 @@
   {
    "id": "ie-india",
    "name": "Indian Express — India",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "ie-explained",
    "name": "Indian Express — Explained",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "toi-india",
@@ -96,8 +96,8 @@
   {
    "id": "ie-economy",
    "name": "Indian Express — Economy",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "mint-news",
@@ -168,26 +168,26 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 55,
+   "found": 36,
    "error": null
   },
   {
    "id": "sakshi",
    "name": "Sakshi",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 101,
+   "found": 124,
    "error": null
   },
   {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "hindu-telangana",
@@ -517,6 +517,58 @@
     "angles": 20,
     "ap": 0,
     "importance": 11,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d898a0838f85",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-19",
+   "time": "05:06",
+   "title": "Anakapalli administration intensifies cyclone preparedness measures",
+   "summary": "Anakapalli district administration is on high alert and has taken all necessary precautionary measures for public safety Officials directed to identify vulnerable areas, establish adequate rehabilitation centres and shift people to safer locations whenever required",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/anakapalli-administration-intensifies-cyclone-preparedness-measures-1143452",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Administration",
+    "rehabilitation"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -3261,6 +3313,56 @@
    }
   },
   {
+   "id": "03a5c68531bc",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-19",
+   "time": "04:42",
+   "title": "Amaravati Balotsavam from Dec 4 to 6",
+   "summary": "A World Without Wars – A Childhood Without Fear is this year’s theme A committee comprising 19 office-bearers, four chief patrons and 27 honorary advisers have been constituted to organise the event School headmasters and principals interested in registering their students told to fill in the entry forms and submit them on or before Nov 30",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "A World Without Wars – A Childhood Without Fear is this year’s theme A committee comprising 19 office-bearers, four chief patrons and 27 honorary advisers have been constituted to organise the event School headmasters and principals interested in registering their students told to fill in the ent…"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/vijayawada/amaravati-balotsavam-from-dec-4-to-6-1143442",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region"
+   ],
+   "angles": [],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "2e29d9326dc1",
    "date": "2026-11-18",
    "pubDate": "2026-11-18",
@@ -5008,6 +5110,60 @@
    }
   },
   {
+   "id": "32a231a2a097",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-19",
+   "time": "04:56",
+   "title": "Japanese NEDO delegation visits SRM-AP",
+   "summary": "A delegation from Japan’s New Energy and Industrial Technology Development Organisation (NEDO) visited SRM University-AP in Amaravati to discuss joint research in quantum computing, quantum communications, and emerging technologies.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/japanese-nedo-delegation-visits-srm-ap-1143447",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region"
+   ],
+   "angles": [
+    "University"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 14,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "3c7de304f7e5",
    "date": "2026-11-18",
    "pubDate": "2026-11-18",
@@ -5048,6 +5204,63 @@
    "topics": [],
    "angles": [
     "Reports"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "9271fe64757c",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-19",
+   "time": "00:50",
+   "title": "Minister’s remarks hint at further delays in ECR 4-lane corridor project",
+   "summary": "Aadhav Arjuna had said the project had been referred to a high-level committee and would be cancelled since the tender was allotted even before the land acquisition was completed; project is needed to ease traffic congestion on crucial stretch",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/cities/chennai/ministers-remarks-hint-at-further-delays-in-ecr-4-lane-corridor-project/article71713084.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Acquisition"
    ],
    "score": 44,
    "band": "medium",
@@ -5125,53 +5338,51 @@
    }
   },
   {
-   "id": "2d42c034fb99",
+   "id": "4d2b1e5f21b4",
    "date": "2026-11-18",
-   "pubDate": "2026-11-18",
-   "time": "12:02",
-   "title": "Pallikaranai marsh construction ban: Madras HC asks litigants to approach Supreme Court for interim relief",
-   "summary": "Chief Justice Sushrut Arvind Dharmadhikari and Justice G. Arul Murugan dispose of a batch of cases, including the one filed by CREDAI-Chennai, with liberty to the petitioners to move the top court",
+   "pubDate": "2026-11-19",
+   "time": "04:35",
+   "title": "Canara Bank loan mela on Nov 21",
+   "summary": "Canara Bank’s Kakinada Regional Office is organizing a Customer Outreach Programme and Loan Mela on November 21 to showcase loan facilities, government welfare schemes, and digital banking services as the bank marks 120 years in 2026.",
    "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
    "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/tamil-nadu/pallikaranai-marsh-construction-ban-madras-hc-asks-litigants-to-approach-supreme-court-for-interim-relief/article71714706.ece",
-   "bucket": "national",
+   "url": "https://www.thehansindia.com/news/cities/kakinada/canara-bank-loan-mela-on-nov-21-1143440",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
-    "G1",
     "G2"
    ],
    "subject": "Polity, Society & IR",
    "subjects": [
-    "Polity, Society & IR"
+    "Polity, Society & IR",
+    "Economy"
    ],
    "units": [
     {
-     "code": "G2-M1B-U7",
+     "code": "G2-S3",
      "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+     "label": "Screening S3. Indian Society"
     }
    ],
-   "topics": [
-    "Supreme Court and judicial review"
-   ],
+   "topics": [],
    "angles": [
-    "Construction",
-    "Chief Justice",
-    "Supreme court"
+    "Years",
+    "Services",
+    "Schemes"
    ],
-   "score": 44,
+   "score": 43,
    "band": "medium",
    "why": {
-    "syllabus": 24,
+    "syllabus": 6,
     "angles": 15,
-    "ap": 0,
+    "ap": 20,
     "importance": 0,
-    "reuse": 5
+    "reuse": 2
    }
   },
   {
@@ -5228,6 +5439,52 @@
    }
   },
   {
+   "id": "f912297ab163",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-19",
+   "time": "05:04",
+   "title": "VCSC and CII-IWN ink pact to make workplaces safer for women",
+   "summary": "VCSC Director G Sambasiva Rao and IWN AP Chairwoman Pantula Usha signed the pact in the presence of Police Commissioner Shankhabrata Bagchi The partnership aims to strengthen internal committees and promote safe, inclusive workplaces under the PoSH Act",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "VCSC Director G Sambasiva Rao and IWN AP Chairwoman Pantula Usha signed the pact in the presence of Police Commissioner Shankhabrata Bagchi The partnership aims to strengthen internal committees and promote safe, inclusive workplaces under the PoSH Act"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/visakhapatnam/vcsc-and-cii-iwn-ink-pact-to-make-workplaces-safer-for-women-1143451",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Pact",
+    "POSH Act"
+   ],
+   "score": 40,
+   "band": "medium",
+   "why": {
+    "syllabus": 4,
+    "angles": 10,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 0
+   }
+  },
+  {
    "id": "712962156e62",
    "date": "2026-11-18",
    "pubDate": "2026-11-18",
@@ -5266,6 +5523,49 @@
     "ap": 20,
     "importance": 0,
     "reuse": 0
+   }
+  },
+  {
+   "id": "ea761a8a2dc3",
+   "date": "2026-11-18",
+   "pubDate": "2026-11-19",
+   "time": "05:12",
+   "title": "Tap water supply to rural households by June 2027",
+   "summary": "Annamayya Collector Nishant Kumar inspects Veligallu water grid project works",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/tap-water-supply-to-rural-households-by-june-2027-1143455",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 37,
+   "band": "low",
+   "why": {
+    "syllabus": 12,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
    }
   },
   {
