@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-20",
- "updated": "2026-11-20T16:17:29.071Z",
+ "updated": "2026-11-20T20:55:08.057Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 906,
+   "found": 909,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 45,
+   "found": 43,
    "error": null
   },
   {
@@ -48,7 +48,7 @@
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 18,
+   "found": 19,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 8,
+   "found": 5,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 166,
+   "found": 111,
    "error": null
   },
   {
@@ -209,6 +209,76 @@
   }
  ],
  "items": [
+  {
+   "id": "a6dc43e76e43",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "02:05",
+   "title": "SEBI to establish office in Amaravati",
+   "summary": "The lease agreement for setting up the SEBI office was completed on Friday",
+   "facts": [
+    {
+     "angle": "Agreement / MoU",
+     "text": "The lease agreement for setting up the SEBI office was completed on Friday"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/sebi-to-establish-office-in-amaravati-1144133",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B4",
+     "exam": "G1",
+     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
+    },
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region"
+   ],
+   "angles": [
+    "Agreement",
+    "SEBI"
+   ],
+   "score": 79,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 15
+   }
+  },
   {
    "id": "f67e22496edb",
    "date": "2026-11-20",
@@ -561,6 +631,65 @@
    }
   },
   {
+   "id": "d2bbdcc6afdd",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "01:54",
+   "title": "Citizens can declare ‘No Caste, No Religion’ in Census",
+   "summary": "Speaking at a meeting held at the Atheist Centre here on Friday, Dr Ramesh explained that the 2027 Census would be conducted in two phases.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/citizens-can-declare-no-caste-no-religion-in-census-1144126",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy",
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-D3",
+     "exam": "G1",
+     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Caste",
+    "Census"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "d4236ffed6d4",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -771,6 +900,119 @@
    }
   },
   {
+   "id": "b88f585768bd",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "00:26",
+   "title": "Ensure no household is left out in Census enumeration, officials told",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National",
+    "The Hindu — Visakhapatnam"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/ensure-no-household-is-left-out-in-census-enumeration-officials-told/article71725611.ece",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C2",
+     "exam": "G1",
+     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
+    },
+    {
+     "code": "G1-D3",
+     "exam": "G1",
+     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Census"
+   ],
+   "score": 67,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ce231c9da50c",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "time": "23:53",
+   "title": "Chairpersons elected unopposed to Zilla Parishads in three districts",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Andhra Pradesh",
+   "sourceId": "hindu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "The Hindu — National"
+   ],
+   "url": "https://www.thehindu.com/news/national/andhra-pradesh/chairpersons-elected-unopposed-to-zilla-parishads-in-three-districts/article71725467.ece",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "787b74a86974",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -868,6 +1110,63 @@
    "topics": [],
    "angles": [
     "Services"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "dd7c465e3640",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "02:13",
+   "title": "AP, Iceland firm sign pact to develop Bhimavaram aqua cluster",
+   "summary": "Focus on advanced processing, marine biotechnology and value addition in seafood sector",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/ap-iceland-firm-sign-pact-to-develop-bhimavaram-aqua-cluster-1144137",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Pact"
    ],
    "score": 64,
    "band": "high",
@@ -1823,6 +2122,67 @@
    }
   },
   {
+   "id": "29183d995d00",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "00:36",
+   "title": "Cyclones inflict Rs 1,092 cr damage on AP horticulture",
+   "summary": "Naidu seeks additional Rs 96 cr aid",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/cyclones-inflict-rs-1092-cr-damage-on-ap-horticulture-1144110",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "280306246373",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -2342,6 +2702,67 @@
    }
   },
   {
+   "id": "4db10e0f88e3",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "00:21",
+   "title": "Madras High Court Asks Why Airport Project Dropped After Rs 680 Crore Expense",
+   "summary": "The court questioned the rationale behind abandoning a project for which approvals had already been obtained and land acquisition had substantially progressed.",
+   "facts": [],
+   "source": "NDTV — India",
+   "sourceId": "ndtv-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.ndtv.com/india-news/madras-high-court-questions-why-airport-project-abandoned-after-big-expense-12356363#publisher=newsstand",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court",
+    "Acquisition"
+   ],
+   "score": 57,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   }
+  },
+  {
    "id": "ac4abf217ec1",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -2547,6 +2968,70 @@
    }
   },
   {
+   "id": "798c14cdd561",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "title": "Punjab inaugurates ₹26.73-crore canal-irrigation projects for 42 Ghanaur villages",
+   "summary": "Punjab inaugurated canal-irrigation projects worth ₹26.73 crore at Kolhemajra village in Ghanaur constituency, Patiala district, on 29 July 2026.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Punjab inaugurated canal-irrigation projects worth ₹26.73 crore at Kolhemajra village in Ghanaur constituency, Patiala district, on 29 July 2026."
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/punjab-inaugurates-%e2%82%b926-73-crore-canal-irrigation-projects-for-42-ghanaur-villages/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Canal",
+    "Irrigation",
+    "Irrigation Project"
+   ],
+   "score": 56,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
    "id": "06d5b03db98a",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -2667,6 +3152,66 @@
    }
   },
   {
+   "id": "70f6c99f1733",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "title": "Supreme Court dismisses petitions challenging Telangana Group-I recruitment",
+   "summary": "On April 2, 2026, the Supreme Court dismissed petitions challenging the Telangana Public Service Commission’s recruitment to 563 Group-I posts.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/supreme-court-dismisses-petitions-challenging-telangana-group-i-recruitment/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [
+    "APPSC and State recruitment",
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Post",
+    "Supreme court"
+   ],
+   "score": 55,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
    "id": "76a030470b0f",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -2745,6 +3290,65 @@
     "importance": 11,
     "reuse": 5
    }
+  },
+  {
+   "id": "c90500abf289",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "title": "Canal irrigation projects inaugurated in Punjab’s Shutrana constituency",
+   "summary": "Punjab Water Resources Minister Barinder Kumar Goyal inaugurated canal-irrigation projects at Boota Singh Wala and Badshahpur in Shutrana constituency on 30 July 2026.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/canal-irrigation-projects-inaugurated-in-punjabs-shutrana-constituency/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Canal",
+    "Irrigation",
+    "Irrigation Project"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   },
+   "digest": true
   },
   {
    "id": "c4b4c2b444f7",
@@ -2869,6 +3473,60 @@
     "angles": 10,
     "ap": 0,
     "importance": 3,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "2cd51a625fca",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "time": "23:10",
+   "title": "India allows cut flower imports through Amritsar airport and Kandla seaport",
+   "summary": "The Directorate General of Foreign Trade has revised the permitted entry points, subjecting imports to existing sanitary and phytosanitary requirements.",
+   "facts": [],
+   "source": "BusinessLine — Economy",
+   "sourceId": "bl-economy",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindubusinessline.com/economy/agri-business/india-allows-cut-flower-imports-through-amritsar-airport-and-kandla-seaport/article71725882.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "trade",
+    "Import",
+    "Imports"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
     "reuse": 15
    }
   },
@@ -3118,6 +3776,58 @@
     "importance": 9,
     "reuse": 5
    }
+  },
+  {
+   "id": "808f64546a63",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "title": "Punjab extends OTS-2025 deadline for pre-GST tax dues to 30 September",
+   "summary": "Punjab announced on 31 July 2026 that it had extended the deadline for its One-Time Settlement Scheme (OTS-2025) for pre-GST tax dues from 31 July to 30 September 2026.",
+   "facts": [],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/punjab-extends-ots-2025-deadline-for-pre-gst-tax-dues-to-30-september/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C4",
+     "exam": "G1",
+     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Settlement",
+    "GST"
+   ],
+   "score": 53,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 15
+   },
+   "digest": true
   },
   {
    "id": "38ff6a97ea8e",
@@ -3435,6 +4145,88 @@
    }
   },
   {
+   "id": "d58f1c0f450c",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "time": "20:09",
+   "title": "English rendering of PMs address at the inauguration of First Shanghai Cooperation Organisation (SCO) Civilisational Dialogue Forum in Delhi",
+   "summary": "This is the first SCO Civilizational Dialogue Forum. I welcome all the guests who have come to India and extend my greetings to all of you. At a time when discussions around the world are dominated by war and unrest, we are holding a dialogue in India on civilizational connections. This is especially important because cultural connection is the strongest guarantee of global peace.",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "This is the first SCO Civilizational Dialogue Forum."
+    },
+    {
+     "angle": "Figures",
+     "text": "Over the years, the SCO has significantly expanded cooperation in security, economy, and connectivity."
+    },
+    {
+     "angle": "Figures",
+     "text": "According to scholars, the history of this fort goes back thousands of years to the era of the Mahabharata."
+    },
+    {
+     "angle": "Summit / exercise",
+     "text": "This is also the purpose of this summit, and it is also the need of the present time."
+    }
+   ],
+   "source": "PIB",
+   "sourceId": "pib",
+   "official": true,
+   "ministry": "Prime Minister's Office",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2339303&reg=3&lang=1",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "History & Culture",
+   "subjects": [
+    "History & Culture",
+    "Polity, Society & IR",
+    "Geography",
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-B6",
+     "exam": "G1",
+     "label": "India's Foreign Policy and International Relations; Important Institutions, Agencies and Fora; Important Policies and Programmes of Central and State Governments"
+    },
+    {
+     "code": "G1-A1",
+     "exam": "G1",
+     "label": "Indus Valley Civilization, Vedic Age, Mahajanapadas, Jainism & Buddhism, Magadha, Mauryas, Foreign Invasions, Kushanas, Satavahanas, Sangam Age, Sungas, Gupta Empire"
+    },
+    {
+     "code": "G2-S1",
+     "exam": "G2",
+     "label": "Screening S1. Indian History"
+    },
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Ambassador"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 0,
+    "importance": 7,
+    "reuse": 15
+   }
+  },
+  {
    "id": "55bd52d43df4",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -3483,6 +4275,122 @@
     "ap": 0,
     "importance": 12,
     "reuse": 5
+   }
+  },
+  {
+   "id": "f0656d0e1473",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "title": "Punjab ministers inaugurate ₹70.52-crore irrigation projects in Khanna",
+   "summary": "Punjab Cabinet Ministers Barinder Kumar Goyal and Tarunpreet Singh Sond inaugurated irrigation projects worth ₹70.52 crore at Bhattian village in the Khanna constituency",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Punjab Cabinet Ministers Barinder Kumar Goyal and Tarunpreet Singh Sond inaugurated irrigation projects worth ₹70.52 crore at Bhattian village in the Khanna constituency"
+    }
+   ],
+   "source": "GKToday",
+   "sourceId": "gktoday",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.gktoday.in/punjab-ministers-inaugurate-%e2%82%b970-52-crore-irrigation-projects-in-khanna/",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Irrigation",
+    "Irrigation Project"
+   ],
+   "score": 51,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 2,
+    "reuse": 15
+   },
+   "digest": true
+  },
+  {
+   "id": "b2b5c334f722",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "time": "23:41",
+   "title": "Kerala High Court issues interim order permitting conduct of Mayilpeeli scholarship examination",
+   "summary": "Court orders that results should not be declared without its approval",
+   "facts": [],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/kerala/kerala-high-court-issues-interim-order-permitting-conduct-of-mayilpeeli-scholarship-examination/article71725153.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "High Court"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 30,
+    "angles": 5,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -3540,6 +4448,120 @@
     "reuse": 15
    },
    "digest": true
+  },
+  {
+   "id": "69ab330fd225",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "00:57",
+   "title": "Suneetha Raj elected Kakinada ZP chairperson",
+   "summary": "The election was conducted at a special meeting held at the Zilla Parishad office in Kakinada as per the directions of the State Election Commission.",
+   "facts": [],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/kakinada/suneetha-raj-elected-kakinada-zp-chairperson-1144122",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    },
+    {
+     "code": "G2-M1B-U10",
+     "exam": "G2",
+     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
+    }
+   ],
+   "topics": [
+    "AP Panchayati Raj and local bodies"
+   ],
+   "angles": [
+    "Election Commission"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 20,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
+   "id": "fc858918dbf5",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "time": "23:27",
+   "title": "Supreme Court allows lighting of lamp on deepathoon at Thirupparankundram as limited one-time arrangement",
+   "summary": "A Bench headed by Justice Aravind Kumar, however, stayed the conclusive findings of the Madras High Court in a January 6 judgment that upheld the right to light the lamp on the deepathoon as an essential practice",
+   "facts": [
+    {
+     "angle": "Judgment",
+     "text": "A Bench headed by Justice Aravind Kumar, however, stayed the conclusive findings of the Madras High Court in a January 6 judgment that upheld the right to light the lamp on the deepathoon as an essential practice"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/supreme-court-allows-lighting-of-lamp-on-the-deepathoon-as-a-limited-one-time-arrangement/article71723742.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review",
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Findings",
+    "Supreme court",
+    "High Court"
+   ],
+   "score": 50,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 5
+   }
   },
   {
    "id": "bbc1c127541d",
@@ -3604,6 +4626,64 @@
     "ap": 0,
     "importance": 7,
     "reuse": 5
+   }
+  },
+  {
+   "id": "53a4f9322d00",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "time": "23:51",
+   "title": "Cyclone ‘Akvan’ crosses Odisha coast, no damage reported",
+   "summary": "Ganjam district and its adjoining areas receive heavy rainfall, with Patrapur (209 mm) recording the highest; several districts of West Bengal are battered by rain and flight and train services affected",
+   "facts": [
+    {
+     "angle": "Firsts / records",
+     "text": "Ganjam district and its adjoining areas receive heavy rainfall, with Patrapur (209 mm) recording the highest; several districts of West Bengal are battered by rain and flight and train services affected"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/cyclone-akvan-odisha-andhra-pradesh-landfall-imd-updates/article71722866.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    },
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services",
+    "Rainfall"
+   ],
+   "score": 49,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -3824,6 +4904,63 @@
     "ap": 0,
     "importance": 0,
     "reuse": 15
+   }
+  },
+  {
+   "id": "66e447efbd56",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-20",
+   "time": "23:56",
+   "title": "CREDAI Chennai to move Supreme Court against 1km construction restriction around Pallikaranai marshland",
+   "summary": "The real estate body has expressed deep disappointment over the order passed by the Madras High Court on the Pallikaranai Ramsar issue",
+   "facts": [
+    {
+     "angle": "GI tag / designation",
+     "text": "The real estate body has expressed deep disappointment over the order passed by the Madras High Court on the Pallikaranai Ramsar issue"
+    }
+   ],
+   "source": "The Hindu — National",
+   "sourceId": "hindu-national",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/news/national/tamil-nadu/credai-chennai-to-move-supreme-court-against-1km-construction-restriction-around-pallikaranai-marshland/article71725229.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review",
+    "High Courts and judicial infrastructure"
+   ],
+   "angles": [
+    "Construction",
+    "Supreme court",
+    "High Court"
+   ],
+   "score": 48,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 4,
+    "reuse": 5
    }
   },
   {
@@ -4465,647 +5602,6 @@
    }
   },
   {
-   "id": "455924b73dad",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "11:40",
-   "title": "Bengal rain today: Yellow alert in multiple districts; Cyclone Akvan brings heavy showers, when will weather improve?",
-   "summary": "Cyclone Akvan is expected to bring heavy rain and strong winds to Kolkata on Friday, with an IMD yellow watch in effect. Waterlogging is possible while nearby districts face warnings of very heavy rainfall.&nbsp;",
-   "facts": [],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/india/bengal-rain-today-yellow-alert-in-multiple-districts-cyclone-akvan-brings-heavy-showers-when-will-weather-improve-11795154631511.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G1-D1",
-     "exam": "G1",
-     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Rainfall"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "ce2ccb8ab77e",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "07:38",
-   "title": "California Attorney General subpoenas Nvidia over chips, former CEO’s affair",
-   "summary": "The California Department of Justice said it is asking Nvidia whether its advanced chips or confidential information may have gone to China and whether Nvidia misled investors and the public",
-   "facts": [],
-   "source": "The Hindu — International",
-   "sourceId": "hindu-international",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/international/california-attorney-general-subpoenas-nvidia-over-chips-former-ceos-affair/article71722914.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U8",
-     "exam": "G2",
-     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Attorney General"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "e0e99f5acb0f",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "15:28",
-   "title": "Chhattisgarh landslide collapses NMDC mining waste dump, disrupts Lava village road",
-   "summary": "There was no loss of life in the incident, which occurred on Wednesday in the Bailadila hills near the mining town of Kirandul in Dantewada district",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/chhattisgarh-landslide-collapses-nmdc-mining-waste-dump-disrupts-lava-village-road-101795168707187.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Hills"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "25fedb09e958",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "10:27",
-   "title": "Cyclone Akvan: 45 trains cancelled, 28 rescheduled; Air India, IndiGo issue advisories - check affected routes",
-   "summary": "Cyclone Akvan's landfall near Odisha's Gopalpur has disrupted rail and air services. East Coast Railway has cancelled 45 trains and rescheduled 28, while Air India and IndiGo have issued flight advisories for affected routes.",
-   "facts": [],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/india/cyclone-akvan-45-trains-cancelled-28-rescheduled-air-india-indigo-issue-advisories-check-affected-routes-11795148322555.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-D1",
-     "exam": "G1",
-     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Services"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "63644b2173bb",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "10:44",
-   "title": "Cyclone Akvan: Light rain in parts of Jharkhand; primary classes suspended in some districts",
-   "summary": "East Singhbhum and Saraikela-Kharswan district administrations have ordered schools to suspend primary classes on Friday (November 20, 2026) in view of the cyclone",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/jharkhand/cyclone-akvan-light-rain-in-parts-of-jharkhand-primary-classes-suspended-in-some-districts/article71723164.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D1",
-     "exam": "G1",
-     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Administration"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "e9b7bbce069c",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "11:25",
-   "title": "Gap in counting Indians left epistemic void: ex-Registrar General, Census Commissioner Chandramouli",
-   "summary": "Chandramouli warns that a single identity authority could become an “overly powerful data-holder”, raising concerns",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/gap-in-counting-indians-left-epistemic-void-ex-registrar-general-census-commissioner-chandramouli-101795154123888.html",
-   "bucket": "dynamic",
-   "scope": "dynamic",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C2",
-     "exam": "G1",
-     "label": "National Income and its Concepts; India's National Accounts; Demographic Issues; Poverty and Inequalities; Occupational Structure and Unemployment; Employment and Poverty Eradication Schemes; Rural and Urban Development"
-    },
-    {
-     "code": "G1-D3",
-     "exam": "G1",
-     "label": "Social Geography of the World, India and Andhra Pradesh - Distribution, Density, Growth, Sex Ratio, Literacy, Occupational Structure, SC/ST Population, Rural-Urban Components, Racial/Tribal/Religious/Linguistic Groups, Urbanisation, Migration and Metropolitan Regions"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Census"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "1009bfd447a6",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "06:00",
-   "title": "Govt empanels independent auditors to strengthen highway safety checks",
-   "summary": "Under the initiative, the ministry of road transport and highways (MoRTH) will empanel a pool of qualified road safety auditors from which highway developers and concessionaires will have to select professionals to assess their projects.",
-   "facts": [],
-   "source": "Mint — News",
-   "sourceId": "mint-news",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.livemint.com/news/india/morth-independent-road-safety-auditors-empanels-highway-safety-checks-highway-developers-concessionaires-assess-project-11795081136534.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D4",
-     "exam": "G1",
-     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Highways"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "590e148b98d9",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "10:33",
-   "title": "India, Netherlands upgrade ties; sign 17 MoUs on water, renewable energy, and semiconductors",
-   "summary": "MEA pushes back on Dutch concerns over press freedom and minority rights in India. PM Jetten raises child abduction case with PM Modi. Agreements signed include a semiconductor fabrication project between TATA Electronics and Dutch company ASML",
-   "facts": [
-    {
-     "angle": "Agreement / MoU",
-     "text": "Agreements signed include a semiconductor fabrication project between TATA Electronics and Dutch company ASML"
-    }
-   ],
-   "source": "The Hindu — International",
-   "sourceId": "hindu-international",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/india-netherlands-elevating-ties-to-strategic-partnership-says-pm-modi/article70988590.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G1-F19",
-     "exam": "G1",
-     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
-    },
-    {
-     "code": "G2-M2B-U1",
-     "exam": "G2",
-     "label": "Technology Missions, Policies and Applications - National S&T Policy"
-    },
-    {
-     "code": "G1-F21",
-     "exam": "G1",
-     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
-    },
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Agreement"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "cb1653934591",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "12:27",
-   "title": "India's wheat area set for biggest drop in 26 years as farmers switch crops",
-   "summary": "Weak monsoon and El Niño spur shift to chickpeas, rapeseed; planting down 15.3% so far",
-   "facts": [],
-   "source": "BusinessLine — Economy",
-   "sourceId": "bl-economy",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindubusinessline.com/economy/agri-business/indias-wheat-area-set-for-biggest-drop-in-26-years-as-farmers-switch-crops/article71723372.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy",
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G2-M2A-U3",
-     "exam": "G2",
-     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
-    },
-    {
-     "code": "G1-C3",
-     "exam": "G1",
-     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Years"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "d8a9b2424910",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "21:40",
-   "title": "IRDAI imposes ₹2 cr penalty on Star Health",
-   "summary": "The insurer is advised to ensure all policies are serviced as per the terms and conditions of the policy documents and no arbitrary deductions/denial are made to the claim without proper justification, IRDAI said.",
-   "facts": [],
-   "source": "The Hindu — Business",
-   "sourceId": "hindu-business",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/business/Industry/irdai-imposes-2-cr-penalty-on-star-health/article71725657.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-B4",
-     "exam": "G1",
-     "label": "Impact of Liberalization, Privatization and Globalization on Governance; Statutory, Regulatory and Quasi-Judicial Bodies"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Health"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "ad2c904b7f21",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "12:25",
-   "title": "Jal Shakti ministry launches campaign to improve community, institutional toilets",
-   "summary": "Jal Shakti ministry launches campaign to improve community, institutional toilets",
-   "facts": [
-    {
-     "angle": "Scheme / launch",
-     "text": "Jal Shakti ministry launches campaign to improve community, institutional toilets"
-    }
-   ],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/jal-shakti-ministry-launches-campaign-to-improve-community-institutional-toilets-101795157733044.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D2",
-     "exam": "G1",
-     "label": "Physical Geography of the World, India and Andhra Pradesh - Physical Divisions, Earthquakes, Landslides, Drainage, Climate and Monsoon, Vegetation, Parks and Sanctuaries, Soils, Rocks and Minerals"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Community"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "d5d9ac1a2430",
-   "date": "2026-11-20",
-   "pubDate": "2026-11-20",
-   "time": "06:22",
-   "title": "Odisha schools closed in several districts today due to Cyclone Akvan",
-   "summary": "District administrations have declared precautionary holidays amid forecasts of heavy rain and strong winds due to Cyclone Akvan.",
-   "facts": [],
-   "source": "Hindustan Times — India",
-   "sourceId": "ht-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.hindustantimes.com/india-news/odisha-schools-closed-in-several-districts-today-november-20-due-to-cyclone-akvan-101795135380272.html",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Geography",
-   "subjects": [
-    "Geography"
-   ],
-   "units": [
-    {
-     "code": "G1-D1",
-     "exam": "G1",
-     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
-    },
-    {
-     "code": "G2-S2",
-     "exam": "G2",
-     "label": "Screening S2. Geography"
-    }
-   ],
-   "topics": [],
-   "angles": [
-    "Administration"
-   ],
-   "score": 44,
-   "band": "medium",
-   "why": {
-    "syllabus": 24,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
    "id": "517865ca1924",
    "date": "2026-11-20",
    "pubDate": "2026-11-20",
@@ -5160,6 +5656,50 @@
     "reuse": 5
    },
    "digest": true
+  },
+  {
+   "id": "b5ea574452b5",
+   "date": "2026-11-20",
+   "pubDate": "2026-11-21",
+   "time": "01:52",
+   "title": "Hindustan Coca-Cola to invest Rs 1,127 cr in AP",
+   "summary": "The Government of Andhra Pradesh issued a Government Order (GO) approving the proposed investment during the 31st edition of the CII Partnership Summit 2026 held in Visakhapatnam in November.",
+   "facts": [
+    {
+     "angle": "Summit / exercise",
+     "text": "The Government of Andhra Pradesh issued a Government Order (GO) approving the proposed investment during the 31st edition of the CII Partnership Summit 2026 held in Visakhapatnam in November."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/andhra-pradesh/hindustan-coca-cola-to-invest-rs-1127-cr-in-ap-1144125",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [],
+   "topics": [],
+   "angles": [
+    "Summit"
+   ],
+   "score": 39,
+   "band": "low",
+   "why": {
+    "syllabus": 4,
+    "angles": 5,
+    "ap": 20,
+    "importance": 10,
+    "reuse": 0
+   }
   },
   {
    "id": "c692171e9b50",
