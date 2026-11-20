@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-19",
- "updated": "2026-11-20T00:03:42.390Z",
+ "updated": "2026-11-20T07:58:46.902Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 842,
+   "found": 852,
    "error": null
   },
   {
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 52,
+   "found": 54,
    "error": null
   },
   {
@@ -114,7 +114,7 @@
   {
    "id": "bs-top",
    "name": "Business Standard",
-   "found": 8,
+   "found": 10,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 60,
+   "found": 59,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 137,
+   "found": 159,
    "error": null
   },
   {
@@ -3918,6 +3918,59 @@
    }
   },
   {
+   "id": "3a05f3ee74b2",
+   "date": "2026-11-19",
+   "pubDate": "2026-11-19",
+   "time": "18:27",
+   "title": "Cyclone Akvan: Odisha evacuates nearly 300k as storm shifts course towards Puri-Gopalpur coast",
+   "summary": "The state has opened 9,341 cyclone shelters and deployed teams from disaster response, fire and emergency services for rescue operations.",
+   "facts": [],
+   "source": "Hindustan Times — India",
+   "sourceId": "ht-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.hindustantimes.com/india-news/odisha-evacuates-1-05-lakh-people-ahead-of-cyclone-akvan-deploys-295-rescue-teams-101795093029671.html",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D1",
+     "exam": "G1",
+     "label": "General Geography - Earth in the Solar System, Motions, Time, Seasons, Interior of the Earth, Landforms, Atmosphere, Climate, Oceans, Hydrological Disasters, Marine and Continental Resources"
+    },
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Emergency",
+    "Services",
+    "rescue"
+   ],
+   "score": 54,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "8dd6211609fd",
    "date": "2026-11-19",
    "pubDate": "2026-11-19",
@@ -6040,63 +6093,53 @@
    }
   },
   {
-   "id": "a25802b79933",
+   "id": "a65ab44ff8d3",
    "date": "2026-11-19",
-   "pubDate": "2026-11-19",
-   "time": "15:52",
-   "title": "NHAI clarifies current SMS notifications regarding vehicle insurance renewal are purely advisory in nature",
-   "summary": "National Highways Authority of India (NHAI) has clarified that SMS notifications currently being received by select National Highway users regarding vehicle insurance renewal are part of an ongoing testing process for a proposed public awareness initiative. NHAI emphasizes that the initiative is purely informational and advisory in nature.",
+   "pubDate": "2026-11-20",
+   "time": "05:46",
+   "title": "పరిశ్రమలు, ఉద్యాన కేంద్రంగా.. తిరుపతి రీజియన్‌",
+   "summary": "",
    "facts": [],
-   "source": "AIR News — National",
-   "sourceId": "air-national",
-   "official": true,
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
    "ministry": "",
    "alsoIn": [],
-   "url": "https://newsonair.gov.in/nhai-clarifies-current-sms-notifications-regarding-vehicle-insurance-renewal-are-purely-advisory-in-nature/",
-   "bucket": "national",
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/tirupati-region-as-a-hub-for-industries-and-horticulture/1799/126210887",
+   "bucket": "ap",
    "scope": "national",
-   "ap": false,
+   "ap": true,
    "exams": [
-    "G1",
     "G2"
    ],
    "subject": "Economy",
    "subjects": [
-    "Economy",
-    "Geography"
+    "Economy"
    ],
    "units": [
     {
-     "code": "G1-D4",
-     "exam": "G1",
-     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
     },
     {
-     "code": "G2-S2",
+     "code": "G2-M2A-U3",
      "exam": "G2",
-     "label": "Screening S2. Geography"
-    },
-    {
-     "code": "G2-M2A-U2",
-     "exam": "G2",
-     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
     }
    ],
-   "topics": [
-    "National Highways and land use"
-   ],
-   "angles": [
-    "Highways"
-   ],
+   "topics": [],
+   "angles": [],
    "score": 49,
    "band": "medium",
    "why": {
-    "syllabus": 26,
-    "angles": 5,
-    "ap": 0,
-    "importance": 3,
-    "reuse": 15
-   }
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "272bf8b748c8",
