@@ -1,12 +1,12 @@
 {
  "version": 1,
  "date": "2026-11-21",
- "updated": "2026-11-21T22:39:05.417Z",
+ "updated": "2026-11-22T07:41:34.586Z",
  "sources": [
   {
    "id": "pib",
    "name": "PIB",
-   "found": 958,
+   "found": 962,
    "error": null
   },
   {
@@ -18,13 +18,13 @@
   {
    "id": "pib-hyderabad",
    "name": "PIB Hyderabad",
-   "found": 218,
+   "found": 219,
    "error": null
   },
   {
    "id": "air",
    "name": "AIR News",
-   "found": 67,
+   "found": 62,
    "error": null
   },
   {
@@ -54,7 +54,7 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 45,
+   "found": 48,
    "error": null
   },
   {
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 59,
+   "found": 44,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 122,
+   "found": 156,
    "error": null
   },
   {
@@ -1122,6 +1122,73 @@
    "digest": true
   },
   {
+   "id": "62bcbc661234",
+   "date": "2026-11-21",
+   "pubDate": "2026-11-22",
+   "time": "05:42",
+   "title": "NIELIT launches Amaravati campus to power Quantum Valley ambitions",
+   "summary": "Rs 47-cr investment in four advanced laboratories at temporary campus Courses in quantum computing, AI and semiconductor technologies to begin in January",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Rs 47-cr investment in four advanced laboratories at temporary campus Courses in quantum computing, AI and semiconductor technologies to begin in January"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/nielit-launches-amaravati-campus-to-power-quantum-valley-ambitions-1144569",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2B-U1",
+     "exam": "G2",
+     "label": "Technology Missions, Policies and Applications - National S&T Policy"
+    },
+    {
+     "code": "G1-C5",
+     "exam": "G1",
+     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
+    },
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [
+    "Amaravati Capital Region"
+   ],
+   "angles": [],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
    "id": "16fcd219c2a4",
    "date": "2026-11-21",
    "pubDate": "2026-11-21",
@@ -1194,6 +1261,63 @@
     "ap": 12,
     "importance": 7,
     "reuse": 5
+   }
+  },
+  {
+   "id": "75d4816c9ff5",
+   "date": "2026-11-21",
+   "pubDate": "2026-11-21",
+   "time": "22:32",
+   "title": "Plastics industry aims at doubling its exports in 4 years",
+   "summary": "",
+   "facts": [],
+   "source": "The Hindu — Business",
+   "sourceId": "hindu-business",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehindu.com/business/plastics-industry-aims-at-doubling-its-exports-in-4-years/article71728298.ece",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    }
+   ],
+   "topics": [
+    "Railways and multimodal transport"
+   ],
+   "angles": [
+    "Export",
+    "Years",
+    "Exports",
+    "Industry"
+   ],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 20,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 15
    }
   },
   {
@@ -1302,6 +1426,83 @@
     "angles": 5,
     "ap": 20,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a961536b39f5",
+   "date": "2026-11-21",
+   "pubDate": "2026-11-21",
+   "time": "17:32",
+   "title": "The National Fisheries Development Board (NFDB) celebrated World Fisheries Day 2026",
+   "summary": "The participants included fishers, fish farmers, members of Self-Help Groups (SHGs), representatives of State and UT Fisheries Departments, officials from the Department of Fisheries, Government of India, ICAR Fisheries Institutes, NFDB-Regional centers and other stakeholders associated with the fisheries and aquaculture sector.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "The participants included fishers, fish farmers, members of Self-Help Groups (SHGs), representatives of State and UT Fisheries Departments, officials from the Department of Fisheries, Government of India, ICAR Fisheries Institutes, NFDB-Regional centers and other stakeholders associated with the …"
+    },
+    {
+     "angle": "Figures",
+     "text": "He also highlighted the potential of seaweed clusters, with seaweed serving as a sustainable feed ingredient in aquaculture as well as a direct seafood and functional food product."
+    },
+    {
+     "angle": "Figures",
+     "text": "The programme also provided an opportunity for interaction among fishers, fish farmers, policymakers, technical experts and other stakeholders."
+    }
+   ],
+   "source": "PIB Hyderabad",
+   "sourceId": "pib-hyderabad",
+   "official": true,
+   "ministry": "Ministry of Agriculture & Farmers Welfare",
+   "alsoIn": [],
+   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2339874&reg=3&lang=1",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    },
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture",
+    "Community"
+   ],
+   "score": 64,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 12,
+    "importance": 3,
     "reuse": 15
    }
   },
@@ -4505,6 +4706,72 @@
    }
   },
   {
+   "id": "bd5f4ce1feb2",
+   "date": "2026-11-21",
+   "pubDate": "2026-11-22",
+   "time": "02:27",
+   "title": "Maha pollution board tells Adani firm to halt work",
+   "summary": "Maharashtra Pollution Control Board issued a stop-work notice to Adani Renewable Energy One Ltd for unauthorized activities. The notice was the result of an inspection on ongoing excavation and construction in Sawarghar village. The company failed to secure required permissions and environmental clearance for its development projects.",
+   "facts": [],
+   "source": "Times of India — Top stories",
+   "sourceId": "toi-top",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://timesofindia.indiatimes.com/city/mumbai/maharashtra-pollution-control-board-directs-adani-renewable-energy-one-to-halt-excavation-construction-work-at-sawarghar/articleshow/136061327.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment",
+    "History & Culture"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U4",
+     "exam": "G2",
+     "label": "Waste Management and Pollution Control - Solid Waste Classification and Disposal, Types of Environmental Pollution, Pollution Control and Regulation, Transgenics and their Regulation, Eco-Friendly Technologies, Bioremediation"
+    },
+    {
+     "code": "G1-A1",
+     "exam": "G1",
+     "label": "Indus Valley Civilization, Vedic Age, Mahajanapadas, Jainism & Buddhism, Magadha, Mauryas, Foreign Invasions, Kushanas, Satavahanas, Sangam Age, Sungas, Gupta Empire"
+    },
+    {
+     "code": "G1-F21",
+     "exam": "G1",
+     "label": "Energy Requirement and Efficiency - India's Energy Needs and Deficit, Energy Resources and Dependence, Energy Policy, Government Policies and Programmes, Solar, Wind and Nuclear Energy"
+    }
+   ],
+   "topics": [
+    "Environmental clearance and green jurisprudence"
+   ],
+   "angles": [
+    "Excavation",
+    "Construction",
+    "Pollution"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 26,
+    "angles": 15,
+    "ap": 0,
+    "importance": 0,
+    "reuse": 5
+   }
+  },
+  {
    "id": "143d65ac609c",
    "date": "2026-11-21",
    "pubDate": "2026-11-21",
@@ -4565,6 +4832,52 @@
     "importance": 2,
     "reuse": 15
    }
+  },
+  {
+   "id": "abdd7b9bbb3f",
+   "date": "2026-11-21",
+   "pubDate": "2026-11-22",
+   "time": "04:56",
+   "title": "హైకోర్టులో ప్రత్యేక లోక్‌ అదాలత్‌",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126212445",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "fee6ec6578c2",
@@ -5095,6 +5408,57 @@
    }
   },
   {
+   "id": "f1f8b4ab823a",
+   "date": "2026-11-21",
+   "pubDate": "2026-11-22",
+   "time": "05:49",
+   "title": "Naidu sets March 2027 deadline for Godavari Pushkaram works",
+   "summary": "4,862 projects worth Rs 3,723.69 crore planned across 22 departments; 4,000 special buses and 1,560 train services proposed",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "4,862 projects worth Rs 3,723.69 crore planned across 22 departments; 4,000 special buses and 1,560 train services proposed"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/naidu-sets-march-2027-deadline-for-godavari-pushkaram-works-1144572",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Services"
+   ],
+   "score": 44,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 2,
+    "reuse": 5
+   }
+  },
+  {
    "id": "a208368d64a2",
    "date": "2026-11-21",
    "pubDate": "2026-11-22",
@@ -5422,6 +5786,52 @@
     "importance": 9,
     "reuse": 5
    }
+  },
+  {
+   "id": "7aa008340af3",
+   "date": "2026-11-21",
+   "pubDate": "2026-11-22",
+   "time": "04:10",
+   "title": "3 రైల్వే లైన్లు కావాలి",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/we-need-3-railway-lines/1799/126212425",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Geography",
+   "subjects": [
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G2-S2",
+     "exam": "G2",
+     "label": "Screening S2. Geography"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Rail"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "50fc79988295",
@@ -5860,123 +6270,6 @@
     "ap": 0,
     "importance": 3,
     "reuse": 15
-   }
-  },
-  {
-   "id": "2613fff3556c",
-   "date": "2026-11-21",
-   "pubDate": "2026-11-21",
-   "time": "23:16",
-   "title": "Ladakh records 70% turnout in first panchayat polls since Union Territory formation",
-   "summary": "In its first local body elections since its formation as a Union Territory in 2019, Ladakh recorded 70.03% turnout in panchayat elections and 52.4% in municipal council polls; several villages boycotted the vote, says activist Sonam Wangchuk, who also questioned the turnout figures",
-   "facts": [
-    {
-     "angle": "Firsts / records",
-     "text": "In its first local body elections since its formation as a Union Territory in 2019, Ladakh recorded 70.03% turnout in panchayat elections and 52.4% in municipal council polls; several villages boycotted the vote, says activist Sonam Wangchuk, who also questioned the turnout figures"
-    }
-   ],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/ladakh/ladakh-municipal-and-panchayat-elections/article71727478.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G1-B3",
-     "exam": "G1",
-     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
-    },
-    {
-     "code": "G2-M1B-U10",
-     "exam": "G2",
-     "label": "Centralization vs Decentralization; Community Development Programme; Balwant Rai Mehta and Ashok Mehta Committees; 73rd and 74th Constitutional Amendment Acts and their Implementation"
-    },
-    {
-     "code": "G2-M1B-U9",
-     "exam": "G2",
-     "label": "Centre-State Relations and the Need for Reforms - Rajamannar, Sarkaria and Punchhi; Unitary and Federal Features; Political Parties and the Party System; Elections and Electoral Reforms; Anti-Defection Law"
-    }
-   ],
-   "topics": [
-    "AP Panchayati Raj and local bodies"
-   ],
-   "angles": [],
-   "score": 41,
-   "band": "medium",
-   "why": {
-    "syllabus": 26,
-    "angles": 0,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
-   "id": "e803cfa7e8bd",
-   "date": "2026-11-21",
-   "pubDate": "2026-11-21",
-   "time": "16:44",
-   "title": "'Judgment will create confusion': TN consulting legal experts on SC ruling in Karthigai Deepam row",
-   "summary": "The Tamil Nadu government is currently consulting legal experts about the Supreme Court's recent ruling. The judgment allows a one-time lighting of a lamp atop Thirupparankundram hill during Karthigai Deepam. Officials are deliberating on whether to comply with this ruling or challenge it legally. Social justice minister Vanni Arasu has expressed strong opposition to the judgment.",
-   "facts": [],
-   "source": "Times of India — India",
-   "sourceId": "toi-india",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://timesofindia.indiatimes.com/india/judgment-will-create-confusion-tn-consulting-legal-experts-on-sc-ruling-in-karthigai-deepam-row/articleshow/136052297.cms",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [
-    "Supreme Court and judicial review",
-    "Reservation and social justice"
-   ],
-   "angles": [
-    "Supreme court",
-    "Social Justice",
-    "SC"
-   ],
-   "score": 40,
-   "band": "medium",
-   "why": {
-    "syllabus": 14,
-    "angles": 15,
-    "ap": 0,
-    "importance": 6,
-    "reuse": 5
    }
   },
   {
@@ -6775,218 +7068,6 @@
    "why": {
     "syllabus": 0,
     "angles": 10,
-    "ap": 20,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "92697888735b",
-   "date": "2026-11-21",
-   "pubDate": "2026-11-21",
-   "title": "Andhra Pradesh outlines senior-officer oversight for economic regions",
-   "summary": "On 12 March 2026, the Andhra Pradesh government outlined senior-officer oversight for the Amaravati, Tirupati and Visakhapatnam economic regions at the sixth District Col",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/andhra-pradesh-outlines-senior-officer-oversight-for-economic-regions/",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G1"
-   ],
-   "subject": "Economy",
-   "subjects": [
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C5",
-     "exam": "G1",
-     "label": "Andhra Pradesh Economy after Bifurcation (2014) and the A.P. Reorganisation Act, 2014 - Economic Issues, Central Assistance, Special Status and the Controversy"
-    }
-   ],
-   "topics": [
-    "Amaravati Capital Region",
-    "Visakhapatnam Economic Region"
-   ],
-   "angles": [],
-   "score": 30,
-   "band": "low",
-   "why": {
-    "syllabus": 8,
-    "angles": 0,
-    "ap": 20,
-    "importance": 0,
-    "reuse": 2
-   },
-   "digest": true
-  },
-  {
-   "id": "c7bccfb5e256",
-   "date": "2026-11-21",
-   "pubDate": "2026-11-21",
-   "title": "APERC determines ₹629.35-crore power-cost true-down for 2025–26",
-   "summary": "In September 2026, the Andhra Pradesh Electricity Regulatory Commission determined a net true-down of ₹629.35 crore in fuel and power purchase cost adjustment for financi",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "In September 2026, the Andhra Pradesh Electricity Regulatory Commission determined a net true-down of ₹629.35 crore in fuel and power purchase cost adjustment for financi"
-    }
-   ],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/aperc-determines-%e2%82%b9629-35-crore-power-cost-true-down-for-2025-26/",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G2-M2B-U2",
-     "exam": "G2",
-     "label": "Energy Management - Installed Capacities and Demand, National Energy Policy, National Policy on Biofuels, Bharat Stage Norms, Non-Renewable and Renewable Energy, New Initiatives in the Renewable Sector"
-    }
-   ],
-   "topics": [],
-   "angles": [],
-   "score": 30,
-   "band": "low",
-   "why": {
-    "syllabus": 6,
-    "angles": 0,
-    "ap": 20,
-    "importance": 2,
-    "reuse": 2
-   },
-   "digest": true
-  },
-  {
-   "id": "fa018a0c48af",
-   "date": "2026-11-21",
-   "pubDate": "2026-11-21",
-   "title": "Andhra Pradesh makes digital School Health and Wellness portal available to adolescents",
-   "summary": "Andhra Pradesh made its digital School Health and Wellness Programme portal available to students aged 13–19, Health Minister Satya Kumar Yadav announced on 27 March 2026",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/andhra-pradesh-makes-digital-school-health-and-wellness-portal-available-to-adolescents/",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Health"
-   ],
-   "score": 29,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 20,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "fdb9ed746f2e",
-   "date": "2026-11-21",
-   "pubDate": "2026-11-21",
-   "title": "NMC permits 100 additional MBBS seats at government medical colleges in Kadapa and Nellore",
-   "summary": "On 10 July 2026, Andhra Pradesh Health Minister Satya Kumar Yadav announced that the National Medical Commission had permitted 100 additional MBBS seats at two state gove",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/nmc-permits-100-additional-mbbs-seats-at-government-medical-colleges-in-kadapa-and-nellore/",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR"
-   ],
-   "units": [],
-   "topics": [],
-   "angles": [
-    "Health"
-   ],
-   "score": 29,
-   "band": "low",
-   "why": {
-    "syllabus": 4,
-    "angles": 5,
-    "ap": 20,
-    "importance": 0,
-    "reuse": 0
-   },
-   "digest": true
-  },
-  {
-   "id": "7d8f36acc635",
-   "date": "2026-11-21",
-   "pubDate": "2026-11-21",
-   "title": "Centre notifies planned shift of scheduled commercial operations from Visakhapatnam to Bhogapuram from August 17",
-   "summary": "The Ministry of Civil Aviation notified on July 28, 2026, the planned transfer of scheduled commercial operations from the Visakhapatnam Airport civil enclave to Bhogapur",
-   "facts": [],
-   "source": "GKToday",
-   "sourceId": "gktoday",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.gktoday.in/centre-notifies-planned-shift-of-scheduled-commercial-operations-from-visakhapatnam-to-bhogapuram-from-august-17/",
-   "bucket": "ap",
-   "scope": "national",
-   "ap": true,
-   "exams": [
-    "G1"
-   ],
-   "subject": "Science, Tech & Environment",
-   "subjects": [
-    "Science, Tech & Environment"
-   ],
-   "units": [],
-   "topics": [
-    "AP ports and airports"
-   ],
-   "angles": [],
-   "score": 28,
-   "band": "low",
-   "why": {
-    "syllabus": 8,
-    "angles": 0,
     "ap": 20,
     "importance": 0,
     "reuse": 0
