@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-11-26",
- "updated": "2026-11-26T22:06:41.262Z",
+ "updated": "2026-11-27T01:21:10.568Z",
  "sources": [
   {
    "id": "pib",
@@ -24,7 +24,7 @@
   {
    "id": "air",
    "name": "AIR News",
-   "found": 46,
+   "found": 50,
    "error": null
   },
   {
@@ -54,14 +54,14 @@
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 45,
    "error": null
   },
   {
    "id": "hindu-international",
    "name": "The Hindu — International",
-   "found": 60,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "ht-india",
@@ -120,8 +120,8 @@
   {
    "id": "hindu-scitech",
    "name": "The Hindu — Science & Technology",
-   "found": 60,
-   "error": null
+   "found": 0,
+   "error": "timed out"
   },
   {
    "id": "hindu-environment",
@@ -138,8 +138,8 @@
   {
    "id": "mongabay-india",
    "name": "Mongabay India",
-   "found": 20,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "hindu-editorial",
@@ -168,7 +168,7 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 36,
+   "found": 60,
    "error": null
   },
   {
@@ -180,7 +180,7 @@
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 97,
+   "found": 132,
    "error": null
   },
   {
@@ -294,6 +294,68 @@
     "angles": 20,
     "ap": 0,
     "importance": 13,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "0c7ff98104d3",
+   "date": "2026-11-26",
+   "pubDate": "2026-11-27",
+   "time": "05:12",
+   "title": "Ashwini Vaishnaw recognises Sri City as key manufacturing hub",
+   "summary": "Union Minister Ashwini Vaishnaw highlights Sri City as a key manufacturing hub set to gain from the Cabinet-approved Rs 4,288.26 crore second container terminal at Kamarajar Port.",
+   "facts": [
+    {
+     "angle": "Cabinet decision",
+     "text": "Union Minister Ashwini Vaishnaw highlights Sri City as a key manufacturing hub set to gain from the Cabinet-approved Rs 4,288.26 crore second container terminal at Kamarajar Port."
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/tirupathi/ashwini-vaishnaw-recognises-sri-city-as-key-manufacturing-hub-1146202",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy",
+    "Geography"
+   ],
+   "units": [
+    {
+     "code": "G1-D4",
+     "exam": "G1",
+     "label": "Economic Geography of the World, India and Andhra Pradesh - Major Sectors, Agriculture, Industry and Services, Basic Industries, Transport and Trade"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U5",
+     "exam": "G2",
+     "label": "Agriculture and Allied, Industrial and Services Sectors of Andhra Pradesh - Production Trends, Cropping Pattern, Rural Credit, Agricultural Marketing, Schemes, Industry Policy and Incentives, MSMEs, Industrial Corridors, IT and Electronics"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Union Minister"
+   ],
+   "score": 72,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 5,
+    "ap": 20,
+    "importance": 8,
     "reuse": 15
    }
   },
@@ -537,6 +599,68 @@
    "angles": [
     "Constitution",
     "headquarters"
+   ],
+   "score": 69,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 10,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "d5ec98e79959",
+   "date": "2026-11-26",
+   "pubDate": "2026-11-27",
+   "time": "05:39",
+   "title": "Crop insurance doubled, not a hoax: Atchanna",
+   "summary": "Agriculture minister asserts that Kharif 2026 insured area doubled to 17.07 lakh hectares, ranking Andhra Pradesh sixth nationally he state approved a three-year plan to clear Rs 3,000 cr in pending premiums and distributed Rs 310.30 cr in input subsidies",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "Agriculture minister asserts that Kharif 2026 insured area doubled to 17.07 lakh hectares, ranking Andhra Pradesh sixth nationally he state approved a three-year plan to clear Rs 3,000 cr in pending premiums and distributed Rs 310.30 cr in input subsidies"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/crop-insurance-doubled-not-a-hoax-atchanna-1146216",
+   "bucket": "ap",
+   "scope": "dynamic",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Economy",
+   "subjects": [
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-C3",
+     "exam": "G1",
+     "label": "Indian Agriculture, Irrigation, Inputs, Policy, Land Reforms, Credit, MSP, Food Security; Indian Industry, Industrial Policy, Make in India, SEZs, Energy; Economic Reforms; International Trade, BoP and WTO"
+    },
+    {
+     "code": "G2-M2A-U3",
+     "exam": "G2",
+     "label": "Agricultural, Industrial and Services Sectors of the Indian Economy - Cropping Pattern, Agricultural Finance and Marketing, MSP and Procurement, Industrial Development, New Industrial Policy 1991, Disinvestment, Industrial Sickness, Services and IT"
+    },
+    {
+     "code": "G2-M2A-U2",
+     "exam": "G2",
+     "label": "Money, Banking, Public Finance and Foreign Trade - Money Supply, RBI and Monetary Policy, Banking Reforms, Inflation, Fiscal Policy and FRBM, Tax Structure, GST, Union Budget, BoP and FDI"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Agriculture",
+    "Ranking"
    ],
    "score": 69,
    "band": "high",
@@ -922,6 +1046,60 @@
     "ap": 0,
     "importance": 15,
     "reuse": 5
+   }
+  },
+  {
+   "id": "364985508ff1",
+   "date": "2026-11-26",
+   "pubDate": "2026-11-27",
+   "time": "05:41",
+   "title": "64 AYUSH centres get modern makeover in state",
+   "summary": "AP to develop 64 AYUSH centres with uniform modern infrastructure across rural and urban areas Centre sanctions Rs 12.8 cr under National AYUSH Mission, allocating Rs 20 lakh per centre",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "AP to develop 64 AYUSH centres with uniform modern infrastructure across rural and urban areas Centre sanctions Rs 12.8 cr under National AYUSH Mission, allocating Rs 20 lakh per centre"
+    }
+   ],
+   "source": "The Hans India — Andhra Pradesh",
+   "sourceId": "hans-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.thehansindia.com/news/cities/amaravati/64-ayush-centres-get-modern-makeover-in-state-1146217",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Science, Tech & Environment",
+   "subjects": [
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F22",
+     "exam": "G1",
+     "label": "Environmental Science - Issues and Concerns, Legal Aspects and Treaties, Biodiversity, Climate Change, Forest and Wildlife, Pollution, Disaster Management, Biotechnology and Nanotechnology, Genetic Engineering, Health and Environment"
+    },
+    {
+     "code": "G2-M2B-U5",
+     "exam": "G2",
+     "label": "Environment and Health - Global Warming, Climate Change, Acid Rain, Ozone Depletion, Ocean Acidification; International Initiatives and India's Role; Sustainable Development; Disease Burden, Epidemics and Pandemics; Healthcare Delivery and Public Health Initiatives"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 65,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 6,
+    "reuse": 15
    }
   },
   {
@@ -2119,6 +2297,57 @@
     "importance": 9,
     "reuse": 15
    }
+  },
+  {
+   "id": "2ba04fb1c0e5",
+   "date": "2026-11-26",
+   "pubDate": "2026-11-27",
+   "time": "05:10",
+   "title": "ఇక ‘డిజిటల్‌ హౌస్‌’గా అసెంబ్లీ",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/assembly-to-become-a-digital-house/1799/126215866",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Science, Tech & Environment"
+   ],
+   "units": [
+    {
+     "code": "G1-F19",
+     "exam": "G1",
+     "label": "Information and Communication Technology - Nature and Scope, ICT in Daily Life, ICT and Industry, ICT and Governance, Netiquettes, Cyber Security"
+    },
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [],
+   "score": 59,
+   "band": "medium",
+   "why": {
+    "syllabus": 24,
+    "angles": 0,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 15
+   },
+   "lang": "te"
   },
   {
    "id": "abb2b523f077",
@@ -4797,6 +5026,52 @@
     "importance": 0,
     "reuse": 5
    }
+  },
+  {
+   "id": "8c3a5b147bbc",
+   "date": "2026-11-26",
+   "pubDate": "2026-11-27",
+   "time": "04:55",
+   "title": "బెయిల్‌ మంజూరు చేయండి.. హైకోర్టులో అప్పిరెడ్డి పిటిషన్‌",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126215863",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "3a420dbc8855",
