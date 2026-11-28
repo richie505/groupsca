@@ -1,7 +1,7 @@
 {
  "version": 1,
  "date": "2026-11-27",
- "updated": "2026-11-27T21:48:27.882Z",
+ "updated": "2026-11-28T00:54:27.796Z",
  "sources": [
   {
    "id": "pib",
@@ -36,25 +36,25 @@
   {
    "id": "ie-india",
    "name": "Indian Express — India",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "ie-explained",
    "name": "Indian Express — Explained",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "toi-india",
    "name": "Times of India — India",
-   "found": 20,
+   "found": 19,
    "error": null
   },
   {
    "id": "toi-top",
    "name": "Times of India — Top stories",
-   "found": 44,
+   "found": 46,
    "error": null
   },
   {
@@ -96,8 +96,8 @@
   {
    "id": "ie-economy",
    "name": "Indian Express — Economy",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "mint-news",
@@ -168,26 +168,26 @@
   {
    "id": "hans-ap",
    "name": "The Hans India — Andhra Pradesh",
-   "found": 55,
+   "found": 32,
    "error": null
   },
   {
    "id": "sakshi",
    "name": "Sakshi",
-   "found": 10,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "eenadu-ap",
    "name": "Eenadu — Andhra Pradesh",
-   "found": 92,
+   "found": 140,
    "error": null
   },
   {
    "id": "ie-hyderabad",
    "name": "Indian Express — Hyderabad",
-   "found": 200,
-   "error": null
+   "found": 0,
+   "error": "HTTP 403"
   },
   {
    "id": "hindu-telangana",
@@ -952,6 +952,78 @@
    "why": {
     "syllabus": 26,
     "angles": 20,
+    "ap": 0,
+    "importance": 6,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "ecaf4d8144bb",
+   "date": "2026-11-27",
+   "pubDate": "2026-11-28",
+   "time": "03:12",
+   "title": "Supreme Court raps TVK government, orders lamp lit at Tamil Nadu site today",
+   "summary": "In a significant ruling, the Supreme Court has reprimanded Tamil Nadu officials for their willful defiance of judicial orders. The court has now permitted all devotees to light lamps at the controversial location, expressing serious concern over the state's non-compliance and the initiation of contempt proceedings.",
+   "facts": [
+    {
+     "angle": "Figures",
+     "text": "In a significant ruling, the Supreme Court has reprimanded Tamil Nadu officials for their willful defiance of judicial orders."
+    },
+    {
+     "angle": "Appointed",
+     "text": "Additionally, former judges have been appointed to supervise temple matters, reinforcing the importance of adhering to the rule of law."
+    }
+   ],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Times of India — Top stories"
+   ],
+   "url": "https://timesofindia.indiatimes.com/india/supreme-court-raps-tvk-government-orders-lamp-lit-at-tamil-nadu-site-today/articleshow/136233257.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    },
+    {
+     "code": "G1-B1",
+     "exam": "G1",
+     "label": "Indian Constitution - Evolution, Features, Preamble, Fundamental Rights, Fundamental Duties, DPSP, Amendments, Significant Provisions and Basic Structure"
+    },
+    {
+     "code": "G2-M1B-U6",
+     "exam": "G2",
+     "label": "Nature of the Indian Constitution, Constitutional Development, Salient Features, Preamble, Fundamental Rights, DPSP and their Relationship, Fundamental Duties, Amendment, Basic Structure"
+    }
+   ],
+   "topics": [
+    "Supreme Court and judicial review"
+   ],
+   "angles": [
+    "Supreme court",
+    "Rule of Law",
+    "Appointed"
+   ],
+   "score": 66,
+   "band": "high",
+   "why": {
+    "syllabus": 30,
+    "angles": 15,
     "ap": 0,
     "importance": 6,
     "reuse": 15
@@ -2207,6 +2279,67 @@
     "angles": 20,
     "ap": 0,
     "importance": 0,
+    "reuse": 15
+   }
+  },
+  {
+   "id": "a25f3f463d59",
+   "date": "2026-11-27",
+   "pubDate": "2026-11-28",
+   "time": "00:40",
+   "title": "J&K gets advocate general after 2 years",
+   "summary": "Syed Faisal Qadri has been appointed the advocate general of Jammu & Kashmir, filling a key role. This important position remained vacant for two years due to administrative differences following a change in government. An additional advocate general had been handling responsibilities during this period of vacancy.",
+   "facts": [
+    {
+     "angle": "Appointed",
+     "text": "Syed Faisal Qadri has been appointed the advocate general of Jammu & Kashmir, filling a key role."
+    }
+   ],
+   "source": "Times of India — India",
+   "sourceId": "toi-india",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [
+    "Times of India — Top stories"
+   ],
+   "url": "https://timesofindia.indiatimes.com/india/jk-gets-advocate-general-after-2-years/articleshow/136231920.cms",
+   "bucket": "national",
+   "scope": "national",
+   "ap": false,
+   "exams": [
+    "G1",
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR",
+    "Economy"
+   ],
+   "units": [
+    {
+     "code": "G1-B3",
+     "exam": "G1",
+     "label": "Constitutional Authorities - Powers, Functions and Responsibilities; Panchayati Raj; Public Policy and Governance"
+    },
+    {
+     "code": "G2-M1B-U8",
+     "exam": "G2",
+     "label": "Distribution of Legislative and Executive Powers; Union-State Legislative, Administrative and Financial Relations; Constitutional Bodies; Human Rights Commission; RTI; Lokpal and Lok Ayukta"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Years",
+    "Advocate General",
+    "Appointed"
+   ],
+   "score": 60,
+   "band": "high",
+   "why": {
+    "syllabus": 24,
+    "angles": 15,
+    "ap": 0,
+    "importance": 6,
     "reuse": 15
    }
   },
@@ -4932,140 +5065,6 @@
    }
   },
   {
-   "id": "7fb95f4dd04b",
-   "date": "2026-11-27",
-   "pubDate": "2026-11-27",
-   "time": "18:16",
-   "title": "MoSJE Pavilion at 45th IITF 2026 Records Sales of Approximately ₹2.07 Crore As on November 26; Strong Public Response Boosts Artisans’ Livelihoods",
-   "summary": "Located at Hall No. 5, Ground Floor, ITPO, Bharat Mandapam, New Delhi, the Ministry’s pavilion has emerged as a vibrant platform for showcasing India’s diverse cultural heritage, traditional skills and indigenous craftsmanship. The enthusiastic participation of visitors and their purchases have provided direct market access to artisans and contributed to strengthening their livelihood opportunities.",
-   "facts": [
-    {
-     "angle": "Figures",
-     "text": "The encouraging sales performance underscores the importance of national-level exhibitions in enabling traditional artisans to enhance the visibility of their products, interact directly with customers, understand evolving consumer preferences, establish business networks and explore new market o…"
-    },
-    {
-     "angle": "Figures",
-     "text": "A significant highlight of the Ministry’s participation is the promotion of TULIP (Traditional Artisans’ Upliftment Livelihood Programme) , which aims to establish a distinct market identity for artisan-made products and enhance their recognition among consumers, the Official added."
-    },
-    {
-     "angle": "Figures",
-     "text": "The Official remarked the 45th India International Trade Fair 2026, inaugurated on November 13, brought together producers, entrepreneurs, traders and consumers from across the country and abroad, providing a prominent platform for trade, commerce, entrepreneurship and cultural exchange."
-    },
-    {
-     "angle": "Figures",
-     "text": "The Ministry’s pavilion has provided participating artisans with valuable exposure, enhanced market access and opportunities to connect with consumers."
-    }
-   ],
-   "source": "PIB",
-   "sourceId": "pib",
-   "official": true,
-   "ministry": "Ministry of Social Justice & Empowerment",
-   "alsoIn": [],
-   "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2342712&reg=3&lang=1",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy",
-    "Science, Tech & Environment"
-   ],
-   "units": [
-    {
-     "code": "G2-S3",
-     "exam": "G2",
-     "label": "Screening S3. Indian Society"
-    },
-    {
-     "code": "G1-B5",
-     "exam": "G1",
-     "label": "Rights Issues - Human Rights, Women's Rights, SC/ST Rights, Child Rights"
-    },
-    {
-     "code": "G1-C1",
-     "exam": "G1",
-     "label": "Basic Characteristics of the Indian Economy; Planning since Independence; NITI Aayog; Growth and Distributive Justice; HDI; Environmental Degradation; Sustainable Development"
-    }
-   ],
-   "topics": [
-    "Reservation and social justice"
-   ],
-   "angles": [
-    "trade",
-    "States",
-    "Indigenous",
-    "Social Justice"
-   ],
-   "score": 50,
-   "band": "medium",
-   "why": {
-    "syllabus": 20,
-    "angles": 20,
-    "ap": 0,
-    "importance": 5,
-    "reuse": 5
-   }
-  },
-  {
-   "id": "e6a1437f97aa",
-   "date": "2026-11-27",
-   "pubDate": "2026-11-27",
-   "time": "22:32",
-   "title": "Supreme Court refuses to mandate unified portal for tracing unclaimed deposits; cites regulatory reforms",
-   "summary": "Sucheta Dalal’s petition highlighted the accumulation of unclaimed deposits and investments with financial institutions and the procedural difficulties faced by nominees and legal heirs in recovering them",
-   "facts": [],
-   "source": "The Hindu — National",
-   "sourceId": "hindu-national",
-   "official": false,
-   "ministry": "",
-   "alsoIn": [],
-   "url": "https://www.thehindu.com/news/national/supreme-court-refuses-to-mandate-unified-portal-for-tracing-unclaimed-deposits-cites-regulatory-reforms/article71751997.ece",
-   "bucket": "national",
-   "scope": "national",
-   "ap": false,
-   "exams": [
-    "G1",
-    "G2"
-   ],
-   "subject": "Polity, Society & IR",
-   "subjects": [
-    "Polity, Society & IR",
-    "Economy"
-   ],
-   "units": [
-    {
-     "code": "G1-C4",
-     "exam": "G1",
-     "label": "Financial Institutions, RBI and Monetary Policy, Banking Reforms, NPAs, Financial Markets, SEBI, Indian Tax System, GST, Centre-State Financial Relations, Public Debt and Expenditure, Fiscal Policy and Budget"
-    },
-    {
-     "code": "G2-M1B-U7",
-     "exam": "G2",
-     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
-    }
-   ],
-   "topics": [
-    "Supreme Court and judicial review"
-   ],
-   "angles": [
-    "Supreme court"
-   ],
-   "score": 50,
-   "band": "medium",
-   "why": {
-    "syllabus": 30,
-    "angles": 5,
-    "ap": 0,
-    "importance": 0,
-    "reuse": 15
-   }
-  },
-  {
    "id": "89c7dfdd0f8a",
    "date": "2026-11-27",
    "pubDate": "2026-11-27",
@@ -5227,6 +5226,52 @@
    }
   },
   {
+   "id": "92793b95e5c6",
+   "date": "2026-11-27",
+   "pubDate": "2026-11-28",
+   "time": "05:36",
+   "title": "పోలీసులు చిత్రహింసలు పెట్టారు.. హైకోర్టులో ధరణికృష్ణ వ్యాజ్యం",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/general/1799/126216570",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-M1B-U7",
+     "exam": "G2",
+     "label": "Structure and Functions of Indian Government - Legislature, Executive and Judiciary; Types of Legislatures; Parliamentary System; Judicial Review and Judicial Activism"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "High court"
+   ],
+   "score": 46,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 4,
+    "reuse": 5
+   },
+   "lang": "te"
+  },
+  {
    "id": "f9801cef5bcf",
    "date": "2026-11-27",
    "pubDate": "2026-11-27",
@@ -5365,6 +5410,52 @@
     "importance": 0,
     "reuse": 5
    }
+  },
+  {
+   "id": "76cb0b5c0d21",
+   "date": "2026-11-27",
+   "pubDate": "2026-11-28",
+   "time": "05:57",
+   "title": "నియోజకవర్గాల పునర్విభజన, మహిళా రిజర్వేషన్లకు సంపూర్ణ మద్దతు",
+   "summary": "",
+   "facts": [],
+   "source": "Eenadu — Andhra Pradesh",
+   "sourceId": "eenadu-ap",
+   "official": false,
+   "ministry": "",
+   "alsoIn": [],
+   "url": "https://www.eenadu.net/telugu-news/andhra-pradesh/pawan-kalyan-full-support-for-the-delimitation-of-constituencies-and-reservations-for-women/1799/126216515",
+   "bucket": "ap",
+   "scope": "national",
+   "ap": true,
+   "exams": [
+    "G2"
+   ],
+   "subject": "Polity, Society & IR",
+   "subjects": [
+    "Polity, Society & IR"
+   ],
+   "units": [
+    {
+     "code": "G2-S3",
+     "exam": "G2",
+     "label": "Screening S3. Indian Society"
+    }
+   ],
+   "topics": [],
+   "angles": [
+    "Reservation"
+   ],
+   "score": 42,
+   "band": "medium",
+   "why": {
+    "syllabus": 12,
+    "angles": 5,
+    "ap": 20,
+    "importance": 0,
+    "reuse": 5
+   },
+   "lang": "te"
   },
   {
    "id": "cca24d2d2ac2",
